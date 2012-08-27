@@ -23,9 +23,6 @@ need to have the following Python packages installed:
 - Sphinx
 - Fabric
 
-You also need Graphviz_, a graph visualization software. 
-
-
 Build
 =====
 
