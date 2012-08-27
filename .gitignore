@@ -1,0 +1,6 @@
+.DS_Store
+._*
+*.pyc
+
+docs/_build
+docs/*/_build
