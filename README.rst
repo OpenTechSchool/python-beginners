@@ -1,6 +1,14 @@
 Introduction to programming with Python
 ***************************************
 
+HTML Version
+============
+
+The HTML version is available here:
+http://opentechschool.github.com/python-beginners/
+
+The following sections are for people who want to contribute.
+
 Setup
 =====
 
