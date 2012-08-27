@@ -1,0 +1,215 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>User-defined funtions &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Loops" href="loops.html" />
+    <link rel="prev" title="Names" href="names.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="loops.html" title="Loops"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="names.html" title="Names"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="user-defined-funtions">
+<h1>User-defined funtions<a class="headerlink" href="#user-defined-funtions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>There is still a lot of duplicated code &#8212; the actual drawing of the rectangle
+&#8212; around. If you need to copy and paste code, that is usually a sign of
+lacking abstractions. (Programmers call it a <em>code smell.</em>)</p>
+<p>Functions are one way to express abstractions in Python. Let&#8217;s take
+<tt class="docutils literal"><span class="pre">reset()</span></tt> for example. It is actually an abstraction for a number of steps,
+namely:</p>
+<ul class="simple">
+<li>Erase the drawing board</li>
+<li>Set the width and color back to default</li>
+<li>Move the turtle back to its initial position</li>
+</ul>
+<p>A function can be defined with the <tt class="docutils literal"><span class="pre">def</span></tt> keyword in Python:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can access names in functions as well:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">size</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">backward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-function-for-a-square">
+<h2>A function for a square<a class="headerlink" href="#a-function-for-a-square" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Write a function that draws a square. Can you see how you could improve the
+tilted squares program with that and greatly relieve experimentation?</p>
+</div>
+</div>
+<div class="section" id="a-function-for-a-hexagon">
+<h2>A function for a hexagon<a class="headerlink" href="#a-function-for-a-hexagon" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Write a function that draws a hexagon.</p>
+<img alt="_images/hexagon.png" src="_images/hexagon.png" />
+<p>Now combine that function into a honeycomb.</p>
+<img alt="_images/honeycomb.png" src="_images/honeycomb.png" />
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="n">hexagon</span><span class="p">()</span>
+<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">User-defined funtions</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#a-function-for-a-square">A function for a square</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-for-a-hexagon">A function for a hexagon</a><ul>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="names.html"
+                        title="previous chapter">Names</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="loops.html"
+                        title="next chapter">Loops</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/functions.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="loops.html" title="Loops"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="names.html" title="Names"
+             >previous</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, OpenTechSchool.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
