@@ -15,10 +15,10 @@ def setup():
     target_dir = os.path.join(BUILD_DIR, MAIN_TARGET)
     with lcd(BASE_DIR):
         local('mkdir -p %s' % target_dir)
-        local('git clone %s %s' % REPOSITORY, target_dir)
+        local('git clone %s %s' % (REPOSITORY, target_dir))
     with lcd(target_dir):
         local('git symbolic-ref HEAD refs/heads/gh-pages')
-        local('rm .git/index')
+        local('rm -rf .git/index')
         local('git clean -fdx')
         local('git pull origin gh-pages')
         local('touch .nojekyll')
