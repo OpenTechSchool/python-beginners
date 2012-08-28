@@ -7,7 +7,7 @@ Table of contents:
 .. toctree::
     :maxdepth: 2
    
-    interactive_work
+    getting_started
     simple_drawing
     names
     functions
