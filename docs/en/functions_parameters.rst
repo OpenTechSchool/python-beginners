@@ -29,6 +29,7 @@ We have been using functions with parameters since the beginning of the tutorial
 
 
 And we can put as many arguments (or parameters) as we want, separating them with commas and giving them different names::
+
    def tilted_line_without_moving(length,angle):
         left(angle)
         forward(length)
@@ -62,6 +63,7 @@ Solution
         for i in range(6):
             forward(size)
             left(60)
+            
     def honeycomb(size,count):
         for i in range(count):
             hexagon(size)
