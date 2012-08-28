@@ -69,4 +69,4 @@ Solution
             hexagon(size)
             forward(size)
             right(60)
-  
+
