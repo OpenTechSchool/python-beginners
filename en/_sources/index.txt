@@ -14,5 +14,5 @@ Table of contents:
     loops
     functions_parameters
     conditionals
-    logical_operators
     conditional_loops
+    logical_operators

@@ -25,7 +25,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="prev" title="Logical operators" href="logical_operators.html" /> 
+    <link rel="next" title="Logical operators" href="logical_operators.html" />
+    <link rel="prev" title="Conditional statements" href="conditionals.html" /> 
   </head>
   <body>
     <div class="related">
@@ -33,7 +34,10 @@
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="logical_operators.html" title="Logical operators"
-             accesskey="P">previous</a></li>
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="conditionals.html" title="Conditional statements"
+             accesskey="P">previous</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>  
@@ -47,9 +51,65 @@
 <h1>Conditional Loops<a class="headerlink" href="#conditional-loops" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Conditional loops are way to repeat something until a certain condition is met.
+If the condition is never met, the loop can become infinite. In Python
+conditional loops are defined with the <tt class="docutils literal"><span class="pre">while</span></tt> statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;in the loop&quot;</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
 </div>
+</div>
+<div class="section" id="move-until-condition-is-met">
+<h2>Move until condition is met<a class="headerlink" href="#move-until-condition-is-met" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
-<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Use the <tt class="docutils literal"><span class="pre">while</span></tt> loop to move the turtle forward until it reaches the end of
+the window.</p>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_window_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">window_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Can you make the turtle move exactly to the window border?</p>
+</div>
+</div>
+<div class="section" id="draw-a-spiral">
+<h2>Draw a spiral<a class="headerlink" href="#draw-a-spiral" title="Permalink to this headline">¶</a></h2>
+<p>Loops can be interrupted with the <tt class="docutils literal"><span class="pre">break</span></tt> statement. This is often used in
+combination with infinite loops.</p>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Write a <tt class="docutils literal"><span class="pre">while</span></tt> loop with a condition that is always true to draw a spiral.
+Interrupt the loop when the turtle reaches a certain distance from the center.
+Use the function <tt class="docutils literal"><span class="pre">distance(x,</span> <span class="pre">y)</span></tt> to get the turtle&#8217;s distance to the point
+defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To draw a spiral, the turtle has to rotate by a constant value and move
+forward by an increasing value in each repetition.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
+        <span class="k">if</span> <span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+            <span class="k">break</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -63,14 +123,27 @@
   <ul>
 <li><a class="reference internal" href="#">Conditional Loops</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#move-until-condition-is-met">Move until condition is met</a><ul>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draw-a-spiral">Draw a spiral</a><ul>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+<li><a class="reference internal" href="#id2">Solution</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
+  <p class="topless"><a href="conditionals.html"
+                        title="previous chapter">Conditional statements</a></p>
+  <h4>Next topic</h4>
   <p class="topless"><a href="logical_operators.html"
-                        title="previous chapter">Logical operators</a></p>
+                        title="next chapter">Logical operators</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -93,7 +166,10 @@
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="logical_operators.html" title="Logical operators"
-             >previous</a></li>
+             >next</a></li>
+        <li class="right" >
+          <a href="conditionals.html" title="Conditional statements"
+             >previous</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>

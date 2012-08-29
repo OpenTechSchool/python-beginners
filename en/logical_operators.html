@@ -25,8 +25,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Conditional Loops" href="conditional_loops.html" />
-    <link rel="prev" title="Conditional statements" href="conditionals.html" /> 
+    <link rel="prev" title="Conditional Loops" href="conditional_loops.html" /> 
   </head>
   <body>
     <div class="related">
@@ -34,10 +33,7 @@
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="conditional_loops.html" title="Conditional Loops"
-             accesskey="N">next</a></li>
-        <li class="right" >
-          <a href="conditionals.html" title="Conditional statements"
-             accesskey="P">previous</a> |</li>
+             accesskey="P">previous</a></li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>  
@@ -49,8 +45,52 @@
             
   <div class="section" id="logical-operators">
 <h1>Logical operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h1>
-<p>We can also do some more complex things with
-We can return the opposite of a logic operation, with <strong>not</strong> as a keyword in front of your expression, or combine several logic statements together with logical <strong>and</strong> and <strong>or</strong> links between them (they are usually called <em>operators</em>)</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Conditionals are a nice way to make decisions by asking if something equals true
+or not. But often one condition is not enough. For instance if we want to make a
+decision upon <tt class="docutils literal"><span class="pre">xcor()</span></tt> and <tt class="docutils literal"><span class="pre">ycor()</span></tt> we have to combine them. This can be
+done with logical operators.</p>
+</div>
+<div class="section" id="this-and-that-or-something-else">
+<h2>This and that or something else<a class="headerlink" href="#this-and-that-or-something-else" title="Permalink to this headline">¶</a></h2>
+<p>Two easy to understand operators are <tt class="docutils literal"><span class="pre">and</span></tt> and <tt class="docutils literal"><span class="pre">or</span></tt>. They do exactly whay the
+sound like: combine two statements in a way both have be true (<tt class="docutils literal"><span class="pre">and</span></tt>) or
+one of them has to be true (<tt class="docutils literal"><span class="pre">or</span></tt>):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;condition met&quot;</span>
+
+<span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;condition not met&quot;</span>
+
+<span class="k">if</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;condition met&quot;</span>
+</pre></div>
+</div>
+<p>You are not restricted to one logical operator. You can combine as may as you
+want.</p>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angel</span></tt> and moves the turtle into
+that direction until either the vertical or horizontal distance to the center
+exeeds 100.</p>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_square_border</span><span class="p">(</span><span class="n">angel</span><span class="p">):</span>
+    <span class="n">left</span><span class="p">(</span><span class="n">angel</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">ycor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">ycor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Execute the <tt class="docutils literal"><span class="pre">move_to_square_border()</span></tt> function multiple times with different
+angels. Use the <tt class="docutils literal"><span class="pre">home()</span></tt> function to make the turtle jump to the center after
+each line.</p>
+</div>
+</div>
 </div>
 
 
@@ -59,12 +99,23 @@ We can return the opposite of a logic operation, with <strong>not</strong> as a 
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Logical operators</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#this-and-that-or-something-else">This and that or something else</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="conditionals.html"
-                        title="previous chapter">Conditional statements</a></p>
-  <h4>Next topic</h4>
   <p class="topless"><a href="conditional_loops.html"
-                        title="next chapter">Conditional Loops</a></p>
+                        title="previous chapter">Conditional Loops</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -87,10 +138,7 @@ We can return the opposite of a logic operation, with <strong>not</strong> as a 
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="conditional_loops.html" title="Conditional Loops"
-             >next</a></li>
-        <li class="right" >
-          <a href="conditionals.html" title="Conditional statements"
-             >previous</a> |</li>
+             >previous</a></li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>
