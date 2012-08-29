@@ -1,0 +1,205 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Conditional statements &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Logical operators" href="logical_operators.html" />
+    <link rel="prev" title="Functions with parameters" href="functions_parameters.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="logical_operators.html" title="Logical operators"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="functions_parameters.html" title="Functions with parameters"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="conditional-statements">
+<h1>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to <em>test</em> a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
+<p>To know if a condition is <em>True</em> of <em>False</em>, we need a new type of data:
+the booleans. They allow logical operations.
+A logic statement or operation can be evaluated to be <em>true</em> or <em>false</em>.
+Our conditional statement can then be understood like this:</p>
+<p><strong>if</strong> <em>(evaluation of a condition returns true)</em> <strong>then</strong> <em>do some operation</em> <strong>else</strong> <em>do an other operation</em>.
+And any operation that can be avaluated as <em>true</em> or <em>false</em> can but put to the test. All comparisons return <em>true</em> or <em>false</em>: <em>=,&gt;,&lt;</em>.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Here are some simple examples:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;condition met&quot;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;condition not met&quot;</span>
+
+<span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
+<span class="k">if</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">forward</span> <span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="condition-an-action">
+<h2>Condition an action<a class="headerlink" href="#condition-an-action" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Let&#8217;s try to make our turtle to stop when it reaches the end
+of the window. Let&#8217;s only take into account horizontal movements.
+We want the turtle to go forward for a specified distance (taken as a function parameter) until it reaches this distance, or stop and turn around if it reaches the border of the screen.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>We start from the center of the screen, which has coordinate (0;0)</li>
+<li>We won&#8217;t turn, until we reach the boundery our turtle wants to get away as quickly as possible</li>
+<li>We can get the x coordinate of our turtle with the function <em>xcor</em></li>
+<li>We can get the width of the screen with the function <em>window_width</em></li>
+</ul>
+</div>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">stop_at_end_of_screen</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
+    <span class="n">diff</span> <span class="o">=</span> <span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">future_x_coord</span>
+    <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">xcor</span><span class="p">())</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus-exercise">
+<h3>Bonus exercise<a class="headerlink" href="#bonus-exercise" title="Permalink to this headline">¶</a></h3>
+<p>Now when the turtle reaches the end of the screen, it turns around and
+continue its movement in the other direction, the remaining of the distance</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>heading() gives you the current angle the turtle&#8217;s direction makes with the original east facing turtle. (a turtle going straight up has a heading of 90 degrees)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Solution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">uturn_at_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">heading</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">-</span> <span class="n">distance</span>
+
+    <span class="n">diff</span> <span class="o">=</span> <span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">future_x_coord</span>
+    <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">xcor</span><span class="p">())</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+        <span class="n">forward</span> <span class="p">(</span><span class="o">-</span><span class="n">diff</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Conditional statements</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#condition-an-action">Condition an action</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#bonus-exercise">Bonus exercise</a></li>
+<li><a class="reference internal" href="#id1">Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="functions_parameters.html"
+                        title="previous chapter">Functions with parameters</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="logical_operators.html"
+                        title="next chapter">Logical operators</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="logical_operators.html" title="Logical operators"
+             >next</a></li>
+        <li class="right" >
+          <a href="functions_parameters.html" title="Functions with parameters"
+             >previous</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, OpenTechSchool.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

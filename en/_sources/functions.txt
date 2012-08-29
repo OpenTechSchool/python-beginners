@@ -29,6 +29,8 @@ You can access names in functions as well::
         forward(size)
         backward(size)
 
+.. note:: Python uses *whitespaces to identify blocks of code* belonging together. While other languages use special characters (like curly brackets) in python a block is introduced with a colon at the end of the line and commands within a deeper identation level - ususally 4 spaces. The block ends with the first line with a lesser identation level.
+
 A function for a square
 =======================
 

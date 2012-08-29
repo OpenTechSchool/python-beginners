@@ -25,6 +25,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Conditional statements" href="conditionals.html" />
     <link rel="prev" title="Loops" href="loops.html" /> 
   </head>
   <body>
@@ -32,8 +33,8 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
+          <a href="conditionals.html" title="Conditional statements"
+             accesskey="N">next</a></li>
         <li class="right" >
           <a href="loops.html" title="Loops"
              accesskey="P">previous</a> |</li>
@@ -48,7 +49,66 @@
             
   <div class="section" id="functions-with-parameters">
 <h1>Functions with parameters<a class="headerlink" href="#functions-with-parameters" title="Permalink to this headline">¶</a></h1>
-<p>Todo</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Now we know how to <em>factorise</em> this code a little. But functions as we have defined them so far are not flexible. the variables are defined inside the function,
+and we need to rewrite a whole function to cahnge the value of an angle, or a distance in it.</p>
+<p>That is why we need to be able to give parameters, or also called <em>arguments</em> so that <em>names</em> we use in the function can be used with different values each time we call the function:</p>
+<p>Remember how we defined the function <tt class="docutils literal"><span class="pre">line_without_moving</span></tt> in the previous section:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can improve it by giving it a parameter:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The parameter acts as a <em>name</em> only known inside the function&#8217;s definition. We use the newly defined function by calling it with the value we want the parameter to have like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We have been using functions with parameters since the beginning of the tutorial with the <em>forward</em>, <em>left</em>, etc...</p>
+<p>And we can put as many arguments (or parameters) as we want, separating them with commas and giving them different names:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span><span class="n">angle</span><span class="p">):</span>
+     <span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+     <span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+     <span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-parameterised-function-for-a-variable-size-hexagon">
+<h2>A parameterised function for a variable size hexagon<a class="headerlink" href="#a-parameterised-function-for-a-variable-size-hexagon" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Write a function that takes allows you to draw hexagons of any size you want, each time you call the function.</p>
+</div>
+</div>
+<div class="section" id="a-function-of-several-parameters">
+<h2>A function of several parameters<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Write a function that draws a honeycomb with a variable number of hexagons, of variable sizes</p>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">honeycomb</span><span class="p">(</span><span class="n">size</span><span class="p">,</span><span class="n">count</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span><span class="p">):</span>
+        <span class="n">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -57,14 +117,29 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Functions with parameters</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#a-parameterised-function-for-a-variable-size-hexagon">A parameterised function for a variable size hexagon</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">A function of several parameters</a><ul>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="loops.html"
                         title="previous chapter">Loops</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/functions_parameters.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="conditionals.html"
+                        title="next chapter">Conditional statements</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -86,8 +161,8 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
+          <a href="conditionals.html" title="Conditional statements"
+             >next</a></li>
         <li class="right" >
           <a href="loops.html" title="Loops"
              >previous</a> |</li>
