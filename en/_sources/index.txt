@@ -7,10 +7,12 @@ Table of contents:
 .. toctree::
     :maxdepth: 2
    
-    interactive_work
+    getting_started
     simple_drawing
     names
     functions
     loops
     functions_parameters
-
+    conditionals
+    logical_operators
+    conditional_loops
