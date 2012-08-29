@@ -3,8 +3,7 @@ Functions with parameters
 Introduction
 ============
 
-Now we know how to *factorise* this code a little. But functions as we have defined them so far are not flexible. the variables are defined inside the function,
-and we need to rewrite a whole function to cahnge the value of an angle, or a distance in it.
+Now we know how to *factorize* this code a little. But functions as we have defined them so far are not flexible. The variables are defined inside the function, and we need to rewrite a whole function to change the value of an angle, or a distance in it.
 
 That is why we need to be able to give parameters, or also called *arguments* so that *names* we use in the function can be used with different values each time we call the function:
 
@@ -36,7 +35,7 @@ And we can put as many arguments (or parameters) as we want, separating them wit
         backward(length)
 
 
-A parameterised function for a variable size hexagon
+A parameterized function for a variable size hexagon
 ====================================================
 
 Exercise
