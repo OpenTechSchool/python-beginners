@@ -1,9 +1,10 @@
 Conditional statements
 **********************
+
 Introduction
 ============
 
-So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to *test* a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers *if statements*.
+So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automate, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to *test* a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers *if statements*.
 
 To know if a condition is *True* of *False*, we need a new type of data: 
 the booleans. They allow logical operations. 
@@ -11,7 +12,7 @@ A logic statement or operation can be evaluated to be *true* or *false*.
 Our conditional statement can then be understood like this: 
 
 **if** *(evaluation of a condition returns true)* **then** *do some operation* **else** *do an other operation*. 
-And any operation that can be avaluated as *true* or *false* can but put to the test. All comparisons return *true* or *false*: *=,>,<*.
+And any operation that can be evaluated as *true* or *false* can but put to the test. All comparisons return *true* or *false*: *=,>,<*.
 
 
 Examples
@@ -45,7 +46,7 @@ We want the turtle to go forward for a specified distance (taken as a function p
 
 .. note::
  * We start from the center of the screen, which has coordinate (0;0)
- * We won't turn, until we reach the boundery our turtle wants to get away as quickly as possible
+ * We won't turn, until we reach the boundary our turtle wants to get away as quickly as possible
  * We can get the x coordinate of our turtle with the function *xcor*
  * We can get the width of the screen with the function *window_width*
 
