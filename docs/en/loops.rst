@@ -18,7 +18,8 @@ Exercise
 --------
 
 Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the ``up()`` function;  put it back on the ground with ``down()``.
+with the ``turtle.up()`` function;  put it back on the ground with
+``turtle.down()``.
 
 .. image:: /images/dashed.png
 
@@ -27,10 +28,10 @@ Solution
 ::
 
     for i in range(10):
-        forward(15)
-        up()
-        forward(5)
-        down()
+        turtle.forward(15)
+        turtle.up()
+        turtle.forward(5)
+        turtle.down()
 
 Bonus
 -----
@@ -45,7 +46,7 @@ Honeycomb loops
 Exercise
 --------
 
-Take your honeycomb program and make it easier with loops.  How small can you
+Take your honeycomb program and make it easier with loops. How small can you
 get it?
 
 Solution
@@ -55,10 +56,10 @@ Solution
 
     def hexagon():
         for i in range(6):
-            forward(100)
-            left(60)
+            turtle.forward(100)
+            turtle.left(60)
 
     for i in range(6):
       hexagon()
-      forward(100)
-      right(60)
+      turtle.forward(100)
+      turtle.right(60)

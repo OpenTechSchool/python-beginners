@@ -4,31 +4,34 @@ Simple drawing with turtle
 Introduction
 ============
 
-Turtle is like a drawing board.
+Turtle is like a drawing board. 
 
-It has functions like ``forward(...)`` and ``left(...)`` which can move the
-turtle around::
+It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
+can move the turtle around.
 
-    from turtle import *
+Before you can use turtle, you have to import it::
+
+    import turtle
 
 .. image:: /images/default.png
 
 ::
 
-    forward(25)
+    turtle.forward(25)
 
 .. image:: /images/forward.png
 
 ::
 
-    left(30)
+    turtle.left(30)
 
 .. image:: /images/left.png
 
 
-The ``forward(...)`` function takes the number of pixels which you want to move
-forward, ``left(...)`` takes a number of degrees which you want to rotate to
-the left. (There are ``backward(...)`` and ``right(...)``, too.)
+The ``turtle.forward(...)`` function takes the number of pixels which you want
+to move forward, ``turtle.left(...)`` takes a number of degrees which you want
+to rotate to the left. (There are ``turtle.backward(...)`` and
+``turtle.right(...)``, too.)
 
 Drawing a square
 ================
@@ -47,16 +50,14 @@ Solution
 
 ::
 
-    from turtle import *
-
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
 .. note::
 
@@ -66,15 +67,15 @@ Solution
 Bonus
 -----
 
-If you want to get creative, you can modify your shape with the ``width(...)``
-and ``color(...)`` functions.  If you cannot figure out the *signature* of a
-function (that is the syntax and semantics of it, say, number of parameters and
-their meaning) you can use ``help(color)``.
+If you want to get creative, you can modify your shape with the
+``turtle.width(...)`` and ``turtle.color(...)`` functions.  If you cannot
+figure out the *signature* of a function (that is the syntax and semantics of
+it, say, number of parameters and their meaning) you can use ``help(color)``.
 
 .. caution::
 
-    If you misdrew anything, you can tell turtle to erase its drawing board with
-    the ``reset()`` directive.
+    If you misdrew anything, you can tell turtle to erase its drawing board
+    with the ``turtle.reset()`` directive.
 
 Drawing a rect
 ==============
@@ -91,16 +92,14 @@ Solution
 
 ::
 
-    from turtle import *
-
-    forward(100)
-    left(90)
-    forward(50)
-    left(90)
-    forward(100)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
 Bonus
 -----
@@ -127,39 +126,37 @@ Solution
 
 ::
 
-    from turtle import *
+    turtle.left(20)     # <--
 
-    left(20)     # <--
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.left(20)     # <--
 
-    left(20)     # <--
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.left(20)     # <--
 
-    left(20)     # <--
-
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
 
