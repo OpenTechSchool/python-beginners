@@ -90,5 +90,5 @@ Solution
         else:
             turtle.forward(turtle.window_width()/2 - turtle.xcor())
             turtle.left(180)
-            forward (-diff)
+            turtle.forward(-diff)
         

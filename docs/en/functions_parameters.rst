@@ -29,7 +29,7 @@ We have been using functions with parameters since the beginning of the tutorial
 
 And we can put as many arguments (or parameters) as we want, separating them with commas and giving them different names::
 
-   def tilted_line_without_moving(length, angle):
+    def tilted_line_without_moving(length, angle):
         turtle.left(angle)
         turtle.forward(length)
         turtle.backward(length)

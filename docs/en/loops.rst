@@ -60,6 +60,6 @@ Solution
             turtle.left(60)
 
     for i in range(6):
-      hexagon()
-      turtle.forward(100)
-      turtle.right(60)
+        hexagon()
+        turtle.forward(100)
+        turtle.right(60)
