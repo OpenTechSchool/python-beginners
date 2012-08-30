@@ -24,6 +24,7 @@ with the ``turtle.up()`` function;  put it back on the ground with
 .. image:: /images/dashed.png
 
 Solution
+--------
 
 ::
 
