@@ -52,23 +52,25 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Turtle is like a drawing board.</p>
-<p>It has functions like <tt class="docutils literal"><span class="pre">forward(...)</span></tt> and <tt class="docutils literal"><span class="pre">left(...)</span></tt> which can move the
-turtle around:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
+<p>It has functions like <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> which
+can move the turtle around.</p>
+<p>Before you can use turtle, you have to import it:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
 </div>
 <img alt="_images/default.png" src="_images/default.png" />
-<div class="highlight-python"><div class="highlight"><pre><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 </div>
 <img alt="_images/forward.png" src="_images/forward.png" />
-<div class="highlight-python"><div class="highlight"><pre><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>The <tt class="docutils literal"><span class="pre">forward(...)</span></tt> function takes the number of pixels which you want to move
-forward, <tt class="docutils literal"><span class="pre">left(...)</span></tt> takes a number of degrees which you want to rotate to
-the left. (There are <tt class="docutils literal"><span class="pre">backward(...)</span></tt> and <tt class="docutils literal"><span class="pre">right(...)</span></tt>, too.)</p>
+<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function takes the number of pixels which you want
+to move forward, <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you want
+to rotate to the left. (There are <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
+<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.)</p>
 </div>
 <div class="section" id="drawing-a-square">
 <h2>Drawing a square<a class="headerlink" href="#drawing-a-square" title="Permalink to this headline">¶</a></h2>
@@ -80,16 +82,14 @@ the left. (There are <tt class="docutils literal"><span class="pre">backward(...
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -100,14 +100,14 @@ position.  This will make it easier to draw multiple shapes later on.</p>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
-<p>If you want to get creative, you can modify your shape with the <tt class="docutils literal"><span class="pre">width(...)</span></tt>
-and <tt class="docutils literal"><span class="pre">color(...)</span></tt> functions.  If you cannot figure out the <em>signature</em> of a
-function (that is the syntax and semantics of it, say, number of parameters and
-their meaning) you can use <tt class="docutils literal"><span class="pre">help(color)</span></tt>.</p>
+<p>If you want to get creative, you can modify your shape with the
+<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  If you cannot
+figure out the <em>signature</em> of a function (that is the syntax and semantics of
+it, say, number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(color)</span></tt>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
-<p class="last">If you misdrew anything, you can tell turtle to erase its drawing board with
-the <tt class="docutils literal"><span class="pre">reset()</span></tt> directive.</p>
+<p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
+with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> directive.</p>
 </div>
 </div>
 </div>
@@ -120,16 +120,14 @@ the <tt class="docutils literal"><span class="pre">reset()</span></tt> directive
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -150,40 +148,38 @@ experiment with the angles between the individual squares.</p>
 </div>
 <div class="section" id="id5">
 <h3>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
 
-<span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
 
-<span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
 
-<span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
-
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

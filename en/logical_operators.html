@@ -47,15 +47,15 @@
 <h1>Logical operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Conditionals are a nice way to make decisions by asking if something equals true
-or not. But often one condition is not enough. For instance if we want to make a
-decision upon <tt class="docutils literal"><span class="pre">xcor()</span></tt> and <tt class="docutils literal"><span class="pre">ycor()</span></tt> we have to combine them. This can be
-done with logical operators.</p>
+<p>Conditionals are a nice way to make decisions by asking if something equals
+true or not. But often one condition is not enough. For instance if we want to
+make a decision upon <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> we have to combine
+them. This can be done with logical operators.</p>
 </div>
 <div class="section" id="this-and-that-or-something-else">
 <h2>This and that or something else<a class="headerlink" href="#this-and-that-or-something-else" title="Permalink to this headline">¶</a></h2>
-<p>Two easy to understand operators are <tt class="docutils literal"><span class="pre">and</span></tt> and <tt class="docutils literal"><span class="pre">or</span></tt>. They do exactly whay the
-sound like: combine two statements in a way both have be true (<tt class="docutils literal"><span class="pre">and</span></tt>) or
+<p>Two easy to understand operators are <tt class="docutils literal"><span class="pre">and</span></tt> and <tt class="docutils literal"><span class="pre">or</span></tt>. They do exactly whay
+the sound like: combine two statements in a way both have be true (<tt class="docutils literal"><span class="pre">and</span></tt>) or
 one of them has to be true (<tt class="docutils literal"><span class="pre">or</span></tt>):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="k">print</span> <span class="s">&quot;condition met&quot;</span>
@@ -71,24 +71,26 @@ one of them has to be true (<tt class="docutils literal"><span class="pre">or</s
 want.</p>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angel</span></tt> and moves the turtle into
+<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angle</span></tt> and moves the turtle into
 that direction until either the vertical or horizontal distance to the center
 exeeds 100.</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_square_border</span><span class="p">(</span><span class="n">angel</span><span class="p">):</span>
-    <span class="n">left</span><span class="p">(</span><span class="n">angel</span><span class="p">)</span>
-    <span class="k">while</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">ycor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">ycor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_square_border</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>Execute the <tt class="docutils literal"><span class="pre">move_to_square_border()</span></tt> function multiple times with different
-angels. Use the <tt class="docutils literal"><span class="pre">home()</span></tt> function to make the turtle jump to the center after
-each line.</p>
+angles. Use the <tt class="docutils literal"><span class="pre">turtle.home()</span></tt> function to make the turtle jump to the
+center after each line.</p>
 </div>
 </div>
 </div>

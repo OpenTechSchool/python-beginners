@@ -55,8 +55,8 @@
 &#8212; around. If you need to copy and paste code, that is usually a sign of
 lacking abstractions. (Programmers call it a <em>code smell.</em>)</p>
 <p>Functions are one way to express abstractions in Python. Let&#8217;s take
-<tt class="docutils literal"><span class="pre">reset()</span></tt> for example. It is actually an abstraction for a number of steps,
-namely:</p>
+<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> for example. It is actually an abstraction for a number of
+steps, namely:</p>
 <ul class="simple">
 <li>Erase the drawing board</li>
 <li>Set the width and color back to default</li>
@@ -64,15 +64,15 @@ namely:</p>
 </ul>
 <p>A function can be defined with the <tt class="docutils literal"><span class="pre">def</span></tt> keyword in Python:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-    <span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>You can access names in functions as well:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">size</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
-    <span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-    <span class="n">backward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -100,42 +100,42 @@ tilted squares program with that and greatly relieve experimentation?</p>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="n">hexagon</span><span class="p">()</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

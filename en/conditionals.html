@@ -51,7 +51,7 @@
 <h1>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automate, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to <em>test</em> a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
+<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to <em>test</em> a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
 <p>To know if a condition is <em>True</em> of <em>False</em>, we need a new type of data:
 the booleans. They allow logical operations.
 A logic statement or operation can be evaluated to be <em>true</em> or <em>false</em>.
@@ -71,10 +71,10 @@ And any operation that can be evaluated as <em>true</em> or <em>false</em> can b
 
 <span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
 <span class="k">if</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
-    <span class="n">forward</span> <span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span> <span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -90,21 +90,21 @@ We want the turtle to go forward for a specified distance (taken as a function p
 <ul class="last simple">
 <li>We start from the center of the screen, which has coordinate (0;0)</li>
 <li>We won&#8217;t turn, until we reach the boundary our turtle wants to get away as quickly as possible</li>
-<li>We can get the x coordinate of our turtle with the function <em>xcor</em></li>
-<li>We can get the width of the screen with the function <em>window_width</em></li>
+<li>We can get the x coordinate of our turtle with the function <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt></li>
+<li>We can get the width of the screen with the function <tt class="docutils literal"><span class="pre">turtle.window_width()</span></tt></li>
 </ul>
 </div>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">stop_at_end_of_screen</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
-    <span class="n">diff</span> <span class="o">=</span> <span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">future_x_coord</span>
+    <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
+    <span class="n">diff</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">future_x_coord</span>
     <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">xcor</span><span class="p">())</span>
-        <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">())</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -115,25 +115,25 @@ continue its movement in the other direction, the remaining of the distance</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <ul class="last simple">
-<li>heading() gives you the current angle the turtle&#8217;s direction makes with the original east facing turtle. (a turtle going straight up has a heading of 90 degrees)</li>
+<li>turtle.heading() gives you the current angle the turtle&#8217;s direction makes with the original east facing turtle. (a turtle going straight up has a heading of 90 degrees)</li>
 </ul>
 </div>
 </div>
 <div class="section" id="id1">
 <h3>Solution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">uturn_at_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">heading</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
+    <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">-</span> <span class="n">distance</span>
+        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">-</span> <span class="n">distance</span>
 
-    <span class="n">diff</span> <span class="o">=</span> <span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">future_x_coord</span>
+    <span class="n">diff</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">future_x_coord</span>
     <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">xcor</span><span class="p">())</span>
-        <span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
-        <span class="n">forward</span> <span class="p">(</span><span class="o">-</span><span class="n">diff</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">())</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">-</span><span class="n">diff</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

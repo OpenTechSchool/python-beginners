@@ -28,8 +28,8 @@ Solution
 ::
 
     def move_to_window_border(distance):
-        while xcor() + distance < window_width() / 2:
-            forward(distance)
+        while turtle.xcor() + distance < turtle.window_width() / 2:
+            turtle.forward(distance)
 
 Bonus
 -----
@@ -47,8 +47,8 @@ Exercise
 
 Write a ``while`` loop with a condition that is always true to draw a spiral.
 Interrupt the loop when the turtle reaches a certain distance from the center.
-Use the function ``distance(x, y)`` to get the turtle's distance to the point
-defined by the coordinates ``x`` and ``y``.
+Use the function ``turtle.distance(x, y)`` to get the turtle's distance to the
+point defined by the coordinates ``x`` and ``y``.
 
 .. note::
 
@@ -63,9 +63,9 @@ Solution
     def draw_spiral(radius):
         speed = 1
         while True:
-            forward(speed)
-            left(10)
+            turtle.forward(speed)
+            turtle.left(10)
             speed += 0.1
-            if distance(0, 0) > radius:
+            if turtle.distance(0, 0) > radius:
                 break
 

@@ -65,12 +65,17 @@ too.</p>
 </div>
 <p>After that statement, if you do <tt class="docutils literal"><span class="pre">print</span> <span class="pre">x</span></tt>, it will actually output its value
 &#8212; 5.  You can well use that for turtle too:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You can not save numbers in variables, like we did here for &#8220;x&#8221;, but you can actually save various kinds of things in them. A typical other thing you want to have store often is a &#8220;string&#8221; - a line of text. Strings are indicated with a starting and a leading &#8221;. You&#8217;ll learn about this and other types, as those are called in python, and what you can do with them later on.</p>
+<p class="last">You can not save numbers in variables, like we did here for &#8220;x&#8221;, but
+you can actually save various kinds of things in them. A typical other thing
+you want to have store often is a &#8220;string&#8221; - a line of text. Strings are
+indicated with a starting and a leading &#8221;. You&#8217;ll learn about this and
+other types, as those are called in Python, and what you can do with them
+later on.</p>
 </div>
 </div>
 <div class="section" id="a-variable-called-angle">
@@ -82,21 +87,20 @@ much faster with our tilted squares program?</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">angle</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">angle</span> <span class="o">=</span> <span class="mi">20</span>
 
-<span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
 
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
 <span class="c"># ...</span>
 </pre></div>
 </div>
