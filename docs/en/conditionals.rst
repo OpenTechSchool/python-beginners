@@ -4,7 +4,7 @@ Conditional statements
 Introduction
 ============
 
-So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automate, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to *test* a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers *if statements*.
+So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to *test* a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers *if statements*.
 
 To know if a condition is *True* of *False*, we need a new type of data: 
 the booleans. They allow logical operations. 
