@@ -64,14 +64,17 @@ take that easy example:</p>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <p>Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the <tt class="docutils literal"><span class="pre">up()</span></tt> function;  put it back on the ground with <tt class="docutils literal"><span class="pre">down()</span></tt>.</p>
+with the <tt class="docutils literal"><span class="pre">turtle.up()</span></tt> function;  put it back on the ground with
+<tt class="docutils literal"><span class="pre">turtle.down()</span></tt>.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
-<p>Solution</p>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-    <span class="n">up</span><span class="p">()</span>
-    <span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="n">down</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">up</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">down</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -85,20 +88,20 @@ with the <tt class="docutils literal"><span class="pre">up()</span></tt> functio
 <h2>Honeycomb loops<a class="headerlink" href="#honeycomb-loops" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Take your honeycomb program and make it easier with loops.  How small can you
+<p>Take your honeycomb program and make it easier with loops. How small can you
 get it?</p>
 </div>
-<div class="section" id="solution">
-<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-        <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-  <span class="n">hexagon</span><span class="p">()</span>
-  <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-  <span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">hexagon</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -117,12 +120,13 @@ get it?</p>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#drawing-a-dashed-line">Drawing a dashed line</a><ul>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#honeycomb-loops">Honeycomb loops</a><ul>
 <li><a class="reference internal" href="#id1">Exercise</a></li>
-<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#id2">Solution</a></li>
 </ul>
 </li>
 </ul>

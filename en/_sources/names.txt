@@ -21,10 +21,15 @@ In Python syntax, that very statement translates to::
 After that statement, if you do ``print x``, it will actually output its value
 --- 5.  You can well use that for turtle too::
 
-    forward(x)
+    turtle.forward(x)
 
 
-.. note:: You can not save numbers in variables, like we did here for "x", but you can actually save various kinds of things in them. A typical other thing you want to have store often is a "string" - a line of text. Strings are indicated with a starting and a leading \". You'll learn about this and other types, as those are called in python, and what you can do with them later on.
+.. note:: You can not save numbers in variables, like we did here for "x", but
+   you can actually save various kinds of things in them. A typical other thing
+   you want to have store often is a "string" - a line of text. Strings are
+   indicated with a starting and a leading \". You'll learn about this and
+   other types, as those are called in Python, and what you can do with them
+   later on.
 
 A variable called angle
 =======================
@@ -40,21 +45,20 @@ Solution
 
 ::
 
-    from turtle import *
     angle = 20
 
-    left(angle)
+    turtle.left(angle)
 
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
-    forward(50)
-    left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.left(90)
 
-    left(angle)
+    turtle.left(angle)
     # ...
 
 Bonus

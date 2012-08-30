@@ -71,8 +71,8 @@ the window.</p>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_window_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">window_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -89,8 +89,8 @@ combination with infinite loops.</p>
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Write a <tt class="docutils literal"><span class="pre">while</span></tt> loop with a condition that is always true to draw a spiral.
 Interrupt the loop when the turtle reaches a certain distance from the center.
-Use the function <tt class="docutils literal"><span class="pre">distance(x,</span> <span class="pre">y)</span></tt> to get the turtle&#8217;s distance to the point
-defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
+Use the function <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> to get the turtle&#8217;s distance to the
+point defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To draw a spiral, the turtle has to rotate by a constant value and move
@@ -102,10 +102,10 @@ forward by an increasing value in each repetition.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
     <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
-        <span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
         <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
-        <span class="k">if</span> <span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
             <span class="k">break</span>
 </pre></div>
 </div>
