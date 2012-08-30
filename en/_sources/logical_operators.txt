@@ -5,16 +5,50 @@ Introduction
 ============
 
 Conditionals are a nice way to make decisions by asking if something equals
-true or not. But often one condition is not enough. For instance if we want to
+true or not. But often one condition is not enough. 
+We may want to take the opposite of your result. Or for instance if we want to
 make a decision upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine
-them. This can be done with logical operators.
+them. This can be done with logical operators. 
+
+Negation of a statement
+=======================
+
+We can take the opposite value of a statement to use ``not`` its value.
+It is a logical operator::
+
+    x = False
+    if not x :
+        print "conditon met"
+    else:
+        print "condition not met"
+
+Exercise
+--------
+
+The turtle gives us a useful function to know if it is writing or not: ``turtle.isdown()``.
+This function returns *True* if the turtle is writing. As we have seen earlier, the function
+``penup()`` and ``pendown()`` toggle between writing while moving, or just moving without a trace.
+
+Can we write a method that only goes forward if the pen is up?
+
+Solution
+--------
+
+::
+
+    def stealthed_forward(distance):
+        if not turtle.isdown():
+            forward(distance)
+
+
+
 
 This and that or something else
 ===============================
 
 Two easy to understand operators are ``and`` and ``or``. They do exactly whay
 the sound like: combine two statements in a way both have be true (``and``) or
-one of them has to be true (``or``)::
+at least one of them has to be true (``or``)::
 
     if 1 < 2 and 4 > 2:
         print "condition met"
@@ -33,7 +67,7 @@ Exercise
 
 Create a function that accepts the argument ``angle`` and moves the turtle into
 that direction until either the vertical or horizontal distance to the center
-exeeds 100.
+exceeds 100.
 
 Solution
 --------
