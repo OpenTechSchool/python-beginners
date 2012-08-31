@@ -47,8 +47,8 @@ Solution
 This and that or something else
 ===============================
 
-Two easy to understand operators are ``and`` and ``or``. They do exactly whay
-the sound like: combine two statements in a way both have be true (``and``) or
+Two easy to understand operators are ``and`` and ``or``. They do exactly what
+they sound like: combine two statements in a way both have be true (``and``) or
 at least one of them has to be true (``or``)::
 
     if 1 < 2 and 4 > 2:
