@@ -27,7 +27,8 @@ Exercise
 
 The turtle gives us a useful function to know if it is writing or not: ``turtle.isdown()``.
 This function returns *True* if the turtle is writing. As we have seen earlier, the function
-``penup()`` and ``pendown()`` toggle between writing while moving, or just moving without a trace.
+``turtle.penup()`` and ``turtle.pendown()`` toggle between writing while moving,
+or just moving without a trace.
 
 Can we write a method that only goes forward if the pen is up?
 
@@ -38,7 +39,7 @@ Solution
 
     def stealthed_forward(distance):
         if not turtle.isdown():
-            forward(distance)
+            turtle.forward(distance)
 
 
 
