@@ -76,7 +76,12 @@ Draw a house.
 
 .. image:: /images/house.png
 
-You can calculate the length of the diagonal line with Pythagoras. That value
-is a good candidate for a name binding.
+You can calculate the length of the diagonal line with Pythagoras. That value is
+a good candidate for a name binding. To calculate the square root of a number in
+Python, import the *math* module and use the ``math.sqrt()`` function. The
+square of a number is calculated with the ``\*\*`` operator::
 
+    import math
+
+    c = math.sqrt(a**2 + b**2)
 
