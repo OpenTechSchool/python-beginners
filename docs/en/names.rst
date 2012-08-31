@@ -24,10 +24,10 @@ After that statement, if you do ``print(x)``, it will actually output its value
     turtle.forward(x)
 
 
-.. note:: You can not save numbers in variables, like we did here for "x", but
-   you can actually save various kinds of things in them. A typical other thing
-   you want to have store often is a "string" - a line of text. Strings are
-   indicated with a starting and a leading \". You'll learn about this and
+.. note:: You can not only save numbers in variables, like we did here for "x",
+   but you can actually save various kinds of things in them. A typical other
+   thing you want to have store often is a "string" - a line of text. Strings
+   are indicated with a starting and a leading \". You'll learn about this and
    other types, as those are called in Python, and what you can do with them
    later on.
 
