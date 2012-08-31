@@ -5,8 +5,8 @@ Introduction
 ============
 
 Conditionals are a nice way to make decisions by asking if something equals
-true or not. But often one condition is not enough. 
-We may want to take the opposite of your result. Or for instance if we want to
+True or not. But often one condition is not enough. 
+We may want to take the opposite of our result. Or for instance if we want to
 make a decision upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine
 them. This can be done with logical operators. 
 
@@ -25,12 +25,12 @@ It is a logical operator::
 Exercise
 --------
 
-The turtle gives us a useful function to know if it is writing or not: ``turtle.isdown()``.
-This function returns *True* if the turtle is writing. As we have seen earlier, the function
+The turtle gives us a useful function to know if it is drawing or not: ``turtle.isdown()``.
+This function returns *True* if the turtle is drawing. As we have seen earlier, the function
 ``turtle.penup()`` and ``turtle.pendown()`` toggle between writing while moving,
 or just moving without a trace.
 
-Can we write a method that only goes forward if the pen is up?
+Can we write a function that only goes forward if the pen is up?
 
 Solution
 --------
@@ -40,8 +40,6 @@ Solution
     def stealthed_forward(distance):
         if not turtle.isdown():
             turtle.forward(distance)
-
-
 
 
 This and that or something else
@@ -54,7 +52,7 @@ at least one of them has to be true (``or``)::
     if 1 < 2 and 4 > 2:
         print("condition met")
 
-    if 1 < 2 and 4 < 10:
+    if 1 > 2 and 4 < 10:
         print("condition not met")
 
     if 4 < 10 or 1 < 2:
@@ -66,9 +64,9 @@ want.
 Exercise
 --------
 
-Create a function that accepts the argument ``angle`` and moves the turtle into
-that direction until either the vertical or horizontal distance to the center
-exceeds 100.
+Create a function that accepts the argument ``angle`` and moves the turtle
+forward into that direction until either the vertical or horizontal distance to
+the center exceeds 100.
 
 Solution
 --------
@@ -81,10 +79,10 @@ Solution
         y = turtle.ycor()
         while x > -100 and x < 100 and y > -100 and y < 100:
             turtle.forward(10)
+            x = turtle.xcor()
+            y = turtle.ycor()
 
 Bonus
 -----
 
-Execute the ``move_to_square_border()`` function multiple times with different
-angles. Use the ``turtle.home()`` function to make the turtle jump to the
-center after each line.
+Can you use this to draw a star?

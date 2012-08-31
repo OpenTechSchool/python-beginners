@@ -48,8 +48,8 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Conditionals are a nice way to make decisions by asking if something equals
-true or not. But often one condition is not enough.
-We may want to take the opposite of your result. Or for instance if we want to
+True or not. But often one condition is not enough.
+We may want to take the opposite of our result. Or for instance if we want to
 make a decision upon <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> we have to combine
 them. This can be done with logical operators.</p>
 </div>
@@ -66,11 +66,11 @@ It is a logical operator:</p>
 </div>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>The turtle gives us a useful function to know if it is writing or not: <tt class="docutils literal"><span class="pre">turtle.isdown()</span></tt>.
-This function returns <em>True</em> if the turtle is writing. As we have seen earlier, the function
+<p>The turtle gives us a useful function to know if it is drawing or not: <tt class="docutils literal"><span class="pre">turtle.isdown()</span></tt>.
+This function returns <em>True</em> if the turtle is drawing. As we have seen earlier, the function
 <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt> toggle between writing while moving,
 or just moving without a trace.</p>
-<p>Can we write a method that only goes forward if the pen is up?</p>
+<p>Can we write a function that only goes forward if the pen is up?</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
@@ -89,7 +89,7 @@ at least one of them has to be true (<tt class="docutils literal"><span class="p
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="k">if</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
@@ -100,9 +100,9 @@ at least one of them has to be true (<tt class="docutils literal"><span class="p
 want.</p>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angle</span></tt> and moves the turtle into
-that direction until either the vertical or horizontal distance to the center
-exceeds 100.</p>
+<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angle</span></tt> and moves the turtle
+forward into that direction until either the vertical or horizontal distance to
+the center exceeds 100.</p>
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
@@ -112,14 +112,14 @@ exceeds 100.</p>
     <span class="n">y</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
     <span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
-<p>Execute the <tt class="docutils literal"><span class="pre">move_to_square_border()</span></tt> function multiple times with different
-angles. Use the <tt class="docutils literal"><span class="pre">turtle.home()</span></tt> function to make the turtle jump to the
-center after each line.</p>
+<p>Can you use this to draw a star?</p>
 </div>
 </div>
 </div>

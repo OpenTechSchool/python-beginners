@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Names" href="names.html" />
+    <link rel="next" title="Variables" href="variables.html" />
     <link rel="prev" title="Getting started" href="getting_started.html" /> 
   </head>
   <body>
@@ -33,7 +33,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="names.html" title="Names"
+          <a href="variables.html" title="Variables"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="getting_started.html" title="Getting started"
@@ -67,13 +67,14 @@ can move the turtle around.</p>
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function takes the number of pixels which you want
-to move forward, <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you want
+<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function tells the turtle to move forward
+by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you want
 to rotate to the left. (There are <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
 <tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.)</p>
 <p>If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement. To prevent that, just
-put <tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> at the bottom of your file:</p>
+put <tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> at the bottom of your file. Now you can click on
+the window to close it.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
@@ -111,9 +112,9 @@ position.  This will make it easier to draw multiple shapes later on.</p>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>If you want to get creative, you can modify your shape with the
-<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  If you cannot
-figure out the <em>signature</em> of a function (that is the syntax and semantics of
-it, say, number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(color)</span></tt>.</p>
+<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  If you cannot figure
+out the <em>signature</em> of a function (that is the syntax and semantics of it, say,
+number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
@@ -143,7 +144,7 @@ with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></t
 </div>
 <div class="section" id="id3">
 <h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>How about a triangle?  (A triangle with 120 degrees angles will have all legs
+<p>How about a triangle?  (A triangle with 120 degrees angles will have all sides
 equally sized.)</p>
 </div>
 </div>
@@ -231,8 +232,8 @@ experiment with the angles between the individual squares.</p>
   <p class="topless"><a href="getting_started.html"
                         title="previous chapter">Getting started</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="names.html"
-                        title="next chapter">Names</a></p>
+  <p class="topless"><a href="variables.html"
+                        title="next chapter">Variables</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -254,7 +255,7 @@ experiment with the angles between the individual squares.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="names.html" title="Names"
+          <a href="variables.html" title="Variables"
              >next</a></li>
         <li class="right" >
           <a href="getting_started.html" title="Getting started"

@@ -6,7 +6,7 @@ Introduction
 
 One more thing: Our programs often featured repetition. There is a powerful
 concept in Python called looping, which we will elaborate later on. For now,
-take that easy example::
+take this easy example::
 
     for i in range(10):
         print("Hello!")
