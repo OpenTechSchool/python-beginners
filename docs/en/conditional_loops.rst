@@ -45,7 +45,7 @@ combination with infinite loops.
 Exercise
 --------
 
-Write a ``while`` loop with a condition that is always true to draw a spiral.
+Write a ``while`` loop with a condition that is always True to draw a spiral.
 Interrupt the loop when the turtle reaches a certain distance from the center.
 Use the function ``turtle.distance(x, y)`` to get the turtle's distance to the
 point defined by the coordinates ``x`` and ``y``.
