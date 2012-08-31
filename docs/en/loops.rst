@@ -9,7 +9,7 @@ concept in Python called looping, which we will elaborate later on. For now,
 take that easy example::
 
     for i in range(10):
-        print "Hello!"
+        print("Hello!")
 
 Drawing a dashed line
 =====================

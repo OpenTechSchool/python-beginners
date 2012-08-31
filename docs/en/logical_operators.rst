@@ -18,9 +18,9 @@ It is a logical operator::
 
     x = False
     if not x :
-        print "conditon met"
+        print("conditon met")
     else:
-        print "condition not met"
+        print("condition not met")
 
 Exercise
 --------
@@ -52,13 +52,13 @@ the sound like: combine two statements in a way both have be true (``and``) or
 at least one of them has to be true (``or``)::
 
     if 1 < 2 and 4 > 2:
-        print "condition met"
+        print("condition met")
 
     if 1 < 2 and 4 < 10:
-        print "condition not met"
+        print("condition not met")
 
     if 4 < 10 or 1 < 2:
-        print "condition met"
+        print("condition met")
 
 You are not restricted to one logical operator. You can combine as may as you
 want.

@@ -18,7 +18,7 @@ In Python syntax, that very statement translates to::
 
     x = 5
 
-After that statement, if you do ``print x``, it will actually output its value
+After that statement, if you do ``print(x)``, it will actually output its value
 --- 5.  You can well use that for turtle too::
 
     turtle.forward(x)
