@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Names &mdash; Introduction to Programming with Python</title>
+    <title>Variables &mdash; Introduction to Programming with Python</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="User-defined funtions" href="functions.html" />
+    <link rel="next" title="User-defined functions" href="functions.html" />
     <link rel="prev" title="Simple drawing with turtle" href="simple_drawing.html" /> 
   </head>
   <body>
@@ -33,7 +33,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined funtions"
+          <a href="functions.html" title="User-defined functions"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="simple_drawing.html" title="Simple drawing with turtle"
@@ -47,18 +47,17 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="names">
-<h1>Names<a class="headerlink" href="#names" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Whew. Experimenting with the angles requires you to change three different
 places each time. Imagine you&#8217;d want to experiment with the square sizes, let
 alone with rectangles! We can do better than that.</p>
-<p>This is where names come into play: You can tell Python that from now on,
-whenever you refer to a name, you actually mean something else. That concept
+<p>This is where variables come into play: You can tell Python that from now on,
+whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: <em>Let x be 5.</em>
-Then x*2 will obviously be 10. That&#8217;s why those names are known as variables,
-too.</p>
+Then <tt class="docutils literal"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">2</span></tt> will obviously be <tt class="docutils literal"><span class="pre">10</span></tt>.</p>
 <p>In Python syntax, that very statement translates to:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
@@ -70,12 +69,12 @@ too.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You can not only save numbers in variables, like we did here for &#8220;x&#8221;,
-but you can actually save various kinds of things in them. A typical other
-thing you want to have store often is a &#8220;string&#8221; - a line of text. Strings
-are indicated with a starting and a leading &#8221;. You&#8217;ll learn about this and
-other types, as those are called in Python, and what you can do with them
-later on.</p>
+<p class="last">You can not only save numbers in variables, like we did here for
+<tt class="docutils literal"><span class="pre">x</span></tt>, but you can actually save various kinds of things in them. A typical
+other thing you want to have stored often is a <strong>string</strong> - a line of text.
+Strings are indicated with a starting and a leading <tt class="docutils literal"><span class="pre">\&quot;</span></tt> (double quote).
+You&#8217;ll learn about this and other types, as those are called in Python, and
+what you can do with them later on.</p>
 </div>
 </div>
 <div class="section" id="a-variable-called-angle">
@@ -117,9 +116,9 @@ much faster with our tilted squares program?</p>
 <p>Draw a house.</p>
 <img alt="_images/house.png" src="_images/house.png" />
 <p>You can calculate the length of the diagonal line with Pythagoras. That value is
-a good candidate for a name binding. To calculate the square root of a number in
+a good candidate for a variable. To calculate the square root of a number in
 Python, import the <em>math</em> module and use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The
-square of a number is calculated with the <tt class="docutils literal"><span class="pre">\*\*</span></tt> operator:</p>
+square of a number is calculated with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -137,7 +136,7 @@ square of a number is calculated with the <tt class="docutils literal"><span cla
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Names</a><ul>
+<li><a class="reference internal" href="#">Variables</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#a-variable-called-angle">A variable called angle</a><ul>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
@@ -158,7 +157,7 @@ square of a number is calculated with the <tt class="docutils literal"><span cla
                         title="previous chapter">Simple drawing with turtle</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="functions.html"
-                        title="next chapter">User-defined funtions</a></p>
+                        title="next chapter">User-defined functions</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -180,7 +179,7 @@ square of a number is calculated with the <tt class="docutils literal"><span cla
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined funtions"
+          <a href="functions.html" title="User-defined functions"
              >next</a></li>
         <li class="right" >
           <a href="simple_drawing.html" title="Simple drawing with turtle"

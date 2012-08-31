@@ -1,5 +1,5 @@
-Names
-*****
+Variables
+*********
 
 Introduction
 ============
@@ -8,11 +8,10 @@ Whew. Experimenting with the angles requires you to change three different
 places each time. Imagine you'd want to experiment with the square sizes, let
 alone with rectangles! We can do better than that.
 
-This is where names come into play: You can tell Python that from now on,
-whenever you refer to a name, you actually mean something else. That concept
+This is where variables come into play: You can tell Python that from now on,
+whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: *Let x be 5.*
-Then x*2 will obviously be 10. That's why those names are known as variables,
-too.
+Then ``x * 2`` will obviously be ``10``.
 
 In Python syntax, that very statement translates to::
 
@@ -24,12 +23,12 @@ After that statement, if you do ``print(x)``, it will actually output its value
     turtle.forward(x)
 
 
-.. note:: You can not only save numbers in variables, like we did here for "x",
-   but you can actually save various kinds of things in them. A typical other
-   thing you want to have store often is a "string" - a line of text. Strings
-   are indicated with a starting and a leading \". You'll learn about this and
-   other types, as those are called in Python, and what you can do with them
-   later on.
+.. note:: You can not only save numbers in variables, like we did here for
+   ``x``, but you can actually save various kinds of things in them. A typical
+   other thing you want to have stored often is a **string** - a line of text.
+   Strings are indicated with a starting and a leading ``\"`` (double quote).
+   You'll learn about this and other types, as those are called in Python, and
+   what you can do with them later on.
 
 A variable called angle
 =======================
@@ -77,9 +76,9 @@ Draw a house.
 .. image:: /images/house.png
 
 You can calculate the length of the diagonal line with Pythagoras. That value is
-a good candidate for a name binding. To calculate the square root of a number in
+a good candidate for a variable. To calculate the square root of a number in
 Python, import the *math* module and use the ``math.sqrt()`` function. The
-square of a number is calculated with the ``\*\*`` operator::
+square of a number is calculated with the ``**`` operator::
 
     import math
 

@@ -9,7 +9,7 @@ Table of contents:
    
     getting_started
     simple_drawing
-    names
+    variables
     functions
     loops
     functions_parameters

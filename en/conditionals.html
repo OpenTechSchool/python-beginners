@@ -51,13 +51,15 @@
 <h1>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful is conditional statements. This is the ability to <em>test</em> a variable (or a name) against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
+<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful are conditional statements. This is the ability to <em>test</em> a variable against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
 <p>To know if a condition is <em>True</em> of <em>False</em>, we need a new type of data:
 the booleans. They allow logical operations.
-A logic statement or operation can be evaluated to be <em>true</em> or <em>false</em>.
+A logic statement or operation can be evaluated to be <em>True</em> or <em>False</em>.
 Our conditional statement can then be understood like this:</p>
-<p><strong>if</strong> <em>(evaluation of a condition returns true)</em> <strong>then</strong> <em>do some operation</em> <strong>else</strong> <em>do an other operation</em>.
-And any operation that can be evaluated as <em>true</em> or <em>false</em> can but put to the test. All comparisons return <em>true</em> or <em>false</em>: <em>=,&gt;,&lt;</em>.</p>
+<p><strong>if</strong> <em>(evaluation of a condition returns true)</em> <strong>then</strong> <em>do some operation</em>
+<strong>else</strong> <em>do an other operation</em>. And any operation that can be evaluated as
+<em>True</em> or <em>False</em> can be put to the test. All comparisons return <em>True</em> or
+<em>False</em>: <tt class="docutils literal"><span class="pre">==</span></tt>, <tt class="docutils literal"><span class="pre">&gt;</span></tt>, <tt class="docutils literal"><span class="pre">&lt;</span></tt>.</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -82,14 +84,14 @@ And any operation that can be evaluated as <em>true</em> or <em>false</em> can b
 <h2>Condition an action<a class="headerlink" href="#condition-an-action" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Let&#8217;s try to make our turtle to stop when it reaches the end
-of the window. Let&#8217;s only take into account horizontal movements.
-We want the turtle to go forward for a specified distance (taken as a function parameter) until it reaches this distance, or stop and turn around if it reaches the border of the screen.</p>
+<p>Let&#8217;s try to make our turtle stop when it reaches the end of the window. Let&#8217;s
+only take into account horizontal movements. We want the turtle to go forward
+for a specified distance (taken as a function parameter) until it reaches this
+distance and stops.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <ul class="last simple">
 <li>We start from the center of the screen, which has coordinate (0;0)</li>
-<li>We won&#8217;t turn, until we reach the boundary our turtle wants to get away as quickly as possible</li>
 <li>We can get the x coordinate of our turtle with the function <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt></li>
 <li>We can get the width of the screen with the function <tt class="docutils literal"><span class="pre">turtle.window_width()</span></tt></li>
 </ul>
@@ -104,7 +106,6 @@ We want the turtle to go forward for a specified distance (taken as a function p
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">())</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

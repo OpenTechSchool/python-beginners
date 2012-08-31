@@ -28,14 +28,17 @@ Before you can use turtle, you have to import it::
 .. image:: /images/left.png
 
 
-The ``turtle.forward(...)`` function takes the number of pixels which you want
-to move forward, ``turtle.left(...)`` takes a number of degrees which you want
+The ``turtle.forward(...)`` function tells the turtle to move forward 
+by the given distance. ``turtle.left(...)`` takes a number of degrees which you want
 to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
 
 If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement. To prevent that, just
-put ``turtle.exitonclick()`` at the bottom of your file::
+put ``turtle.exitonclick()`` at the bottom of your file. Now you can click on
+the window to close it.
+
+::
 
     import turtle
 
@@ -78,9 +81,9 @@ Bonus
 -----
 
 If you want to get creative, you can modify your shape with the
-``turtle.width(...)`` and ``turtle.color(...)`` functions.  If you cannot
-figure out the *signature* of a function (that is the syntax and semantics of
-it, say, number of parameters and their meaning) you can use ``help(color)``.
+``turtle.width(...)`` and ``turtle.color(...)`` functions.  If you cannot figure
+out the *signature* of a function (that is the syntax and semantics of it, say,
+number of parameters and their meaning) you can use ``help(turtle.color)``.
 
 .. caution::
 
@@ -114,7 +117,7 @@ Solution
 Bonus
 -----
 
-How about a triangle?  (A triangle with 120 degrees angles will have all legs
+How about a triangle?  (A triangle with 120 degrees angles will have all sides
 equally sized.)
 
 
