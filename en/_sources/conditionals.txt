@@ -21,10 +21,10 @@ Here are some simple examples::
 
     condition = True
     if condition:
-        print "condition met"
+        print("condition met")
 
     if not condition:
-        print "condition not met"
+        print("condition not met")
 
     direction = -30
     if direction > 0 :

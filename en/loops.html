@@ -55,7 +55,7 @@
 concept in Python called looping, which we will elaborate later on. For now,
 take that easy example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s">&quot;Hello!&quot;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -64,17 +64,17 @@ take that easy example:</p>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <p>Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the <tt class="docutils literal"><span class="pre">turtle.up()</span></tt> function;  put it back on the ground with
-<tt class="docutils literal"><span class="pre">turtle.down()</span></tt>.</p>
+with the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function;  put it back on the ground with
+<tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">up</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">down</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
