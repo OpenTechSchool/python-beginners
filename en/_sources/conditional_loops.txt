@@ -10,7 +10,7 @@ conditional loops are defined with the ``while`` statement::
 
     counter = 0
     while counter < 10:
-        print "in the loop"
+        print("in the loop")
         counter += 1
 
 Move until condition is met

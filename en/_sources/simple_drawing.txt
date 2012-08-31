@@ -33,6 +33,16 @@ to move forward, ``turtle.left(...)`` takes a number of degrees which you want
 to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
 
+If you put the commands into a file, you might have recognized that the turtle
+window vanishes after the turtle finished its movement. To prevent that, just
+put ``turtle.exitonclick()`` at the bottom of your file::
+
+    import turtle
+
+    turtle.forward(25)
+
+    turtle.exitonclick()
+
 Drawing a square
 ================
 

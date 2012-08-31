@@ -18,16 +18,17 @@ It is a logical operator::
 
     x = False
     if not x :
-        print "conditon met"
+        print("conditon met")
     else:
-        print "condition not met"
+        print("condition not met")
 
 Exercise
 --------
 
 The turtle gives us a useful function to know if it is writing or not: ``turtle.isdown()``.
 This function returns *True* if the turtle is writing. As we have seen earlier, the function
-``penup()`` and ``pendown()`` toggle between writing while moving, or just moving without a trace.
+``turtle.penup()`` and ``turtle.pendown()`` toggle between writing while moving,
+or just moving without a trace.
 
 Can we write a method that only goes forward if the pen is up?
 
@@ -38,7 +39,7 @@ Solution
 
     def stealthed_forward(distance):
         if not turtle.isdown():
-            forward(distance)
+            turtle.forward(distance)
 
 
 
@@ -46,18 +47,18 @@ Solution
 This and that or something else
 ===============================
 
-Two easy to understand operators are ``and`` and ``or``. They do exactly whay
-the sound like: combine two statements in a way both have be true (``and``) or
+Two easy to understand operators are ``and`` and ``or``. They do exactly what
+they sound like: combine two statements in a way both have be true (``and``) or
 at least one of them has to be true (``or``)::
 
     if 1 < 2 and 4 > 2:
-        print "condition met"
+        print("condition met")
 
     if 1 < 2 and 4 < 10:
-        print "condition not met"
+        print("condition not met")
 
     if 4 < 10 or 1 < 2:
-        print "condition met"
+        print("condition met")
 
 You are not restricted to one logical operator. You can combine as may as you
 want.

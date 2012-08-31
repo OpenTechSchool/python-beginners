@@ -71,6 +71,16 @@ can move the turtle around.</p>
 to move forward, <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you want
 to rotate to the left. (There are <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
 <tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.)</p>
+<p>If you put the commands into a file, you might have recognized that the turtle
+window vanishes after the turtle finished its movement. To prevent that, just
+put <tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> at the bottom of your file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="drawing-a-square">
 <h2>Drawing a square<a class="headerlink" href="#drawing-a-square" title="Permalink to this headline">¶</a></h2>
