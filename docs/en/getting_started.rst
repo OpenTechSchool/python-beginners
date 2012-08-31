@@ -28,8 +28,13 @@ press <enter> and see what happens. You will now see the phrase "Hello world" ap
 Running Python files
 ====================
 
-But you don't want to type everything into the Python shell everytime but have a file with commands for Python to execute instead. In order to do that you can just pass a file name to the Python command in your shell and it will execute that file. Let's try that. Just open the file "hello.py" in this directory in your favourite text editor and paste the print command from above. Now save that file, go back the command line and type::
-would be much berrbut have a file with commands for Python to execute instead. In order to do that you can just pass a file name to the Python command in your shell and it will execute that file. Let's try that. Just open the file "hello.py" in this directory in your favourite text editor and paste the print command from above. Now save that file, go back the command line and type::
+But you don't want to type everything into the Python shell everytime. Instead
+having a file with commands and handing that to Python to execute it would be
+much better. In order to do that you can just pass a file name to the Python
+command in your shell and it will execute that file. Let's try that. Just open
+the file "hello.py" in this directory in your favourite text editor and paste
+the print command from above. Now save that file, go back the command line and
+type::
 
   Python hello.py
 
