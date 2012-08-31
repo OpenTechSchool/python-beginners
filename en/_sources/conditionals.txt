@@ -33,7 +33,7 @@ Here are some simple examples::
         turtle.forward(direction)
     else:
         turtle.left(180)
-        turtle.forward (-direction)
+        turtle.forward(-direction)
 
 Condition an action
 ===================
