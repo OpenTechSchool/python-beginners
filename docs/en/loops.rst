@@ -18,8 +18,8 @@ Exercise
 --------
 
 Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the ``turtle.up()`` function;  put it back on the ground with
-``turtle.down()``.
+with the ``turtle.penup()`` function;  put it back on the ground with
+``turtle.pendown()``.
 
 .. image:: /images/dashed.png
 
@@ -30,9 +30,9 @@ Solution
 
     for i in range(10):
         turtle.forward(15)
-        turtle.up()
+        turtle.penup()
         turtle.forward(5)
-        turtle.down()
+        turtle.pendown()
 
 Bonus
 -----
