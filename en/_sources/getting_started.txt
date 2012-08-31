@@ -20,7 +20,7 @@ Those three ">>>" in the last line indicate that you are now in the interactive 
 
   print("Hello world")
 
-press <enter> and see what happens. You will now see the phrase "Hello world" appear and then Python will bring you back to the interactive input, where you could enter another command now::
+Press <enter> and see what happens. You will now see the phrase "Hello world" appear and then Python will bring you back to the interactive input, where you could enter another command now::
 
   >>> print("Hello world")
   Hello world

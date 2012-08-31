@@ -22,7 +22,7 @@ A function can be defined with the ``def`` keyword in Python::
         turtle.forward(50)
         turtle.backward(50)
 
-You can access names in functions as well::
+You can access variables in functions as well::
 
     size = 50
     def line_without_moving():
