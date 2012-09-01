@@ -84,7 +84,6 @@ Solution
             future_x_coord = turtle.xcor() + distance
         else:
             future_x_coord = turtle.xcor() - distance
-     
         diff = turtle.window_width()/2 - future_x_coord
         if  diff > 0 :
             turtle.forward(distance)
