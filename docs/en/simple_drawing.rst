@@ -11,6 +11,8 @@ can move the turtle around.
 
 Before you can use turtle, you have to import it::
 
+Note that these commands do not display anything yet because the turtle window vanishes, read along to see how to fix that.
+
     import turtle
 
 .. image:: /images/default.png
