@@ -35,8 +35,8 @@ to rotate to the left. (There are ``turtle.backward(...)`` and
 
 If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement. To prevent that, just
-put ``turtle.exitonclick()`` at the bottom of your file. Now you can click on
-the window to close it.
+put ``turtle.exitonclick()`` at the bottom of your file. Now the window stays
+open until you click on it.
 
 ::
 

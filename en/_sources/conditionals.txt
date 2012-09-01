@@ -70,8 +70,9 @@ Bonus exercise
 Now when the turtle reaches the end of the screen, it turns around and 
 continue its movement in the other direction, the remaining of the distance
 
-.. note::
- * turtle.heading() gives you the current angle the turtle's direction makes with the original east facing turtle. (a turtle going straight up has a heading of 90 degrees)
+.. note:: ``turtle.heading()`` gives you the current angle the turtle's
+   direction makes with the original east facing turtle. A turtle going
+   straight up has a heading of 90 degrees.
 
 Solution
 --------
