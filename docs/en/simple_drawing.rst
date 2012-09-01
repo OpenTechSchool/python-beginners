@@ -85,6 +85,8 @@ If you want to get creative, you can modify your shape with the
 out the *signature* of a function (that is the syntax and semantics of it, say,
 number of parameters and their meaning) you can use ``help(turtle.color)``.
 
+Press the `q` key to exit the help again.
+
 .. caution::
 
     If you misdrew anything, you can tell turtle to erase its drawing board
