@@ -29,11 +29,13 @@ You can access variables in functions as well::
         turtle.forward(size)
         turtle.backward(size)
 
-.. note:: Python uses *whitespace to identify blocks of code* belonging
-   together. While other languages use special characters (like curly brackets)
+.. Very Important Note:: Python uses *whitespace to identify blocks of code* belonging
+   together. While other languages use special characters (like curly brackets {})
    in Python a block is introduced with a colon at the end of the line and
    commands within a deeper indentation level - usually 4 spaces. The block ends
    with the first line with a lesser indentation level.
+   
+   If you mix up tabs and spaces the interpreter is going to complain. Make sure to always use one or the other.
 
 A function for a square
 =======================
