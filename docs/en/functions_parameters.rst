@@ -1,5 +1,6 @@
 Functions with parameters
 *************************
+
 Introduction
 ============
 
@@ -12,7 +13,8 @@ That is why we need to be able to give parameters, or also called *arguments*
 so that *variables* we use in the function can be used with different values
 each time we call the function:
 
-Remember how we defined the function ``line_without_moving`` in the previous section::
+Remember how we defined the function ``line_without_moving()`` in the previous
+section::
 
     def line_without_moving():
         turtle.forward(50)
@@ -32,7 +34,7 @@ parameter to have like this::
     line_without_moving(40)
 
 We have been using functions with parameters since the beginning of the
-tutorial with the *forward*, *left*, etc... 
+tutorial with ``turtle.forward()``, ``turtle.left()``, etc... 
 
 And we can put as many arguments (or parameters) as we want, separating them
 with commas and giving them different names::

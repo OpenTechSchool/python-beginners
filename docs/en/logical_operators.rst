@@ -5,7 +5,7 @@ Introduction
 ============
 
 Conditionals are a nice way to make decisions by asking if something equals
-True or not. But often one condition is not enough. 
+*True* or not. But often one condition is not enough. 
 We may want to take the opposite of our result. Or for instance if we want to
 make a decision upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine
 them. This can be done with logical operators. 
@@ -25,10 +25,10 @@ It is a logical operator::
 Exercise
 --------
 
-The turtle gives us a useful function to know if it is drawing or not: ``turtle.isdown()``.
-This function returns *True* if the turtle is drawing. As we have seen earlier, the function
-``turtle.penup()`` and ``turtle.pendown()`` toggle between writing while moving,
-or just moving without a trace.
+The turtle gives us a useful function to know if it is drawing or not:
+``turtle.isdown()``.  This function returns *True* if the turtle is drawing. As
+we have seen earlier, the function ``turtle.penup()`` and ``turtle.pendown()``
+toggle between drawing while moving, or just moving without a trace.
 
 Can we write a function that only goes forward if the pen is up?
 
@@ -46,8 +46,8 @@ This and that or something else
 ===============================
 
 Two easy to understand operators are ``and`` and ``or``. They do exactly what
-they sound like: combine two statements in a way both have be true (``and``) or
-at least one of them has to be true (``or``)::
+they sound like: combine two statements in a way both have be *True* (``and``)
+or at least one of them has to be *True* (``or``)::
 
     if 1 < 2 and 4 > 2:
         print("condition met")
