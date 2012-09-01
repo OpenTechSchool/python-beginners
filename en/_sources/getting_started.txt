@@ -4,7 +4,7 @@ Getting started
 Starting Python
 ===============
 
-After installing Python on your system successfully, you can start the interactive Python prompt by typing ``python`` in the command and press <enter>. It will show you some context information about Python similar to this
+After installing Python on your system successfully, you can start the interactive Python prompt by typing ``python`` in the command line and press <enter>. It will show you some context information about Python similar to this:
 
 .. code-block:: bash
 
@@ -14,9 +14,9 @@ After installing Python on your system successfully, you can start the interacti
   >>> 
 
 
-.. note:: On windows the installer is not always setting up the "path" correctly. If that is the case on your system, you probably didn't see this message before but have to follow the steps described on the `Python docs <http://docs.python.org/using/windows.html#excursus-setting-environment-variables>`_ and **restart your command line**.
+.. note:: On Windows the installer is not always setting up the "path" correctly. If that is the case on your system, you probably didn't see this message before but have to follow the steps described on the `Python docs <http://docs.python.org/using/windows.html#excursus-setting-environment-variables>`_ and **restart your command line**.
 
-Those three ">>>" in the last line indicate that you are now in the interactive shell of Python. Type for example::
+Those three ``>>>`` in the last line indicate that you are now in the interactive shell of Python. Type for example::
 
   print("Hello world")
 
@@ -26,7 +26,7 @@ Press <enter> and see what happens. You will now see the phrase "Hello world" ap
   Hello world
   >>>
 
-.. TODO: exit interpreter
+To leave the interactive shell, press *ctrl* + *D*.
 
 Running Python files
 ====================
@@ -50,8 +50,3 @@ instead of going back to the interactive shell.
 .. note:: Wordpad, TextEdit, Notepad and Word are **not** suited text editors. If you are unsure whether you already have a usable editor, you might want to download and install `Sublime Text2 <http://www.sublimetext.com/>`_. Sophisticated editors like this also take care of identation and help you run and debug your code.
 
 And now we are all set and can get started with turtle.
-
-		
-
-
-

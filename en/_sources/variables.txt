@@ -11,7 +11,7 @@ alone with rectangles! We can do better than that.
 This is where variables come into play: You can tell Python that from now on,
 whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: *Let x be 5.*
-Then ``x * 2`` will obviously be ``10``.
+Then *x \* 2* will obviously be *10*.
 
 In Python syntax, that very statement translates to::
 
@@ -26,7 +26,7 @@ After that statement, if you do ``print(x)``, it will actually output its value
 .. note:: You can not only save numbers in variables, like we did here for
    ``x``, but you can actually save various kinds of things in them. A typical
    other thing you want to have stored often is a **string** - a line of text.
-   Strings are indicated with a starting and a leading ``\"`` (double quote).
+   Strings are indicated with a starting and a leading ``"`` (double quote).
    You'll learn about this and other types, as those are called in Python, and
    what you can do with them later on.
 
