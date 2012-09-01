@@ -11,6 +11,8 @@ can move the turtle around.
 
 Before you can use turtle, you have to import it::
 
+Note that these commands do not display anything yet because the turtle window vanishes, read along to see how to fix that.
+
     import turtle
 
 .. image:: /images/default.png
@@ -84,6 +86,8 @@ If you want to get creative, you can modify your shape with the
 ``turtle.width(...)`` and ``turtle.color(...)`` functions.  If you cannot figure
 out the *signature* of a function (that is the syntax and semantics of it, say,
 number of parameters and their meaning) you can use ``help(turtle.color)``.
+
+Press the `q` key to exit the help again.
 
 .. caution::
 
