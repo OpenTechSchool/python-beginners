@@ -18,7 +18,7 @@ It is a logical operator::
 
     x = False
     if not x :
-        print("conditon met")
+        print("condition met")
     else:
         print("condition not met")
 
