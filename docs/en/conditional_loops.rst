@@ -12,6 +12,8 @@ conditional loops are defined with the ``while`` statement::
     while counter < 10:
         print("in the loop")
         counter += 1
+        
+The `+=' operator is an inplace increment and it is a short way of saying `counter = counter + 1` in the above statement.
 
 Move until condition is met
 ===========================
