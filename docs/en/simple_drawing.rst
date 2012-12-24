@@ -92,7 +92,8 @@ Press the :kdb:`q` key to exit the help again.
 .. caution::
 
     If you misdrew anything, you can tell turtle to erase its drawing board
-    with the ``turtle.reset()`` directive.
+    with the ``turtle.reset()`` directive or undo the most recent step with
+    ``turtle.undo()``.
 
 .. tip::
 
