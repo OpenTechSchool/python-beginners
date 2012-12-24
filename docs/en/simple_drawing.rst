@@ -94,8 +94,8 @@ Press the `q` key to exit the help again.
     If you misdrew anything, you can tell turtle to erase its drawing board
     with the ``turtle.reset()`` directive.
 
-Drawing a rect
-==============
+Drawing a rectangle
+===================
 
 Exercise
 --------
