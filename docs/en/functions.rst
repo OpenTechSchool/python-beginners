@@ -49,6 +49,28 @@ Exercise
 Write a function that draws a square. Can you see how you could improve the
 tilted squares program with that and greatly relieve experimentation?
 
+Solution
+--------
+
+::
+
+    def tilted_square():
+      turtle.left(angle)
+
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+
+    angle = 20            # <--
+    tilted_square()
+    tilted_square()
+    tilted_square()
+
 
 A function for a hexagon
 ========================
