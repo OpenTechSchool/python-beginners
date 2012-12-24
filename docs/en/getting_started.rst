@@ -68,4 +68,9 @@ it exited instead of going back to the interactive shell.
 
 And now we are all set and can get started with turtle!
 
+.. important::
 
+   When playing around with turtle, avoid naming your file :file:`turtle.py`
+   --- rather use more appropriate names such as :file:`square.py` or
+   :file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python
+   will pick up *your* file instead of the standard turtle.
