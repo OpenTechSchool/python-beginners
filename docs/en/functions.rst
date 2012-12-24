@@ -12,9 +12,9 @@ Functions are one way to express abstractions in Python. Let's take
 ``turtle.reset()`` for example. It is actually an abstraction for a number of
 steps, namely:
 
-* Erase the drawing board
-* Set the width and color back to default
-* Move the turtle back to its initial position
+* Erase the drawing board.
+* Set the width and color back to default.
+* Move the turtle back to its initial position.
 
 A function can be defined with the ``def`` keyword in Python::
 
