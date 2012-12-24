@@ -94,6 +94,15 @@ Press the :kdb:`q` key to exit the help again.
     If you misdrew anything, you can tell turtle to erase its drawing board
     with the ``turtle.reset()`` directive.
 
+.. tip::
+
+   As you might have read in the help, you can modify the color with
+   :samp:`turtle.color({colorstring})`.  These include but are not limited to
+   "red," "green," and "violet."  See the `colors manual`__ for an extensive
+   list.
+
+   __ http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
+
 Drawing a rectangle
 ===================
 
