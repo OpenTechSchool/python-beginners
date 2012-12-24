@@ -41,6 +41,20 @@ Can you make the dashes become larger as the line progresses?
 
 .. image:: /images/dashedprogressing.png
 
+.. hint::
+
+   Feeling lost?  Inspect ``i`` at every run of the loop::
+
+       for i in range(10):
+           print i
+           turtle.forward(15)
+           turtle.penup()
+           turtle.forward(5)
+           turtle.pendown()
+
+    Can you utilize ``i`` --- commonly called the index variable or loop
+    variable --- to get increasing step sizes?
+
 Honeycomb loops
 ===============
 
