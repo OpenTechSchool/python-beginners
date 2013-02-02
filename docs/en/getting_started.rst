@@ -52,7 +52,26 @@ file, go back the command line and type:
 
 .. code-block:: bash
 
-    python hello.py
+   python hello.py
+
+.. note::
+
+   Not getting "Hello world" but some crazy error about "can't open file" or
+   "No such file or directory?"  Probably your command line is not running in
+   the directory you saved the file in;  you can change your active directory
+   with the :command:`cd` command::
+
+     cd Python_Exercises
+
+   This changes to the subdirectory Python_Exercises of the currently active
+   directory.  If you don't know which directory your shell is currently
+   running in use :command:`pwd` on Linux or :command:`cd` without parameters
+   on Windows.
+
+   If you need to change your drive on Windows, just type the drive's letter
+   followed by a colon::
+
+     C:
 
 When pressing :kbd:`<Enter>` now, the file is executed and you see the output
 as before.  But this time, after Python executed all commands from that file,
