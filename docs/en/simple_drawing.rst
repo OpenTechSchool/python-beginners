@@ -17,6 +17,11 @@ required to make it work from files)::
 
 .. image:: /images/default.png
 
+.. note::
+
+   Not seeing anything on Mac OS?  Try looking if a new window opened behind
+   your command line.
+
 ::
 
     turtle.forward(25)
