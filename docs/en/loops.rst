@@ -22,6 +22,14 @@ once.  But it gets better::
 Notice how we write only one line of code using ``i`` but it has 10 different
 values?
 
+You can also loop over elements of your choice (mathematicians call this
+"extensional sets")::
+
+    for i in 5, 7, 11, 13:
+        print(i)
+
+:function:`range(n)` can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+
 Drawing a dashed line
 =====================
 
