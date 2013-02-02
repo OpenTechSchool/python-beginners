@@ -42,13 +42,15 @@ To leave the interactive shell, press :kbd:`Ctrl-D`.
 Running Python files
 ====================
 
-But you don't want to type everything into the Python shell every time.  Instead
-having a file with commands and handing that to Python to execute it would be
-much better.  In order to do that you can just pass a file name to the
-:program:`python` command in your shell and it will execute that file.  Let's
-try that.  Create a file :file:`hello.py` in your current directory with your
-favorite text editor and paste the print command from above.  Now save that
-file, go back the command line and type:
+But you don't want to type everything into the Python shell every time.
+Instead having a file with commands and handing that to Python to execute would
+be much better.  In order to do that you can just pass a file name to the
+:program:`python` executable and it will execute that file instead of launching
+the interactive interpreter.
+
+Let's try that.  Create a file :file:`hello.py` in your current directory with
+your favorite text editor and paste the print command from above.  Now save
+that file, go back the command line and type:
 
 .. code-block:: bash
 
@@ -74,10 +76,10 @@ file, go back the command line and type:
      C:
 
 When pressing :kbd:`<Enter>` now, the file is executed and you see the output
-as before.  But this time, after Python executed all commands from that file,
-it exited instead of going back to the interactive shell. 
+as before.  But this time, after Python finished executing all commands from
+that file it exits instead of going back to the interactive shell.
 
-.. note::
+.. tip::
 
    Wordpad, TextEdit, Notepad, and Word are **not** suited text editors.  If
    you are unsure whether you already have a usable editor, you might want to
