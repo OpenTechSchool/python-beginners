@@ -9,9 +9,9 @@ Turtle is like a drawing board.
 It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
 can move the turtle around.
 
-Before you can use turtle, you have to import it::
-
-Note that these commands do not display anything yet because the turtle window vanishes, read along to see how to fix that.
+Before you can use turtle, you have to import it (we'd recommend playing around
+with it in the interactive interpreter first, there is an extra bit of work
+required to make it work from files)::
 
     import turtle
 
@@ -36,11 +36,11 @@ to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
 
 If you put the commands into a file, you might have recognized that the turtle
-window vanishes after the turtle finished its movement. To prevent that, just
-put ``turtle.exitonclick()`` at the bottom of your file. Now the window stays
-open until you click on it.
-
-::
+window vanishes after the turtle finished its movement.  (That is because
+Python exits when your turtle has finished moving.  Since the turtle window
+belongs to Python, it terminates as well.)  To prevent that, just put
+``turtle.exitonclick()`` at the bottom of your file.  Now the window stays open
+until you click on it::
 
     import turtle
 
