@@ -129,3 +129,9 @@ Solution
     turtle.forward(100)
     turtle.right(60)
 
+You could also put the ``turtle.forward(100); turtle.right(60)`` portion in the
+function, but you better not call it ``hexagon`` in that case.  That's
+misleading because it actually draws a hexagon and then advances to a position
+where another hexagon would make sense in order to draw a honeycomb.  If you
+ever wanted to reuse your hexagon function outside of honeycombs, that would be
+confusing at least.
