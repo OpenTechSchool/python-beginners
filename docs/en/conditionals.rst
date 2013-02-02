@@ -35,21 +35,22 @@ Here are some simple examples::
         turtle.left(180)
         turtle.forward(-direction)
 
-Condition an action
-===================
+Go forward, but not too much
+============================
 
 Exercise
 --------
 
-Let's try to make our turtle stop when it reaches the end of the window. Let's
-only take into account horizontal movements. We want the turtle to go forward
-for a specified distance (taken as a function parameter) until it reaches this
-distance and stops.
+Let's try to make our turtle stop when it reaches the end of the window.  For
+now, we will only take horizontal movements into account.  We want the turtle
+to go forward for a specified distance (taken as a function parameter) until it
+reaches this distance and stops.
 
 .. note::
- * We start from the center of the screen, which has coordinate (0;0)
- * We can get the x coordinate of our turtle with the function ``turtle.xcor()``
- * We can get the width of the screen with the function ``turtle.window_width()``
+
+  * We start from the center of the screen, which has coordinate (0;0)
+  * We can get the x coordinate of our turtle with the function ``turtle.xcor()``
+  * We can get the width of the screen with the function ``turtle.window_width()``
 
 Solution
 --------
