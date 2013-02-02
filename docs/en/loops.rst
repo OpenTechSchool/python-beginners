@@ -11,6 +11,17 @@ take this easy example::
     for i in range(10):
         print("Hello!")
 
+This is incredibly helpful if we want to do something multiple times --- say,
+drawing the individual border lines of a shape --- but only want to write it
+once.  But it gets better::
+
+    for i in range(10):
+        print(i)
+
+
+Notice how we write only one line of code using ``i`` but it has 10 different
+values?
+
 Drawing a dashed line
 =====================
 
