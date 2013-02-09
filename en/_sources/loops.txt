@@ -11,6 +11,25 @@ take this easy example::
     for i in range(10):
         print("Hello!")
 
+This is incredibly helpful if we want to do something multiple times --- say,
+drawing the individual border lines of a shape --- but only want to write it
+once.  But it gets better::
+
+    for i in range(10):
+        print(i)
+
+
+Notice how we write only one line of code using ``i`` but it has 10 different
+values?
+
+You can also loop over elements of your choice (mathematicians call this
+"extensional sets")::
+
+    for i in 5, 7, 11, 13:
+        print(i)
+
+:function:`range(n)` can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+
 Drawing a dashed line
 =====================
 
@@ -40,6 +59,20 @@ Bonus
 Can you make the dashes become larger as the line progresses?
 
 .. image:: /images/dashedprogressing.png
+
+.. hint::
+
+   Feeling lost?  Inspect ``i`` at every run of the loop::
+
+       for i in range(10):
+           print i
+           turtle.forward(15)
+           turtle.penup()
+           turtle.forward(5)
+           turtle.pendown()
+
+    Can you utilize ``i`` --- commonly called the index variable or loop
+    variable --- to get increasing step sizes?
 
 Honeycomb loops
 ===============

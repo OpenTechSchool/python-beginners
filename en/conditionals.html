@@ -80,63 +80,37 @@ Our conditional statement can then be understood like this:</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="condition-an-action">
-<h2>Condition an action<a class="headerlink" href="#condition-an-action" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Let&#8217;s try to make our turtle stop when it reaches the end of the window. Let&#8217;s
-only take into account horizontal movements. We want the turtle to go forward
-for a specified distance (taken as a function parameter) until it reaches this
-distance and stops.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<ul class="last simple">
-<li>We start from the center of the screen, which has coordinate (0;0)</li>
-<li>We can get the x coordinate of our turtle with the function <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt></li>
-<li>We can get the width of the screen with the function <tt class="docutils literal"><span class="pre">turtle.window_width()</span></tt></li>
-</ul>
-</div>
-</div>
-<div class="section" id="solution">
-<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">stop_at_end_of_screen</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
-    <span class="n">diff</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">future_x_coord</span>
-    <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">())</span>
+<div class="section" id="giving-directions">
+<h2>Giving Directions<a class="headerlink" href="#giving-directions" title="Permalink to this headline">¶</a></h2>
+<p>Python turtles can be very good at following instructions. Let&#8217;s use
+the <tt class="docutils literal"><span class="pre">raw_input()</span></tt> function to ask the user for a direction to move
+the turtle. To keep things easy we will only accept two instructions:
+&#8220;left&#8221; and &#8220;right&#8221;.</p>
+<p>It&#8217;s much easier to define this as a function, like so:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
+    <span class="n">direction</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;left&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;right&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="bonus-exercise">
-<h3>Bonus exercise<a class="headerlink" href="#bonus-exercise" title="Permalink to this headline">¶</a></h3>
-<p>Now when the turtle reaches the end of the screen, it turns around and
-continue its movement in the other direction, the remaining of the distance</p>
+<p>Now whenever you use <tt class="docutils literal"><span class="pre">move()</span></tt> you are prompted to choose <tt class="docutils literal"><span class="pre">left</span></tt> or
+<tt class="docutils literal"><span class="pre">right</span></tt>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><tt class="docutils literal"><span class="pre">turtle.heading()</span></tt> gives you the current angle the turtle&#8217;s
-direction makes with the original east facing turtle. A turtle going
-straight up has a heading of 90 degrees.</p>
+<p class="last">The turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt> or <tt class="docutils literal"><span class="pre">right</span></tt> with
+no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">RIGHT</span></tt> might seem the same to a
+human, that isn&#8217;t the case when programming. Python has a few
+utility methods to help with that. A string has the methods
+<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
+everything lower-case. Try adding <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span>
+<span class="pre">direction.strip().lower()</span></tt> to see the effect. We often call this
+kind of code &#8220;data munging&#8221;, and it is very common.</p>
 </div>
-</div>
-<div class="section" id="id1">
-<h3>Solution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">uturn_at_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">future_x_coord</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">-</span> <span class="n">distance</span>
-    <span class="n">diff</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">future_x_coord</span>
-    <span class="k">if</span>  <span class="n">diff</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">())</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">-</span><span class="n">diff</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p>Can you add some extra instructions to the turtle? How about <tt class="docutils literal"><span class="pre">hexagon</span></tt>?</p>
 </div>
 </div>
 
@@ -151,13 +125,7 @@ straight up has a heading of 90 degrees.</p>
 <li><a class="reference internal" href="#">Conditional statements</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
-<li><a class="reference internal" href="#condition-an-action">Condition an action</a><ul>
-<li><a class="reference internal" href="#exercise">Exercise</a></li>
-<li><a class="reference internal" href="#solution">Solution</a></li>
-<li><a class="reference internal" href="#bonus-exercise">Bonus exercise</a></li>
-<li><a class="reference internal" href="#id1">Solution</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#giving-directions">Giving Directions</a></li>
 </ul>
 </li>
 </ul>

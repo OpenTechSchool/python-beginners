@@ -54,11 +54,18 @@
 <p>Turtle is like a drawing board.</p>
 <p>It has functions like <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> which
 can move the turtle around.</p>
-<p>Before you can use turtle, you have to import it:</p>
-<p>Note that these commands do not display anything yet because the turtle window vanishes, read along to see how to fix that.</p>
-<blockquote>
-<div>import turtle</div></blockquote>
+<p>Before you can use turtle, you have to import it (we&#8217;d recommend playing around
+with it in the interactive interpreter first, there is an extra bit of work
+required to make it work from files):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+</pre></div>
+</div>
 <img alt="_images/default.png" src="_images/default.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Not seeing anything on Mac OS?  Try looking if a new window opened behind
+your command line.</p>
+</div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -72,9 +79,11 @@ by the given distance. <tt class="docutils literal"><span class="pre">turtle.lef
 to rotate to the left. (There are <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
 <tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.)</p>
 <p>If you put the commands into a file, you might have recognized that the turtle
-window vanishes after the turtle finished its movement. To prevent that, just
-put <tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> at the bottom of your file. Now the window stays
-open until you click on it.</p>
+window vanishes after the turtle finished its movement.  (That is because
+Python exits when your turtle has finished moving.  Since the turtle window
+belongs to Python, it terminates as well.)  To prevent that, just put
+<tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> at the bottom of your file.  Now the window stays open
+until you click on it:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
@@ -114,24 +123,33 @@ position.  This will make it easier to draw multiple shapes later on.</p>
 <p>If you want to get creative, you can modify your shape with the
 <tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  If you cannot figure
 out the <em>signature</em> of a function (that is the syntax and semantics of it, say,
-number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt>.</p>
-<p>Press the <cite>q</cite> key to exit the help again.</p>
+number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> or
+browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
+<p>Press the <a href="#id2"><span class="problematic" id="id3">:kdb:`q`</span></a> key to exit the help again.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
-with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> directive.</p>
+with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> directive or undo the most recent step with
+<tt class="docutils literal"><span class="pre">turtle.undo()</span></tt>.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">As you might have read in the help, you can modify the color with
+<tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>.  These include but are not limited to
+&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colors manual</a> for an extensive
+list.</p>
 </div>
 </div>
 </div>
-<div class="section" id="drawing-a-rect">
-<h2>Drawing a rect<a class="headerlink" href="#drawing-a-rect" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="drawing-a-rectangle">
+<h2>Drawing a rectangle<a class="headerlink" href="#drawing-a-rectangle" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>Exercise<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Can you draw a (non-square) rectangle too?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id2">
-<h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Solution<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -143,23 +161,23 @@ with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></t
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Bonus<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>How about a triangle?  (A triangle with 120 degrees angles will have all sides
 equally sized.)</p>
 </div>
 </div>
 <div class="section" id="more-squares">
 <h2>More squares<a class="headerlink" href="#more-squares" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id4">
-<h3>Exercise<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Exercise<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Now, draw a tilted square.  And another one, and another one.  You can
 experiment with the angles between the individual squares.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>Try 20, 90 and 180 for example.</p>
 </div>
-<div class="section" id="id5">
-<h3>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Solution<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -214,15 +232,15 @@ experiment with the angles between the individual squares.</p>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#drawing-a-rect">Drawing a rect</a><ul>
-<li><a class="reference internal" href="#id1">Exercise</a></li>
-<li><a class="reference internal" href="#id2">Solution</a></li>
-<li><a class="reference internal" href="#id3">Bonus</a></li>
+<li><a class="reference internal" href="#drawing-a-rectangle">Drawing a rectangle</a><ul>
+<li><a class="reference internal" href="#id5">Exercise</a></li>
+<li><a class="reference internal" href="#id6">Solution</a></li>
+<li><a class="reference internal" href="#id7">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#more-squares">More squares</a><ul>
-<li><a class="reference internal" href="#id4">Exercise</a></li>
-<li><a class="reference internal" href="#id5">Solution</a></li>
+<li><a class="reference internal" href="#id8">Exercise</a></li>
+<li><a class="reference internal" href="#id9">Solution</a></li>
 </ul>
 </li>
 </ul>
