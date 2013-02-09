@@ -35,60 +35,37 @@ Here are some simple examples::
         turtle.left(180)
         turtle.forward(-direction)
 
-Condition an action
-===================
+Giving Directions
+=================
 
-Exercise
---------
+Python turtles can be very good at following instructions. Let's use
+the ``raw_input()`` function to ask the user for a direction to move
+the turtle. To keep things easy we will only accept two instructions:
+"left" and "right".
 
-Let's try to make our turtle stop when it reaches the end of the window. Let's
-only take into account horizontal movements. We want the turtle to go forward
-for a specified distance (taken as a function parameter) until it reaches this
-distance and stops.
+It's much easier to define this as a function, like so::
+
+  def move():
+      direction = raw_input("Go left or right? ")
+      if direction == "left":
+          turtle.left(60)
+          turtle.forward(50)
+      if direction == "right":
+          turtle.right(60)
+          turtle.forward(50)
+
+Now whenever you use ``move()`` you are prompted to choose ``left`` or
+``right``.
 
 .. note::
- * We start from the center of the screen, which has coordinate (0;0)
- * We can get the x coordinate of our turtle with the function ``turtle.xcor()``
- * We can get the width of the screen with the function ``turtle.window_width()``
 
-Solution
---------
+   The turtle will only respond to exactly ``left`` or ``right`` with
+   no variation. Though ``Left`` or ``RIGHT`` might seem the same to a
+   human, that isn't the case when programming. Python has a few
+   utility methods to help with that. A string has the methods
+   ``.strip()``, which removes whitespace and ``.lower()`` which makes
+   everything lower-case. Try adding ``direction =
+   direction.strip().lower()`` to see the effect. We often call this
+   kind of code "data munging", and it is very common.
 
-::
-
-    def stop_at_end_of_screen(distance):
-        future_x_coord = turtle.xcor() + distance
-        diff = turtle.window_width()/2 - future_x_coord
-        if  diff > 0 :
-            turtle.forward(distance)
-        else:
-            turtle.forward(turtle.window_width()/2 - turtle.xcor())
-
-Bonus exercise
---------------
-
-Now when the turtle reaches the end of the screen, it turns around and 
-continue its movement in the other direction, the remaining of the distance
-
-.. note:: ``turtle.heading()`` gives you the current angle the turtle's
-   direction makes with the original east facing turtle. A turtle going
-   straight up has a heading of 90 degrees.
-
-Solution
---------
-
-::
-
-    def uturn_at_border(distance):
-        if turtle.heading() == 0 :
-            future_x_coord = turtle.xcor() + distance
-        else:
-            future_x_coord = turtle.xcor() - distance
-        diff = turtle.window_width()/2 - future_x_coord
-        if  diff > 0 :
-            turtle.forward(distance)
-        else:
-            turtle.forward(turtle.window_width()/2 - turtle.xcor())
-            turtle.left(180)
-            turtle.forward(-diff)
-        
+Can you add some extra instructions to the turtle? How about ``hexagon``?
