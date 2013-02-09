@@ -82,7 +82,7 @@ Write a function that draws a hexagon.
 
 .. image:: /images/hexagon.png
 
-Now combine that function into a honeycomb.
+Now combine that function into a honeycomb. Just make it with a single layer like this:
 
 .. image:: /images/honeycomb.png
 
