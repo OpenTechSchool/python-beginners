@@ -22,6 +22,10 @@ A function can be defined with the ``def`` keyword in Python::
         turtle.forward(50)
         turtle.backward(50)
 
+This function we defined is called ``line_without_moving`` and it is
+an abstraction for two turtle steps - a move forward and a move
+backward.
+
 You can access variables in functions as well::
 
     size = 50
