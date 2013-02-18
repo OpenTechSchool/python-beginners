@@ -6,7 +6,7 @@ Introduction
 
 One more thing: Our programs often featured repetition. There is a powerful
 concept in Python called looping, which we will elaborate later on. For now,
-take this easy example::
+try this easy example::
 
     for i in range(10):
         print("Hello!")
@@ -73,8 +73,8 @@ Can you make the dashes become larger as the line progresses?
            turtle.forward(5)
            turtle.pendown()
 
-    Can you utilize ``i`` --- commonly called the index variable or loop
-    variable --- to get increasing step sizes?
+   Can you utilize ``i`` --- commonly called the index variable or loop
+   variable --- to get increasing step sizes?
 
 Honeycomb loops
 ===============

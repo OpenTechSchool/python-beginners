@@ -55,8 +55,9 @@ A function for a square
 Exercise
 --------
 
-Write a function that draws a square. Can you see how you could improve the
-tilted squares program with that and greatly relieve experimentation?
+Write a function that draws a square. Could you use this function to improve the
+tilted squares program? If you change the program to use a function, is it easier
+to experiment with?
 
 Solution
 --------

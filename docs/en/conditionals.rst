@@ -19,7 +19,8 @@ Our conditional statement can then be understood like this:
 Examples
 ========
 
-Here are some simple examples::
+Here are some examples. You may want to read them over line-by-line
+and see what you think they do, or run them to be certain::
 
     condition = True
     if condition:
