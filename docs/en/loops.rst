@@ -28,7 +28,9 @@ You can also loop over elements of your choice (mathematicians call this
     for i in 5, 7, 11, 13:
         print(i)
 
-:function:`range(n)` can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+If you want to know more about it, you can use the help in the Python shell by
+typing ``help(range)``. Use the :kbd:`q` key to exit the help again.
 
 Drawing a dashed line
 =====================
