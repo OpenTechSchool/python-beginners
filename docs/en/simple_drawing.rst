@@ -81,8 +81,10 @@ Solution
 
 .. note::
 
-    As per convention, we want to terminate all figures in our starting
-    position.  This will make it easier to draw multiple shapes later on.
+    Notice how the turtle starts and finishes in the same place and
+    facing the same direction, before and after drawing the
+    square. This is a useful convention to follow, it makes it easier
+    to draw multiple shapes later on.
 
 Bonus
 -----
