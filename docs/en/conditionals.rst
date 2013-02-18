@@ -11,10 +11,18 @@ the booleans. They allow logical operations.
 A logic statement or operation can be evaluated to be *True* or *False*.
 Our conditional statement can then be understood like this: 
 
-**if** *(evaluation of a condition returns true)* **then** *do some operation*
-**else** *do an other operation*. And any operation that can be evaluated as
-*True* or *False* can be put to the test. All comparisons return *True* or
-*False*: ``==``, ``>``, ``<``.
+    **if** *(a condition evaluates to True)*:
+        *then do these things only for 'True'*
+    **else**:
+        *otherwise do these things only for 'False'*.
+
+The condition can be anything that evaluates as *True* or
+*False*. Comparisons always return *True* or *False*, for example
+``==`` (equal to), ``>`` (greater than), ``<`` (less than.)
+
+The second **else** part is optional. If you leave it off, nothing
+will happen if the conditional evaluates to 'False'.
+
 
 Examples
 ========
