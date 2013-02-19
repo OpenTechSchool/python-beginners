@@ -66,15 +66,29 @@ It's much easier to define this as a function, like so::
 Now whenever you use ``move()`` you are prompted to choose ``left`` or
 ``right``.
 
-.. note::
 
-   The turtle will only respond to exactly ``left`` or ``right`` with
-   no variation. Though ``Left`` or ``RIGHT`` might seem the same to a
-   human, that isn't the case when programming. Python has a few
-   utility methods to help with that. A string has the methods
-   ``.strip()``, which removes whitespace and ``.lower()`` which makes
-   everything lower-case. Try adding ``direction =
-   direction.strip().lower()`` to see the effect. We often call this
-   kind of code "data munging", and it is very common.
+"data munging"
+==============
 
-Can you add some extra instructions to the turtle? How about ``hexagon``?
+In this program, the turtle will only respond to exactly ``left``
+or ``right`` with no variation. Though ``Left`` or ``RIGHT`` might
+seem the same to a human, that isn't the case when programming. Python
+has a few utility methods to help with that. A string has the methods
+``.strip()``, which removes whitespace and ``.lower()`` which makes
+everything lower-case.
+
+Here are some examples to print out the effects of ``.strip()`` and ``.lower()``::
+
+  my_variable = "       I Am Capitalised"
+  print(my_variable)
+  my_stripped = my_variable.strip()
+  print(my_stripped)
+  my_lower = my_variable.lower()
+  print(my_lower)
+
+Try adding ``direction = direction.strip().lower()`` to the ``move()``
+function, to see the effect. We often call this kind of code "data
+munging", and it is very common.
+
+Can you add some extra input choices to make the turtle draw other
+things? How about ``hexagon``?
