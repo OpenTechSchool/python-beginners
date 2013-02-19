@@ -4,14 +4,15 @@ Functions with parameters
 Introduction
 ============
 
-Now we know how to *factorize* this code a little. But functions as we have
-defined them so far are not flexible. The variables are defined inside the
-function, and we need to rewrite a whole function to change the value of an
-angle, or a distance in it.
+As we shrink down our code and add functions to remove duplication, we
+are *factorizing* it. This is a good thing to do. But the functions we
+have defined so far are not very flexible. The variables are defined
+inside the function, so if we want to use a different angle or a
+distance then we need to write a new function.
 
-That is why we need to be able to give parameters, or also called *arguments*
-so that *variables* we use in the function can be used with different values
-each time we call the function:
+That is why we need to be able to give parameters, also called
+*arguments*, to the function.  This way the *variables* in the
+function can have different values each time we call the function:
 
 Remember how we defined the function ``line_without_moving()`` in the previous
 section::

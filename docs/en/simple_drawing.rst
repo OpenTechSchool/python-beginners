@@ -81,21 +81,25 @@ Solution
 
 .. note::
 
-    As per convention, we want to terminate all figures in our starting
-    position.  This will make it easier to draw multiple shapes later on.
+    Notice how the turtle starts and finishes in the same place and
+    facing the same direction, before and after drawing the
+    square. This is a useful convention to follow, it makes it easier
+    to draw multiple shapes later on.
 
 Bonus
 -----
 
 If you want to get creative, you can modify your shape with the
-``turtle.width(...)`` and ``turtle.color(...)`` functions.  If you cannot figure
-out the *signature* of a function (that is the syntax and semantics of it, say,
-number of parameters and their meaning) you can use ``help(turtle.color)`` or
-browse the `online documentation`__.
+``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you
+use these functions?  Before you can use a function you need to know
+its *signature* (for example the number of parameters and what they
+mean.) To find this out you can type ``help(turtle.color)`` into the
+Python shell. Press the :kbd:`q` key to exit the help again.
+
+Alternatively, browse the `online documentation`__.
 
 __ http://docs.python.org/library/turtle
 
-Press the :kdb:`q` key to exit the help again.
 
 .. caution::
 

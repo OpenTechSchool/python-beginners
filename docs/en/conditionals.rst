@@ -11,15 +11,24 @@ the booleans. They allow logical operations.
 A logic statement or operation can be evaluated to be *True* or *False*.
 Our conditional statement can then be understood like this: 
 
-**if** *(evaluation of a condition returns true)* **then** *do some operation*
-**else** *do an other operation*. And any operation that can be evaluated as
-*True* or *False* can be put to the test. All comparisons return *True* or
-*False*: ``==``, ``>``, ``<``.
+    **if** *(a condition evaluates to True)*:
+        *then do these things only for 'True'*
+    **else**:
+        *otherwise do these things only for 'False'*.
+
+The condition can be anything that evaluates as *True* or
+*False*. Comparisons always return *True* or *False*, for example
+``==`` (equal to), ``>`` (greater than), ``<`` (less than.)
+
+The second **else** part is optional. If you leave it off, nothing
+will happen if the conditional evaluates to 'False'.
+
 
 Examples
 ========
 
-Here are some simple examples::
+Here are some examples. You may want to read them over line-by-line
+and see what you think they do, or run them to be certain::
 
     condition = True
     if condition:
@@ -57,15 +66,29 @@ It's much easier to define this as a function, like so::
 Now whenever you use ``move()`` you are prompted to choose ``left`` or
 ``right``.
 
-.. note::
 
-   The turtle will only respond to exactly ``left`` or ``right`` with
-   no variation. Though ``Left`` or ``RIGHT`` might seem the same to a
-   human, that isn't the case when programming. Python has a few
-   utility methods to help with that. A string has the methods
-   ``.strip()``, which removes whitespace and ``.lower()`` which makes
-   everything lower-case. Try adding ``direction =
-   direction.strip().lower()`` to see the effect. We often call this
-   kind of code "data munging", and it is very common.
+"data munging"
+==============
 
-Can you add some extra instructions to the turtle? How about ``hexagon``?
+In this program, the turtle will only respond to exactly ``left``
+or ``right`` with no variation. Though ``Left`` or ``RIGHT`` might
+seem the same to a human, that isn't the case when programming. Python
+has a few utility methods to help with that. A string has the methods
+``.strip()``, which removes whitespace and ``.lower()`` which makes
+everything lower-case.
+
+Here are some examples to print out the effects of ``.strip()`` and ``.lower()``::
+
+  my_variable = "       I Am Capitalised"
+  print(my_variable)
+  my_stripped = my_variable.strip()
+  print(my_stripped)
+  my_lower = my_variable.lower()
+  print(my_lower)
+
+Try adding ``direction = direction.strip().lower()`` to the ``move()``
+function, to see the effect. We often call this kind of code "data
+munging", and it is very common.
+
+Can you add some extra input choices to make the turtle draw other
+things? How about ``hexagon``?
