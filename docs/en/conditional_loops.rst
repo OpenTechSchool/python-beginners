@@ -41,8 +41,9 @@ Can you make the turtle move exactly to the window border?
 Draw a spiral
 =============
 
-Loops can be interrupted with the ``break`` statement. This is often used in
-combination with infinite loops.
+Loops can be interrupted with the ``break`` statement. This is
+especially useful if you write an *infinite loop*, which is a loop
+where the conditional is always *True*.
 
 Exercise
 --------
