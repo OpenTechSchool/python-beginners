@@ -6,7 +6,7 @@ Introduction
 
 One more thing: Our programs often featured repetition. There is a powerful
 concept in Python called looping, which we will elaborate later on. For now,
-take this easy example::
+try this easy example::
 
     for i in range(10):
         print("Hello!")
@@ -28,7 +28,9 @@ You can also loop over elements of your choice (mathematicians call this
     for i in 5, 7, 11, 13:
         print(i)
 
-:function:`range(n)` can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., n-1``.
+If you want to know more about it, you can use the help in the Python shell by
+typing ``help(range)``. Use the :kbd:`q` key to exit the help again.
 
 Drawing a dashed line
 =====================
@@ -71,8 +73,8 @@ Can you make the dashes become larger as the line progresses?
            turtle.forward(5)
            turtle.pendown()
 
-    Can you utilize ``i`` --- commonly called the index variable or loop
-    variable --- to get increasing step sizes?
+   Can you utilize ``i`` --- commonly called the index variable or loop
+   variable --- to get increasing step sizes?
 
 Honeycomb loops
 ===============

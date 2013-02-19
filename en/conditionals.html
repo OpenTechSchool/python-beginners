@@ -56,14 +56,24 @@
 the booleans. They allow logical operations.
 A logic statement or operation can be evaluated to be <em>True</em> or <em>False</em>.
 Our conditional statement can then be understood like this:</p>
-<p><strong>if</strong> <em>(evaluation of a condition returns true)</em> <strong>then</strong> <em>do some operation</em>
-<strong>else</strong> <em>do an other operation</em>. And any operation that can be evaluated as
-<em>True</em> or <em>False</em> can be put to the test. All comparisons return <em>True</em> or
-<em>False</em>: <tt class="docutils literal"><span class="pre">==</span></tt>, <tt class="docutils literal"><span class="pre">&gt;</span></tt>, <tt class="docutils literal"><span class="pre">&lt;</span></tt>.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>if</strong> <em>(a condition evaluates to True)</em>:</dt>
+<dd><em>then do these things only for &#8216;True&#8217;</em></dd>
+<dt><strong>else</strong>:</dt>
+<dd><em>otherwise do these things only for &#8216;False&#8217;</em>.</dd>
+</dl>
+</div></blockquote>
+<p>The condition can be anything that evaluates as <em>True</em> or
+<em>False</em>. Comparisons always return <em>True</em> or <em>False</em>, for example
+<tt class="docutils literal"><span class="pre">==</span></tt> (equal to), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (greater than), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (less than.)</p>
+<p>The second <strong>else</strong> part is optional. If you leave it off, nothing
+will happen if the conditional evaluates to &#8216;False&#8217;.</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<p>Here are some simple examples:</p>
+<p>Here are some examples. You may want to read them over line-by-line
+and see what you think they do, or run them to be certain:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
@@ -99,18 +109,29 @@ the turtle. To keep things easy we will only accept two instructions:
 </div>
 <p>Now whenever you use <tt class="docutils literal"><span class="pre">move()</span></tt> you are prompted to choose <tt class="docutils literal"><span class="pre">left</span></tt> or
 <tt class="docutils literal"><span class="pre">right</span></tt>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt> or <tt class="docutils literal"><span class="pre">right</span></tt> with
-no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">RIGHT</span></tt> might seem the same to a
-human, that isn&#8217;t the case when programming. Python has a few
-utility methods to help with that. A string has the methods
-<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
-everything lower-case. Try adding <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span>
-<span class="pre">direction.strip().lower()</span></tt> to see the effect. We often call this
-kind of code &#8220;data munging&#8221;, and it is very common.</p>
 </div>
-<p>Can you add some extra instructions to the turtle? How about <tt class="docutils literal"><span class="pre">hexagon</span></tt>?</p>
+<div class="section" id="data-munging">
+<h2>&#8220;data munging&#8221;<a class="headerlink" href="#data-munging" title="Permalink to this headline">¶</a></h2>
+<p>In this program, the turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt>
+or <tt class="docutils literal"><span class="pre">right</span></tt> with no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">RIGHT</span></tt> might
+seem the same to a human, that isn&#8217;t the case when programming. Python
+has a few utility methods to help with that. A string has the methods
+<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
+everything lower-case.</p>
+<p>Here are some examples to print out the effects of <tt class="docutils literal"><span class="pre">.strip()</span></tt> and <tt class="docutils literal"><span class="pre">.lower()</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+<span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_stripped</span><span class="p">)</span>
+<span class="n">my_lower</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Try adding <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></tt> to the <tt class="docutils literal"><span class="pre">move()</span></tt>
+function, to see the effect. We often call this kind of code &#8220;data
+munging&#8221;, and it is very common.</p>
+<p>Can you add some extra input choices to make the turtle draw other
+things? How about <tt class="docutils literal"><span class="pre">hexagon</span></tt>?</p>
 </div>
 </div>
 
@@ -126,6 +147,7 @@ kind of code &#8220;data munging&#8221;, and it is very common.</p>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 <li><a class="reference internal" href="#giving-directions">Giving Directions</a></li>
+<li><a class="reference internal" href="#data-munging">&#8220;data munging&#8221;</a></li>
 </ul>
 </li>
 </ul>

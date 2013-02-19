@@ -114,18 +114,21 @@ until you click on it:</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">As per convention, we want to terminate all figures in our starting
-position.  This will make it easier to draw multiple shapes later on.</p>
+<p class="last">Notice how the turtle starts and finishes in the same place and
+facing the same direction, before and after drawing the
+square. This is a useful convention to follow, it makes it easier
+to draw multiple shapes later on.</p>
 </div>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>If you want to get creative, you can modify your shape with the
-<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  If you cannot figure
-out the <em>signature</em> of a function (that is the syntax and semantics of it, say,
-number of parameters and their meaning) you can use <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> or
-browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
-<p>Press the <a href="#id2"><span class="problematic" id="id3">:kdb:`q`</span></a> key to exit the help again.</p>
+<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  How do you
+use these functions?  Before you can use a function you need to know
+its <em>signature</em> (for example the number of parameters and what they
+mean.) To find this out you can type <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> into the
+Python shell. Press the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
+<p>Alternatively, browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
@@ -143,13 +146,13 @@ list.</p>
 </div>
 <div class="section" id="drawing-a-rectangle">
 <h2>Drawing a rectangle<a class="headerlink" href="#drawing-a-rectangle" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Exercise<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Can you draw a (non-square) rectangle too?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id6">
-<h3>Solution<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Solution<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -161,23 +164,23 @@ list.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id7">
-<h3>Bonus<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Bonus<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>How about a triangle?  (A triangle with 120 degrees angles will have all sides
 equally sized.)</p>
 </div>
 </div>
 <div class="section" id="more-squares">
 <h2>More squares<a class="headerlink" href="#more-squares" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id8">
-<h3>Exercise<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Exercise<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Now, draw a tilted square.  And another one, and another one.  You can
 experiment with the angles between the individual squares.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>Try 20, 90 and 180 for example.</p>
 </div>
-<div class="section" id="id9">
-<h3>Solution<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Solution<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -233,14 +236,14 @@ experiment with the angles between the individual squares.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#drawing-a-rectangle">Drawing a rectangle</a><ul>
-<li><a class="reference internal" href="#id5">Exercise</a></li>
-<li><a class="reference internal" href="#id6">Solution</a></li>
-<li><a class="reference internal" href="#id7">Bonus</a></li>
+<li><a class="reference internal" href="#id3">Exercise</a></li>
+<li><a class="reference internal" href="#id4">Solution</a></li>
+<li><a class="reference internal" href="#id5">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#more-squares">More squares</a><ul>
-<li><a class="reference internal" href="#id8">Exercise</a></li>
-<li><a class="reference internal" href="#id9">Solution</a></li>
+<li><a class="reference internal" href="#id6">Exercise</a></li>
+<li><a class="reference internal" href="#id7">Solution</a></li>
 </ul>
 </li>
 </ul>

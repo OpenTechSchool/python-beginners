@@ -51,13 +51,14 @@
 <h1>Functions with parameters<a class="headerlink" href="#functions-with-parameters" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Now we know how to <em>factorize</em> this code a little. But functions as we have
-defined them so far are not flexible. The variables are defined inside the
-function, and we need to rewrite a whole function to change the value of an
-angle, or a distance in it.</p>
-<p>That is why we need to be able to give parameters, or also called <em>arguments</em>
-so that <em>variables</em> we use in the function can be used with different values
-each time we call the function:</p>
+<p>As we shrink down our code and add functions to remove duplication, we
+are <em>factorizing</em> it. This is a good thing to do. But the functions we
+have defined so far are not very flexible. The variables are defined
+inside the function, so if we want to use a different angle or a
+distance then we need to write a new function.</p>
+<p>That is why we need to be able to give parameters, also called
+<em>arguments</em>, to the function.  This way the <em>variables</em> in the
+function can have different values each time we call the function:</p>
 <p>Remember how we defined the function <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> in the previous
 section:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
