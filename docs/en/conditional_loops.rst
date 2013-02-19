@@ -72,3 +72,9 @@ Solution
             if turtle.distance(0, 0) > radius:
                 break
 
+Bonus
+-----
+
+Can you make a conditional for this loop, so you don't need the
+infinite loop *while True* or the *break*? Which version do you find
+easier to understand?
