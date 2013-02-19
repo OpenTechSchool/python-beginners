@@ -53,7 +53,7 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>One more thing: Our programs often featured repetition. There is a powerful
 concept in Python called looping, which we will elaborate later on. For now,
-take this easy example:</p>
+try this easy example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -73,7 +73,9 @@ values?</p>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><a href="#id1"><span class="problematic" id="id2">:function:`range(n)`</span></a> can be considered a shorthand for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>.</p>
+<p>The <tt class="docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>.
+If you want to know more about it, you can use the help in the Python shell by
+typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>. Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Drawing a dashed line<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink to this headline">¶</a></h2>
@@ -101,28 +103,28 @@ with the <tt class="docutils literal"><span class="pre">turtle.penup()</span></t
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
 <p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
-<div class="last highlight-python"><pre>   for i in range(10):
-       print i
-       turtle.forward(15)
-       turtle.penup()
-       turtle.forward(5)
-       turtle.pendown()
-
-Can you utilize ``i`` --- commonly called the index variable or loop
-variable --- to get increasing step sizes?</pre>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">i</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
 </div>
+<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the index variable or loop
+variable &#8212; to get increasing step sizes?</p>
 </div>
 </div>
 </div>
 <div class="section" id="honeycomb-loops">
 <h2>Honeycomb loops<a class="headerlink" href="#honeycomb-loops" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id3">
-<h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Take your honeycomb program and make it easier with loops. How small can you
 get it?</p>
 </div>
-<div class="section" id="id4">
-<h3>Solution<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -155,8 +157,8 @@ get it?</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#honeycomb-loops">Honeycomb loops</a><ul>
-<li><a class="reference internal" href="#id3">Exercise</a></li>
-<li><a class="reference internal" href="#id4">Solution</a></li>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+<li><a class="reference internal" href="#id2">Solution</a></li>
 </ul>
 </li>
 </ul>

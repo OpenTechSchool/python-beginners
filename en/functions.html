@@ -68,6 +68,9 @@ steps, namely:</p>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>This function we defined is called <tt class="docutils literal"><span class="pre">line_without_moving</span></tt> and it is
+an abstraction for two turtle steps - a move forward and a move
+backward.</p>
 <p>You can access variables in functions as well:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">size</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
@@ -77,21 +80,26 @@ steps, namely:</p>
 </div>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p>Python uses <em>whitespace to identify blocks of code</em> belonging together.
-While other languages use special characters (like curly brackets <tt class="docutils literal"><span class="pre">{}</span></tt>) in
-Python a block is introduced with a colon at the end of the line and
-subsequent commands within a deeper indentation level &#8212; usually 4 spaces.
-The block ends with the first line with a lesser indentation level.</p>
-<p class="last">If you mix up tabs and spaces the interpreter is going to complain. Make
-sure to always use one or the other.</p>
+<p>Python uses <em>identing with whitespace to identify blocks of code</em>
+that belong together. In Python a block (like the function
+definitions shown above) is introduced with a colon at the end of the
+line and subsequent commands are indented &#8212; usually 4 spaces
+further in. The block ends with the first line that isn&#8217;t indented.</p>
+<p>This is different to many other programming languages, which use
+special characters (like curly brackets <tt class="docutils literal"><span class="pre">{}</span></tt>) to group blocks of
+code together.</p>
+<p class="last">You can indent your blocks with either tabs or spaces, but if you
+use both tabs <em>and</em> spaces in the same file the Python interpreter
+will complain. Make sure to always use one or the other.</p>
 </div>
 </div>
 <div class="section" id="a-function-for-a-square">
 <h2>A function for a square<a class="headerlink" href="#a-function-for-a-square" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Write a function that draws a square. Can you see how you could improve the
-tilted squares program with that and greatly relieve experimentation?</p>
+<p>Write a function that draws a square. Could you use this function to improve the
+tilted squares program? If you change the program to use a function, is it easier
+to experiment with?</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
