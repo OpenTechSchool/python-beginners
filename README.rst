@@ -60,6 +60,14 @@ process, you can use the fabric target ``setup``.
 This creates a clone of the repository inside the ``_build`` folder. You can 
 now run ``fab build``, change into ``docs/_build/html``, commit and push.
 
+License
+=======
+
+This work is licensed under the Creative Commons Attribution-ShareAlike
+3.0 Unported License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+Creative Commons, 444 Castro Street, Suite 900, Mountain View,
+California, 94041, USA.
 
 .. _OpenTechSchool: http://opentechschool.org
 .. _PyCoaches: http://python.opentechschool.org
