@@ -22,13 +22,22 @@ After that statement, if you do ``print(x)``, it will actually output its value
 
     turtle.forward(x)
 
+Variables can store all sorts of things, not just numbers. A typical
+other thing you want to have stored often is a **string** - a line of text.
+Strings are indicated with a starting and a leading ``"`` (double quote).
+You'll learn about this and other types, as those are called in Python, and
+what you can do with them later on.
 
-.. note:: You can not only save numbers in variables, like we did here for
-   ``x``, but you can actually save various kinds of things in them. A typical
-   other thing you want to have stored often is a **string** - a line of text.
-   Strings are indicated with a starting and a leading ``"`` (double quote).
-   You'll learn about this and other types, as those are called in Python, and
-   what you can do with them later on.
+You can even use a variable to give the turtle a name::
+
+    timmy = turtle
+
+Now every time you type ``timmy`` it knows you mean ``turtle``. You can
+still continue to use ``turtle`` as well::
+
+    timmy.forward(50)
+    timmy.left(90)
+    turtle.forward(50)
 
 A variable called angle
 =======================
@@ -75,10 +84,11 @@ Draw a house.
 
 .. image:: /images/house.png
 
-You can calculate the length of the diagonal line with Pythagoras. That value is
-a good candidate for a variable. To calculate the square root of a number in
-Python, import the *math* module and use the ``math.sqrt()`` function. The
-square of a number is calculated with the ``**`` operator::
+You can calculate the length of the diagonal line with the Pythagorean
+theorem. That value is a good candidate for a variable. To calculate
+the square root of a number in Python, import the *math* module and
+use the ``math.sqrt()`` function. The square of a number is calculated
+with the ``**`` operator::
 
     import math
 

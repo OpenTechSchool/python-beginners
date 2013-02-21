@@ -22,8 +22,7 @@ once.  But it gets better::
 Notice how we write only one line of code using ``i`` but it has 10 different
 values?
 
-You can also loop over elements of your choice (mathematicians call this
-"extensional sets")::
+You can also loop over elements of your choice::
 
     for i in 5, 7, 11, 13:
         print(i)
@@ -67,7 +66,7 @@ Can you make the dashes become larger as the line progresses?
    Feeling lost?  Inspect ``i`` at every run of the loop::
 
        for i in range(10):
-           print i
+           print(i)
            turtle.forward(15)
            turtle.penup()
            turtle.forward(5)
