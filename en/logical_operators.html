@@ -55,8 +55,8 @@ them. This can be done with logical operators.</p>
 </div>
 <div class="section" id="negation-of-a-statement">
 <h2>Negation of a statement<a class="headerlink" href="#negation-of-a-statement" title="Permalink to this headline">¶</a></h2>
-<p>We can take the opposite value of a statement to use <tt class="docutils literal"><span class="pre">not</span></tt> its value.
-It is a logical operator:</p>
+<p>If we want something to be <em>False</em> we can use <tt class="docutils literal"><span class="pre">not</span></tt>. It is a logical
+operator:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">x</span> <span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
@@ -84,8 +84,7 @@ toggle between drawing while moving, or just moving without a trace.</p>
 <div class="section" id="this-and-that-or-something-else">
 <h2>This and that or something else<a class="headerlink" href="#this-and-that-or-something-else" title="Permalink to this headline">¶</a></h2>
 <p>Two easy to understand operators are <tt class="docutils literal"><span class="pre">and</span></tt> and <tt class="docutils literal"><span class="pre">or</span></tt>. They do exactly what
-they sound like: combine two statements in a way both have be <em>True</em> (<tt class="docutils literal"><span class="pre">and</span></tt>)
-or at least one of them has to be <em>True</em> (<tt class="docutils literal"><span class="pre">or</span></tt>):</p>
+they sound like::</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
 
@@ -100,26 +99,23 @@ or at least one of them has to be <em>True</em> (<tt class="docutils literal"><s
 want.</p>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Create a function that accepts the argument <tt class="docutils literal"><span class="pre">angle</span></tt> and moves the turtle
-forward into that direction until either the vertical or horizontal distance to
-the center exceeds 100.</p>
+<p>Earlier we put the turtle in a circular prison. This time let&#8217;s make
+it a box. If the turtle goes more than 100 in the X <em>or</em> Y axis then
+we turn the turtle back around to the center.</p>
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_square_border</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
-    <span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span><span class="p">):</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="bonus">
-<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
-<p>Can you use this to draw a star?</p>
 </div>
 </div>
 </div>
@@ -142,7 +138,6 @@ the center exceeds 100.</p>
 <li><a class="reference internal" href="#this-and-that-or-something-else">This and that or something else</a><ul>
 <li><a class="reference internal" href="#id1">Exercise</a></li>
 <li><a class="reference internal" href="#id2">Solution</a></li>
-<li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
 </ul>

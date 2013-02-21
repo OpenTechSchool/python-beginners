@@ -4,7 +4,13 @@ Conditional statements
 Introduction
 ============
 
-So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful are conditional statements. This is the ability to *test* a variable against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers *if statements*.
+So far we have accomplished predefined tasks, but in all honesty we
+were accomplishing no better than old-time music boxes following one
+set of instructions to the end. What makes programming so much more
+powerful are conditional statements. This is the ability to *test* a
+variable against a value and act in one way if the condition is met by
+the variable or another way if not. They are also commonly called by
+programmers *if statements*.
 
 To know if a condition is *True* of *False*, we need a new type of data: 
 the booleans. They allow logical operations. 
@@ -20,8 +26,8 @@ The condition can be anything that evaluates as *True* or
 *False*. Comparisons always return *True* or *False*, for example
 ``==`` (equal to), ``>`` (greater than), ``<`` (less than.)
 
-The second **else** part is optional. If you leave it off, nothing
-will happen if the conditional evaluates to 'False'.
+The **else** part is optional. If you leave it off, nothing will
+happen if the conditional evaluates to 'False'.
 
 
 Examples
@@ -48,14 +54,18 @@ Giving Directions
 =================
 
 Python turtles can be very good at following instructions. Let's use
-the ``raw_input()`` function to ask the user for a direction to move
+the ``input()`` function to ask the user for a direction to move
 the turtle. To keep things easy we will only accept two instructions:
 "left" and "right".
+
+.. note::
+
+   Using Python 2? The ``input()`` function is called ``raw_input()``.
 
 It's much easier to define this as a function, like so::
 
   def move():
-      direction = raw_input("Go left or right? ")
+      direction = input("Go left or right? ")
       if direction == "left":
           turtle.left(60)
           turtle.forward(50)

@@ -17,12 +17,7 @@ Python similar to this::
 
 .. note::
 
-   If you're on Windows and instead see something like "command not found," the
-   installer has not set up your *search path* correctly, ie. Windows does not
-   know where to find :program:`python.exe`.  Follow the steps described in the
-   `Python docs`__ and **restart your command line.**
-
-   __ http://docs.python.org/using/windows.html#excursus-setting-environment-variables
+   On Windows you can open Python through the Start Menu.
 
 Those three ``>>>`` in the last line indicate that you are now in the
 interactive shell of Python.  It is waiting for your commands::
@@ -43,14 +38,15 @@ Running Python files
 ====================
 
 But you don't want to type everything into the Python shell every time.
-Instead having a file with commands and handing that to Python to execute would
-be much better.  In order to do that you can just pass a file name to the
-:program:`python` executable and it will execute that file instead of launching
+Instead you can save the commands to a file and pass a file name to the
+:program:`python` executable. It will execute that file instead of launching
 the interactive interpreter.
 
 Let's try that.  Create a file :file:`hello.py` in your current directory with
 your favorite text editor and paste the print command from above.  Now save
-that file, go back the command line and type:
+that file.
+
+On Mac OSX and Linux go back the command line and type:
 
 .. code-block:: bash
 
@@ -67,13 +63,9 @@ that file, go back the command line and type:
 
    This changes to the subdirectory Python_Exercises of the currently active
    directory.  If you don't know which directory your shell is currently
-   running in use :command:`pwd` on Linux or :command:`cd` without parameters
-   on Windows.
+   running in use :command:`pwd`.
 
-   If you need to change your drive on Windows, just type the drive's letter
-   followed by a colon::
-
-     C:
+On Windows you can double-click the Python file to run it.
 
 When pressing :kbd:`<Enter>` now, the file is executed and you see the output
 as before.  But this time, after Python finished executing all commands from
@@ -81,7 +73,7 @@ that file it exits instead of going back to the interactive shell.
 
 .. tip::
 
-   Wordpad, TextEdit, Notepad, and Word are **not** suited text editors.  If
+   Wordpad, TextEdit, Notepad, and Word are **not** suitable text editors.  If
    you are unsure whether you already have a usable editor, you might want to
    download and install `Sublime Text <http://www.sublimetext.com/>`_.
    Sophisticated editors like this also take care of identation and help you
@@ -95,3 +87,4 @@ And now we are all set and can get started with turtle!
    --- rather use more appropriate names such as :file:`square.py` or
    :file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python
    will pick up *your* file instead of the standard turtle.
+

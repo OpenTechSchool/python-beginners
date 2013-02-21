@@ -51,7 +51,13 @@
 <h1>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>So far we have accomplished predefined tasks, but in all honesty we were accomplishing no better achievements than the 18th century automata, or the music boxes following one set of instruction to the end. What makes programming so much more powerful are conditional statements. This is the ability to <em>test</em> a variable against a value and act in one way if the condition is met by the variable or an other way if not. They are also commonly called by programmers <em>if statements</em>.</p>
+<p>So far we have accomplished predefined tasks, but in all honesty we
+were accomplishing no better than old-time music boxes following one
+set of instructions to the end. What makes programming so much more
+powerful are conditional statements. This is the ability to <em>test</em> a
+variable against a value and act in one way if the condition is met by
+the variable or another way if not. They are also commonly called by
+programmers <em>if statements</em>.</p>
 <p>To know if a condition is <em>True</em> of <em>False</em>, we need a new type of data:
 the booleans. They allow logical operations.
 A logic statement or operation can be evaluated to be <em>True</em> or <em>False</em>.
@@ -67,8 +73,8 @@ Our conditional statement can then be understood like this:</p>
 <p>The condition can be anything that evaluates as <em>True</em> or
 <em>False</em>. Comparisons always return <em>True</em> or <em>False</em>, for example
 <tt class="docutils literal"><span class="pre">==</span></tt> (equal to), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (greater than), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (less than.)</p>
-<p>The second <strong>else</strong> part is optional. If you leave it off, nothing
-will happen if the conditional evaluates to &#8216;False&#8217;.</p>
+<p>The <strong>else</strong> part is optional. If you leave it off, nothing will
+happen if the conditional evaluates to &#8216;False&#8217;.</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -93,12 +99,16 @@ and see what you think they do, or run them to be certain:</p>
 <div class="section" id="giving-directions">
 <h2>Giving Directions<a class="headerlink" href="#giving-directions" title="Permalink to this headline">¶</a></h2>
 <p>Python turtles can be very good at following instructions. Let&#8217;s use
-the <tt class="docutils literal"><span class="pre">raw_input()</span></tt> function to ask the user for a direction to move
+the <tt class="docutils literal"><span class="pre">input()</span></tt> function to ask the user for a direction to move
 the turtle. To keep things easy we will only accept two instructions:
 &#8220;left&#8221; and &#8220;right&#8221;.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Using Python 2? The <tt class="docutils literal"><span class="pre">input()</span></tt> function is called <tt class="docutils literal"><span class="pre">raw_input()</span></tt>.</p>
+</div>
 <p>It&#8217;s much easier to define this as a function, like so:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
-    <span class="n">direction</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
+    <span class="n">direction</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;left&quot;</span><span class="p">:</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>

@@ -62,10 +62,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If you&#8217;re on Windows and instead see something like &#8220;command not found,&#8221; the
-installer has not set up your <em>search path</em> correctly, ie. Windows does not
-know where to find <strong class="program">python.exe</strong>.  Follow the steps described in the
-<a class="reference external" href="http://docs.python.org/using/windows.html#excursus-setting-environment-variables">Python docs</a> and <strong>restart your command line.</strong></p>
+<p class="last">On Windows you can open Python through the Start Menu.</p>
 </div>
 <p>Those three <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> in the last line indicate that you are now in the
 interactive shell of Python.  It is waiting for your commands:</p>
@@ -85,13 +82,13 @@ where you could enter another command:</p>
 <div class="section" id="running-python-files">
 <h2>Running Python files<a class="headerlink" href="#running-python-files" title="Permalink to this headline">¶</a></h2>
 <p>But you don&#8217;t want to type everything into the Python shell every time.
-Instead having a file with commands and handing that to Python to execute would
-be much better.  In order to do that you can just pass a file name to the
-<strong class="program">python</strong> executable and it will execute that file instead of launching
+Instead you can save the commands to a file and pass a file name to the
+<strong class="program">python</strong> executable. It will execute that file instead of launching
 the interactive interpreter.</p>
 <p>Let&#8217;s try that.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory with
 your favorite text editor and paste the print command from above.  Now save
-that file, go back the command line and type:</p>
+that file.</p>
+<p>On Mac OSX and Linux go back the command line and type:</p>
 <div class="highlight-bash"><div class="highlight"><pre>python hello.py
 </pre></div>
 </div>
@@ -103,21 +100,17 @@ the directory you saved the file in;  you can change your active directory
 with the <strong class="command">cd</strong> command:</p>
 <div class="highlight-python"><pre>cd Python_Exercises</pre>
 </div>
-<p>This changes to the subdirectory Python_Exercises of the currently active
+<p class="last">This changes to the subdirectory Python_Exercises of the currently active
 directory.  If you don&#8217;t know which directory your shell is currently
-running in use <strong class="command">pwd</strong> on Linux or <strong class="command">cd</strong> without parameters
-on Windows.</p>
-<p>If you need to change your drive on Windows, just type the drive&#8217;s letter
-followed by a colon:</p>
-<div class="last highlight-python"><pre>C:</pre>
+running in use <strong class="command">pwd</strong>.</p>
 </div>
-</div>
+<p>On Windows you can double-click the Python file to run it.</p>
 <p>When pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> now, the file is executed and you see the output
 as before.  But this time, after Python finished executing all commands from
 that file it exits instead of going back to the interactive shell.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suited text editors.  If
+<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text editors.  If
 you are unsure whether you already have a usable editor, you might want to
 download and install <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>.
 Sophisticated editors like this also take care of identation and help you

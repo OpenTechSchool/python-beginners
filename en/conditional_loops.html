@@ -57,29 +57,41 @@ conditional loops are defined with the <tt class="docutils literal"><span class=
 <div class="highlight-python"><div class="highlight"><pre><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;in the loop&quot;</span><span class="p">)</span>
-    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>The <cite>+=&#8217; operator is an inplace increment and it is a short way of saying `counter = counter + 1</cite> in the above statement.</p>
 </div>
-<div class="section" id="move-until-condition-is-met">
-<h2>Move until condition is met<a class="headerlink" href="#move-until-condition-is-met" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="turtle-prison">
+<h2>Turtle prison<a class="headerlink" href="#turtle-prison" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Use the <tt class="docutils literal"><span class="pre">while</span></tt> loop to move the turtle forward until it reaches the end of
-the window.</p>
+<p>The turtle has been up to its usual tricks again, robbing liqour
+stores and building up huge gambling debts. It&#8217;s time for turtle to be
+put into a box that it can&#8217;t get out of.</p>
+<p>Let&#8217;s make a new version of <tt class="docutils literal"><span class="pre">forward()</span></tt>. One that turns the turtle
+around if it tries to go further than 100 from the origin. We&#8217;ll need
+a <tt class="docutils literal"><span class="pre">while</span></tt> loop, and some new turtle functions:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distance of the turtle from the origin</li>
+<li><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - The angle to get back to origin</li>
+<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Directly set the turtle direction</li>
+</ul>
+<p>Now you will need to implement the prison logic using the API calls
+above, a <tt class="docutils literal"><span class="pre">while</span></tt> loop and a bit of conditional logic. It&#8217;s a bit of
+a stretch but keep at it! Don&#8217;t be afraid to talk it out with a coach
+or another student.</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move_to_window_border</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">+</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="n">turtle</span><span class="o">.</span><span class="n">window_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">angle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="bonus">
-<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
-<p>Can you make the turtle move exactly to the window border?</p>
 </div>
 </div>
 <div class="section" id="draw-a-spiral">
@@ -93,27 +105,32 @@ where the conditional is always <em>True</em>.</p>
 Interrupt the loop when the turtle reaches a certain distance from the center.
 Use the function <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> to get the turtle&#8217;s distance to the
 point defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
+<p>To do this you will need the <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt>
+functions, which return the position of the turtle in X and Y axes
+respectively.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To draw a spiral, the turtle has to rotate by a constant value and move
-forward by an increasing value in each repetition.</p>
+forward by an increasing value.</p>
 </div>
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+    <span class="n">original_ycor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
     <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
         <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
-        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">original_xcor</span><span class="p">,</span> <span class="n">original_ycor</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
             <span class="k">break</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>Can you make a conditional for this loop, so you don&#8217;t need the
 infinite loop <em>while True</em> or the <em>break</em>? Which version do you find
 easier to understand?</p>
@@ -131,16 +148,15 @@ easier to understand?</p>
   <ul>
 <li><a class="reference internal" href="#">Conditional Loops</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#move-until-condition-is-met">Move until condition is met</a><ul>
+<li><a class="reference internal" href="#turtle-prison">Turtle prison</a><ul>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
 <li><a class="reference internal" href="#solution">Solution</a></li>
-<li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#draw-a-spiral">Draw a spiral</a><ul>
 <li><a class="reference internal" href="#id1">Exercise</a></li>
 <li><a class="reference internal" href="#id2">Solution</a></li>
-<li><a class="reference internal" href="#id3">Bonus</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
 </ul>
