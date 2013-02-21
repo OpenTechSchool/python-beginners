@@ -13,8 +13,8 @@ them. This can be done with logical operators.
 Negation of a statement
 =======================
 
-We can take the opposite value of a statement to use ``not`` its value.
-It is a logical operator::
+If we want something to be *False* we can use ``not``. It is a logical
+operator::
 
     x = False
     if not x :
@@ -46,8 +46,7 @@ This and that or something else
 ===============================
 
 Two easy to understand operators are ``and`` and ``or``. They do exactly what
-they sound like: combine two statements in a way both have be *True* (``and``)
-or at least one of them has to be *True* (``or``)::
+they sound like:::
 
     if 1 < 2 and 4 > 2:
         print("condition met")
@@ -64,25 +63,21 @@ want.
 Exercise
 --------
 
-Create a function that accepts the argument ``angle`` and moves the turtle
-forward into that direction until either the vertical or horizontal distance to
-the center exceeds 100.
+Earlier we put the turtle in a circular prison. This time let's make
+it a box. If the turtle goes more than 100 in the X *or* Y axis then
+we turn the turtle back around to the center.
 
 Solution
 --------
 
 ::
 
-    def move_to_square_border(angle):
-        turtle.left(angle)
-        x = turtle.xcor()
-        y = turtle.ycor()
-        while x > -100 and x < 100 and y > -100 and y < 100:
-            turtle.forward(10)
-            x = turtle.xcor()
-            y = turtle.ycor()
-
-Bonus
------
-
-Can you use this to draw a star?
+  def forward(distance):
+      while distance > 0:
+          if (turtle.xcor() > 100
+              or turtle.xcor() < -100
+              or turtle.ycor() > 100
+              or turtle.ycor() < -100):
+              turtle.setheading(turtle.towards(0,0))
+          turtle.forward(1)
+          distance = distance - 1

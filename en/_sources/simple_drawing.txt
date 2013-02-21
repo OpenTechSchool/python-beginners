@@ -40,6 +40,13 @@ by the given distance. ``turtle.left(...)`` takes a number of degrees which you 
 to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
 
+The standard turtle is just a triangle. That's no fun! Let's make it a turtle
+instead with the ``turtle.shape()`` command::
+
+  turtle.shape("turtle")
+
+So much cuter!
+
 If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement.  (That is because
 Python exits when your turtle has finished moving.  Since the turtle window
@@ -48,6 +55,8 @@ belongs to Python, it terminates as well.)  To prevent that, just put
 until you click on it::
 
     import turtle
+
+    turtle.shape("turtle")
 
     turtle.forward(25)
 
@@ -94,7 +103,9 @@ If you want to get creative, you can modify your shape with the
 use these functions?  Before you can use a function you need to know
 its *signature* (for example the number of parameters and what they
 mean.) To find this out you can type ``help(turtle.color)`` into the
-Python shell. Press the :kbd:`q` key to exit the help again.
+Python shell. If there is a lot of text, Python will put the help text
+into a *pager*, which lets you page up and down. Press the :kbd:`q`
+key to exit the pager.
 
 Alternatively, browse the `online documentation`__.
 
@@ -122,7 +133,7 @@ Drawing a rectangle
 Exercise
 --------
 
-Can you draw a (non-square) rectangle too?
+Can you draw a rectangle too?
 
 .. image:: /images/rectangle.png
 
@@ -143,8 +154,8 @@ Solution
 Bonus
 -----
 
-How about a triangle?  (A triangle with 120 degrees angles will have all sides
-equally sized.)
+How about a triangle? In an equilateral triangle (a triangle with all
+sides of equal length) each corner has an angle of 120 degrees.
 
 
 More squares
@@ -153,7 +164,7 @@ More squares
 Exercise
 --------
 
-Now, draw a tilted square.  And another one, and another one.  You can
+Now, draw a tilted square. And another one, and another one. You can
 experiment with the angles between the individual squares.
 
 .. image:: /images/tiltedsquares.png

@@ -35,14 +35,14 @@ You can access variables in functions as well::
 
 .. important::
 
-   Python uses *identing with whitespace to identify blocks of code*
+   Python uses *identing with whitespace* to identify blocks of code
    that belong together. In Python a block (like the function
    definitions shown above) is introduced with a colon at the end of the
    line and subsequent commands are indented --- usually 4 spaces
    further in. The block ends with the first line that isn't indented.
 
    This is different to many other programming languages, which use
-   special characters (like curly brackets ``{}``) to group blocks of
+   special characters (like curly braces ``{}``) to group blocks of
    code together.
 
    You can indent your blocks with either tabs or spaces, but if you
@@ -66,7 +66,6 @@ Solution
 
     def tilted_square():
       turtle.left(angle)
-
       turtle.forward(50)
       turtle.left(90)
       turtle.forward(50)
@@ -144,4 +143,4 @@ function, but you better not call it ``hexagon`` in that case.  That's
 misleading because it actually draws a hexagon and then advances to a position
 where another hexagon would make sense in order to draw a honeycomb.  If you
 ever wanted to reuse your hexagon function outside of honeycombs, that would be
-confusing at least.
+confusing.

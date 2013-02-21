@@ -67,14 +67,21 @@ Then <em>x * 2</em> will obviously be <em>10</em>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You can not only save numbers in variables, like we did here for
-<tt class="docutils literal"><span class="pre">x</span></tt>, but you can actually save various kinds of things in them. A typical
+<p>Variables can store all sorts of things, not just numbers. A typical
 other thing you want to have stored often is a <strong>string</strong> - a line of text.
 Strings are indicated with a starting and a leading <tt class="docutils literal"><span class="pre">&quot;</span></tt> (double quote).
 You&#8217;ll learn about this and other types, as those are called in Python, and
 what you can do with them later on.</p>
+<p>You can even use a variable to give the turtle a name:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span>
+</pre></div>
+</div>
+<p>Now every time you type <tt class="docutils literal"><span class="pre">timmy</span></tt> it knows you mean <tt class="docutils literal"><span class="pre">turtle</span></tt>. You can
+still continue to use <tt class="docutils literal"><span class="pre">turtle</span></tt> as well:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="a-variable-called-angle">
@@ -115,10 +122,11 @@ much faster with our tilted squares program?</p>
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Draw a house.</p>
 <img alt="_images/house.png" src="_images/house.png" />
-<p>You can calculate the length of the diagonal line with Pythagoras. That value is
-a good candidate for a variable. To calculate the square root of a number in
-Python, import the <em>math</em> module and use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The
-square of a number is calculated with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
+<p>You can calculate the length of the diagonal line with the Pythagorean
+theorem. That value is a good candidate for a variable. To calculate
+the square root of a number in Python, import the <em>math</em> module and
+use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The square of a number is calculated
+with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>

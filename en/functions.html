@@ -80,13 +80,13 @@ backward.</p>
 </div>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p>Python uses <em>identing with whitespace to identify blocks of code</em>
+<p>Python uses <em>identing with whitespace</em> to identify blocks of code
 that belong together. In Python a block (like the function
 definitions shown above) is introduced with a colon at the end of the
 line and subsequent commands are indented &#8212; usually 4 spaces
 further in. The block ends with the first line that isn&#8217;t indented.</p>
 <p>This is different to many other programming languages, which use
-special characters (like curly brackets <tt class="docutils literal"><span class="pre">{}</span></tt>) to group blocks of
+special characters (like curly braces <tt class="docutils literal"><span class="pre">{}</span></tt>) to group blocks of
 code together.</p>
 <p class="last">You can indent your blocks with either tabs or spaces, but if you
 use both tabs <em>and</em> spaces in the same file the Python interpreter
@@ -105,7 +105,6 @@ to experiment with?</p>
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-
   <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -178,7 +177,7 @@ function, but you better not call it <tt class="docutils literal"><span class="p
 misleading because it actually draws a hexagon and then advances to a position
 where another hexagon would make sense in order to draw a honeycomb.  If you
 ever wanted to reuse your hexagon function outside of honeycombs, that would be
-confusing at least.</p>
+confusing.</p>
 </div>
 </div>
 </div>

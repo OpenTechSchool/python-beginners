@@ -11,32 +11,46 @@ conditional loops are defined with the ``while`` statement::
     counter = 0
     while counter < 10:
         print("in the loop")
-        counter += 1
-        
-The `+=' operator is an inplace increment and it is a short way of saying `counter = counter + 1` in the above statement.
+        counter = counter + 1
 
-Move until condition is met
-===========================
+
+Turtle prison
+=============
 
 Exercise
 --------
 
-Use the ``while`` loop to move the turtle forward until it reaches the end of
-the window. 
+The turtle has been up to its usual tricks again, robbing liqour
+stores and building up huge gambling debts. It's time for turtle to be
+put into a box that it can't get out of.
+
+Let's make a new version of ``forward()``. One that turns the turtle
+around if it tries to go further than 100 from the origin. We'll need
+a ``while`` loop, and some new turtle functions:
+
+* ``turtle.distance(0,0)`` - Distance of the turtle from the origin
+* ``turtle.towards(0,0)`` - The angle to get back to origin
+* ``turtle.setheading(angle)`` - Directly set the turtle direction
+
+Now you will need to implement the prison logic using the API calls
+above, a ``while`` loop and a bit of conditional logic. It's a bit of
+a stretch but keep at it! Don't be afraid to talk it out with a coach
+or another student.
+
 
 Solution
 --------
 
 ::
 
-    def move_to_window_border(distance):
-        while turtle.xcor() + distance < turtle.window_width() / 2:
-            turtle.forward(distance)
+  def forward(distance):
+      while distance > 0:
+          if turtle.distance(0,0) > 100:
+              angle = turtle.towards(0,0)
+              turtle.setheading(angle)
+          turtle.forward(1)
+          distance = distance - 1
 
-Bonus
------
-
-Can you make the turtle move exactly to the window border?
 
 Draw a spiral
 =============
@@ -53,10 +67,14 @@ Interrupt the loop when the turtle reaches a certain distance from the center.
 Use the function ``turtle.distance(x, y)`` to get the turtle's distance to the
 point defined by the coordinates ``x`` and ``y``.
 
+To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()``
+functions, which return the position of the turtle in X and Y axes
+respectively.
+
 .. note::
 
    To draw a spiral, the turtle has to rotate by a constant value and move
-   forward by an increasing value in each repetition.
+   forward by an increasing value.
             
 Solution
 --------
@@ -64,12 +82,14 @@ Solution
 ::
 
     def draw_spiral(radius):
+        original_xcor = turtle.xcor()
+        original_ycor = turtle.ycor()
         speed = 1
         while True:
             turtle.forward(speed)
             turtle.left(10)
             speed += 0.1
-            if turtle.distance(0, 0) > radius:
+            if turtle.distance(original_xcor, original_ycor) > radius:
                 break
 
 Bonus
