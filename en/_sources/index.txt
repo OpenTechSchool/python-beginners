@@ -16,3 +16,4 @@ Table of contents:
     conditionals
     conditional_loops
     logical_operators
+    copyright
