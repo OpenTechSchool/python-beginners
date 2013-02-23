@@ -31,6 +31,8 @@ The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., n-1`
 If you want to know more about it, you can use the help in the Python shell by
 typing ``help(range)``. Use the :kbd:`q` key to exit the help again.
 
+To explain the ``for`` statement in more detail: ``for`` and ``in`` are part of the statement itself ``i`` in this example is the name of a variable (you can choose any other variablename you want). The last part has to be a list or a function which returns a list (or list-like object).
+
 Drawing a dashed line
 =====================
 
