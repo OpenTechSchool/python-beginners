@@ -102,7 +102,7 @@ If you want to get creative, you can modify your shape with the
 ``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you
 use these functions?  Before you can use a function you need to know
 its *signature* (for example the number of parameters and what they
-mean.) To find this out you can type ``help(turtle.color)`` into the
+mean.) To find this out you can type ``help("turtle.color")`` into the
 Python shell. If there is a lot of text, Python will put the help text
 into a *pager*, which lets you page up and down. Press the :kbd:`q`
 key to exit the pager.
