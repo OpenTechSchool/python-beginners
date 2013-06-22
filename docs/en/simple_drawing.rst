@@ -111,7 +111,15 @@ Python shell. If there is a lot of text, Python will put the help text
 into a *pager*, which lets you page up and down. Press the :kbd:`q`
 key to exit the pager.
 
-Alternatively, browse the `online documentation`__.
+.. tip::
+
+   Are you seeing an error like this::
+
+    NameError: name 'turtle' is not defined``
+
+   when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you'll need to ``import turtle`` before ``help(turtle.color)`` will work.
+
+Another way to find out about functions is to browse the `online documentation`__.
 
 __ http://docs.python.org/library/turtle
 
