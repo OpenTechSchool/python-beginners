@@ -67,7 +67,9 @@ Solution
     turtle.left(90)
 
     turtle.left(angle)
-    # ...
+
+
+... and so on
 
 Bonus
 -----

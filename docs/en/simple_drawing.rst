@@ -176,7 +176,7 @@ Solution
 
 ::
 
-    turtle.left(20)     # <--
+    turtle.left(20)
 
     turtle.forward(50)
     turtle.left(90)
@@ -187,7 +187,7 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
-    turtle.left(20)     # <--
+    turtle.left(20)
 
     turtle.forward(50)
     turtle.left(90)
@@ -198,7 +198,7 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
-    turtle.left(20)     # <--
+    turtle.left(20)
 
     turtle.forward(50)
     turtle.left(90)

@@ -75,10 +75,25 @@ Solution
       turtle.forward(50)
       turtle.left(90)
 
-    angle = 20            # <--
+    # Set the angle we want to use for our square
+    angle = 20
     tilted_square()
     tilted_square()
     tilted_square()
+
+Comments
+--------
+
+In the solution above, the line that starts with a ``#`` is called a
+comment. In Python, anything that goes on a line after ``#`` is ignored
+by the computer. Use comments to explain what your program does,
+without changing the behaviour for the computer.
+
+Comments can also go at the end of a line, like this:
+
+::
+
+     angle = 20 # Set the angle we want to use for our square
 
 
 A function for a hexagon
