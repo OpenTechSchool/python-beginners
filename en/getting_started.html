@@ -51,23 +51,66 @@
             
   <div class="section" id="getting-started">
 <h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="starting-python">
-<h2>Starting Python<a class="headerlink" href="#starting-python" title="Permalink to this headline">¶</a></h2>
-<p>After installing Python on your system successfully, you can start the
-interactive Python prompt by typing <strong class="program">python</strong> in the command line and
-pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>.  It will show you some context information about
-Python similar to this:</p>
+<p>After you&#8217;ve installed Python, steps for launching it depend on which
+OS you are using:</p>
+<div class="section" id="starting-python-on-mac-os-x">
+<h2>Starting Python on Mac OS X<a class="headerlink" href="#starting-python-on-mac-os-x" title="Permalink to this headline">¶</a></h2>
+<p>To start Python on OS X you first need to launch a command line terminal. Do this by
+navigating to Applications, then Utilities, then double-click the
+&#8220;Terminal&#8221; program.</p>
+<p>The command line Terminal is a tool for interacting with your
+computer. A window will open with a command line prompt message,
+something like this:</p>
+<div class="highlight-python"><pre>myname ~$</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Take note of the dollar sign $ at the end of the
+prompt. This tells you that you are using the system command
+line. We&#8217;ll be using two different interactive environments today,
+the system command line (with this prompt) and the Python
+interactive shell (which we&#8217;ll see shortly.)</p>
+</div>
+<p>To launch Python from the system command line type <strong class="program">python</strong> and
+then press <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt></p>
+</div>
+<div class="section" id="starting-python-on-linux">
+<h2>Starting Python on Linux<a class="headerlink" href="#starting-python-on-linux" title="Permalink to this headline">¶</a></h2>
+<p>To start Python on Linux you first need to launch a command line terminal
+program. Exactly how to do this depend on what Linux desktop
+environment you are using, but try searching for Terminal in your
+computer&#8217;s program launcher interface.</p>
+<p>The command line terminal is a tool for interacting with your
+computer. A window will open with a command line prompt message, something
+like this:</p>
+<div class="highlight-python"><pre>myname@mycomputer:~$</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Take note of the dollar sign $ at the end of the
+prompt. This tells you that you are using the system command
+line. We&#8217;ll be using two different interactive environments today,
+the system command line (with this prompt) and the Python
+interactive shell (which we&#8217;ll see shortly.)</p>
+</div>
+<p>To launch Python from the system command line type <strong class="program">python</strong> and
+then press <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt></p>
+</div>
+<div class="section" id="starting-python-on-windows">
+<h2>Starting Python on Windows<a class="headerlink" href="#starting-python-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>On Windows you can launch Python through the Start menu.</p>
+</div>
+<div class="section" id="interacting-with-python">
+<h2>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h2>
+<p>After Python opens, it will show you some contextual information similar to this:</p>
 <div class="highlight-python"><pre>Python 2.7.2 (default, Feb  1 2012, 00:28:57)
 [GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2335.15.00)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt;</pre>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">On Windows you can open Python through the Start Menu.</p>
-</div>
-<p>Those three <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> in the last line indicate that you are now in the
-interactive shell of Python.  It is waiting for your commands:</p>
+<p>The prompt <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> on the last line indicates that you are now in an
+interactive Python session, also called the &#8220;Python shell&#8221;. It is
+waiting for your commands:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -90,21 +133,24 @@ the interactive interpreter.</p>
 <p>Let&#8217;s try that.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory with
 your favorite text editor and paste the print command from above.  Now save
 that file.</p>
-<p>On Mac OSX and Linux go back the command line and type:</p>
+<p>On Mac OS X and Linux go back to the system command line (where the
+prompt ends with <tt class="docutils literal"><span class="pre">$</span></tt> not <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt>, use <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> to exit Python if it is
+running) and type:</p>
 <div class="highlight-bash"><div class="highlight"><pre>python hello.py
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open file&#8221; or
-&#8220;No such file or directory?&#8221;  Probably your command line is not running in
-the directory you saved the file in;  you can change your active directory
-with the <strong class="command">cd</strong> command:</p>
+<p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
+file&#8221; or &#8220;No such file or directory?&#8221;  Probably your command line
+is not running in the directory you saved the file in; you can use
+the system command line to change your active directory with the
+<strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;:</p>
 <div class="highlight-python"><pre>cd Python_Exercises</pre>
 </div>
 <p class="last">This changes to the subdirectory Python_Exercises of the currently active
-directory.  If you don&#8217;t know which directory your shell is currently
-running in use <strong class="command">pwd</strong>.</p>
+directory.  If you don&#8217;t know which directory you are currently in then
+running in then use <strong class="command">pwd</strong>,which stands for &#8220;print working directory&#8221;.</p>
 </div>
 <p>On Windows you can double-click the Python file to run it.</p>
 <p>When pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> now, the file is executed and you see the output
@@ -112,11 +158,10 @@ as before.  But this time, after Python finished executing all commands from
 that file it exits instead of going back to the interactive shell.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text editors.  If
-you are unsure whether you already have a usable editor, you might want to
-download and install <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>.
-Sophisticated editors like this also take care of identation and help you
-run and debug your code.</p>
+<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text
+editors.  If you are unsure whether you already have a usable
+editor, you might want to download and install <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>.  Sophisticated editors like this
+can also help you with formatting, running and debugging your code.</p>
 </div>
 <p>And now we are all set and can get started with turtle!</p>
 <div class="admonition important">
@@ -138,7 +183,10 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Getting started</a><ul>
-<li><a class="reference internal" href="#starting-python">Starting Python</a></li>
+<li><a class="reference internal" href="#starting-python-on-mac-os-x">Starting Python on Mac OS X</a></li>
+<li><a class="reference internal" href="#starting-python-on-linux">Starting Python on Linux</a></li>
+<li><a class="reference internal" href="#starting-python-on-windows">Starting Python on Windows</a></li>
+<li><a class="reference internal" href="#interacting-with-python">Interacting With Python</a></li>
 <li><a class="reference internal" href="#running-python-files">Running Python files</a></li>
 </ul>
 </li>

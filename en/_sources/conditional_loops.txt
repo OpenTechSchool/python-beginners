@@ -32,10 +32,10 @@ a ``while`` loop, and some new turtle functions:
 * ``turtle.towards(0,0)`` - The angle to get back to origin
 * ``turtle.setheading(angle)`` - Directly set the turtle direction
 
-Now you will need to implement the prison logic using the API calls
-above, a ``while`` loop and a bit of conditional logic. It's a bit of
-a stretch but keep at it! Don't be afraid to talk it out with a coach
-or another student.
+Now you will need to implement the prison logic using these turtle
+functions, a ``while`` loop and a bit of conditional logic. It's a bit
+of a stretch but keep at it! Don't be afraid to talk it out with a
+coach or another student.
 
 
 Solution

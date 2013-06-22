@@ -101,6 +101,10 @@ until you click on it:</p>
 <span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Python is a programming language where horizontal indenting of text is important. We&#8217;ll learn all about this in the Functions chapter later on, but for now just keep in mind that stray spaces or tabs before any line of Python code will cause an unexpected error.</p>
+</div>
 </div>
 <div class="section" id="drawing-a-square">
 <h2>Drawing a square<a class="headerlink" href="#drawing-a-square" title="Permalink to this headline">¶</a></h2>
@@ -140,7 +144,14 @@ mean.) To find this out you can type <tt class="docutils literal"><span class="p
 Python shell. If there is a lot of text, Python will put the help text
 into a <em>pager</em>, which lets you page up and down. Press the <tt class="kbd docutils literal"><span class="pre">q</span></tt>
 key to exit the pager.</p>
-<p>Alternatively, browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Are you seeing an error like this:</p>
+<div class="highlight-python"><pre>NameError: name 'turtle' is not defined``</pre>
+</div>
+<p class="last">when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you&#8217;ll need to <tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> before <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> will work.</p>
+</div>
+<p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
@@ -193,7 +204,7 @@ experiment with the angles between the individual squares.</p>
 </div>
 <div class="section" id="id7">
 <h3>Solution<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -204,7 +215,7 @@ experiment with the angles between the individual squares.</p>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -215,7 +226,7 @@ experiment with the angles between the individual squares.</p>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># &lt;--</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
