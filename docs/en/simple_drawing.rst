@@ -62,6 +62,10 @@ until you click on it::
 
     turtle.exitonclick()
 
+.. note::
+
+   Python is a programming language where horizontal indenting of text is important. We'll learn all about this in the Functions chapter later on, but for now just keep in mind that stray spaces or tabs before any line of Python code will cause an unexpected error.
+
 Drawing a square
 ================
 
