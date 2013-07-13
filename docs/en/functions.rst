@@ -26,12 +26,29 @@ This function we defined is called ``line_without_moving`` and it is
 an abstraction for two turtle steps - a move forward and a move
 backward.
 
-You can access variables in functions as well::
+To use it (or as it is usually called, "to call it"), write its name
+followed by parentheses::
 
-    size = 50
-    def line_without_moving():
-        turtle.forward(size)
-        turtle.backward(size)
+    line_without_moving()
+    turtle.right(90)
+    line_without_moving()
+    turtle.right(90)
+    line_without_moving()
+    turtle.right(90)
+    line_without_moving()
+
+We could write more functions to remove some of the repetition::
+
+    def star_arm():
+        line_without_moving()
+        turtle.right(360 / 5)
+
+    def star():
+        star_arm()
+        star_arm()
+        star_arm()
+        star_arm()
+        star_arm()
 
 .. important::
 
@@ -69,7 +86,7 @@ Solution
 ::
 
     def tilted_square():
-      turtle.left(angle)
+      turtle.left(20)     # now we can change the angle only here
       turtle.forward(50)
       turtle.left(90)
       turtle.forward(50)
@@ -80,10 +97,28 @@ Solution
       turtle.left(90)
 
     # Set the angle we want to use for our square
-    angle = 20
     tilted_square()
     tilted_square()
     tilted_square()
+
+    # bonus: you could have a separate function for drawing a square,
+    # which might be useful later:
+
+    def square():
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+      turtle.forward(50)
+      turtle.left(90)
+
+    def tilted_square():
+      turtle.left(20)
+      square()
+
+    # etc'
 
 Comments
 --------
@@ -97,7 +132,7 @@ Comments can also go at the end of a line, like this:
 
 ::
 
-     angle = 20 # Set the angle we want to use for our square
+      turtle.left(20)     # now we can change the angle only here
 
 
 A function for a hexagon
