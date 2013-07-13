@@ -35,7 +35,7 @@ You can access variables in functions as well::
 
 .. important::
 
-   Python uses *identing with whitespace* to identify blocks of code
+   Python uses *indenting with whitespace* to identify blocks of code
    that belong together. In Python a block (like the function
    definitions shown above) is introduced with a colon at the end of the
    line and subsequent commands are indented --- usually 4 spaces
@@ -45,9 +45,13 @@ You can access variables in functions as well::
    special characters (like curly braces ``{}``) to group blocks of
    code together.
 
-   You can indent your blocks with either tabs or spaces, but if you
-   use both tabs *and* spaces in the same file the Python interpreter
-   will complain. Make sure to always use one or the other.
+   Never use tab characters to indent your blocks, only spaces. You
+   can -- and should -- configure your editor to put 4 spaces when you
+   press the tab key. The problem with using tab characters is that
+   other python programmers use spaces, and if both are used in the
+   same file python will read it wrong (in the best place, it will
+   complain, and in the worst case, weird, hard to debug bugs will
+   happen).
 
 A function for a square
 =======================
