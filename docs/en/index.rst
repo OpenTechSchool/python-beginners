@@ -10,8 +10,8 @@ Table of contents:
     getting_started
     simple_drawing
     variables
-    functions
     loops
+    functions
     functions_parameters
     conditionals
     conditional_loops

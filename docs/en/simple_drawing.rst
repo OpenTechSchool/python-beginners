@@ -191,7 +191,7 @@ experiment with the angles between the individual squares.
 
 .. image:: /images/tiltedsquares.png
 
-Try 20, 90 and 180 for example.
+The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.
 
 Solution
 --------
@@ -209,7 +209,7 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
-    turtle.left(20)
+    turtle.left(30)
 
     turtle.forward(50)
     turtle.left(90)
@@ -220,7 +220,7 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
-    turtle.left(20)
+    turtle.left(40)
 
     turtle.forward(50)
     turtle.left(90)
