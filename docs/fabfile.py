@@ -7,7 +7,7 @@ BASE_DIR = os.path.realpath(os.path.dirname(__file__))
 BUILD_DIR = os.path.join(BASE_DIR, '_build')
 LANGUAGES = ['en']
 MAIN_TARGET = 'html'
-REPOSITORY = 'https://github.com/SonOfLilit/python-beginners.git'
+REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
 
 
 def setup():

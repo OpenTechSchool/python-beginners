@@ -96,6 +96,7 @@ Solution
       turtle.forward(50)
       turtle.left(90)
 
+    # Set the angle we want to use for our square
     tilted_square()
     tilted_square()
     tilted_square()
