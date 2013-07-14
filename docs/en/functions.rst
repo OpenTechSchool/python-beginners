@@ -96,7 +96,6 @@ Solution
       turtle.forward(50)
       turtle.left(90)
 
-    # Set the angle we want to use for our square
     tilted_square()
     tilted_square()
     tilted_square()
@@ -132,7 +131,7 @@ Comments can also go at the end of a line, like this:
 
 ::
 
-      turtle.left(20)     # now we can change the angle only here
+     turtle.left(20)     # now we can change the angle only here
 
 
 A function for a hexagon
