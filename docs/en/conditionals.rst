@@ -81,8 +81,8 @@ Now whenever you use ``move()`` you are prompted to choose ``left`` or
 ==============
 
 In this program, the turtle will only respond to exactly ``left``
-or ``right`` with no variation. Though ``Left`` or ``RIGHT`` might
-seem the same to a human, that isn't the case when programming. Python
+or ``right`` with no variation. Though ``Left`` or ``LEFT`` might
+seem the same as ``left`` to a human, that isn't the case when programming. Python
 has a few utility methods to help with that. A string has the methods
 ``.strip()``, which removes whitespace and ``.lower()`` which makes
 everything lower-case.
