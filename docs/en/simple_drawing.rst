@@ -69,6 +69,16 @@ until you click on it::
 Drawing a square
 ================
 
+.. note::
+
+   You're not always expected to know the anwer immediately. Learn by
+   trial and error! Experiment, see what python does when you tell it
+   different things, what gives beautiful (although sometimes
+   unexpected) results and what gives errors. If you want to keep
+   playing with something you learned that creates interesting
+   results, that's OK too. Don't hesitate to try and fail and learn
+   from it!
+
 Exercise
 --------
 
