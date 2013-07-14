@@ -63,7 +63,7 @@ Can you make the dashes become larger as the line progresses?
 
 .. hint::
 
-   Feeling lost?  Inspect ``i`` at every run of the loop::
+   Feeling lost?  Inspect ``i`` at every run of the loop (this is just for nudging towards the solution)::
 
        for i in range(10):
            print(i)
