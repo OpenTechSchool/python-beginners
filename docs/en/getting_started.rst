@@ -80,7 +80,8 @@ where you could enter another command::
   Hello world
   >>>
 
-To leave the interactive shell, press :kbd:`Ctrl-D`.
+To leave the interactive shell, press :kbd:`Ctrl-Z` and then
+:kbd:`Enter` on Windows or :kbd:`Ctrl-D` anywhere else.
 
 Running Python files
 ====================
@@ -110,11 +111,14 @@ running) and type:
    the system command line to change your active directory with the
    :command:`cd` command, which stands for "change directory"::
 
-     cd Python_Exercises
+     cd "c:\Users\myuser\Desktop\Python_Exercises"
 
-   This changes to the subdirectory Python_Exercises of the currently active
-   directory.  If you don't know which directory you are currently in then
-   running in then use :command:`pwd`,which stands for "print working directory".
+   This changes to the directory Python_Exercises on my desktop (yours
+   might be somewhere a bit different). If you don't know the location
+   of the directory where you saved the file, you can simply drag the
+   directory to the command line window.  If you don't know which
+   directory your shell is currently running in use :command:`pwd`,
+   which stands for "print working directory".
 
 On Windows you can double-click the Python file to run it.
 
