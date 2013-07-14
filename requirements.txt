@@ -1,0 +1,4 @@
+Fabric
+Pygments
+Sphinx
+docutils
