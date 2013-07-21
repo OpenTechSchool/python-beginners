@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="User-defined functions" href="functions.html" />
+    <link rel="next" title="Loops" href="loops.html" />
     <link rel="prev" title="Simple drawing with turtle" href="simple_drawing.html" /> 
   </head>
   <body>
@@ -34,7 +34,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined functions"
+          <a href="loops.html" title="Loops"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="simple_drawing.html" title="Simple drawing with turtle"
@@ -53,9 +53,9 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Whew. Experimenting with the angles requires you to change three different
-places each time. Imagine you&#8217;d want to experiment with the square sizes, let
-alone with rectangles! We can do better than that.</p>
-<p>This is where variables come into play: You can tell Python that from now on,
+places in the code each time. Imagine you&#8217;d want to experiment with
+all of the square sizes, let alone with rectangles! We can do better than that.</p>
+<p>This is where <strong>variables</strong> come into play: You can tell Python that from now on,
 whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: <em>Let x be 5.</em>
 Then <em>x * 2</em> will obviously be <em>10</em>.</p>
@@ -64,7 +64,7 @@ Then <em>x * 2</em> will obviously be <em>10</em>.</p>
 </pre></div>
 </div>
 <p>After that statement, if you do <tt class="docutils literal"><span class="pre">print(x)</span></tt>, it will actually output its value
-&#8212; 5.  You can well use that for turtle too:</p>
+&#8212; 5.  Well, can use that for your turtle too:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -124,9 +124,9 @@ much faster with our tilted squares program?</p>
 <p>Draw a house.</p>
 <img alt="_images/house.png" src="_images/house.png" />
 <p>You can calculate the length of the diagonal line with the Pythagorean
-theorem. That value is a good candidate for a variable. To calculate
-the square root of a number in Python, import the <em>math</em> module and
-use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The square of a number is calculated
+theorem. That value is a good candidate to store in a variable. To calculate
+the square root of a number in Python, you&#8217;ll need to import the <em>math</em> module
+and use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The square of a number is calculated
 with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
 
@@ -165,8 +165,8 @@ with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:
   <p class="topless"><a href="simple_drawing.html"
                         title="previous chapter">Simple drawing with turtle</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="functions.html"
-                        title="next chapter">User-defined functions</a></p>
+  <p class="topless"><a href="loops.html"
+                        title="next chapter">Loops</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -188,7 +188,7 @@ with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined functions"
+          <a href="loops.html" title="Loops"
              >next</a></li>
         <li class="right" >
           <a href="simple_drawing.html" title="Simple drawing with turtle"

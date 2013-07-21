@@ -26,18 +26,18 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Functions with parameters" href="functions_parameters.html" />
-    <link rel="prev" title="User-defined functions" href="functions.html" /> 
+    <link rel="next" title="User-defined functions" href="functions.html" />
+    <link rel="prev" title="Variables" href="variables.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions_parameters.html" title="Functions with parameters"
+          <a href="functions.html" title="User-defined functions"
              accesskey="N">next</a></li>
         <li class="right" >
-          <a href="functions.html" title="User-defined functions"
+          <a href="variables.html" title="Variables"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
@@ -52,9 +52,9 @@
 <h1>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>One more thing: Our programs often featured repetition. There is a powerful
-concept in Python called looping, which we will elaborate later on. For now,
-try this easy example:</p>
+<p>One more thing: Our programs often feature repetition. There is a powerful
+concept in Python called looping (jargon: <em>iteration</em>), which we will
+elaborate later on. For now, try this easy example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -76,14 +76,22 @@ values?</p>
 <p>The <tt class="docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>.
 If you want to know more about it, you can use the help in the Python shell by
 typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>. Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
+<p>If you want to repeat some code a number of times, but don&#8217;t care about the value
+of the <tt class="docutils literal"><span class="pre">i</span></tt> variable, it can be good practice to replace it with <tt class="docutils literal"><span class="pre">_</span></tt> instead.
+This signifies that we don&#8217;t care about its value, or don&#8217;t wish to use it. So
+you could rewrite the first example as:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Drawing a dashed line<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function;  put it back on the ground with
-<tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
+<p>Draw a dashed line.  You can move the turtle without the turtle drawing its
+movement by using the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function; to tell it to draw again,
+use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
 </div>
 <div class="section" id="solution">
@@ -105,13 +113,10 @@ with the <tt class="docutils literal"><span class="pre">turtle.penup()</span></t
 <p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+    <span class="c"># ...</span>
 </pre></div>
 </div>
-<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the index variable or loop
+<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the <strong>index</strong> variable or loop
 variable &#8212; to get increasing step sizes?</p>
 </div>
 </div>
@@ -137,6 +142,11 @@ get it?</p>
 </pre></div>
 </div>
 </div>
+<div class="section" id="id3">
+<h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>See if you can look at your earlier square-drawing code, and make it much
+shorter by using loops.</p>
+</div>
 </div>
 </div>
 
@@ -159,6 +169,7 @@ get it?</p>
 <li><a class="reference internal" href="#honeycomb-loops">Honeycomb loops</a><ul>
 <li><a class="reference internal" href="#id1">Exercise</a></li>
 <li><a class="reference internal" href="#id2">Solution</a></li>
+<li><a class="reference internal" href="#id3">Bonus</a></li>
 </ul>
 </li>
 </ul>
@@ -166,11 +177,11 @@ get it?</p>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="functions.html"
-                        title="previous chapter">User-defined functions</a></p>
+  <p class="topless"><a href="variables.html"
+                        title="previous chapter">Variables</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="functions_parameters.html"
-                        title="next chapter">Functions with parameters</a></p>
+  <p class="topless"><a href="functions.html"
+                        title="next chapter">User-defined functions</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -192,10 +203,10 @@ get it?</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions_parameters.html" title="Functions with parameters"
+          <a href="functions.html" title="User-defined functions"
              >next</a></li>
         <li class="right" >
-          <a href="functions.html" title="User-defined functions"
+          <a href="variables.html" title="Variables"
              >previous</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>

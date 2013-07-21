@@ -4,12 +4,12 @@ Variables
 Introduction
 ============
 
-Whew. Experimenting with the angles requires you to change three different
-places each time. Imagine you'd want to experiment with the square sizes, let
-alone with rectangles! We can do better than that.
+Whew. Experimenting with the angles requires you to change three different 
+places in the code each time. Imagine you'd want to experiment with 
+all of the square sizes, let alone with rectangles! We can do better than that.
 
-This is where variables come into play: You can tell Python that from now on,
-whenever you refer to a variable, you actually mean something else. That concept
+This is where **variables** come into play: You can tell Python that from now on, 
+whenever you refer to a variable, you actually mean something else. That concept 
 might be familiar from symbolic maths, where you would write: *Let x be 5.*
 Then *x \* 2* will obviously be *10*.
 
@@ -18,7 +18,7 @@ In Python syntax, that very statement translates to::
     x = 5
 
 After that statement, if you do ``print(x)``, it will actually output its value
---- 5.  You can well use that for turtle too::
+--- 5.  Well, can use that for your turtle too::
 
     turtle.forward(x)
 
@@ -86,10 +86,10 @@ Draw a house.
 
 .. image:: /images/house.png
 
-You can calculate the length of the diagonal line with the Pythagorean
-theorem. That value is a good candidate for a variable. To calculate
-the square root of a number in Python, import the *math* module and
-use the ``math.sqrt()`` function. The square of a number is calculated
+You can calculate the length of the diagonal line with the Pythagorean 
+theorem. That value is a good candidate to store in a variable. To calculate 
+the square root of a number in Python, you'll need to import the *math* module 
+and use the ``math.sqrt()`` function. The square of a number is calculated 
 with the ``**`` operator::
 
     import math

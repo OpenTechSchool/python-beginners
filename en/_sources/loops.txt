@@ -4,9 +4,9 @@ Loops
 Introduction
 ============
 
-One more thing: Our programs often featured repetition. There is a powerful
-concept in Python called looping, which we will elaborate later on. For now,
-try this easy example::
+One more thing: Our programs often feature repetition. There is a powerful
+concept in Python called looping (jargon: *iteration*), which we will 
+elaborate later on. For now, try this easy example::
 
     for i in range(10):
         print("Hello!")
@@ -17,7 +17,6 @@ once.  But it gets better::
 
     for i in range(10):
         print(i)
-
 
 Notice how we write only one line of code using ``i`` but it has 10 different
 values?
@@ -31,15 +30,23 @@ The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., n-1`
 If you want to know more about it, you can use the help in the Python shell by
 typing ``help(range)``. Use the :kbd:`q` key to exit the help again.
 
+If you want to repeat some code a number of times, but don't care about the value 
+of the ``i`` variable, it can be good practice to replace it with ``_`` instead. 
+This signifies that we don't care about its value, or don't wish to use it. So 
+you could rewrite the first example as::
+
+    for _ in range(10):
+        print("Hello!")
+
 Drawing a dashed line
 =====================
 
 Exercise
 --------
 
-Draw a dashed line.  You can move the turtle without tracing a line behind you
-with the ``turtle.penup()`` function;  put it back on the ground with
-``turtle.pendown()``.
+Draw a dashed line.  You can move the turtle without the turtle drawing its 
+movement by using the ``turtle.penup()`` function; to tell it to draw again, 
+use ``turtle.pendown()``.
 
 .. image:: /images/dashed.png
 
@@ -67,12 +74,9 @@ Can you make the dashes become larger as the line progresses?
 
        for i in range(10):
            print(i)
-           turtle.forward(15)
-           turtle.penup()
-           turtle.forward(5)
-           turtle.pendown()
+           # ...
 
-   Can you utilize ``i`` --- commonly called the index variable or loop
+   Can you utilize ``i`` --- commonly called the **index** variable or loop
    variable --- to get increasing step sizes?
 
 Honeycomb loops
@@ -98,3 +102,9 @@ Solution
         hexagon()
         turtle.forward(100)
         turtle.right(60)
+
+Bonus
+-----
+
+See if you can look at your earlier square-drawing code, and make it much 
+shorter by using loops.
