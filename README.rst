@@ -1,6 +1,18 @@
 Introduction to programming with Python
 ***************************************
 
+This workshop is an introduction to basic programming concepts and
+abstractions.  It is laid out for hands-on workshops taking up roughly 4 hours.
+While we have tried to be compatible with Python 2 _and_ 3 wherever possible,
+we'd strongly encourage you to use Python 3.
+
+The initial version of this material was loosely based on the "Python für Kids"
+book by Gregor Lingl.  It is conceptual-- rather than incidental --that it
+trades in idioms for learnability.  We believe that beginners sometimes have to
+jump through one or another hoop to fully comprehend the scope and
+applicability of a concept.  Every introduced abstraction solves another pain
+point in the life of a beginning programmer.
+
 HTML Version
 ============
 
