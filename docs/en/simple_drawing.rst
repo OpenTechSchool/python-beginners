@@ -4,7 +4,7 @@ Simple drawing with turtle
 Introduction
 ============
 
-Turtle is like a drawing board. 
+Turtle is like a drawing board.
 
 It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
 can move the turtle around.
@@ -35,7 +35,7 @@ required to make it work from files)::
 .. image:: /images/left.png
 
 
-The ``turtle.forward(...)`` function tells the turtle to move forward 
+The ``turtle.forward(...)`` function tells the turtle to move forward
 by the given distance. ``turtle.left(...)`` takes a number of degrees which you want
 to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
@@ -177,7 +177,7 @@ Bonus
 -----
 
 How about a triangle? In an equilateral triangle (a triangle with all
-sides of equal length) each corner has an angle of 120 degrees.
+sides of equal length) each corner has an angle of 60 degrees.
 
 
 More squares
