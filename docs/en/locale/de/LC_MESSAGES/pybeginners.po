@@ -1,0 +1,1336 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# lightyear <ben@opentechschool.org>, 2013
+# krother <krother@academis.eu>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-03 08:57+0200\n"
+"PO-Revision-Date: 2013-09-03 19:34+0000\n"
+"Last-Translator: krother <krother@academis.eu>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 1a1ce002fa63472cb15b191077eb0045
+#: ../conditional_loops.rst:2
+msgid "Conditional Loops"
+msgstr "Bedingte Schleifen"
+
+# 334d893064914dc49b5891373a8dad17
+# 32a2dab4cce4433995bba43394b0537f
+# d0432c4893af4880a206f8f53e8af5db
+# e0637d344bc54d6b9b7dbd528c23d293
+# 0c076d31ba194ceaa33dca74a9d47c8f
+# 692ceb3776ef4e8bacfcd90b34d0a4be
+# ea296f56dc8549ba800be7555d20738b
+# de851abb643c43bb8bc6a6dec02872b6
+#: ../conditional_loops.rst:5 ../conditionals.rst:5 ../functions.rst:5
+#: ../functions_parameters.rst:5 ../logical_operators.rst:5 ../loops.rst:5
+#: ../simple_drawing.rst:5 ../variables.rst:5
+msgid "Introduction"
+msgstr "Einführung"
+
+# ed69a11e0d9c44cd8820d4808bf04e92
+#: ../conditional_loops.rst:7
+msgid ""
+"Conditional loops are way to repeat something until a certain condition is "
+"met. If the condition is never met, the loop can become infinite. In Python "
+"conditional loops are defined with the ``while`` statement::"
+msgstr "Bedingte Schleifen sind ein Weg Instruktionen zu wiederholen bis eine bestimmte Bedingung eintritt.  Falls die Bedingung nie eintritt, werden die Befehle in der Schleife ewig wiederholt. In Python werden bedingte Schleifen mit ``while`` ausgedrückt::"
+
+# dbe7768093cf4ac0a3ae3c23aed9b195
+#: ../conditional_loops.rst:18
+msgid "Turtle prison"
+msgstr "Schildkrötengefängnis"
+
+# a365175979c149e0947ccc8f053c59a2
+# 41aa793e705742fca5b1aea1a6dd3fca
+# a70223566dc6441384bfdf76469bc9ff
+# 7389a4c559064f9ca15065030aa88953
+# b130c4bbed63498ea72656b562a0d6be
+# bb2f0b91bec44741817a96fff4ca4d97
+# f858ba5e02204ce389c8963561d52db5
+# af5e06431deb4b5582345e6fb7c7a0e5
+# d035e7bcbe484c3ca6367d5c01f61f87
+# 1658f1a645f44fda96d96e568fce4520
+# 9771682e41d841c1b6d287939216d2fc
+# 5d637f334fef44cd8d54d180f728a7ce
+# 92f8a3456f56489a87d1243efea1e57c
+# 1219c479390740e58033a1622fea4956
+# 3e2ee919b7e94815964d6c1bd5fbfa57
+#: ../conditional_loops.rst:21 ../conditional_loops.rst:63 ../functions.rst:77
+#: ../functions.rst:141 ../functions_parameters.rst:53
+#: ../functions_parameters.rst:62 ../logical_operators.rst:26
+#: ../logical_operators.rst:64 ../loops.rst:45 ../loops.rst:86
+#: ../simple_drawing.rst:83 ../simple_drawing.rst:156
+#: ../simple_drawing.rst:187 ../variables.rst:46 ../variables.rst:83
+msgid "Exercise"
+msgstr "Übung"
+
+# de40565155684f489372b8618e9aeb59
+#: ../conditional_loops.rst:23
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"building up huge gambling debts. It's time for turtle to be put into a box "
+"that it can't get out of."
+msgstr "Die Schildkröte hat wieder ihre übliche Masche durchgezogen, Schnapsläden ausgeraubt und gewaltige Spielschulden angehäuft. Es wird Zeit die Schildkröte hinter Gitter zu bringen, eine Kiste aus der sie nicht herauskommt. "
+
+# e0bad901541d400984573cd74676b5f3
+#: ../conditional_loops.rst:27
+msgid ""
+"Let's make a new version of ``forward()``. One that turns the turtle around "
+"if it tries to go further than 100 from the origin. We'll need a ``while`` "
+"loop, and some new turtle functions:"
+msgstr "Lasst uns eine neue Versio von ''forward()'' entwickeln. Eine die die Schildkröte umdreht, sobald sie sich mehr als 100 vom Ursprungspunkt entfernt. Wir werden eine ''while'' Schleife brauchen, sowie einige neue turtle Befehle."
+
+# 66f46d1b7b524ab6a1ba9c093125a286
+#: ../conditional_loops.rst:31
+msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
+msgstr "''turtle.distance(0, 0)'' - Entfernung der Schildkröte vom Ursprung."
+
+# 602cf8a26574405888fd498d6616db2c
+#: ../conditional_loops.rst:32
+msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
+msgstr "''turtle.towards(0, 0)'' - Der Winkel der zurück zum Ursprungspunkt führt."
+
+# e7d9d479756f484c94296f2531b2a4fa
+#: ../conditional_loops.rst:33
+msgid "``turtle.setheading(angle)`` - Directly set the turtle direction"
+msgstr "''turtle.setheading(winkel)'' - Die Richtung der Schildkröte direkt setzen."
+
+# dad63a81afcf430a95a8c79d545a6d1a
+#: ../conditional_loops.rst:35
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, a ``while`` loop and a bit of conditional logic. It's a bit of a "
+"stretch but keep at it! Don't be afraid to talk it out with a coach or "
+"another student."
+msgstr "Nun musst Du die Logik für das Gefängnis mit diesen turtle Funktionen implementieren, also eine ''while'' Schleife und einige konditionale Ausdrücke. Es gibt einiges zu tun, aber gib nicht auf! Frage ruhig einen der Coaches oder einen anderen Kursteilnehmer."
+
+# c42a7a88b0ad4baab3475c5cad7c7105
+# 1c30da21f621499e8f79e2631e6be27b
+# 0cd5bda39e47469aa6638037e2474c7a
+# 761be442bcdb4fd99bb2d2d3302be6dd
+# 8fd20da23f524356b164a78e9b135d03
+# 3d55015a1dc14dbb8658f76686f05aa6
+# 361bbb72e53149d2924d118f7bfa2a0b
+# 6de109740cba48ea9c3c69547d354c54
+# a63f8d0972f64a57a6013e3f5f3d467f
+# 2e40c573be6049218fb8e9c09f08caef
+# 9d6b5510a2284ed3ad110f8583191a82
+# 89776e86162a47289a1d9514beca0e55
+# 9925a6b9044c4ff3a1d5f28756f3b261
+#: ../conditional_loops.rst:42 ../conditional_loops.rst:80 ../functions.rst:84
+#: ../functions.rst:152 ../functions_parameters.rst:68
+#: ../logical_operators.rst:36 ../logical_operators.rst:71 ../loops.rst:54
+#: ../loops.rst:92 ../simple_drawing.rst:92 ../simple_drawing.rst:163
+#: ../simple_drawing.rst:197 ../variables.rst:52
+msgid "Solution"
+msgstr "Lösung"
+
+# 5d48d75f138a461b8e91e84098056c9d
+#: ../conditional_loops.rst:56
+msgid "Draw a spiral"
+msgstr "Zeichne eine Spirale"
+
+# c85a2e2f784a4144aa5855bd8366d705
+#: ../conditional_loops.rst:58
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always *True*."
+msgstr "Schleifen können mit der Anweisung ''break'' unterbrochen werden. Das ist besonders nützlich wenn Du eine Endlosschleife schreibst, also eine ''while'' Schleife in der die Abbruchbedingung immer *True* ist."
+
+# 9dd30e5437db4b02868936e686b27bfc
+#: ../conditional_loops.rst:65
+msgid ""
+"Write a ``while`` loop with a condition that is always *True* to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr "Schreibe eine ''while'' Schleife mit einer Bedingung die immer *True* ergibt, um eine Spirale zu zeichnen. Unterbreche die Schleife sobald die Schildkröte eine bestimmte Entfernung vom Mittelpunkt erreicht. Verwende die Funktion ''turtle.distance(x, y)'' um die Entfernung der Schildkröte zum Punkt mit den Koordinaten ''x'' und ''y'' zu erhalten."
+
+# 3d6b9cf6e5cb46818e7adcb2d8149c25
+#: ../conditional_loops.rst:70
+msgid ""
+"To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
+"functions, which return the position of the turtle in X and Y axes "
+"respectively."
+msgstr "Um das zu tun, brauchst Du die Funktionen ''turtle.xcor()'' und ''turtle.ycor()'', welche die Position der Schildkröte auf der X und Y-Achse zurückgeben."
+
+# 3df6ee28f24f4eb6ad6e20fd89a2f6cc
+#: ../conditional_loops.rst:76
+msgid ""
+"To draw a spiral, the turtle has to rotate by a constant value and move "
+"forward by an increasing value."
+msgstr "Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt werden."
+
+# a39b06cb1b764ca7ab6d890a14eec8a7
+# 2bbe289818ab4907802ff46b6be73f05
+# c2c822c9cf2f4d7d94a04524ecaf1599
+# 8d124ba2a4ee48dab91fe2646edddd79
+# 201f5067013745ddac268c7bc8b638fd
+# f3494781bdb84b2996b5d66e2c982616
+#: ../conditional_loops.rst:96 ../loops.rst:65 ../loops.rst:107
+#: ../simple_drawing.rst:113 ../simple_drawing.rst:177 ../variables.rst:75
+msgid "Bonus"
+msgstr "Bonus"
+
+# 1fb10d4bcbf842c4a889e8ba1f0b3c96
+#: ../conditional_loops.rst:98
+msgid ""
+"Can you make a conditional for this loop, so you don't need the infinite "
+"loop *while True* or the *break*? Which version do you find easier to "
+"understand?"
+msgstr "Kannst du eine Bedingung für diese Schleife formulieren, so dass Du keine Endlosschleife *while True* oder die Anweisung *break* benötigst? Welche Variante findest Du einfacher zu verstehen?"
+
+# 7317791ecb734930807a74359f3cf584
+#: ../conditionals.rst:2
+msgid "Conditional statements"
+msgstr "Verzweigungen"
+
+# 805520aea7564543886bc9887797aa01
+#: ../conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr "Bisher haben wir vordefinierte Aufgaben erledigt, aber einmal ehrlich, die Programme waren kaum komplizierter als eine antike Drehorgel die eine vordefinierte Melodie vom Anfang bis zum Ende abspult. Verzweigugen sind das, was Programmieren sehr viel mächtiger macht. Verzweigungen *testen* den Inhalt einer Variablen und verhalten sich einmal so falls die Variable einen bestimmten Wert hat, und anders falls nicht. Programmierer nennen Verzweigungen auch *if Ausdrücke*."
+
+# e39442c2aebe47bab0fa589b70b54704
+#: ../conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr "Um zu wissen ob eine Bedingung *True* oder *False* ist, brauchen wir einen neuen Datentyp: Boolean. Booleans erlauben logische Operationen, die entweder als *wahr* oder *falsch* ausgewertet werden. Unsere Verzweigung kann also folgendermassen verstanden werden:"
+
+# c3848954d832455b906db1eaa2f324c2
+#: ../conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr "**if** (eine Bedingung die als True ausgewertet wird)*:"
+
+# fba0f9ea00824093b1e48199d5deff8d
+#: ../conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr "*dann führe diese Anweisungen nur für 'True' aus*"
+
+# 71d87ba3a03d4beba32118dc24b907c1
+#: ../conditionals.rst:23
+msgid "**else**:"
+msgstr "**else**:"
+
+# 23a1816686a54effb1020fa130c8af37
+#: ../conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr "*andernfalls führe diese Anweisungen nur für 'False' aus*."
+
+# a42bc428574e47c2af901cc442badd68
+#: ../conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr "Eine Bedingung kann alles sein, was zu wahr (*True*) oder falsch (*False*) evaluiert werden kann. Vergleiche ergeben immer wahr oder falsch, zum Beispiel ``==`` (ist gleich), ``>`` (größer als), ``<`` (kleiner als)."
+
+# d458b97be693420c8923520768303f60
+#: ../conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr "Der **else** Block ist optional. Falls Du ihn auslässt und die Bedingung als 'False' ausgewertet wird, passiert nichts weiter."
+
+# c871950d16d649078e10e180278982c2
+#: ../conditionals.rst:34
+msgid "Examples"
+msgstr "Beispiele"
+
+# a54a6b3cc9f843a6aab29b1c0e5633a4
+#: ../conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr "Hier sind einige Beispiele. Du kannst sie Zeile für Zeile lesen und nachdenken was sie tun, oder gleich ausführen um auf Nummer sicher zu gehen."
+
+# df91eb2a70d14c1699237b8c5bf4e628
+#: ../conditionals.rst:54
+msgid "Giving Directions"
+msgstr "Die Richtung festlegen"
+
+# 89ee86a2a72e453cb6ba569452ae8044
+#: ../conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr "Die Schildkröten in Python sind sehr gut darin, Befehle auszuführen. Lass uns die ''input()'' Funktion verwenden, um den Benutzer nach einer Richtung zu fragen, in die die Schildkröte bewegt werden soll. Um es nicht zu kompliziert zu machen, erlauben wir nur zwei Befehle: ''links'' und ''rechts''."
+
+# 6e527ed254d2498a86319ed96c95d646
+#: ../conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr "Python 2 verwenden? Die Funktion ''input()'' heisst auch ''raw_input()''."
+
+# c427d35089304167b5218aecc09b5aee
+#: ../conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr "Es ist viel einfacher dies als eine Funktion zu definieren, etwa folgendermassen:"
+
+# 613af22e1c4b43aba2ab3fab01749054
+#: ../conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr "Immer wenn Du nun ''move()'' verwendest, wirst Du gefragt entweder ''links'' oder ''rechts'' auszuwählen."
+
+# 40fe19aef43842819fba748a2065f630
+#: ../conditionals.rst:81
+msgid "\"data munging\""
+msgstr "''Datenbastelei''"
+
+# 9dac7168ecf7467881dc48dc349e0b56
+#: ../conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr "In diesem Programm wird die Schildkröte nur auf die Befehle ''links'' und ''rechts'' reagieren, ohne jegliche Abweichungen. Obwohl ''Links'' oder ''LINKS'' für einen Menschen das gleiche bedeutet wie ''links'', ist das für ein Programm nicht der Fall. Python hat einige Hilfsmethoden die dabei helfen. Ein String hat die Methoden ''.strip()'', die Leerzeichen und Zeilenumbrüche von den Enden entfernt, und ''.lower()'', welche den gesamten String in Kleinbuchstaben umwandelt."
+
+# 916395fc278f4d768c9272d389694c15
+#: ../conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr "Here sind einige Beispiele, die die Auswirkungen von ''.strip()'' und ''.lower()'' illustrieren::"
+
+# 63b5cd1b61f24a0baf0c9194de4a6941
+#: ../conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr "Versuche de Befehl ''direction = direction.strip().lower'' zu der Funktion ''move()'' hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns ''data munging'' (Datenbastelei) genannt. Sie ist sehr häufig."
+
+# 1db128428bff44eca5fd2a96240d52f5
+#: ../conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr "Kannst Du einig zusätzliche Eingabeoptionen hinzufügen, die die Schildkröte andere Dinge zeichnen lassen? Wie wäre es mit einem ''Sechseck''?"
+
+# 2954308ab8a74fc3865896aa6c526cdd
+#: ../copyright.rst:2
+msgid "License"
+msgstr "Lizenz"
+
+# 9bab785527034ee69006d92deec7ca64
+#: ../copyright.rst:4
+msgid ""
+"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License. To view a copy of this license, visit "
+"http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative "
+"Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, "
+"USA."
+msgstr "Dieses Werk steht unter einer `Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz <http://creativecommons.org/licenses/by-sa/3.0/de>`_."
+
+# f34a7842b18e4721ad58d0faa1e5678a
+#: ../functions.rst:2
+msgid "User-defined functions"
+msgstr "Benutzerdefinierte Funktionen"
+
+# c9500e7b6651401ea4fedf2794cbd682
+#: ../functions.rst:7
+msgid ""
+"There is still a lot of duplicated code --- the actual drawing of the "
+"rectangle --- around. If you need to copy and paste code, that is usually a "
+"sign of lacking abstractions. (Programmers call it a *code smell.*)"
+msgstr "Es gibt immer noch eine Menge doppelten Code im Programm wie etwa das Zeichnen des Rechtecks. Falls Du Code kopieren und einfügen musst, ist das normalerweise ein Zeichen für fehlende Abstraktion. Programmierer nennen das auch *code smell* (miefender Code)."
+
+# 6758f4dd28c84dcfa6701ab87fdfee69
+#: ../functions.rst:11
+msgid ""
+"Functions are one way to express abstractions in Python. Let's take "
+"``turtle.reset()`` for example. It is actually an abstraction for a number "
+"of steps, namely:"
+msgstr "Funktionen sind ein Weg um Abstraktion in Python auszudrücken. Betrachten wir zum Beispiel ''turtle.reset''. Es ist eine Abstraktion für eine ganze Anzahl Zwischenschritte, nämlich:"
+
+# ad879b4d6a1641929a65475734454c8e
+#: ../functions.rst:15
+msgid "Erase the drawing board."
+msgstr "Lösche die Zeichenfläche."
+
+# 2c04b212715c448f86c818bfdfeba10f
+#: ../functions.rst:16
+msgid "Set the width and color back to default."
+msgstr "Setze die Linienbreite und -Farbe zurück zu den Startwerten."
+
+# 1e650e0acec4439199ee8e5d28cf87d5
+#: ../functions.rst:17
+msgid "Move the turtle back to its initial position."
+msgstr "Bewege die Schildkröte in ihre Ausgangsposition zurück."
+
+# baf2f60a95af4ee4b6349722693880ef
+#: ../functions.rst:19
+msgid "A function can be defined with the ``def`` keyword in Python::"
+msgstr "Eine Funktion kann in Python mit dem Schlüsselwort ''def'' definiert werden::"
+
+# d61898b955274ce59ac1ab52b20d974d
+#: ../functions.rst:25
+msgid ""
+"This function we defined is called ``line_without_moving`` and it is an "
+"abstraction for two turtle steps - a move forward and a move backward."
+msgstr "Diese von uns definierte Funktion heisst ''line_without_moving''. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts."
+
+# 413c7d6213f342a99810b60c4e9d828c
+#: ../functions.rst:29
+msgid ""
+"To use it (or as it is usually called, \"to call it\"), write its name "
+"followed by parentheses::"
+msgstr "Um sie zu benutzen (oder wie es häufig genannt wird, \"sie aufzurufen\"), schreib ihren Namen gefolgt von runden Klammern::"
+
+# 40801052daab40dbb1bd673e9972b397
+#: ../functions.rst:40
+msgid "We could write more functions to remove some of the repetition::"
+msgstr "Wir könnten mehr Funktionen implementieren, um einige der Wiederholungen loszuwerden::"
+
+# e8d2ddc525a148ae940db162124f5b30
+#: ../functions.rst:55
+msgid ""
+"Python uses *indenting with whitespace* to identify blocks of code that "
+"belong together. In Python a block (like the function definitions shown "
+"above) is introduced with a colon at the end of the line and subsequent "
+"commands are indented --- usually 4 spaces further in. The block ends with "
+"the first line that isn't indented."
+msgstr "Python benutzt *Einrückung mit Leerzeichen* um zusammengehörende Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden Zeilen --- üblicherweise vier Leerzeichen --- gekennzeichnet.  Der Block endet sobald die Zeilen nicht mehr eingerückt sind."
+
+# 9d60ebccd2f1463ab8d477e5518468dc
+#: ../functions.rst:61
+msgid ""
+"This is different to many other programming languages, which use special "
+"characters (like curly braces ``{}``) to group blocks of code together."
+msgstr "Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern ''{}'') verwenden um Codeblöcke zu kennzeichnen."
+
+# 9943e17c8007437b8248532574b92b7b
+#: ../functions.rst:65
+msgid ""
+"Never use tab characters to indent your blocks, only spaces. You can -- and "
+"should -- configure your editor to put 4 spaces when you press the tab key. "
+"The problem with using tab characters is that other python programmers use "
+"spaces, and if both are used in the same file python will read it wrong (in "
+"the best place, it will complain, and in the worst case, weird, hard to "
+"debug bugs will happen)."
+msgstr "Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du kannst -- und solltest -- Deinen Editor so konfigurieren, dass er vier Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls beide in der gleichen Python-Datei verwendet werden, wird Python sie fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf."
+
+# c5cd724c042744519763480c26b40706
+#: ../functions.rst:74
+msgid "A function for a square"
+msgstr "Eine Funktion für ein Viereck"
+
+# f91d9d0451c24156a55259867d7dbc17
+#: ../functions.rst:79
+msgid ""
+"Write a function that draws a square. Could you use this function to improve"
+" the tilted squares program? If you change the program to use a function, is"
+" it easier to experiment with?"
+msgstr "Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?"
+
+# a54ba59d3aa34a4a957d2e52823ec390
+#: ../functions.rst:123
+msgid "Comments"
+msgstr "Kommentare"
+
+# 8a5573ac4c9544b0a569e8ebd519cc34
+#: ../functions.rst:125
+msgid ""
+"In the solution above, the line that starts with a ``#`` is called a "
+"comment. In Python, anything that goes on a line after ``#`` is ignored by "
+"the computer. Use comments to explain what your program does, without "
+"changing the behaviour for the computer."
+msgstr "In der oben genannten Löung ist die Zeile die mit einem ''#'' anfängt, eine Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein ''#'' folgt. Verwende Kommentare um zu erklären wie Dein Programm funktioniert, ohne dass Du dessen Verhalten im Computer veränderst."
+
+# 250abe83e72141548a86241a045aa258
+#: ../functions.rst:130
+msgid "Comments can also go at the end of a line, like this:"
+msgstr "Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:"
+
+# 95a48353891b4d54ba6b112830ec165c
+#: ../functions.rst:138
+msgid "A function for a hexagon"
+msgstr "Eine Funktion für ein Hexagon"
+
+# 3f5402ec7c7942c59e3d175676e6c36c
+#: ../functions.rst:143
+msgid "Write a function that draws a hexagon."
+msgstr "Schreibe eine Funktion die ein Hexagon zeichnet."
+
+# 18fc49a73d5f4be09f9c87afdc1be109
+#: ../functions.rst:147
+msgid ""
+"Now combine that function into a honeycomb. Just make it with a single layer"
+" like this:"
+msgstr "Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur eine einzige Ebene, ungefähr so:"
+
+# 12544ae9c1874a6ab24b38f56acb1eed
+#: ../functions.rst:194
+msgid ""
+"You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
+"the function, but you better not call it ``hexagon`` in that case.  That's "
+"misleading because it actually draws a hexagon and then advances to a "
+"position where another hexagon would make sense in order to draw a "
+"honeycomb.  If you ever wanted to reuse your hexagon function outside of "
+"honeycombs, that would be confusing."
+msgstr "Du könntest auch die Befehle ''turtle.forward(100); turtle.right(60)'' in die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser nicht ''hexagon'' nennen. Das wäre irreführend, da die Funktion dann nicht nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend."
+
+# c629206adbb944e1a5c39bbea5ac9617
+#: ../functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr "Funktionen mit Parametern"
+
+# 46a310270167483f98ad511bfcd50f74
+#: ../functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function."
+msgstr "Während wir unser Programm verkleinern und Funktionen hinzufügen um Duplikation zu vermeiden, *refaktorisieren* wir es. Dies ist eine gute Sache. Aber die Funktionen die wir bisher geschriebe haben sind nicht besonders flexibel. Die Variablen sind alle innerhalb der Funktion definiert, so dass wir jedes Mal eine neue Funktio schreiben müssen, falls wir einen anderen Winkel oder eine andere Strecke verwenden wollen."
+
+# 0aeef6ea8fc7480085332b76115e9d3e
+#: ../functions_parameters.rst:13
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr "Deshalb benötigen wir die Möglichkeit Parameter, auch *Argumente* genannt, an eine Funktion zu übergeben. So können die Variablen innerhalb der Funktion jedes Mal wenn die Funktion aufgerufen wird, andere Werte annehmen:"
+
+# edb5370144df471fbf01d0ee5f089a43
+#: ../functions_parameters.rst:17
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr "Erinnere Dich wie wir die Funktion ''line_without_moving()'' im vorigen Abschnitt definiert haben::"
+
+# 41320b1cb8594795aca23e534454e79b
+#: ../functions_parameters.rst:24
+msgid "We can improve it by giving it a parameter::"
+msgstr "Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben::"
+
+# 00f93ef1ff814dbdbe8c6f72b822145a
+#: ../functions_parameters.rst:30
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr "Der Parameter fungiert als *Variable* die nur innerhalb der Funktionsdefinition bekannt ist. Wir verwenden diese neu definierte Funktion, indem wir sie mit dem Wert für den Parameter aufrufen::"
+
+# 0ffbb628bc934b18b86d1f907e714289
+#: ../functions_parameters.rst:37
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr "Wir haben bereits seit dem Anfang des Tutorials Funktionen mit Parametern verwendet, z.B. ''turtle.forward()'', ''turtle.left()'', etc..."
+
+# f45d1a463c3f4a17ab595a38efd05b3f
+#: ../functions_parameters.rst:40
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
+msgstr "Wir können so viele Argumente (oder Parameter) wie wir möchten für eine Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata getrennt und haben alle unterschiedliche Namen::"
+
+# e689e7cd94fb4d42be4fe2d6c3d77cc1
+#: ../functions_parameters.rst:50
+msgid "A parameterized function for a variable size hexagon"
+msgstr "Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse"
+
+# 9a48751c5e0147be97c10975a409580d
+#: ../functions_parameters.rst:55
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
+msgstr "Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen."
+
+# 33b1c019b62e433d9a2f45f09663a98a
+#: ../functions_parameters.rst:59
+msgid "A function of several parameters"
+msgstr "Eine Funktion mit mehreren Parametern"
+
+# 512cd5db0565422bb15727b6d453688b
+#: ../functions_parameters.rst:64
+msgid ""
+"Write a function that draws a honeycomb with a variable number of hexagons, "
+"of variable sizes."
+msgstr "Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl Hexagone von unterschiedlicher Grösse zeichnet (*sollen alle Hexe in einer Wabe die gleiche Grösse haben* A.d.Ue)"
+
+# 7b93b226a3244203b1a14d5dd8e1bd63
+#: ../getting_started.rst:2
+msgid "Getting started"
+msgstr "Erste Schritte"
+
+# 0a801ca2c347438db0f158cbb11e41ff
+#: ../getting_started.rst:4
+msgid ""
+"If you haven't yet got python, the latest official installation packages can"
+" be found here:"
+msgstr "Falls Du Python noch nicht installiert hast, findest Du die jüngsten offiziellen Installationspakete hier:"
+
+# 7b451a5a9c9b408ebe048141e7378901
+#: ../getting_started.rst:6
+msgid "http://python.org/download/"
+msgstr "http://python.org/download/"
+
+# 35e073674ae04b7b835e543529513328
+#: ../getting_started.rst:8
+msgid "Python 3 is preferable, being the newest version out!"
+msgstr "Python 3 ist zu bevorzugen, da es die neueste verfügbare Version ist!"
+
+# c501518117ee42deb5ed45e418ad7458
+#: ../getting_started.rst:11
+msgid "What is Python, exactly?"
+msgstr "Was ist Python eigentlich?"
+
+# e9d670e9eebf446bb2da8f9c9119635f
+#: ../getting_started.rst:13
+msgid ""
+"Ok, so python is this thing called a **programming language**. It takes text"
+" that you've written (usually referred to as **code**), turns it into "
+"instructions for your computer, and runs those instructions. We'll be "
+"learning how to write code to do cool and useful stuff. No longer will you "
+"be bound to use others' programs to do things with your computer!"
+msgstr "Also, Python ist etwas dass **Programmiersprache** genannt wird. Es liest Text ein den Du geschrieben hast (üblicherweise genannt **code**), verwandelt ihn in Befehle für den Computer und führt diese aus. Wir werden lernen, Code zu schreiben der coole und nützliche Dinge tut. Du wirst nicht länger daran gebunden sein, Programme von anderen Leuten zu verwenden um mit Deinem Computer Dinge zu tun."
+
+# 54c01e6b5db04d7c8cc83c7d389e13c7
+#: ../getting_started.rst:19
+msgid ""
+"Practically, Python is just another program on your computer. The first "
+"thing to learn is how to use and interact with it. There are in fact many "
+"ways to do this; the first one to learn is to interact with python's "
+"interpreter, using your **operating system's** (OS) console."
+msgstr "Python ist praktisch einfach ein weiteres Programm auf Deinem Computer. Zuerst werden wir lernen Python zu benutzen und mit ihm zu interagieren. Es gibt mehrere Wege das zu tun; der erste ist mit dem Python Interpreter über die Textkonsole Deines **Betriebssystems** zu interagieren."
+
+# cdc4d0a9ec634513af4bc37bc6294f82
+#: ../getting_started.rst:24
+msgid ""
+"A **console** (or 'terminal', or 'command prompt') is a *textual* way to "
+"interact with your OS, just as the 'desktop', in conjuction with your mouse,"
+" is the *graphical* way to interact your system."
+msgstr "Eine **Konsole** (auch 'Terminal' oder 'Prompt') ist ein *schriftlicher* Weg mit Deinem Betriebssystem zu interagieren, so wie der 'Desktop' zusammen mit Deiner Maus ein *grafischer* Weg zu Deinem System ist."
+
+# 5bb5656f71e241f0977719ff029a97c1
+#: ../getting_started.rst:29
+msgid "Opening a console on Mac OS X"
+msgstr "Eine Konsole auf Mac OS X öffnen"
+
+# a8c5da203eec482bb2dc7767359ea779
+#: ../getting_started.rst:31
+msgid ""
+"OS X's standard console is a program called Terminal. Open Terminal by "
+"navigating to Applications, then Utilities, then double-click the "
+"\"Terminal\" program. You can also easily search for it in the system search"
+" tool in the top right."
+msgstr "OS X hat standardmässig eine Konsole genannt Terminal eingebaut. Du kannst das Terminal öffnen, indem Du nach Applications gehst, dann nach Utilities, und dann das ''Terminal''-Programm doppelklickst. Du kannst auch einfach mit dem Suchwerkzeug in der rechten oberen Ecke danach suchen."
+
+# 8a716402143b41489e0b3d6f726e4c67
+#: ../getting_started.rst:36
+msgid ""
+"The command line Terminal is a tool for interacting with your computer. A "
+"window will open with a command line prompt message, something like this::"
+msgstr "Das Kommandozeilenterminal ist ein Werkzeug um mit Deinem Computer zu interagieren. Ein Fenste mit einer Nachricht und einem Prompt öffnet sich, ähnlich zu folgendem:"
+
+# d8d8eaaccbc9401cb30676b9ff9b0200
+#: ../getting_started.rst:43
+msgid "Opening a console on Linux"
+msgstr "Eine Konsole unter Linux öffnen"
+
+# 9af2252b63aa492b93c20b2c454811ba
+#: ../getting_started.rst:45
+msgid ""
+"Different linux distributions (e.g Ubuntu, Fedora, Mint) may have different "
+"console programs, usually referred to as a terminal. The exact terminal you "
+"start up, and how, can depend on your distribution. On Ubuntu, you will "
+"likely want to open Gnome Terminal. It should present a prompt like this::"
+msgstr "Unterschiedliche Linux-Distributionen (z.B. Ubuntu, Fedora, Mint) haben verschiedene Konsolenprogramme, auch genannt Terminals. Welches Terminal Du genau verwendest, hängt von Deiner Distribution ab. Unter Ubuntu ist das typischerweise Gnome Terminal. Es stellt einen Prompt wie folgt dar::"
+
+# e81405e7d4a64a3ebfd40ab51743cc51
+#: ../getting_started.rst:53
+msgid "Opening a console on Windows"
+msgstr "Eine Konsole unter Windows öffnen"
+
+# 7c1356e6f89e4410a622a37b6a2cb967
+#: ../getting_started.rst:55
+msgid ""
+"Window's console is called the Command Prompt, named \"cmd.exe\". An easy "
+"way to get to it is by using the key combination \"Windows+R\" ('Windows' "
+"meaning the windows logo button), which should open a 'Run' dialog. Then "
+"simply type :kbd:`cmd` and hit :kbd:`<Enter>` / click Ok. It should look "
+"like::"
+msgstr "Die Konsole von Windows wird auch Kommandoprompt, oder \"cmd.exe\" genannt. Ein einfacher Weg sie zu öffnen ist die Tastenkombination \"Windows+R\" (mit Windows ist die Taste mit dem Windows Logo gemeint). Dies sollte einen Dialog 'Ausführen' öffnen. Dort tippst Du einfach :kbd:'cmd' ein und drückst :kdb:'Enter' oder klickst Ok. Das Ergebnis sollte so aussehen::"
+
+# 99406149eed44db88b1db78a226782b9
+#: ../getting_started.rst:62
+msgid ""
+"Window's Command Prompt is not quite as powerful as its counterparts on "
+"Linux and OS X, so you might like to start the Python Interpreter (see just "
+"below) directly, or using the IDLE program that Python comes with. You can "
+"find these in the start menu."
+msgstr "Die Konsole unter Windows ist nicht ganz so mächtig wie ihre Gegenstücke unter Linux und OS X, daher ist es empfehlenswert direkt den Python Interpreter zu starten (siehe unten), oder den Editor IDLE, der zusammen mit Python installiert wird. Du findest beide im Startmenü."
+
+# 885088ee9a144897a0f63ebf1efd2065
+#: ../getting_started.rst:68
+msgid "Using Python"
+msgstr "Python verwenden"
+
+# 50b9bf0bc1c94c97a95b5fc95562f8f7
+#: ../getting_started.rst:70
+msgid ""
+"The python program that you have installed by default will act as something "
+"called an **interpreter**. An interpreter will take commands and run them as"
+" you enter them, very handy for trying things out."
+msgstr "Das Programm Python welches Du installiert hast, fungiert als ein sogenannter **Interpreter**. Ein Interpreter nimmt Anweisungen entgegen und führt sie aus sobald Du sie eingibst. Das ist sehr nützlich um Dinge auszuprobieren."
+
+# 2d25964a9bd347c2a28ae26e46e9bf32
+#: ../getting_started.rst:74
+msgid ""
+"Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you "
+"should enter Python's Interpreter."
+msgstr "Tippe in Deiner Konsole ein :program:'python', drücke :kdb:'<Enter>', und Der Python Interpreter sollte starten."
+
+# d1c846e426be4e11872681bcebe065da
+#: ../getting_started.rst:77
+msgid ""
+"To find out which version of python you're running, use :program:`python -V`"
+" to tell you."
+msgstr "Um herauszufinden welche Version von Python Du verwendest, gib ein :program:'python -V'."
+
+# 1cf87ad4980542cdb692cc2999f69126
+#: ../getting_started.rst:80
+msgid "Interacting With Python"
+msgstr "Mit Python interagieren"
+
+# f3ebf0f1fb1549db8cd1c718458ebc21
+#: ../getting_started.rst:82
+msgid ""
+"After Python opens, it will show you some contextual information similar to "
+"this::"
+msgstr "Sobald Python startet, zeigt es Dir einige Kontextinformationen ähnlich zu diesen::"
+
+# 2089224c57c54512b890e20d0b27a2da
+#: ../getting_started.rst:91
+msgid ""
+"The prompt **>>>** on the last line indicates that you are now in an "
+"interactive Python interpeter session, also called the \"Python shell\". "
+"**This is different from the normal terminal command prompt!**"
+msgstr "Der Prompt **>>>** in der letzten Zeile signalisiert dass Du Dich nun in der interaktiven Python Konsole befindet, auch ''Python Shell'' genannt. **Diese Konsole ist etwas anderes als das normale Kommandozeilenterminal!**"
+
+# f57d3bd2458149e5aaf964650d7a2050
+#: ../getting_started.rst:95
+msgid "You can now enter some python code. Try::"
+msgstr "Nun kannst Du Python Code eingeben. Versuche::"
+
+# bbc4f4fa810544408731b59528e16612
+#: ../getting_started.rst:99
+msgid ""
+"Press :kbd:`<Enter>` and see what happens. After showing the results, Python"
+" will bring you back to the interactive prompt, where you could enter "
+"another command::"
+msgstr "Drücke :kbd:'<Enter>' und sieh was passiert. Nachdem Python Dir die Ergebnisse angezeigt hat, gelangst Du zurück zum interaktiven Prompt wo Du einen weiteren Befehl eingeben kannst::"
+
+# 110ba1632c0d40e4821636ee18c74ea2
+#: ../getting_started.rst:107
+msgid ""
+"An extremely useful command is ``help()``, which enters a help functionality"
+" to explore all the stuff python lets you do, right from the interpreter."
+msgstr "Ein ausserordentlich nützlicher Befehl ist ''help()'', welcher die interne Hilfsfunktion von Python aufruft. Du kannst dort alles was Python kann innerhalb des Interpreters erkunden."
+
+# 4e6aa717bebd499d921ee88340cac926
+#: ../getting_started.rst:110
+msgid ""
+"To leave the interactive shell, press :kbd:`Ctrl-Z` and then :kbd:`Enter` on"
+" Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, you could also "
+"run the python command ``exit()``!"
+msgstr "Um die Python Shell zuverlassen, drücke :kbd:'Ctrl-Z' und :kbd:'Enter' unter Windows, oder :kbd:'Ctrl-D' unter OS X oder Linux. Alternativ kannst Du auch den Python-Befehl ''exit()'' ausführen."
+
+# 3256ffe4a1a54d4c87deb8a5577e5eec
+#: ../getting_started.rst:115
+msgid "Running Python files"
+msgstr "Pythonprogramme ausführen"
+
+# 8794ce62246f48b895111d49179a3e1a
+#: ../getting_started.rst:117
+msgid ""
+"When you have a lot of python code to run, you will want to save it into a "
+"file, so you for instance can modify small parts of it (fix a bug) and re-"
+"run it, without having to repeatedly re-type the rest. Instead you can save "
+"your code to a file and pass a file name to the :program:`python` "
+"executable. It will execute that file instead of launching the interactive "
+"interpreter."
+msgstr "Wenn Du eine grosse Menge Python-Code ausführen möchtest, empfiehlt es sich, diesen in einer Datei zu speichern, so dass Du leicht einzelne Zeilen verändern (z.B. Fehler korrigieren) und dann von Neuem ausführen kannst. Anstatt immer wieder die gleichen Zeilen einzutippen, kannst Du Deinen Code in einer Datei abspeichern und den Dateinamen an das Programm :program:'python' übergeben. Dies führt Dein Programm aus anstatt den interaktiven Interpreter zu starten."
+
+# 7770c82e29f14adabed4526fdd8bf0d5
+#: ../getting_started.rst:126
+msgid ""
+"Make sure you are at your system command prompt, which will have ``$`` or "
+"``>`` at the end, not at python's (which has ``>>>`` instead)!"
+msgstr "Versichere dich, dass du dich in der Kommandozeile befindest, die du an ``$`` oder ``>`` am Ende erkennst, nicht in Pythons (welche ``>>>`` hat)."
+
+# 904516a958c440318a3b556ba24261a7
+#: ../getting_started.rst:129
+msgid ""
+"Let's try that.  Create a file :file:`hello.py` in your current directory "
+"with your favorite text editor and paste the print command from above.  Now "
+"save that file. On Linux or OS X, you can also run :kbd:`touch hello.py` to "
+"create an empty file to edit. To run this file with python, it's pretty "
+"easy:"
+msgstr "Probieren wir das einmal aus. Erstelle eine Datei :file:'hello.py' in Deinem aktuellen Verzeichnis mit einem Texteditor Deiner Wahl und füge den print-Befehl von oben dort ein. Jetzt speichere die Datei ab. Unter Linux und OS X kannst Du auch eine leere Datei mit dem Befehl :kbd:'touch hello.py' erstellen. Das Ausführen dieses Programms ist denkbar einfach:"
+
+# ea31883cbffd4e6081671839c8e51683
+#: ../getting_started.rst:140
+msgid ""
+"Not getting \"Hello world\" but some crazy error about \"can't open file\" "
+"or \"No such file or directory?\" Your command line might not be running in "
+"the directory you saved the file in. You can use the system command line to "
+"change your active directory with the :command:`cd` command, which stands "
+"for \"change directory\". On Windows, you might want something like::"
+msgstr "Du siehst kein \"Hello world\" sondern irgendeinen komischen Fehler wie \"can't open file\" oder \"No such file or directory\"?  Vielleicht befindet sich deine Kommandozeile nicht in dem Ordner, in dem du die Datei gespeichert hast.  In der Kommandozeile kannst du den Befehl :command:`cd` (\"change directory\") benutzen um deinen ausgewählten Ordner zu wechseln.  Unter Windows kannst du folgendes ausprobieren:: "
+
+# 0ed1375d362c4efca69b90b475f3eaf3
+#: ../getting_started.rst:149
+msgid "On Linux or OS X, you might want something like::"
+msgstr "Unter Linux oder OX X hilft Dir möglicherweise dies::"
+
+# 8444edb10ba24b2898f4ff6213be964e
+#: ../getting_started.rst:153
+msgid ""
+"This changes to the directory Python_Exercises under the Desktop folder "
+"(yours might be somewhere a bit different). If you don't know the location "
+"of the directory where you saved the file, you can simply drag the directory"
+" to the command line window.  If you don't know which directory your shell "
+"is currently running in use :command:`pwd`, which stands for \"print working"
+" directory\"."
+msgstr "Dieser Befehl wechselt in das Verzeichnis Python_Exercises innerhalb des Desktop-Ordners (auf Deinem Computer heisst dieser eventuell anders). Falls Du nicht weisst in welchem Verzeichnis Du die Textdatei mit dem Programm abgespeichert hast, kannst Du einfach das Ordnersymbol in das Terminalfenster ziehen. Falls Du nicht weisst in welchem Verzeichnis sich Deine Textkonsole grade befindet, verwende den Befehl :command:'pwd', der für \"print working directory\" steht."
+
+# 31d8b089ec1747acb58d3622c785e6ff
+#: ../getting_started.rst:160
+msgid ""
+"On Windows you should also be able to  double-click the Python file to run "
+"it."
+msgstr "Unter Windows solltest Du auch die Python-Datei doppelklicken können um sie auszuführen. (Stimmt, aber falls dort nur ein print steht geht das Fenster gleich wieder zu. A.d.Ue)"
+
+# 410d2567d6b74cbbb7a212fa818a8a7f
+#: ../getting_started.rst:162
+msgid ""
+"When pressing :kbd:`<Enter>` now, the file is executed and you see the "
+"output as before.  But this time, after Python finished executing all "
+"commands from that file it exits back to the system command prompt, instead "
+"of going back to the interactive shell."
+msgstr "Wenn Du nun :kbd:'<Enter>' drückst, wird das Programm in der Datei ausgeführt, und Du siehst die gleiche Ausgabe wie zuvor. Aber diesmal kehrt Python nach Ausführen der Befehle in der Datei zurück zur Kommandozeile Deines Betriebssystems anstatt in den Interpreter."
+
+# e36566b7d24f442a8f021e3e1184ca00
+#: ../getting_started.rst:169
+msgid ""
+"Wordpad, TextEdit, Notepad, and Word are **not** suitable text editors.  If "
+"you are unsure whether you already have a usable editor, you might want to "
+"download and install `Sublime Text <http://www.sublimetext.com/>`_.  Code "
+"editors like this can also help you with formatting, running and debugging "
+"your code."
+msgstr "Wordpad, TextEdit, Notepad und Word sind **keine** geeigneten Texteditoren um Python-Programme zu schreiben. Falls Du Dir nicht sicher bist, ob Du bereits einen geeigneten Editor hast, kannst Du 'Sublime Text <http://www.sublimetext.com/>' herunterladen und installieren. Code-Editoren wie dieser helfen Dir, Code zu formatieren, auszuführen und zu Fehler aufzuspüren (debugging)."
+
+# 8165e02053394c499046183b67547e1a
+#: ../getting_started.rst:175
+msgid "And now we are all set and can get started with turtle!"
+msgstr "Wir sind jetzt startklar und können mit der Schildkröte anfangen!"
+
+# e4883f0c17324ae4a390d2118837815f
+#: ../getting_started.rst:179
+msgid ""
+"When playing around with turtle, avoid naming your file :file:`turtle.py` "
+"--- rather use more appropriate names such as :file:`square.py` or "
+":file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python "
+"will pick up *your* file instead of the standard turtle."
+msgstr "Wenn Du mit dem Modul turtle experimentierst, vermeide es Deine Datei :file:'turtle.py' zu nennen --- verwende lieber Namen wie :file:'quadrat.py' oder :file:'rechteck.py'. Andernfalls wird Python jedesmal wenn Du den Namen ''turtle'' verwendest, *Deine* Datei anstatt dem Modul turtle verwenden."
+
+# baa3360d5b594201a4915d2c53cd8a83
+#: ../index.rst:2
+msgid "Introduction to Programming with Python"
+msgstr "Programmiereinführung mit Python"
+
+# 81ee7f11b2eb40cebc8839470702be1a
+#: ../index.rst:5
+msgid "Table of contents:"
+msgstr "Inhaltsverzeichnis:"
+
+# 2269c1d2422c44009d326a46ef32bfaf
+#: ../logical_operators.rst:2
+msgid "Logical operators"
+msgstr "Logische Operatoren"
+
+# 93cdf4901c5b48ff93f8c871e028ceaa
+#: ../logical_operators.rst:7
+msgid ""
+"Conditionals are a nice way to make decisions by asking if something equals "
+"*True* or not. But often one condition is not enough. We may want to take "
+"the opposite of our result. Or for instance if we want to make a decision "
+"upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine them. This "
+"can be done with logical operators."
+msgstr "Verzweigungen sind ein guter Weg um im Programm Entscheidungen zu treffen, indem geprüft wird ob etwas *True* ist oder nicht. Aber häufig reicht eine Bedingung allein nicht aus. Vielleicht möchtest Du auch das Gegenteil Deines Ergebnisses prüfen. Oder falls Du eine Entscheidung aufgrund von ''turtle.xcor()'' und ''turtle.ycor()'' treffen möchtest, musst Du beide verknüpfen. Das kannst Du mit logischen Operatoren erreichen."
+
+# 544191064a284af0813d4a963805ed2b
+#: ../logical_operators.rst:14
+msgid "Negation of a statement"
+msgstr "Verneinung eines Ausdrucks"
+
+# cae68f0b0c1448efb260b61db82ec0a7
+#: ../logical_operators.rst:16
+msgid ""
+"If we want something to be *False* we can use ``not``. It is a logical "
+"operator::"
+msgstr "Wenn wir möchten, dass etwas *False* ist, können wir den logischen Operator ''not'' verwenden::"
+
+# 2b39d910c100489a8b2c0e5dc62fb270
+#: ../logical_operators.rst:28
+msgid ""
+"The turtle gives us a useful function to know if it is drawing or not: "
+"``turtle.isdown()``.  This function returns *True* if the turtle is drawing."
+" As we have seen earlier, the function ``turtle.penup()`` and "
+"``turtle.pendown()`` toggle between drawing while moving, or just moving "
+"without a trace."
+msgstr "Die Schildkröte enthält eine nützliche Funktion die sagt ob grade gezeichnet wird oder nicht; ''turtle.isdown()''. Diese Funktion liefert *True* falls die Schildkröte im Zeichenmodus ist. Wie wir bereits gesehen haben, schalten die Funktionen ''turtle.penup()'' und ''turtle.pendown()'' zwischen dem Modus zum Zeichnen beim Bewegen und dem Bewegungsmodus ohne Zeichnen hin und her."
+
+# eae7393da3e547f3ad115196812c28e3
+#: ../logical_operators.rst:33
+msgid "Can we write a function that only goes forward if the pen is up?"
+msgstr "Können wir eine Funktion schreiben die nur vorwärts geht falls die Schildkröte nicht im Zeichenmodus ist?"
+
+# d4bdf31949624c0889bf6b0327b61dc7
+#: ../logical_operators.rst:46
+msgid "This and that or something else"
+msgstr "Dies und jenes oder etwas anderes"
+
+# 8b2f1e0b7aff47f3b781f8ac5e1fb64d
+#: ../logical_operators.rst:48
+msgid ""
+"Two easy to understand operators are ``and`` and ``or``. They do exactly "
+"what they sound like:::"
+msgstr "Zwei einfach zu verstehende Operatoren sind ''and'' und ''or''. Sie tun genau das wonach sie sich anhören:::"
+
+# 6d79dd87a6fa4fb1af39f3bdf118c81e
+#: ../logical_operators.rst:60
+msgid ""
+"You are not restricted to one logical operator. You can combine as may as "
+"you want."
+msgstr "Du bist nicht darauf angewiesen nur einen logischen Operator zu verwenden. Du kannst so viele miteinander kombinieren wie Du möchtest."
+
+# 4f9cf6b93c4d4412818d1c87908b02cf
+#: ../logical_operators.rst:66
+msgid ""
+"Earlier we put the turtle in a circular prison. This time let's make it a "
+"box. If the turtle goes more than 100 in the X *or* Y axis then we turn the "
+"turtle back around to the center."
+msgstr "Weiter oben haben wir die Schildkröte in einem kreisförmigen Gefängnis eingesperrt. Diesmal werden wir ein Quadrat dazu verwenden. Falls die Schildkröte sich mehr als 100 Einheiten entlang der x- *oder* y-Achse vom Mittelpunkt entfernt, drehen wir sie zurück zur Mitte um."
+
+# 628a44a5ee8b41a9abe3079f454d0267
+#: ../loops.rst:2
+msgid "Loops"
+msgstr "Schleifen"
+
+# eb687134c1a94d90b4ac96ecbf40b346
+#: ../loops.rst:7
+msgid ""
+"One more thing: Our programs often feature repetition. There is a powerful "
+"concept in Python called looping (jargon: *iteration*), which we will "
+"elaborate later on. For now, try this easy example::"
+msgstr "Noch etwas: Unsere Programme enthalten oft Wiederholungen. In Python gibt es ein mächtiges Konzept genannt Schleifen (Jargon: Iterationen), welches wir später genauer erkunden werden. Erst einmal probieren wir dieses einfache Beispiel aus::"
+
+# 3adacd35daa04907863499b73bd714b6
+#: ../loops.rst:14
+msgid ""
+"This is incredibly helpful if we want to do something multiple times --- "
+"say, drawing the individual border lines of a shape --- but only want to "
+"write it once.  But it gets better::"
+msgstr "Dies ist ausserordentlich hilfreich wenn wir etwas mehrere Male tun möchten --- beispielsweise die Umrandung einer geometrischen Form zeichnen --- aber den Programmcode dafür nur einmal schreiben möchten. Aber es wird noch besser::"
+
+# 090f61151c6046c28371c3c082d51d6e
+#: ../loops.rst:21
+msgid ""
+"Notice how we write only one line of code using ``i`` but it has 10 "
+"different values?"
+msgstr "Beachte dass wir nur eine einzige Zeile Code mit ''i'' schreiben, aber sie 10 unterschiedliche Werte annimmt."
+
+# ec15bf2506074407a7c39173ce8efc78
+#: ../loops.rst:24
+msgid "You can also loop over elements of your choice::"
+msgstr "Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten::"
+
+# dcf8b7163d5449b1a065f502fd2dfa74
+#: ../loops.rst:29
+msgid ""
+"The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., "
+"n-1``. If you want to know more about it, you can use the help in the Python"
+" shell by typing ``help(range)``. Use the :kbd:`q` key to exit the help "
+"again."
+msgstr "Die Funktion ''range(n)'' kann als Abkürzung für ''0, 1, 2, ..., n-1'' betrachtet werden. Falls Du mehr über sie wissen möchtest, kannst Du die Hilfefunktion im Python-Interpreter verwenden, indem Du ''help(range)'' eingibst. Verwende die Taste :kbd:'q' um die Hilfe wieder zu schliessen."
+
+# 166411c2921d47748a5c6d936f78964d
+#: ../loops.rst:33
+msgid ""
+"If you want to repeat some code a number of times, but don't care about the "
+"value of the ``i`` variable, it can be good practice to replace it with "
+"``_`` instead. This signifies that we don't care about its value, or don't "
+"wish to use it. So you could rewrite the first example as::"
+msgstr "Falls du Code eine bestimmte Anzahl von Malen wiederholt ausführen möchtest, aber der Wert der Variable ''i'' Dich nicht interessiert, kann es sinnvoll sein ''i'' durch ''_'' zu ersetzen. Das zeigt an dass uns der Wert der Variablen nicht interessiert oder wir nicht vorhaben ihn zu benutzen. Du könntest das erste Beispiel dementsprechend auch so schreiben::"
+
+# c15b9eb287f84e7dac952ffe00698969
+#: ../loops.rst:42
+msgid "Drawing a dashed line"
+msgstr "Eine gestrichelte Linie zeichnen"
+
+# 432f5a038ecb416485b98ce40374282b
+#: ../loops.rst:47
+msgid ""
+"Draw a dashed line.  You can move the turtle without the turtle drawing its "
+"movement by using the ``turtle.penup()`` function; to tell it to draw again,"
+" use ``turtle.pendown()``."
+msgstr "Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass sie zeichnet, indem Du die Funktion ''turtle.penup()'' aufrufst; um sie wieder zeichnen zu lassen, verwende ''turtle.pendown()''."
+
+# 84afe28f20d7443baee2d408c03dcc79
+#: ../loops.rst:67
+msgid "Can you make the dashes become larger as the line progresses?"
+msgstr "Kannst du die Striche immer größer werden lassen?"
+
+# 69016357482f45ddbc1b20c10d017baa
+#: ../loops.rst:73
+msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
+msgstr "Verwirrt?  Schau dir ``i`` in jedem Schleifendurchlauf an::"
+
+# f054f3b4584e4c9eb6b07f97b71abdab
+#: ../loops.rst:79
+msgid ""
+"Can you utilize ``i`` --- commonly called the **index** variable or loop "
+"variable --- to get increasing step sizes?"
+msgstr "Kannst du ``i`` --- üblicherweise als **Index**\\ - oder Schleifenvariable bezeichnet --- benutzen um immer größere Schritte zu machen?"
+
+# 5a83ed4aa6254f359fdb3b5fc15bbec1
+#: ../loops.rst:83
+msgid "Honeycomb loops"
+msgstr "Honigwaben in Schleifen"
+
+# b02f7db0ea034b84ba40c949adf4b20c
+#: ../loops.rst:88
+msgid ""
+"Take your honeycomb program and make it easier with loops. How small can you"
+" get it?"
+msgstr "Nimm dein Honigwaben-Programm und vereinfache es mithilfe von Schleifen.  Wie klein kriegst du es?"
+
+# 77b3fe52e4eb4ab691df14c58d020ee0
+#: ../loops.rst:109
+msgid ""
+"See if you can look at your earlier square-drawing code, and make it much "
+"shorter by using loops."
+msgstr "Schau dir nochmal deinen Code zum Malen von Vierecken von vorhin an;  kannst du ihn mit Schleifen kompakter machen?"
+
+# e4867118fb0841538a3f911f2ec81bab
+#: ../simple_drawing.rst:2
+msgid "Simple drawing with turtle"
+msgstr "Einfaches Zeichnen mit turtle"
+
+# 83d1d545ed9e4e639b67feb5deee5fa5
+#: ../simple_drawing.rst:7
+msgid "Turtle is like a drawing board."
+msgstr "Turtle ist wie ein Zeichenbrett."
+
+# 1c10f1ef02be44928ec6ab637a797ac8
+#: ../simple_drawing.rst:9
+msgid ""
+"It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
+" can move the turtle around."
+msgstr "Das Modul besitzt Funktionen wie ''turtle.forward(...)'' und ''turtle.left(...)'' welche die Schildkröte umher bewegen."
+
+# 6f8bfa929b2849c8a379ac904bef8921
+#: ../simple_drawing.rst:12
+msgid ""
+"Before you can use turtle, you have to import it (we'd recommend playing "
+"around with it in the interactive interpreter first, there is an extra bit "
+"of work required to make it work from files)::"
+msgstr "Bevor Du das Modul turtle verwenden kannst, musst Du es importieren (wir empfehlen erst einmal damit im interaktiven Interpreter damit herumzuprobieren, damit es in einer Programmdatei funktioniert ist ein wenig zusätzlicher Aufwand erforderlich)::"
+
+# 5285f990d8aa48ec9278807f46a29f3e
+#: ../simple_drawing.rst:22
+msgid ""
+"Not seeing anything on Mac OS?  Try looking if a new window opened behind "
+"your command line."
+msgstr "Du verwendest Mac OS und siehst nichts? Schaue nach ob hinter Deinem Textfenster ein weiteres neues Fenster aufgesprungen ist."
+
+# 2d90bbe7b93b4411b4945f6f0aa8c196
+#: ../simple_drawing.rst:38
+msgid ""
+"The ``turtle.forward(...)`` function tells the turtle to move forward by the"
+" given distance. ``turtle.left(...)`` takes a number of degrees which you "
+"want to rotate to the left. (There are ``turtle.backward(...)`` and "
+"``turtle.right(...)``, too.)"
+msgstr "Die Funktion ''turtle.forward(...)'' lässt die Schildkröte um die angegebene Strecke nach vorne gehen. ''turtle.left(...)'' dreht sie um die angegebene Anzahl Grad nach links. (Es gibt ebenfalls die Funktionen ''turtle.backward(...)'' und ''turtle.right(...)''.)"
+
+# d36fb58819be498b947864bf2c2f0999
+#: ../simple_drawing.rst:43
+msgid ""
+"The standard turtle is just a triangle. That's no fun! Let's make it a "
+"turtle instead with the ``turtle.shape()`` command::"
+msgstr "Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion ''turtle.shape()'' eine richtige Schildkröte daraus machen::"
+
+# 9cbc0cfe9ccd4a748bcc2083d303fc90
+#: ../simple_drawing.rst:48
+msgid "So much cuter!"
+msgstr "Das ist doch viel niedlicher!"
+
+# c87664a7232f428caabad8c2cfb6b261
+#: ../simple_drawing.rst:50
+msgid ""
+"If you put the commands into a file, you might have recognized that the "
+"turtle window vanishes after the turtle finished its movement.  (That is "
+"because Python exits when your turtle has finished moving.  Since the turtle"
+" window belongs to Python, it terminates as well.)  To prevent that, just "
+"put ``turtle.exitonclick()`` at the bottom of your file.  Now the window "
+"stays open until you click on it::"
+msgstr "Wenn Du die Befehle in eine Datei geschrieben hast, hast Du vielleicht bemerkt, dass das turtle-Fenster verschwindet, nachdem die Schildkröte ihre Bewegung vollendet hatte. (Das geschieht weil Python beendet wird, sobald der letzte Befehl ausgeführt wurde. Und da das turtle-Fenster mit zu Python gehört, wird es auch geschlossen.) Um das zu verhindern, füge am Ende Deines Programms ''turle.exitonclick()'' hinzu. Jetzt bleibt das Fenster offen bis Du noch einmal darauf klickst::"
+
+# 89d6b2e2c59447a297b9d2f88239916d
+#: ../simple_drawing.rst:67
+msgid ""
+"Python is a programming language where horizontal indenting of text is "
+"important. We'll learn all about this in the Functions chapter later on, but"
+" for now just keep in mind that stray spaces or tabs before any line of "
+"Python code will cause an unexpected error."
+msgstr "Python ist eine Programmiersprache, bei der das horizontale Einrücken von Befehlen wichtig ist. Wir werden im Kapitel über Funktionen mehr darüber erfahren. Für den Anfang reicht es zu wissen dass zusätzliche Leerzeichen oder Tabulatoren am Anfang einer Zeile mit Python-Code zu Programmfehlern führen."
+
+# 25df198c389c41d2a5537ecebccb8d8f
+#: ../simple_drawing.rst:70
+msgid "Drawing a square"
+msgstr "Ein Rechteck zeichnen"
+
+# 175b62b2dd7546e79306412ecbad5ea7
+#: ../simple_drawing.rst:74
+msgid ""
+"You're not always expected to know the anwer immediately. Learn by trial and"
+" error! Experiment, see what python does when you tell it different things, "
+"what gives beautiful (although sometimes unexpected) results and what gives "
+"errors. If you want to keep playing with something you learned that creates "
+"interesting results, that's OK too. Don't hesitate to try and fail and learn"
+" from it!"
+msgstr "Niemand erwartet von Dir, dass Du sofort auf die Antwort kommst. Lerne durch Ausprobieren! Experimentiere damit was Python tut wenn Du verschiedene Befehle erteilst, was zu schönen (wenn auch manchmal unerwarteten) Ergebnissen führt, und was Fehler verursacht. Wenn Du etwas findest dass für Dich interessante Ergebnisse erzeugt und Du weiter damit herumprobieren möchtest, ist das auch in Ordnung. Zögere nicht etwas zu versuchen, und daraus zu lernen falls es schief geht!"
+
+# 9c549daf3f514c60b4c53e369387b2fa
+#: ../simple_drawing.rst:85
+msgid "Draw a square as in the following picture:"
+msgstr "Zeichne ein Quadrat so wie im folgenden Bild:"
+
+# 6379013c67bf4eabb60865506a4f671f
+#: ../simple_drawing.rst:89
+msgid ""
+"For a square you will probably need a right angle, which is 90 degrees."
+msgstr "Für ein Viereck brauchst du vermutlich einen rechten Winkel, welcher 90˚ beträgt."
+
+# 52393226e7b7439091b03a4476e1e948
+#: ../simple_drawing.rst:107
+msgid ""
+"Notice how the turtle starts and finishes in the same place and facing the "
+"same direction, before and after drawing the square. This is a useful "
+"convention to follow, it makes it easier to draw multiple shapes later on."
+msgstr "Beachte wie die Schildkröte an der gleichen Stelle in der gleichen Richtung startet und nach Zeichnen des Quadrats stoppt. Dies ist als Konvention nützlich, denn es erleichtert das Zeichnen von mehreren geometrischen Formen hintereinander."
+
+# b59500f9073642af82cdbf34ee25b19b
+#: ../simple_drawing.rst:115
+msgid ""
+"If you want to get creative, you can modify your shape with the "
+"``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you use "
+"these functions?  Before you can use a function you need to know its "
+"*signature* (for example the number of parameters and what they mean.) To "
+"find this out you can type ``help(turtle.color)`` into the Python shell. If "
+"there is a lot of text, Python will put the help text into a *pager*, which "
+"lets you page up and down. Press the :kbd:`q` key to exit the pager."
+msgstr "Falls Du kreativ werden möchtest, kannst Du die geometrische Form mit den Funktionen ''turtle.width(...)'' und ''turtle.color(...)'' verändern. Wie kannst Du diese Funktionen verwenden? Bevor Du eine Funktion benutzen kannst, musst Du ihre *Signatur* (zum Beispiel die Anzahl und Bedeutung ihrer Parameter). Um das herauszufinden kannst Du in der interaktiven Python Shell ''help(turtle.color)'' eingeben. Falls sich dort eine grosse Menge Text befindet, schreibt Python den Hilfetext in einen *Pager*, in welchem Du auf- und abscrollen kannst. Drücke die Taste :kbd:'q' um den Pager wieder zu verlassen."
+
+# f1d6e192564c4a0e9f0bb933c56fa04f
+#: ../simple_drawing.rst:126
+msgid "Are you seeing an error like this::"
+msgstr "Siehst du ungefähr folgenden Fehler::"
+
+# 8b4023b11dc14d588a22b5fb768e169e
+#: ../simple_drawing.rst:130
+msgid ""
+"when trying to view help? In Python you have to import names before you can "
+"refer to them, so in a new Python interactive shell you'll need to ``import "
+"turtle`` before ``help(turtle.color)`` will work."
+msgstr "In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst ''import turtle'' schreiben, bevor ''help(turtle.color)'' funktioniert."
+
+# f2f52b4de3694a188afec7adbae1eb9c
+#: ../simple_drawing.rst:132
+msgid ""
+"Another way to find out about functions is to browse the `online "
+"documentation`__."
+msgstr "Ein anderer Weg etwas über Funktione zu erfahren ist die 'Online Dokumentation' zu lesen."
+
+# 027467213f7f44518e4cef3deb423a74
+#: ../simple_drawing.rst:139
+msgid ""
+"If you misdrew anything, you can tell turtle to erase its drawing board with"
+" the ``turtle.reset()`` directive or undo the most recent step with "
+"``turtle.undo()``."
+msgstr "Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem ''turtle.reset()'' Befehl vollständig zu löschen oder den letzten Befehl mit ''turtle.undo'' Rückgängig zu machen."
+
+# c4cc24efbebb46219789ece7f545ee60
+#: ../simple_drawing.rst:145
+msgid ""
+"As you might have read in the help, you can modify the color with "
+":samp:`turtle.color({colorstring})`.  These include but are not limited to "
+"\"red,\" \"green,\" and \"violet.\"  See the `colors manual`__ for an "
+"extensive list."
+msgstr "Wie du vielleicht in der Hilfe gelesen hast kannst du die Farben mit :samp:`turtle.color({Farbe})` verändern.  Farben können zum Beispiel \"red\", \"green\" oder \"violet\" sein.  Lies im `colors manual`_`__ nach für eine komplette Liste."
+
+# e6d847a06dd5485082fc837c5075e5d6
+#: ../simple_drawing.rst:153
+msgid "Drawing a rectangle"
+msgstr "Ein Rechteck zeichnen"
+
+# fad3ae64070c4e1abae3edd95f8c6eae
+#: ../simple_drawing.rst:158
+msgid "Can you draw a rectangle too?"
+msgstr "Kannst du auch ein Rechteck zeichenn?"
+
+# fcc83d8b53b34861b95eaec6ff687ed2
+#: ../simple_drawing.rst:179
+msgid ""
+"How about a triangle? In an equilateral triangle (a triangle with all sides "
+"of equal length) each corner has an angle of 60 degrees."
+msgstr "Wie wäre es mit einem Dreieck? In einem gleichseitigen Dreieck (alle Seiten haben die gleiche Länge) hat jede Ecke einen Winkel von 60 Grad."
+
+# 3ae318ed24b0492a9bb782754f60d3b6
+#: ../simple_drawing.rst:184
+msgid "More squares"
+msgstr "Mehr Quadrate"
+
+# 89ed273251c24605b6f2836781fdf295
+#: ../simple_drawing.rst:189
+msgid ""
+"Now, draw a tilted square. And another one, and another one. You can "
+"experiment with the angles between the individual squares."
+msgstr "Jetzt zeichne ein schräg zur Seite gekipptes Quadrat. Und noch eins, und noch eins. Experimentiere mit den Winkeln zwischen den einzelnen Quadraten."
+
+# 77debff34f97450e8d2ba32a419bc779
+#: ../simple_drawing.rst:194
+msgid ""
+"The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
+"example."
+msgstr "Das Bild zeigt drei Drehungen um jeweils 20 Grad. Du kannst zum Beispiel auch 20, 30 oder 40 Grad ausprobieren."
+
+# ad07ccdfc690478ea06ae2514333c4e2
+#: ../variables.rst:2
+msgid "Variables"
+msgstr "Variablen"
+
+# f58fe718fd474428adcfa601765bbb28
+#: ../variables.rst:7
+msgid ""
+"Whew. Experimenting with the angles requires you to change three different "
+"places in the code each time. Imagine you'd want to experiment with all of "
+"the square sizes, let alone with rectangles! We can do better than that."
+msgstr "Puh. Wenn Du mit den Winkeln experimentiers, musst Du jedes Mal an drei verschiedenen Stellen den Code verändern. Jetzt stelle Dir vor Du möchtest mit allen Abmessungen des Quadrates experimentieren, oder sogar mit Rechtecken! Das muss besser gehen."
+
+# ea9541756d2c44b98f8fe743fff63c56
+#: ../variables.rst:11
+msgid ""
+"This is where **variables** come into play: You can tell Python that from "
+"now on, whenever you refer to a variable, you actually mean something else. "
+"That concept might be familiar from symbolic maths, where you would write: "
+"*Let x be 5.* Then *x \\* 2* will obviously be *10*."
+msgstr "An dieser Stelle kommen **Variablen** ins Spiel: Du kannst ab nun Python befehlen, jedes Mal wenn Du eine bestimmte Variable verwendest, an dieser Stelle etwas anderes einzusetzen. Dieses Konzept ist ähnlich zur Algebra, wo Du schreiben könntest: *x sei 5*. Dann ist *x \\* 2* natürlich *10*."
+
+# d6f28c0fa0364529a94144abfbcfbb18
+#: ../variables.rst:16
+msgid "In Python syntax, that very statement translates to::"
+msgstr "In der Syntax von Python hat die gleiche Bedeutung::"
+
+# 9f3d213c39844b439e74f11098db27c9
+#: ../variables.rst:20
+msgid ""
+"After that statement, if you do ``print(x)``, it will actually output its "
+"value --- 5.  Well, can use that for your turtle too::"
+msgstr "Falls Du nach diesem Befehl ''print(x)'' ausführst, wird der Wert von x ausgegeben --- 5. Du kannst das gleiche auch mit turtle kombinieren."
+
+# b002d75de1b2464190213ca8d72a6171
+#: ../variables.rst:25
+msgid ""
+"Variables can store all sorts of things, not just numbers. A typical other "
+"thing you want to have stored often is a **string** - a line of text. "
+"Strings are indicated with a starting and a leading ``\"`` (double quote). "
+"You'll learn about this and other types, as those are called in Python, and "
+"what you can do with them later on."
+msgstr "Variablen können alles mögliche speichern, nicht nur Zahlen. Etwas anderes typisches das oft in Variablen gespeichert wird sind **Strings** - Textzeilen. Strings werden durch ''\"'' (doppelte Anführungszeichen) vor und nach dem Text gekennzeichnet. Du wirst später noch mehr über diese sogenannten Datentypen in Python und was Du mit ihnen tun kannst, lernen."
+
+# 131a5bc77f144fd3bc71146226c80f79
+#: ../variables.rst:31
+msgid "You can even use a variable to give the turtle a name::"
+msgstr "Du kannst sogar eine Variable verwenden um der Schildkröte einen Namen zu geben::"
+
+# 990fb9bbb6b64719972e72aa902c101f
+#: ../variables.rst:35
+msgid ""
+"Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
+"still continue to use ``turtle`` as well::"
+msgstr "Jedes Mal wenn Du nun ''timmy'' schreibst, weiss Python, dass Du ''turtle'' meinst. Du kannst auch weiterhin ''turtle'' verwenden::"
+
+# 87a4759506ba418696eca692527939d5
+#: ../variables.rst:43
+msgid "A variable called angle"
+msgstr "Eine Variable genannt angle"
+
+# 6cbc38d8bcc74fb9adf5746b71a8938f
+#: ../variables.rst:48
+msgid ""
+"If we have a variable called ``angle``, how could we use that to experiment "
+"much faster with our tilted squares program?"
+msgstr "Wenn wir eine Variable ''angle'' (Winkel) nennen, wie könnten wir sie verwenden um mit dem Programm mit den gekippten Quadraten zu experimentieren?"
+
+# 5a5cdfebdfdf48388981f8cef5f4d357
+#: ../variables.rst:72
+msgid "... and so on"
+msgstr "... und so weiter"
+
+# ecc51e212f1144c69381a1c6d31d7fb0
+#: ../variables.rst:77
+msgid "Can you apply that principle to the size of the squares, too?"
+msgstr "Kannst Du das gleiche Prinzip auch auf die Grösse der Quadrate anwenden?"
+
+# aad10603dfff4f2ca4a6ba2f25b4e6b4
+#: ../variables.rst:80
+msgid "The house of santa claus"
+msgstr "Das Haus vom Nikolaus"
+
+# ec17a92a943046eba78098bcda394aeb
+#: ../variables.rst:85
+msgid "Draw a house."
+msgstr "Zeichne ein Haus."
+
+# 04a58724d0cd4017a66b6edf33cbdccd
+#: ../variables.rst:89
+msgid ""
+"You can calculate the length of the diagonal line with the Pythagorean "
+"theorem. That value is a good candidate to store in a variable. To calculate"
+" the square root of a number in Python, you'll need to import the *math* "
+"module and use the ``math.sqrt()`` function. The square of a number is "
+"calculated with the ``**`` operator::"
+msgstr "Du kannst die Länge der diagonalen Linie mit dem Satz des Pythagoras ausrechnen. Diese Zahl ist es wert in einer Variable gespeichert zu werden. Um die Quadratwurzel einer Zahl in Python zu berechnen, musst Du das *math* Modul importieren und die Funktion ''math.sqrt()'' aufrufen. Das Quadrat einer Zahl kannst Du mit dem Operator ''**'' ausrechnen::"
