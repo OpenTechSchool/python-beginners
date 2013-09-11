@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Benutzerdefinierte Funktionen &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Funktionen mit Parametern" href="functions_parameters.html" />
+    <link rel="prev" title="Schleifen" href="loops.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="functions_parameters.html" title="Funktionen mit Parametern"
+             accesskey="N">weiter</a></li>
+        <li class="right" >
+          <a href="loops.html" title="Schleifen"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="user-defined-functions">
+<h1>Benutzerdefinierte Funktionen<a class="headerlink" href="#user-defined-functions" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Es gibt immer noch eine Menge doppelten Code im Programm wie etwa das Zeichnen des Rechtecks. Falls Du Code kopieren und einfügen musst, ist das normalerweise ein Zeichen für fehlende Abstraktion. Programmierer nennen das auch <em>code smell</em> (miefender Code).</p>
+<p>Funktionen sind ein Weg um Abstraktion in Python auszudrücken. Betrachten wir zum Beispiel &#8216;&#8217;turtle.reset&#8217;&#8216;. Es ist eine Abstraktion für eine ganze Anzahl Zwischenschritte, nämlich:</p>
+<ul class="simple">
+<li><p class="first">Lösche die Zeichenfläche.</p>
+</li>
+<li><p class="first">Setze die Linienbreite und -Farbe zurück zu den Startwerten.</p>
+</li>
+<li><p class="first">Bewege die Schildkröte in ihre Ausgangsposition zurück.</p>
+</li>
+</ul>
+<p>Eine Funktion kann in Python mit dem Schlüsselwort &#8216;&#8217;def&#8217;&#8217; definiert werden:</p>
+<div class="highlight-python"><pre>def line_without_moving():
+    turtle.forward(50)
+    turtle.backward(50)</pre>
+</div>
+<p>Diese von uns definierte Funktion heisst &#8216;&#8217;line_without_moving&#8217;&#8216;. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts.</p>
+<p>Um sie zu benutzen (oder wie es häufig genannt wird, &#8220;sie aufzurufen&#8221;), schreib ihren Namen gefolgt von runden Klammern:</p>
+<div class="highlight-python"><pre>line_without_moving()
+turtle.right(90)
+line_without_moving()
+turtle.right(90)
+line_without_moving()
+turtle.right(90)
+line_without_moving()</pre>
+</div>
+<p>Wir könnten mehr Funktionen implementieren, um einige der Wiederholungen loszuwerden:</p>
+<div class="highlight-python"><pre>def star_arm():
+    line_without_moving()
+    turtle.right(360 / 5)
+
+def star():
+    star_arm()
+    star_arm()
+    star_arm()
+    star_arm()
+    star_arm()</pre>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Wichtig</p>
+<p>Python benutzt <em>Einrückung mit Leerzeichen</em> um zusammengehörende Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden Zeilen &#8212; üblicherweise vier Leerzeichen &#8212; gekennzeichnet.  Der Block endet sobald die Zeilen nicht mehr eingerückt sind.</p>
+<p>Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern &#8216;&#8217;{}&#8217;&#8216;) verwenden um Codeblöcke zu kennzeichnen.</p>
+<p class="last">Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du kannst &#8211; und solltest &#8211; Deinen Editor so konfigurieren, dass er vier Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls beide in der gleichen Python-Datei verwendet werden, wird Python sie fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf.</p>
+</div>
+</div>
+<div class="section" id="a-function-for-a-square">
+<h2>Eine Funktion für ein Viereck<a class="headerlink" href="#a-function-for-a-square" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?</p>
+</div>
+<div class="section" id="solution">
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>def tilted_square():
+  turtle.left(20)     # now we can change the angle only here
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+
+tilted_square()
+tilted_square()
+tilted_square()
+
+# bonus: you could have a separate function for drawing a square,
+# which might be useful later:
+
+def square():
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+  turtle.forward(50)
+  turtle.left(90)
+
+def tilted_square():
+  turtle.left(20)
+  square()
+
+# etc'</pre>
+</div>
+</div>
+<div class="section" id="comments">
+<h3>Kommentare<a class="headerlink" href="#comments" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>In der oben genannten Löung ist die Zeile die mit einem &#8216;&#8217;#&#8217;&#8217; anfängt, eine Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein &#8216;&#8217;#&#8217;&#8217; folgt. Verwende Kommentare um zu erklären wie Dein Programm funktioniert, ohne dass Du dessen Verhalten im Computer veränderst.</p>
+<p>Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:</p>
+<div class="highlight-python"><pre>turtle.left(20)     # now we can change the angle only here</pre>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-for-a-hexagon">
+<h2>Eine Funktion für ein Hexagon<a class="headerlink" href="#a-function-for-a-hexagon" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id1">
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die ein Hexagon zeichnet.</p>
+<img alt="_images/hexagon.png" src="_images/hexagon.png" />
+<p>Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur eine einzige Ebene, ungefähr so:</p>
+<img alt="_images/honeycomb.png" src="_images/honeycomb.png" />
+</div>
+<div class="section" id="id2">
+<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>def hexagon():
+    turtle.forward(100)
+    turtle.left(60)
+    turtle.forward(100)
+    turtle.left(60)
+    turtle.forward(100)
+    turtle.left(60)
+    turtle.forward(100)
+    turtle.left(60)
+    turtle.forward(100)
+    turtle.left(60)
+    turtle.forward(100)
+    turtle.left(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)
+
+hexagon()
+turtle.forward(100)
+turtle.right(60)</pre>
+</div>
+<p>Du könntest auch die Befehle &#8216;&#8217;turtle.forward(100); turtle.right(60)&#8217;&#8217; in die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser nicht &#8216;&#8217;hexagon&#8217;&#8217; nennen. Das wäre irreführend, da die Funktion dann nicht nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Benutzerdefinierte Funktionen</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#a-function-for-a-square">Eine Funktion für ein Viereck</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+<li><a class="reference internal" href="#comments">Kommentare</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-for-a-hexagon">Eine Funktion für ein Hexagon</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="loops.html"
+                        title="vorheriges Kapitel">Schleifen</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="functions_parameters.html"
+                        title="nächstes Kapitel">Funktionen mit Parametern</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="functions_parameters.html" title="Funktionen mit Parametern"
+             >weiter</a></li>
+        <li class="right" >
+          <a href="loops.html" title="Schleifen"
+             >zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+    </div>
+  </body>
+</html>
