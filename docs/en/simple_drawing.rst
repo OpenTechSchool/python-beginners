@@ -125,7 +125,7 @@ key to exit the pager.
 
    Are you seeing an error like this::
 
-    NameError: name 'turtle' is not defined``
+    NameError: name 'turtle' is not defined
 
    when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you'll need to ``import turtle`` before ``help(turtle.color)`` will work.
 
