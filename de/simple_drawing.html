@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Einfaches Zeichnen mit turtle &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Variablen" href="variables.html" />
+    <link rel="prev" title="Erste Schritte" href="getting_started.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="variables.html" title="Variablen"
+             accesskey="N">weiter</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Erste Schritte"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="simple-drawing-with-turtle">
+<h1>Einfaches Zeichnen mit turtle<a class="headerlink" href="#simple-drawing-with-turtle" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Turtle ist wie ein Zeichenbrett.</p>
+<p>Das Modul besitzt Funktionen wie &#8216;&#8217;turtle.forward(...)&#8217;&#8217; und &#8216;&#8217;turtle.left(...)&#8217;&#8217; welche die Schildkröte umher bewegen.</p>
+<p>Bevor Du das Modul turtle verwenden kannst, musst Du es importieren (wir empfehlen erst einmal damit im interaktiven Interpreter damit herumzuprobieren, damit es in einer Programmdatei funktioniert ist ein wenig zusätzlicher Aufwand erforderlich):</p>
+<div class="highlight-python"><pre>import turtle</pre>
+</div>
+<img alt="_images/default.png" src="_images/default.png" />
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Du verwendest Mac OS und siehst nichts? Schaue nach ob hinter Deinem Textfenster ein weiteres neues Fenster aufgesprungen ist.</p>
+</div>
+<div class="highlight-python"><pre>turtle.forward(25)</pre>
+</div>
+<img alt="_images/forward.png" src="_images/forward.png" />
+<div class="highlight-python"><pre>turtle.left(30)</pre>
+</div>
+<img alt="_images/left.png" src="_images/left.png" />
+<p>Die Funktion &#8216;&#8217;turtle.forward(...)&#8217;&#8217; lässt die Schildkröte um die angegebene Strecke nach vorne gehen. &#8216;&#8217;turtle.left(...)&#8217;&#8217; dreht sie um die angegebene Anzahl Grad nach links. (Es gibt ebenfalls die Funktionen &#8216;&#8217;turtle.backward(...)&#8217;&#8217; und &#8216;&#8217;turtle.right(...)&#8217;&#8216;.)</p>
+<p>Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion &#8216;&#8217;turtle.shape()&#8217;&#8217; eine richtige Schildkröte daraus machen:</p>
+<div class="highlight-python"><pre>turtle.shape("turtle")</pre>
+</div>
+<p>Das ist doch viel niedlicher!</p>
+<p>Wenn Du die Befehle in eine Datei geschrieben hast, hast Du vielleicht bemerkt, dass das turtle-Fenster verschwindet, nachdem die Schildkröte ihre Bewegung vollendet hatte. (Das geschieht weil Python beendet wird, sobald der letzte Befehl ausgeführt wurde. Und da das turtle-Fenster mit zu Python gehört, wird es auch geschlossen.) Um das zu verhindern, füge am Ende Deines Programms &#8216;&#8217;turle.exitonclick()&#8217;&#8217; hinzu. Jetzt bleibt das Fenster offen bis Du noch einmal darauf klickst:</p>
+<div class="highlight-python"><pre>import turtle
+
+turtle.shape("turtle")
+
+turtle.forward(25)
+
+turtle.exitonclick()</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Python ist eine Programmiersprache, bei der das horizontale Einrücken von Befehlen wichtig ist. Wir werden im Kapitel über Funktionen mehr darüber erfahren. Für den Anfang reicht es zu wissen dass zusätzliche Leerzeichen oder Tabulatoren am Anfang einer Zeile mit Python-Code zu Programmfehlern führen.</p>
+</div>
+</div>
+<div class="section" id="drawing-a-square">
+<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-square" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Niemand erwartet von Dir, dass Du sofort auf die Antwort kommst. Lerne durch Ausprobieren! Experimentiere damit was Python tut wenn Du verschiedene Befehle erteilst, was zu schönen (wenn auch manchmal unerwarteten) Ergebnissen führt, und was Fehler verursacht. Wenn Du etwas findest dass für Dich interessante Ergebnisse erzeugt und Du weiter damit herumprobieren möchtest, ist das auch in Ordnung. Zögere nicht etwas zu versuchen, und daraus zu lernen falls es schief geht!</p>
+</div>
+<div class="section" id="exercise">
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Zeichne ein Quadrat so wie im folgenden Bild:</p>
+<img alt="_images/square.png" src="_images/square.png" />
+<p>Für ein Viereck brauchst du vermutlich einen rechten Winkel, welcher 90˚ beträgt.</p>
+</div>
+<div class="section" id="solution">
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Beachte wie die Schildkröte an der gleichen Stelle in der gleichen Richtung startet und nach Zeichnen des Quadrats stoppt. Dies ist als Konvention nützlich, denn es erleichtert das Zeichnen von mehreren geometrischen Formen hintereinander.</p>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Falls Du kreativ werden möchtest, kannst Du die geometrische Form mit den Funktionen &#8216;&#8217;turtle.width(...)&#8217;&#8217; und &#8216;&#8217;turtle.color(...)&#8217;&#8217; verändern. Wie kannst Du diese Funktionen verwenden? Bevor Du eine Funktion benutzen kannst, musst Du ihre <em>Signatur</em> (zum Beispiel die Anzahl und Bedeutung ihrer Parameter). Um das herauszufinden kannst Du in der interaktiven Python Shell &#8216;&#8217;help(turtle.color)&#8217;&#8217; eingeben. Falls sich dort eine grosse Menge Text befindet, schreibt Python den Hilfetext in einen <em>Pager</em>, in welchem Du auf- und abscrollen kannst. Drücke die Taste :kbd:&#8217;q&#8217; um den Pager wieder zu verlassen.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tipp</p>
+<p>Siehst du ungefähr folgenden Fehler:</p>
+<div class="highlight-python"><pre>NameError: name 'turtle' is not defined``</pre>
+</div>
+<p class="last">In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst &#8216;&#8217;import turtle&#8217;&#8217; schreiben, bevor &#8216;&#8217;help(turtle.color)&#8217;&#8217; funktioniert.</p>
+</div>
+<p>Ein anderer Weg etwas über Funktione zu erfahren ist die &#8216;Online Dokumentation&#8217; zu lesen.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Vorsicht</p>
+<p class="last">Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem &#8216;&#8217;turtle.reset()&#8217;&#8217; Befehl vollständig zu löschen oder den letzten Befehl mit &#8216;&#8217;turtle.undo&#8217;&#8217; Rückgängig zu machen.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tipp</p>
+<p class="last">Wie du vielleicht in der Hilfe gelesen hast kannst du die Farben mit <tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">Farbe</span></em><span class="pre">)</span></tt> verändern.  Farben können zum Beispiel &#8220;red&#8221;, &#8220;green&#8221; oder &#8220;violet&#8221; sein.  Lies im <a href="#id1"><span class="problematic" id="id2">`</span></a>colors manual`___ nach für eine komplette Liste.</p>
+</div>
+</div>
+</div>
+<div class="section" id="drawing-a-rectangle">
+<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-rectangle" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id3">
+<h3>Übung<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Kannst du auch ein Rechteck zeichenn?</p>
+<img alt="_images/rectangle.png" src="_images/rectangle.png" />
+</div>
+<div class="section" id="id4">
+<h3>Lösung<a class="headerlink" href="#id4" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>turtle.forward(100)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)</pre>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>Bonus<a class="headerlink" href="#id5" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Wie wäre es mit einem Dreieck? In einem gleichseitigen Dreieck (alle Seiten haben die gleiche Länge) hat jede Ecke einen Winkel von 60 Grad.</p>
+</div>
+</div>
+<div class="section" id="more-squares">
+<h2>Mehr Quadrate<a class="headerlink" href="#more-squares" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id6">
+<h3>Übung<a class="headerlink" href="#id6" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Jetzt zeichne ein schräg zur Seite gekipptes Quadrat. Und noch eins, und noch eins. Experimentiere mit den Winkeln zwischen den einzelnen Quadraten.</p>
+<img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
+<p>Das Bild zeigt drei Drehungen um jeweils 20 Grad. Du kannst zum Beispiel auch 20, 30 oder 40 Grad ausprobieren.</p>
+</div>
+<div class="section" id="id7">
+<h3>Lösung<a class="headerlink" href="#id7" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>turtle.left(20)
+
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+
+turtle.left(30)
+
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+
+turtle.left(40)
+
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Einfaches Zeichnen mit turtle</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#drawing-a-square">Ein Rechteck zeichnen</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#drawing-a-rectangle">Ein Rechteck zeichnen</a><ul>
+<li><a class="reference internal" href="#id3">Übung</a></li>
+<li><a class="reference internal" href="#id4">Lösung</a></li>
+<li><a class="reference internal" href="#id5">Bonus</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-squares">Mehr Quadrate</a><ul>
+<li><a class="reference internal" href="#id6">Übung</a></li>
+<li><a class="reference internal" href="#id7">Lösung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="getting_started.html"
+                        title="vorheriges Kapitel">Erste Schritte</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="variables.html"
+                        title="nächstes Kapitel">Variablen</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="variables.html" title="Variablen"
+             >weiter</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Erste Schritte"
+             >zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+    </div>
+  </body>
+</html>

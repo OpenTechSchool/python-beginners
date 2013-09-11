@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Logische Operatoren &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Lizenz" href="copyright.html" />
+    <link rel="prev" title="Bedingte Schleifen" href="conditional_loops.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="copyright.html" title="Lizenz"
+             accesskey="N">weiter</a></li>
+        <li class="right" >
+          <a href="conditional_loops.html" title="Bedingte Schleifen"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="logical-operators">
+<h1>Logische Operatoren<a class="headerlink" href="#logical-operators" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Verzweigungen sind ein guter Weg um im Programm Entscheidungen zu treffen, indem geprüft wird ob etwas <em>True</em> ist oder nicht. Aber häufig reicht eine Bedingung allein nicht aus. Vielleicht möchtest Du auch das Gegenteil Deines Ergebnisses prüfen. Oder falls Du eine Entscheidung aufgrund von &#8216;&#8217;turtle.xcor()&#8217;&#8217; und &#8216;&#8217;turtle.ycor()&#8217;&#8217; treffen möchtest, musst Du beide verknüpfen. Das kannst Du mit logischen Operatoren erreichen.</p>
+</div>
+<div class="section" id="negation-of-a-statement">
+<h2>Verneinung eines Ausdrucks<a class="headerlink" href="#negation-of-a-statement" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Wenn wir möchten, dass etwas <em>False</em> ist, können wir den logischen Operator &#8216;&#8217;not&#8217;&#8217; verwenden:</p>
+<div class="highlight-python"><pre>x = False
+if not x :
+    print("condition met")
+else:
+    print("condition not met")</pre>
+</div>
+<div class="section" id="exercise">
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Die Schildkröte enthält eine nützliche Funktion die sagt ob grade gezeichnet wird oder nicht; &#8216;&#8217;turtle.isdown()&#8217;&#8216;. Diese Funktion liefert <em>True</em> falls die Schildkröte im Zeichenmodus ist. Wie wir bereits gesehen haben, schalten die Funktionen &#8216;&#8217;turtle.penup()&#8217;&#8217; und &#8216;&#8217;turtle.pendown()&#8217;&#8217; zwischen dem Modus zum Zeichnen beim Bewegen und dem Bewegungsmodus ohne Zeichnen hin und her.</p>
+<p>Können wir eine Funktion schreiben die nur vorwärts geht falls die Schildkröte nicht im Zeichenmodus ist?</p>
+</div>
+<div class="section" id="solution">
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>def stealthed_forward(distance):
+    if not turtle.isdown():
+        turtle.forward(distance)</pre>
+</div>
+</div>
+</div>
+<div class="section" id="this-and-that-or-something-else">
+<h2>Dies und jenes oder etwas anderes<a class="headerlink" href="#this-and-that-or-something-else" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Zwei einfach zu verstehende Operatoren sind &#8216;&#8217;and&#8217;&#8217; und &#8216;&#8217;or&#8217;&#8216;. Sie tun genau das wonach sie sich anhören::</p>
+<div class="highlight-python"><pre>if 1 &lt; 2 and 4 &gt; 2:
+    print("condition met")
+
+if 1 &gt; 2 and 4 &lt; 10:
+    print("condition not met")
+
+if 4 &lt; 10 or 1 &lt; 2:
+    print("condition met")</pre>
+</div>
+<p>Du bist nicht darauf angewiesen nur einen logischen Operator zu verwenden. Du kannst so viele miteinander kombinieren wie Du möchtest.</p>
+<div class="section" id="id1">
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Weiter oben haben wir die Schildkröte in einem kreisförmigen Gefängnis eingesperrt. Diesmal werden wir ein Quadrat dazu verwenden. Falls die Schildkröte sich mehr als 100 Einheiten entlang der x- <em>oder</em> y-Achse vom Mittelpunkt entfernt, drehen wir sie zurück zur Mitte um.</p>
+</div>
+<div class="section" id="id2">
+<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>def forward(distance):
+    while distance &gt; 0:
+        if (turtle.xcor() &gt; 100
+            or turtle.xcor() &lt; -100
+            or turtle.ycor() &gt; 100
+            or turtle.ycor() &lt; -100):
+            turtle.setheading(turtle.towards(0,0))
+        turtle.forward(1)
+        distance = distance - 1</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Logische Operatoren</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#negation-of-a-statement">Verneinung eines Ausdrucks</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#this-and-that-or-something-else">Dies und jenes oder etwas anderes</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="conditional_loops.html"
+                        title="vorheriges Kapitel">Bedingte Schleifen</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="copyright.html"
+                        title="nächstes Kapitel">Lizenz</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="copyright.html" title="Lizenz"
+             >weiter</a></li>
+        <li class="right" >
+          <a href="conditional_loops.html" title="Bedingte Schleifen"
+             >zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+    </div>
+  </body>
+</html>

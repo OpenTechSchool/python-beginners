@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Funktionen mit Parametern &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Verzweigungen" href="conditionals.html" />
+    <link rel="prev" title="Benutzerdefinierte Funktionen" href="functions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="conditionals.html" title="Verzweigungen"
+             accesskey="N">weiter</a></li>
+        <li class="right" >
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="functions-with-parameters">
+<h1>Funktionen mit Parametern<a class="headerlink" href="#functions-with-parameters" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Während wir unser Programm verkleinern und Funktionen hinzufügen um Duplikation zu vermeiden, <em>refaktorisieren</em> wir es. Dies ist eine gute Sache. Aber die Funktionen die wir bisher geschriebe haben sind nicht besonders flexibel. Die Variablen sind alle innerhalb der Funktion definiert, so dass wir jedes Mal eine neue Funktio schreiben müssen, falls wir einen anderen Winkel oder eine andere Strecke verwenden wollen.</p>
+<p>Deshalb benötigen wir die Möglichkeit Parameter, auch <em>Argumente</em> genannt, an eine Funktion zu übergeben. So können die Variablen innerhalb der Funktion jedes Mal wenn die Funktion aufgerufen wird, andere Werte annehmen:</p>
+<p>Erinnere Dich wie wir die Funktion &#8216;&#8217;line_without_moving()&#8217;&#8217; im vorigen Abschnitt definiert haben:</p>
+<div class="highlight-python"><pre>def line_without_moving():
+    turtle.forward(50)
+    turtle.backward(50)</pre>
+</div>
+<p>Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben:</p>
+<div class="highlight-python"><pre>def line_without_moving(length):
+    turtle.forward(length)
+    turtle.backward(length)</pre>
+</div>
+<p>Der Parameter fungiert als <em>Variable</em> die nur innerhalb der Funktionsdefinition bekannt ist. Wir verwenden diese neu definierte Funktion, indem wir sie mit dem Wert für den Parameter aufrufen:</p>
+<div class="highlight-python"><pre>line_without_moving(50)
+line_without_moving(40)</pre>
+</div>
+<p>Wir haben bereits seit dem Anfang des Tutorials Funktionen mit Parametern verwendet, z.B. &#8216;&#8217;turtle.forward()&#8217;&#8216;, &#8216;&#8217;turtle.left()&#8217;&#8216;, etc...</p>
+<p>Wir können so viele Argumente (oder Parameter) wie wir möchten für eine Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata getrennt und haben alle unterschiedliche Namen:</p>
+<div class="highlight-python"><pre>def tilted_line_without_moving(length, angle):
+    turtle.left(angle)
+    turtle.forward(length)
+    turtle.backward(length)</pre>
+</div>
+</div>
+<div class="section" id="a-parameterized-function-for-a-variable-size-hexagon">
+<h2>Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen.</p>
+</div>
+</div>
+<div class="section" id="a-function-of-several-parameters">
+<h2>Eine Funktion mit mehreren Parametern<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="id1">
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl Hexagone von unterschiedlicher Grösse zeichnet (<em>sollen alle Hexe in einer Wabe die gleiche Grösse haben</em> A.d.Ue)</p>
+</div>
+<div class="section" id="solution">
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><pre>def hexagon(size):
+    for i in range(6):
+        turtle.forward(size)
+        turtle.left(60)
+
+def honeycomb(size, count):
+    for i in range(count):
+        hexagon(size)
+        turtle.forward(size)
+        turtle.right(60)</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Funktionen mit Parametern</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">Eine Funktion mit mehreren Parametern</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="functions.html"
+                        title="vorheriges Kapitel">Benutzerdefinierte Funktionen</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="conditionals.html"
+                        title="nächstes Kapitel">Verzweigungen</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="conditionals.html" title="Verzweigungen"
+             >weiter</a></li>
+        <li class="right" >
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
+             >zurück</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+    </div>
+  </body>
+</html>
