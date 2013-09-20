@@ -1,0 +1,118 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-20 19:22\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/conditional_loops.rst:2
+msgid "Conditional Loops"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:7
+msgid ""
+"Conditional loops are way to repeat something until a certain condition is "
+"met. If the condition is never met, the loop can become infinite. In Python "
+"conditional loops are defined with the ``while`` statement::"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:18
+msgid "Turtle prison"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:21
+#: ../../../source/conditional_loops.rst:63
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:23
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"building up huge gambling debts. It's time for turtle to be put into a box "
+"that it can't get out of."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:27
+msgid ""
+"Let's make a new version of ``forward()``. One that turns the turtle around "
+"if it tries to go further than 100 from the origin. We'll need a ``while`` "
+"loop, and some new turtle functions:"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:31
+msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:32
+msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:33
+msgid "``turtle.setheading(angle)`` - Directly set the turtle direction"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:35
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, a ``while`` loop and a bit of conditional logic. It's a bit of a "
+"stretch but keep at it! Don't be afraid to talk it out with a coach or "
+"another student."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:42
+#: ../../../source/conditional_loops.rst:80
+msgid "Solution"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:56
+msgid "Draw a spiral"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:58
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always *True*."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:65
+msgid ""
+"Write a ``while`` loop with a condition that is always *True* to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:70
+msgid ""
+"To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
+"functions, which return the position of the turtle in X and Y axes "
+"respectively."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:76
+msgid ""
+"To draw a spiral, the turtle has to rotate by a constant value and move "
+"forward by an increasing value."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:96
+msgid "Bonus"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:98
+msgid ""
+"Can you make a conditional for this loop, so you don't need the infinite "
+"loop *while True* or the *break*? Which version do you find easier to "
+"understand?"
+msgstr ""

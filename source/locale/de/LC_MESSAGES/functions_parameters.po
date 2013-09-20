@@ -1,0 +1,94 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-20 19:22\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:13
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:17
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:24
+msgid "We can improve it by giving it a parameter::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:30
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:37
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:40
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:50
+msgid "A parameterized function for a variable size hexagon"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:53
+#: ../../../source/functions_parameters.rst:62
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:55
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:59
+msgid "A function of several parameters"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:64
+msgid ""
+"Write a function that draws a honeycomb with a variable number of hexagons, "
+"of variable sizes."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:68
+msgid "Solution"
+msgstr ""

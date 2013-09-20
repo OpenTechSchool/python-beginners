@@ -34,6 +34,9 @@ need to have the following Python packages installed:
 - Pygments
 - Sphinx
 - Fabric
+- sphinx-intl
+
+You can install these with pip using ``pip install -r requirements.txt``
 
 Build
 =====
@@ -44,10 +47,10 @@ easy. The following commands have to be executed in the ``docs`` directory.
 If you just want to render the HTML version, it's sufficient to run
 
 .. code:: bash
-   
+
     fab build
 
-This will create a directory ``_build`` inside the ``docs`` directory,
+This will create a directory ``_build``,
 containing the HTML version.
 
 Other `builders <http://sphinx.pocoo.org/builders.html#builders>`_ can be
@@ -57,7 +60,22 @@ tutorial into a single HTML file.
 .. code:: bash
 
    fab build:singlehtml
-  
+
+Translatation
+=============
+
+1. Translation (pot) templates must be built or updated - ``fab gen_pots``
+2. Templates must merged/built into po translation files - ``fab update_pos:de``
+
+.. note:: Both 1 and 2 can be done with ``fab update_pos``
+
+3. po files must be checked and translated correctly
+4. ``fab build`` will compile po files, and build the docs for each language
+
+.. note:: only po files should be committed to version control. pot and mo
+   files are built automatically.
+
+
 Deploy
 ======
 
@@ -69,8 +87,9 @@ process, you can use the fabric target ``setup``.
 
    fab setup
 
-This creates a clone of the repository inside the ``_build`` folder. You can 
-now run ``fab build``, change into ``docs/_build/html``, commit and push.
+This recreates the ``_build/html`` folder by building the project, while the 
+folder is cloned to the ``gh-pages`` branch. You can simple cd into the folder 
+thereafter and push new updates, or use ``fab build`` to rebuild it.
 
 License
 =======

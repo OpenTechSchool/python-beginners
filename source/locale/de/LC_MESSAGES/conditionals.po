@@ -1,0 +1,136 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-20 19:22\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/conditionals.rst:2
+msgid "Conditional statements"
+msgstr ""
+
+#: ../../../source/conditionals.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr ""
+
+#: ../../../source/conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr ""
+
+#: ../../../source/conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr ""
+
+#: ../../../source/conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr ""
+
+#: ../../../source/conditionals.rst:23
+msgid "**else**:"
+msgstr ""
+
+#: ../../../source/conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr ""
+
+#: ../../../source/conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr ""
+
+#: ../../../source/conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr ""
+
+#: ../../../source/conditionals.rst:34
+msgid "Examples"
+msgstr ""
+
+#: ../../../source/conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr ""
+
+#: ../../../source/conditionals.rst:54
+msgid "Giving Directions"
+msgstr ""
+
+#: ../../../source/conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr ""
+
+#: ../../../source/conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr ""
+
+#: ../../../source/conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr ""
+
+#: ../../../source/conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr ""
+
+#: ../../../source/conditionals.rst:81
+msgid "\"data munging\""
+msgstr ""
+
+#: ../../../source/conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr ""
+
+#: ../../../source/conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr ""
+
+#: ../../../source/conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr ""
+
+#: ../../../source/conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr ""

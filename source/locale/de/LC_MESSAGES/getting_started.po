@@ -1,0 +1,260 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-20 19:22\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/getting_started.rst:2
+msgid "Getting started"
+msgstr ""
+
+#: ../../../source/getting_started.rst:4
+msgid ""
+"If you haven't yet got python, the latest official installation packages can"
+" be found here:"
+msgstr ""
+
+#: ../../../source/getting_started.rst:6
+msgid "http://python.org/download/"
+msgstr ""
+
+#: ../../../source/getting_started.rst:8
+msgid "Python 3 is preferable, being the newest version out!"
+msgstr ""
+
+#: ../../../source/getting_started.rst:11
+msgid "What is Python, exactly?"
+msgstr ""
+
+#: ../../../source/getting_started.rst:13
+msgid ""
+"Ok, so python is this thing called a **programming language**. It takes text"
+" that you've written (usually referred to as **code**), turns it into "
+"instructions for your computer, and runs those instructions. We'll be "
+"learning how to write code to do cool and useful stuff. No longer will you "
+"be bound to use others' programs to do things with your computer!"
+msgstr ""
+
+#: ../../../source/getting_started.rst:19
+msgid ""
+"Practically, Python is just another program on your computer. The first "
+"thing to learn is how to use and interact with it. There are in fact many "
+"ways to do this; the first one to learn is to interact with python's "
+"interpreter, using your **operating system's** (OS) console."
+msgstr ""
+
+#: ../../../source/getting_started.rst:24
+msgid ""
+"A **console** (or 'terminal', or 'command prompt') is a *textual* way to "
+"interact with your OS, just as the 'desktop', in conjuction with your mouse,"
+" is the *graphical* way to interact your system."
+msgstr ""
+
+#: ../../../source/getting_started.rst:29
+msgid "Opening a console on Mac OS X"
+msgstr ""
+
+#: ../../../source/getting_started.rst:31
+msgid ""
+"OS X's standard console is a program called Terminal. Open Terminal by "
+"navigating to Applications, then Utilities, then double-click the "
+"\"Terminal\" program. You can also easily search for it in the system search"
+" tool in the top right."
+msgstr ""
+
+#: ../../../source/getting_started.rst:36
+msgid ""
+"The command line Terminal is a tool for interacting with your computer. A "
+"window will open with a command line prompt message, something like this::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:43
+msgid "Opening a console on Linux"
+msgstr ""
+
+#: ../../../source/getting_started.rst:45
+msgid ""
+"Different linux distributions (e.g Ubuntu, Fedora, Mint) may have different "
+"console programs, usually referred to as a terminal. The exact terminal you "
+"start up, and how, can depend on your distribution. On Ubuntu, you will "
+"likely want to open Gnome Terminal. It should present a prompt like this::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:53
+msgid "Opening a console on Windows"
+msgstr ""
+
+#: ../../../source/getting_started.rst:55
+msgid ""
+"Window's console is called the Command Prompt, named \"cmd.exe\". An easy "
+"way to get to it is by using the key combination \"Windows+R\" ('Windows' "
+"meaning the windows logo button), which should open a 'Run' dialog. Then "
+"simply type :kbd:`cmd` and hit :kbd:`<Enter>` / click Ok. It should look "
+"like::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:62
+msgid ""
+"Window's Command Prompt is not quite as powerful as its counterparts on "
+"Linux and OS X, so you might like to start the Python Interpreter (see just "
+"below) directly, or using the IDLE program that Python comes with. You can "
+"find these in the start menu."
+msgstr ""
+
+#: ../../../source/getting_started.rst:68
+msgid "Using Python"
+msgstr ""
+
+#: ../../../source/getting_started.rst:70
+msgid ""
+"The python program that you have installed by default will act as something "
+"called an **interpreter**. An interpreter will take commands and run them as"
+" you enter them, very handy for trying things out."
+msgstr ""
+
+#: ../../../source/getting_started.rst:74
+msgid ""
+"Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you "
+"should enter Python's Interpreter."
+msgstr ""
+
+#: ../../../source/getting_started.rst:77
+msgid ""
+"To find out which version of python you're running, use :program:`python -V`"
+" to tell you."
+msgstr ""
+
+#: ../../../source/getting_started.rst:80
+msgid "Interacting With Python"
+msgstr ""
+
+#: ../../../source/getting_started.rst:82
+msgid ""
+"After Python opens, it will show you some contextual information similar to "
+"this::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:91
+msgid ""
+"The prompt **>>>** on the last line indicates that you are now in an "
+"interactive Python interpeter session, also called the \"Python shell\". "
+"**This is different from the normal terminal command prompt!**"
+msgstr ""
+
+#: ../../../source/getting_started.rst:95
+msgid "You can now enter some python code. Try::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:99
+msgid ""
+"Press :kbd:`<Enter>` and see what happens. After showing the results, Python"
+" will bring you back to the interactive prompt, where you could enter "
+"another command::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:107
+msgid ""
+"An extremely useful command is ``help()``, which enters a help functionality"
+" to explore all the stuff python lets you do, right from the interpreter."
+msgstr ""
+
+#: ../../../source/getting_started.rst:110
+msgid ""
+"To leave the interactive shell, press :kbd:`Ctrl-Z` and then :kbd:`Enter` on"
+" Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, you could also "
+"run the python command ``exit()``!"
+msgstr ""
+
+#: ../../../source/getting_started.rst:115
+msgid "Running Python files"
+msgstr ""
+
+#: ../../../source/getting_started.rst:117
+msgid ""
+"When you have a lot of python code to run, you will want to save it into a "
+"file, so you for instance can modify small parts of it (fix a bug) and re-"
+"run it, without having to repeatedly re-type the rest. Instead you can save "
+"your code to a file and pass a file name to the :program:`python` "
+"executable. It will execute that file instead of launching the interactive "
+"interpreter."
+msgstr ""
+
+#: ../../../source/getting_started.rst:126
+msgid ""
+"Make sure you are at your system command prompt, which will have ``$`` or "
+"``>`` at the end, not at python's (which has ``>>>`` instead)!"
+msgstr ""
+
+#: ../../../source/getting_started.rst:129
+msgid ""
+"Let's try that.  Create a file :file:`hello.py` in your current directory "
+"with your favorite text editor and paste the print command from above.  Now "
+"save that file. On Linux or OS X, you can also run :kbd:`touch hello.py` to "
+"create an empty file to edit. To run this file with python, it's pretty "
+"easy:"
+msgstr ""
+
+#: ../../../source/getting_started.rst:140
+msgid ""
+"Not getting \"Hello world\" but some crazy error about \"can't open file\" "
+"or \"No such file or directory?\" Your command line might not be running in "
+"the directory you saved the file in. You can use the system command line to "
+"change your active directory with the :command:`cd` command, which stands "
+"for \"change directory\". On Windows, you might want something like::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:149
+msgid "On Linux or OS X, you might want something like::"
+msgstr ""
+
+#: ../../../source/getting_started.rst:153
+msgid ""
+"This changes to the directory Python_Exercises under the Desktop folder "
+"(yours might be somewhere a bit different). If you don't know the location "
+"of the directory where you saved the file, you can simply drag the directory"
+" to the command line window.  If you don't know which directory your shell "
+"is currently running in use :command:`pwd`, which stands for \"print working"
+" directory\"."
+msgstr ""
+
+#: ../../../source/getting_started.rst:160
+msgid ""
+"On Windows you should also be able to  double-click the Python file to run "
+"it."
+msgstr ""
+
+#: ../../../source/getting_started.rst:162
+msgid ""
+"When pressing :kbd:`<Enter>` now, the file is executed and you see the "
+"output as before.  But this time, after Python finished executing all "
+"commands from that file it exits back to the system command prompt, instead "
+"of going back to the interactive shell."
+msgstr ""
+
+#: ../../../source/getting_started.rst:169
+msgid ""
+"Wordpad, TextEdit, Notepad, and Word are **not** suitable text editors.  If "
+"you are unsure whether you already have a usable editor, you might want to "
+"download and install `Sublime Text <http://www.sublimetext.com/>`_.  Code "
+"editors like this can also help you with formatting, running and debugging "
+"your code."
+msgstr ""
+
+#: ../../../source/getting_started.rst:175
+msgid "And now we are all set and can get started with turtle!"
+msgstr ""
+
+#: ../../../source/getting_started.rst:179
+msgid ""
+"When playing around with turtle, avoid naming your file :file:`turtle.py` "
+"--- rather use more appropriate names such as :file:`square.py` or "
+":file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python "
+"will pick up *your* file instead of the standard turtle."
+msgstr ""
