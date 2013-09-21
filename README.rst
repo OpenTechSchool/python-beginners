@@ -61,7 +61,7 @@ tutorial into a single HTML file.
 
    fab build:singlehtml
 
-Translatation
+Translation
 =============
 
 1. Translation (pot) templates must be built or updated - ``fab gen_pots``
