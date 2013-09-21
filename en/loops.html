@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -13,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
+        URL_ROOT:    '',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -54,7 +55,7 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>One more thing: Our programs often feature repetition. There is a powerful
 concept in Python called looping (jargon: <em>iteration</em>), which we will
-elaborate later on. For now, try this easy example:</p>
+elaborate later on. For now, <strong>try this easy example</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -120,32 +121,47 @@ use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.
 variable &#8212; to get increasing step sizes?</p>
 </div>
 </div>
+<div class="section" id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<p>In the solution above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
+comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
+by the computer. Use comments to explain what your program does,
+without changing the behaviour for the computer.</p>
+<p>Comments can also go at the end of a line, like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
+</pre></div>
 </div>
-<div class="section" id="honeycomb-loops">
-<h2>Honeycomb loops<a class="headerlink" href="#honeycomb-loops" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="more-efficient-squares">
+<h2>More Efficient Squares<a class="headerlink" href="#more-efficient-squares" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Take your honeycomb program and make it easier with loops. How small can you
-get it?</p>
+<p>The squares we were drawing at the start of this tutorial had a lot of
+repeated lines of code. Can you write out a square drawing program in fewer
+lines by utilizing loops?</p>
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-    <span class="n">hexagon</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
 <h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>See if you can look at your earlier square-drawing code, and make it much
-shorter by using loops.</p>
+<p>Try <em>nesting</em> loops, by putting one right under (<em>inside</em>) the other, with some
+drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
+<div class="highlight-python"><pre>for ...:
+    for ...:
+        # drawing code inside the inner loop goes here
+        ...
+    # you can put some code here to move
+    # around after
+    ...</pre>
+</div>
+<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt> with your own stuff!</p>
 </div>
 </div>
 </div>
@@ -164,9 +180,10 @@ shorter by using loops.</p>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
 <li><a class="reference internal" href="#solution">Solution</a></li>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
+<li><a class="reference internal" href="#comments">Comments</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#honeycomb-loops">Honeycomb loops</a><ul>
+<li><a class="reference internal" href="#more-efficient-squares">More Efficient Squares</a><ul>
 <li><a class="reference internal" href="#id1">Exercise</a></li>
 <li><a class="reference internal" href="#id2">Solution</a></li>
 <li><a class="reference internal" href="#id3">Bonus</a></li>
@@ -213,7 +230,7 @@ shorter by using loops.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

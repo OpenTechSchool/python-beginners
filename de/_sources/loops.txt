@@ -6,7 +6,7 @@ Introduction
 
 One more thing: Our programs often feature repetition. There is a powerful
 concept in Python called looping (jargon: *iteration*), which we will 
-elaborate later on. For now, try this easy example::
+elaborate later on. For now, **try this easy example**::
 
     for i in range(10):
         print("Hello!")
@@ -79,32 +79,51 @@ Can you make the dashes become larger as the line progresses?
    Can you utilize ``i`` --- commonly called the **index** variable or loop
    variable --- to get increasing step sizes?
 
-Honeycomb loops
-===============
+Comments
+--------
+
+In the solution above, the line that starts with a ``#`` is called a
+comment. In Python, anything that goes on a line after ``#`` is ignored
+by the computer. Use comments to explain what your program does,
+without changing the behaviour for the computer.
+
+Comments can also go at the end of a line, like this:
+
+::
+
+     turtle.left(20)     # now we can change the angle only here
+
+More Efficient Squares
+======================
 
 Exercise
 --------
 
-Take your honeycomb program and make it easier with loops. How small can you
-get it?
+The squares we were drawing at the start of this tutorial had a lot of 
+repeated lines of code. Can you write out a square drawing program in fewer 
+lines by utilizing loops?
 
 Solution
 --------
 
 ::
 
-    def hexagon():
-        for i in range(6):
-            turtle.forward(100)
-            turtle.left(60)
-
-    for i in range(6):
-        hexagon()
+    for _ in range(4):
         turtle.forward(100)
-        turtle.right(60)
+        turtle.left(90)
 
 Bonus
 -----
 
-See if you can look at your earlier square-drawing code, and make it much 
-shorter by using loops.
+Try *nesting* loops, by putting one right under (*inside*) the other, with some 
+drawing code that's inside both. Here's what it can look like::
+
+    for ...:
+        for ...:
+            # drawing code inside the inner loop goes here
+            ...
+        # you can put some code here to move 
+        # around after
+        ...
+
+Replace the ``...`` with your own stuff!

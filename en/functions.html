@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -13,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
+        URL_ROOT:    '',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -52,17 +53,21 @@
 <h1>User-defined functions<a class="headerlink" href="#user-defined-functions" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>There is still a lot of duplicated code &#8212; the actual drawing of the rectangle
-&#8212; around. If you need to copy and paste code, that is usually a sign of
-lacking abstractions. (Programmers call it a <em>code smell.</em>)</p>
-<p>Functions are one way to express abstractions in Python. Let&#8217;s take
-<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> for example. It is actually an abstraction for a number of
-steps, namely:</p>
+<p>Programmers can deal with some pretty complex and abstract problems, but one
+sign of a good programmer is that they&#8217;re lazy. They only like to deal with one
+thing at a time. So you need a way to break up code into smaller, discrete
+pieces, which lets you focus on just the piece you want to.</p>
+<p>Functions are one way to express such abstractions in Python. Let&#8217;s take
+<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> for example. <tt class="docutils literal"><span class="pre">reset</span></tt> is a function we call on our <tt class="docutils literal"><span class="pre">turtle</span></tt>, and
+it is actually an abstraction for a number of steps, namely:</p>
 <ul class="simple">
 <li>Erase the drawing board.</li>
 <li>Set the width and color back to default.</li>
 <li>Move the turtle back to its initial position.</li>
 </ul>
+<p>But because all the code is contained in the function, we don&#8217;t have to worry about these
+details. We can simply <em>call</em> this function, and know it will do what it says for us.</p>
+<p>So - how to write your own?</p>
 <p>A function can be defined with the <tt class="docutils literal"><span class="pre">def</span></tt> keyword in Python:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -88,11 +93,7 @@ followed by parentheses:</p>
     <span class="n">line_without_moving</span><span class="p">()</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">star</span><span class="p">():</span>
-    <span class="n">star_arm</span><span class="p">()</span>
-    <span class="n">star_arm</span><span class="p">()</span>
-    <span class="n">star_arm</span><span class="p">()</span>
-    <span class="n">star_arm</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
     <span class="n">star_arm</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -127,14 +128,9 @@ to experiment with?</p>
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
 <span class="n">tilted_square</span><span class="p">()</span>
 <span class="n">tilted_square</span><span class="p">()</span>
@@ -144,31 +140,15 @@ to experiment with?</p>
 <span class="c"># which might be useful later:</span>
 
 <span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
   <span class="n">square</span><span class="p">()</span>
 
-<span class="c"># etc&#39;</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="comments">
-<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
-<p>In the solution above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
-comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
-by the computer. Use comments to explain what your program does,
-without changing the behaviour for the computer.</p>
-<p>Comments can also go at the end of a line, like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
+<span class="c"># etc</span>
 </pre></div>
 </div>
 </div>
@@ -181,46 +161,25 @@ without changing the behaviour for the computer.</p>
 <img alt="_images/hexagon.png" src="_images/hexagon.png" />
 <p>Now combine that function into a honeycomb. Just make it with a single layer like this:</p>
 <img alt="_images/honeycomb.png" src="_images/honeycomb.png" />
+<p>Give it a good go!</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">Make sure your hexagon function returns your turtle to exactly the same
+position and angle it was before it was asked to draw the hexagon. This
+makes it easier to reason about.</p>
+</div>
 </div>
 <div class="section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="n">hexagon</span><span class="p">()</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">hexagon</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>You could also put the <tt class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></tt> portion in the
@@ -246,7 +205,6 @@ confusing.</p>
 <li><a class="reference internal" href="#a-function-for-a-square">A function for a square</a><ul>
 <li><a class="reference internal" href="#exercise">Exercise</a></li>
 <li><a class="reference internal" href="#solution">Solution</a></li>
-<li><a class="reference internal" href="#comments">Comments</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#a-function-for-a-hexagon">A function for a hexagon</a><ul>
@@ -295,7 +253,7 @@ confusing.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

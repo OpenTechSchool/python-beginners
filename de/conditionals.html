@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,14 +7,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Verzweigungen &mdash; Introduction to Programming with Python</title>
+    <title>Conditional statements &mdash; Introduction to Programming with Python</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
+        URL_ROOT:    '',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -27,18 +28,18 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Bedingte Schleifen" href="conditional_loops.html" />
-    <link rel="prev" title="Funktionen mit Parametern" href="functions_parameters.html" /> 
+    <link rel="next" title="Conditional Loops" href="conditional_loops.html" />
+    <link rel="prev" title="Functions with parameters" href="functions_parameters.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="conditional_loops.html" title="Bedingte Schleifen"
+          <a href="conditional_loops.html" title="Conditional Loops"
              accesskey="N">weiter</a></li>
         <li class="right" >
-          <a href="functions_parameters.html" title="Funktionen mit Parametern"
+          <a href="functions_parameters.html" title="Functions with parameters"
              accesskey="P">zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
@@ -50,74 +51,100 @@
           <div class="body">
             
   <div class="section" id="conditional-statements">
-<h1>Verzweigungen<a class="headerlink" href="#conditional-statements" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Bisher haben wir vordefinierte Aufgaben erledigt, aber einmal ehrlich, die Programme waren kaum komplizierter als eine antike Drehorgel die eine vordefinierte Melodie vom Anfang bis zum Ende abspult. Verzweigugen sind das, was Programmieren sehr viel mächtiger macht. Verzweigungen <em>testen</em> den Inhalt einer Variablen und verhalten sich einmal so falls die Variable einen bestimmten Wert hat, und anders falls nicht. Programmierer nennen Verzweigungen auch <em>if Ausdrücke</em>.</p>
-<p>Um zu wissen ob eine Bedingung <em>True</em> oder <em>False</em> ist, brauchen wir einen neuen Datentyp: Boolean. Booleans erlauben logische Operationen, die entweder als <em>wahr</em> oder <em>falsch</em> ausgewertet werden. Unsere Verzweigung kann also folgendermassen verstanden werden:</p>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>So far we have accomplished predefined tasks, but in all honesty we
+were accomplishing no better than old-time music boxes following one
+set of instructions to the end. What makes programming so much more
+powerful are conditional statements. This is the ability to <em>test</em> a
+variable against a value and act in one way if the condition is met by
+the variable or another way if not. They are also commonly called by
+programmers <em>if statements</em>.</p>
+<p>To know if a condition is <em>True</em> of <em>False</em>, we need a new type of data:
+the booleans. They allow logical operations.
+A logic statement or operation can be evaluated to be <em>True</em> or <em>False</em>.
+Our conditional statement can then be understood like this:</p>
 <blockquote>
 <div><dl class="docutils">
-<dt><strong>if</strong> (eine Bedingung die als True ausgewertet wird)*:</dt>
-<dd><p class="first last"><em>dann führe diese Anweisungen nur für &#8216;True&#8217; aus</em></p>
-</dd>
+<dt><strong>if</strong> <em>(a condition evaluates to True)</em>:</dt>
+<dd><em>then do these things only for &#8216;True&#8217;</em></dd>
 <dt><strong>else</strong>:</dt>
-<dd><p class="first last"><em>andernfalls führe diese Anweisungen nur für &#8216;False&#8217; aus</em>.</p>
-</dd>
+<dd><em>otherwise do these things only for &#8216;False&#8217;</em>.</dd>
 </dl>
 </div></blockquote>
-<p>Eine Bedingung kann alles sein, was zu wahr (<em>True</em>) oder falsch (<em>False</em>) evaluiert werden kann. Vergleiche ergeben immer wahr oder falsch, zum Beispiel <tt class="docutils literal"><span class="pre">==</span></tt> (ist gleich), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (größer als), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (kleiner als).</p>
-<p>Der <strong>else</strong> Block ist optional. Falls Du ihn auslässt und die Bedingung als &#8216;False&#8217; ausgewertet wird, passiert nichts weiter.</p>
+<p>The condition can be anything that evaluates as <em>True</em> or
+<em>False</em>. Comparisons always return <em>True</em> or <em>False</em>, for example
+<tt class="docutils literal"><span class="pre">==</span></tt> (equal to), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (greater than), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (less than.)</p>
+<p>The <strong>else</strong> part is optional. If you leave it off, nothing will
+happen if the conditional evaluates to &#8216;False&#8217;.</p>
 </div>
 <div class="section" id="examples">
-<h2>Beispiele<a class="headerlink" href="#examples" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Hier sind einige Beispiele. Du kannst sie Zeile für Zeile lesen und nachdenken was sie tun, oder gleich ausführen um auf Nummer sicher zu gehen.</p>
-<div class="highlight-python"><pre>condition = True
-if condition:
-    print("condition met")
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Here are some examples. You may want to read them over line-by-line
+and see what you think they do, or run them to be certain:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
 
-if not condition:
-    print("condition not met")
+<span class="k">if</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
 
-direction = -30
-if direction &gt; 0 :
-    turtle.forward(direction)
-else:
-    turtle.left(180)
-    turtle.forward(-direction)</pre>
+<span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
+<span class="k">if</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="giving-directions">
-<h2>Die Richtung festlegen<a class="headerlink" href="#giving-directions" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Die Schildkröten in Python sind sehr gut darin, Befehle auszuführen. Lass uns die &#8216;&#8217;input()&#8217;&#8217; Funktion verwenden, um den Benutzer nach einer Richtung zu fragen, in die die Schildkröte bewegt werden soll. Um es nicht zu kompliziert zu machen, erlauben wir nur zwei Befehle: &#8216;&#8217;links&#8217;&#8217; und &#8216;&#8217;rechts&#8217;&#8216;.</p>
+<h2>Giving Directions<a class="headerlink" href="#giving-directions" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Python turtles can be very good at following instructions. Let&#8217;s use
+the <tt class="docutils literal"><span class="pre">input()</span></tt> function to ask the user for a direction to move
+the turtle. To keep things easy we will only accept two instructions:
+&#8220;left&#8221; and &#8220;right&#8221;.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Python 2 verwenden? Die Funktion &#8216;&#8217;input()&#8217;&#8217; heisst auch &#8216;&#8217;raw_input()&#8217;&#8216;.</p>
+<p class="last">Using Python 2? The <tt class="docutils literal"><span class="pre">input()</span></tt> function is called <tt class="docutils literal"><span class="pre">raw_input()</span></tt>.</p>
 </div>
-<p>Es ist viel einfacher dies als eine Funktion zu definieren, etwa folgendermassen:</p>
-<div class="highlight-python"><pre>def move():
-    direction = input("Go left or right? ")
-    if direction == "left":
-        turtle.left(60)
-        turtle.forward(50)
-    if direction == "right":
-        turtle.right(60)
-        turtle.forward(50)</pre>
+<p>It&#8217;s much easier to define this as a function, like so:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
+    <span class="n">direction</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;left&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;right&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>Immer wenn Du nun &#8216;&#8217;move()&#8217;&#8217; verwendest, wirst Du gefragt entweder &#8216;&#8217;links&#8217;&#8217; oder &#8216;&#8217;rechts&#8217;&#8217; auszuwählen.</p>
+<p>Now whenever you use <tt class="docutils literal"><span class="pre">move()</span></tt> you are prompted to choose <tt class="docutils literal"><span class="pre">left</span></tt> or
+<tt class="docutils literal"><span class="pre">right</span></tt>.</p>
 </div>
 <div class="section" id="data-munging">
-<h2>&#8216;&#8217;Datenbastelei&#8217;&#8216;<a class="headerlink" href="#data-munging" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>In diesem Programm wird die Schildkröte nur auf die Befehle &#8216;&#8217;links&#8217;&#8217; und &#8216;&#8217;rechts&#8217;&#8217; reagieren, ohne jegliche Abweichungen. Obwohl &#8216;&#8217;Links&#8217;&#8217; oder &#8216;&#8217;LINKS&#8217;&#8217; für einen Menschen das gleiche bedeutet wie &#8216;&#8217;links&#8217;&#8216;, ist das für ein Programm nicht der Fall. Python hat einige Hilfsmethoden die dabei helfen. Ein String hat die Methoden &#8216;&#8217;.strip()&#8217;&#8216;, die Leerzeichen und Zeilenumbrüche von den Enden entfernt, und &#8216;&#8217;.lower()&#8217;&#8216;, welche den gesamten String in Kleinbuchstaben umwandelt.</p>
-<p>Here sind einige Beispiele, die die Auswirkungen von &#8216;&#8217;.strip()&#8217;&#8217; und &#8216;&#8217;.lower()&#8217;&#8217; illustrieren:</p>
-<div class="highlight-python"><pre>my_variable = "       I Am Capitalised"
-print(my_variable)
-my_stripped = my_variable.strip()
-print(my_stripped)
-my_lower = my_variable.lower()
-print(my_lower)</pre>
+<h2>&#8220;data munging&#8221;<a class="headerlink" href="#data-munging" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>In this program, the turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt>
+or <tt class="docutils literal"><span class="pre">right</span></tt> with no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">LEFT</span></tt> might
+seem the same as <tt class="docutils literal"><span class="pre">left</span></tt> to a human, that isn&#8217;t the case when programming. Python
+has a few utility methods to help with that. A string has the methods
+<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
+everything lower-case.</p>
+<p>Here are some examples to print out the effects of <tt class="docutils literal"><span class="pre">.strip()</span></tt> and <tt class="docutils literal"><span class="pre">.lower()</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+<span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_stripped</span><span class="p">)</span>
+<span class="n">my_lower</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>Versuche de Befehl &#8216;&#8217;direction = direction.strip().lower&#8217;&#8217; zu der Funktion &#8216;&#8217;move()&#8217;&#8217; hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns &#8216;&#8217;data munging&#8217;&#8217; (Datenbastelei) genannt. Sie ist sehr häufig.</p>
-<p>Kannst Du einig zusätzliche Eingabeoptionen hinzufügen, die die Schildkröte andere Dinge zeichnen lassen? Wie wäre es mit einem &#8216;&#8217;Sechseck&#8217;&#8216;?</p>
+<p>Try adding <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></tt> to the <tt class="docutils literal"><span class="pre">move()</span></tt>
+function, to see the effect. We often call this kind of code &#8220;data
+munging&#8221;, and it is very common.</p>
+<p>Can you add some extra input choices to make the turtle draw other
+things? How about <tt class="docutils literal"><span class="pre">hexagon</span></tt>?</p>
 </div>
 </div>
 
@@ -129,21 +156,21 @@ print(my_lower)</pre>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Inhalt</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Verzweigungen</a><ul>
-<li><a class="reference internal" href="#introduction">Einführung</a></li>
-<li><a class="reference internal" href="#examples">Beispiele</a></li>
-<li><a class="reference internal" href="#giving-directions">Die Richtung festlegen</a></li>
-<li><a class="reference internal" href="#data-munging">&#8216;&#8217;Datenbastelei&#8217;&#8216;</a></li>
+<li><a class="reference internal" href="#">Conditional statements</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#giving-directions">Giving Directions</a></li>
+<li><a class="reference internal" href="#data-munging">&#8220;data munging&#8221;</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Vorheriges Thema</h4>
   <p class="topless"><a href="functions_parameters.html"
-                        title="vorheriges Kapitel">Funktionen mit Parametern</a></p>
+                        title="vorheriges Kapitel">Functions with parameters</a></p>
   <h4>Nächstes Thema</h4>
   <p class="topless"><a href="conditional_loops.html"
-                        title="nächstes Kapitel">Bedingte Schleifen</a></p>
+                        title="nächstes Kapitel">Conditional Loops</a></p>
 <div id="searchbox" style="display: none">
   <h3>Schnellsuche</h3>
     <form class="search" action="search.html" method="get">
@@ -165,17 +192,17 @@ print(my_lower)</pre>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="conditional_loops.html" title="Bedingte Schleifen"
+          <a href="conditional_loops.html" title="Conditional Loops"
              >weiter</a></li>
         <li class="right" >
-          <a href="functions_parameters.html" title="Funktionen mit Parametern"
+          <a href="functions_parameters.html" title="Functions with parameters"
              >zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
     </div>
   </body>
 </html>

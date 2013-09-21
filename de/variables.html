@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,14 +7,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Variablen &mdash; Introduction to Programming with Python</title>
+    <title>Variables &mdash; Introduction to Programming with Python</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
+        URL_ROOT:    '',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -27,18 +28,18 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Schleifen" href="loops.html" />
-    <link rel="prev" title="Einfaches Zeichnen mit turtle" href="simple_drawing.html" /> 
+    <link rel="next" title="Loops" href="loops.html" />
+    <link rel="prev" title="Simple drawing with turtle" href="simple_drawing.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="loops.html" title="Schleifen"
+          <a href="loops.html" title="Loops"
              accesskey="N">weiter</a></li>
         <li class="right" >
-          <a href="simple_drawing.html" title="Einfaches Zeichnen mit turtle"
+          <a href="simple_drawing.html" title="Simple drawing with turtle"
              accesskey="P">zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
@@ -50,67 +51,89 @@
           <div class="body">
             
   <div class="section" id="variables">
-<h1>Variablen<a class="headerlink" href="#variables" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Puh. Wenn Du mit den Winkeln experimentiers, musst Du jedes Mal an drei verschiedenen Stellen den Code verändern. Jetzt stelle Dir vor Du möchtest mit allen Abmessungen des Quadrates experimentieren, oder sogar mit Rechtecken! Das muss besser gehen.</p>
-<p>An dieser Stelle kommen <strong>Variablen</strong> ins Spiel: Du kannst ab nun Python befehlen, jedes Mal wenn Du eine bestimmte Variable verwendest, an dieser Stelle etwas anderes einzusetzen. Dieses Konzept ist ähnlich zur Algebra, wo Du schreiben könntest: <em>x sei 5</em>. Dann ist <em>x * 2</em> natürlich <em>10</em>.</p>
-<p>In der Syntax von Python hat die gleiche Bedeutung:</p>
-<div class="highlight-python"><pre>x = 5</pre>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Whew. Experimenting with the angles requires you to change three different
+places in the code each time. Imagine you&#8217;d want to experiment with
+all of the square sizes, let alone with rectangles! We can do better than that.</p>
+<p>This is where <strong>variables</strong> come into play: You can tell Python that from now on,
+whenever you refer to a variable, you actually mean something else. That concept
+might be familiar from symbolic maths, where you would write: <em>Let x be 5.</em>
+Then <em>x * 2</em> will obviously be <em>10</em>.</p>
+<p>In Python syntax, that very statement translates to:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
 </div>
-<p>Falls Du nach diesem Befehl &#8216;&#8217;print(x)&#8217;&#8217; ausführst, wird der Wert von x ausgegeben &#8212; 5. Du kannst das gleiche auch mit turtle kombinieren.</p>
-<div class="highlight-python"><pre>turtle.forward(x)</pre>
+<p>After that statement, if you do <tt class="docutils literal"><span class="pre">print(x)</span></tt>, it will actually output its value
+&#8212; 5.  Well, can use that for your turtle too:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>Variablen können alles mögliche speichern, nicht nur Zahlen. Etwas anderes typisches das oft in Variablen gespeichert wird sind <strong>Strings</strong> - Textzeilen. Strings werden durch &#8216;&#8217;&#8221;&#8217;&#8217; (doppelte Anführungszeichen) vor und nach dem Text gekennzeichnet. Du wirst später noch mehr über diese sogenannten Datentypen in Python und was Du mit ihnen tun kannst, lernen.</p>
-<p>Du kannst sogar eine Variable verwenden um der Schildkröte einen Namen zu geben:</p>
-<div class="highlight-python"><pre>timmy = turtle</pre>
+<p>Variables can store all sorts of things, not just numbers. A typical
+other thing you want to have stored often is a <strong>string</strong> - a line of text.
+Strings are indicated with a starting and a leading <tt class="docutils literal"><span class="pre">&quot;</span></tt> (double quote).
+You&#8217;ll learn about this and other types, as those are called in Python, and
+what you can do with them later on.</p>
+<p>You can even use a variable to give the turtle a name:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span>
+</pre></div>
 </div>
-<p>Jedes Mal wenn Du nun &#8216;&#8217;timmy&#8217;&#8217; schreibst, weiss Python, dass Du &#8216;&#8217;turtle&#8217;&#8217; meinst. Du kannst auch weiterhin &#8216;&#8217;turtle&#8217;&#8217; verwenden:</p>
-<div class="highlight-python"><pre>timmy.forward(50)
-timmy.left(90)
-turtle.forward(50)</pre>
+<p>Now every time you type <tt class="docutils literal"><span class="pre">timmy</span></tt> it knows you mean <tt class="docutils literal"><span class="pre">turtle</span></tt>. You can
+still continue to use <tt class="docutils literal"><span class="pre">turtle</span></tt> as well:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="a-variable-called-angle">
-<h2>Eine Variable genannt angle<a class="headerlink" href="#a-variable-called-angle" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>A variable called angle<a class="headerlink" href="#a-variable-called-angle" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="exercise">
-<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Wenn wir eine Variable &#8216;&#8217;angle&#8217;&#8217; (Winkel) nennen, wie könnten wir sie verwenden um mit dem Programm mit den gekippten Quadraten zu experimentieren?</p>
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>If we have a variable called <tt class="docutils literal"><span class="pre">angle</span></tt>, how could we use that to experiment
+much faster with our tilted squares program?</p>
 </div>
 <div class="section" id="solution">
-<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
-<div class="highlight-python"><pre>angle = 20
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">angle</span> <span class="o">=</span> <span class="mi">20</span>
 
-turtle.left(angle)
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
 
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-turtle.left(angle)</pre>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>... und so weiter</p>
+<p>... and so on</p>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Kannst Du das gleiche Prinzip auch auf die Grösse der Quadrate anwenden?</p>
+<p>Can you apply that principle to the size of the squares, too?</p>
 </div>
 </div>
 <div class="section" id="the-house-of-santa-claus">
-<h2>Das Haus vom Nikolaus<a class="headerlink" href="#the-house-of-santa-claus" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>The house of santa claus<a class="headerlink" href="#the-house-of-santa-claus" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
-<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Zeichne ein Haus.</p>
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Draw a house.</p>
 <img alt="_images/house.png" src="_images/house.png" />
-<p>Du kannst die Länge der diagonalen Linie mit dem Satz des Pythagoras ausrechnen. Diese Zahl ist es wert in einer Variable gespeichert zu werden. Um die Quadratwurzel einer Zahl in Python zu berechnen, musst Du das <em>math</em> Modul importieren und die Funktion &#8216;&#8217;math.sqrt()&#8217;&#8217; aufrufen. Das Quadrat einer Zahl kannst Du mit dem Operator &#8216;&#8217;**&#8217;&#8217; ausrechnen:</p>
-<div class="highlight-python"><pre>import math
+<p>You can calculate the length of the diagonal line with the Pythagorean
+theorem. That value is a good candidate to store in a variable. To calculate
+the square root of a number in Python, you&#8217;ll need to import the <em>math</em> module
+and use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The square of a number is calculated
+with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
 
-c = math.sqrt(a**2 + b**2)</pre>
+<span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -124,16 +147,16 @@ c = math.sqrt(a**2 + b**2)</pre>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Inhalt</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Variablen</a><ul>
-<li><a class="reference internal" href="#introduction">Einführung</a></li>
-<li><a class="reference internal" href="#a-variable-called-angle">Eine Variable genannt angle</a><ul>
-<li><a class="reference internal" href="#exercise">Übung</a></li>
-<li><a class="reference internal" href="#solution">Lösung</a></li>
+<li><a class="reference internal" href="#">Variables</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#a-variable-called-angle">A variable called angle</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#the-house-of-santa-claus">Das Haus vom Nikolaus</a><ul>
-<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#the-house-of-santa-claus">The house of santa claus</a><ul>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
 </ul>
 </li>
 </ul>
@@ -142,10 +165,10 @@ c = math.sqrt(a**2 + b**2)</pre>
 
   <h4>Vorheriges Thema</h4>
   <p class="topless"><a href="simple_drawing.html"
-                        title="vorheriges Kapitel">Einfaches Zeichnen mit turtle</a></p>
+                        title="vorheriges Kapitel">Simple drawing with turtle</a></p>
   <h4>Nächstes Thema</h4>
   <p class="topless"><a href="loops.html"
-                        title="nächstes Kapitel">Schleifen</a></p>
+                        title="nächstes Kapitel">Loops</a></p>
 <div id="searchbox" style="display: none">
   <h3>Schnellsuche</h3>
     <form class="search" action="search.html" method="get">
@@ -167,17 +190,17 @@ c = math.sqrt(a**2 + b**2)</pre>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="loops.html" title="Schleifen"
+          <a href="loops.html" title="Loops"
              >weiter</a></li>
         <li class="right" >
-          <a href="simple_drawing.html" title="Einfaches Zeichnen mit turtle"
+          <a href="simple_drawing.html" title="Simple drawing with turtle"
              >zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1 erstellt.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
     </div>
   </body>
 </html>

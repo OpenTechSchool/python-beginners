@@ -8,7 +8,8 @@ As we shrink down our code and add functions to remove duplication, we
 are *factorizing* it. This is a good thing to do. But the functions we
 have defined so far are not very flexible. The variables are defined
 inside the function, so if we want to use a different angle or a
-distance then we need to write a new function.
+distance then we need to write a new function. Our hexagon function can 
+only draw one size of hexagon!
 
 That is why we need to be able to give parameters, also called
 *arguments*, to the function.  This way the *variables* in the
