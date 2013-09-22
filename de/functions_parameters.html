@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Functions with parameters &mdash; Introduction to Programming with Python</title>
+    <title>Funktionen mit Parametern &mdash; Introduction to Programming with Python</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -28,18 +28,18 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="Conditional statements" href="conditionals.html" />
-    <link rel="prev" title="User-defined functions" href="functions.html" /> 
+    <link rel="next" title="Verzweigungen" href="conditionals.html" />
+    <link rel="prev" title="Benutzerdefinierte Funktionen" href="functions.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="conditionals.html" title="Conditional statements"
+          <a href="conditionals.html" title="Verzweigungen"
              accesskey="N">weiter</a></li>
         <li class="right" >
-          <a href="functions.html" title="User-defined functions"
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
              accesskey="P">zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
@@ -51,42 +51,35 @@
           <div class="body">
             
   <div class="section" id="functions-with-parameters">
-<h1>Functions with parameters<a class="headerlink" href="#functions-with-parameters" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Funktionen mit Parametern<a class="headerlink" href="#functions-with-parameters" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>As we shrink down our code and add functions to remove duplication, we
 are <em>factorizing</em> it. This is a good thing to do. But the functions we
 have defined so far are not very flexible. The variables are defined
 inside the function, so if we want to use a different angle or a
 distance then we need to write a new function. Our hexagon function can
 only draw one size of hexagon!</p>
-<p>That is why we need to be able to give parameters, also called
-<em>arguments</em>, to the function.  This way the <em>variables</em> in the
-function can have different values each time we call the function:</p>
-<p>Remember how we defined the function <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> in the previous
-section:</p>
+<p>Deshalb benötigen wir die Möglichkeit Parameter, auch <em>Argumente</em> genannt, an eine Funktion zu übergeben. So können die Variablen innerhalb der Funktion jedes Mal wenn die Funktion aufgerufen wird, andere Werte annehmen:</p>
+<p>Erinnere Dich wie wir die Funktion &#8216;&#8217;line_without_moving()&#8217;&#8217; im vorigen Abschnitt definiert haben:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We can improve it by giving it a parameter:</p>
+<p>Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The parameter acts as a <em>variable</em> only known inside the function&#8217;s definition.
-We use the newly defined function by calling it with the value we want the
-parameter to have like this:</p>
+<p>Der Parameter fungiert als <em>Variable</em> die nur innerhalb der Funktionsdefinition bekannt ist. Wir verwenden diese neu definierte Funktion, indem wir sie mit dem Wert für den Parameter aufrufen:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We have been using functions with parameters since the beginning of the
-tutorial with <tt class="docutils literal"><span class="pre">turtle.forward()</span></tt>, <tt class="docutils literal"><span class="pre">turtle.left()</span></tt>, etc...</p>
-<p>And we can put as many arguments (or parameters) as we want, separating them
-with commas and giving them different names:</p>
+<p>Wir haben bereits seit dem Anfang des Tutorials Funktionen mit Parametern verwendet, z.B. &#8216;&#8217;turtle.forward()&#8217;&#8216;, &#8216;&#8217;turtle.left()&#8217;&#8216;, etc...</p>
+<p>Wir können so viele Argumente (oder Parameter) wie wir möchten für eine Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata getrennt und haben alle unterschiedliche Namen:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
@@ -95,22 +88,20 @@ with commas and giving them different names:</p>
 </div>
 </div>
 <div class="section" id="a-parameterized-function-for-a-variable-size-hexagon">
-<h2>A parameterized function for a variable size hexagon<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Write a function that allows you to draw hexagons of any size you want, each
-time you call the function.</p>
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen.</p>
 </div>
 </div>
 <div class="section" id="a-function-of-several-parameters">
-<h2>A function of several parameters<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Eine Funktion mit mehreren Parametern<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
-<h3>Exercise<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Write a function that draws a honeycomb with a variable number of hexagons, of
-variable sizes.</p>
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl Hexagone von unterschiedlicher Grösse zeichnet (<em>sollen alle Hexe in einer Wabe die gleiche Grösse haben</em> A.d.Ue)</p>
 </div>
 <div class="section" id="solution">
-<h3>Solution<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
@@ -135,15 +126,15 @@ variable sizes.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Inhalt</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Functions with parameters</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">A parameterized function for a variable size hexagon</a><ul>
-<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#">Funktionen mit Parametern</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#a-function-of-several-parameters">A function of several parameters</a><ul>
-<li><a class="reference internal" href="#id1">Exercise</a></li>
-<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">Eine Funktion mit mehreren Parametern</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
 </ul>
 </li>
 </ul>
@@ -152,10 +143,10 @@ variable sizes.</p>
 
   <h4>Vorheriges Thema</h4>
   <p class="topless"><a href="functions.html"
-                        title="vorheriges Kapitel">User-defined functions</a></p>
+                        title="vorheriges Kapitel">Benutzerdefinierte Funktionen</a></p>
   <h4>Nächstes Thema</h4>
   <p class="topless"><a href="conditionals.html"
-                        title="nächstes Kapitel">Conditional statements</a></p>
+                        title="nächstes Kapitel">Verzweigungen</a></p>
 <div id="searchbox" style="display: none">
   <h3>Schnellsuche</h3>
     <form class="search" action="search.html" method="get">
@@ -177,10 +168,10 @@ variable sizes.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="conditionals.html" title="Conditional statements"
+          <a href="conditionals.html" title="Verzweigungen"
              >weiter</a></li>
         <li class="right" >
-          <a href="functions.html" title="User-defined functions"
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
              >zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>

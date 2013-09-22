@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Loops &mdash; Introduction to Programming with Python</title>
+    <title>Schleifen &mdash; Introduction to Programming with Python</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -28,18 +28,18 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
-    <link rel="next" title="User-defined functions" href="functions.html" />
-    <link rel="prev" title="Variables" href="variables.html" /> 
+    <link rel="next" title="Benutzerdefinierte Funktionen" href="functions.html" />
+    <link rel="prev" title="Variablen" href="variables.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined functions"
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
              accesskey="N">weiter</a></li>
         <li class="right" >
-          <a href="variables.html" title="Variables"
+          <a href="variables.html" title="Variablen"
              accesskey="P">zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
@@ -51,9 +51,9 @@
           <div class="body">
             
   <div class="section" id="loops">
-<h1>Loops<a class="headerlink" href="#loops" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Schleifen<a class="headerlink" href="#loops" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>One more thing: Our programs often feature repetition. There is a powerful
 concept in Python called looping (jargon: <em>iteration</em>), which we will
 elaborate later on. For now, <strong>try this easy example</strong>:</p>
@@ -61,43 +61,33 @@ elaborate later on. For now, <strong>try this easy example</strong>:</p>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This is incredibly helpful if we want to do something multiple times &#8212; say,
-drawing the individual border lines of a shape &#8212; but only want to write it
-once.  But it gets better:</p>
+<p>Dies ist ausserordentlich hilfreich wenn wir etwas mehrere Male tun möchten &#8212; beispielsweise die Umrandung einer geometrischen Form zeichnen &#8212; aber den Programmcode dafür nur einmal schreiben möchten. Aber es wird noch besser:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt> but it has 10 different
-values?</p>
-<p>You can also loop over elements of your choice:</p>
+<p>Beachte dass wir nur eine einzige Zeile Code mit &#8216;&#8217;i&#8217;&#8217; schreiben, aber sie 10 unterschiedliche Werte annimmt.</p>
+<p>Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The <tt class="docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>.
-If you want to know more about it, you can use the help in the Python shell by
-typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>. Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
-<p>If you want to repeat some code a number of times, but don&#8217;t care about the value
-of the <tt class="docutils literal"><span class="pre">i</span></tt> variable, it can be good practice to replace it with <tt class="docutils literal"><span class="pre">_</span></tt> instead.
-This signifies that we don&#8217;t care about its value, or don&#8217;t wish to use it. So
-you could rewrite the first example as:</p>
+<p>Die Funktion &#8216;&#8217;range(n)&#8217;&#8217; kann als Abkürzung für &#8216;&#8216;0, 1, 2, ..., n-1&#8217;&#8217; betrachtet werden. Falls Du mehr über sie wissen möchtest, kannst Du die Hilfefunktion im Python-Interpreter verwenden, indem Du &#8216;&#8217;help(range)&#8217;&#8217; eingibst. Verwende die Taste :kbd:&#8217;q&#8217; um die Hilfe wieder zu schliessen.</p>
+<p>Falls du Code eine bestimmte Anzahl von Malen wiederholt ausführen möchtest, aber der Wert der Variable &#8216;&#8217;i&#8217;&#8217; Dich nicht interessiert, kann es sinnvoll sein &#8216;&#8217;i&#8217;&#8217; durch &#8216;&#8217;_&#8217;&#8217; zu ersetzen. Das zeigt an dass uns der Wert der Variablen nicht interessiert oder wir nicht vorhaben ihn zu benutzen. Du könntest das erste Beispiel dementsprechend auch so schreiben:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="drawing-a-dashed-line">
-<h2>Drawing a dashed line<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Eine gestrichelte Linie zeichnen<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Draw a dashed line.  You can move the turtle without the turtle drawing its
-movement by using the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function; to tell it to draw again,
-use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
+<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass sie zeichnet, indem Du die Funktion &#8216;&#8217;turtle.penup()&#8217;&#8217; aufrufst; um sie wieder zeichnen zu lassen, verwende &#8216;&#8217;turtle.pendown()&#8217;&#8216;.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
 </div>
 <div class="section" id="solution">
-<h3>Solution<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
@@ -108,27 +98,23 @@ use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Can you make the dashes become larger as the line progresses?</p>
+<p>Kannst du die Striche immer größer werden lassen?</p>
 <img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
 <div class="admonition hint">
 <p class="first admonition-title">Hinweis</p>
-<p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
+<p>Verwirrt?  Schau dir <tt class="docutils literal"><span class="pre">i</span></tt> in jedem Schleifendurchlauf an:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="c"># ...</span>
 </pre></div>
 </div>
-<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the <strong>index</strong> variable or loop
-variable &#8212; to get increasing step sizes?</p>
+<p class="last">Kannst du <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; üblicherweise als <strong>Index</strong>- oder Schleifenvariable bezeichnet &#8212; benutzen um immer größere Schritte zu machen?</p>
 </div>
 </div>
 <div class="section" id="comments">
-<h3>Comments<a class="headerlink" href="#comments" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>In the solution above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
-comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
-by the computer. Use comments to explain what your program does,
-without changing the behaviour for the computer.</p>
-<p>Comments can also go at the end of a line, like this:</p>
+<h3>Kommentare<a class="headerlink" href="#comments" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>In der oben genannten Löung ist die Zeile die mit einem &#8216;&#8217;#&#8217;&#8217; anfängt, eine Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein &#8216;&#8217;#&#8217;&#8217; folgt. Verwende Kommentare um zu erklären wie Dein Programm funktioniert, ohne dass Du dessen Verhalten im Computer veränderst.</p>
+<p>Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
 </pre></div>
 </div>
@@ -137,13 +123,13 @@ without changing the behaviour for the computer.</p>
 <div class="section" id="more-efficient-squares">
 <h2>More Efficient Squares<a class="headerlink" href="#more-efficient-squares" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
-<h3>Exercise<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>The squares we were drawing at the start of this tutorial had a lot of
 repeated lines of code. Can you write out a square drawing program in fewer
 lines by utilizing loops?</p>
 </div>
 <div class="section" id="id2">
-<h3>Solution<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -175,18 +161,18 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Inhalt</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Loops</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#drawing-a-dashed-line">Drawing a dashed line</a><ul>
-<li><a class="reference internal" href="#exercise">Exercise</a></li>
-<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#">Schleifen</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#drawing-a-dashed-line">Eine gestrichelte Linie zeichnen</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
-<li><a class="reference internal" href="#comments">Comments</a></li>
+<li><a class="reference internal" href="#comments">Kommentare</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#more-efficient-squares">More Efficient Squares</a><ul>
-<li><a class="reference internal" href="#id1">Exercise</a></li>
-<li><a class="reference internal" href="#id2">Solution</a></li>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
 <li><a class="reference internal" href="#id3">Bonus</a></li>
 </ul>
 </li>
@@ -196,10 +182,10 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
 
   <h4>Vorheriges Thema</h4>
   <p class="topless"><a href="variables.html"
-                        title="vorheriges Kapitel">Variables</a></p>
+                        title="vorheriges Kapitel">Variablen</a></p>
   <h4>Nächstes Thema</h4>
   <p class="topless"><a href="functions.html"
-                        title="nächstes Kapitel">User-defined functions</a></p>
+                        title="nächstes Kapitel">Benutzerdefinierte Funktionen</a></p>
 <div id="searchbox" style="display: none">
   <h3>Schnellsuche</h3>
     <form class="search" action="search.html" method="get">
@@ -221,10 +207,10 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="functions.html" title="User-defined functions"
+          <a href="functions.html" title="Benutzerdefinierte Funktionen"
              >weiter</a></li>
         <li class="right" >
-          <a href="variables.html" title="Variables"
+          <a href="variables.html" title="Variablen"
              >zurück</a> |</li>
         <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
       </ul>
