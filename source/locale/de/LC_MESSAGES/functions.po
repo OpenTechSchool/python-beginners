@@ -1,0 +1,198 @@
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# lightyear <ben@opentechschool.org>, 2013
+# krother <krother@academis.eu>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-22 17:04\n"
+"PO-Revision-Date: 2013-09-03 19:34+0000\n"
+"Last-Translator: krother <krother@academis.eu>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/functions.rst:2
+msgid "User-defined functions"
+msgstr "Benutzerdefinierte Funktionen"
+
+#: ../../../source/functions.rst:5
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../source/functions.rst:7
+msgid ""
+"Programmers can deal with some pretty complex and abstract problems, but one "
+"sign of a good programmer is that they're lazy. They only like to deal with "
+"one thing at a time. So you need a way to break up code into smaller, "
+"discrete pieces, which lets you focus on just the piece you want to."
+msgstr ""
+
+#: ../../../source/functions.rst:12
+msgid ""
+"Functions are one way to express such abstractions in Python. Let's take "
+"``turtle.reset()`` for example. ``reset`` is a function we call on our "
+"``turtle``, and it is actually an abstraction for a number of steps, namely:"
+msgstr ""
+
+#: ../../../source/functions.rst:16
+msgid "Erase the drawing board."
+msgstr "Lösche die Zeichenfläche."
+
+#: ../../../source/functions.rst:17
+msgid "Set the width and color back to default."
+msgstr "Setze die Linienbreite und -Farbe zurück zu den Startwerten."
+
+#: ../../../source/functions.rst:18
+msgid "Move the turtle back to its initial position."
+msgstr "Bewege die Schildkröte in ihre Ausgangsposition zurück."
+
+#: ../../../source/functions.rst:20
+msgid ""
+"But because all the code is contained in the function, we don't have to "
+"worry about these details. We can simply *call* this function, and know it "
+"will do what it says for us."
+msgstr ""
+
+#: ../../../source/functions.rst:23
+msgid "So - how to write your own?"
+msgstr ""
+
+#: ../../../source/functions.rst:25
+msgid "A function can be defined with the ``def`` keyword in Python::"
+msgstr ""
+"Eine Funktion kann in Python mit dem Schlüsselwort ''def'' definiert werden::"
+
+#: ../../../source/functions.rst:31
+msgid ""
+"This function we defined is called ``line_without_moving`` and it is an "
+"abstraction for two turtle steps - a move forward and a move backward."
+msgstr ""
+"Diese von uns definierte Funktion heisst ''line_without_moving''. Sie ist "
+"eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts "
+"und ein Schritt rückwärts."
+
+#: ../../../source/functions.rst:35
+msgid ""
+"To use it (or as it is usually called, \"to call it\"), write its name "
+"followed by parentheses::"
+msgstr ""
+"Um sie zu benutzen (oder wie es häufig genannt wird, \"sie aufzurufen\"), "
+"schreib ihren Namen gefolgt von runden Klammern::"
+
+#: ../../../source/functions.rst:46
+msgid "We could write more functions to remove some of the repetition::"
+msgstr ""
+"Wir könnten mehr Funktionen implementieren, um einige der Wiederholungen "
+"loszuwerden::"
+
+#: ../../../source/functions.rst:57
+msgid ""
+"Python uses *indenting with whitespace* to identify blocks of code that "
+"belong together. In Python a block (like the function definitions shown "
+"above) is introduced with a colon at the end of the line and subsequent "
+"commands are indented --- usually 4 spaces further in. The block ends with "
+"the first line that isn't indented."
+msgstr ""
+"Python benutzt *Einrückung mit Leerzeichen* um zusammengehörende "
+"Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in "
+"Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden "
+"Zeilen --- üblicherweise vier Leerzeichen --- gekennzeichnet.  Der Block "
+"endet sobald die Zeilen nicht mehr eingerückt sind."
+
+#: ../../../source/functions.rst:63
+msgid ""
+"This is different to many other programming languages, which use special "
+"characters (like curly braces ``{}``) to group blocks of code together."
+msgstr ""
+"Das ist ein Unterschied zu vielen anderen Programmiersprachen, die "
+"Sonderzeichen (etwa geschweifte Klammern ''{}'') verwenden um Codeblöcke zu "
+"kennzeichnen."
+
+#: ../../../source/functions.rst:67
+msgid ""
+"Never use tab characters to indent your blocks, only spaces. You can -- and "
+"should -- configure your editor to put 4 spaces when you press the tab key. "
+"The problem with using tab characters is that other python programmers use "
+"spaces, and if both are used in the same file python will read it wrong (in "
+"the best place, it will complain, and in the worst case, weird, hard to "
+"debug bugs will happen)."
+msgstr ""
+"Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du "
+"kannst -- und solltest -- Deinen Editor so konfigurieren, dass er vier "
+"Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den "
+"Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls "
+"beide in der gleichen Python-Datei verwendet werden, wird Python sie "
+"fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im "
+"schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf."
+
+#: ../../../source/functions.rst:76
+msgid "A function for a square"
+msgstr "Eine Funktion für ein Viereck"
+
+#: ../../../source/functions.rst:79 ../../../source/functions.rst:118
+msgid "Exercise"
+msgstr "Übung"
+
+#: ../../../source/functions.rst:81
+msgid ""
+"Write a function that draws a square. Could you use this function to improve "
+"the tilted squares program? If you change the program to use a function, is "
+"it easier to experiment with?"
+msgstr ""
+"Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion "
+"benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt "
+"es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?"
+
+#: ../../../source/functions.rst:86 ../../../source/functions.rst:137
+msgid "Solution"
+msgstr "Lösung"
+
+#: ../../../source/functions.rst:115
+msgid "A function for a hexagon"
+msgstr "Eine Funktion für ein Hexagon"
+
+#: ../../../source/functions.rst:120
+msgid "Write a function that draws a hexagon."
+msgstr "Schreibe eine Funktion die ein Hexagon zeichnet."
+
+#: ../../../source/functions.rst:124
+msgid ""
+"Now combine that function into a honeycomb. Just make it with a single layer "
+"like this:"
+msgstr ""
+"Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur "
+"eine einzige Ebene, ungefähr so:"
+
+#: ../../../source/functions.rst:128
+msgid "Give it a good go!"
+msgstr ""
+
+#: ../../../source/functions.rst:132
+msgid ""
+"Make sure your hexagon function returns your turtle to exactly the same "
+"position and angle it was before it was asked to draw the hexagon. This "
+"makes it easier to reason about."
+msgstr ""
+
+#: ../../../source/functions.rst:151
+msgid ""
+"You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
+"the function, but you better not call it ``hexagon`` in that case.  That's "
+"misleading because it actually draws a hexagon and then advances to a "
+"position where another hexagon would make sense in order to draw a "
+"honeycomb.  If you ever wanted to reuse your hexagon function outside of "
+"honeycombs, that would be confusing."
+msgstr ""
+"Du könntest auch die Befehle ''turtle.forward(100); turtle.right(60)'' in "
+"die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser "
+"nicht ''hexagon'' nennen. Das wäre irreführend, da die Funktion dann nicht "
+"nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe "
+"vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des "
+"Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend."

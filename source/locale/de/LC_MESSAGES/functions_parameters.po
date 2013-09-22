@@ -1,0 +1,121 @@
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# lightyear <ben@opentechschool.org>, 2013
+# krother <krother@academis.eu>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-22 17:04\n"
+"PO-Revision-Date: 2013-09-03 19:34+0000\n"
+"Last-Translator: krother <krother@academis.eu>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr "Funktionen mit Parametern"
+
+#: ../../../source/functions_parameters.rst:5
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../source/functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function. Our hexagon function can only draw one size of "
+"hexagon!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:14
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr ""
+"Deshalb benötigen wir die Möglichkeit Parameter, auch *Argumente* genannt, "
+"an eine Funktion zu übergeben. So können die Variablen innerhalb der "
+"Funktion jedes Mal wenn die Funktion aufgerufen wird, andere Werte annehmen:"
+
+#: ../../../source/functions_parameters.rst:18
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr ""
+"Erinnere Dich wie wir die Funktion ''line_without_moving()'' im vorigen "
+"Abschnitt definiert haben::"
+
+#: ../../../source/functions_parameters.rst:25
+msgid "We can improve it by giving it a parameter::"
+msgstr ""
+"Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben::"
+
+#: ../../../source/functions_parameters.rst:31
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr ""
+"Der Parameter fungiert als *Variable* die nur innerhalb der "
+"Funktionsdefinition bekannt ist. Wir verwenden diese neu definierte "
+"Funktion, indem wir sie mit dem Wert für den Parameter aufrufen::"
+
+#: ../../../source/functions_parameters.rst:38
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr ""
+"Wir haben bereits seit dem Anfang des Tutorials Funktionen mit Parametern "
+"verwendet, z.B. ''turtle.forward()'', ''turtle.left()'', etc..."
+
+#: ../../../source/functions_parameters.rst:41
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them "
+"with commas and giving them different names::"
+msgstr ""
+"Wir können so viele Argumente (oder Parameter) wie wir möchten für eine "
+"Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata "
+"getrennt und haben alle unterschiedliche Namen::"
+
+#: ../../../source/functions_parameters.rst:51
+msgid "A parameterized function for a variable size hexagon"
+msgstr "Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse"
+
+#: ../../../source/functions_parameters.rst:54
+#: ../../../source/functions_parameters.rst:63
+msgid "Exercise"
+msgstr "Übung"
+
+#: ../../../source/functions_parameters.rst:56
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each "
+"time you call the function."
+msgstr ""
+"Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, "
+"erlaubt Hexagone mit beliebiger Grösse zu zeichnen."
+
+#: ../../../source/functions_parameters.rst:60
+msgid "A function of several parameters"
+msgstr "Eine Funktion mit mehreren Parametern"
+
+#: ../../../source/functions_parameters.rst:65
+msgid ""
+"Write a function that draws a honeycomb with a variable number of hexagons, "
+"of variable sizes."
+msgstr ""
+"Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl "
+"Hexagone von unterschiedlicher Grösse zeichnet (*sollen alle Hexe in einer "
+"Wabe die gleiche Grösse haben* A.d.Ue)"
+
+#: ../../../source/functions_parameters.rst:69
+msgid "Solution"
+msgstr "Lösung"

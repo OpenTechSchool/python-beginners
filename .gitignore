@@ -2,5 +2,6 @@
 ._*
 *.pyc
 
-docs/_build
-docs/*/_build
+_build
+source/locale/*/*/*.mo
+source/_locales/*/*/*.mo
