@@ -22,6 +22,12 @@ required to make it work from files)::
    Not seeing anything on Mac OS?  Try looking if a new window opened behind
    your command line.
 
+.. note::
+
+   Do you work with Ubuntu and get the error message "No module named
+   _tkinter"? Install the missing package with ``sudo apt-get install
+   python-tk``
+
 ::
 
     turtle.forward(25)
