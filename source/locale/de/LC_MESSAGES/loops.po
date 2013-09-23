@@ -1,0 +1,164 @@
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# lightyear <ben@opentechschool.org>, 2013
+# krother <krother@academis.eu>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-22 17:04\n"
+"PO-Revision-Date: 2013-09-03 19:34+0000\n"
+"Last-Translator: krother <krother@academis.eu>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/loops.rst:2
+msgid "Loops"
+msgstr "Schleifen"
+
+#: ../../../source/loops.rst:5
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../source/loops.rst:7
+msgid ""
+"One more thing: Our programs often feature repetition. There is a powerful "
+"concept in Python called looping (jargon: *iteration*), which we will "
+"elaborate later on. For now, **try this easy example**::"
+msgstr ""
+
+#: ../../../source/loops.rst:14
+msgid ""
+"This is incredibly helpful if we want to do something multiple times --- "
+"say, drawing the individual border lines of a shape --- but only want to "
+"write it once.  But it gets better::"
+msgstr ""
+"Dies ist ausserordentlich hilfreich wenn wir etwas mehrere Male tun möchten "
+"--- beispielsweise die Umrandung einer geometrischen Form zeichnen --- aber "
+"den Programmcode dafür nur einmal schreiben möchten. Aber es wird noch "
+"besser::"
+
+#: ../../../source/loops.rst:21
+msgid ""
+"Notice how we write only one line of code using ``i`` but it has 10 "
+"different values?"
+msgstr ""
+"Beachte dass wir nur eine einzige Zeile Code mit ''i'' schreiben, aber sie "
+"10 unterschiedliche Werte annimmt."
+
+#: ../../../source/loops.rst:24
+msgid "You can also loop over elements of your choice::"
+msgstr "Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten::"
+
+#: ../../../source/loops.rst:29
+msgid ""
+"The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., "
+"n-1``. If you want to know more about it, you can use the help in the Python "
+"shell by typing ``help(range)``. Use the :kbd:`q` key to exit the help again."
+msgstr ""
+"Die Funktion ''range(n)'' kann als Abkürzung für ''0, 1, 2, ..., n-1'' "
+"betrachtet werden. Falls Du mehr über sie wissen möchtest, kannst Du die "
+"Hilfefunktion im Python-Interpreter verwenden, indem Du ''help(range)'' "
+"eingibst. Verwende die Taste :kbd:'q' um die Hilfe wieder zu schliessen."
+
+#: ../../../source/loops.rst:33
+msgid ""
+"If you want to repeat some code a number of times, but don't care about the "
+"value of the ``i`` variable, it can be good practice to replace it with "
+"``_`` instead. This signifies that we don't care about its value, or don't "
+"wish to use it. So you could rewrite the first example as::"
+msgstr ""
+"Falls du Code eine bestimmte Anzahl von Malen wiederholt ausführen möchtest, "
+"aber der Wert der Variable ''i'' Dich nicht interessiert, kann es sinnvoll "
+"sein ''i'' durch ''_'' zu ersetzen. Das zeigt an dass uns der Wert der "
+"Variablen nicht interessiert oder wir nicht vorhaben ihn zu benutzen. Du "
+"könntest das erste Beispiel dementsprechend auch so schreiben::"
+
+#: ../../../source/loops.rst:42
+msgid "Drawing a dashed line"
+msgstr "Eine gestrichelte Linie zeichnen"
+
+#: ../../../source/loops.rst:45 ../../../source/loops.rst:100
+msgid "Exercise"
+msgstr "Übung"
+
+#: ../../../source/loops.rst:47
+msgid ""
+"Draw a dashed line.  You can move the turtle without the turtle drawing its "
+"movement by using the ``turtle.penup()`` function; to tell it to draw again, "
+"use ``turtle.pendown()``."
+msgstr ""
+"Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass "
+"sie zeichnet, indem Du die Funktion ''turtle.penup()'' aufrufst; um sie "
+"wieder zeichnen zu lassen, verwende ''turtle.pendown()''."
+
+#: ../../../source/loops.rst:54 ../../../source/loops.rst:107
+msgid "Solution"
+msgstr "Lösung"
+
+#: ../../../source/loops.rst:65 ../../../source/loops.rst:116
+msgid "Bonus"
+msgstr "Bonus"
+
+#: ../../../source/loops.rst:67
+msgid "Can you make the dashes become larger as the line progresses?"
+msgstr "Kannst du die Striche immer größer werden lassen?"
+
+#: ../../../source/loops.rst:73
+msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
+msgstr "Verwirrt?  Schau dir ``i`` in jedem Schleifendurchlauf an::"
+
+#: ../../../source/loops.rst:79
+msgid ""
+"Can you utilize ``i`` --- commonly called the **index** variable or loop "
+"variable --- to get increasing step sizes?"
+msgstr ""
+"Kannst du ``i`` --- üblicherweise als **Index**\\ - oder Schleifenvariable "
+"bezeichnet --- benutzen um immer größere Schritte zu machen?"
+
+#: ../../../source/loops.rst:83
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../../../source/loops.rst:85
+msgid ""
+"In the solution above, the line that starts with a ``#`` is called a "
+"comment. In Python, anything that goes on a line after ``#`` is ignored by "
+"the computer. Use comments to explain what your program does, without "
+"changing the behaviour for the computer."
+msgstr ""
+"In der oben genannten Löung ist die Zeile die mit einem ''#'' anfängt, eine "
+"Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein "
+"''#'' folgt. Verwende Kommentare um zu erklären wie Dein Programm "
+"funktioniert, ohne dass Du dessen Verhalten im Computer veränderst."
+
+#: ../../../source/loops.rst:90
+msgid "Comments can also go at the end of a line, like this:"
+msgstr "Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:"
+
+#: ../../../source/loops.rst:97
+msgid "More Efficient Squares"
+msgstr ""
+
+#: ../../../source/loops.rst:102
+msgid ""
+"The squares we were drawing at the start of this tutorial had a lot of "
+"repeated lines of code. Can you write out a square drawing program in fewer "
+"lines by utilizing loops?"
+msgstr ""
+
+#: ../../../source/loops.rst:118
+msgid ""
+"Try *nesting* loops, by putting one right under (*inside*) the other, with "
+"some drawing code that's inside both. Here's what it can look like::"
+msgstr ""
+
+#: ../../../source/loops.rst:129
+msgid "Replace the ``...`` with your own stuff!"
+msgstr ""

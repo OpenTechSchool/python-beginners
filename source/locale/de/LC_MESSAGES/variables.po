@@ -1,0 +1,145 @@
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# lightyear <ben@opentechschool.org>, 2013
+# krother <krother@academis.eu>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-22 17:04\n"
+"PO-Revision-Date: 2013-09-03 19:34+0000\n"
+"Last-Translator: krother <krother@academis.eu>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/variables.rst:2
+msgid "Variables"
+msgstr "Variablen"
+
+#: ../../../source/variables.rst:5
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../source/variables.rst:7
+msgid ""
+"Whew. Experimenting with the angles requires you to change three different "
+"places in the code each time. Imagine you'd want to experiment with all of "
+"the square sizes, let alone with rectangles! We can do better than that."
+msgstr ""
+"Puh. Wenn Du mit den Winkeln experimentiers, musst Du jedes Mal an drei "
+"verschiedenen Stellen den Code verändern. Jetzt stelle Dir vor Du möchtest "
+"mit allen Abmessungen des Quadrates experimentieren, oder sogar mit "
+"Rechtecken! Das muss besser gehen."
+
+#: ../../../source/variables.rst:11
+msgid ""
+"This is where **variables** come into play: You can tell Python that from "
+"now on, whenever you refer to a variable, you actually mean something else. "
+"That concept might be familiar from symbolic maths, where you would write: "
+"*Let x be 5.* Then *x \\* 2* will obviously be *10*."
+msgstr ""
+"An dieser Stelle kommen **Variablen** ins Spiel: Du kannst ab nun Python "
+"befehlen, jedes Mal wenn Du eine bestimmte Variable verwendest, an dieser "
+"Stelle etwas anderes einzusetzen. Dieses Konzept ist ähnlich zur Algebra, wo "
+"Du schreiben könntest: *x sei 5*. Dann ist *x \\* 2* natürlich *10*."
+
+#: ../../../source/variables.rst:16
+msgid "In Python syntax, that very statement translates to::"
+msgstr "In der Syntax von Python hat die gleiche Bedeutung::"
+
+#: ../../../source/variables.rst:20
+msgid ""
+"After that statement, if you do ``print(x)``, it will actually output its "
+"value --- 5.  Well, can use that for your turtle too::"
+msgstr ""
+"Falls Du nach diesem Befehl ''print(x)'' ausführst, wird der Wert von x "
+"ausgegeben --- 5. Du kannst das gleiche auch mit turtle kombinieren."
+
+#: ../../../source/variables.rst:25
+msgid ""
+"Variables can store all sorts of things, not just numbers. A typical other "
+"thing you want to have stored often is a **string** - a line of text. "
+"Strings are indicated with a starting and a leading ``\"`` (double quote). "
+"You'll learn about this and other types, as those are called in Python, and "
+"what you can do with them later on."
+msgstr ""
+"Variablen können alles mögliche speichern, nicht nur Zahlen. Etwas anderes "
+"typisches das oft in Variablen gespeichert wird sind **Strings** - "
+"Textzeilen. Strings werden durch ''\"'' (doppelte Anführungszeichen) vor und "
+"nach dem Text gekennzeichnet. Du wirst später noch mehr über diese "
+"sogenannten Datentypen in Python und was Du mit ihnen tun kannst, lernen."
+
+#: ../../../source/variables.rst:31
+msgid "You can even use a variable to give the turtle a name::"
+msgstr ""
+"Du kannst sogar eine Variable verwenden um der Schildkröte einen Namen zu "
+"geben::"
+
+#: ../../../source/variables.rst:35
+msgid ""
+"Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
+"still continue to use ``turtle`` as well::"
+msgstr ""
+"Jedes Mal wenn Du nun ''timmy'' schreibst, weiss Python, dass Du ''turtle'' "
+"meinst. Du kannst auch weiterhin ''turtle'' verwenden::"
+
+#: ../../../source/variables.rst:43
+msgid "A variable called angle"
+msgstr "Eine Variable genannt angle"
+
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:83
+msgid "Exercise"
+msgstr "Übung"
+
+#: ../../../source/variables.rst:48
+msgid ""
+"If we have a variable called ``angle``, how could we use that to experiment "
+"much faster with our tilted squares program?"
+msgstr ""
+"Wenn wir eine Variable ''angle'' (Winkel) nennen, wie könnten wir sie "
+"verwenden um mit dem Programm mit den gekippten Quadraten zu experimentieren?"
+
+#: ../../../source/variables.rst:52
+msgid "Solution"
+msgstr "Lösung"
+
+#: ../../../source/variables.rst:72
+msgid "... and so on"
+msgstr "... und so weiter"
+
+#: ../../../source/variables.rst:75
+msgid "Bonus"
+msgstr "Bonus"
+
+#: ../../../source/variables.rst:77
+msgid "Can you apply that principle to the size of the squares, too?"
+msgstr ""
+"Kannst Du das gleiche Prinzip auch auf die Grösse der Quadrate anwenden?"
+
+#: ../../../source/variables.rst:80
+msgid "The house of santa claus"
+msgstr "Das Haus vom Nikolaus"
+
+#: ../../../source/variables.rst:85
+msgid "Draw a house."
+msgstr "Zeichne ein Haus."
+
+#: ../../../source/variables.rst:89
+msgid ""
+"You can calculate the length of the diagonal line with the Pythagorean "
+"theorem. That value is a good candidate to store in a variable. To calculate "
+"the square root of a number in Python, you'll need to import the *math* "
+"module and use the ``math.sqrt()`` function. The square of a number is "
+"calculated with the ``**`` operator::"
+msgstr ""
+"Du kannst die Länge der diagonalen Linie mit dem Satz des Pythagoras "
+"ausrechnen. Diese Zahl ist es wert in einer Variable gespeichert zu werden. "
+"Um die Quadratwurzel einer Zahl in Python zu berechnen, musst Du das *math* "
+"Modul importieren und die Funktion ''math.sqrt()'' aufrufen. Das Quadrat "
+"einer Zahl kannst Du mit dem Operator ''**'' ausrechnen::"
