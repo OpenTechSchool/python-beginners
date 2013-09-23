@@ -46,11 +46,12 @@ def clean(target=MAIN_TARGET):
     local('rm -rf %s' % os.path.join(BUILD_DIR, target))
 
 
-def serve(serve_dir=BUILD_DIR+'/'+MAIN_TARGET):
+def serve(port=SERVE_PORT, serve_dir=BUILD_DIR+'/'+MAIN_TARGET):
     """Run a web server to serve the built project"""
+    port = int(port)
     os.chdir(serve_dir)
     handler = httpserver.SimpleHTTPRequestHandler
-    httpd = socketserver.TCPServer(("", SERVE_PORT), handler)
+    httpd = socketserver.TCPServer(("", port), handler)
     print("serving on http://%s:%s" % httpd.server_address)
     httpd.serve_forever()
 
