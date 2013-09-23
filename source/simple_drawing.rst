@@ -64,7 +64,10 @@ until you click on it::
 
 .. note::
 
-   Python is a programming language where horizontal indenting of text is important. We'll learn all about this in the Functions chapter later on, but for now just keep in mind that stray spaces or tabs before any line of Python code will cause an unexpected error.
+   Python is a programming language where horizontal indenting of text is 
+   important. We'll learn all about this in the Functions chapter later on, 
+   but for now just keep in mind that stray spaces or tabs before any line 
+   of Python code will cause an unexpected error.
 
 Drawing a square
 ================
@@ -129,9 +132,9 @@ key to exit the pager.
 
    when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you'll need to ``import turtle`` before ``help(turtle.color)`` will work.
 
-Another way to find out about functions is to browse the `online documentation`__.
+Another way to find out about functions is to browse the `online documentation`_.
 
-__ http://docs.python.org/library/turtle
+.. _online documentation: http://docs.python.org/library/turtle
 
 
 .. caution::
@@ -144,10 +147,10 @@ __ http://docs.python.org/library/turtle
 
    As you might have read in the help, you can modify the color with
    :samp:`turtle.color({colorstring})`.  These include but are not limited to
-   "red," "green," and "violet."  See the `colors manual`__ for an extensive
+   "red," "green," and "violet."  See the `colours manual`_ for an extensive
    list.
 
-   __ http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
+   .. _colours manual: http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
 
 Drawing a rectangle
 ===================
