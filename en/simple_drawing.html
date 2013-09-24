@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -68,6 +69,12 @@ required to make it work from files):</p>
 <p class="last">Not seeing anything on Mac OS?  Try looking if a new window opened behind
 your command line.</p>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
+_tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
+<span class="pre">python-tk</span></tt></p>
+</div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -103,7 +110,10 @@ until you click on it:</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Python is a programming language where horizontal indenting of text is important. We&#8217;ll learn all about this in the Functions chapter later on, but for now just keep in mind that stray spaces or tabs before any line of Python code will cause an unexpected error.</p>
+<p class="last">Python is a programming language where horizontal indenting of text is
+important. We&#8217;ll learn all about this in the Functions chapter later on,
+but for now just keep in mind that stray spaces or tabs before any line
+of Python code will cause an unexpected error.</p>
 </div>
 </div>
 <div class="section" id="drawing-a-square">
@@ -172,20 +182,20 @@ with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></t
 <p class="first admonition-title">Tip</p>
 <p class="last">As you might have read in the help, you can modify the color with
 <tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>.  These include but are not limited to
-&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colors manual</a> for an extensive
+&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
 list.</p>
 </div>
 </div>
 </div>
 <div class="section" id="drawing-a-rectangle">
 <h2>Drawing a rectangle<a class="headerlink" href="#drawing-a-rectangle" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id3">
-<h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Can you draw a rectangle too?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id4">
-<h3>Solution<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -197,23 +207,23 @@ list.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h3>Bonus<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Bonus<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>How about a triangle? In an equilateral triangle (a triangle with all
 sides of equal length) each corner has an angle of 60 degrees.</p>
 </div>
 </div>
 <div class="section" id="more-squares">
 <h2>More squares<a class="headerlink" href="#more-squares" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3>Exercise<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Exercise<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Now, draw a tilted square. And another one, and another one. You can
 experiment with the angles between the individual squares.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.</p>
 </div>
-<div class="section" id="id7">
-<h3>Solution<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -269,14 +279,14 @@ experiment with the angles between the individual squares.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#drawing-a-rectangle">Drawing a rectangle</a><ul>
-<li><a class="reference internal" href="#id3">Exercise</a></li>
-<li><a class="reference internal" href="#id4">Solution</a></li>
-<li><a class="reference internal" href="#id5">Bonus</a></li>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+<li><a class="reference internal" href="#id2">Solution</a></li>
+<li><a class="reference internal" href="#id3">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#more-squares">More squares</a><ul>
-<li><a class="reference internal" href="#id6">Exercise</a></li>
-<li><a class="reference internal" href="#id7">Solution</a></li>
+<li><a class="reference internal" href="#id4">Exercise</a></li>
+<li><a class="reference internal" href="#id5">Solution</a></li>
 </ul>
 </li>
 </ul>

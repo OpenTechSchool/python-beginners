@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -92,27 +93,46 @@ only draw one size of hexagon!</p>
 <div class="section" id="exercise">
 <h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="a-function-of-several-parameters">
 <h2>Eine Funktion mit mehreren Parametern<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl Hexagone von unterschiedlicher Grösse zeichnet (<em>sollen alle Hexe in einer Wabe die gleiche Grösse haben</em> A.d.Ue)</p>
+<p>Write a function that will draw a shape of <em>any</em> number of sides (let&#8217;s assume
+greater than two) of any side length. Get it to draw some different shapes.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tipp</p>
+<p class="last">The sum of the internal angles of any shape is always 360 degrees!</p>
+</div>
 </div>
 <div class="section" id="solution">
 <h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">honeycomb</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span><span class="p">):</span>
-        <span class="n">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">sides</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>It might sound crazy, but it&#8217;s perfectly possible to pass a <em>function</em> as a parameter
+to another function! Python regards functions as perfectly normal &#8216;things&#8217;, the same as
+variables, numbers and strings.</p>
+<p>For instance, you could create a shape drawing function which turned one way or another
+depending on which turtle function you passed to it - <tt class="docutils literal"><span class="pre">turtle.left</span></tt> or <tt class="docutils literal"><span class="pre">turtle.right</span></tt>.</p>
+<p>See if you can implement this!</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Passing a function (e.g <tt class="docutils literal"><span class="pre">turtle.left</span></tt>) is different than <em>calling</em> it, which
+would instead be written <tt class="docutils literal"><span class="pre">turtle.left(45)</span></tt>.</p>
 </div>
 </div>
 </div>
@@ -135,6 +155,7 @@ only draw one size of hexagon!</p>
 <li><a class="reference internal" href="#a-function-of-several-parameters">Eine Funktion mit mehreren Parametern</a><ul>
 <li><a class="reference internal" href="#id1">Übung</a></li>
 <li><a class="reference internal" href="#solution">Lösung</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
 </ul>

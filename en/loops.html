@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -67,8 +68,8 @@ once.  But it gets better:</p>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt> but it has 10 different
-values?</p>
+<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt> but it has 10
+different values?</p>
 <p>You can also loop over elements of your choice:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -77,14 +78,23 @@ values?</p>
 <p>The <tt class="docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>.
 If you want to know more about it, you can use the help in the Python shell by
 typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>. Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
-<p>If you want to repeat some code a number of times, but don&#8217;t care about the value
-of the <tt class="docutils literal"><span class="pre">i</span></tt> variable, it can be good practice to replace it with <tt class="docutils literal"><span class="pre">_</span></tt> instead.
-This signifies that we don&#8217;t care about its value, or don&#8217;t wish to use it. So
-you could rewrite the first example as:</p>
+<p>If you want to repeat some code a number of times, but don&#8217;t care about the
+value of the <tt class="docutils literal"><span class="pre">i</span></tt> variable, it can be good practice to replace it with
+<tt class="docutils literal"><span class="pre">_</span></tt> instead. This signifies that we don&#8217;t care about its value, or don&#8217;t
+wish to use it. So you could rewrite the first example as:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>You may or may not be wondering about the variable <tt class="docutils literal"><span class="pre">i</span></tt> - why is it used all the
+time above? Well, it simply stands for &#8220;index&#8221; and is one of the most common
+variable names ever found in code. But if you are looping over something
+other than just numbers, be sure to name it something better! For instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">list_of_first_names</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hi there, &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is easier and clearer to read than if we had used <tt class="docutils literal"><span class="pre">i</span></tt> instead of <tt class="docutils literal"><span class="pre">name</span></tt>.</p>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Drawing a dashed line<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink to this headline">¶</a></h2>
@@ -114,7 +124,7 @@ use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.
 <p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="c"># ...</span>
+    <span class="c"># write more code here</span>
 </pre></div>
 </div>
 <p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the <strong>index</strong> variable or loop
@@ -123,10 +133,11 @@ variable &#8212; to get increasing step sizes?</p>
 </div>
 <div class="section" id="comments">
 <h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
-<p>In the solution above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
+<p>In the example above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
 comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
 by the computer. Use comments to explain what your program does,
-without changing the behaviour for the computer.</p>
+without changing the behaviour for the computer. They can also be used
+to easily and temporarily disable, or &#8220;comment out&#8221; some lines of code.</p>
 <p>Comments can also go at the end of a line, like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
 </pre></div>
@@ -161,7 +172,8 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
     # around after
     ...</pre>
 </div>
-<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt> with your own stuff!</p>
+<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt> with your own stuff, and see if you can come up with
+something funny or interesting! Mistakes are encouraged.</p>
 </div>
 </div>
 </div>

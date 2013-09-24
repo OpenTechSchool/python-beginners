@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -64,6 +65,12 @@
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <p class="last">Du verwendest Mac OS und siehst nichts? Schaue nach ob hinter Deinem Textfenster ein weiteres neues Fenster aufgesprungen ist.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
+_tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
+<span class="pre">python-tk</span></tt></p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
@@ -133,26 +140,29 @@
 </div>
 <p class="last">In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst &#8216;&#8217;import turtle&#8217;&#8217; schreiben, bevor &#8216;&#8217;help(turtle.color)&#8217;&#8217; funktioniert.</p>
 </div>
-<p>Ein anderer Weg etwas über Funktione zu erfahren ist die &#8216;Online Dokumentation&#8217; zu lesen.</p>
+<p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Vorsicht</p>
 <p class="last">Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem &#8216;&#8217;turtle.reset()&#8217;&#8217; Befehl vollständig zu löschen oder den letzten Befehl mit &#8216;&#8217;turtle.undo&#8217;&#8217; Rückgängig zu machen.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tipp</p>
-<p class="last">Wie du vielleicht in der Hilfe gelesen hast kannst du die Farben mit <tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">Farbe</span></em><span class="pre">)</span></tt> verändern.  Farben können zum Beispiel &#8220;red&#8221;, &#8220;green&#8221; oder &#8220;violet&#8221; sein.  Lies im <a href="#id8"><span class="problematic" id="id9">`colors manual`_`__</span></a> nach für eine komplette Liste.</p>
+<p class="last">As you might have read in the help, you can modify the color with
+<tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>.  These include but are not limited to
+&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
+list.</p>
 </div>
 </div>
 </div>
 <div class="section" id="drawing-a-rectangle">
 <h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-rectangle" title="Permalink zu dieser Überschrift">¶</a></h2>
-<div class="section" id="id3">
-<h3>Übung<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id1">
+<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Kannst du auch ein Rechteck zeichenn?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id4">
-<h3>Lösung<a class="headerlink" href="#id4" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id2">
+<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -164,21 +174,21 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h3>Bonus<a class="headerlink" href="#id5" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id3">
+<h3>Bonus<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Wie wäre es mit einem Dreieck? In einem gleichseitigen Dreieck (alle Seiten haben die gleiche Länge) hat jede Ecke einen Winkel von 60 Grad.</p>
 </div>
 </div>
 <div class="section" id="more-squares">
 <h2>Mehr Quadrate<a class="headerlink" href="#more-squares" title="Permalink zu dieser Überschrift">¶</a></h2>
-<div class="section" id="id6">
-<h3>Übung<a class="headerlink" href="#id6" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id4">
+<h3>Übung<a class="headerlink" href="#id4" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Jetzt zeichne ein schräg zur Seite gekipptes Quadrat. Und noch eins, und noch eins. Experimentiere mit den Winkeln zwischen den einzelnen Quadraten.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>Das Bild zeigt drei Drehungen um jeweils 20 Grad. Du kannst zum Beispiel auch 20, 30 oder 40 Grad ausprobieren.</p>
 </div>
-<div class="section" id="id7">
-<h3>Lösung<a class="headerlink" href="#id7" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id5">
+<h3>Lösung<a class="headerlink" href="#id5" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -234,14 +244,14 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#drawing-a-rectangle">Ein Rechteck zeichnen</a><ul>
-<li><a class="reference internal" href="#id3">Übung</a></li>
-<li><a class="reference internal" href="#id4">Lösung</a></li>
-<li><a class="reference internal" href="#id5">Bonus</a></li>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
+<li><a class="reference internal" href="#id3">Bonus</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#more-squares">Mehr Quadrate</a><ul>
-<li><a class="reference internal" href="#id6">Übung</a></li>
-<li><a class="reference internal" href="#id7">Lösung</a></li>
+<li><a class="reference internal" href="#id4">Übung</a></li>
+<li><a class="reference internal" href="#id5">Lösung</a></li>
 </ul>
 </li>
 </ul>

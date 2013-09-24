@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -54,6 +55,13 @@
 <p>If you haven&#8217;t yet got python, the latest official installation packages can be found here:</p>
 <p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
 <p>Python 3 is preferable, being the newest version out!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your path, so it can be found by other
+programs. To do this, navigate to your installation directory (<tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>),
+open the <tt class="file docutils literal"><span class="pre">Tools</span></tt>, then <tt class="file docutils literal"><span class="pre">Scripts</span></tt> folders, and run the <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>
+file by double clicking on it.</p>
+</div>
 <div class="section" id="what-is-python-exactly">
 <h2>What is Python, exactly?<a class="headerlink" href="#what-is-python-exactly" title="Permalink to this headline">¶</a></h2>
 <p>Ok, so python is this thing called a <strong>programming language</strong>. It takes text that
@@ -70,9 +78,9 @@ your OS, just as the &#8216;desktop&#8217;, in conjuction with your mouse, is th
 way to interact your system.</p>
 <div class="section" id="opening-a-console-on-mac-os-x">
 <h3>Opening a console on Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Permalink to this headline">¶</a></h3>
-<p>OS X&#8217;s standard console is a program called Terminal. Open Terminal by
+<p>OS X&#8217;s standard console is a program called <strong class="program">Terminal</strong>. Open Terminal by
 navigating to Applications, then Utilities, then double-click the
-&#8220;Terminal&#8221; program. You can also easily search for it in the system
+<strong class="program">Terminal</strong> program. You can also easily search for it in the system
 search tool in the top right.</p>
 <p>The command line Terminal is a tool for interacting with your
 computer. A window will open with a command line prompt message,
@@ -85,16 +93,17 @@ something like this:</p>
 <p>Different linux distributions (e.g Ubuntu, Fedora, Mint) may have different
 console programs, usually referred to as a terminal. The exact terminal
 you start up, and how, can depend on your distribution. On Ubuntu, you will
-likely want to open Gnome Terminal. It should present a prompt like this:</p>
+likely want to open <strong class="program">Gnome Terminal</strong>. It should present a prompt like this:</p>
 <div class="highlight-python"><pre>myusername@mycomputer:~$</pre>
 </div>
 </div>
 <div class="section" id="opening-a-console-on-windows">
 <h3>Opening a console on Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink to this headline">¶</a></h3>
-<p>Window&#8217;s console is called the Command Prompt, named &#8220;cmd.exe&#8221;. An easy way
-to get to it is by using the key combination &#8220;Windows+R&#8221;
+<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.
+An easy way to get to it is by using the key combination &#8220;Windows+R&#8221;
 (&#8216;Windows&#8217; meaning the windows logo button), which should open a &#8216;Run&#8217; dialog.
-Then simply type <tt class="kbd docutils literal"><span class="pre">cmd</span></tt> and hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> / click Ok. It should look like:</p>
+Then type <tt class="kbd docutils literal"><span class="pre">cmd</span></tt> and hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> or click Ok. You can also search
+for it from the start menu. It should look like:</p>
 <div class="highlight-python"><pre>C:\Users\myusername&gt;</pre>
 </div>
 <p>Window&#8217;s Command Prompt is not quite as powerful as its counterparts on Linux
@@ -105,12 +114,13 @@ in the start menu.</p>
 </div>
 <div class="section" id="using-python">
 <h2>Using Python<a class="headerlink" href="#using-python" title="Permalink to this headline">¶</a></h2>
-<p>The python program that you have installed by default will act as something
-called an <strong>interpreter</strong>. An interpreter will take commands and run them as you
-enter them, very handy for trying things out.</p>
+<p>The python program that you have installed will by default act as something
+called an <strong>interpreter</strong>. An interpreter takes commands and runs them as you
+enter them - very handy for trying things out.</p>
 <p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>, and you should
 enter Python&#8217;s Interpreter.</p>
-<p>To find out which version of python you&#8217;re running, use <strong class="program">python -V</strong> to tell you.</p>
+<p>To find out which version of python you&#8217;re running,
+use <strong class="program">python -V</strong> to tell you.</p>
 <div class="section" id="interacting-with-python">
 <h3>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
 <p>After Python opens, it will show you some contextual information similar to this:</p>
@@ -134,7 +144,8 @@ will bring you back to the interactive prompt, where you could enter
 another command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
-<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="go">10</span>
 </pre></div>
 </div>
 <p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
@@ -145,24 +156,29 @@ you could also run the python command <tt class="docutils literal"><span class="
 </div>
 <div class="section" id="running-python-files">
 <h3>Running Python files<a class="headerlink" href="#running-python-files" title="Permalink to this headline">¶</a></h3>
-<p>When you have a lot of python code to run, you will want to save it into a file,
-so you for instance can modify small parts of it (fix a bug) and re-run it,
-without having to repeatedly re-type the rest.
+<p>When you have a lot of python code to run, you will want to save it into
+a file so, for instance, you can modify small parts of it (fix a bug) and
+re-run it without having to repeatedly re-type the rest.
 Instead you can save your code to a file and pass a file name to the
 <strong class="program">python</strong> executable. It will execute that file instead of launching
 the interactive interpreter.</p>
+<p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
+with your favorite text editor and write the print command from above.  Now
+save-that file. On Linux or OS X, you can also run <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to
+create an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Make sure you are at your system command prompt, which will have <tt class="docutils literal"><span class="pre">$</span></tt> or
 <tt class="docutils literal"><span class="pre">&gt;</span></tt> at the end, not at python&#8217;s (which has <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> instead)!</p>
 </div>
-<p>Let&#8217;s try that.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory with
-your favorite text editor and paste the print command from above.  Now save
-that file. On Linux or OS X, you can also run <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
-an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
-</pre></div>
-</div>
+<p>On Windows you should also be able to double-click the Python file to run it.</p>
+<p>When pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> now, the file is executed and you see the output
+as before.  But this time, after Python finished executing all commands from
+that file it exits back to the system command prompt, instead of going back
+to the interactive shell.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
@@ -171,7 +187,7 @@ running in the directory you saved the file in. You can use
 the system command line to change your active directory with the
 <strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;. On Windows,
 you might want something like:</p>
-<div class="highlight-python"><pre>$ cd Desktop\Python_Exercises</pre>
+<div class="highlight-python"><pre>&gt; cd Desktop\Python_Exercises</pre>
 </div>
 <p>On Linux or OS X, you might want something like:</p>
 <div class="highlight-python"><pre>$ cd Desktop/Python_Exercises</pre>
@@ -183,11 +199,6 @@ directory to the command line window.  If you don&#8217;t know which
 directory your shell is currently running in use <strong class="command">pwd</strong>,
 which stands for &#8220;print working directory&#8221;.</p>
 </div>
-<p>On Windows you should also be able to  double-click the Python file to run it.</p>
-<p>When pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> now, the file is executed and you see the output
-as before.  But this time, after Python finished executing all commands from
-that file it exits back to the system command prompt, instead of going back
-to the interactive shell.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
 <p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text
@@ -196,8 +207,8 @@ editor, you might want to download and install <a class="reference external" hre
 can also help you with formatting, running and debugging your code.</p>
 </div>
 <p>And now we are all set and can get started with turtle!</p>
-<div class="admonition important">
-<p class="first admonition-title">Important</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
 <p class="last">When playing around with turtle, avoid naming your file <tt class="file docutils literal"><span class="pre">turtle.py</span></tt>
 &#8212; rather use more appropriate names such as <tt class="file docutils literal"><span class="pre">square.py</span></tt> or
 <tt class="file docutils literal"><span class="pre">rectangle.py</span></tt>.  Otherwise, whenever you refer to <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python

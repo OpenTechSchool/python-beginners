@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -78,6 +79,15 @@ elaborate later on. For now, <strong>try this easy example</strong>:</p>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>You may or may not be wondering about the variable <tt class="docutils literal"><span class="pre">i</span></tt> - why is it used all the
+time above? Well, it simply stands for &#8220;index&#8221; and is one of the most common
+variable names ever found in code. But if you are looping over something
+other than just numbers, be sure to name it something better! For instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">list_of_first_names</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hi there, &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is easier and clearer to read than if we had used <tt class="docutils literal"><span class="pre">i</span></tt> instead of <tt class="docutils literal"><span class="pre">name</span></tt>.</p>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Eine gestrichelte Linie zeichnen<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink zu dieser Überschrift">¶</a></h2>
@@ -105,7 +115,7 @@ elaborate later on. For now, <strong>try this easy example</strong>:</p>
 <p>Verwirrt?  Schau dir <tt class="docutils literal"><span class="pre">i</span></tt> in jedem Schleifendurchlauf an:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="c"># ...</span>
+    <span class="c"># write more code here</span>
 </pre></div>
 </div>
 <p class="last">Kannst du <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; üblicherweise als <strong>Index</strong>- oder Schleifenvariable bezeichnet &#8212; benutzen um immer größere Schritte zu machen?</p>
@@ -113,8 +123,12 @@ elaborate later on. For now, <strong>try this easy example</strong>:</p>
 </div>
 <div class="section" id="comments">
 <h3>Kommentare<a class="headerlink" href="#comments" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>In der oben genannten Löung ist die Zeile die mit einem &#8216;&#8217;#&#8217;&#8217; anfängt, eine Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein &#8216;&#8217;#&#8217;&#8217; folgt. Verwende Kommentare um zu erklären wie Dein Programm funktioniert, ohne dass Du dessen Verhalten im Computer veränderst.</p>
-<p>Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:</p>
+<p>In the example above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
+comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
+by the computer. Use comments to explain what your program does,
+without changing the behaviour for the computer. They can also be used
+to easily and temporarily disable, or &#8220;comment out&#8221; some lines of code.</p>
+<p>Comments can also go at the end of a line, like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
 </pre></div>
 </div>
@@ -148,7 +162,8 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
     # around after
     ...</pre>
 </div>
-<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt> with your own stuff!</p>
+<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt> with your own stuff, and see if you can come up with
+something funny or interesting! Mistakes are encouraged.</p>
 </div>
 </div>
 </div>
