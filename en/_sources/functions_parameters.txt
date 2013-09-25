@@ -55,6 +55,9 @@ Exercise
 Write a function that allows you to draw hexagons of any size you want, each
 time you call the function.
 
+Solution
+--------
+
 ::
 
     def hexagon(size):
@@ -69,7 +72,11 @@ Exercise
 --------
 
 Write a function that will draw a shape of *any* number of sides (let's assume 
-greater than two) of any side length. Get it to draw some different shapes.
+greater than two) of any side length. Get it to draw some different shapes. 
+
+Here's an example of drawing shapes with this function:
+
+.. image:: /images/shapes.png
 
 .. tip::
 

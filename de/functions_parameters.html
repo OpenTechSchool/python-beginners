@@ -93,6 +93,9 @@ only draw one size of hexagon!</p>
 <div class="section" id="exercise">
 <h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen.</p>
+</div>
+<div class="section" id="solution">
+<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
@@ -107,13 +110,15 @@ only draw one size of hexagon!</p>
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Write a function that will draw a shape of <em>any</em> number of sides (let&#8217;s assume
 greater than two) of any side length. Get it to draw some different shapes.</p>
+<p>Here&#8217;s an example of drawing shapes with this function:</p>
+<img alt="_images/shapes.png" src="_images/shapes.png" />
 <div class="admonition tip">
 <p class="first admonition-title">Tipp</p>
 <p class="last">The sum of the internal angles of any shape is always 360 degrees!</p>
 </div>
 </div>
-<div class="section" id="solution">
-<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<div class="section" id="id2">
+<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
@@ -150,11 +155,12 @@ would instead be written <tt class="docutils literal"><span class="pre">turtle.l
 <li><a class="reference internal" href="#introduction">Einführung</a></li>
 <li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse</a><ul>
 <li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#a-function-of-several-parameters">Eine Funktion mit mehreren Parametern</a><ul>
 <li><a class="reference internal" href="#id1">Übung</a></li>
-<li><a class="reference internal" href="#solution">Lösung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
