@@ -46,7 +46,7 @@ expect.
    after, as part of the rest of your program. Use four spaces (hitting tab) 
    to indent your code.
 
-Sometime you want to repeat some code a number of times, but don't care about 
+Sometimes you want to repeat some code a number of times, but don't care about 
 the value of the ``i`` variable; so it can be good practice to replace it 
 with ``_`` instead. This signifies that we don't care about its value, or 
 don't wish to use it. Here's a simple example::
@@ -152,5 +152,5 @@ drawing code that's inside both. Here's what it can look like::
         # around after!
         ...
 
-Replace the ``...``'s with your own stuff, and see if you can come up with 
+Replace the ``...``'s with your own code, and see if you can come up with 
 something funny or interesting! :sup:`Mistakes are encouraged!`
