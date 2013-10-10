@@ -46,7 +46,9 @@ build process very easy.
 
 If you just want to render the HTML version, it's sufficient to run::
 
-    fab build
+    $ fab build:en
+
+Replace `en` with the language you'd like to build.
 
 This will create a directory ``_build``, containing the HTML version.
 
@@ -57,22 +59,20 @@ Other `builders <http://sphinx.pocoo.org/builders.html#builders>`_ can be
 passed as argument. For instance use ``singlehtml`` to render the whole 
 tutorial into a single HTML file::
 
-   fab build:singlehtml
+    $ fab build:en,singlehtml
 
 Translation
 ===========
 
 After editing the tutorial, it is desirable to update translations for it.
 
-1. Translation templates (.pot) must be created or updated - ``fab gen_pots``
-2. Templates must merged/built into po translation files - ``fab update_pos:de``
+1. New translation templates (.pot) must be created, then po translation 
+   files are updated (or created for the first time) - ``fab update_pos:de``
+2. po files must be checked and translated correctly
+3. ``fab build:de`` will compile po files, and build the docs for that 
+   language.
 
-.. note:: Both 1 and 2 can be done with ``fab update_pos``
-
-3. po files must be checked and translated correctly
-4. ``fab build`` will compile po files, and build the docs for each language
-
-.. note:: only po files should be committed to version control. pot and mo
+.. note:: only .po files should be committed to version control. .pot and .mo
    files are built automatically.
 
 Deploy
@@ -82,12 +82,18 @@ The workshop is deployed as a `GitHub Page`_. A good way to do
 that is described `here <https://gist.github.com/791759>`_. To simplify this 
 process, you can use a nifty fabric target::
 
-   fab setup
+    $ fab setup
 
-This recreates the ``_build/html`` folder by building the project, while the 
-folder is cloned to the ``gh-pages`` branch of this repo. You can simply 
-``cd`` into this folder thereafter and push new updates, 
-or use ``fab build`` to rebuild it.
+This recreates the ``_build/html`` folder, cloning the folder to the 
+``gh-pages`` branch of this repo. Then you should build updates for the 
+desired language. Then `cd` into this folder, and git push the updates to 
+update the branch. Like so::
+
+    $ fab build:en
+    $ cd _build/html
+    $ git status
+    $ git commit --all
+    $ git push
 
 License
 =======
