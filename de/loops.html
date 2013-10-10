@@ -11,7 +11,6 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -55,63 +54,30 @@
 <h1>Schleifen<a class="headerlink" href="#loops" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Something you might have noticed: our programs often feature repetition.
-Python has a powerful concept it makes use of called looping
-(jargon: <em>iteration</em>), which we can use to cut out our reptitive code!
-For now, <strong>try this easy example</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Sam&quot;</span><span class="p">,</span> <span class="s">&quot;Jill&quot;</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+<p>One more thing: Our programs often feature repetition. There is a powerful
+concept in Python called looping (jargon: <em>iteration</em>), which we will
+elaborate later on. For now, try this easy example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This is incredibly helpful if we want to do something multiple times &#8212; say,
-drawing the individual border lines of a shape &#8212; but only want to write that
-action once. Here&#8217;s another version of a loop:</p>
+<p>Dies ist ausserordentlich hilfreich wenn wir etwas mehrere Male tun möchten &#8212; beispielsweise die Umrandung einer geometrischen Form zeichnen &#8212; aber den Programmcode dafür nur einmal schreiben möchten. Aber es wird noch besser:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt>, but it takes on 10
-different values?</p>
-<p>The <tt class="samp docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand
-for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>. If you want to know more about it, you can use
-the help in the Python shell by typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>.
-Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
+<p>Beachte dass wir nur eine einzige Zeile Code mit &#8216;&#8217;i&#8217;&#8217; schreiben, aber sie 10 unterschiedliche Werte annimmt.</p>
 <p>Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
-<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Write this example out and run it with python, to check it works how you might
-expect.</p>
-<div class="admonition note">
-<p class="first admonition-title">Bemerkung</p>
-<p class="last">Notice how above, the lines of code that are <em>looped</em>, are the ones that
-are <em>indented</em>. This is an important concept in Python - that&#8217;s how it
-knows which lines should be used in the <tt class="docutils literal"><span class="pre">for</span></tt> loop, and which come
-after, as part of the rest of your program. Use four spaces (hitting tab)
-to indent your code.</p>
-</div>
-<p>Sometime you want to repeat some code a number of times, but don&#8217;t care about
-the value of the <tt class="docutils literal"><span class="pre">i</span></tt> variable; so it can be good practice to replace it
-with <tt class="docutils literal"><span class="pre">_</span></tt> instead. This signifies that we don&#8217;t care about its value, or
-don&#8217;t wish to use it. Here&#8217;s a simple example:</p>
+<p>Die Funktion &#8216;&#8217;range(n)&#8217;&#8217; kann als Abkürzung für &#8216;&#8216;0, 1, 2, ..., n-1&#8217;&#8217; betrachtet werden. Falls Du mehr über sie wissen möchtest, kannst Du die Hilfefunktion im Python-Interpreter verwenden, indem Du &#8216;&#8217;help(range)&#8217;&#8217; eingibst. Verwende die Taste :kbd:&#8217;q&#8217; um die Hilfe wieder zu schliessen.</p>
+<p>Falls du Code eine bestimmte Anzahl von Malen wiederholt ausführen möchtest, aber der Wert der Variable &#8216;&#8217;i&#8217;&#8217; Dich nicht interessiert, kann es sinnvoll sein &#8216;&#8217;i&#8217;&#8217; durch &#8216;&#8217;_&#8217;&#8217; zu ersetzen. Das zeigt an dass uns der Wert der Variablen nicht interessiert oder wir nicht vorhaben ihn zu benutzen. Du könntest das erste Beispiel dementsprechend auch so schreiben:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>You may or may not be wondering about the variable <tt class="docutils literal"><span class="pre">i</span></tt> - why is it used all
-the time above? Well, it simply stands for &#8220;index&#8221; and is one of the most
-common variable names ever found in code. But if you are looping over something
-other than just numbers, be sure to name it something better! For instance:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">drink</span> <span class="ow">in</span> <span class="n">list_of_beverages</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>This is immediately clearer to understand than if we had used <tt class="docutils literal"><span class="pre">i</span></tt>
-instead of <tt class="docutils literal"><span class="pre">drink</span></tt>.</p>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Eine gestrichelte Linie zeichnen<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink zu dieser Überschrift">¶</a></h2>
@@ -139,55 +105,38 @@ instead of <tt class="docutils literal"><span class="pre">drink</span></tt>.</p>
 <p>Verwirrt?  Schau dir <tt class="docutils literal"><span class="pre">i</span></tt> in jedem Schleifendurchlauf an:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="c"># write more code here</span>
+    <span class="c"># ...</span>
 </pre></div>
 </div>
 <p class="last">Kannst du <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; üblicherweise als <strong>Index</strong>- oder Schleifenvariable bezeichnet &#8212; benutzen um immer größere Schritte zu machen?</p>
 </div>
 </div>
 </div>
-<div class="section" id="comments">
-<h2>Kommentare<a class="headerlink" href="#comments" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>In the example above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
-comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
-by the computer. Use comments to explain what your program does,
-without changing the behaviour for the computer. They can also be used
-to easily and temporarily disable, or &#8220;comment out&#8221; some lines of code.</p>
-<p>Comments can also go at the end of a line, like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># tilt our next square slightly</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="more-efficient-squares">
-<h2>More Efficient Squares<a class="headerlink" href="#more-efficient-squares" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="section" id="honeycomb-loops">
+<h2>Honeycomb loops<a class="headerlink" href="#honeycomb-loops" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>The squares we were drawing at the start of this tutorial had a lot of
-repeated lines of code. Can you write out a square drawing program in fewer
-lines by utilizing loops?</p>
+<p>Take your honeycomb program and make it easier with loops. How small can you
+get it?</p>
 </div>
 <div class="section" id="id2">
 <h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">hexagon</span><span class="p">()</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
 <h3>Bonus<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Try <em>nesting</em> loops, by putting one right under (<em>inside</em>) the other, with some
-drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
-<div class="highlight-python"><pre>for ...:
-    for ...:
-        # drawing code inside the inner loop goes here
-        ...
-    # you can put some code here to move
-    # around after!
-    ...</pre>
-</div>
-<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt>&#8216;s with your own stuff, and see if you can come up with
-something funny or interesting! <sup>Mistakes are encouraged!</sup></p>
+<p>See if you can look at your earlier square-drawing code, and make it much
+shorter by using loops.</p>
 </div>
 </div>
 </div>
@@ -208,8 +157,7 @@ something funny or interesting! <sup>Mistakes are encouraged!</sup></p>
 <li><a class="reference internal" href="#bonus">Bonus</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#comments">Kommentare</a></li>
-<li><a class="reference internal" href="#more-efficient-squares">More Efficient Squares</a><ul>
+<li><a class="reference internal" href="#honeycomb-loops">Honeycomb loops</a><ul>
 <li><a class="reference internal" href="#id1">Übung</a></li>
 <li><a class="reference internal" href="#id2">Lösung</a></li>
 <li><a class="reference internal" href="#id3">Bonus</a></li>

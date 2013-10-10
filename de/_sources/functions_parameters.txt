@@ -8,8 +8,7 @@ As we shrink down our code and add functions to remove duplication, we
 are *factorizing* it. This is a good thing to do. But the functions we
 have defined so far are not very flexible. The variables are defined
 inside the function, so if we want to use a different angle or a
-distance then we need to write a new function. Our hexagon function can 
-only draw one size of hexagon!
+distance then we need to write a new function.
 
 That is why we need to be able to give parameters, also called
 *arguments*, to the function.  This way the *variables* in the
@@ -46,6 +45,7 @@ with commas and giving them different names::
         turtle.forward(length)
         turtle.backward(length)
 
+
 A parameterized function for a variable size hexagon
 ====================================================
 
@@ -55,56 +55,28 @@ Exercise
 Write a function that allows you to draw hexagons of any size you want, each
 time you call the function.
 
-Solution
---------
-
-::
-
-    def hexagon(size):
-        for _ in range(6):
-            turtle.forward(size)
-            turtle.left(60)
-
 A function of several parameters
 ================================
 
 Exercise
 --------
 
-Write a function that will draw a shape of *any* number of sides (let's assume 
-greater than two) of any side length. Get it to draw some different shapes. 
-
-Here's an example of drawing shapes with this function:
-
-.. image:: /images/shapes.png
-
-.. tip::
-
-   The sum of the internal angles of any shape is always 360 degrees!
+Write a function that draws a honeycomb with a variable number of hexagons, of
+variable sizes.
 
 Solution
 --------
 
 ::
+    
+    def hexagon(size):
+        for i in range(6):
+            turtle.forward(size)
+            turtle.left(60)
+            
+    def honeycomb(size, count):
+        for i in range(count):
+            hexagon(size)
+            turtle.forward(size)
+            turtle.right(60)
 
-    def draw_shape(sides, length):
-        for _ in range(sides):
-            turtle.forward(length)
-            turtle.right(360 / sides)
-
-Bonus
------
-
-It might sound crazy, but it's perfectly possible to pass a *function* as a parameter 
-to another function! Python regards functions as perfectly normal 'things', the same as 
-variables, numbers and strings.
-
-For instance, you could create a shape drawing function which turned one way or another 
-depending on which turtle function you passed to it - ``turtle.left`` or ``turtle.right``.
-
-See if you can implement this!
-
-.. note::
-
-   Passing a function (e.g ``turtle.left``) is different than *calling* it, which 
-   would instead be written ``turtle.left(45)``.
