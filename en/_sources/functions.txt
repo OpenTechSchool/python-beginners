@@ -6,10 +6,10 @@ Introduction
 
 Programmers can deal with some pretty complex and abstract problems, but one 
 sign of a good programmer is that they're lazy. They only like to deal with one 
-thing at a time. So you need a way to break up code into smaller, discrete 
+thing at a time. So you need a way to break up problems into smaller, discrete 
 pieces, which lets you focus on just the piece you want to.
 
-Functions are one way to express such abstractions in Python. Let's take
+Functions are one way to do this abstraction in Python. Let's take
 ``turtle.reset()`` for example. ``reset`` is a function we call on our ``turtle``, and 
 it is actually an abstraction for a number of steps, namely:
 

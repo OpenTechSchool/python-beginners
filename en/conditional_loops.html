@@ -54,14 +54,34 @@
 <h1>Conditional Loops<a class="headerlink" href="#conditional-loops" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Conditional loops are way to repeat something until a certain condition is met.
-If the condition is never met, the loop can become infinite. In Python
-conditional loops are defined with the <tt class="docutils literal"><span class="pre">while</span></tt> statement:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;in the loop&quot;</span><span class="p">)</span>
-    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
+<p>Conditional loops are way to repeat something while a certain condition
+is satisfied, or <strong>True</strong>. If the condition is always satisfied (never
+becomes <strong>False</strong>), the loop can become infinite.
+If the condition starts off false, the code in the loop will never run!
+In Python conditional loops are defined with the <tt class="docutils literal"><span class="pre">while</span></tt> statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Include a period (.) when you are finished.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="s">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;next word: &#39;</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">&#39; &#39;</span> <span class="o">+</span> <span class="n">sentence</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Aha! You said:&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
 </pre></div>
+</div>
+<p>We call this part of the code the &#8216;conditional&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
+<p>Whether the conditional return True or not determines whether the code inside
+the <tt class="docutils literal"><span class="pre">while</span></tt> loop runs.</p>
+<p>Read the code above, and see if you can summarise in your head what
+it what it do (what its final output will be).</p>
+<p>Then copy it into a file, say <tt class="file docutils literal"><span class="pre">sentence.py</span></tt> and run it - see
+exactly what it does. Does that match up with what you thought?</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are using Python 2, you will need to replace <tt class="docutils literal"><span class="pre">input</span></tt> with
+<tt class="docutils literal"><span class="pre">raw_input</span></tt> to run the program correctly.</p>
 </div>
 </div>
 <div class="section" id="turtle-prison">
@@ -70,19 +90,21 @@ conditional loops are defined with the <tt class="docutils literal"><span class=
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <p>The turtle has been up to its usual tricks again, robbing liqour
 stores and building up huge gambling debts. It&#8217;s time for turtle to be
-put into a box that it can&#8217;t get out of.</p>
-<p>Let&#8217;s make a new version of <tt class="docutils literal"><span class="pre">forward()</span></tt>. One that turns the turtle
+put into a cell that it can&#8217;t get out of.</p>
+<p>Let&#8217;s make a new version of <tt class="docutils literal"><span class="pre">forward()</span></tt>. One that will turn the turtle
 around if it tries to go further than 100 from the origin. We&#8217;ll need
 a <tt class="docutils literal"><span class="pre">while</span></tt> loop, and some new turtle functions:</p>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distance of the turtle from the origin</li>
 <li><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - The angle to get back to origin</li>
-<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Directly set the turtle direction</li>
+<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Directly sets the turtle direction</li>
 </ul>
+<p>You could try playing with a turtle in the interpreter and using these
+functions to check exactly what they do, if you like.</p>
 <p>Now you will need to implement the prison logic using these turtle
-functions, a <tt class="docutils literal"><span class="pre">while</span></tt> loop and a bit of conditional logic. It&#8217;s a bit
-of a stretch but keep at it! Don&#8217;t be afraid to talk it out with a
-coach or another student.</p>
+functions, perhaps a <tt class="docutils literal"><span class="pre">while</span></tt> loop and a bit of conditional logic.
+It&#8217;s a bit of a stretch but keep at it! Don&#8217;t be afraid to talk it out
+with a coach or another student.</p>
 </div>
 <div class="section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
@@ -101,13 +123,13 @@ coach or another student.</p>
 <h2>Draw a spiral<a class="headerlink" href="#draw-a-spiral" title="Permalink to this headline">¶</a></h2>
 <p>Loops can be interrupted with the <tt class="docutils literal"><span class="pre">break</span></tt> statement. This is
 especially useful if you write an <em>infinite loop</em>, which is a loop
-where the conditional is always <em>True</em>.</p>
+where the conditional is always <strong>True</strong>.</p>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Write a <tt class="docutils literal"><span class="pre">while</span></tt> loop with a condition that is always <em>True</em> to draw a spiral.
-Interrupt the loop when the turtle reaches a certain distance from the center.
-Use the function <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> to get the turtle&#8217;s distance to the
-point defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
+<p>Write a <tt class="docutils literal"><span class="pre">while</span></tt> loop with a condition that is always <strong>True</strong>
+to draw a spiral. Interrupt the loop when the turtle reaches a certain distance
+from the center. Use the function <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> to get the
+turtle&#8217;s distance to the point defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
 <p>To do this you will need the <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt>
 functions, which return the position of the turtle in X and Y axes
 respectively.</p>
@@ -135,7 +157,7 @@ forward by an increasing value.</p>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>Can you make a conditional for this loop, so you don&#8217;t need the
-infinite loop <em>while True</em> or the <em>break</em>? Which version do you find
+infinite loop <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></tt> or the <tt class="docutils literal"><span class="pre">break</span></tt>? Which version do you find
 easier to understand?</p>
 </div>
 </div>

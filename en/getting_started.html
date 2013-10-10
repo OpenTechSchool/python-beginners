@@ -52,15 +52,51 @@
             
   <div class="section" id="getting-started">
 <h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>If you haven&#8217;t yet got python, the latest official installation packages can be found here:</p>
+<div class="section" id="what-you-ll-need">
+<h2>What you&#8217;ll need<a class="headerlink" href="#what-you-ll-need" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-python">
+<h3>A Python!<a class="headerlink" href="#a-python" title="Permalink to this headline">¶</a></h3>
+<p>If you haven&#8217;t yet got python, the latest official installation packages
+can be found here:</p>
 <p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
 <p>Python 3 is preferable, being the newest version out!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your path, so it can be found by other
-programs. To do this, navigate to your installation directory (<tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>),
-open the <tt class="file docutils literal"><span class="pre">Tools</span></tt>, then <tt class="file docutils literal"><span class="pre">Scripts</span></tt> folders, and run the <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>
+<p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your path, so it
+can be found by other programs. To do this, navigate to your
+installation directory (<tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>), open the <tt class="file docutils literal"><span class="pre">Tools</span></tt>,
+then <tt class="file docutils literal"><span class="pre">Scripts</span></tt> folders, and run the <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>
 file by double clicking on it.</p>
+</div>
+</div>
+<div class="section" id="and-a-code-editor">
+<h3>And a Code Editor<a class="headerlink" href="#and-a-code-editor" title="Permalink to this headline">¶</a></h3>
+<p>A code editor helps with reading and writing programming code. There are
+many around, and it is one of the most personal choices a programmer can
+make - Like a tennis-player choosing their racket, or a chef choosing their
+favourite knife. To start off with, you&#8217;ll just want a basic, easy-to-use one
+that doesn&#8217;t get in your way, but is still effective at writing python code.
+Here are some suggestions for those:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>: A great all around editor that&#8217;s easy to use. It&#8217;s Ctl+B
+shortcut lets you run the python file you&#8217;re working on straight away. Runs
+on Windows, Mac and Linux.</li>
+<li><a class="reference external" href="http://www.geany.org/">Geany</a>: A simple editor that doesn&#8217;t aim to be too complicated. Available
+on Windows and Linux (you can probably find it in your package manager).</li>
+<li><a class="reference external" href="http://macromates.com/">TextMate</a>: One of the most famous code editors for Mac, it used to be a paid
+product but has since been open-sourced.</li>
+<li><a class="reference external" href="https://projects.gnome.org/gedit/">Gedit</a> and <a class="reference external" href="http://kate-editor.org/">Kate</a>: if you run Linux using Gnome or KDE respectively, you
+might already have one of these two installed!</li>
+<li><a class="reference external" href="http://www.activestate.com/komodo-edit">Komodo Edit</a>: a sleak, free editor for Mac, Windows and Linux, based on the
+more powerful Komodo IDE.</li>
+</ul>
+<p>If you&#8217;d like our recommendation, try out Sublime Text first.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text
+editors.</p>
+</div>
+</div>
 </div>
 <div class="section" id="what-is-python-exactly">
 <h2>What is Python, exactly?<a class="headerlink" href="#what-is-python-exactly" title="Permalink to this headline">¶</a></h2>
@@ -109,7 +145,7 @@ for it from the start menu. It should look like:</p>
 <p>Window&#8217;s Command Prompt is not quite as powerful as its counterparts on Linux
 and OS X, so you might like to start the Python Interpreter (see just below)
 directly, or using the IDLE program that Python comes with. You can find these
-in the start menu.</p>
+in the Start menu.</p>
 </div>
 </div>
 <div class="section" id="using-python">
@@ -120,7 +156,7 @@ enter them - very handy for trying things out.</p>
 <p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>, and you should
 enter Python&#8217;s Interpreter.</p>
 <p>To find out which version of python you&#8217;re running,
-use <strong class="program">python -V</strong> to tell you.</p>
+use <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> to tell you.</p>
 <div class="section" id="interacting-with-python">
 <h3>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
 <p>After Python opens, it will show you some contextual information similar to this:</p>
@@ -164,7 +200,7 @@ Instead you can save your code to a file and pass a file name to the
 the interactive interpreter.</p>
 <p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
 with your favorite text editor and write the print command from above.  Now
-save-that file. On Linux or OS X, you can also run <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to
+save that file. On Linux or OS X, you can also run <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to
 create an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
@@ -179,6 +215,7 @@ create an empty file to edit. To run this file with python, it&#8217;s pretty ea
 as before.  But this time, after Python finished executing all commands from
 that file it exits back to the system command prompt, instead of going back
 to the interactive shell.</p>
+<p>And now we are all set and can get started with turtle!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
@@ -190,7 +227,8 @@ you might want something like:</p>
 <div class="highlight-python"><pre>&gt; cd Desktop\Python_Exercises</pre>
 </div>
 <p>On Linux or OS X, you might want something like:</p>
-<div class="highlight-python"><pre>$ cd Desktop/Python_Exercises</pre>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
+</pre></div>
 </div>
 <p class="last">This changes to the directory Python_Exercises under the Desktop folder
 (yours might be somewhere a bit different). If you don&#8217;t know the location
@@ -199,14 +237,6 @@ directory to the command line window.  If you don&#8217;t know which
 directory your shell is currently running in use <strong class="command">pwd</strong>,
 which stands for &#8220;print working directory&#8221;.</p>
 </div>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text
-editors.  If you are unsure whether you already have a usable
-editor, you might want to download and install <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>.  Code editors like this
-can also help you with formatting, running and debugging your code.</p>
-</div>
-<p>And now we are all set and can get started with turtle!</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">When playing around with turtle, avoid naming your file <tt class="file docutils literal"><span class="pre">turtle.py</span></tt>
@@ -227,6 +257,11 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Getting started</a><ul>
+<li><a class="reference internal" href="#what-you-ll-need">What you&#8217;ll need</a><ul>
+<li><a class="reference internal" href="#a-python">A Python!</a></li>
+<li><a class="reference internal" href="#and-a-code-editor">And a Code Editor</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#what-is-python-exactly">What is Python, exactly?</a><ul>
 <li><a class="reference internal" href="#opening-a-console-on-mac-os-x">Opening a console on Mac OS X</a></li>
 <li><a class="reference internal" href="#opening-a-console-on-linux">Opening a console on Linux</a></li>
