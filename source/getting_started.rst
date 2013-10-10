@@ -1,7 +1,14 @@
 Getting started
 ***************
 
-If you haven't yet got python, the latest official installation packages can be found here:
+What you'll need
+================
+
+A Python!
+---------
+
+If you haven't yet got python, the latest official installation packages 
+can be found here:
 
 http://python.org/download/
 
@@ -9,10 +16,51 @@ Python 3 is preferable, being the newest version out!
 
 .. note::
 
-   On Windows, you'll want to add :program:`Python` to your path, so it can be found by other 
-   programs. To do this, navigate to your installation directory (:file:`C:\\Python33\\`), 
-   open the :file:`Tools`, then :file:`Scripts` folders, and run the :file:`win_add2path.py` 
+   On Windows, you'll want to add :program:`Python` to your path, so it 
+   can be found by other programs. To do this, navigate to your 
+   installation directory (:file:`C:\\Python33\\`), open the :file:`Tools`, 
+   then :file:`Scripts` folders, and run the :file:`win_add2path.py` 
    file by double clicking on it.
+
+And a Code Editor
+-----------------
+
+A code editor helps with reading and writing programming code. There are 
+many around, and it is one of the most personal choices a programmer can 
+make - Like a tennis-player choosing their racket, or a chef choosing their 
+favourite knife. To start off with, you'll just want a basic, easy-to-use one 
+that doesn't get in your way, but is still effective at writing python code. 
+Here are some suggestions for those:
+
+- `Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B 
+  shortcut lets you run the python file you're working on straight away. Runs 
+  on Windows, Mac and Linux.
+
+- `Geany`_: A simple editor that doesn't aim to be too complicated. Available 
+  on Windows and Linux (you can probably find it in your package manager).
+
+- `TextMate`_: One of the most famous code editors for Mac, it used to be a paid 
+  product but has since been open-sourced.
+
+- `Gedit`_ and `Kate`_: if you run Linux using Gnome or KDE respectively, you 
+  might already have one of these two installed!
+
+- `Komodo Edit`_: a sleak, free editor for Mac, Windows and Linux, based on the 
+  more powerful Komodo IDE.
+
+.. _Sublime Text: http://www.sublimetext.com/
+.. _Geany: http://www.geany.org/
+.. _TextMate: http://macromates.com/
+.. _Gedit: https://projects.gnome.org/gedit/
+.. _Kate: http://kate-editor.org/
+.. _Komodo Edit: http://www.activestate.com/komodo-edit
+
+If you'd like our recommendation, try out Sublime Text first.
+
+.. tip::
+
+   Wordpad, TextEdit, Notepad, and Word are **not** suitable text 
+   editors.
 
 What is Python, exactly?
 ========================
@@ -70,7 +118,7 @@ for it from the start menu. It should look like::
 Window's Command Prompt is not quite as powerful as its counterparts on Linux 
 and OS X, so you might like to start the Python Interpreter (see just below) 
 directly, or using the IDLE program that Python comes with. You can find these 
-in the start menu.
+in the Start menu.
 
 Using Python
 ============
@@ -83,7 +131,7 @@ Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you should
 enter Python's Interpreter.
 
 To find out which version of python you're running, 
-use :program:`python -V` to tell you.
+use ``python -V`` to tell you.
 
 Interacting With Python
 -----------------------
@@ -103,16 +151,16 @@ After Python opens, it will show you some contextual information similar to this
 
 You can now enter some python code. Try::
 
-  print("Hello world")
+    print("Hello world")
 
 Press :kbd:`<Enter>` and see what happens. After showing the results, Python 
 will bring you back to the interactive prompt, where you could enter 
 another command::
 
-  >>> print("Hello world")
-  Hello world
-  >>> (1 + 4) * 2
-  10
+    >>> print("Hello world")
+    Hello world
+    >>> (1 + 4) * 2
+    10
 
 An extremely useful command is ``help()``, which enters a help functionality 
 to explore all the stuff python lets you do, right from the interpreter.
@@ -133,7 +181,7 @@ the interactive interpreter.
 
 **Let's try that**.  Create a file :file:`hello.py` in your current directory 
 with your favorite text editor and write the print command from above.  Now 
-save-that file. On Linux or OS X, you can also run :kbd:`touch hello.py` to 
+save that file. On Linux or OS X, you can also run :kbd:`touch hello.py` to 
 create an empty file to edit. To run this file with python, it's pretty easy:
 
 .. code-block:: bash
@@ -152,6 +200,8 @@ as before.  But this time, after Python finished executing all commands from
 that file it exits back to the system command prompt, instead of going back 
 to the interactive shell.
 
+And now we are all set and can get started with turtle!
+
 .. note::
 
    Not getting "Hello world" but some crazy error about "can't open 
@@ -163,7 +213,9 @@ to the interactive shell.
 
      > cd Desktop\Python_Exercises
 
-   On Linux or OS X, you might want something like::
+   On Linux or OS X, you might want something like:
+
+   .. code-block:: bash
 
      $ cd Desktop/Python_Exercises
 
@@ -174,20 +226,9 @@ to the interactive shell.
    directory your shell is currently running in use :command:`pwd`, 
    which stands for "print working directory".
 
-.. tip::
-
-   Wordpad, TextEdit, Notepad, and Word are **not** suitable text 
-   editors.  If you are unsure whether you already have a usable 
-   editor, you might want to download and install `Sublime Text 
-   <http://www.sublimetext.com/>`_.  Code editors like this 
-   can also help you with formatting, running and debugging your code.
-
-And now we are all set and can get started with turtle!
-
 .. warning::
 
    When playing around with turtle, avoid naming your file :file:`turtle.py` 
    --- rather use more appropriate names such as :file:`square.py` or 
    :file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python 
    will pick up *your* file instead of the standard turtle.
-
