@@ -14,7 +14,7 @@ BUILD_DIR = os.path.join(BASE_DIR, '_build')
 SOURCE_DIR = os.path.join(BASE_DIR, 'source')
 LOCALE_DIR = os.path.join(SOURCE_DIR, 'locale',
                           '%s', 'LC_MESSAGES')
-LANGUAGES = set(['en', 'de'])
+LANGUAGES = set(['en', 'de', 'ru', 'fr', 'ko'])
 MAIN_TARGET = 'html'
 REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
 SERVE_PORT = 8000
@@ -76,10 +76,10 @@ def serve(port=SERVE_PORT, serve_dir=None):
 
 
 def update_pos(language):
-    """Update .po files if the source has changed"""
+    """Update .po files from the source pot files"""
     if language not in LANGUAGES:
         exit('Language %s not available.' % language)
-    _gen_pots(language)
+    gen_pots(language)
     args = [
         'sphinx-intl update',
         '-l %s ' % language,
@@ -104,7 +104,7 @@ def compile_pos(language):
     local(' '.join(args))
 
 
-def _gen_pots(language):
+def gen_pots(language='en'):
     """Generate .pot templates from sphinx source files"""
     args = [
         'sphinx-build',
