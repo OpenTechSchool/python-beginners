@@ -1,0 +1,206 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/simple_drawing.rst:2
+msgid "Simple drawing with turtle"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:7
+msgid "Turtle is like a drawing board."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:9
+msgid ""
+"It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
+" can move the turtle around."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:12
+msgid ""
+"Before you can use turtle, you have to import it (we'd recommend playing "
+"around with it in the interactive interpreter first, there is an extra bit "
+"of work required to make it work from files)::"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:22
+msgid ""
+"Not seeing anything on Mac OS?  Try looking if a new window opened behind "
+"your command line."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:27
+msgid ""
+"Do you work with Ubuntu and get the error message \"No module named "
+"_tkinter\"? Install the missing package with ``sudo apt-get install python-"
+"tk``"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:44
+msgid ""
+"The ``turtle.forward(...)`` function tells the turtle to move forward by the"
+" given distance. ``turtle.left(...)`` takes a number of degrees which you "
+"want to rotate to the left. (There are ``turtle.backward(...)`` and "
+"``turtle.right(...)``, too.)"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:49
+msgid ""
+"The standard turtle is just a triangle. That's no fun! Let's make it a "
+"turtle instead with the ``turtle.shape()`` command::"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:54
+msgid "So much cuter!"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:56
+msgid ""
+"If you put the commands into a file, you might have recognized that the "
+"turtle window vanishes after the turtle finished its movement.  (That is "
+"because Python exits when your turtle has finished moving.  Since the turtle"
+" window belongs to Python, it terminates as well.)  To prevent that, just "
+"put ``turtle.exitonclick()`` at the bottom of your file.  Now the window "
+"stays open until you click on it::"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:73
+msgid ""
+"Python is a programming language where horizontal indenting of text is "
+"important. We'll learn all about this in the Functions chapter later on, but"
+" for now just keep in mind that stray spaces or tabs before any line of "
+"Python code will cause an unexpected error."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:79
+msgid "Drawing a square"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:83
+msgid ""
+"You're not always expected to know the anwer immediately. Learn by trial and"
+" error! Experiment, see what python does when you tell it different things, "
+"what gives beautiful (although sometimes unexpected) results and what gives "
+"errors. If you want to keep playing with something you learned that creates "
+"interesting results, that's OK too. Don't hesitate to try and fail and learn"
+" from it!"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:92
+#: ../../../source/simple_drawing.rst:165
+#: ../../../source/simple_drawing.rst:196
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:94
+msgid "Draw a square as in the following picture:"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:98
+msgid ""
+"For a square you will probably need a right angle, which is 90 degrees."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:101
+#: ../../../source/simple_drawing.rst:172
+#: ../../../source/simple_drawing.rst:206
+msgid "Solution"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:116
+msgid ""
+"Notice how the turtle starts and finishes in the same place and facing the "
+"same direction, before and after drawing the square. This is a useful "
+"convention to follow, it makes it easier to draw multiple shapes later on."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:122
+#: ../../../source/simple_drawing.rst:186
+msgid "Bonus"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:124
+msgid ""
+"If you want to get creative, you can modify your shape with the "
+"``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you use "
+"these functions?  Before you can use a function you need to know its "
+"*signature* (for example the number of parameters and what they mean.) To "
+"find this out you can type ``help(turtle.color)`` into the Python shell. If "
+"there is a lot of text, Python will put the help text into a *pager*, which "
+"lets you page up and down. Press the :kbd:`q` key to exit the pager."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:135
+msgid "Are you seeing an error like this::"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:139
+msgid ""
+"when trying to view help? In Python you have to import names before you can "
+"refer to them, so in a new Python interactive shell you'll need to ``import "
+"turtle`` before ``help(turtle.color)`` will work."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:141
+msgid ""
+"Another way to find out about functions is to browse the `online "
+"documentation`_."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:148
+msgid ""
+"If you misdrew anything, you can tell turtle to erase its drawing board with"
+" the ``turtle.reset()`` directive or undo the most recent step with "
+"``turtle.undo()``."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:154
+msgid ""
+"As you might have read in the help, you can modify the color with "
+":samp:`turtle.color({colorstring})`.  These include but are not limited to "
+"\"red,\" \"green,\" and \"violet.\"  See the `colours manual`_ for an "
+"extensive list."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:162
+msgid "Drawing a rectangle"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:167
+msgid "Can you draw a rectangle too?"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:188
+msgid ""
+"How about a triangle? In an equilateral triangle (a triangle with all sides "
+"of equal length) each corner has an angle of 60 degrees."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:193
+msgid "More squares"
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:198
+msgid ""
+"Now, draw a tilted square. And another one, and another one. You can "
+"experiment with the angles between the individual squares."
+msgstr ""
+
+#: ../../../source/simple_drawing.rst:203
+msgid ""
+"The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
+"example."
+msgstr ""

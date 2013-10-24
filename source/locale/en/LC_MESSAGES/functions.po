@@ -1,0 +1,157 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/functions.rst:2
+msgid "User-defined functions"
+msgstr ""
+
+#: ../../../source/functions.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/functions.rst:7
+msgid ""
+"Programmers can deal with some pretty complex and abstract problems, but one"
+" sign of a good programmer is that they're lazy. They only like to deal with"
+" one thing at a time. So you need a way to break up problems into smaller, "
+"discrete pieces, which lets you focus on just the piece you want to."
+msgstr ""
+
+#: ../../../source/functions.rst:12
+msgid ""
+"Functions are one way to do this abstraction in Python. Let's take "
+"``turtle.reset()`` for example. ``reset`` is a function we call on our "
+"``turtle``, and it is actually an abstraction for a number of steps, namely:"
+msgstr ""
+
+#: ../../../source/functions.rst:16
+msgid "Erase the drawing board."
+msgstr ""
+
+#: ../../../source/functions.rst:17
+msgid "Set the width and color back to default."
+msgstr ""
+
+#: ../../../source/functions.rst:18
+msgid "Move the turtle back to its initial position."
+msgstr ""
+
+#: ../../../source/functions.rst:20
+msgid ""
+"But because all the code is contained in the function, we don't have to "
+"worry about these details. We can simply *call* this function, and know it "
+"will do what it says for us."
+msgstr ""
+
+#: ../../../source/functions.rst:23
+msgid "So - how to write your own?"
+msgstr ""
+
+#: ../../../source/functions.rst:25
+msgid "A function can be defined with the ``def`` keyword in Python::"
+msgstr ""
+
+#: ../../../source/functions.rst:31
+msgid ""
+"This function we defined is called ``line_without_moving`` and it is an "
+"abstraction for two turtle steps - a move forward and a move backward."
+msgstr ""
+
+#: ../../../source/functions.rst:35
+msgid ""
+"To use it (or as it is usually called, \"to call it\"), write its name "
+"followed by parentheses::"
+msgstr ""
+
+#: ../../../source/functions.rst:46
+msgid "We could write more functions to remove some of the repetition::"
+msgstr ""
+
+#: ../../../source/functions.rst:57
+msgid ""
+"Python uses *indenting with whitespace* to identify blocks of code that "
+"belong together. In Python a block (like the function definitions shown "
+"above) is introduced with a colon at the end of the line and subsequent "
+"commands are indented --- usually 4 spaces further in. The block ends with "
+"the first line that isn't indented."
+msgstr ""
+
+#: ../../../source/functions.rst:63
+msgid ""
+"This is different to many other programming languages, which use special "
+"characters (like curly braces ``{}``) to group blocks of code together."
+msgstr ""
+
+#: ../../../source/functions.rst:67
+msgid ""
+"Never use tab characters to indent your blocks, only spaces. You can -- and "
+"should -- configure your editor to put 4 spaces when you press the tab key. "
+"The problem with using tab characters is that other python programmers use "
+"spaces, and if both are used in the same file python will read it wrong (in "
+"the best place, it will complain, and in the worst case, weird, hard to "
+"debug bugs will happen)."
+msgstr ""
+
+#: ../../../source/functions.rst:76
+msgid "A function for a square"
+msgstr ""
+
+#: ../../../source/functions.rst:79 ../../../source/functions.rst:118
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/functions.rst:81
+msgid ""
+"Write a function that draws a square. Could you use this function to improve"
+" the tilted squares program? If you change the program to use a function, is"
+" it easier to experiment with?"
+msgstr ""
+
+#: ../../../source/functions.rst:86 ../../../source/functions.rst:137
+msgid "Solution"
+msgstr ""
+
+#: ../../../source/functions.rst:115
+msgid "A function for a hexagon"
+msgstr ""
+
+#: ../../../source/functions.rst:120
+msgid "Write a function that draws a hexagon."
+msgstr ""
+
+#: ../../../source/functions.rst:124
+msgid ""
+"Now combine that function into a honeycomb. Just make it with a single layer"
+" like this:"
+msgstr ""
+
+#: ../../../source/functions.rst:128
+msgid "Give it a good go!"
+msgstr ""
+
+#: ../../../source/functions.rst:132
+msgid ""
+"Make sure your hexagon function returns your turtle to exactly the same "
+"position and angle it was before it was asked to draw the hexagon. This "
+"makes it easier to reason about."
+msgstr ""
+
+#: ../../../source/functions.rst:151
+msgid ""
+"You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
+"the function, but you better not call it ``hexagon`` in that case.  That's "
+"misleading because it actually draws a hexagon and then advances to a "
+"position where another hexagon would make sense in order to draw a "
+"honeycomb.  If you ever wanted to reuse your hexagon function outside of "
+"honeycombs, that would be confusing."
+msgstr ""

@@ -1,0 +1,111 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:14\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/variables.rst:2
+msgid "Variables"
+msgstr ""
+
+#: ../../../source/variables.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/variables.rst:7
+msgid ""
+"Whew. Experimenting with the angles requires you to change three different "
+"places in the code each time. Imagine you'd want to experiment with all of "
+"the square sizes, let alone with rectangles! We can do better than that."
+msgstr ""
+
+#: ../../../source/variables.rst:11
+msgid ""
+"This is where **variables** come into play: You can tell Python that from "
+"now on, whenever you refer to a variable, you actually mean something else. "
+"That concept might be familiar from symbolic maths, where you would write: "
+"*Let x be 5.* Then *x \\* 2* will obviously be *10*."
+msgstr ""
+
+#: ../../../source/variables.rst:16
+msgid "In Python syntax, that very statement translates to::"
+msgstr ""
+
+#: ../../../source/variables.rst:20
+msgid ""
+"After that statement, if you do ``print(x)``, it will actually output its "
+"value --- 5.  Well, can use that for your turtle too::"
+msgstr ""
+
+#: ../../../source/variables.rst:25
+msgid ""
+"Variables can store all sorts of things, not just numbers. A typical other "
+"thing you want to have stored often is a **string** - a line of text. "
+"Strings are indicated with a starting and a leading ``\"`` (double quote). "
+"You'll learn about this and other types, as those are called in Python, and "
+"what you can do with them later on."
+msgstr ""
+
+#: ../../../source/variables.rst:31
+msgid "You can even use a variable to give the turtle a name::"
+msgstr ""
+
+#: ../../../source/variables.rst:35
+msgid ""
+"Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
+"still continue to use ``turtle`` as well::"
+msgstr ""
+
+#: ../../../source/variables.rst:43
+msgid "A variable called angle"
+msgstr ""
+
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:83
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/variables.rst:48
+msgid ""
+"If we have a variable called ``angle``, how could we use that to experiment "
+"much faster with our tilted squares program?"
+msgstr ""
+
+#: ../../../source/variables.rst:52
+msgid "Solution"
+msgstr ""
+
+#: ../../../source/variables.rst:72
+msgid "... and so on"
+msgstr ""
+
+#: ../../../source/variables.rst:75
+msgid "Bonus"
+msgstr ""
+
+#: ../../../source/variables.rst:77
+msgid "Can you apply that principle to the size of the squares, too?"
+msgstr ""
+
+#: ../../../source/variables.rst:80
+msgid "The house of santa claus"
+msgstr ""
+
+#: ../../../source/variables.rst:85
+msgid "Draw a house."
+msgstr ""
+
+#: ../../../source/variables.rst:89
+msgid ""
+"You can calculate the length of the diagonal line with the Pythagorean "
+"theorem. That value is a good candidate to store in a variable. To calculate"
+" the square root of a number in Python, you'll need to import the *math* "
+"module and use the ``math.sqrt()`` function. The square of a number is "
+"calculated with the ``**`` operator::"
+msgstr ""

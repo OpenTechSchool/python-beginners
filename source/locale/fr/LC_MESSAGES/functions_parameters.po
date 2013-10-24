@@ -1,0 +1,133 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:14\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../source/functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function. Our hexagon function can only draw one size of "
+"hexagon!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:14
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:18
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:25
+msgid "We can improve it by giving it a parameter::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:31
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:38
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:41
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:50
+msgid "A parameterized function for a variable size hexagon"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:53
+#: ../../../source/functions_parameters.rst:72
+msgid "Exercise"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:55
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:59
+#: ../../../source/functions_parameters.rst:86
+msgid "Solution"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:69
+msgid "A function of several parameters"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:74
+msgid ""
+"Write a function that will draw a shape of *any* number of sides (let's "
+"assume greater than two) of any side length. Get it to draw some different "
+"shapes."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:77
+msgid "Here's an example of drawing shapes with this function:"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:83
+msgid "The sum of the internal angles of any shape is always 360 degrees!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:96
+msgid "Bonus"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:98
+msgid ""
+"It might sound crazy, but it's perfectly possible to pass a *function* as a "
+"parameter to another function! Python regards functions as perfectly normal "
+"'things', the same as variables, numbers and strings."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:102
+msgid ""
+"For instance, you could create a shape drawing function which turned one way"
+" or another depending on which turtle function you passed to it - "
+"``turtle.left`` or ``turtle.right``."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:105
+msgid "See if you can implement this!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:109
+msgid ""
+"Passing a function (e.g ``turtle.left``) is different than *calling* it, "
+"which would instead be written ``turtle.left(45)``."
+msgstr ""
