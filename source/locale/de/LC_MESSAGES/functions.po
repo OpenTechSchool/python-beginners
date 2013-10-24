@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2013-09-03 19:34+0000\n"
 "Last-Translator: krother <krother@academis.eu>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 
 #: ../../../source/functions.rst:2
 msgid "User-defined functions"
@@ -25,21 +25,6 @@ msgstr "Benutzerdefinierte Funktionen"
 #: ../../../source/functions.rst:5
 msgid "Introduction"
 msgstr "Einführung"
-
-#: ../../../source/functions.rst:7
-msgid ""
-"Programmers can deal with some pretty complex and abstract problems, but one "
-"sign of a good programmer is that they're lazy. They only like to deal with "
-"one thing at a time. So you need a way to break up code into smaller, "
-"discrete pieces, which lets you focus on just the piece you want to."
-msgstr ""
-
-#: ../../../source/functions.rst:12
-msgid ""
-"Functions are one way to express such abstractions in Python. Let's take "
-"``turtle.reset()`` for example. ``reset`` is a function we call on our "
-"``turtle``, and it is actually an abstraction for a number of steps, namely:"
-msgstr ""
 
 #: ../../../source/functions.rst:16
 msgid "Erase the drawing board."
@@ -67,7 +52,8 @@ msgstr ""
 #: ../../../source/functions.rst:25
 msgid "A function can be defined with the ``def`` keyword in Python::"
 msgstr ""
-"Eine Funktion kann in Python mit dem Schlüsselwort ''def'' definiert werden::"
+"Eine Funktion kann in Python mit dem Schlüsselwort ''def'' definiert "
+"werden::"
 
 #: ../../../source/functions.rst:31
 msgid ""
@@ -142,13 +128,14 @@ msgstr "Übung"
 
 #: ../../../source/functions.rst:81
 msgid ""
-"Write a function that draws a square. Could you use this function to improve "
-"the tilted squares program? If you change the program to use a function, is "
-"it easier to experiment with?"
+"Write a function that draws a square. Could you use this function to improve"
+" the tilted squares program? If you change the program to use a function, is"
+" it easier to experiment with?"
 msgstr ""
 "Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion "
 "benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt "
-"es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?"
+"es sich leichter mit dem Programm experimentieren wenn du Funktionen "
+"benutzt?"
 
 #: ../../../source/functions.rst:86 ../../../source/functions.rst:137
 msgid "Solution"
@@ -164,8 +151,8 @@ msgstr "Schreibe eine Funktion die ein Hexagon zeichnet."
 
 #: ../../../source/functions.rst:124
 msgid ""
-"Now combine that function into a honeycomb. Just make it with a single layer "
-"like this:"
+"Now combine that function into a honeycomb. Just make it with a single layer"
+" like this:"
 msgstr ""
 "Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur "
 "eine einzige Ebene, ungefähr so:"
@@ -196,3 +183,31 @@ msgstr ""
 "nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe "
 "vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des "
 "Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend."
+
+#: ../../../source/functions.rst:7
+msgid ""
+"Programmers can deal with some pretty complex and abstract problems, but one"
+" sign of a good programmer is that they're lazy. They only like to deal with"
+" one thing at a time. So you need a way to break up problems into smaller, "
+"discrete pieces, which lets you focus on just the piece you want to."
+msgstr ""
+
+#: ../../../source/functions.rst:12
+msgid ""
+"Functions are one way to do this abstraction in Python. Let's take "
+"``turtle.reset()`` for example. ``reset`` is a function we call on our "
+"``turtle``, and it is actually an abstraction for a number of steps, namely:"
+msgstr ""
+
+#~ msgid ""
+#~ "Programmers can deal with some pretty complex and abstract problems, but one"
+#~ " sign of a good programmer is that they're lazy. They only like to deal with"
+#~ " one thing at a time. So you need a way to break up code into smaller, "
+#~ "discrete pieces, which lets you focus on just the piece you want to."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Functions are one way to express such abstractions in Python. Let's take "
+#~ "``turtle.reset()`` for example. ``reset`` is a function we call on our "
+#~ "``turtle``, and it is actually an abstraction for a number of steps, namely:"
+#~ msgstr ""

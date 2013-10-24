@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2013-09-03 19:34+0000\n"
 "Last-Translator: krother <krother@academis.eu>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 
 #: ../../../source/functions_parameters.rst:2
 msgid "Functions with parameters"
@@ -57,7 +57,8 @@ msgstr ""
 #: ../../../source/functions_parameters.rst:25
 msgid "We can improve it by giving it a parameter::"
 msgstr ""
-"Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben::"
+"Wir können die Funktion verbessern, indem wir ihr einen Parameter "
+"übergeben::"
 
 #: ../../../source/functions_parameters.rst:31
 msgid ""
@@ -79,43 +80,86 @@ msgstr ""
 
 #: ../../../source/functions_parameters.rst:41
 msgid ""
-"And we can put as many arguments (or parameters) as we want, separating them "
-"with commas and giving them different names::"
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
 msgstr ""
 "Wir können so viele Argumente (oder Parameter) wie wir möchten für eine "
 "Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata "
 "getrennt und haben alle unterschiedliche Namen::"
 
-#: ../../../source/functions_parameters.rst:51
+#: ../../../source/functions_parameters.rst:50
 msgid "A parameterized function for a variable size hexagon"
 msgstr "Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse"
 
-#: ../../../source/functions_parameters.rst:54
-#: ../../../source/functions_parameters.rst:63
+#: ../../../source/functions_parameters.rst:53
+#: ../../../source/functions_parameters.rst:72
 msgid "Exercise"
 msgstr "Übung"
 
-#: ../../../source/functions_parameters.rst:56
+#: ../../../source/functions_parameters.rst:55
 msgid ""
-"Write a function that allows you to draw hexagons of any size you want, each "
-"time you call the function."
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
 msgstr ""
 "Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, "
 "erlaubt Hexagone mit beliebiger Grösse zu zeichnen."
 
-#: ../../../source/functions_parameters.rst:60
+#: ../../../source/functions_parameters.rst:69
 msgid "A function of several parameters"
 msgstr "Eine Funktion mit mehreren Parametern"
 
-#: ../../../source/functions_parameters.rst:65
-msgid ""
-"Write a function that draws a honeycomb with a variable number of hexagons, "
-"of variable sizes."
-msgstr ""
-"Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl "
-"Hexagone von unterschiedlicher Grösse zeichnet (*sollen alle Hexe in einer "
-"Wabe die gleiche Grösse haben* A.d.Ue)"
-
-#: ../../../source/functions_parameters.rst:69
+#: ../../../source/functions_parameters.rst:59
+#: ../../../source/functions_parameters.rst:86
 msgid "Solution"
 msgstr "Lösung"
+
+#: ../../../source/functions_parameters.rst:74
+msgid ""
+"Write a function that will draw a shape of *any* number of sides (let's "
+"assume greater than two) of any side length. Get it to draw some different "
+"shapes."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:77
+msgid "Here's an example of drawing shapes with this function:"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:83
+msgid "The sum of the internal angles of any shape is always 360 degrees!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:96
+msgid "Bonus"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:98
+msgid ""
+"It might sound crazy, but it's perfectly possible to pass a *function* as a "
+"parameter to another function! Python regards functions as perfectly normal "
+"'things', the same as variables, numbers and strings."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:102
+msgid ""
+"For instance, you could create a shape drawing function which turned one way"
+" or another depending on which turtle function you passed to it - "
+"``turtle.left`` or ``turtle.right``."
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:105
+msgid "See if you can implement this!"
+msgstr ""
+
+#: ../../../source/functions_parameters.rst:109
+msgid ""
+"Passing a function (e.g ``turtle.left``) is different than *calling* it, "
+"which would instead be written ``turtle.left(45)``."
+msgstr ""
+
+#~ msgid ""
+#~ "Write a function that draws a honeycomb with a variable number of hexagons, "
+#~ "of variable sizes."
+#~ msgstr ""
+#~ "Schreibe eine Funktion die eine Honigwabe mit einer variablen Anzahl "
+#~ "Hexagone von unterschiedlicher Grösse zeichnet (*sollen alle Hexe in einer "
+#~ "Wabe die gleiche Grösse haben* A.d.Ue)"

@@ -13,147 +13,231 @@ msgstr ""
 "PO-Revision-Date: 2013-09-03 19:34+0000\n"
 "Last-Translator: krother <krother@academis.eu>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 
 #: ../../../source/conditional_loops.rst:2
 msgid "Conditional Loops"
 msgstr "Bedingte Schleifen"
 
-#: ../../../source/conditional_loops.rst:5
+#: ../../../source/conditional_loops.rst:4
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../../source/conditional_loops.rst:7
-msgid ""
-"Conditional loops are way to repeat something until a certain condition is "
-"met. If the condition is never met, the loop can become infinite. In Python "
-"conditional loops are defined with the ``while`` statement::"
-msgstr ""
-"Bedingte Schleifen sind ein Weg Instruktionen zu wiederholen bis eine "
-"bestimmte Bedingung eintritt.  Falls die Bedingung nie eintritt, werden die "
-"Befehle in der Schleife ewig wiederholt. In Python werden bedingte Schleifen "
-"mit ``while`` ausgedrückt::"
-
-#: ../../../source/conditional_loops.rst:18
+#: ../../../source/conditional_loops.rst:40
 msgid "Turtle prison"
 msgstr "Schildkrötengefängnis"
 
-#: ../../../source/conditional_loops.rst:21
-#: ../../../source/conditional_loops.rst:63
+#: ../../../source/conditional_loops.rst:43
+#: ../../../source/conditional_loops.rst:87
 msgid "Exercise"
 msgstr "Übung"
 
-#: ../../../source/conditional_loops.rst:23
-msgid ""
-"The turtle has been up to its usual tricks again, robbing liqour stores and "
-"building up huge gambling debts. It's time for turtle to be put into a box "
-"that it can't get out of."
-msgstr ""
-"Die Schildkröte hat wieder ihre übliche Masche durchgezogen, Schnapsläden "
-"ausgeraubt und gewaltige Spielschulden angehäuft. Es wird Zeit die "
-"Schildkröte hinter Gitter zu bringen, eine Kiste aus der sie nicht "
-"herauskommt. "
-
-#: ../../../source/conditional_loops.rst:27
-msgid ""
-"Let's make a new version of ``forward()``. One that turns the turtle around "
-"if it tries to go further than 100 from the origin. We'll need a ``while`` "
-"loop, and some new turtle functions:"
-msgstr ""
-"Lasst uns eine neue Versio von ''forward()'' entwickeln. Eine die die "
-"Schildkröte umdreht, sobald sie sich mehr als 100 vom Ursprungspunkt "
-"entfernt. Wir werden eine ''while'' Schleife brauchen, sowie einige neue "
-"turtle Befehle."
-
-#: ../../../source/conditional_loops.rst:31
+#: ../../../source/conditional_loops.rst:53
 msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
 msgstr "''turtle.distance(0, 0)'' - Entfernung der Schildkröte vom Ursprung."
 
-#: ../../../source/conditional_loops.rst:32
+#: ../../../source/conditional_loops.rst:54
 msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
 msgstr ""
 "''turtle.towards(0, 0)'' - Der Winkel der zurück zum Ursprungspunkt führt."
 
-#: ../../../source/conditional_loops.rst:33
-msgid "``turtle.setheading(angle)`` - Directly set the turtle direction"
-msgstr ""
-"''turtle.setheading(winkel)'' - Die Richtung der Schildkröte direkt setzen."
-
-#: ../../../source/conditional_loops.rst:35
-msgid ""
-"Now you will need to implement the prison logic using these turtle "
-"functions, a ``while`` loop and a bit of conditional logic. It's a bit of a "
-"stretch but keep at it! Don't be afraid to talk it out with a coach or "
-"another student."
-msgstr ""
-"Nun musst Du die Logik für das Gefängnis mit diesen turtle Funktionen "
-"implementieren, also eine ''while'' Schleife und einige konditionale "
-"Ausdrücke. Es gibt einiges zu tun, aber gib nicht auf! Frage ruhig einen der "
-"Coaches oder einen anderen Kursteilnehmer."
-
-#: ../../../source/conditional_loops.rst:42
-#: ../../../source/conditional_loops.rst:80
+#: ../../../source/conditional_loops.rst:66
+#: ../../../source/conditional_loops.rst:104
 msgid "Solution"
 msgstr "Lösung"
 
-#: ../../../source/conditional_loops.rst:56
+#: ../../../source/conditional_loops.rst:80
 msgid "Draw a spiral"
 msgstr "Zeichne eine Spirale"
 
-#: ../../../source/conditional_loops.rst:58
-msgid ""
-"Loops can be interrupted with the ``break`` statement. This is especially "
-"useful if you write an *infinite loop*, which is a loop where the "
-"conditional is always *True*."
-msgstr ""
-"Schleifen können mit der Anweisung ''break'' unterbrochen werden. Das ist "
-"besonders nützlich wenn Du eine Endlosschleife schreibst, also eine "
-"''while'' Schleife in der die Abbruchbedingung immer *True* ist."
-
-#: ../../../source/conditional_loops.rst:65
-msgid ""
-"Write a ``while`` loop with a condition that is always *True* to draw a "
-"spiral. Interrupt the loop when the turtle reaches a certain distance from "
-"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
-"distance to the point defined by the coordinates ``x`` and ``y``."
-msgstr ""
-"Schreibe eine ''while'' Schleife mit einer Bedingung die immer *True* "
-"ergibt, um eine Spirale zu zeichnen. Unterbreche die Schleife sobald die "
-"Schildkröte eine bestimmte Entfernung vom Mittelpunkt erreicht. Verwende die "
-"Funktion ''turtle.distance(x, y)'' um die Entfernung der Schildkröte zum "
-"Punkt mit den Koordinaten ''x'' und ''y'' zu erhalten."
-
-#: ../../../source/conditional_loops.rst:70
+#: ../../../source/conditional_loops.rst:94
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
 "functions, which return the position of the turtle in X and Y axes "
 "respectively."
 msgstr ""
-"Um das zu tun, brauchst Du die Funktionen ''turtle.xcor()'' und ''turtle."
-"ycor()'', welche die Position der Schildkröte auf der X und Y-Achse "
-"zurückgeben."
+"Um das zu tun, brauchst Du die Funktionen ''turtle.xcor()'' und "
+"''turtle.ycor()'', welche die Position der Schildkröte auf der X und Y-Achse"
+" zurückgeben."
 
-#: ../../../source/conditional_loops.rst:76
+#: ../../../source/conditional_loops.rst:100
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
 msgstr ""
-"Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel "
-"gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt werden."
+"Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel"
+" gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt "
+"werden."
 
-#: ../../../source/conditional_loops.rst:96
+#: ../../../source/conditional_loops.rst:120
 msgid "Bonus"
 msgstr "Bonus"
 
-#: ../../../source/conditional_loops.rst:98
+#: ../../../source/conditional_loops.rst:6
+msgid ""
+"Conditional loops are way to repeat something while a certain condition is "
+"satisfied, or **True**. If the condition is always satisfied (never becomes "
+"**False**), the loop can become infinite. If the condition starts off false,"
+" the code in the loop will never run! In Python conditional loops are "
+"defined with the ``while`` statement::"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:23
+msgid "We call this part of the code the 'conditional': ``'.' not in word``"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:25
+msgid ""
+"Whether the conditional return True or not determines whether the code "
+"inside the ``while`` loop runs."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:28
+msgid ""
+"Read the code above, and see if you can summarise in your head what it what "
+"it do (what its final output will be)."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:31
+msgid ""
+"Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
+"what it does. Does that match up with what you thought?"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:36
+msgid ""
+"If you are using Python 2, you will need to replace ``input`` with "
+"``raw_input`` to run the program correctly."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:45
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"building up huge gambling debts. It's time for turtle to be put into a cell "
+"that it can't get out of."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:49
+msgid ""
+"Let's make a new version of ``forward()``. One that will turn the turtle "
+"around if it tries to go further than 100 from the origin. We'll need a "
+"``while`` loop, and some new turtle functions:"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:55
+msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:57
+msgid ""
+"You could try playing with a turtle in the interpreter and using these "
+"functions to check exactly what they do, if you like."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:60
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, perhaps a ``while`` loop and a bit of conditional logic. It's a "
+"bit of a stretch but keep at it! Don't be afraid to talk it out with a coach"
+" or another student."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:82
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always **True**."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:89
+msgid ""
+"Write a ``while`` loop with a condition that is always **True** to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:122
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "
-"loop *while True* or the *break*? Which version do you find easier to "
+"loop ``while True`` or the ``break``? Which version do you find easier to "
 "understand?"
 msgstr ""
-"Kannst du eine Bedingung für diese Schleife formulieren, so dass Du keine "
-"Endlosschleife *while True* oder die Anweisung *break* benötigst? Welche "
-"Variante findest Du einfacher zu verstehen?"
+
+#~ msgid ""
+#~ "Conditional loops are way to repeat something until a certain condition is "
+#~ "met. If the condition is never met, the loop can become infinite. In Python "
+#~ "conditional loops are defined with the ``while`` statement::"
+#~ msgstr ""
+#~ "Bedingte Schleifen sind ein Weg Instruktionen zu wiederholen bis eine "
+#~ "bestimmte Bedingung eintritt.  Falls die Bedingung nie eintritt, werden die "
+#~ "Befehle in der Schleife ewig wiederholt. In Python werden bedingte Schleifen"
+#~ " mit ``while`` ausgedrückt::"
+
+#~ msgid ""
+#~ "The turtle has been up to its usual tricks again, robbing liqour stores and "
+#~ "building up huge gambling debts. It's time for turtle to be put into a box "
+#~ "that it can't get out of."
+#~ msgstr ""
+#~ "Die Schildkröte hat wieder ihre übliche Masche durchgezogen, Schnapsläden "
+#~ "ausgeraubt und gewaltige Spielschulden angehäuft. Es wird Zeit die "
+#~ "Schildkröte hinter Gitter zu bringen, eine Kiste aus der sie nicht "
+#~ "herauskommt. "
+
+#~ msgid ""
+#~ "Let's make a new version of ``forward()``. One that turns the turtle around "
+#~ "if it tries to go further than 100 from the origin. We'll need a ``while`` "
+#~ "loop, and some new turtle functions:"
+#~ msgstr ""
+#~ "Lasst uns eine neue Versio von ''forward()'' entwickeln. Eine die die "
+#~ "Schildkröte umdreht, sobald sie sich mehr als 100 vom Ursprungspunkt "
+#~ "entfernt. Wir werden eine ''while'' Schleife brauchen, sowie einige neue "
+#~ "turtle Befehle."
+
+#~ msgid "``turtle.setheading(angle)`` - Directly set the turtle direction"
+#~ msgstr ""
+#~ "''turtle.setheading(winkel)'' - Die Richtung der Schildkröte direkt setzen."
+
+#~ msgid ""
+#~ "Now you will need to implement the prison logic using these turtle "
+#~ "functions, a ``while`` loop and a bit of conditional logic. It's a bit of a "
+#~ "stretch but keep at it! Don't be afraid to talk it out with a coach or "
+#~ "another student."
+#~ msgstr ""
+#~ "Nun musst Du die Logik für das Gefängnis mit diesen turtle Funktionen "
+#~ "implementieren, also eine ''while'' Schleife und einige konditionale "
+#~ "Ausdrücke. Es gibt einiges zu tun, aber gib nicht auf! Frage ruhig einen der"
+#~ " Coaches oder einen anderen Kursteilnehmer."
+
+#~ msgid ""
+#~ "Loops can be interrupted with the ``break`` statement. This is especially "
+#~ "useful if you write an *infinite loop*, which is a loop where the "
+#~ "conditional is always *True*."
+#~ msgstr ""
+#~ "Schleifen können mit der Anweisung ''break'' unterbrochen werden. Das ist "
+#~ "besonders nützlich wenn Du eine Endlosschleife schreibst, also eine "
+#~ "''while'' Schleife in der die Abbruchbedingung immer *True* ist."
+
+#~ msgid ""
+#~ "Write a ``while`` loop with a condition that is always *True* to draw a "
+#~ "spiral. Interrupt the loop when the turtle reaches a certain distance from "
+#~ "the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+#~ "distance to the point defined by the coordinates ``x`` and ``y``."
+#~ msgstr ""
+#~ "Schreibe eine ''while'' Schleife mit einer Bedingung die immer *True* "
+#~ "ergibt, um eine Spirale zu zeichnen. Unterbreche die Schleife sobald die "
+#~ "Schildkröte eine bestimmte Entfernung vom Mittelpunkt erreicht. Verwende die"
+#~ " Funktion ''turtle.distance(x, y)'' um die Entfernung der Schildkröte zum "
+#~ "Punkt mit den Koordinaten ''x'' und ''y'' zu erhalten."
+
+#~ msgid ""
+#~ "Can you make a conditional for this loop, so you don't need the infinite "
+#~ "loop *while True* or the *break*? Which version do you find easier to "
+#~ "understand?"
+#~ msgstr ""
+#~ "Kannst du eine Bedingung für diese Schleife formulieren, so dass Du keine "
+#~ "Endlosschleife *while True* oder die Anweisung *break* benötigst? Welche "
+#~ "Variante findest Du einfacher zu verstehen?"
