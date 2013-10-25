@@ -38,6 +38,9 @@ need to have the following Python packages installed:
 
 You can install these with pip using ``pip install -r requirements.txt``
 
+To push / pull translations from Transifex you will need the package
+``transifex-client`` as well.
+
 Build
 =====
 
@@ -64,13 +67,24 @@ tutorial into a single HTML file::
 Translation
 ===========
 
-After editing the tutorial, it is desirable to update translations for it.
+Translations should normally be done through Transifex.
+
+You can see the project on Transifex 
+`here <https://www.transifex.com/projects/p/python-for-beginners/>`_.
+
+After editing the tutorial, it is desirable to update sources for it.
 
 1. New translation templates (.pot) must be created, then po translation 
-   files are updated (or created for the first time) - ``fab update_pos:de``
-2. po files must be checked and translated correctly
-3. ``fab build:de`` will compile po files, and build the docs for that 
+   files are updated (or created for the first time) - ``fab gen_pots``
+2. If you wish to upload new sources to transifex, you should use their
+   cli client. ``tx push -s``.
+3. To pull down translations for a particular language, use e.g. 
+   ``tx pull -t -l de``, for de (german) or others.
+4. ``fab build:de`` will compile po files, and build the docs for that 
    language.
+
+It is also possible to edit and update po files manually, you can check out 
+the other fab command (``fab list``) for help with that.
 
 .. note:: only .po files should be committed to version control. .pot and .mo
    files are built automatically.
@@ -79,8 +93,8 @@ Deploy
 ======
 
 The workshop is deployed as a `GitHub Page`_. A good way to do 
-that is described `here <https://gist.github.com/791759>`_. To simplify this 
-process, you can use a nifty fabric target::
+that is described `right here <https://gist.github.com/791759>`_. To simplify 
+this process, you can use a nifty fabric target::
 
     $ fab setup
 
