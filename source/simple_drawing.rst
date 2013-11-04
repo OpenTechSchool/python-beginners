@@ -26,7 +26,7 @@ required to make it work from files)::
 
    Do you work with Ubuntu and get the error message "No module named
    _tkinter"? Install the missing package with ``sudo apt-get install
-   python-tk``
+   python3-tk``
 
 ::
 
