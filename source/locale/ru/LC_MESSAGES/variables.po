@@ -1,49 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
+# Translators:
+# Артём Демаков <dearalcher@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:14\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-23 10:44+0000\n"
+"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+# 016333f418f04abb99e1f153b93d1733
 #: ../../../source/variables.rst:2
 msgid "Variables"
-msgstr ""
+msgstr "Переменные"
 
+# 2a00a8448498495ba72c8e5c1b7be5a3
 #: ../../../source/variables.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
+# 11e299324f7f446fb7fc1fe39af9ea9f
 #: ../../../source/variables.rst:7
 msgid ""
 "Whew. Experimenting with the angles requires you to change three different "
 "places in the code each time. Imagine you'd want to experiment with all of "
 "the square sizes, let alone with rectangles! We can do better than that."
-msgstr ""
+msgstr "Хорошо. Экспериментируя в прошлом уроке, нам приходилось редактировать код в нескольких местах, чтобы изменить размеры наших геометрических фигур. Но представь, что будет, если мы захотим изменить размер квадрата не один раз, не говоря уже о прямоугольниках! Есть способ получше."
 
+# a2712e5a1bf24c91bf73db77f5094695
 #: ../../../source/variables.rst:11
 msgid ""
 "This is where **variables** come into play: You can tell Python that from "
 "now on, whenever you refer to a variable, you actually mean something else. "
 "That concept might be familiar from symbolic maths, where you would write: "
 "*Let x be 5.* Then *x \\* 2* will obviously be *10*."
-msgstr ""
+msgstr "Здесь **переменные** и вступают в игру. Можно сообщить Python'у, что отныне при обращении к переменной имеется в виду что-то другое. Ты наверняка узнал об этом из символической математики, где можно написать: *Пусть x равняется 5.* Тогда. очевидно, *x \\* 2* будет равняться 10."
 
+# fa0a962bd37d4e8eb7ba0ee69b28e8ee
 #: ../../../source/variables.rst:16
 msgid "In Python syntax, that very statement translates to::"
-msgstr ""
+msgstr "С помощью Python'а сиё можно записать так::"
 
+# 986235ce1d8b44ebb5dd81ce1b1abd75
 #: ../../../source/variables.rst:20
 msgid ""
 "After that statement, if you do ``print(x)``, it will actually output its "
 "value --- 5.  Well, can use that for your turtle too::"
-msgstr ""
+msgstr "После этого, если ты выполнишь ``print(x)``, будет выведено значение переменной --- 5. Но, возможно, нашей черепашке настолько широкие возможности не нужны:"
 
+# 41ee9fc89f5b45a8b560e9c5ddf7b512
 #: ../../../source/variables.rst:25
 msgid ""
 "Variables can store all sorts of things, not just numbers. A typical other "
@@ -51,56 +65,69 @@ msgid ""
 "Strings are indicated with a starting and a leading ``\"`` (double quote). "
 "You'll learn about this and other types, as those are called in Python, and "
 "what you can do with them later on."
-msgstr ""
+msgstr "Переменные могут быть чем угодно, не только числами. Типичной вещью, хранящейся в переменной, является **строка** - строка текста. Строки можно распознать по двойным кавычкам, с которых они начинаются и которыми они заканчиваются. Позже ты узнаешь больше об этом и других типах данных, их применении и о том, как они называются в Python."
 
+# 6023dfa68c764ea991ca7a7912e7bceb
 #: ../../../source/variables.rst:31
 msgid "You can even use a variable to give the turtle a name::"
-msgstr ""
+msgstr "Ты можешь использовать переменную даже для того, чтобы дать черепашке имя::"
 
+# 6c986c3906d34cd2a73d98485fa4d3e0
 #: ../../../source/variables.rst:35
 msgid ""
 "Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
 "still continue to use ``turtle`` as well::"
-msgstr ""
+msgstr "Теперь, когда ты вводишь ``timmy``, это будет означать ``turtle``. Но ты всё ещё можешь продолжать использовать и непосредственно ``turtle``::"
 
+# 855b759cf6614117812596f0572da969
 #: ../../../source/variables.rst:43
 msgid "A variable called angle"
-msgstr ""
+msgstr "Переменная, зовущаяся углом"
 
+# 341a0b4eab9c4060983a009910f9912b
+# c7f79c6a0e3f438c8cbddaeac9e3b967
 #: ../../../source/variables.rst:46 ../../../source/variables.rst:83
 msgid "Exercise"
-msgstr ""
+msgstr "Упражнение"
 
+# 98036cab6adc4843be4121ad8a525a46
 #: ../../../source/variables.rst:48
 msgid ""
 "If we have a variable called ``angle``, how could we use that to experiment "
 "much faster with our tilted squares program?"
-msgstr ""
+msgstr "Как мы можем ускорить работу с нашей программой для рисования повёрнутых квадратов, имея переменную ``angle``?"
 
+# 4f5e8724e9bf47bb9a308c96b099e1bd
 #: ../../../source/variables.rst:52
 msgid "Solution"
-msgstr ""
+msgstr "Решение"
 
+# e5cc56f2272342e2a9817063d345d126
 #: ../../../source/variables.rst:72
 msgid "... and so on"
-msgstr ""
+msgstr "... и так далее."
 
+# f88b19f8666e4f3699d3fa8a1d16eeeb
 #: ../../../source/variables.rst:75
 msgid "Bonus"
-msgstr ""
+msgstr "Дополнительно"
 
+# 1af525ffffc44dba842bbaac6875a109
 #: ../../../source/variables.rst:77
 msgid "Can you apply that principle to the size of the squares, too?"
-msgstr ""
+msgstr "Можешь ли ты проделать то же самое с размером квадрата?"
 
+# 860b1520bc564aae8f16cbeaf5723c13
 #: ../../../source/variables.rst:80
 msgid "The house of santa claus"
-msgstr ""
+msgstr "Домик Деда Мороза"
 
+# 1d280501f67a473aad5e0d4531953a0d
 #: ../../../source/variables.rst:85
 msgid "Draw a house."
-msgstr ""
+msgstr "Рисуем домик"
 
+# cf4fc858e79b449fbfe315cf438b5e39
 #: ../../../source/variables.rst:89
 msgid ""
 "You can calculate the length of the diagonal line with the Pythagorean "

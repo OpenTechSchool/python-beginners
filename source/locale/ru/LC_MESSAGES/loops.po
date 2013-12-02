@@ -1,24 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
+# Translators:
+# Артём Демаков <dearalcher@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:14\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-10-28 12:09+0000\n"
+"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+# a670b4adde8c406d82ba760f46e490e7
 #: ../../../source/loops.rst:2
 msgid "Loops"
-msgstr ""
+msgstr "Циклы"
 
+# c28e242bdab04161a6fa4929c1a38088
 #: ../../../source/loops.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
+# a3fc99c9e8944a20bde6325f9a5a67fc
 #: ../../../source/loops.rst:7
 msgid ""
 "Something you might have noticed: our programs often feature repetition. "
@@ -27,6 +37,7 @@ msgid ""
 " this easy example**::"
 msgstr ""
 
+# 4eda734b95e248539b9b5efe8dc5119c
 #: ../../../source/loops.rst:15
 msgid ""
 "This is incredibly helpful if we want to do something multiple times --- "
@@ -34,12 +45,14 @@ msgid ""
 "write that action once. Here's another version of a loop::"
 msgstr ""
 
+# 0e367bb15a554f55aabf4f8a1d0eb292
 #: ../../../source/loops.rst:22
 msgid ""
 "Notice how we write only one line of code using ``i``, but it takes on 10 "
 "different values?"
 msgstr ""
 
+# 2178e72a59a246b380c09058a79f3b64
 #: ../../../source/loops.rst:25
 msgid ""
 "The :samp:`range(n)` function can be considered a shorthand for ``0, 1, 2, "
@@ -48,16 +61,19 @@ msgid ""
 "help again."
 msgstr ""
 
+# b45f5ff4bf2c43f183e91d7d594ed56b
 #: ../../../source/loops.rst:30
 msgid "You can also loop over elements of your choice::"
 msgstr ""
 
+# 3da3b4e9c91347318018908166b6e30b
 #: ../../../source/loops.rst:38
 msgid ""
 "Write this example out and run it with python, to check it works how you "
 "might expect."
 msgstr ""
 
+# 419b4a124acb4eb59c15f22b56f01c7d
 #: ../../../source/loops.rst:43
 msgid ""
 "Notice how above, the lines of code that are *looped*, are the ones that are"
@@ -67,6 +83,7 @@ msgid ""
 "your code."
 msgstr ""
 
+# 78984f3a1e8442cfa8a190d0e891d912
 #: ../../../source/loops.rst:49
 msgid ""
 "Sometimes you want to repeat some code a number of times, but don't care "
@@ -75,6 +92,7 @@ msgid ""
 "or don't wish to use it. Here's a simple example::"
 msgstr ""
 
+# 871317829ed94000a175e3f14de9929d
 #: ../../../source/loops.rst:57
 msgid ""
 "You may or may not be wondering about the variable ``i`` - why is it used "
@@ -84,20 +102,25 @@ msgid ""
 "instance::"
 msgstr ""
 
+# 37f8ea014b43476ca95f290eb2bca3fb
 #: ../../../source/loops.rst:65
 msgid ""
 "This is immediately clearer to understand than if we had used ``i`` instead "
 "of ``drink``."
 msgstr ""
 
+# 6a8658daf4c747ce8dae0e01b03494dc
 #: ../../../source/loops.rst:69
 msgid "Drawing a dashed line"
-msgstr ""
+msgstr "Рисуем пунктирную линию"
 
+# 227cdb5260a44d39a186ef36b46495d0
+# 811e324008784846b8ac8fa984cb2b27
 #: ../../../source/loops.rst:72 ../../../source/loops.rst:126
 msgid "Exercise"
-msgstr ""
+msgstr "Упражнение"
 
+# 0f7e6111e19948c2bf97205484a3cba2
 #: ../../../source/loops.rst:74
 msgid ""
 "Draw a dashed line.  You can move the turtle without the turtle drawing its "
@@ -105,32 +128,41 @@ msgid ""
 " use ``turtle.pendown()``."
 msgstr ""
 
+# f3965d438fa44b27916970234463ea2f
+# 7e918f8e5bd7468c93f9fc02e3ad2fa9
 #: ../../../source/loops.rst:81 ../../../source/loops.rst:133
 msgid "Solution"
-msgstr ""
+msgstr "Решение"
 
+# 5860c34b7d5a4bb5b5095d8a1472dd11
+# 112a159544464c73a08a63e7eb71691c
 #: ../../../source/loops.rst:92 ../../../source/loops.rst:142
 msgid "Bonus"
-msgstr ""
+msgstr "Дополнительно"
 
+# f05832d1752c4fc3931b4cbc78badfab
 #: ../../../source/loops.rst:94
 msgid "Can you make the dashes become larger as the line progresses?"
 msgstr ""
 
+# c89966a17ad8437aad6d66aedbd2396f
 #: ../../../source/loops.rst:100
 msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
 msgstr ""
 
+# 6af92163948e42658b603d185d1d44b4
 #: ../../../source/loops.rst:106
 msgid ""
 "Can you utilize ``i`` --- commonly called the **index** variable or loop "
 "variable --- to get increasing step sizes?"
 msgstr ""
 
+# c844a09532cc4786b5bf06f2ec04e19b
 #: ../../../source/loops.rst:110
 msgid "Comments"
-msgstr ""
+msgstr "Комментарии"
 
+# 933b062bdf944b3d9ed1f08ac92a867e
 #: ../../../source/loops.rst:112
 msgid ""
 "In the example above, the line that starts with a ``#`` is called a comment."
@@ -138,16 +170,19 @@ msgid ""
 "computer. Use comments to explain what your program does, without changing "
 "the behaviour for the computer. They can also be used to easily and "
 "temporarily disable, or \"comment out\" some lines of code."
-msgstr ""
+msgstr "В примере выше, строка, начинающаяся с ``#``, называется комментарием. В Python всё, что идёт за ``#`` до конца строки, игнорируется компьютером. Пользуйтесь комментариями, чтобы объяснить принципы работы вашей вашей программы без изменения поведения компьютера. А ещё с их помощью можно просто временно отключить или \"закомментировать\" несколько строчек кода."
 
+# 1168e1104a2f49a8b92d4947148d5cc4
 #: ../../../source/loops.rst:118
 msgid "Comments can also go at the end of a line, like this::"
-msgstr ""
+msgstr "Комментарии также могут находиться в конце строки, как этот::"
 
+# 11e97ad4978340f38f253f2dba5056c4
 #: ../../../source/loops.rst:123
 msgid "More Efficient Squares"
 msgstr ""
 
+# cc655afb978f493c8053e667a368d764
 #: ../../../source/loops.rst:128
 msgid ""
 "The squares we were drawing at the start of this tutorial had a lot of "
@@ -155,12 +190,14 @@ msgid ""
 "lines by utilizing loops?"
 msgstr ""
 
+# bed062fe01ed47d9b7e7795f6976e66a
 #: ../../../source/loops.rst:144
 msgid ""
 "Try *nesting* loops, by putting one right under (*inside*) the other, with "
 "some drawing code that's inside both. Here's what it can look like::"
 msgstr ""
 
+# 770ac4cbd02045699e112ac7f9e86d66
 #: ../../../source/loops.rst:155
 msgid ""
 "Replace the ``...``'s with your own code, and see if you can come up with "

@@ -1,24 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
+# Translators:
+# Артём Демаков <dearalcher@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:14\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-20 12:58+0000\n"
+"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+# 0ebffb4008364c84b28bbdbc83a58dd0
 #: ../../../source/conditional_loops.rst:2
 msgid "Conditional Loops"
-msgstr ""
+msgstr "Условные циклы"
 
+# c001aa827a0c4efeace6c64237e071b2
 #: ../../../source/conditional_loops.rst:4
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
+# 286bdc49c4f54f99a59f5aa3e5f89fa1
 #: ../../../source/conditional_loops.rst:6
 msgid ""
 "Conditional loops are way to repeat something while a certain condition is "
@@ -28,43 +38,52 @@ msgid ""
 "defined with the ``while`` statement::"
 msgstr ""
 
+# dca5de2f82e543c4a48463876e388415
 #: ../../../source/conditional_loops.rst:23
 msgid "We call this part of the code the 'conditional': ``'.' not in word``"
 msgstr ""
 
+# 9d1aa6649ba94e21908cff558d8e8826
 #: ../../../source/conditional_loops.rst:25
 msgid ""
 "Whether the conditional return True or not determines whether the code "
 "inside the ``while`` loop runs."
 msgstr ""
 
+# 7fc839b4812d49c087116e5c082b0654
 #: ../../../source/conditional_loops.rst:28
 msgid ""
 "Read the code above, and see if you can summarise in your head what it what "
 "it do (what its final output will be)."
 msgstr ""
 
+# 18c22a5fe65440de8c2100ef541567b0
 #: ../../../source/conditional_loops.rst:31
 msgid ""
 "Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
 "what it does. Does that match up with what you thought?"
 msgstr ""
 
+# 400050782b514b07b884a224a79f4915
 #: ../../../source/conditional_loops.rst:36
 msgid ""
 "If you are using Python 2, you will need to replace ``input`` with "
 "``raw_input`` to run the program correctly."
-msgstr ""
+msgstr "Если ты используешь Python 2, замени ``input`` на ``raw_input`` для корректной работы программы."
 
+# 893ffd73db564e45bf4edc62de0c4aec
 #: ../../../source/conditional_loops.rst:40
 msgid "Turtle prison"
-msgstr ""
+msgstr "Тюрьма для черепашки"
 
+# 45292113e45d41e7b1b92ccf9d813a8b
+# 324bbaf285c5445f846e9ad7f3d79213
 #: ../../../source/conditional_loops.rst:43
 #: ../../../source/conditional_loops.rst:87
 msgid "Exercise"
-msgstr ""
+msgstr "Упражнение"
 
+# a2660c48dad44766bde0bf90b2ad0528
 #: ../../../source/conditional_loops.rst:45
 msgid ""
 "The turtle has been up to its usual tricks again, robbing liqour stores and "
@@ -72,31 +91,37 @@ msgid ""
 "that it can't get out of."
 msgstr ""
 
+# c903bbaa30ea41c99d255de554d25a44
 #: ../../../source/conditional_loops.rst:49
 msgid ""
 "Let's make a new version of ``forward()``. One that will turn the turtle "
 "around if it tries to go further than 100 from the origin. We'll need a "
 "``while`` loop, and some new turtle functions:"
-msgstr ""
+msgstr "Давайте сделаем новую версию ``forward()``, которая будет поворачивать черепашку, если она слишком далеко (более, чем на 100) отойдёт от начала координатной сетки.  . Нам понадобится цикл ``while`` и несколько новых функций для черепашки:"
 
+# 3ce77ae318ca4616805a1fe13f9c94f0
 #: ../../../source/conditional_loops.rst:53
 msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
-msgstr ""
+msgstr "``turtle.distance(0,0)`` - Расстояние до черепашки от начала координат"
 
+# 2743f0601d844fd5827dc8ca59a5161b
 #: ../../../source/conditional_loops.rst:54
 msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
-msgstr ""
+msgstr "``turtle.towards(0,0)`` - Градусная мера угла для возвращения к началу координат"
 
+# 735068e95dbb4feb83bc42382501dba0
 #: ../../../source/conditional_loops.rst:55
 msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
-msgstr ""
+msgstr "``turtle.setheading(angle)`` - Ручная установка направления черепашки"
 
+# 0122ec4586504984bd958b7f612c62f6
 #: ../../../source/conditional_loops.rst:57
 msgid ""
 "You could try playing with a turtle in the interpreter and using these "
 "functions to check exactly what they do, if you like."
 msgstr ""
 
+# 0e6c0ed6971b4e538b809f9a0cd1f136
 #: ../../../source/conditional_loops.rst:60
 msgid ""
 "Now you will need to implement the prison logic using these turtle "
@@ -105,22 +130,27 @@ msgid ""
 " or another student."
 msgstr ""
 
+# 1b49d73c3a5e4021ac2fe477151ecc2f
+# 14cab36de06d4023b20c5be256604d50
 #: ../../../source/conditional_loops.rst:66
 #: ../../../source/conditional_loops.rst:104
 msgid "Solution"
-msgstr ""
+msgstr "Решение"
 
+# 352a42136ca6400ab20cf89a1ab398b3
 #: ../../../source/conditional_loops.rst:80
 msgid "Draw a spiral"
-msgstr ""
+msgstr "Рисуем спираль"
 
+# 6aeef203d95c4a34bd5bd692b99ebe55
 #: ../../../source/conditional_loops.rst:82
 msgid ""
 "Loops can be interrupted with the ``break`` statement. This is especially "
 "useful if you write an *infinite loop*, which is a loop where the "
 "conditional is always **True**."
-msgstr ""
+msgstr "Циклы могут быть прерваны командой ``break``. Она особенно полезна, если ты пишешь *бесконечный цикл*, т.е. цикл, условие которого всегда истинно."
 
+# 217e80c3d8024535a12d1b844ab5475a
 #: ../../../source/conditional_loops.rst:89
 msgid ""
 "Write a ``while`` loop with a condition that is always **True** to draw a "
@@ -129,6 +159,7 @@ msgid ""
 "distance to the point defined by the coordinates ``x`` and ``y``."
 msgstr ""
 
+# bd8e43cfe2964a199f111a74393dff96
 #: ../../../source/conditional_loops.rst:94
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
@@ -136,16 +167,19 @@ msgid ""
 "respectively."
 msgstr ""
 
+# 88a12b054e8245ca96d6e8180a7d0212
 #: ../../../source/conditional_loops.rst:100
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
-msgstr ""
+msgstr "Чтобы нарисовать спираль, черепашка должна поворачиваться на неизменяемую величину и двигаться вперёд на постоянно увеличивающееся расстояние"
 
+# 8030819ae52e44e3a12fc6b6b071eb14
 #: ../../../source/conditional_loops.rst:120
 msgid "Bonus"
-msgstr ""
+msgstr "Дополнительно"
 
+# 5d9767087dc74306a1046a3c8d5b7936
 #: ../../../source/conditional_loops.rst:122
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "

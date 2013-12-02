@@ -1,47 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
+# Translators:
+# Артём Демаков <dearalcher@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:14\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-23 11:10+0000\n"
+"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+# 9860794802ce4df1ade997b3bf18960a
 #: ../../../source/simple_drawing.rst:2
 msgid "Simple drawing with turtle"
-msgstr ""
+msgstr "Простое рисование с помощью черепашки"
 
+# 3632de09d6b94543add90c6276d7f41f
 #: ../../../source/simple_drawing.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
+# f4b501ebb5084585935df79181fd1ac1
 #: ../../../source/simple_drawing.rst:7
 msgid "Turtle is like a drawing board."
-msgstr ""
+msgstr "Черепашка похожа на доску для рисования."
 
+# c875441eb6f7457abc7e2b14c8d0d256
 #: ../../../source/simple_drawing.rst:9
 msgid ""
 "It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
 " can move the turtle around."
-msgstr ""
+msgstr "У неё есть функции в стиле ``turtle.forward(...)`` и ``turtle.left(...)``, с помощью которых черепашка может двигаться."
 
+# c3739f8052d94ed4b6822b65b4cb8dad
 #: ../../../source/simple_drawing.rst:12
 msgid ""
 "Before you can use turtle, you have to import it (we'd recommend playing "
 "around with it in the interactive interpreter first, there is an extra bit "
 "of work required to make it work from files)::"
-msgstr ""
+msgstr "Перед тем как начать пользоваться черепашкой, нужно импортировать её (в начале нашего пути мы рекомендуем играться с Python'ом в интерактивном интерпретаторе, дабы не возиться с файлами)::"
 
+# 291d12b1145d42b897d279f02c0a1c4f
 #: ../../../source/simple_drawing.rst:22
 msgid ""
 "Not seeing anything on Mac OS?  Try looking if a new window opened behind "
 "your command line."
 msgstr ""
 
+# 0817dcde1807499e910a04062b41b53d
 #: ../../../source/simple_drawing.rst:27
 msgid ""
 "Do you work with Ubuntu and get the error message \"No module named "
@@ -49,6 +63,7 @@ msgid ""
 "tk``"
 msgstr ""
 
+# 89023039f3a7479bb0025b0947806f4b
 #: ../../../source/simple_drawing.rst:44
 msgid ""
 "The ``turtle.forward(...)`` function tells the turtle to move forward by the"
@@ -57,16 +72,19 @@ msgid ""
 "``turtle.right(...)``, too.)"
 msgstr ""
 
+# 320285cdad0b43e6ac14dfabee8a39ba
 #: ../../../source/simple_drawing.rst:49
 msgid ""
 "The standard turtle is just a triangle. That's no fun! Let's make it a "
 "turtle instead with the ``turtle.shape()`` command::"
-msgstr ""
+msgstr "Стандартная \"черепашка\" -- всего лишь треугольник. Это не интересно! Придадим ей нормальный вид командой ``turtle.shape()``::"
 
+# ba7ab766da9f4bd6972ff1b7d43d8f04
 #: ../../../source/simple_drawing.rst:54
 msgid "So much cuter!"
-msgstr ""
+msgstr "Так намного лучше!"
 
+# 7453a0b945fc4fa2967f65ddcde2d1ae
 #: ../../../source/simple_drawing.rst:56
 msgid ""
 "If you put the commands into a file, you might have recognized that the "
@@ -77,6 +95,7 @@ msgid ""
 "stays open until you click on it::"
 msgstr ""
 
+# de9c12468cdf4a8f9917085982d278fb
 #: ../../../source/simple_drawing.rst:73
 msgid ""
 "Python is a programming language where horizontal indenting of text is "
@@ -85,10 +104,12 @@ msgid ""
 "Python code will cause an unexpected error."
 msgstr ""
 
+# b9f0ac7420224af2886d120bae1783a8
 #: ../../../source/simple_drawing.rst:79
 msgid "Drawing a square"
-msgstr ""
+msgstr "Рисуем квадрат"
 
+# f9d7ddb4df8a499abe479e9bcc944956
 #: ../../../source/simple_drawing.rst:83
 msgid ""
 "You're not always expected to know the anwer immediately. Learn by trial and"
@@ -99,27 +120,36 @@ msgid ""
 " from it!"
 msgstr ""
 
+# 6f5ff545cbca402b90d7187043129b0a
+# 64ab29b1729f4c63bc0f84c08d4fc98f
+# 8d6b66da04384ab4a184374182c4ae4d
 #: ../../../source/simple_drawing.rst:92
 #: ../../../source/simple_drawing.rst:165
 #: ../../../source/simple_drawing.rst:196
 msgid "Exercise"
-msgstr ""
+msgstr "Упражнение"
 
+# 3809e2fa5a5b44aebd3d047cbe0899bf
 #: ../../../source/simple_drawing.rst:94
 msgid "Draw a square as in the following picture:"
-msgstr ""
+msgstr "Нарисуй квадрат, как на рисунке ниже:"
 
+# 0e04b28694f749d189770899aec4890f
 #: ../../../source/simple_drawing.rst:98
 msgid ""
 "For a square you will probably need a right angle, which is 90 degrees."
-msgstr ""
+msgstr "Для  квадрата тебе понадобится прямоугольный, т.е. 90-градусный, угол."
 
+# 8233a964515e44b08fffadba4ac340f5
+# fbadb818dfa943878b0e300aa218babe
+# e867a42366eb4279876be68085b3c693
 #: ../../../source/simple_drawing.rst:101
 #: ../../../source/simple_drawing.rst:172
 #: ../../../source/simple_drawing.rst:206
 msgid "Solution"
-msgstr ""
+msgstr "Решение"
 
+# 575b479e71874431aa0c84e95f2440a6
 #: ../../../source/simple_drawing.rst:116
 msgid ""
 "Notice how the turtle starts and finishes in the same place and facing the "
@@ -127,11 +157,14 @@ msgid ""
 "convention to follow, it makes it easier to draw multiple shapes later on."
 msgstr ""
 
+# 5eba8324c5fb47d5b6e524726ca5fb46
+# bffb1de170354c4992fcb9eeda2931bc
 #: ../../../source/simple_drawing.rst:122
 #: ../../../source/simple_drawing.rst:186
 msgid "Bonus"
-msgstr ""
+msgstr "Дополнительно"
 
+# ac58d556cefc4978bdc549c3f9d38138
 #: ../../../source/simple_drawing.rst:124
 msgid ""
 "If you want to get creative, you can modify your shape with the "
@@ -143,10 +176,12 @@ msgid ""
 "lets you page up and down. Press the :kbd:`q` key to exit the pager."
 msgstr ""
 
+# b8afd3f34c424a138e958cacb5a0fa6c
 #: ../../../source/simple_drawing.rst:135
 msgid "Are you seeing an error like this::"
-msgstr ""
+msgstr "Видишь такую ошибку::"
 
+# bee6bdd344c24696b90b7f117e64c2a7
 #: ../../../source/simple_drawing.rst:139
 msgid ""
 "when trying to view help? In Python you have to import names before you can "
@@ -154,12 +189,14 @@ msgid ""
 "turtle`` before ``help(turtle.color)`` will work."
 msgstr ""
 
+# 69acdc4c47f349c8a1bd921a3565bf1d
 #: ../../../source/simple_drawing.rst:141
 msgid ""
 "Another way to find out about functions is to browse the `online "
 "documentation`_."
 msgstr ""
 
+# 7667c9ea4ef14fcc8329fd98be655ba1
 #: ../../../source/simple_drawing.rst:148
 msgid ""
 "If you misdrew anything, you can tell turtle to erase its drawing board with"
@@ -167,6 +204,7 @@ msgid ""
 "``turtle.undo()``."
 msgstr ""
 
+# b31ef2fc271e48c0920394ddbfd68fde
 #: ../../../source/simple_drawing.rst:154
 msgid ""
 "As you might have read in the help, you can modify the color with "
@@ -175,30 +213,36 @@ msgid ""
 "extensive list."
 msgstr ""
 
+# 72aab17c9d09473f976f5430895b3644
 #: ../../../source/simple_drawing.rst:162
 msgid "Drawing a rectangle"
-msgstr ""
+msgstr "Рисуем прямоугольник"
 
+# 436abbc6545e45219ba48cb0ece20683
 #: ../../../source/simple_drawing.rst:167
 msgid "Can you draw a rectangle too?"
-msgstr ""
+msgstr "Ты тоже можешь нарисовать прямоугольник?"
 
+# 38fa0d3b153f430ab276217e423ddfbe
 #: ../../../source/simple_drawing.rst:188
 msgid ""
 "How about a triangle? In an equilateral triangle (a triangle with all sides "
 "of equal length) each corner has an angle of 60 degrees."
 msgstr ""
 
+# ed9f28c4baf3419ebac09b363a37f608
 #: ../../../source/simple_drawing.rst:193
 msgid "More squares"
-msgstr ""
+msgstr "Больше квадратов"
 
+# 789ffe023eb9428eaeae684452ca6f52
 #: ../../../source/simple_drawing.rst:198
 msgid ""
 "Now, draw a tilted square. And another one, and another one. You can "
 "experiment with the angles between the individual squares."
 msgstr ""
 
+# 7cf04200613d4ca08e39553d44499f96
 #: ../../../source/simple_drawing.rst:203
 msgid ""
 "The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
