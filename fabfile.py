@@ -14,7 +14,7 @@ BUILD_DIR = os.path.join(BASE_DIR, '_build')
 SOURCE_DIR = os.path.join(BASE_DIR, 'source')
 LOCALE_DIR = os.path.join(SOURCE_DIR, 'locale',
                           '%s', 'LC_MESSAGES')
-LANGUAGES = set(['en', 'de', 'ru', 'fr', 'ko'])
+LANGUAGES = set(['en', 'de', 'ru', 'fr', 'ko', 'es_CL'])
 MAIN_TARGET = 'html'
 REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
 SERVE_PORT = 8000

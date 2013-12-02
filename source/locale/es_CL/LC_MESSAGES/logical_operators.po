@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# PatricioUrrutia <purrutia@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-17 18:55+0000\n"
+"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_CL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 2f20df833f124f9c85714161761b61a0
+#: ../../../source/logical_operators.rst:2
+msgid "Logical operators"
+msgstr "Opreadores Lógicos"
+
+# f311ca6659b4437e989dee0b026e81c5
+#: ../../../source/logical_operators.rst:5
+msgid "Introduction"
+msgstr "Introducción"
+
+# a64bdf21929b492493f49955995ab7bc
+#: ../../../source/logical_operators.rst:7
+msgid ""
+"Conditionals are a nice way to make decisions by asking if something equals "
+"*True* or not. But often one condition is not enough. We may want to take "
+"the opposite of our result. Or for instance if we want to make a decision "
+"upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine them. This "
+"can be done with logical operators."
+msgstr "Los condicionales son una muy buena forma de tomar decisiones preguntando si algo es igual a *True* o no. Pero a menudo una condición no es suficiente. Podríamos querer tomar lo opuesto a nuestro resultado. O por ejemplo si queremos tomar una decisión sobre ``turtle.xcor()`` y ``turtle.ycor()`` debemos combinarlos. Esto puede realizarse con operadores lógicos."
+
+# 91aa730b80734d2486904a10e87f6973
+#: ../../../source/logical_operators.rst:14
+msgid "Negation of a statement"
+msgstr "Negación de una sentencia"
+
+# 16dd9203364c46d3a5f8c59cd8891fb2
+#: ../../../source/logical_operators.rst:16
+msgid ""
+"If we want something to be *False* we can use ``not``. It is a logical "
+"operator::"
+msgstr "Si queremos que algo sea *False* podemos usar ``not``. Es un operador lógico::"
+
+# 98497a179d5d4026bd2f78d00bef5db5
+# 13525c7015f848e89385f50b6344f0e5
+#: ../../../source/logical_operators.rst:26
+#: ../../../source/logical_operators.rst:64
+msgid "Exercise"
+msgstr "Ejercicio"
+
+# 35d690f787ac4b7a94541491e7069e38
+#: ../../../source/logical_operators.rst:28
+msgid ""
+"The turtle gives us a useful function to know if it is drawing or not: "
+"``turtle.isdown()``.  This function returns *True* if the turtle is drawing."
+" As we have seen earlier, the function ``turtle.penup()`` and "
+"``turtle.pendown()`` toggle between drawing while moving, or just moving "
+"without a trace."
+msgstr "El programa turtle nos da una función muy útil para saber si se está dibujando o no: ``turtle.isdown()``. Esta función retorna *True* si la tortuga está dibujando. Como hemos visto anteriormente, la función ``turtle.penup()`` y ``turtle.pendown()`` conmuta entre dibujar mientras se está moviendo, o solo moverse sin dejar trazo."
+
+# 3d050f537f894d0092f7bc4ebb7aecc0
+#: ../../../source/logical_operators.rst:33
+msgid "Can we write a function that only goes forward if the pen is up?"
+msgstr "Podemos escribir una función que permita ir adelante solamente si el lápiz está levantado?"
+
+# 8ec37a98bbce4ccd9ce82d3d6657f779
+# 79c8613a80fb446d937f63207d57126b
+#: ../../../source/logical_operators.rst:36
+#: ../../../source/logical_operators.rst:71
+msgid "Solution"
+msgstr "Solución"
+
+# 479b73f64ea14a6984e626cfb3c1b620
+#: ../../../source/logical_operators.rst:46
+msgid "This and that or something else"
+msgstr "Esto, aquello u otra cosa"
+
+# d77af2e96f3840fe90850c25a0981881
+#: ../../../source/logical_operators.rst:48
+msgid ""
+"Two easy to understand operators are ``and`` and ``or``. They do exactly "
+"what they sound like:::"
+msgstr "Dos operadores fáciles de entender son ``and`` y ``or``. Ellos hacen exactamente lo que dicen sus nombres:::"
+
+# a1e51836541b45ea81132528be3d7323
+#: ../../../source/logical_operators.rst:60
+msgid ""
+"You are not restricted to one logical operator. You can combine as may as "
+"you want."
+msgstr "No está restringido a un operador lógico. Puede combinar tantos como quiera."
+
+# 8b46de8719184531b8b89b8a50b410d8
+#: ../../../source/logical_operators.rst:66
+msgid ""
+"Earlier we put the turtle in a circular prison. This time let's make it a "
+"box. If the turtle goes more than 100 in the X *or* Y axis then we turn the "
+"turtle back around to the center."
+msgstr "Antes pusimos a la tortuga en una prisión circular. Ahora hagamos la prisión cuadrada. Si la tortuga intenta ir a más de 100 en el eje X *or* en el eje Y, entonces retornemos a la tortuga de vuelta al centro."

@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# PatricioUrrutia <purrutia@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-20 12:58+0000\n"
+"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_CL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 0ebffb4008364c84b28bbdbc83a58dd0
+#: ../../../source/conditional_loops.rst:2
+msgid "Conditional Loops"
+msgstr "Loops Condicionales"
+
+# c001aa827a0c4efeace6c64237e071b2
+#: ../../../source/conditional_loops.rst:4
+msgid "Introduction"
+msgstr "Introducción"
+
+# 286bdc49c4f54f99a59f5aa3e5f89fa1
+#: ../../../source/conditional_loops.rst:6
+msgid ""
+"Conditional loops are way to repeat something while a certain condition is "
+"satisfied, or **True**. If the condition is always satisfied (never becomes "
+"**False**), the loop can become infinite. If the condition starts off false,"
+" the code in the loop will never run! In Python conditional loops are "
+"defined with the ``while`` statement::"
+msgstr "Loops condicionales son la forma de repetir algo mientras se satisfaga cierta condición, o **True**. Si la condición se satisface siempre (nunca se vuelve **False**), el loop se vuelve infinito. Si la condición al inicio es falsa, el código del loop nunca se ejecutará! En Python los loops condicionales se definen con la sentencia ``while``::"
+
+# dca5de2f82e543c4a48463876e388415
+#: ../../../source/conditional_loops.rst:23
+msgid "We call this part of the code the 'conditional': ``'.' not in word``"
+msgstr "Esta parte del código la llamamos el 'condicional': ``'.' not in word``"
+
+# 9d1aa6649ba94e21908cff558d8e8826
+#: ../../../source/conditional_loops.rst:25
+msgid ""
+"Whether the conditional return True or not determines whether the code "
+"inside the ``while`` loop runs."
+msgstr "Si el condicional devuelve o no el valor True, determina si el código dentro del loop ``while`` se ejecuta."
+
+# 7fc839b4812d49c087116e5c082b0654
+#: ../../../source/conditional_loops.rst:28
+msgid ""
+"Read the code above, and see if you can summarise in your head what it what "
+"it do (what its final output will be)."
+msgstr "Lea el código de arriba, y vea si puede resumir en su cabeza que es lo que hará (cual será la salida final)."
+
+# 18c22a5fe65440de8c2100ef541567b0
+#: ../../../source/conditional_loops.rst:31
+msgid ""
+"Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
+"what it does. Does that match up with what you thought?"
+msgstr "Luego cópielo a un archivo, digamos :file:`sentence.py` y ejecútelo - vea exactamente que hace. ¿Es el comportamiento tal como lo imaginó?"
+
+# 400050782b514b07b884a224a79f4915
+#: ../../../source/conditional_loops.rst:36
+msgid ""
+"If you are using Python 2, you will need to replace ``input`` with "
+"``raw_input`` to run the program correctly."
+msgstr "Si está usando Python 2, necesitará reemplazar ``input```con ``raw_input`` para ejecutar el programa correctamente."
+
+# 893ffd73db564e45bf4edc62de0c4aec
+#: ../../../source/conditional_loops.rst:40
+msgid "Turtle prison"
+msgstr "Prisión Tortuga"
+
+# 45292113e45d41e7b1b92ccf9d813a8b
+# 324bbaf285c5445f846e9ad7f3d79213
+#: ../../../source/conditional_loops.rst:43
+#: ../../../source/conditional_loops.rst:87
+msgid "Exercise"
+msgstr "Ejercicio"
+
+# a2660c48dad44766bde0bf90b2ad0528
+#: ../../../source/conditional_loops.rst:45
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"building up huge gambling debts. It's time for turtle to be put into a cell "
+"that it can't get out of."
+msgstr "La tortuga ha estado haciendo de las suyas nuevamente, robando licorerías y adeudando mucho dinero al hacer apuestas. Es hora de poner a la tortuga en una celda de la cual no pueda salir."
+
+# c903bbaa30ea41c99d255de554d25a44
+#: ../../../source/conditional_loops.rst:49
+msgid ""
+"Let's make a new version of ``forward()``. One that will turn the turtle "
+"around if it tries to go further than 100 from the origin. We'll need a "
+"``while`` loop, and some new turtle functions:"
+msgstr "Hagamos una nueva versión de ``forward()``. Una que gire la tortuga a la dirección opuesta si trata de ir a más de 100 desde el origen. Necesitaremos un loop ``while``, y algunas funciones nuevas de turtle:"
+
+# 3ce77ae318ca4616805a1fe13f9c94f0
+#: ../../../source/conditional_loops.rst:53
+msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
+msgstr "``turtle.distance(0,0)`` - Distancia de la tortuga al origen"
+
+# 2743f0601d844fd5827dc8ca59a5161b
+#: ../../../source/conditional_loops.rst:54
+msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
+msgstr "``turtle.towards(0,0)`` - Ángulo para volver al origen"
+
+# 735068e95dbb4feb83bc42382501dba0
+#: ../../../source/conditional_loops.rst:55
+msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
+msgstr "``turtle.setheading(angle)`` - Establecer dirección de la tortuga"
+
+# 0122ec4586504984bd958b7f612c62f6
+#: ../../../source/conditional_loops.rst:57
+msgid ""
+"You could try playing with a turtle in the interpreter and using these "
+"functions to check exactly what they do, if you like."
+msgstr "Si lo desea, puede intentar jugar con turtle en el intérprete y usar estas funciones para verificar que hacen ellas exactamente."
+
+# 0e6c0ed6971b4e538b809f9a0cd1f136
+#: ../../../source/conditional_loops.rst:60
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, perhaps a ``while`` loop and a bit of conditional logic. It's a "
+"bit of a stretch but keep at it! Don't be afraid to talk it out with a coach"
+" or another student."
+msgstr "Ahora necesitará implementar la lógica de la prisión usando estas funciones, quizá con un loop ``while`` y un poco de lógica condicional. Es un poco complicado, pero ánimo! No tema consultar con algún profesor u otro estudiante."
+
+# 1b49d73c3a5e4021ac2fe477151ecc2f
+# 14cab36de06d4023b20c5be256604d50
+#: ../../../source/conditional_loops.rst:66
+#: ../../../source/conditional_loops.rst:104
+msgid "Solution"
+msgstr "Solución"
+
+# 352a42136ca6400ab20cf89a1ab398b3
+#: ../../../source/conditional_loops.rst:80
+msgid "Draw a spiral"
+msgstr "Dibuje una espiral"
+
+# 6aeef203d95c4a34bd5bd692b99ebe55
+#: ../../../source/conditional_loops.rst:82
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always **True**."
+msgstr "Loops pueden ser interrumpidos con una sentencia ``break``. Esto es especialmente útil si escribe un *loop infinito*, el cual es un loop donde su condicional es siempre **True**."
+
+# 217e80c3d8024535a12d1b844ab5475a
+#: ../../../source/conditional_loops.rst:89
+msgid ""
+"Write a ``while`` loop with a condition that is always **True** to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr "Escriba un loop ``while`` con una condición que sea siempre **verdadera** para dibujar un espiral. Interrumpa el loop cuando la tortuga alcance cierta distancia desde el centro. Use la función ``turtle.distance(x, y)`` para obtener la distancia al punto definido por las coordenadas ``x`` e ``y``."
+
+# bd8e43cfe2964a199f111a74393dff96
+#: ../../../source/conditional_loops.rst:94
+msgid ""
+"To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
+"functions, which return the position of the turtle in X and Y axes "
+"respectively."
+msgstr "Para hacer esto necesitará las funciones ``turtle.xcord()`` y ``turtle.ycord()``, las cuales retornan lka posición de la tortuga en los ejes X e Y respectivamente."
+
+# 88a12b054e8245ca96d6e8180a7d0212
+#: ../../../source/conditional_loops.rst:100
+msgid ""
+"To draw a spiral, the turtle has to rotate by a constant value and move "
+"forward by an increasing value."
+msgstr "Para dibujar una espiral, la tortuga debe rotar con un valor constante y moverse adelante con un valor que se incremente."
+
+# 8030819ae52e44e3a12fc6b6b071eb14
+#: ../../../source/conditional_loops.rst:120
+msgid "Bonus"
+msgstr "Bonus"
+
+# 5d9767087dc74306a1046a3c8d5b7936
+#: ../../../source/conditional_loops.rst:122
+msgid ""
+"Can you make a conditional for this loop, so you don't need the infinite "
+"loop ``while True`` or the ``break``? Which version do you find easier to "
+"understand?"
+msgstr "Puede hacer un condicional para este loop, tal que no necesite un loop infinito ``while True```o la sentencia ``break``? que versión le parece más fácil de entender?"

@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# PatricioUrrutia <purrutia@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-14 15:46+0000\n"
+"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_CL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# b150007b79954d7fb717a2021047a018
+#: ../../../source/functions.rst:2
+msgid "User-defined functions"
+msgstr "Funciones definidas por el usurario"
+
+# 4b91eb2e343245bdafc83a201b4cb9bd
+#: ../../../source/functions.rst:5
+msgid "Introduction"
+msgstr "Introducción"
+
+# 9b9ab659411949de99730371121cb25b
+#: ../../../source/functions.rst:7
+msgid ""
+"Programmers can deal with some pretty complex and abstract problems, but one"
+" sign of a good programmer is that they're lazy. They only like to deal with"
+" one thing at a time. So you need a way to break up problems into smaller, "
+"discrete pieces, which lets you focus on just the piece you want to."
+msgstr "Programadores se pueden ver enfrentados a problemas muy complejos y abstractos,  pero una de las señales de un buen programador es que son un poco flojos. Ellos sólo se enfrentan a una cosa a la vez. Entonces se necesita una forma para dividir los problemas en problemas más pequeños, piezas separadas, que permitan enfocarse solamente en la pieza que se quiere resolver."
+
+# 404bea48f9bc46d2813d46addf44959e
+#: ../../../source/functions.rst:12
+msgid ""
+"Functions are one way to do this abstraction in Python. Let's take "
+"``turtle.reset()`` for example. ``reset`` is a function we call on our "
+"``turtle``, and it is actually an abstraction for a number of steps, namely:"
+msgstr "Funciones son una forma de realizar esta abstracción en Python. Tomemos por ejemplo ``turtle.reset()``. ``reset`` es una función que llamamos en nuestra ``turtle``, y que es de hacho una abstracción para un número de pasos, es decir:"
+
+# 95b43e89f9fb450788340fb8d3b687ac
+#: ../../../source/functions.rst:16
+msgid "Erase the drawing board."
+msgstr "Borrar la superficie de dibujo."
+
+# 69026f435e2648b187a57a6fbc744888
+#: ../../../source/functions.rst:17
+msgid "Set the width and color back to default."
+msgstr "Establecer el ancho de línea y el color de vuelta a los valores por defecto."
+
+# 39e401c2f9be4718b22a5bbe8b5dc0c4
+#: ../../../source/functions.rst:18
+msgid "Move the turtle back to its initial position."
+msgstr "Mover la tortuga de vuelta a su posición inicial."
+
+# 28843546bf054acfb46700b3cb1fdd9c
+#: ../../../source/functions.rst:20
+msgid ""
+"But because all the code is contained in the function, we don't have to "
+"worry about these details. We can simply *call* this function, and know it "
+"will do what it says for us."
+msgstr "Pero, dado que todo el código se encuentra contenido en la función, no debemos preocuparnos acerca de estos detalles. Podemos simplemente *llamar* esta función y sabemos que hará lo que dice que hace por nosotros."
+
+# 8fdfa9923176412cadacf83a1664f694
+#: ../../../source/functions.rst:23
+msgid "So - how to write your own?"
+msgstr "Entonces - ¿cómo escribimos nuestras propias funciones?"
+
+# 69c11ba77acb4ea791f814c7002a2f12
+#: ../../../source/functions.rst:25
+msgid "A function can be defined with the ``def`` keyword in Python::"
+msgstr "Una función puede ser definida con la palabra clave ``def`` en Python::"
+
+# 314812d30924445db5b2d4b0819a1c50
+#: ../../../source/functions.rst:31
+msgid ""
+"This function we defined is called ``line_without_moving`` and it is an "
+"abstraction for two turtle steps - a move forward and a move backward."
+msgstr "La función que definimos se llama ``line_without_moving`` (línea sin moverse) y es una abstracción para dos pasos de la tortuga - un movimiento hacia adelante y otro hacia atrás."
+
+# 0c74c1724be441dfa6c83b8278fecf95
+#: ../../../source/functions.rst:35
+msgid ""
+"To use it (or as it is usually called, \"to call it\"), write its name "
+"followed by parentheses::"
+msgstr "Para usarla (o como se suele decir usualmente, \"para llamarla\"), escriba su nombre seguido de paréntesis::"
+
+# 69311372184e4800abc763ffdc315963
+#: ../../../source/functions.rst:46
+msgid "We could write more functions to remove some of the repetition::"
+msgstr "Podemos escribir más funciones para eliminar algo de la repetición::"
+
+# 4ada32fa325f453495f4067beee03d9e
+#: ../../../source/functions.rst:57
+msgid ""
+"Python uses *indenting with whitespace* to identify blocks of code that "
+"belong together. In Python a block (like the function definitions shown "
+"above) is introduced with a colon at the end of the line and subsequent "
+"commands are indented --- usually 4 spaces further in. The block ends with "
+"the first line that isn't indented."
+msgstr "Python utiliza *indentación con espacios blancos* para identificar bloques de código. En Python un bloque (como la definición de la función definida arriba) se introduce con dos puntos al final de la línea y los comandos que lo siguen estan indentados --- usualmente se utilizan 4 espacios. El bloque termina con la primera línea que no esté indentada."
+
+# 9e6798a941ca4e21a1fcdafaf48c807b
+#: ../../../source/functions.rst:63
+msgid ""
+"This is different to many other programming languages, which use special "
+"characters (like curly braces ``{}``) to group blocks of code together."
+msgstr "Esto es distinto a otros lenguajes de programación, que utilizan caracteres especiales (como las llaves ``{}``) para agrupar los bloques de código."
+
+# a08e7ef4dea9447092c9c3b3e41bc6c1
+#: ../../../source/functions.rst:67
+msgid ""
+"Never use tab characters to indent your blocks, only spaces. You can -- and "
+"should -- configure your editor to put 4 spaces when you press the tab key. "
+"The problem with using tab characters is that other python programmers use "
+"spaces, and if both are used in the same file python will read it wrong (in "
+"the best place, it will complain, and in the worst case, weird, hard to "
+"debug bugs will happen)."
+msgstr "Nunca use caracteres de tabulación para sangrar sus bloques de código. Puede -- y debería -- configurar su editor para que coloque 4 espacios cuando presione la tecla tab. El problema con los caracteres de tabulación es que otros programadores usan espacios, y si ambos se utilizan en el mismo archivo de python se leerá en forma errónea (en el mejor caso, aparecerá una advertencia, en el peor, sucederán errores raros y difíciles de encontrar)"
+
+# 5b6014e131e743e6a40523ad6786ea09
+#: ../../../source/functions.rst:76
+msgid "A function for a square"
+msgstr "Una función para un cuadrado"
+
+# dfcd47ffdcd944f48f11ec1987a6cc09
+# c2ed3ecc64eb45c6918e57601759bb25
+#: ../../../source/functions.rst:79 ../../../source/functions.rst:118
+msgid "Exercise"
+msgstr "Ejercicio"
+
+# b38e221085f54216babbe3532f9afd6d
+#: ../../../source/functions.rst:81
+msgid ""
+"Write a function that draws a square. Could you use this function to improve"
+" the tilted squares program? If you change the program to use a function, is"
+" it easier to experiment with?"
+msgstr "Escriba una función que dibuje un cuadrado. Puede usar esta fiunción para mejorar el programa de los cuadrados inclinados? Si usted cambia el programa para usar la función, es más fácil experimentar con él?"
+
+# 177b659f93b540eab20425cadefd5b40
+# 0cd1ab494fb540e5ae3dd94d3a7d469b
+#: ../../../source/functions.rst:86 ../../../source/functions.rst:137
+msgid "Solution"
+msgstr "Solución"
+
+# d22ac731cdfb40a381277b47faefded0
+#: ../../../source/functions.rst:115
+msgid "A function for a hexagon"
+msgstr "Una función para un Hexágono"
+
+# ab71af3d201f4cf0a0f016b60653f397
+#: ../../../source/functions.rst:120
+msgid "Write a function that draws a hexagon."
+msgstr "Escriba una función que dibuje un hexágono."
+
+# 13452cd00bab458caafcf98f8ae88c9b
+#: ../../../source/functions.rst:124
+msgid ""
+"Now combine that function into a honeycomb. Just make it with a single layer"
+" like this:"
+msgstr "Ahora utilizando esa función construya una colmena. Hágala solamente con una capa, como la que sigue:"
+
+# 58233cc905a449afa1d1365343d0643c
+#: ../../../source/functions.rst:128
+msgid "Give it a good go!"
+msgstr "Usted puede hacerlo!"
+
+# 0884a8c94ade405082054e7c977e239b
+#: ../../../source/functions.rst:132
+msgid ""
+"Make sure your hexagon function returns your turtle to exactly the same "
+"position and angle it was before it was asked to draw the hexagon. This "
+"makes it easier to reason about."
+msgstr "Asegúrese que su función de hexágono devuelve a la tortuga exactamente a su posición y ángulo iniciales antes de que dibuje un nuevo hexágono. Esto hace más fácil el razonar como continuar."
+
+# 8189b95016014d53a1fc92fee3f93dad
+#: ../../../source/functions.rst:151
+msgid ""
+"You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
+"the function, but you better not call it ``hexagon`` in that case.  That's "
+"misleading because it actually draws a hexagon and then advances to a "
+"position where another hexagon would make sense in order to draw a "
+"honeycomb.  If you ever wanted to reuse your hexagon function outside of "
+"honeycombs, that would be confusing."
+msgstr "Usted podría poner la parte ``turtle.forward(100); turtle.right(60)```dentro de la función que dibuja el hexágono, pero en ese caso es mejor no llamarla ``hexagon`` Esto es un poco engañoso, ya que de hecho dibuja un hexágono y avanza a la posición donde se debe dibujar otro hexágono para dibujar la colmena. Sin embargo, si desea utilizar nuevamente la función para dibujar un hexágono en otro contexto que no sea dibujar colmenas, este funcionamiento sería confuso."

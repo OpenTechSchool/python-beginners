@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# PatricioUrrutia <purrutia@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2013-11-20 13:18+0000\n"
+"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_CL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# f954df04fd5940df83eec4b8c124a368
+#: ../../../source/conditionals.rst:2
+msgid "Conditional statements"
+msgstr "Sentencias Condicionales"
+
+# 39482d0866b04905871aa775394f8581
+#: ../../../source/conditionals.rst:5
+msgid "Introduction"
+msgstr "Introducción"
+
+# 111401499d2c40a9996b761ebe449d84
+#: ../../../source/conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr "Hasta ahora hemos completado tareas pre-definidas, pero para ser honestos no hemos conseguido hacer nada mejor que lo que hacían aquellas viejas cajas de música que siguen un conjunto de instrucciones hasta el final. Lo que hace a la programación mucho más poderosa son las sentencias condicionales. Esta es la habilidad de *probar* una variable contra otra variable y actuar de una forma si se cumple una condición o de otra si no se cumple. Ellas son comúnmente llamadas por los programadores como *sentencias if*."
+
+# 6ab33a31c9d445248ff5b58f0cf4f72d
+#: ../../../source/conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr "para saver si una condición es *Verdadera* o *Falsa*, necesitamos un nuevo tipo de datos: los booleanos. Ellos permiten realizar operaciones lógicas. Una sentencia u operación lógica puede ser evaluada para ser *Verdadera* o *Falsa*. Nuestra sentencia condicional se puede entender como sigue:"
+
+# df9289eacd1641e2a43ea2a25534e5c0
+#: ../../../source/conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr "**if** *(la condición resulta Verdadera)*:"
+
+# 0ae1d5541cf74fbeabed31852dd3ab27
+#: ../../../source/conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr "*entonces hacer esto sólo para 'Verdadero'*"
+
+# 3093566db649459bb19ecc1750cd6821
+#: ../../../source/conditionals.rst:23
+msgid "**else**:"
+msgstr "**else**:"
+
+# 2d0805b64cc546dea95078db5e86937e
+#: ../../../source/conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr "*de otra forma hacer esto solo para 'Falso'*."
+
+# d73d211ecfcb43209a8729611cbd3add
+#: ../../../source/conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr "La condición puede ser cualquier cosa que sea evaluada como *Verdadero* o *Falso*. Comparaciones siempre retornan *Verdadero* o *Falso*, por ejemplo ``==`` (igual a), ``>`` (mayor que), ``<`` (menor que)."
+
+# 77c7b5b62fab41a580bbf8b711d4a2a0
+#: ../../../source/conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr "La parte **else** es opcional. Si usted no la coloca, nada sucederá si la condición resulta ser 'Falsa'."
+
+# 15270b28c4db44858ad24d8a5a1a94f5
+#: ../../../source/conditionals.rst:34
+msgid "Examples"
+msgstr "Ejemplos"
+
+# 64365e8b331842cb82b2865a646b6e14
+#: ../../../source/conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr "Acá hay algunos ejemplos. Puede querer leerlos línea-a-línea y ver que cree usted que hacen, o ejecutarlos para estar seguro::"
+
+# b5e742cfef1b46258ffe386e70d3d374
+#: ../../../source/conditionals.rst:54
+msgid "Giving Directions"
+msgstr "Dando direcciones"
+
+# d2308a4e4a234d5da113610124a1f0d0
+#: ../../../source/conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr "Las tortugas de Python son muy buenas siguiendo instrucciones. Usemos la función ``input()`` para preguntar al usuario la dirección en la que se mueve la tortuga. Para que sea fácil, sólo aceptaremos dos instrucciones: \"left\" y \"right\"."
+
+# a8865376d13a4ac0876033a9e6899611
+#: ../../../source/conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr "Usa Python 2? La función ``ìnput()`` se llama ``raw_input()``."
+
+# 337298bbc33a4e18a869f8788a145bfe
+#: ../../../source/conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr "Es mucho más fácil definir esto como una función, entonces::"
+
+# 03c556dba3c54816aab05ef1e9d597d7
+#: ../../../source/conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr "Ahora cada vez que use ``move()`` se le solicita que escoja ``left`` o ``right``."
+
+# 93a25c13d04147449bec02723b02181b
+#: ../../../source/conditionals.rst:81
+msgid "\"data munging\""
+msgstr "\"data munging\""
+
+# f783026a116745d48f6abd395d97c2ce
+#: ../../../source/conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr "En este programa la tortuga responderá sólo a las palabras exactas ``left`` o ``right`` sin variaciones. Entonces ``Left`` o ``LEFT`` pueden parecer iguales a ``left`` para un humano, pero ese no es el caso en programación. Python tiene algunos métodos útiles para ayudarnos con esto. Un método de strings llamado ``.strip()``, el cual elimina espacios en blanco y ``.lower()`` el cual transforma todo a minúsculas."
+
+# 7809bb0040d246f9b697fca88fca775c
+#: ../../../source/conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr "Acá hay algunos ejemplos para imprimir los efectos de ``.strip()`` y ``.lower()``::"
+
+# 2609be470843427a931b85efbe540dab
+#: ../../../source/conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr "Intente agregar la sentencia ``direction = direction.strip().lower()`` a la función ``move()``, para ver su efecto. A menudo llamamos este tipo de código \"data munging\", y es muy común."
+
+# d26798a24e044d399280f7d78a8becea
+#: ../../../source/conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr "puede agregar algunas opciones extra para que la tortuga dibuje otras cosas? Que tal ``hexagon``?"
