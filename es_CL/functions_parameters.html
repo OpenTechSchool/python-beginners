@@ -1,0 +1,200 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Funciones con parámetros &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Sentencias Condicionales" href="conditionals.html" />
+    <link rel="prev" title="Funciones definidas por el usurario" href="functions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="conditionals.html" title="Sentencias Condicionales"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="functions.html" title="Funciones definidas por el usurario"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="functions-with-parameters">
+<h1>Funciones con parámetros<a class="headerlink" href="#functions-with-parameters" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>A medida que reducimos nuestro código y removemos sentencias duplicadas, lo estamos <em>factorizando</em>. Esto es muy bueno. Pero las funciones que hemos definido hasta ahora no son muy flexibles. Las variables están definidas dentro de la función, entonces, si queremos usar un ángulo o distancia diferentes necesitamos escribir una nueva función. Nuestra función hexagon sólo puede dibujar hexágonos de un solo tamaño!</p>
+<p>Es por esto que necesitamos poder entregar parámetros, tambien llamados <em>argumentos</em>, a la función. De esta forma las <em>variables</em> en la función pueden tener valores diferentes cada vez que llamemos a la función:</p>
+<p>Recuerde como definimos la función <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> en la sección anterior:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Podemos mejorarla dándole un parámetro:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>El parámetro actúa como una <em>variable</em> sólo conocida dentro de la definición de la función. Podemos usar la nueva función definida llamándola con el valor que queremos que tenga el parámetro, por ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Hemos estado usando funciones con parámetros desde el principio del tutorial con <tt class="docutils literal"><span class="pre">turtle.forward()</span></tt>, <tt class="docutils literal"><span class="pre">turtle.left()</span></tt>, etc...</p>
+<p>Y podemos poner tantos argumentos (o parámetros) como queramos, separándolos con comas y dándoles nombres distintos:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-parameterized-function-for-a-variable-size-hexagon">
+<h2>Una función parametrizada para un hexágono de tamaño variable<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Escriba una función que permita dibujar hexágonos de cualquier tamaño que quiera, cada vez que llama a la función.</p>
+</div>
+<div class="section" id="solution">
+<h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-of-several-parameters">
+<h2>Una función con varios parámetros<a class="headerlink" href="#a-function-of-several-parameters" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id1">
+<h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Escriba una función que dibuje una figura de <em>cualquier</em> número de lados (asumamos mayor a dos) de cualquier largo de sus lados. Hágala dibujar diferentes figuras.</p>
+<p>Acá hay un ejemplo de figuras dibujadas con esta función:</p>
+<img alt="_images/shapes.png" src="_images/shapes.png" />
+<div class="admonition tip">
+<p class="first admonition-title">Truco</p>
+<p class="last">La suma de los ángulos internos de cualquier figura es siempre 360 grados!</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">sides</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Puede sonar un poco loco, pero es perfectamente posible pasar como parámetro a una <em>función</em> otra función! Python considera a las funciones como perfectamente &#8216;cosas&#8217; normales, lo mismo para variables, números y strings.</p>
+<p>Por ejemplo, puede dibujar una función que dibuje figuras que gire en un sentido o en otro dependiendo de que función de tortuga se le entregue - <tt class="docutils literal"><span class="pre">turtle.left</span></tt> o <tt class="docutils literal"><span class="pre">turtle.rught</span></tt>.</p>
+<p>Vea si puede implementar esto!</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Pasar una función (por ejemplo <tt class="docutils literal"><span class="pre">turtle.left</span></tt>) es diferente a <em>llamarla</em>, que se escribiría <tt class="docutils literal"><span class="pre">turtle.left(45)</span></tt>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Funciones con parámetros</a><ul>
+<li><a class="reference internal" href="#introduction">Introducción</a></li>
+<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">Una función parametrizada para un hexágono de tamaño variable</a><ul>
+<li><a class="reference internal" href="#exercise">Ejercicio</a></li>
+<li><a class="reference internal" href="#solution">Solución</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">Una función con varios parámetros</a><ul>
+<li><a class="reference internal" href="#id1">Ejercicio</a></li>
+<li><a class="reference internal" href="#id2">Solución</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="functions.html"
+                        title="Capítulo anterior">Funciones definidas por el usurario</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="conditionals.html"
+                        title="Próximo capítulo">Sentencias Condicionales</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="conditionals.html" title="Sentencias Condicionales"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="functions.html" title="Funciones definidas por el usurario"
+             >anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
+      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

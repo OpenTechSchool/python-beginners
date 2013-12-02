@@ -1,0 +1,205 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Loops Condicionales &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Opreadores Lógicos" href="logical_operators.html" />
+    <link rel="prev" title="Sentencias Condicionales" href="conditionals.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="logical_operators.html" title="Opreadores Lógicos"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="conditionals.html" title="Sentencias Condicionales"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="conditional-loops">
+<h1>Loops Condicionales<a class="headerlink" href="#conditional-loops" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Loops condicionales son la forma de repetir algo mientras se satisfaga cierta condición, o <strong>True</strong>. Si la condición se satisface siempre (nunca se vuelve <strong>False</strong>), el loop se vuelve infinito. Si la condición al inicio es falsa, el código del loop nunca se ejecutará! En Python los loops condicionales se definen con la sentencia <tt class="docutils literal"><span class="pre">while</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Include a period (.) when you are finished.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="s">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;next word: &#39;</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">&#39; &#39;</span> <span class="o">+</span> <span class="n">sentence</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Aha! You said:&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Esta parte del código la llamamos el &#8216;condicional&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
+<p>Si el condicional devuelve o no el valor True, determina si el código dentro del loop <tt class="docutils literal"><span class="pre">while</span></tt> se ejecuta.</p>
+<p>Lea el código de arriba, y vea si puede resumir en su cabeza que es lo que hará (cual será la salida final).</p>
+<p>Luego cópielo a un archivo, digamos <tt class="file docutils literal"><span class="pre">sentence.py</span></tt> y ejecútelo - vea exactamente que hace. ¿Es el comportamiento tal como lo imaginó?</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Si está usando Python 2, necesitará reemplazar <tt class="docutils literal"><span class="pre">input```con</span> <span class="pre">``raw_input</span></tt> para ejecutar el programa correctamente.</p>
+</div>
+</div>
+<div class="section" id="turtle-prison">
+<h2>Prisión Tortuga<a class="headerlink" href="#turtle-prison" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La tortuga ha estado haciendo de las suyas nuevamente, robando licorerías y adeudando mucho dinero al hacer apuestas. Es hora de poner a la tortuga en una celda de la cual no pueda salir.</p>
+<p>Hagamos una nueva versión de <tt class="docutils literal"><span class="pre">forward()</span></tt>. Una que gire la tortuga a la dirección opuesta si trata de ir a más de 100 desde el origen. Necesitaremos un loop <tt class="docutils literal"><span class="pre">while</span></tt>, y algunas funciones nuevas de turtle:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distancia de la tortuga al origen</li>
+<li><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - Ángulo para volver al origen</li>
+<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Establecer dirección de la tortuga</li>
+</ul>
+<p>Si lo desea, puede intentar jugar con turtle en el intérprete y usar estas funciones para verificar que hacen ellas exactamente.</p>
+<p>Ahora necesitará implementar la lógica de la prisión usando estas funciones, quizá con un loop <tt class="docutils literal"><span class="pre">while</span></tt> y un poco de lógica condicional. Es un poco complicado, pero ánimo! No tema consultar con algún profesor u otro estudiante.</p>
+</div>
+<div class="section" id="solution">
+<h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">angle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="draw-a-spiral">
+<h2>Dibuje una espiral<a class="headerlink" href="#draw-a-spiral" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Loops pueden ser interrumpidos con una sentencia <tt class="docutils literal"><span class="pre">break</span></tt>. Esto es especialmente útil si escribe un <em>loop infinito</em>, el cual es un loop donde su condicional es siempre <strong>True</strong>.</p>
+<div class="section" id="id1">
+<h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Escriba un loop <tt class="docutils literal"><span class="pre">while</span></tt> con una condición que sea siempre <strong>verdadera</strong> para dibujar un espiral. Interrumpa el loop cuando la tortuga alcance cierta distancia desde el centro. Use la función <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> para obtener la distancia al punto definido por las coordenadas <tt class="docutils literal"><span class="pre">x</span></tt> e <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
+<p>Para hacer esto necesitará las funciones <tt class="docutils literal"><span class="pre">turtle.xcord()</span></tt> y <tt class="docutils literal"><span class="pre">turtle.ycord()</span></tt>, las cuales retornan lka posición de la tortuga en los ejes X e Y respectivamente.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Para dibujar una espiral, la tortuga debe rotar con un valor constante y moverse adelante con un valor que se incremente.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+    <span class="n">original_ycor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">original_xcor</span><span class="p">,</span> <span class="n">original_ycor</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+            <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Puede hacer un condicional para este loop, tal que no necesite un loop infinito <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True```o</span> <span class="pre">la</span> <span class="pre">sentencia</span> <span class="pre">``break</span></tt>? que versión le parece más fácil de entender?</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Loops Condicionales</a><ul>
+<li><a class="reference internal" href="#introduction">Introducción</a></li>
+<li><a class="reference internal" href="#turtle-prison">Prisión Tortuga</a><ul>
+<li><a class="reference internal" href="#exercise">Ejercicio</a></li>
+<li><a class="reference internal" href="#solution">Solución</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draw-a-spiral">Dibuje una espiral</a><ul>
+<li><a class="reference internal" href="#id1">Ejercicio</a></li>
+<li><a class="reference internal" href="#id2">Solución</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="conditionals.html"
+                        title="Capítulo anterior">Sentencias Condicionales</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="logical_operators.html"
+                        title="Próximo capítulo">Opreadores Lógicos</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="logical_operators.html" title="Opreadores Lógicos"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="conditionals.html" title="Sentencias Condicionales"
+             >anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
+      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

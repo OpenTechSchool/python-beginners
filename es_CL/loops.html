@@ -1,0 +1,232 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Loops &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Funciones definidas por el usurario" href="functions.html" />
+    <link rel="prev" title="Variables" href="variables.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="functions.html" title="Funciones definidas por el usurario"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="variables.html" title="Variables"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="loops">
+<h1>Loops<a class="headerlink" href="#loops" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Algo que debe haber notado: nuestros programas a menudo muestran repeticiones. Python posee un concepto poderoso, hace uso del llamado looping (ciclos, o en herga <em>iteraciones</em>), el cual podemos usar para acortar el código repetitivo! Por ahora <strong>intente este fácil ejemplo</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Sam&quot;</span><span class="p">,</span> <span class="s">&quot;Jill&quot;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Esto es increíblemente útil si queremos hacer algo muchas veces &#8212; por ejemplo, dibujar las líneas borde individuales de una figura &#8212; pero solo queremos escribir la acción una vez. Acá hay otra versión de un loop:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note como escribimos una sola línea de código usando <tt class="docutils literal"><span class="pre">i</span></tt>, pero este toma 10 valores diferentes?</p>
+<p>La función <tt class="samp docutils literal"><span class="pre">range(n)</span></tt> puede ser considerado un atajo para <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>. Si quiere saber más acerca de ella , puede usar la ayuda en la consola de Python escribiendo <tt class="docutils literal"><span class="pre">help(range)</span></tt>. Use la tecla <tt class="kbd docutils literal"><span class="pre">q</span></tt> para salir de la ayuda.</p>
+<p>Puede también hacer un ciclo entre los elementos que escoja:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Escriba el siguiente ejemplo y ejecútelo con Python, verifique que funciona como usted esperaba.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Note como arriba, las líneas de código que han sido <em>iteradas</em>, son las que estan <em>indentadas</em>. Esto es un concepto importante en Python - es así como sabe que líneas deben ser usadas en el loop <tt class="docutils literal"><span class="pre">for</span></tt>, y que viene después, como parte del resto del programa. Use cuatro espacios (presionando Tab) para indentar el código.</p>
+</div>
+<p>Algunas veces querrá repetir algún código un número de veces, pero no le importa el valor de la variable <tt class="docutils literal"><span class="pre">i</span></tt>; entonces puede ser una buena práctica reemplazarla con <tt class="docutils literal"><span class="pre">_</span></tt>. Esto significa que no nos interesa este valor, o no lo queremos usar. Acá hay un ejemplo simple:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Puede o no importarle la variable <tt class="docutils literal"><span class="pre">i</span></tt> - por qué es usada todo el tiempo arriba? bueno, simplemente representa &#8220;índice&#8221; y es uno de los nombres más comunes de variables encontrados en códigos. Pero si está haciendo un ciclo sobre otra cosa que no sean números, asegurese de darle un mejor nombre! Por ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">drink</span> <span class="ow">in</span> <span class="n">list_of_beverages</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Esto es claro de forma inmediata y se comprende mejor que si hubiésemos usado <tt class="docutils literal"><span class="pre">i</span></tt> en vez de  <tt class="docutils literal"><span class="pre">drink</span></tt>.</p>
+</div>
+<div class="section" id="drawing-a-dashed-line">
+<h2>Dibujando una línea discontínua<a class="headerlink" href="#drawing-a-dashed-line" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Dibuje una línea discontínua. Puede mover la tortuga sin que esta dibuje su movimiento usando la función <tt class="docutils literal"><span class="pre">turtle.penup();</span> <span class="pre">para</span> <span class="pre">que</span> <span class="pre">vuelva</span> <span class="pre">a</span> <span class="pre">dibujar,</span> <span class="pre">use</span> <span class="pre">la</span> <span class="pre">función</span> <span class="pre">``turtle.pendown()</span></tt>.</p>
+<img alt="_images/dashed.png" src="_images/dashed.png" />
+</div>
+<div class="section" id="solution">
+<h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>¿Puede hacer que los trazos se hagan cada vez más largos mientras la línea progresa?</p>
+<img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
+<div class="admonition hint">
+<p class="first admonition-title">Consejo</p>
+<p>Se siente perdido? Revise <tt class="docutils literal"><span class="pre">i</span></tt> en cada iteración del ciclo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c"># write more code here</span>
+</pre></div>
+</div>
+<p class="last">Puede utilizar <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; comúnmente llamada la variable <strong>índice</strong> o variable del loop &#8212; para incrementar los tamaños de los trazos?</p>
+</div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comentarios<a class="headerlink" href="#comments" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En el ejemplo de arriba, la línea que parte con un <tt class="docutils literal"><span class="pre">#</span></tt> es llamada comentario. En Python, cualquier cosa que vaya en una linea después de un <tt class="docutils literal"><span class="pre">#</span></tt> es ignorado por el computador. Use comentarios para explicar que hace su programa, sin cambiar el comportamiento para el computador. Se pueden usar también para fácil y temporalmente deshabilitar o &#8220;comentar&#8221; algunas líneas de código.</p>
+<p>Los comentarios pueden ir también al final de una línea, por ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># tilt our next square slightly</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-efficient-squares">
+<h2>Cuadrados más Eficientes<a class="headerlink" href="#more-efficient-squares" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id1">
+<h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los cuadrados que hemos dibujado al comienzo de este tutorial tienen un montón de líneas de código repetidas. ¿Puede escribir un programa que dibuje cuadrados en menos líneas, utilizando loops?</p>
+</div>
+<div class="section" id="id2">
+<h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Bonus<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Intente <em>anidar</em> loops, poniendo uno justo bajo (<em>dentro</em>) el otro, con algo de código de dibujo que se encuentre dentro de ambos. Acá puede ver cómo puede lucir:</p>
+<div class="highlight-python"><pre>for ...:
+    for ...:
+        # drawing code inside the inner loop goes here
+        ...
+    # you can put some code here to move
+    # around after!
+    ...</pre>
+</div>
+<p>Reemplace los <tt class="docutils literal"><span class="pre">...</span></tt> con su propio código, y vea si puede obtener algo divertido o interesante! <sup>Errores son estimulantes!</sup></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Loops</a><ul>
+<li><a class="reference internal" href="#introduction">Introducción</a></li>
+<li><a class="reference internal" href="#drawing-a-dashed-line">Dibujando una línea discontínua</a><ul>
+<li><a class="reference internal" href="#exercise">Ejercicio</a></li>
+<li><a class="reference internal" href="#solution">Solución</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#comments">Comentarios</a></li>
+<li><a class="reference internal" href="#more-efficient-squares">Cuadrados más Eficientes</a><ul>
+<li><a class="reference internal" href="#id1">Ejercicio</a></li>
+<li><a class="reference internal" href="#id2">Solución</a></li>
+<li><a class="reference internal" href="#id3">Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="variables.html"
+                        title="Capítulo anterior">Variables</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="functions.html"
+                        title="Próximo capítulo">Funciones definidas por el usurario</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="functions.html" title="Funciones definidas por el usurario"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="variables.html" title="Variables"
+             >anterior</a> |</li>
+        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
+      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
