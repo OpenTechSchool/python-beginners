@@ -59,7 +59,7 @@ You can view this in a browser by running ``fab serve`` and visiting the
 web address listed.
 
 Other `builders <http://sphinx.pocoo.org/builders.html#builders>`_ can be 
-passed as argument. For instance use ``singlehtml`` to render the whole 
+passed as an argument. For instance use ``singlehtml`` to render the whole 
 tutorial into a single HTML file::
 
     $ fab build:en,singlehtml
@@ -79,7 +79,7 @@ After editing the tutorial, it is desirable to update sources for it.
 2. If you wish to upload new sources to transifex, you should use their
    cli client. ``tx push -s``.
 3. To pull down translations for a particular language, use e.g. 
-   ``tx pull -t -l de``, for de (german) or others.
+   ``tx pull -l de``, for de (german) or others.
 4. ``fab build:de`` will compile po files, and build the docs for that 
    language.
 
