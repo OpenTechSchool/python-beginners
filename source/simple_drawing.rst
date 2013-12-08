@@ -19,8 +19,7 @@ required to make it work from files.)::
 
 .. note::
 
-   Not seeing anything on Mac OS?  Try issuing a command like ``turtle.forward(0)`` and looking if a new window opened behind
-   your command line.
+   Not seeing anything on Mac OS?  Try issuing a command like ``turtle.forward(0)`` and looking if a new window opened behind your command line.
 
 .. note::
 
