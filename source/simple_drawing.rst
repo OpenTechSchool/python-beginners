@@ -9,9 +9,9 @@ Turtle is like a drawing board.
 It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
 can move the turtle around.
 
-Before you can use turtle, you have to import it. (We'd recommend playing around
+Before you can use turtle, you have to import it. We recommend playing around
 with it in the interactive interpreter first, as there is an extra bit of work
-required to make it work from files.)::
+required to make it work from files. Just go to your terminal and type::
 
     import turtle
 
