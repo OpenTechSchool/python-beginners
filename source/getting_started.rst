@@ -76,9 +76,9 @@ learn is how to use and interact with it. There are in fact many ways to do this
 the first one to learn is to interact with python's interpreter, 
 using your **operating system's** (OS) console.
 
-A **console** (or 'terminal', or 'command prompt') is a *textual* way to interact with 
-your OS, just as the 'desktop', in conjuction with your mouse, is the *graphical* 
-way to interact your system.
+A **console** (or 'terminal', or 'command prompt') is a *textual* way to 
+interact with your OS, just as the 'desktop', in conjuction with your mouse, 
+is the *graphical* way to interact your system.
 
 Opening a console on Mac OS X
 -----------------------------

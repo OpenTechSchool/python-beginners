@@ -19,7 +19,9 @@ required to make it work from files. Just go to your terminal and type::
 
 .. note::
 
-   Not seeing anything on Mac OS?  Try issuing a command like ``turtle.forward(0)`` and looking if a new window opened behind your command line.
+   Not seeing anything on Mac OS?  Try issuing a command like
+   ``turtle.forward(0)`` and looking if a new window opened behind your
+   command line.
 
 .. note::
 
@@ -29,7 +31,10 @@ required to make it work from files. Just go to your terminal and type::
 
 .. note::
    
-   While it might be tempting to just copy and paste what's written on this page into your terminal, we encourage you to type out each command. Typing gets the syntax under your fingers (building that muscle memory!) and can even help avoid strange syntax errors.
+   While it might be tempting to just copy and paste what's written on
+   this page into your terminal, we encourage you to type out each command.
+   Typing gets the syntax under your fingers (building that muscle memory!)
+   and can even help avoid strange syntax errors.
 
 ::
 
@@ -45,12 +50,14 @@ required to make it work from files. Just go to your terminal and type::
 
 
 The ``turtle.forward(...)`` function tells the turtle to move forward
-by the given distance. ``turtle.left(...)`` takes a number of degrees which you want
-to rotate to the left. (There are ``turtle.backward(...)`` and
-``turtle.right(...)``, too.)
+by the given distance. ``turtle.left(...)`` takes a number of degrees which you
+want to rotate to the left. There is also ``turtle.backward(...)`` and
+``turtle.right(...)``, too.
 
 .. note::
-   Want to start fresh? You can type ``turtle.reset()`` to clear the drawing that your ``turtle`` has made so far. We'll go into more detail on ``turtle.reset()`` in just a bit.
+   Want to start fresh? You can type ``turtle.reset()`` to clear the drawing
+   that your ``turtle`` has made so far. We'll go into more detail on
+   ``turtle.reset()`` in just a bit.
 
 The standard turtle is just a triangle. That's no fun! Let's make it a turtle
 instead with the ``turtle.shape()`` command::
@@ -76,10 +83,10 @@ until you click on it::
 
 .. note::
 
-   Python is a programming language where horizontal indenting of text is 
-   important. We'll learn all about this in the Functions chapter later on, 
-   but for now just keep in mind that stray spaces or tabs before any line 
-   of Python code will cause an unexpected error.
+   Python is a programming language where horizontal indenting of text is
+   important. We'll learn all about this in the Functions chapter later on,
+   but for now just keep in mind that stray spaces or tabs before any line
+   of Python code can cause an unexpected error.
 
 Drawing a square
 ================
@@ -142,7 +149,9 @@ key to exit the pager.
 
     NameError: name 'turtle' is not defined
 
-   when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you'll need to ``import turtle`` before ``help(turtle.color)`` will work.
+   when trying to view help? In Python you have to import names before you
+   can refer to them, so in a new Python interactive shell you'll need to
+   ``import turtle`` before ``help(turtle.color)`` will work.
 
 Another way to find out about functions is to browse the `online documentation`_.
 
@@ -245,5 +254,4 @@ Solution
     turtle.left(90)
     turtle.forward(50)
     turtle.left(90)
-
 
