@@ -33,6 +33,7 @@ You can also loop over elements of your choice::
     for i in 5, 7, 11, 13:
         print(i)
         total = total + i
+        
     print(total)
 
 Write this example out and run it with python, to check it works how you might 

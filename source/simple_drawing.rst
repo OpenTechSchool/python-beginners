@@ -9,9 +9,9 @@ Turtle is like a drawing board.
 It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
 can move the turtle around.
 
-Before you can use turtle, you have to import it (we'd recommend playing around
-with it in the interactive interpreter first, there is an extra bit of work
-required to make it work from files)::
+Before you can use turtle, you have to import it. We recommend playing around
+with it in the interactive interpreter first, as there is an extra bit of work
+required to make it work from files. Just go to your terminal and type::
 
     import turtle
 
@@ -19,14 +19,17 @@ required to make it work from files)::
 
 .. note::
 
-   Not seeing anything on Mac OS?  Try looking if a new window opened behind
-   your command line.
+   Not seeing anything on Mac OS?  Try issuing a command like ``turtle.forward(0)`` and looking if a new window opened behind your command line.
 
 .. note::
 
    Do you work with Ubuntu and get the error message "No module named
    _tkinter"? Install the missing package with ``sudo apt-get install
    python3-tk``
+
+.. note::
+   
+   While it might be tempting to just copy and paste what's written on this page into your terminal, we encourage you to type out each command. Typing gets the syntax under your fingers (building that muscle memory!) and can even help avoid strange syntax errors.
 
 ::
 
@@ -45,6 +48,9 @@ The ``turtle.forward(...)`` function tells the turtle to move forward
 by the given distance. ``turtle.left(...)`` takes a number of degrees which you want
 to rotate to the left. (There are ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.)
+
+.. note::
+   Want to start fresh? You can type ``turtle.reset()`` to clear the drawing that your ``turtle`` has made so far. We'll go into more detail on ``turtle.reset()`` in just a bit.
 
 The standard turtle is just a triangle. That's no fun! Let's make it a turtle
 instead with the ``turtle.shape()`` command::
