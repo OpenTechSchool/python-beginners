@@ -80,7 +80,7 @@ Here's an example of drawing shapes with this function:
 
 .. tip::
 
-   The sum of the internal angles of any shape is always 360 degrees!
+   The sum of the external angles of any shape is always 360 degrees!
 
 Solution
 --------
