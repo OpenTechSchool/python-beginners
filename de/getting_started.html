@@ -108,7 +108,12 @@
 </div>
 <div class="section" id="opening-a-console-on-windows">
 <h3>Eine Konsole unter Windows öffnen<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Die Konsole in Windows wird Kommandozeilenaufforderung genannt, oder <strong class="program">cmd</strong>. Ein einfacher Weg sie zu öffnen ist durch das Tastenkürzel &#8220;Windows+R&#8221; (wobei &#8216;Windows&#8217; den Knopf mit dem Windows-Logo meint), welches einen &#8216;Ausführen&#8217;-Dialog öffnen sollte. Tippe dann <a href="#id1"><span class="problematic" id="id2">:kdb:`cmd`</span></a> und drück :kbd:<a href="#id3"><span class="problematic" id="id4">`</span></a>Enter`oder klick Ok. Du kannst danach auch im Startmenü suchen. Es sollte wie folgt aussehen:</p>
+<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
+way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
+(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
+<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
+click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
+look like:</p>
 <div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
 </pre></div>
 </div>
@@ -118,7 +123,8 @@
 <div class="section" id="using-python">
 <h2>Python verwenden<a class="headerlink" href="#using-python" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>Das Pythonprogramm das du installiert hast agiert standardmäßig als etwas das sich <strong>Interpreter</strong> nennt. Ein Interpreter nimmt Befehle entgegen und führt sie dann aus &#8211; sehr praktisch um Dinge auszuprobieren.</p>
-<p>Tippe in Deiner Konsole ein <strong class="program">python</strong>, drücke <a href="#id1"><span class="problematic" id="id2">:kdb:`&lt;Enter&gt;`</span></a>, und der Python-Interpreter sollte starten.</p>
+<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, and you should
+enter Python&#8217;s Interpreter.</p>
 <p>Um herauszufinden welche Version von Python du hast, benutz <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> um es dir sagen zu lassen.</p>
 <div class="section" id="interacting-with-python">
 <h3>Mit Python interagieren<a class="headerlink" href="#interacting-with-python" title="Permalink zu dieser Überschrift">¶</a></h3>
@@ -137,7 +143,9 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Drücke :kbd:&#8217;&lt;Enter&gt;&#8217; und sieh was passiert. Nachdem Python Dir die Ergebnisse angezeigt hat, gelangst Du zurück zum interaktiven Prompt wo Du einen weiteren Befehl eingeben kannst:</p>
+<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
+will bring you back to the interactive prompt, where you could enter
+another command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
@@ -150,7 +158,10 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="section" id="running-python-files">
 <h3>Pythonprogramme ausführen<a class="headerlink" href="#running-python-files" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Falls du viel Pythonquelltext auszuführen hast wirst du ihn in eine Datei speichern wollen damit du zum Beispiel kleine Stücke verändern kannst (einen Fehler beheben) und es nochmal ausführen kannst ohne den Rest wieder und wieder einzutippen. Stattdessen kannst du deinen Quelltext in eine Datei speichern und den Dateinamen an das <strong class="program">python</strong>-Programm liefern. Es wird dann diese Datei ausführen statt den interaktiven Interpreter auszuführen.</p>
-<p><strong>Lass uns das ausprobieren</strong>. Erstelle eine Datei <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in deinem aktuellen Verzeichnis mit deinem Lieblingseditor und schreibe den print-Befehl von oben. Jetzt speicher die Datei. Unter Linux und OS X kannst du auch <a href="#id1"><span class="problematic" id="id2">:kdb:`touch hello.py`</span></a> ausführen um eine leere Datei zu erstellen. Diese Datei mit Python auszuführen ist ganz einfach:</p>
+<p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
+with your favorite text editor and write the print command from above.  Now
+save that file. On Linux or OS X, you can also run <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
+an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
@@ -159,7 +170,10 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <p class="last">Versichere dich, dass du dich in der Kommandozeile befindest, die du an <tt class="docutils literal"><span class="pre">$</span></tt> oder <tt class="docutils literal"><span class="pre">&gt;</span></tt> am Ende erkennst, nicht in Pythons (welche <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> hat).</p>
 </div>
 <p>Unter Windows solltest du doppelt auf die Pythondatei klicken können um sie auszuführen.</p>
-<p>Wenn Du nun :kbd:&#8217;&lt;Enter&gt;&#8217; drückst, wird das Programm in der Datei ausgeführt, und Du siehst die gleiche Ausgabe wie zuvor. Aber diesmal kehrt Python nach Ausführen der Befehle in der Datei zurück zur Kommandozeile Deines Betriebssystems anstatt in den Interpreter.</p>
+<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
+as before.  But this time, after Python finished executing all commands from
+that file it exits back to the system command prompt, instead of going back
+to the interactive shell.</p>
 <p>Wir sind jetzt startklar und können mit der Schildkröte anfangen!</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>

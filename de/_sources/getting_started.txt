@@ -107,11 +107,12 @@ likely want to open :program:`Gnome Terminal`. It should present a prompt like t
 Opening a console on Windows
 ----------------------------
 
-Window's console is called the Command Prompt, named :program:`cmd`. 
-An easy way to get to it is by using the key combination "Windows+R" 
-('Windows' meaning the windows logo button), which should open a 'Run' dialog. 
-Then type :kbd:`cmd` and hit :kbd:`<Enter>` or click Ok. You can also search 
-for it from the start menu. It should look like::
+Window's console is called the Command Prompt, named :program:`cmd`.  An easy
+way to get to it is by using the key combination :kbd:`Windows+R`
+(:kbd:`Windows` meaning the windows logo button), which should open a
+:guilabel:`Run` dialog.  Then type :program:`cmd` and hit :kbd:`Enter` or
+click :guilabel:`Ok`. You can also search for it from the start menu. It should
+look like::
 
     C:\Users\myusername>
 
@@ -127,7 +128,7 @@ The python program that you have installed will by default act as something
 called an **interpreter**. An interpreter takes commands and runs them as you 
 enter them - very handy for trying things out.
 
-Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you should 
+Just type :program:`python` at your console, hit :kbd:`Enter`, and you should 
 enter Python's Interpreter.
 
 To find out which version of python you're running, 
@@ -153,7 +154,7 @@ You can now enter some python code. Try::
 
     print("Hello world")
 
-Press :kbd:`<Enter>` and see what happens. After showing the results, Python 
+Press :kbd:`Enter` and see what happens. After showing the results, Python 
 will bring you back to the interactive prompt, where you could enter 
 another command::
 
@@ -179,10 +180,10 @@ Instead you can save your code to a file and pass a file name to the
 :program:`python` executable. It will execute that file instead of launching 
 the interactive interpreter.
 
-**Let's try that**.  Create a file :file:`hello.py` in your current directory 
-with your favorite text editor and write the print command from above.  Now 
-save that file. On Linux or OS X, you can also run :kbd:`touch hello.py` to 
-create an empty file to edit. To run this file with python, it's pretty easy:
+**Let's try that**.  Create a file :file:`hello.py` in your current directory
+with your favorite text editor and write the print command from above.  Now
+save that file. On Linux or OS X, you can also run ``touch hello.py`` to create
+an empty file to edit. To run this file with python, it's pretty easy:
 
 .. code-block:: bash
 
@@ -195,7 +196,7 @@ create an empty file to edit. To run this file with python, it's pretty easy:
 
 On Windows you should also be able to double-click the Python file to run it.
 
-When pressing :kbd:`<Enter>` now, the file is executed and you see the output 
+When pressing :kbd:`Enter` now, the file is executed and you see the output 
 as before.  But this time, after Python finished executing all commands from 
 that file it exits back to the system command prompt, instead of going back 
 to the interactive shell.
