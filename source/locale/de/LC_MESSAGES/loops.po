@@ -1,133 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# lightyear <ben@opentechschool.org>, 2013
+# lightyear <ben@opentechschool.org>, 2014
 # krother <krother@academis.eu>, 2013
 # lehmannro <transifex@robertlehmann.de>, 2013
+# lightyear <ben@opentechschool.org>, 2013
+# lehmannro <transifex@robertlehmann.de>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 17:04\n"
-"PO-Revision-Date: 2013-09-03 19:34+0000\n"
-"Last-Translator: krother <krother@academis.eu>\n"
+"POT-Creation-Date: 2013-10-25 09:37\n"
+"PO-Revision-Date: 2014-01-31 10:46+0000\n"
+"Last-Translator: lehmannro <transifex@robertlehmann.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+# a670b4adde8c406d82ba760f46e490e7
 #: ../../../source/loops.rst:2
 msgid "Loops"
 msgstr "Schleifen"
 
+# c28e242bdab04161a6fa4929c1a38088
 #: ../../../source/loops.rst:5
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../../source/loops.rst:30
-msgid "You can also loop over elements of your choice::"
-msgstr "Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten::"
-
-#: ../../../source/loops.rst:69
-msgid "Drawing a dashed line"
-msgstr "Eine gestrichelte Linie zeichnen"
-
-#: ../../../source/loops.rst:72 ../../../source/loops.rst:126
-msgid "Exercise"
-msgstr "Übung"
-
-#: ../../../source/loops.rst:74
-msgid ""
-"Draw a dashed line.  You can move the turtle without the turtle drawing its "
-"movement by using the ``turtle.penup()`` function; to tell it to draw again,"
-" use ``turtle.pendown()``."
-msgstr ""
-"Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass"
-" sie zeichnet, indem Du die Funktion ''turtle.penup()'' aufrufst; um sie "
-"wieder zeichnen zu lassen, verwende ''turtle.pendown()''."
-
-#: ../../../source/loops.rst:81 ../../../source/loops.rst:133
-msgid "Solution"
-msgstr "Lösung"
-
-#: ../../../source/loops.rst:92 ../../../source/loops.rst:142
-msgid "Bonus"
-msgstr "Bonus"
-
-#: ../../../source/loops.rst:94
-msgid "Can you make the dashes become larger as the line progresses?"
-msgstr "Kannst du die Striche immer größer werden lassen?"
-
-#: ../../../source/loops.rst:100
-msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
-msgstr "Verwirrt?  Schau dir ``i`` in jedem Schleifendurchlauf an::"
-
-#: ../../../source/loops.rst:106
-msgid ""
-"Can you utilize ``i`` --- commonly called the **index** variable or loop "
-"variable --- to get increasing step sizes?"
-msgstr ""
-"Kannst du ``i`` --- üblicherweise als **Index**\\ - oder Schleifenvariable "
-"bezeichnet --- benutzen um immer größere Schritte zu machen?"
-
-#: ../../../source/loops.rst:110
-msgid "Comments"
-msgstr "Kommentare"
-
-#: ../../../source/loops.rst:123
-msgid "More Efficient Squares"
-msgstr ""
-
-#: ../../../source/loops.rst:128
-msgid ""
-"The squares we were drawing at the start of this tutorial had a lot of "
-"repeated lines of code. Can you write out a square drawing program in fewer "
-"lines by utilizing loops?"
-msgstr ""
-
-#: ../../../source/loops.rst:144
-msgid ""
-"Try *nesting* loops, by putting one right under (*inside*) the other, with "
-"some drawing code that's inside both. Here's what it can look like::"
-msgstr ""
-
+# a3fc99c9e8944a20bde6325f9a5a67fc
 #: ../../../source/loops.rst:7
 msgid ""
 "Something you might have noticed: our programs often feature repetition. "
 "Python has a powerful concept it makes use of called looping (jargon: "
 "*iteration*), which we can use to cut out our reptitive code! For now, **try"
 " this easy example**::"
-msgstr ""
+msgstr "Wie du sicher bemerkt hast, enthalten unsere Programme oft Wiederholungen. In Python gibt es ein mächtiges Konzept genannt Schleifen (Jargon: Iterationen), welches wir später genauer erkunden werden. Probieren wir doch zunächst mal dieses simple Beispiel aus::"
 
+# 4eda734b95e248539b9b5efe8dc5119c
 #: ../../../source/loops.rst:15
 msgid ""
 "This is incredibly helpful if we want to do something multiple times --- "
 "say, drawing the individual border lines of a shape --- but only want to "
 "write that action once. Here's another version of a loop::"
-msgstr ""
+msgstr "Dies ist außerordentlich hilfreich wenn wir etwas mehrere Male tun möchten --- beispielsweise die Umrandung einer geometrischen Form zeichnen --- aber den Programmcode dafür nur einmal schreiben möchten. Hier ist eine andere Version einer Schleife::"
 
+# 0e367bb15a554f55aabf4f8a1d0eb292
 #: ../../../source/loops.rst:22
 msgid ""
 "Notice how we write only one line of code using ``i``, but it takes on 10 "
 "different values?"
-msgstr ""
+msgstr "Beachte dass wir nur eine einzige Programme Zeile mit ``i`` schreiben, es aber 10 unterschiedliche Werte annimmt."
 
+# 2178e72a59a246b380c09058a79f3b64
 #: ../../../source/loops.rst:25
 msgid ""
 "The :samp:`range(n)` function can be considered a shorthand for ``0, 1, 2, "
 "..., n-1``. If you want to know more about it, you can use the help in the "
 "Python shell by typing ``help(range)``. Use the :kbd:`q` key to exit the "
 "help again."
-msgstr ""
+msgstr "Die :samp:`range(n)`\\ -Funktion kann man als eine Abkürzung für ``0, 1, 2, ..., n-1`` sehen. Falls du mehr über sie wissen möchtest kannst du die Hilfe im Pythoninterpreter benutzen indem du ``help(range)`` tippst. Benutz die :kbd:`q`\\ -Taste um die Hilfe wieder zu verlassen."
 
+# b45f5ff4bf2c43f183e91d7d594ed56b
+#: ../../../source/loops.rst:30
+msgid "You can also loop over elements of your choice::"
+msgstr "Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten::"
+
+# 3da3b4e9c91347318018908166b6e30b
 #: ../../../source/loops.rst:38
 msgid ""
 "Write this example out and run it with python, to check it works how you "
 "might expect."
-msgstr ""
+msgstr "Schreib das Beispiel aus und führ es mit Python aus um zu überprüfen, ob es so funktioniert wie du möchtest."
 
+# 419b4a124acb4eb59c15f22b56f01c7d
 #: ../../../source/loops.rst:43
 msgid ""
 "Notice how above, the lines of code that are *looped*, are the ones that are"
@@ -135,16 +85,18 @@ msgid ""
 "which lines should be used in the ``for`` loop, and which come after, as "
 "part of the rest of your program. Use four spaces (hitting tab) to indent "
 "your code."
-msgstr ""
+msgstr "Beachte wie oben die Zeilen, die *wiederholt* werden, die sind die *eingerückt* sind. Das ist ein wichtiges Konzept in Python - das ist wie es weiß welche Zeilen zur ``for``\\ -Schleife gehören und welche danach kommen, als Rest des Programms. Benutz vier Leerzeichen (drück Tab) um deinen Quelltext einzurücken."
 
+# 78984f3a1e8442cfa8a190d0e891d912
 #: ../../../source/loops.rst:49
 msgid ""
 "Sometimes you want to repeat some code a number of times, but don't care "
 "about the value of the ``i`` variable; so it can be good practice to replace"
 " it with ``_`` instead. This signifies that we don't care about its value, "
 "or don't wish to use it. Here's a simple example::"
-msgstr ""
+msgstr "Manchmal möchtest du Code wiederholen aber scherst dich nicht um den Wert von der Variable ``i``; hier bietet es sich an diese durch ``_`` zu ersetzen. Das macht deutlich, dass uns der Wert egal ist, oder wir ihn nicht benutzen. Hier ist ein einfaches Beispiel::"
 
+# 871317829ed94000a175e3f14de9929d
 #: ../../../source/loops.rst:57
 msgid ""
 "You may or may not be wondering about the variable ``i`` - why is it used "
@@ -152,14 +104,69 @@ msgid ""
 "most common variable names ever found in code. But if you are looping over "
 "something other than just numbers, be sure to name it something better! For "
 "instance::"
-msgstr ""
+msgstr "Du magst dich vielleicht über die Variable ``i`` wundern oder auch nicht -- warum wird sie oben die ganze Zeit verwendet? Nunja, sie steht einfach für \"index\" und ist der häufigste Variablenname den man überhaupt in Quelltext findet. Aber wenn du eine Schleife über etwas anderes als nur Zahlen ausführst, wähle besser einen anderen Namen. Zum Beispiel:: "
 
+# 37f8ea014b43476ca95f290eb2bca3fb
 #: ../../../source/loops.rst:65
 msgid ""
 "This is immediately clearer to understand than if we had used ``i`` instead "
 "of ``drink``."
-msgstr ""
+msgstr "Das ist sofort klarer zu verstehen als wenn wir ``i`` statt ``drink`` benutzt hätten."
 
+# 6a8658daf4c747ce8dae0e01b03494dc
+#: ../../../source/loops.rst:69
+msgid "Drawing a dashed line"
+msgstr "Eine gestrichelte Linie zeichnen"
+
+# 227cdb5260a44d39a186ef36b46495d0
+# 811e324008784846b8ac8fa984cb2b27
+#: ../../../source/loops.rst:72 ../../../source/loops.rst:126
+msgid "Exercise"
+msgstr "Übung"
+
+# 0f7e6111e19948c2bf97205484a3cba2
+#: ../../../source/loops.rst:74
+msgid ""
+"Draw a dashed line.  You can move the turtle without the turtle drawing its "
+"movement by using the ``turtle.penup()`` function; to tell it to draw again,"
+" use ``turtle.pendown()``."
+msgstr "Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass sie zeichnet, indem Du die Funktion ''turtle.penup()'' aufrufst; um sie wieder zeichnen zu lassen, verwende ''turtle.pendown()''."
+
+# f3965d438fa44b27916970234463ea2f
+# 7e918f8e5bd7468c93f9fc02e3ad2fa9
+#: ../../../source/loops.rst:81 ../../../source/loops.rst:133
+msgid "Solution"
+msgstr "Lösung"
+
+# 5860c34b7d5a4bb5b5095d8a1472dd11
+# 112a159544464c73a08a63e7eb71691c
+#: ../../../source/loops.rst:92 ../../../source/loops.rst:142
+msgid "Bonus"
+msgstr "Bonus"
+
+# f05832d1752c4fc3931b4cbc78badfab
+#: ../../../source/loops.rst:94
+msgid "Can you make the dashes become larger as the line progresses?"
+msgstr "Kannst du die Striche immer größer werden lassen?"
+
+# c89966a17ad8437aad6d66aedbd2396f
+#: ../../../source/loops.rst:100
+msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
+msgstr "Verwirrt?  Schau dir ``i`` in jedem Schleifendurchlauf an::"
+
+# 6af92163948e42658b603d185d1d44b4
+#: ../../../source/loops.rst:106
+msgid ""
+"Can you utilize ``i`` --- commonly called the **index** variable or loop "
+"variable --- to get increasing step sizes?"
+msgstr "Kannst du ``i`` --- üblicherweise als **Index**\\ - oder Schleifenvariable bezeichnet --- benutzen um immer größere Schritte zu machen?"
+
+# c844a09532cc4786b5bf06f2ec04e19b
+#: ../../../source/loops.rst:110
+msgid "Comments"
+msgstr "Kommentare"
+
+# 933b062bdf944b3d9ed1f08ac92a867e
 #: ../../../source/loops.rst:112
 msgid ""
 "In the example above, the line that starts with a ``#`` is called a comment."
@@ -167,77 +174,36 @@ msgid ""
 "computer. Use comments to explain what your program does, without changing "
 "the behaviour for the computer. They can also be used to easily and "
 "temporarily disable, or \"comment out\" some lines of code."
-msgstr ""
+msgstr "Im obigen Beispiel wird die Zeile die mit ``#`` anfängt ein Kommentar genannt. In Python wird alles das auf der Zeile nach ``#`` folgt ignoriert. Benutz Kommentare um zu erklären was dein Programm macht ohne das Programmverhalten zu verändern. Sie können auch benutzt werden um kurzzeitig Quelltext zu deaktiveren, oder \"auszukommentieren\"."
 
+# 1168e1104a2f49a8b92d4947148d5cc4
 #: ../../../source/loops.rst:118
 msgid "Comments can also go at the end of a line, like this::"
-msgstr ""
+msgstr "Kommentare können auch an das Zeilenende gepackt werden, wie hier::"
 
+# 11e97ad4978340f38f253f2dba5056c4
+#: ../../../source/loops.rst:123
+msgid "More Efficient Squares"
+msgstr "Effizientere Quadrate"
+
+# cc655afb978f493c8053e667a368d764
+#: ../../../source/loops.rst:128
+msgid ""
+"The squares we were drawing at the start of this tutorial had a lot of "
+"repeated lines of code. Can you write out a square drawing program in fewer "
+"lines by utilizing loops?"
+msgstr "Die Quadrate die wir am Anfang des Materials gemalt haben erforderten viele wiederholten Quelltextzeilen. Kannst du ein Programm zum Malen von Quadraten mit weniger Zeilen schreiben wenn du Schleifen benutzt?"
+
+# bed062fe01ed47d9b7e7795f6976e66a
+#: ../../../source/loops.rst:144
+msgid ""
+"Try *nesting* loops, by putting one right under (*inside*) the other, with "
+"some drawing code that's inside both. Here's what it can look like::"
+msgstr "Probier Schleifen zu *verschachteln* (*nesting*) indem du eine direkt in die andere packst, mit einigen Malanweisungen die in beiden drin sind. Das könnte in etwa so aussehen::"
+
+# 770ac4cbd02045699e112ac7f9e86d66
 #: ../../../source/loops.rst:155
 msgid ""
 "Replace the ``...``'s with your own code, and see if you can come up with "
 "something funny or interesting! :sup:`Mistakes are encouraged!`"
-msgstr ""
-
-#~ msgid ""
-#~ "One more thing: Our programs often feature repetition. There is a powerful "
-#~ "concept in Python called looping (jargon: *iteration*), which we will "
-#~ "elaborate later on. For now, **try this easy example**::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This is incredibly helpful if we want to do something multiple times --- "
-#~ "say, drawing the individual border lines of a shape --- but only want to "
-#~ "write it once.  But it gets better::"
-#~ msgstr ""
-#~ "Dies ist ausserordentlich hilfreich wenn wir etwas mehrere Male tun möchten "
-#~ "--- beispielsweise die Umrandung einer geometrischen Form zeichnen --- aber "
-#~ "den Programmcode dafür nur einmal schreiben möchten. Aber es wird noch "
-#~ "besser::"
-
-#~ msgid ""
-#~ "Notice how we write only one line of code using ``i`` but it has 10 "
-#~ "different values?"
-#~ msgstr ""
-#~ "Beachte dass wir nur eine einzige Zeile Code mit ''i'' schreiben, aber sie "
-#~ "10 unterschiedliche Werte annimmt."
-
-#~ msgid ""
-#~ "The ``range(n)`` function can be considered a shorthand for ``0, 1, 2, ..., "
-#~ "n-1``. If you want to know more about it, you can use the help in the Python"
-#~ " shell by typing ``help(range)``. Use the :kbd:`q` key to exit the help "
-#~ "again."
-#~ msgstr ""
-#~ "Die Funktion ''range(n)'' kann als Abkürzung für ''0, 1, 2, ..., n-1'' "
-#~ "betrachtet werden. Falls Du mehr über sie wissen möchtest, kannst Du die "
-#~ "Hilfefunktion im Python-Interpreter verwenden, indem Du ''help(range)'' "
-#~ "eingibst. Verwende die Taste :kbd:'q' um die Hilfe wieder zu schliessen."
-
-#~ msgid ""
-#~ "If you want to repeat some code a number of times, but don't care about the "
-#~ "value of the ``i`` variable, it can be good practice to replace it with "
-#~ "``_`` instead. This signifies that we don't care about its value, or don't "
-#~ "wish to use it. So you could rewrite the first example as::"
-#~ msgstr ""
-#~ "Falls du Code eine bestimmte Anzahl von Malen wiederholt ausführen möchtest,"
-#~ " aber der Wert der Variable ''i'' Dich nicht interessiert, kann es sinnvoll "
-#~ "sein ''i'' durch ''_'' zu ersetzen. Das zeigt an dass uns der Wert der "
-#~ "Variablen nicht interessiert oder wir nicht vorhaben ihn zu benutzen. Du "
-#~ "könntest das erste Beispiel dementsprechend auch so schreiben::"
-
-#~ msgid ""
-#~ "In the solution above, the line that starts with a ``#`` is called a "
-#~ "comment. In Python, anything that goes on a line after ``#`` is ignored by "
-#~ "the computer. Use comments to explain what your program does, without "
-#~ "changing the behaviour for the computer."
-#~ msgstr ""
-#~ "In der oben genannten Löung ist die Zeile die mit einem ''#'' anfängt, eine "
-#~ "Kommentarzeile. In Python wird alles ignoriert was in der Zeile auf ein "
-#~ "''#'' folgt. Verwende Kommentare um zu erklären wie Dein Programm "
-#~ "funktioniert, ohne dass Du dessen Verhalten im Computer veränderst."
-
-#~ msgid "Comments can also go at the end of a line, like this:"
-#~ msgstr "Kommentare dürfen ebenfalls am Zeilenende stehen, wie hier:"
-
-#~ msgid "Replace the ``...`` with your own stuff!"
-#~ msgstr ""
+msgstr "Ersetz ``...`` mit deinem eigenen Quelltext und schau, ob du etwas lustiges oder interessantes erstellen kannst. :sup:`Fehler sind erwünscht!`"
