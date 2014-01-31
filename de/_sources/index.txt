@@ -6,7 +6,7 @@ Table of contents:
 
 .. toctree::
     :maxdepth: 2
-   
+
     getting_started
     simple_drawing
     variables
@@ -16,4 +16,5 @@ Table of contents:
     conditionals
     conditional_loops
     logical_operators
+    where_to_go
     copyright

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -11,10 +10,11 @@
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -54,26 +54,44 @@
 <h1>Bedingte Schleifen<a class="headerlink" href="#conditional-loops" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Bedingte Schleifen sind ein Weg Instruktionen zu wiederholen bis eine bestimmte Bedingung eintritt.  Falls die Bedingung nie eintritt, werden die Befehle in der Schleife ewig wiederholt. In Python werden bedingte Schleifen mit <tt class="docutils literal"><span class="pre">while</span></tt> ausgedrückt:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;in the loop&quot;</span><span class="p">)</span>
-    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
+<p>Bedingte Schleifen sind ein Weg etwas zu wiederholen solange eine bestimmte Bedingung erfüllt, oder <strong>True</strong>, ist.  Falls die Bedingung immer erfüllt ist (also nie <strong>False</strong> wird) wird die Schleife endlos. Falls die Bedingung schon anfänglich falsch ist, wird der Code in der Schleife niemals ausgeführt! In Python werden bedingte Schleifen mit der <tt class="docutils literal"><span class="pre">while</span></tt>-Anweisung definiert:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Include a period (.) when you are finished.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="s">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;next word: &#39;</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">&#39; &#39;</span> <span class="o">+</span> <span class="n">sentence</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Aha! You said:&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
 </pre></div>
+</div>
+<p>Wir nennen diesen Teil des Quelltextes die &#8216;Bedingung&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
+<p>Ob die Bedingung wahr (True) zurückgibt oder nicht entscheidet, ob der Quelltext innerhalb der <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife ausgeführt wird.</p>
+<p>Lies den obigen Quelltext und schau, ob du in deinem Kopf zusammenfassen kannst was er tut (und was seine endgültige Ausgabe sein wird).</p>
+<p>Dann kopier ihn in eine Datei, sagen wir <tt class="file docutils literal"><span class="pre">satz.py</span></tt>, und führ ihn aus &#8211; schau genau was er tut. Trifft das, was du dir gedacht hast?</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Falls du Python 2 benutzt wirst du <tt class="docutils literal"><span class="pre">input``mit</span> <span class="pre">``raw_input</span></tt> ersetzen müssen um das Programm korrekt auszuführen.</p>
 </div>
 </div>
 <div class="section" id="turtle-prison">
 <h2>Schildkrötengefängnis<a class="headerlink" href="#turtle-prison" title="Permalink zu dieser Überschrift">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Die Schildkröte hat wieder ihre übliche Masche durchgezogen, Schnapsläden ausgeraubt und gewaltige Spielschulden angehäuft. Es wird Zeit die Schildkröte hinter Gitter zu bringen, eine Kiste aus der sie nicht herauskommt.</p>
-<p>Lasst uns eine neue Versio von &#8216;&#8217;forward()&#8217;&#8217; entwickeln. Eine die die Schildkröte umdreht, sobald sie sich mehr als 100 vom Ursprungspunkt entfernt. Wir werden eine &#8216;&#8217;while&#8217;&#8217; Schleife brauchen, sowie einige neue turtle Befehle.</p>
+<p>Die Schildkröte hat wieder ihre üblichen Spielchen abgezogen, Spirituosenläden ausrauben und riesige Spielschulden anhäufen. Es ist Zeit die Schildkröte in ein Gefängnis einzusperren aus dem sie nicht herauskommt.</p>
+<p>Lass uns eine neue Version von <tt class="docutils literal"><span class="pre">forward()</span></tt> bauen. Eine die die Schildkröte herumdreht falls sie versucht sich weiter als 100 von ihrem Ursprung zu entfernen. Wir brauchen eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife und einige neue turtle-Funktionen:</p>
 <ul class="simple">
-<li>&#8216;&#8217;turtle.distance(0, 0)&#8217;&#8217; - Entfernung der Schildkröte vom Ursprung.</li>
-<li>&#8216;&#8217;turtle.towards(0, 0)&#8217;&#8217; - Der Winkel der zurück zum Ursprungspunkt führt.</li>
-<li>&#8216;&#8217;turtle.setheading(winkel)&#8217;&#8217; - Die Richtung der Schildkröte direkt setzen.</li>
+<li><p class="first">&#8216;&#8217;turtle.distance(0, 0)&#8217;&#8217; - Entfernung der Schildkröte vom Ursprung.</p>
+</li>
+<li><p class="first">&#8216;&#8217;turtle.towards(0, 0)&#8217;&#8217; - Der Winkel der zurück zum Ursprungspunkt führt.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(Winkel)</span></tt> - Setz direkt die Ausrichtung der Schildkröte</p>
+</li>
 </ul>
-<p>Nun musst Du die Logik für das Gefängnis mit diesen turtle Funktionen implementieren, also eine &#8216;&#8217;while&#8217;&#8217; Schleife und einige konditionale Ausdrücke. Es gibt einiges zu tun, aber gib nicht auf! Frage ruhig einen der Coaches oder einen anderen Kursteilnehmer.</p>
+<p>Du kannst versuchen mit der turtle in einem Interpreter herumzuspielen und die Funktionen zu benutzen um genau zu sehen was sie tun, wenn du magst.</p>
+<p>Jetzt wirst du die Gefängnislogik implementieren müssen indem du die turtle-Funktionen verwendet, vielleicht eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife und ein bisschen bedingte Logik. Es ist ein bisschen haarig aber bleib dran! Scheu nicht zurück deine Idee mit einem Coach oder einem anderen Lernenden durchzusprechen.</p>
 </div>
 <div class="section" id="solution">
 <h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
@@ -90,10 +108,10 @@
 </div>
 <div class="section" id="draw-a-spiral">
 <h2>Zeichne eine Spirale<a class="headerlink" href="#draw-a-spiral" title="Permalink zu dieser Überschrift">¶</a></h2>
-<p>Schleifen können mit der Anweisung &#8216;&#8217;break&#8217;&#8217; unterbrochen werden. Das ist besonders nützlich wenn Du eine Endlosschleife schreibst, also eine &#8216;&#8217;while&#8217;&#8217; Schleife in der die Abbruchbedingung immer <em>True</em> ist.</p>
+<p>Schleifen können mit der <tt class="docutils literal"><span class="pre">break</span></tt>-Anweisung unterbrochen werden. Das ist besonders nützlich wenn du eine <em>Endlosschleife</em> schreibst, was eine Schleife ist deren Bedingung immer wahr (<strong>True</strong>) ist.</p>
 <div class="section" id="id1">
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Schreibe eine &#8216;&#8217;while&#8217;&#8217; Schleife mit einer Bedingung die immer <em>True</em> ergibt, um eine Spirale zu zeichnen. Unterbreche die Schleife sobald die Schildkröte eine bestimmte Entfernung vom Mittelpunkt erreicht. Verwende die Funktion &#8216;&#8217;turtle.distance(x, y)&#8217;&#8217; um die Entfernung der Schildkröte zum Punkt mit den Koordinaten &#8216;&#8217;x&#8217;&#8217; und &#8216;&#8217;y&#8217;&#8217; zu erhalten.</p>
+<p>Schreib eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife mit einer Bedingung die immer wahr (<strong>True</strong>) ist um eine Spirale zu malen. Unterbrich die Schleife wenn die turtle eine gewissen Distanz zum Mittelpunkt erreicht hat. Benutz die Funktion <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> um die Entfernung der Schildkröte zu dem durch die <tt class="docutils literal"><span class="pre">x</span></tt>- und <tt class="docutils literal"><span class="pre">y</span></tt>-Koordinaten bestimmten Punkt zu errechnen.</p>
 <p>Um das zu tun, brauchst Du die Funktionen &#8216;&#8217;turtle.xcor()&#8217;&#8217; und &#8216;&#8217;turtle.ycor()&#8217;&#8216;, welche die Position der Schildkröte auf der X und Y-Achse zurückgeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
@@ -117,7 +135,7 @@
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Kannst du eine Bedingung für diese Schleife formulieren, so dass Du keine Endlosschleife <em>while True</em> oder die Anweisung <em>break</em> benötigst? Welche Variante findest Du einfacher zu verstehen?</p>
+<p>Kannst du eine Bedingung für die Schleife formulieren so das du du keine Endlosschleife <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></tt> oder die <tt class="docutils literal"><span class="pre">break</span></tt>-Anweisung benötigst. Welche Version findest du einfacher zu verstehen?</p>
 </div>
 </div>
 </div>
@@ -184,7 +202,7 @@
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.3a0 erstellt.
     </div>
   </body>
 </html>
