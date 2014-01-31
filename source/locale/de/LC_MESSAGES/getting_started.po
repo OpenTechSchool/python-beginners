@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2014-01-30 09:21+0000\n"
+"PO-Revision-Date: 2014-01-31 10:59+0000\n"
 "Last-Translator: lehmannro <transifex@robertlehmann.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -235,7 +235,7 @@ msgstr "Das Pythonprogramm das du installiert hast agiert standardmäßig als et
 msgid ""
 "Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you "
 "should enter Python's Interpreter."
-msgstr "Tippe in Deiner Konsole ein :program:`python`, drücke :kdb:`<Enter>`, und der Python-Interpreter sollte starten."
+msgstr "Tippe in Deiner Konsole ein :program:`python`, drücke :kbd:`<Enter>`, und der Python-Interpreter sollte starten."
 
 # 8bc6bc88b6ec4afba694b77e96414f50
 #: ../../../source/getting_started.rst:133
@@ -316,7 +316,7 @@ msgid ""
 "above.  Now save that file. On Linux or OS X, you can also run :kbd:`touch "
 "hello.py` to create an empty file to edit. To run this file with python, "
 "it's pretty easy:"
-msgstr "**Lass uns das ausprobieren**. Erstelle eine Datei :file:`hello.py` in deinem aktuellen Verzeichnis mit deinem Lieblingseditor und schreibe den print-Befehl von oben. Jetzt speicher die Datei. Unter Linux und OS X kannst du auch :kdb:`touch hello.py` ausführen um eine leere Datei zu erstellen. Diese Datei mit Python auszuführen ist ganz einfach:"
+msgstr "**Lass uns das ausprobieren**. Erstelle eine Datei :file:`hello.py` in deinem aktuellen Verzeichnis mit deinem Lieblingseditor und schreibe den print-Befehl von oben. Jetzt speicher die Datei. Unter Linux und OS X kannst du auch :kbd:`touch hello.py` ausführen um eine leere Datei zu erstellen. Diese Datei mit Python auszuführen ist ganz einfach:"
 
 # 90bee73368b5411385af0f9a73fdb74e
 #: ../../../source/getting_started.rst:193
