@@ -165,6 +165,7 @@ another command::
 
 An extremely useful command is ``help()``, which enters a help functionality 
 to explore all the stuff python lets you do, right from the interpreter.
+Press :kbd:`q` to close the help window and return to the Python prompt.
 
 To leave the interactive shell, press :kbd:`Ctrl-Z` and then 
 :kbd:`Enter` on Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, 
