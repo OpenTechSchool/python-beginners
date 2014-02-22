@@ -1,27 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# lightyear <ben@opentechschool.org>, 2013
 # krother <krother@academis.eu>, 2013
 # lehmannro <transifex@robertlehmann.de>, 2013
+# lightyear <ben@opentechschool.org>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 17:04\n"
-"PO-Revision-Date: 2013-09-03 19:34+0000\n"
-"Last-Translator: krother <krother@academis.eu>\n"
+"POT-Creation-Date: 2014-02-12 14:57+0100\n"
+"PO-Revision-Date: 2013-10-24 23:20+0000\n"
+"Last-Translator: Ivo <matthew@opentechschool.org>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+# a2307d725501464d9960d457ac455940
 #: ../../../source/index.rst:2
 msgid "Introduction to Programming with Python"
 msgstr "Programmiereinführung mit Python"
 
+# b9cad2be7d7640d091d4106b9d5261d2
 #: ../../../source/index.rst:5
 msgid "Table of contents:"
 msgstr "Inhaltsverzeichnis:"

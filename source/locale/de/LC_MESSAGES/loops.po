@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-02-12 14:57+0100\n"
 "PO-Revision-Date: 2014-01-31 10:46+0000\n"
 "Last-Translator: lehmannro <transifex@robertlehmann.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
@@ -22,17 +22,17 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# a670b4adde8c406d82ba760f46e490e7
+# 72cf00f2d0f9449788ba86bd3ac0675c
 #: ../../../source/loops.rst:2
 msgid "Loops"
 msgstr "Schleifen"
 
-# c28e242bdab04161a6fa4929c1a38088
+# a7e2860102034430bc758cbd5b382aed
 #: ../../../source/loops.rst:5
 msgid "Introduction"
 msgstr "Einführung"
 
-# a3fc99c9e8944a20bde6325f9a5a67fc
+# 299735aea2c047a299e818d4154f9bc4
 #: ../../../source/loops.rst:7
 msgid ""
 "Something you might have noticed: our programs often feature repetition. "
@@ -41,7 +41,7 @@ msgid ""
 " this easy example**::"
 msgstr "Wie du sicher bemerkt hast, enthalten unsere Programme oft Wiederholungen. In Python gibt es ein mächtiges Konzept genannt Schleifen (Jargon: Iterationen), welches wir später genauer erkunden werden. Probieren wir doch zunächst mal dieses simple Beispiel aus::"
 
-# 4eda734b95e248539b9b5efe8dc5119c
+# 9776f7a0d58b4cf78652d8924fd20245
 #: ../../../source/loops.rst:15
 msgid ""
 "This is incredibly helpful if we want to do something multiple times --- "
@@ -49,14 +49,14 @@ msgid ""
 "write that action once. Here's another version of a loop::"
 msgstr "Dies ist außerordentlich hilfreich wenn wir etwas mehrere Male tun möchten --- beispielsweise die Umrandung einer geometrischen Form zeichnen --- aber den Programmcode dafür nur einmal schreiben möchten. Hier ist eine andere Version einer Schleife::"
 
-# 0e367bb15a554f55aabf4f8a1d0eb292
+# d79f64e4178a4d90a564d9639d4647d1
 #: ../../../source/loops.rst:22
 msgid ""
 "Notice how we write only one line of code using ``i``, but it takes on 10 "
 "different values?"
 msgstr "Beachte dass wir nur eine einzige Programme Zeile mit ``i`` schreiben, es aber 10 unterschiedliche Werte annimmt."
 
-# 2178e72a59a246b380c09058a79f3b64
+# 7c0a7eda23d0408581be3fbfd85a010b
 #: ../../../source/loops.rst:25
 msgid ""
 "The :samp:`range(n)` function can be considered a shorthand for ``0, 1, 2, "
@@ -65,20 +65,20 @@ msgid ""
 "help again."
 msgstr "Die :samp:`range(n)`\\ -Funktion kann man als eine Abkürzung für ``0, 1, 2, ..., n-1`` sehen. Falls du mehr über sie wissen möchtest kannst du die Hilfe im Pythoninterpreter benutzen indem du ``help(range)`` tippst. Benutz die :kbd:`q`\\ -Taste um die Hilfe wieder zu verlassen."
 
-# b45f5ff4bf2c43f183e91d7d594ed56b
+# a7fad0a0b1a44d259d48752a006d4a1c
 #: ../../../source/loops.rst:30
 msgid "You can also loop over elements of your choice::"
 msgstr "Du kannst auch Elemente Deiner Wahl in einer Schleife verarbeiten::"
 
-# 3da3b4e9c91347318018908166b6e30b
-#: ../../../source/loops.rst:38
+# 81b21c8b1d714807b71bbef137cf74ef
+#: ../../../source/loops.rst:39
 msgid ""
 "Write this example out and run it with python, to check it works how you "
 "might expect."
 msgstr "Schreib das Beispiel aus und führ es mit Python aus um zu überprüfen, ob es so funktioniert wie du möchtest."
 
-# 419b4a124acb4eb59c15f22b56f01c7d
-#: ../../../source/loops.rst:43
+# 32d326725b91443c86b35f0043fe9d61
+#: ../../../source/loops.rst:44
 msgid ""
 "Notice how above, the lines of code that are *looped*, are the ones that are"
 " *indented*. This is an important concept in Python - that's how it knows "
@@ -87,8 +87,8 @@ msgid ""
 "your code."
 msgstr "Beachte wie oben die Zeilen, die *wiederholt* werden, die sind die *eingerückt* sind. Das ist ein wichtiges Konzept in Python - das ist wie es weiß welche Zeilen zur ``for``\\ -Schleife gehören und welche danach kommen, als Rest des Programms. Benutz vier Leerzeichen (drück Tab) um deinen Quelltext einzurücken."
 
-# 78984f3a1e8442cfa8a190d0e891d912
-#: ../../../source/loops.rst:49
+# b53af46efc80415c90a0d4c7c022f29e
+#: ../../../source/loops.rst:50
 msgid ""
 "Sometimes you want to repeat some code a number of times, but don't care "
 "about the value of the ``i`` variable; so it can be good practice to replace"
@@ -96,8 +96,8 @@ msgid ""
 "or don't wish to use it. Here's a simple example::"
 msgstr "Manchmal möchtest du Code wiederholen aber scherst dich nicht um den Wert von der Variable ``i``; hier bietet es sich an diese durch ``_`` zu ersetzen. Das macht deutlich, dass uns der Wert egal ist, oder wir ihn nicht benutzen. Hier ist ein einfaches Beispiel::"
 
-# 871317829ed94000a175e3f14de9929d
-#: ../../../source/loops.rst:57
+# 8a4071f062674625bb26386e1b1c18ed
+#: ../../../source/loops.rst:58
 msgid ""
 "You may or may not be wondering about the variable ``i`` - why is it used "
 "all the time above? Well, it simply stands for \"index\" and is one of the "
@@ -106,68 +106,68 @@ msgid ""
 "instance::"
 msgstr "Du magst dich vielleicht über die Variable ``i`` wundern oder auch nicht -- warum wird sie oben die ganze Zeit verwendet? Nunja, sie steht einfach für \"index\" und ist der häufigste Variablenname den man überhaupt in Quelltext findet. Aber wenn du eine Schleife über etwas anderes als nur Zahlen ausführst, wähle besser einen anderen Namen. Zum Beispiel:: "
 
-# 37f8ea014b43476ca95f290eb2bca3fb
-#: ../../../source/loops.rst:65
+# e82b82d9797b4c5aa2ea5ebc8a469420
+#: ../../../source/loops.rst:66
 msgid ""
 "This is immediately clearer to understand than if we had used ``i`` instead "
 "of ``drink``."
 msgstr "Das ist sofort klarer zu verstehen als wenn wir ``i`` statt ``drink`` benutzt hätten."
 
-# 6a8658daf4c747ce8dae0e01b03494dc
-#: ../../../source/loops.rst:69
+# 766b13130f5248458c0f4e8841f65607
+#: ../../../source/loops.rst:70
 msgid "Drawing a dashed line"
 msgstr "Eine gestrichelte Linie zeichnen"
 
-# 227cdb5260a44d39a186ef36b46495d0
-# 811e324008784846b8ac8fa984cb2b27
-#: ../../../source/loops.rst:72 ../../../source/loops.rst:126
+# bf4f5d0b414445b79b7585165d5725c6
+# d6055b84235846a784d5ec97d5664eb6
+#: ../../../source/loops.rst:73 ../../../source/loops.rst:127
 msgid "Exercise"
 msgstr "Übung"
 
-# 0f7e6111e19948c2bf97205484a3cba2
-#: ../../../source/loops.rst:74
+# 7bf2bdcc99d1400284bc4e289fcef842
+#: ../../../source/loops.rst:75
 msgid ""
 "Draw a dashed line.  You can move the turtle without the turtle drawing its "
 "movement by using the ``turtle.penup()`` function; to tell it to draw again,"
 " use ``turtle.pendown()``."
 msgstr "Zeichne eine gestrichelte Linie. Du kannst die Schildkröte bewegen ohne dass sie zeichnet, indem Du die Funktion ''turtle.penup()'' aufrufst; um sie wieder zeichnen zu lassen, verwende ''turtle.pendown()''."
 
-# f3965d438fa44b27916970234463ea2f
-# 7e918f8e5bd7468c93f9fc02e3ad2fa9
-#: ../../../source/loops.rst:81 ../../../source/loops.rst:133
+# c2f24f3e721e4aca96da6db248bea627
+# 42ef20c4ea0943fdb977ed62f0292864
+#: ../../../source/loops.rst:82 ../../../source/loops.rst:134
 msgid "Solution"
 msgstr "Lösung"
 
-# 5860c34b7d5a4bb5b5095d8a1472dd11
-# 112a159544464c73a08a63e7eb71691c
-#: ../../../source/loops.rst:92 ../../../source/loops.rst:142
+# 75ac41bcbcac496f8b2bc9baae8af20b
+# 6b3ac705d16d4f6195e5a461511d3493
+#: ../../../source/loops.rst:93 ../../../source/loops.rst:143
 msgid "Bonus"
 msgstr "Bonus"
 
-# f05832d1752c4fc3931b4cbc78badfab
-#: ../../../source/loops.rst:94
+# 26385985804444efa40688e5a7cd79f9
+#: ../../../source/loops.rst:95
 msgid "Can you make the dashes become larger as the line progresses?"
 msgstr "Kannst du die Striche immer größer werden lassen?"
 
-# c89966a17ad8437aad6d66aedbd2396f
-#: ../../../source/loops.rst:100
+# 3d00bc0c973a4c33a9954e1c33e75996
+#: ../../../source/loops.rst:101
 msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
 msgstr "Verwirrt?  Schau dir ``i`` in jedem Schleifendurchlauf an::"
 
-# 6af92163948e42658b603d185d1d44b4
-#: ../../../source/loops.rst:106
+# 00ed94d337474942ae0995162a56b2c4
+#: ../../../source/loops.rst:107
 msgid ""
 "Can you utilize ``i`` --- commonly called the **index** variable or loop "
 "variable --- to get increasing step sizes?"
 msgstr "Kannst du ``i`` --- üblicherweise als **Index**\\ - oder Schleifenvariable bezeichnet --- benutzen um immer größere Schritte zu machen?"
 
-# c844a09532cc4786b5bf06f2ec04e19b
-#: ../../../source/loops.rst:110
+# 10b2ff5df7fe427abf86dd0521d65ab1
+#: ../../../source/loops.rst:111
 msgid "Comments"
 msgstr "Kommentare"
 
-# 933b062bdf944b3d9ed1f08ac92a867e
-#: ../../../source/loops.rst:112
+# 39b84177dd31468fbbf9aa499721d072
+#: ../../../source/loops.rst:113
 msgid ""
 "In the example above, the line that starts with a ``#`` is called a comment."
 " In Python, anything that goes on a line after ``#`` is ignored by the "
@@ -176,33 +176,33 @@ msgid ""
 "temporarily disable, or \"comment out\" some lines of code."
 msgstr "Im obigen Beispiel wird die Zeile die mit ``#`` anfängt ein Kommentar genannt. In Python wird alles das auf der Zeile nach ``#`` folgt ignoriert. Benutz Kommentare um zu erklären was dein Programm macht ohne das Programmverhalten zu verändern. Sie können auch benutzt werden um kurzzeitig Quelltext zu deaktiveren, oder \"auszukommentieren\"."
 
-# 1168e1104a2f49a8b92d4947148d5cc4
-#: ../../../source/loops.rst:118
+# 3d5b0cb129034bfb927a7e6e3910dbd8
+#: ../../../source/loops.rst:119
 msgid "Comments can also go at the end of a line, like this::"
 msgstr "Kommentare können auch an das Zeilenende gepackt werden, wie hier::"
 
-# 11e97ad4978340f38f253f2dba5056c4
-#: ../../../source/loops.rst:123
+# 46b39d180a354eccafd15939990cb503
+#: ../../../source/loops.rst:124
 msgid "More Efficient Squares"
 msgstr "Effizientere Quadrate"
 
-# cc655afb978f493c8053e667a368d764
-#: ../../../source/loops.rst:128
+# 360a0c1e357e4ee18efd02d55fc48d35
+#: ../../../source/loops.rst:129
 msgid ""
 "The squares we were drawing at the start of this tutorial had a lot of "
 "repeated lines of code. Can you write out a square drawing program in fewer "
 "lines by utilizing loops?"
 msgstr "Die Quadrate die wir am Anfang des Materials gemalt haben erforderten viele wiederholten Quelltextzeilen. Kannst du ein Programm zum Malen von Quadraten mit weniger Zeilen schreiben wenn du Schleifen benutzt?"
 
-# bed062fe01ed47d9b7e7795f6976e66a
-#: ../../../source/loops.rst:144
+# 71fba7e846fa4b22b17902e27930c777
+#: ../../../source/loops.rst:145
 msgid ""
 "Try *nesting* loops, by putting one right under (*inside*) the other, with "
 "some drawing code that's inside both. Here's what it can look like::"
 msgstr "Probier Schleifen zu *verschachteln* (*nesting*) indem du eine direkt in die andere packst, mit einigen Malanweisungen die in beiden drin sind. Das könnte in etwa so aussehen::"
 
-# 770ac4cbd02045699e112ac7f9e86d66
-#: ../../../source/loops.rst:155
+# 4e0e43fdb8ad472392abd6eb4a9bd4bb
+#: ../../../source/loops.rst:156
 msgid ""
 "Replace the ``...``'s with your own code, and see if you can come up with "
 "something funny or interesting! :sup:`Mistakes are encouraged!`"

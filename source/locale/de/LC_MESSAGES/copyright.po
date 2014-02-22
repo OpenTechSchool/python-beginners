@@ -1,34 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# lightyear <ben@opentechschool.org>, 2013
 # krother <krother@academis.eu>, 2013
 # lehmannro <transifex@robertlehmann.de>, 2013
+# lightyear <ben@opentechschool.org>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 17:04\n"
-"PO-Revision-Date: 2013-09-03 19:34+0000\n"
-"Last-Translator: krother <krother@academis.eu>\n"
+"POT-Creation-Date: 2014-02-12 14:57+0100\n"
+"PO-Revision-Date: 2013-11-19 16:39+0000\n"
+"Last-Translator: Ivo <matthew@opentechschool.org>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+# a9940ea98db44fee9f4be9f3408d69ad
 #: ../../../source/copyright.rst:2
 msgid "License"
 msgstr "Lizenz"
 
+# d54b7c513fda412aa933e465320511bf
 #: ../../../source/copyright.rst:4
 msgid ""
 "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
-"Unported License. To view a copy of this license, visit http://"
-"creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative "
-"Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA."
-msgstr ""
-"Dieses Werk steht unter einer `Creative Commons Namensnennung - Weitergabe "
-"unter gleichen Bedingungen 3.0 Deutschland Lizenz <http://creativecommons."
-"org/licenses/by-sa/3.0/de>`_."
+"Unported License. To view a copy of this license, visit "
+"http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative "
+"Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, "
+"USA."
+msgstr "Dieses Werk steht unter einer `Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz <http://creativecommons.org/licenses/by-sa/3.0/de>`_."
