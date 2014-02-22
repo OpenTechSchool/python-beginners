@@ -56,31 +56,22 @@
 <h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>Turtle ist wie ein Zeichenbrett.</p>
 <p>Das Modul besitzt Funktionen wie &#8216;&#8217;turtle.forward(...)&#8217;&#8217; und &#8216;&#8217;turtle.left(...)&#8217;&#8217; welche die Schildkröte umher bewegen.</p>
-<p>Before you can use turtle, you have to import it. We recommend playing around
-with it in the interactive interpreter first, as there is an extra bit of work
-required to make it work from files. Just go to your terminal and type:</p>
+<p>Bevor du turtle benutzen kannst musst du es importieren. Wir empfehlen erstmal mit ihr in einem interaktiven Interpreter herumzuexperimentieren, da ein bisschen zusätzliche Arbeit notwendig ist um aus Dateien zu arbeiten.  Gehe in deine Konsole und tippe:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
 </div>
 <img alt="_images/default.png" src="_images/default.png" />
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Not seeing anything on Mac OS?  Try issuing a command like
-<tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> and looking if a new window opened behind your
-command line.</p>
+<p class="last">Du siehst nichts unter Mac OS? Probier einen Befehl wie <tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> zu erteilen und zu schauen, ob sich ein neues Fenster hinter deiner Kommandozeile geöffnet hat.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
-_tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
-<span class="pre">python3-tk</span></tt></p>
+<p class="last">Arbeitest du mit Ubuntu und hast die Fehlermeldung &#8220;No module named _tkiner&#8221; bekommen? Installier das fehlende Paket mit <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-tk</span></tt></p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">While it might be tempting to just copy and paste what&#8217;s written on
-this page into your terminal, we encourage you to type out each command.
-Typing gets the syntax under your fingers (building that muscle memory!)
-and can even help avoid strange syntax errors.</p>
+<p class="last">Auch wenn es verlockend ist einfach alles auf dieser Seite in dein Terminal zu kopieren würden wir dich ermutigen, alle Befehle selbst zu tippen. Tippen bringt die Syntax in deine Finger (um das Muskelgedächtnis aufzubauen!) und kann sogar helfen komische Syntaxfehler zu vermeiden.</p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
@@ -90,15 +81,10 @@ and can even help avoid strange syntax errors.</p>
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function tells the turtle to move forward
-by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you
-want to rotate to the left. There is also <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
-<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.</p>
+<p>Die Funktion <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> weist die Schildkröte an, sich eine gewisse Distanz vorwärts zu bewegen.  <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> erwartet einen Winkel, den du nach links drehen willst. Es gibt außerdem noch <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> und <tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Want to start fresh? You can type <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> to clear the drawing
-that your <tt class="docutils literal"><span class="pre">turtle</span></tt> has made so far. We&#8217;ll go into more detail on
-<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> in just a bit.</p>
+<p class="last">Du willst neu anfangen? Du kannst <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> eintippen um die Zeichnungen, die deine <tt class="docutils literal"><span class="pre">turtle</span></tt> bisher gemacht hat, zu löschen. Wir werden <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> gleich detaillierter beleuchten.</p>
 </div>
 <p>Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt> eine richtige Schildkröte daraus machen:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
@@ -117,10 +103,7 @@ that your <tt class="docutils literal"><span class="pre">turtle</span></tt> has 
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Python is a programming language where horizontal indenting of text is
-important. We&#8217;ll learn all about this in the Functions chapter later on,
-but for now just keep in mind that stray spaces or tabs before any line
-of Python code can cause an unexpected error.</p>
+<p class="last">Python ist eine Programmiersprache in der horizontale Einrückung des Textes wichtig ist. Wir werden alles darüber später im Kapitel &#8220;Funktionen&#8221; lernen, behalte bis dahin im Kopf das herumirrende Leerzeichen oder Tabs vor einer Zeile Pythoncode einen unvorhergesehenen Fehler auslösen können.</p>
 </div>
 </div>
 <div class="section" id="drawing-a-square">
@@ -315,7 +298,7 @@ of Python code can cause an unexpected error.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.3a0 erstellt.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
     </div>
   </body>
 </html>

@@ -94,7 +94,7 @@
 <div class="section" id="opening-a-console-on-mac-os-x">
 <h3>Eine Konsole auf Mac OS X öffnen<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Die Standardkonsole in OS X heißt <strong class="program">Terminal</strong>.  Öffne Terminal indem du nach Applications navigierst, dann nach Utilities und dort doppelt auf das <strong class="program">Terminal</strong>-Programm klickst. Du kannst es auch durch die Systemsuche oben rechts suchen.</p>
-<p>Das Kommandozeilenterminal ist ein Werkzeug um mit Deinem Computer zu interagieren. Ein Fenste mit einer Nachricht und einem Prompt öffnet sich, ähnlich zu folgendem:</p>
+<p>Das Kommandozeilenterminal ist ein Werkzeug um mit Deinem Computer zu interagieren. Ein Fenster mit einer Nachricht und einem Prompt öffnet sich, ähnlich zu folgendem:</p>
 <div class="highlight-python"><div class="highlight"><pre>mycomputer:~ myusername$
 </pre></div>
 </div>
@@ -108,12 +108,7 @@
 </div>
 <div class="section" id="opening-a-console-on-windows">
 <h3>Eine Konsole unter Windows öffnen<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
-way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
-(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
-<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
-click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
-look like:</p>
+<p>Die Windows-Konsole wird Eingabeaufforderung genannt, oder <strong class="program">cmd</strong>. Ein leichter Weg zu ihr zu gelangen ist die Tastenkombination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt> (<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meint den Knopf mit dem Windows-Logo), welches den <em class="guilabel">Ausführen</em>-Dialog öffnen sollte. Gib dann <strong class="program">cmd</strong> ein und drück <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> oder klick auf <em class="guilabel">Ok</em>. Du kannst sie auch aus dem Startmenü heraussuchen. Sie sollte in etwa so aussehen:</p>
 <div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
 </pre></div>
 </div>
@@ -123,8 +118,7 @@ look like:</p>
 <div class="section" id="using-python">
 <h2>Python verwenden<a class="headerlink" href="#using-python" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>Das Pythonprogramm das du installiert hast agiert standardmäßig als etwas das sich <strong>Interpreter</strong> nennt. Ein Interpreter nimmt Befehle entgegen und führt sie dann aus &#8211; sehr praktisch um Dinge auszuprobieren.</p>
-<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, and you should
-enter Python&#8217;s Interpreter.</p>
+<p>Tippe in deiner Konsole <strong class="program">python</strong> ein, drücke <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> und der Python-Interpreter sollte starten.</p>
 <p>Um herauszufinden welche Version von Python du hast, benutz <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> um es dir sagen zu lassen.</p>
 <div class="section" id="interacting-with-python">
 <h3>Mit Python interagieren<a class="headerlink" href="#interacting-with-python" title="Permalink zu dieser Überschrift">¶</a></h3>
@@ -143,25 +137,20 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
-will bring you back to the interactive prompt, where you could enter
-another command:</p>
+<p>Drück <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> und schau was passiert. Nachdem das Ergebnis angezeigt wurde wird Python dich zurück zum interaktiven Prompt bringen, wo du einen anderen Befehl eingeben könntest:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="go">10</span>
 </pre></div>
 </div>
-<p>Ein ausserordentlich nützlicher Befehl ist &#8216;&#8217;help()&#8217;&#8216;, welcher die interne Hilfsfunktion von Python aufruft. Du kannst dort alles was Python kann innerhalb des Interpreters erkunden.</p>
-<p>Um die Python Shell zuverlassen, drücke :kbd:&#8217;Ctrl-Z&#8217; und :kbd:&#8217;Enter&#8217; unter Windows, oder :kbd:&#8217;Ctrl-D&#8217; unter OS X oder Linux. Alternativ kannst Du auch den Python-Befehl &#8216;&#8217;exit()&#8217;&#8217; ausführen.</p>
+<p>Ein extrem nützlicher Befehl ist <tt class="docutils literal"><span class="pre">help()</span></tt>, welcher eine Hilfefunktion startet um all die Dinge herauszufinden, die Python dich machen lässt, direkt im Interpreter. Drücke <tt class="kbd docutils literal"><span class="pre">q</span></tt> um das Hilfefenster wieder zu schließen</p>
+<p>Um die Python Shell zuverlassen, drücke <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> und <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> unter Windows, oder <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> unter OS X oder Linux. Alternativ kannst Du auch den Python-Befehl <tt class="docutils literal"><span class="pre">exit()</span></tt> ausführen.</p>
 </div>
 <div class="section" id="running-python-files">
 <h3>Pythonprogramme ausführen<a class="headerlink" href="#running-python-files" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Falls du viel Pythonquelltext auszuführen hast wirst du ihn in eine Datei speichern wollen damit du zum Beispiel kleine Stücke verändern kannst (einen Fehler beheben) und es nochmal ausführen kannst ohne den Rest wieder und wieder einzutippen. Stattdessen kannst du deinen Quelltext in eine Datei speichern und den Dateinamen an das <strong class="program">python</strong>-Programm liefern. Es wird dann diese Datei ausführen statt den interaktiven Interpreter auszuführen.</p>
-<p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
-with your favorite text editor and write the print command from above.  Now
-save that file. On Linux or OS X, you can also run <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
-an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
+<p><strong>Lass uns das ausprobieren</strong>. Erstelle eine Datei <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in deinem aktuellen Verzeichnis mit deinem Lieblingseditor und schreib den print-Befehl von oben. Jetzt speicher die Datei. Unter Linux und OS X kannst du auch <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> ausführen um eine leere Datei zu erstellen. Diese Datei mit Python auszuführen ist ganz einfach:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
@@ -170,10 +159,7 @@ an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <p class="last">Versichere dich, dass du dich in der Kommandozeile befindest, die du an <tt class="docutils literal"><span class="pre">$</span></tt> oder <tt class="docutils literal"><span class="pre">&gt;</span></tt> am Ende erkennst, nicht in Pythons (welche <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> hat).</p>
 </div>
 <p>Unter Windows solltest du doppelt auf die Pythondatei klicken können um sie auszuführen.</p>
-<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
-as before.  But this time, after Python finished executing all commands from
-that file it exits back to the system command prompt, instead of going back
-to the interactive shell.</p>
+<p>Wenn du jetzt <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> drückst, wird die Datei ausgeführt und du siehst ihre Ausgabe wie vorher. Aber diesmal, nachdem Python fertig ist all die Befehle aus der Datei auszuführen, wird es zur System-Eingabeaufforderung zurückkehren, statt zur interaktiven Shell zurückzugehen.</p>
 <p>Wir sind jetzt startklar und können mit der Schildkröte anfangen!</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
@@ -189,7 +175,7 @@ to the interactive shell.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warnung</p>
-<p class="last">Wenn Du mit dem Modul turtle experimentierst, vermeide es Deine Datei :<a class="reference external" href="file:'turtle.py">file:&#8217;turtle.py</a>&#8216; zu nennen &#8212; verwende lieber Namen wie :<a class="reference external" href="file:'quadrat.py">file:&#8217;quadrat.py</a>&#8216; oder :<a class="reference external" href="file:'rechteck.py">file:&#8217;rechteck.py</a>&#8216;. Andernfalls wird Python jedesmal wenn Du den Namen &#8216;&#8217;turtle&#8217;&#8217; verwendest, <em>Deine</em> Datei anstatt dem Modul turtle verwenden.</p>
+<p class="last">Wenn Du mit dem turtle-Modul experimentierst, vermeide es Deine Datei <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> zu nennen &#8212; verwende lieber Namen wie <tt class="file docutils literal"><span class="pre">quadrat.py</span></tt> oder :<a class="reference external" href="file:'rechteck.py">file:&#8217;rechteck.py</a>&#8216;. Andernfalls wird Python jedesmal wenn Du den Namen &#8216;&#8217;turtle&#8217;&#8217; verwendest, <em>Deine</em> Datei anstatt dem Modul turtle verwenden.</p>
 </div>
 </div>
 </div>
@@ -261,7 +247,7 @@ to the interactive shell.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.3a0 erstellt.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
     </div>
   </body>
 </html>
