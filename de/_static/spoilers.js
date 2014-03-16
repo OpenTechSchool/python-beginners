@@ -38,6 +38,6 @@
 (function ($) {
   $(document).ready(function() {
     'use strict';
-    $("h3:contains('Solution')").next().showHide();
+    $(".solution h3").next().showHide();
   });
 })(jQuery);

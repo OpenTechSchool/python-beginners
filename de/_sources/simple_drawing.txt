@@ -110,6 +110,8 @@ Draw a square as in the following picture:
 
 For a square you will probably need a right angle, which is 90 degrees.
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -183,6 +185,8 @@ Can you draw a rectangle too?
 
 .. image:: /images/rectangle.png
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -216,6 +220,8 @@ experiment with the angles between the individual squares.
 .. image:: /images/tiltedsquares.png
 
 The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.
+
+.. rst-class:: solution
 
 Solution
 --------

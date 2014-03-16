@@ -71,7 +71,7 @@
 <p>Die Schildkröte enthält eine nützliche Funktion die sagt ob grade gezeichnet wird oder nicht; &#8216;&#8217;turtle.isdown()&#8217;&#8216;. Diese Funktion liefert <em>True</em> falls die Schildkröte im Zeichenmodus ist. Wie wir bereits gesehen haben, schalten die Funktionen &#8216;&#8217;turtle.penup()&#8217;&#8217; und &#8216;&#8217;turtle.pendown()&#8217;&#8217; zwischen dem Modus zum Zeichnen beim Bewegen und dem Bewegungsmodus ohne Zeichnen hin und her.</p>
 <p>Können wir eine Funktion schreiben die nur vorwärts geht falls die Schildkröte nicht im Zeichenmodus ist?</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">stealthed_forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">turtle</span><span class="o">.</span><span class="n">isdown</span><span class="p">():</span>
@@ -98,7 +98,7 @@
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Weiter oben haben wir die Schildkröte in einem kreisförmigen Gefängnis eingesperrt. Diesmal werden wir ein Quadrat dazu verwenden. Falls die Schildkröte sich mehr als 100 Einheiten entlang der x- <em>oder</em> y-Achse vom Mittelpunkt entfernt, drehen wir sie zurück zur Mitte um.</p>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -176,7 +176,7 @@
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2 erstellt.
     </div>
   </body>
 </html>
