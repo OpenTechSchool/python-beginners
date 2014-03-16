@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -71,6 +70,7 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
+
 <span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -98,7 +98,7 @@
 <p>Dibuje una línea discontínua. Puede mover la tortuga sin que esta dibuje su movimiento usando la función <tt class="docutils literal"><span class="pre">turtle.penup();</span> <span class="pre">para</span> <span class="pre">que</span> <span class="pre">vuelva</span> <span class="pre">a</span> <span class="pre">dibujar,</span> <span class="pre">use</span> <span class="pre">la</span> <span class="pre">función</span> <span class="pre">``turtle.pendown()</span></tt>.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
@@ -138,7 +138,7 @@
 <h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Los cuadrados que hemos dibujado al comienzo de este tutorial tienen un montón de líneas de código repetidas. ¿Puede escribir un programa que dibuje cuadrados en menos líneas, utilizando loops?</p>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -149,13 +149,14 @@
 <div class="section" id="id3">
 <h3>Bonus<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Intente <em>anidar</em> loops, poniendo uno justo bajo (<em>dentro</em>) el otro, con algo de código de dibujo que se encuentre dentro de ambos. Acá puede ver cómo puede lucir:</p>
-<div class="highlight-python"><pre>for ...:
+<div class="highlight-python"><div class="highlight"><pre>for ...:
     for ...:
         # drawing code inside the inner loop goes here
         ...
     # you can put some code here to move
     # around after!
-    ...</pre>
+    ...
+</pre></div>
 </div>
 <p>Reemplace los <tt class="docutils literal"><span class="pre">...</span></tt> con su propio código, y vea si puede obtener algo divertido o interesante! <sup>Errores son estimulantes!</sup></p>
 </div>
@@ -168,7 +169,7 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Contenidos</a></h3>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Loops</a><ul>
 <li><a class="reference internal" href="#introduction">Introducción</a></li>
@@ -191,10 +192,10 @@
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="variables.html"
-                        title="Capítulo anterior">Variables</a></p>
+                        title="capítulo anterior">Variables</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="functions.html"
-                        title="Próximo capítulo">Funciones definidas por el usurario</a></p>
+                        title="próximo capítulo">Funciones definidas por el usurario</a></p>
 <div id="searchbox" style="display: none">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
@@ -204,7 +205,7 @@
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -226,7 +227,7 @@
     </div>
     <div class="footer">
         &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
-      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

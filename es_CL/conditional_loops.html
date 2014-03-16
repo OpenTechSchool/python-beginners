@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -83,14 +82,17 @@
 <p>La tortuga ha estado haciendo de las suyas nuevamente, robando licorerías y adeudando mucho dinero al hacer apuestas. Es hora de poner a la tortuga en una celda de la cual no pueda salir.</p>
 <p>Hagamos una nueva versión de <tt class="docutils literal"><span class="pre">forward()</span></tt>. Una que gire la tortuga a la dirección opuesta si trata de ir a más de 100 desde el origen. Necesitaremos un loop <tt class="docutils literal"><span class="pre">while</span></tt>, y algunas funciones nuevas de turtle:</p>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distancia de la tortuga al origen</li>
-<li><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - Ángulo para volver al origen</li>
-<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Establecer dirección de la tortuga</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distancia de la tortuga al origen</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - Ángulo para volver al origen</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Establecer dirección de la tortuga</p>
+</li>
 </ul>
 <p>Si lo desea, puede intentar jugar con turtle en el intérprete y usar estas funciones para verificar que hacen ellas exactamente.</p>
 <p>Ahora necesitará implementar la lógica de la prisión usando estas funciones, quizá con un loop <tt class="docutils literal"><span class="pre">while</span></tt> y un poco de lógica condicional. Es un poco complicado, pero ánimo! No tema consultar con algún profesor u otro estudiante.</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -115,7 +117,7 @@
 <p class="last">Para dibujar una espiral, la tortuga debe rotar con un valor constante y moverse adelante con un valor que se incremente.</p>
 </div>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
     <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
@@ -143,7 +145,7 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Contenidos</a></h3>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Loops Condicionales</a><ul>
 <li><a class="reference internal" href="#introduction">Introducción</a></li>
@@ -164,10 +166,10 @@
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="conditionals.html"
-                        title="Capítulo anterior">Sentencias Condicionales</a></p>
+                        title="capítulo anterior">Sentencias Condicionales</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="logical_operators.html"
-                        title="Próximo capítulo">Opreadores Lógicos</a></p>
+                        title="próximo capítulo">Opreadores Lógicos</a></p>
 <div id="searchbox" style="display: none">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
@@ -177,7 +179,7 @@
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -199,7 +201,7 @@
     </div>
     <div class="footer">
         &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
-      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

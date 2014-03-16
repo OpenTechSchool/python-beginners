@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -57,9 +56,12 @@
 <p>Programadores se pueden ver enfrentados a problemas muy complejos y abstractos,  pero una de las señales de un buen programador es que son un poco flojos. Ellos sólo se enfrentan a una cosa a la vez. Entonces se necesita una forma para dividir los problemas en problemas más pequeños, piezas separadas, que permitan enfocarse solamente en la pieza que se quiere resolver.</p>
 <p>Funciones son una forma de realizar esta abstracción en Python. Tomemos por ejemplo <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt>. <tt class="docutils literal"><span class="pre">reset</span></tt> es una función que llamamos en nuestra <tt class="docutils literal"><span class="pre">turtle</span></tt>, y que es de hacho una abstracción para un número de pasos, es decir:</p>
 <ul class="simple">
-<li>Borrar la superficie de dibujo.</li>
-<li>Establecer el ancho de línea y el color de vuelta a los valores por defecto.</li>
-<li>Mover la tortuga de vuelta a su posición inicial.</li>
+<li><p class="first">Borrar la superficie de dibujo.</p>
+</li>
+<li><p class="first">Establecer el ancho de línea y el color de vuelta a los valores por defecto.</p>
+</li>
+<li><p class="first">Mover la tortuga de vuelta a su posición inicial.</p>
+</li>
 </ul>
 <p>Pero, dado que todo el código se encuentra contenido en la función, no debemos preocuparnos acerca de estos detalles. Podemos simplemente <em>llamar</em> esta función y sabemos que hará lo que dice que hace por nosotros.</p>
 <p>Entonces - ¿cómo escribimos nuestras propias funciones?</p>
@@ -102,7 +104,7 @@
 <h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Escriba una función que dibuje un cuadrado. Puede usar esta fiunción para mejorar el programa de los cuadrados inclinados? Si usted cambia el programa para usar la función, es más fácil experimentar con él?</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
@@ -145,7 +147,7 @@
 <p class="last">Asegúrese que su función de hexágono devuelve a la tortuga exactamente a su posición y ángulo iniciales antes de que dibuje un nuevo hexágono. Esto hace más fácil el razonar como continuar.</p>
 </div>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -169,7 +171,7 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Contenidos</a></h3>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Funciones definidas por el usurario</a><ul>
 <li><a class="reference internal" href="#introduction">Introducción</a></li>
@@ -189,10 +191,10 @@
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="loops.html"
-                        title="Capítulo anterior">Loops</a></p>
+                        title="capítulo anterior">Loops</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="functions_parameters.html"
-                        title="Próximo capítulo">Funciones con parámetros</a></p>
+                        title="próximo capítulo">Funciones con parámetros</a></p>
 <div id="searchbox" style="display: none">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
@@ -202,7 +204,7 @@
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -224,7 +226,7 @@
     </div>
     <div class="footer">
         &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
-      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -56,20 +55,31 @@
 <h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Turtle es como una pizarra para dibujar.</p>
 <p>Tiene funciones como <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> y <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> que mueven la tortuga alrededor.</p>
-<p>Antes de poder usar turtle, debe ser importado (recomendamos jugar un poco con el intérprete interactivo primero, se requiere un poco de trabajo extra primero para hacerlo funcionar desde archivos):</p>
+<p>Before you can use turtle, you have to import it. We recommend playing around
+with it in the interactive interpreter first, as there is an extra bit of work
+required to make it work from files. Just go to your terminal and type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
 </div>
 <img alt="_images/default.png" src="_images/default.png" />
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">No ve nada en Mac OS? Verifique si se abrió una ventana nueva detrás de la línea de comandos.</p>
+<p class="last">Not seeing anything on Mac OS?  Try issuing a command like
+<tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> and looking if a new window opened behind your
+command line.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
 _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
 <span class="pre">python3-tk</span></tt></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">While it might be tempting to just copy and paste what&#8217;s written on
+this page into your terminal, we encourage you to type out each command.
+Typing gets the syntax under your fingers (building that muscle memory!)
+and can even help avoid strange syntax errors.</p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
@@ -79,7 +89,16 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>La función <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> le dice a la tortuga que se mueva adelante dada una distancia. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> toma un número de grados en que desee rotar a la izquierda. (Existen también las funciones <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.backward(...) para ir atrás y <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.right(...) para girar a la derecha).</p>
+<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function tells the turtle to move forward
+by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you
+want to rotate to the left. There is also <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
+<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Want to start fresh? You can type <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> to clear the drawing
+that your <tt class="docutils literal"><span class="pre">turtle</span></tt> has made so far. We&#8217;ll go into more detail on
+<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> in just a bit.</p>
+</div>
 <p>La tortuga estándar es sólo un triángulo. Eso no es divertido!. Transformemos el triángulo en tortuga con el comando <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
 </pre></div>
@@ -97,7 +116,10 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">Python es un lenguaje de programación donde la indentación horizontal del texto es importante. Aprenderemos todo acerca de esto luego en el capítulo sobre Funciones, pero por ahora tenga en mente que espacios o tabulaciones en cualquier línea del código Python pueden causar errores inesperados.</p>
+<p class="last">Python is a programming language where horizontal indenting of text is
+important. We&#8217;ll learn all about this in the Functions chapter later on,
+but for now just keep in mind that stray spaces or tabs before any line
+of Python code can cause an unexpected error.</p>
 </div>
 </div>
 <div class="section" id="drawing-a-square">
@@ -112,7 +134,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 <img alt="_images/square.png" src="_images/square.png" />
 <p>Para dibujar un cuadrado probablemente necesite ángulos rectos, que son 90 grados.</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -135,7 +157,8 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 <div class="admonition tip">
 <p class="first admonition-title">Truco</p>
 <p>Está viendo un error como este:</p>
-<div class="highlight-python"><pre>NameError: name 'turtle' is not defined</pre>
+<div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
+</pre></div>
 </div>
 <p class="last">cuando intenta ver la ayuda? En Python usted debe importar los nombres antes de poder referirse a ellos, por lo tanto en una nueva consola interactiva de Python debe ingresar <tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> antes que funcione <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt>.</p>
 </div>
@@ -157,7 +180,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 <p>Puede dibujar un rectángulo ahora?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solución<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -183,7 +206,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>La figura muestra tres giros de 20 grados. Puede intentar con 20, 30 y 40, por ejemplo.</p>
 </div>
-<div class="section" id="id5">
+<div class="solution section" id="id5">
 <h3>Solución<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
@@ -229,7 +252,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Contenidos</a></h3>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Dibujos simples con turtle (Tortuga)</a><ul>
 <li><a class="reference internal" href="#introduction">Introducción</a></li>
@@ -256,10 +279,10 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="getting_started.html"
-                        title="Capítulo anterior">Primeros Pasos</a></p>
+                        title="capítulo anterior">Primeros Pasos</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="variables.html"
-                        title="Próximo capítulo">Variables</a></p>
+                        title="próximo capítulo">Variables</a></p>
 <div id="searchbox" style="display: none">
   <h3>Búsqueda rápida</h3>
     <form class="search" action="search.html" method="get">
@@ -269,7 +292,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -291,7 +314,7 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
     </div>
     <div class="footer">
         &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
-      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>
