@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -101,7 +100,7 @@ with commas and giving them different names:</p>
 <p>Write a function that allows you to draw hexagons of any size you want, each
 time you call the function.</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -121,10 +120,10 @@ greater than two) of any side length. Get it to draw some different shapes.</p>
 <img alt="_images/shapes.png" src="_images/shapes.png" />
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">The sum of the internal angles of any shape is always 360 degrees!</p>
+<p class="last">The sum of the external angles of any shape is always 360 degrees!</p>
 </div>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
@@ -212,7 +211,7 @@ would instead be written <tt class="docutils literal"><span class="pre">turtle.l
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

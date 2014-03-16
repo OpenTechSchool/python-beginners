@@ -82,6 +82,8 @@ Write a function that draws a square. Could you use this function to improve the
 tilted squares program? If you change the program to use a function, is it easier
 to experiment with?
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -132,6 +134,9 @@ Give it a good go!
    Make sure your hexagon function returns your turtle to exactly the same 
    position and angle it was before it was asked to draw the hexagon. This 
    makes it easier to reason about.
+
+
+.. rst-class:: solution
 
 Solution
 --------
