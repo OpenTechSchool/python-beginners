@@ -1,0 +1,11 @@
+{%- if has_source %}
+  <h3>{{ _('This Page') }}</h3>
+  <ul class="this-page-menu">
+{%- if show_source and sourcename %}
+    <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+           rel="nofollow">{{ _('Show Source') }}</a></li>
+{%- endif %}
+    <li><a href="https://github.com/opentechschool/python-beginners/edit/master/source/{{ pagename }}.rst">
+           {{ _('Edit on Github') }}</a></li>
+  </ul>
+{%- endif %}
