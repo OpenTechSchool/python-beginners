@@ -33,6 +33,7 @@ You can also loop over elements of your choice::
     for i in 5, 7, 11, 13:
         print(i)
         total = total + i
+        
     print(total)
 
 Write this example out and run it with python, to check it works how you might 
@@ -76,6 +77,8 @@ movement by using the ``turtle.penup()`` function; to tell it to draw again,
 use ``turtle.pendown()``.
 
 .. image:: /images/dashed.png
+
+.. rst-class:: solution
 
 Solution
 --------
@@ -128,6 +131,8 @@ Exercise
 The squares we were drawing at the start of this tutorial had a lot of 
 repeated lines of code. Can you write out a square drawing program in fewer 
 lines by utilizing loops?
+
+.. rst-class:: solution
 
 Solution
 --------

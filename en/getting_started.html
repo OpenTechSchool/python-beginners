@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -109,9 +108,9 @@ programs to do things with your computer!</p>
 learn is how to use and interact with it. There are in fact many ways to do this;
 the first one to learn is to interact with python&#8217;s interpreter,
 using your <strong>operating system&#8217;s</strong> (OS) console.</p>
-<p>A <strong>console</strong> (or &#8216;terminal&#8217;, or &#8216;command prompt&#8217;) is a <em>textual</em> way to interact with
-your OS, just as the &#8216;desktop&#8217;, in conjuction with your mouse, is the <em>graphical</em>
-way to interact your system.</p>
+<p>A <strong>console</strong> (or &#8216;terminal&#8217;, or &#8216;command prompt&#8217;) is a <em>textual</em> way to
+interact with your OS, just as the &#8216;desktop&#8217;, in conjuction with your mouse,
+is the <em>graphical</em> way to interact your system.</p>
 <div class="section" id="opening-a-console-on-mac-os-x">
 <h3>Opening a console on Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Permalink to this headline">¶</a></h3>
 <p>OS X&#8217;s standard console is a program called <strong class="program">Terminal</strong>. Open Terminal by
@@ -121,7 +120,8 @@ search tool in the top right.</p>
 <p>The command line Terminal is a tool for interacting with your
 computer. A window will open with a command line prompt message,
 something like this:</p>
-<div class="highlight-python"><pre>mycomputer:~ myusername$</pre>
+<div class="highlight-python"><div class="highlight"><pre>mycomputer:~ myusername$
+</pre></div>
 </div>
 </div>
 <div class="section" id="opening-a-console-on-linux">
@@ -130,17 +130,20 @@ something like this:</p>
 console programs, usually referred to as a terminal. The exact terminal
 you start up, and how, can depend on your distribution. On Ubuntu, you will
 likely want to open <strong class="program">Gnome Terminal</strong>. It should present a prompt like this:</p>
-<div class="highlight-python"><pre>myusername@mycomputer:~$</pre>
+<div class="highlight-python"><div class="highlight"><pre>myusername@mycomputer:~$
+</pre></div>
 </div>
 </div>
 <div class="section" id="opening-a-console-on-windows">
 <h3>Opening a console on Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink to this headline">¶</a></h3>
-<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.
-An easy way to get to it is by using the key combination &#8220;Windows+R&#8221;
-(&#8216;Windows&#8217; meaning the windows logo button), which should open a &#8216;Run&#8217; dialog.
-Then type <tt class="kbd docutils literal"><span class="pre">cmd</span></tt> and hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> or click Ok. You can also search
-for it from the start menu. It should look like:</p>
-<div class="highlight-python"><pre>C:\Users\myusername&gt;</pre>
+<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
+way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
+(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
+<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
+click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
+look like:</p>
+<div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
+</pre></div>
 </div>
 <p>Window&#8217;s Command Prompt is not quite as powerful as its counterparts on Linux
 and OS X, so you might like to start the Python Interpreter (see just below)
@@ -153,17 +156,18 @@ in the Start menu.</p>
 <p>The python program that you have installed will by default act as something
 called an <strong>interpreter</strong>. An interpreter takes commands and runs them as you
 enter them - very handy for trying things out.</p>
-<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>, and you should
+<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, and you should
 enter Python&#8217;s Interpreter.</p>
 <p>To find out which version of python you&#8217;re running,
 use <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> to tell you.</p>
 <div class="section" id="interacting-with-python">
 <h3>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
 <p>After Python opens, it will show you some contextual information similar to this:</p>
-<div class="highlight-python"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
+<div class="highlight-python"><div class="highlight"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
 [GCC 4.8.0 20130502 (prerelease)] on linux
-Type "help", "copyright", "credits" or "license" for more information.
-&gt;&gt;&gt;</pre>
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -175,7 +179,7 @@ interactive Python interpeter session, also called the &#8220;Python shell&#8221
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Press <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> and see what happens. After showing the results, Python
+<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
 will bring you back to the interactive prompt, where you could enter
 another command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
@@ -185,7 +189,8 @@ another command:</p>
 </pre></div>
 </div>
 <p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
-to explore all the stuff python lets you do, right from the interpreter.</p>
+to explore all the stuff python lets you do, right from the interpreter.
+Press <tt class="kbd docutils literal"><span class="pre">q</span></tt> to close the help window and return to the Python prompt.</p>
 <p>To leave the interactive shell, press <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> and then
 <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> on Windows, or <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> on OS X or Linux. Alternatively,
 you could also run the python command <tt class="docutils literal"><span class="pre">exit()</span></tt>!</p>
@@ -200,8 +205,8 @@ Instead you can save your code to a file and pass a file name to the
 the interactive interpreter.</p>
 <p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
 with your favorite text editor and write the print command from above.  Now
-save that file. On Linux or OS X, you can also run <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to
-create an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
+save that file. On Linux or OS X, you can also run <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
+an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
@@ -211,7 +216,7 @@ create an empty file to edit. To run this file with python, it&#8217;s pretty ea
 <tt class="docutils literal"><span class="pre">&gt;</span></tt> at the end, not at python&#8217;s (which has <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> instead)!</p>
 </div>
 <p>On Windows you should also be able to double-click the Python file to run it.</p>
-<p>When pressing <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> now, the file is executed and you see the output
+<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
 as before.  But this time, after Python finished executing all commands from
 that file it exits back to the system command prompt, instead of going back
 to the interactive shell.</p>
@@ -224,7 +229,8 @@ running in the directory you saved the file in. You can use
 the system command line to change your active directory with the
 <strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;. On Windows,
 you might want something like:</p>
-<div class="highlight-python"><pre>&gt; cd Desktop\Python_Exercises</pre>
+<div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
+</pre></div>
 </div>
 <p>On Linux or OS X, you might want something like:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
@@ -283,6 +289,13 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
   <h4>Next topic</h4>
   <p class="topless"><a href="simple_drawing.html"
                         title="next chapter">Simple drawing with turtle</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="https://github.com/opentechschool/python-beginners/edit/master/source/getting_started.rst">
+           Edit on Github</a></li>
+       <li><a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+getting_started">
+           Report a problem</a></li>
+  </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -314,7 +327,7 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

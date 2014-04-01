@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -15,7 +14,7 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -57,23 +56,31 @@
 <p>Turtle is like a drawing board.</p>
 <p>It has functions like <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> which
 can move the turtle around.</p>
-<p>Before you can use turtle, you have to import it (we&#8217;d recommend playing around
-with it in the interactive interpreter first, there is an extra bit of work
-required to make it work from files):</p>
+<p>Before you can use turtle, you have to import it. We recommend playing around
+with it in the interactive interpreter first, as there is an extra bit of work
+required to make it work from files. Just go to your terminal and type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
 </div>
 <img alt="_images/default.png" src="_images/default.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Not seeing anything on Mac OS?  Try looking if a new window opened behind
-your command line.</p>
+<p class="last">Not seeing anything on Mac OS?  Try issuing a command like
+<tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> and looking if a new window opened behind your
+command line.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
 _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
-<span class="pre">python-tk</span></tt></p>
+<span class="pre">python3-tk</span></tt></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">While it might be tempting to just copy and paste what&#8217;s written on
+this page into your terminal, we encourage you to type out each command.
+Typing gets the syntax under your fingers (building that muscle memory!)
+and can even help avoid strange syntax errors.</p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
@@ -84,9 +91,15 @@ _tkinter&#8221;? Install the missing package with <tt class="docutils literal"><
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
 <p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function tells the turtle to move forward
-by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you want
-to rotate to the left. (There are <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
-<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.)</p>
+by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you
+want to rotate to the left. There is also <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
+<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Want to start fresh? You can type <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> to clear the drawing
+that your <tt class="docutils literal"><span class="pre">turtle</span></tt> has made so far. We&#8217;ll go into more detail on
+<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> in just a bit.</p>
+</div>
 <p>The standard turtle is just a triangle. That&#8217;s no fun! Let&#8217;s make it a turtle
 instead with the <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt> command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
@@ -113,7 +126,7 @@ until you click on it:</p>
 <p class="last">Python is a programming language where horizontal indenting of text is
 important. We&#8217;ll learn all about this in the Functions chapter later on,
 but for now just keep in mind that stray spaces or tabs before any line
-of Python code will cause an unexpected error.</p>
+of Python code can cause an unexpected error.</p>
 </div>
 </div>
 <div class="section" id="drawing-a-square">
@@ -134,7 +147,7 @@ from it!</p>
 <img alt="_images/square.png" src="_images/square.png" />
 <p>For a square you will probably need a right angle, which is 90 degrees.</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -167,9 +180,12 @@ key to exit the pager.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
 <p>Are you seeing an error like this:</p>
-<div class="highlight-python"><pre>NameError: name 'turtle' is not defined</pre>
+<div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
+</pre></div>
 </div>
-<p class="last">when trying to view help? In Python you have to import names before you can refer to them, so in a new Python interactive shell you&#8217;ll need to <tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> before <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> will work.</p>
+<p class="last">when trying to view help? In Python you have to import names before you
+can refer to them, so in a new Python interactive shell you&#8217;ll need to
+<tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> before <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> will work.</p>
 </div>
 <p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
@@ -194,7 +210,7 @@ list.</p>
 <p>Can you draw a rectangle too?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Solution<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -222,7 +238,7 @@ experiment with the angles between the individual squares.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.</p>
 </div>
-<div class="section" id="id5">
+<div class="solution section" id="id5">
 <h3>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
@@ -299,6 +315,13 @@ experiment with the angles between the individual squares.</p>
   <h4>Next topic</h4>
   <p class="topless"><a href="variables.html"
                         title="next chapter">Variables</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="https://github.com/opentechschool/python-beginners/edit/master/source/simple_drawing.rst">
+           Edit on Github</a></li>
+       <li><a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+simple_drawing">
+           Report a problem</a></li>
+  </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -330,7 +353,7 @@ experiment with the angles between the individual squares.</p>
     </div>
     <div class="footer">
         &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
   </body>
 </html>

@@ -48,6 +48,8 @@ Exercise
 If we have a variable called ``angle``, how could we use that to experiment
 much faster with our tilted squares program?
 
+.. rst-class:: solution
+
 Solution
 --------
 
