@@ -30,9 +30,7 @@ This workshop is written in the reStructuredText_ format. The
 It can be rendered to several output formats using Sphinx_. To do that, you 
 need to have the following Python packages installed:
 
-- docutils
-- Pygments
-- Sphinx
+- Sphinx (and its dependencies docutils and Pygments)
 - Fabric
 - sphinx-intl
 

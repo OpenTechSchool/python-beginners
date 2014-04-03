@@ -1,5 +1,3 @@
 Fabric
-Pygments
 Sphinx
-docutils
 sphinx-intl
