@@ -156,7 +156,7 @@ You can now enter some python code. Try::
 
 Press :kbd:`Enter` and see what happens. After showing the results, Python 
 will bring you back to the interactive prompt, where you could enter 
-another command::
+another command:
 
     >>> print("Hello world")
     Hello world
