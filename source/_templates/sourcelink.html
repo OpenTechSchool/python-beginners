@@ -5,9 +5,15 @@
     <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
            rel="nofollow">{{ _('Show Source') }}</a></li>
 {%- endif %}
-    <li><a href="https://github.com/opentechschool/python-beginners/edit/master/source/{{ pagename }}.rst">
-           {{ _('Edit on Github') }}</a></li>
-       <li><a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+{{ pagename|urlencode }}">
-           {{ _('Report a problem') }}</a></li>
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/{{ pagename }}.rst" title="{{ pagename }}.rst">
+        {{ _('Edit on Github') }}
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+{{ pagename|urlencode }}">
+        {{ _('Report a problem') }}
+      </a>
+    </li>
   </ul>
 {%- endif %}
