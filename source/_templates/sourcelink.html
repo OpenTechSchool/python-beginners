@@ -1,6 +1,5 @@
 {%- if has_source %}
-  <h3>{{ _('This Page') }}</h3>
-  <ul class="this-page-menu">
+  <ul id="sourcelink" class="list-inline">
 {%- if show_source and sourcename %}
     <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
            rel="nofollow">{{ _('Show Source') }}</a></li>

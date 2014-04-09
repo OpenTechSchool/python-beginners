@@ -33,6 +33,7 @@ need to have the following Python packages installed:
 - Sphinx (and its dependencies docutils and Pygments)
 - Fabric
 - sphinx-intl
+- sphinx-bootstrap-theme
 
 You can install these with pip using ``pip install -r requirements.txt``
 

@@ -1,3 +1,4 @@
 Fabric
 Sphinx
 sphinx-intl
+sphinx-bootstrap-theme
