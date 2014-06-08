@@ -15,7 +15,7 @@
 
         $(this).hide().data('hidden', true);
 
-        $(this).last().after('<button class="btn btn-warning _show_hide" type="button">' + options.showText + '</button>');
+        $(this).last().after('<button class="btn btn-info btn-sm _show_hide" type="button">' + options.showText + '</button>');
 
         $('._show_hide').click(function () {
             var me = $(this);
