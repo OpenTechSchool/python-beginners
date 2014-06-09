@@ -254,3 +254,29 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+from docutils.parsers import rst
+from docutils import nodes
+import subprocess
+import unicodedata
+
+class Contributors(rst.Directive):
+    _GIT_COMMAND = "git log --format=%aN"
+    def run(self):
+        try:
+            authors = set(subprocess.check_output(self._GIT_COMMAND.split()).splitlines())
+        except (AttributeError, OSError, subprocess.CalledProcessError), e:
+            import traceback; traceback.print_exc()
+            return []
+
+        bullet_list = nodes.bullet_list()
+        for author in sorted(authors):
+            author = unicodedata.normalize('NFC', author.decode('utf-8'))
+            bullet_list.append(nodes.list_item(author,
+                    nodes.paragraph(author, author)))
+
+        return [bullet_list]
+
+
+def setup(app):
+    app.add_directive('contributors', Contributors)

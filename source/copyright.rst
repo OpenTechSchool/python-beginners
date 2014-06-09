@@ -9,3 +9,14 @@ California, 94041, USA.
 
 .. |cc-by-sa| image:: /images/cc-by-sa.png
 .. centered:: |cc-by-sa|
+
+Contributors
+============
+
+The following people have contributed to this material, in alphabetical order:
+
+.. contributors::
+
+(This list is automatically generated from our `source repository`__.)
+
+__ https://github.com/opentechschool/python-beginners
