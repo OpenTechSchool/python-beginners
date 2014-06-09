@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Логические операторы &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Что дальше?" href="where_to_go.html" />
+    <link rel="prev" title="Условные циклы" href="conditional_loops.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Условные циклы</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Логические операторы</a><ul>
+<li><a class="reference internal" href="#introduction">Введение</a></li>
+<li><a class="reference internal" href="#negation-of-a-statement">Оператор отрицания</a><ul>
+<li><a class="reference internal" href="#exercise">Упражнение</a></li>
+<li><a class="reference internal" href="#solution">Решение</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#this-and-that-or-something-else">This and that or something else</a><ul>
+<li><a class="reference internal" href="#id1">Упражнение</a></li>
+<li><a class="reference internal" href="#id2">Решение</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="conditional_loops.html" title="Previous Chapter: Условные циклы">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="where_to_go.html" title="Next Chapter: Что дальше?">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="logical-operators">
+<h1>Логические операторы<a class="headerlink" href="#logical-operators" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Conditionals are a nice way to make decisions by asking if something equals
+<em>True</em> or not. But often one condition is not enough.
+We may want to take the opposite of our result. Or for instance if we want to
+make a decision upon <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> we have to combine
+them. This can be done with logical operators.</p>
+</div>
+<div class="section" id="negation-of-a-statement">
+<h2>Оператор отрицания<a class="headerlink" href="#negation-of-a-statement" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Если мы хотим сделать что-либо <em>ложным</em>, можно использовать <tt class="docutils literal"><span class="pre">not</span></tt>. Это логический оператор:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">x</span> <span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="exercise">
+<h3>Упражнение<a class="headerlink" href="#exercise" title="Ссылка на этот заголовок">¶</a></h3>
+<p>The turtle gives us a useful function to know if it is drawing or not:
+<tt class="docutils literal"><span class="pre">turtle.isdown()</span></tt>.  This function returns <em>True</em> if the turtle is drawing. As
+we have seen earlier, the function <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>
+toggle between drawing while moving, or just moving without a trace.</p>
+<p>Можно ли написать функцию, которая заставляет черепашку двигаться вперёд, если перо поднято?</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Решение<a class="headerlink" href="#solution" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">stealthed_forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">turtle</span><span class="o">.</span><span class="n">isdown</span><span class="p">():</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="this-and-that-or-something-else">
+<h2>This and that or something else<a class="headerlink" href="#this-and-that-or-something-else" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Два простых и понятных оператора: <tt class="docutils literal"><span class="pre">and</span></tt> (&#8220;и&#8221; в переводе с английского) и <tt class="docutils literal"><span class="pre">or</span></tt> (&#8220;или&#8221; в переводе с английского), которые делают ровно то, что и обозначают:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Использовать только один логический оператор не обязательно, можно комбинировать их как угодно.</p>
+<div class="section" id="id1">
+<h3>Упражнение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Earlier we put the turtle in a circular prison. This time let&#8217;s make
+it a box. If the turtle goes more than 100 in the X <em>or</em> Y axis then
+we turn the turtle back around to the center.</p>
+</div>
+<div class="solution section" id="id2">
+<h3>Решение<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+            <span class="ow">or</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span><span class="p">):</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/logical_operators.rst" title="logical_operators.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+logical_operators">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

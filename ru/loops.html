@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Циклы &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Функции, определяемые пользователем" href="functions.html" />
+    <link rel="prev" title="Переменные" href="variables.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Условные циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Циклы</a><ul>
+<li><a class="reference internal" href="#introduction">Введение</a></li>
+<li><a class="reference internal" href="#drawing-a-dashed-line">Рисуем пунктирную линию</a><ul>
+<li><a class="reference internal" href="#exercise">Упражнение</a></li>
+<li><a class="reference internal" href="#solution">Решение</a></li>
+<li><a class="reference internal" href="#bonus">Дополнительно</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#comments">Комментарии</a></li>
+<li><a class="reference internal" href="#more-efficient-squares">Оптимизируем генератор квадратов</a><ul>
+<li><a class="reference internal" href="#id1">Упражнение</a></li>
+<li><a class="reference internal" href="#id2">Решение</a></li>
+<li><a class="reference internal" href="#id3">Дополнительно</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="variables.html" title="Previous Chapter: Переменные">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions.html" title="Next Chapter: Функции, определяемые пользователем">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="loops">
+<h1>Циклы<a class="headerlink" href="#loops" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Иногда можно заметить, что в некоторых наших программах много повторяющихся кусков кода. Один из способов исправить это и сократить количество этих кусков — циклирование (или итерация, в буквальном переводе с английского <em>looping</em> — повторение). Для начала, <strong>попробуй запустить этот простой пример</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Sam&quot;</span><span class="p">,</span> <span class="s">&quot;Jill&quot;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Это невероятно полезно, если нам нужно повторить какие-либо действия несколько раз (не копируя при этом строчки кода) &#8212; скажем, во время рисования границ какой-либо фигуры пунктиром. Циклы могут быть и другими:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt>, but it takes on 10
+different values?</p>
+<p>Функцию <tt class="samp docutils literal"><span class="pre">range(n)</span></tt> можно назвать заменой для <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>. Чтобы побольше узнать о ней, можно воспользоваться встроенной справкой Python: введи <tt class="docutils literal"><span class="pre">help(range)</span></tt> (для выхода из справочной системы нажми <tt class="kbd docutils literal"><span class="pre">q</span></tt>).</p>
+<p>You can also loop over elements of your choice:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Скопируй и запусти этот пример, что проверить, правильно ли ты догадался насчёт того, что он делает.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Notice how above, the lines of code that are <em>looped</em>, are the ones that
+are <em>indented</em>. This is an important concept in Python - that&#8217;s how it
+knows which lines should be used in the <tt class="docutils literal"><span class="pre">for</span></tt> loop, and which come
+after, as part of the rest of your program. Use four spaces (hitting tab)
+to indent your code.</p>
+</div>
+<p>Sometimes you want to repeat some code a number of times, but don&#8217;t care about
+the value of the <tt class="docutils literal"><span class="pre">i</span></tt> variable; so it can be good practice to replace it
+with <tt class="docutils literal"><span class="pre">_</span></tt> instead. This signifies that we don&#8217;t care about its value, or
+don&#8217;t wish to use it. Here&#8217;s a simple example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You may or may not be wondering about the variable <tt class="docutils literal"><span class="pre">i</span></tt> - why is it used all
+the time above? Well, it simply stands for &#8220;index&#8221; and is one of the most
+common variable names ever found in code. But if you are looping over something
+other than just numbers, be sure to name it something better! For instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">drink</span> <span class="ow">in</span> <span class="n">list_of_beverages</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is immediately clearer to understand than if we had used <tt class="docutils literal"><span class="pre">i</span></tt>
+instead of <tt class="docutils literal"><span class="pre">drink</span></tt>.</p>
+</div>
+<div class="section" id="drawing-a-dashed-line">
+<h2>Рисуем пунктирную линию<a class="headerlink" href="#drawing-a-dashed-line" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Упражнение<a class="headerlink" href="#exercise" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Draw a dashed line.  You can move the turtle without the turtle drawing its
+movement by using the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function; to tell it to draw again,
+use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
+<img alt="_images/dashed.png" src="_images/dashed.png" />
+</div>
+<div class="solution section" id="solution">
+<h3>Решение<a class="headerlink" href="#solution" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Дополнительно<a class="headerlink" href="#bonus" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Can you make the dashes become larger as the line progresses?</p>
+<img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
+<div class="admonition hint">
+<p class="first admonition-title">Подсказка</p>
+<p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c"># write more code here</span>
+</pre></div>
+</div>
+<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the <strong>index</strong> variable or loop
+variable &#8212; to get increasing step sizes?</p>
+</div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Комментарии<a class="headerlink" href="#comments" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В примере выше, строка, начинающаяся с <tt class="docutils literal"><span class="pre">#</span></tt>, называется комментарием. В Python всё, что идёт за <tt class="docutils literal"><span class="pre">#</span></tt> до конца строки, игнорируется компьютером. Пользуйтесь комментариями, чтобы объяснить принципы работы вашей вашей программы без изменения поведения компьютера. А ещё с их помощью можно просто временно отключить или &#8220;закомментировать&#8221; несколько строчек кода.</p>
+<p>Комментарии также могут находиться в конце строки, как этот:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># tilt our next square slightly</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-efficient-squares">
+<h2>Оптимизируем генератор квадратов<a class="headerlink" href="#more-efficient-squares" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="id1">
+<h3>Упражнение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Программа для рисования квадратов, которую мы написали в начале учебника, содержит слишком много повторяющихся строчек кода. Можешь ли ты сократить её с помощью циклов?</p>
+</div>
+<div class="solution section" id="id2">
+<h3>Решение<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Дополнительно<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Try <em>nesting</em> loops, by putting one right under (<em>inside</em>) the other, with some
+drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
+<div class="highlight-python"><div class="highlight"><pre>for ...:
+    for ...:
+        # drawing code inside the inner loop goes here
+        ...
+    # you can put some code here to move
+    # around after!
+    ...
+</pre></div>
+</div>
+<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt>&#8216;s with your own code, and see if you can come up with
+something funny or interesting! <sup>Mistakes are encouraged!</sup></p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/loops.rst" title="loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

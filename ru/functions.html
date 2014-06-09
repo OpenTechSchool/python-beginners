@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Функции, определяемые пользователем &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Функции с параметрами" href="functions_parameters.html" />
+    <link rel="prev" title="Циклы" href="loops.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Циклы</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Условные циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Функции, определяемые пользователем</a><ul>
+<li><a class="reference internal" href="#introduction">Введение</a></li>
+<li><a class="reference internal" href="#a-function-for-a-square">Функция для рисования квадрата</a><ul>
+<li><a class="reference internal" href="#exercise">Упражнение</a></li>
+<li><a class="reference internal" href="#solution">Решение</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-for-a-hexagon">Функция для рисования шестиугольника</a><ul>
+<li><a class="reference internal" href="#id1">Упражнение</a></li>
+<li><a class="reference internal" href="#id2">Решение</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="loops.html" title="Previous Chapter: Циклы">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions_parameters.html" title="Next Chapter: Функции с параметрами">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="user-defined-functions">
+<h1>Функции, определяемые пользователем<a class="headerlink" href="#user-defined-functions" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В программировании часто приходится встречаться с достаточно сложными задачами, а, как известно, одна из характерных черт программистов — ленивость. Расправившись с трудностью один раз, они не хотят делать это вновь. Также тебе понадобится что-то, с помощью чего можно разбивать задачи на маленькие и независимые друг от друга кусочки, чтобы сфокусировать свои усилия над теми из них, которые тебе нужны.</p>
+<p>Функции &#8211; один из способов в Python выразить эту абстракцию. В качестве примера рассмотрим <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt>. <tt class="docutils literal"><span class="pre">reset</span></tt> &#8211; это функция, которая вызывает нашу черепашку (<tt class="docutils literal"><span class="pre">turtle</span></tt>) для выполнения некоторых действий, а именно:</p>
+<ul class="simple">
+<li><p class="first">Очищение доски для рисования.</p>
+</li>
+<li><p class="first">Возвращение ширины и цвета в исходное состояние.</p>
+</li>
+<li><p class="first">Возвращение черепашки в исходное положение</p>
+</li>
+</ul>
+<p>Но так как весь код заключён в функцию, нам не нужно беспокоиться о деталях. Мы просто <em>вызываем</em> её.</p>
+<p>Итак — как же написать её?</p>
+<p>Функции в Python могут быть определены ключевым словом <tt class="docutils literal"><span class="pre">def</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Определённая нами функция называется <tt class="docutils literal"><span class="pre">line_without_moving</span></tt> и она является абстракцией для двух шагов - движения вперёд и движения назад.</p>
+<p>Чтобы использовать её (или, как обычно говорят &#8220;вызвать её&#8221;), напиши её имя и круглые скобки сразу за ним:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Мы можем написать больше функций, чтобы избавиться от некоторых повторений:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">star_arm</span><span class="p">():</span>
+    <span class="n">line_without_moving</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">star_arm</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Важно</p>
+<p>В Python используются <em>отступы из пробелов/табуляций</em> для идентификации блоков кода, которые связаны друг с другом. Блок в Python&#8217;е (как показанное выше определение функции) должен иметь двоеточие в конце строки, а последующие команды &#8211; отступы (обычно, размером в 4 пробела). Блок заканчивается первой линией без отступа в начале строки.</p>
+<p>Это отличается от многих других языков программирования, в которых для определения связанных блоков кода используются специальные символы (такие как фигурные скобки <tt class="docutils literal"><span class="pre">{}</span></tt>)</p>
+<p class="last">Никогда не используй табуляцию для выделения своих блоков, только пробелы. Ты можешь &#8211; и должен &#8211; настроить свой редактор, чтобы тот вставлял 4 пробела, когда ты нажимаешь клавишу Tab</p>
+</div>
+</div>
+<div class="section" id="a-function-for-a-square">
+<h2>Функция для рисования квадрата<a class="headerlink" href="#a-function-for-a-square" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Упражнение<a class="headerlink" href="#exercise" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напиши функцию для рисования квадрата. Можешь ли ты использовать эту функцию для улучшения программы для рисования повёрнутых квадратов? Если ты внедришь в программу функции, с ней будет легче экспериментировать?</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Решение<a class="headerlink" href="#solution" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
+  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">tilted_square</span><span class="p">()</span>
+<span class="n">tilted_square</span><span class="p">()</span>
+<span class="n">tilted_square</span><span class="p">()</span>
+
+<span class="c"># bonus: you could have a separate function for drawing a square,</span>
+<span class="c"># which might be useful later:</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
+  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+  <span class="n">square</span><span class="p">()</span>
+
+<span class="c"># etc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-for-a-hexagon">
+<h2>Функция для рисования шестиугольника<a class="headerlink" href="#a-function-for-a-hexagon" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="id1">
+<h3>Упражнение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напишите функцию для рисования шестиугольника</p>
+<img alt="_images/hexagon.png" src="_images/hexagon.png" />
+<p>Теперь комбинируй эту функцию, чтобы нарисовать соты. Просто сделай однослойную картинку, как эта:</p>
+<img alt="_images/honeycomb.png" src="_images/honeycomb.png" />
+<p>Give it a good go!</p>
+<div class="admonition hint">
+<p class="first admonition-title">Подсказка</p>
+<p class="last">Make sure your hexagon function returns your turtle to exactly the same
+position and angle it was before it was asked to draw the hexagon. This
+makes it easier to reason about.</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Решение<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">hexagon</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You could also put the <tt class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></tt> portion in the
+function, but you better not call it <tt class="docutils literal"><span class="pre">hexagon</span></tt> in that case.  That&#8217;s
+misleading because it actually draws a hexagon and then advances to a position
+where another hexagon would make sense in order to draw a honeycomb.  If you
+ever wanted to reuse your hexagon function outside of honeycombs, that would be
+confusing.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/functions.rst" title="functions.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+functions">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Условные циклы &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Логические операторы" href="logical_operators.html" />
+    <link rel="prev" title="Условные операторы" href="conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Условные циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Условные циклы</a><ul>
+<li><a class="reference internal" href="#introduction">Введение</a></li>
+<li><a class="reference internal" href="#turtle-prison">Тюрьма для черепашки</a><ul>
+<li><a class="reference internal" href="#exercise">Упражнение</a></li>
+<li><a class="reference internal" href="#solution">Решение</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draw-a-spiral">Нарисуй спираль</a><ul>
+<li><a class="reference internal" href="#id1">Упражнение</a></li>
+<li><a class="reference internal" href="#id2">Решение</a></li>
+<li><a class="reference internal" href="#bonus">Дополнительно</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="conditionals.html" title="Previous Chapter: Условные операторы">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="logical_operators.html" title="Next Chapter: Логические операторы">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="conditional-loops">
+<h1>Условные циклы<a class="headerlink" href="#conditional-loops" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Условные циклы необходимы для повторения каких-либо действий в зависимости от логического значения условия. Если значение условия всегда остаётся положительным, то цикл может быть бесконечным, если оно с самого начала отрицательно, то цикл не будет выполнен. В Python условные циклы создаются с помощью оператора <tt class="docutils literal"><span class="pre">while</span></tt>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Include a period (.) when you are finished.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="s">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;next word: &#39;</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">&#39; &#39;</span> <span class="o">+</span> <span class="n">sentence</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Aha! You said:&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We call this part of the code the &#8216;conditional&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
+<p>Whether the conditional return True or not determines whether the code inside
+the <tt class="docutils literal"><span class="pre">while</span></tt> loop runs.</p>
+<p>Прочитай расположенный выше код и попробуй разобраться, что он делает (т. е. что будет сделано в результате его работы).</p>
+<p>Затем скопируй этот код в файл (например, <tt class="file docutils literal"><span class="pre">sentence.py</span></tt>), запусти, и проверь свои догадки.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Если ты используешь Python 2, замени <tt class="docutils literal"><span class="pre">input</span></tt> на <tt class="docutils literal"><span class="pre">raw_input</span></tt> для корректной работы программы.</p>
+</div>
+</div>
+<div class="section" id="turtle-prison">
+<h2>Тюрьма для черепашки<a class="headerlink" href="#turtle-prison" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Упражнение<a class="headerlink" href="#exercise" title="Ссылка на этот заголовок">¶</a></h3>
+<p>The turtle has been up to its usual tricks again, robbing liqour
+stores and building up huge gambling debts. It&#8217;s time for turtle to be
+put into a cell that it can&#8217;t get out of.</p>
+<p>Давайте сделаем новую версию <tt class="docutils literal"><span class="pre">forward()</span></tt>, которая будет поворачивать черепашку, если она слишком далеко (более, чем на 100) отойдёт от начала координатной сетки.  . Нам понадобится цикл <tt class="docutils literal"><span class="pre">while</span></tt> и несколько новых функций для черепашки:</p>
+<ul class="simple">
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Расстояние до черепашки от начала координат</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - Градусная мера угла для возвращения к началу координат</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Ручная установка направления черепашки</p>
+</li>
+</ul>
+<p>You could try playing with a turtle in the interpreter and using these
+functions to check exactly what they do, if you like.</p>
+<p>Now you will need to implement the prison logic using these turtle
+functions, perhaps a <tt class="docutils literal"><span class="pre">while</span></tt> loop and a bit of conditional logic.
+It&#8217;s a bit of a stretch but keep at it! Don&#8217;t be afraid to talk it out
+with a coach or another student.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Решение<a class="headerlink" href="#solution" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">angle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="draw-a-spiral">
+<h2>Нарисуй спираль<a class="headerlink" href="#draw-a-spiral" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Циклы могут быть прерваны командой <tt class="docutils literal"><span class="pre">break</span></tt>. Она особенно полезна, если ты пишешь <em>бесконечный цикл</em>, т.е. цикл, условие которого всегда истинно.</p>
+<div class="section" id="id1">
+<h3>Упражнение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напиши <tt class="docutils literal"><span class="pre">while</span></tt>-цикл для рисования спирали, условие которого всегда будет выполняться (т.е. бесконечный цикл), с прекращением выполнения по достижении черепашкой определённого расстояния от центра. Используй функцию <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt>, чтобы получить расстояние от черепашки до заданной точки.</p>
+<p>Чтобы сделать это, понадобятся функции <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> и <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt>, которые возвращают координаты (черепашки) X и Y соответственно.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Чтобы нарисовать спираль, черепашка должна поворачиваться на неизменяемую величину и двигаться вперёд на постоянно увеличивающееся расстояние</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Решение<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+    <span class="n">original_ycor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">original_xcor</span><span class="p">,</span> <span class="n">original_ycor</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+            <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Дополнительно<a class="headerlink" href="#bonus" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Can you make a conditional for this loop, so you don&#8217;t need the
+infinite loop <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></tt> or the <tt class="docutils literal"><span class="pre">break</span></tt>? Which version do you find
+easier to understand?</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/conditional_loops.rst" title="conditional_loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+conditional_loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

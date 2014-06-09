@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Функции с параметрами &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Условные операторы" href="conditionals.html" />
+    <link rel="prev" title="Функции, определяемые пользователем" href="functions.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Условные циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Функции с параметрами</a><ul>
+<li><a class="reference internal" href="#introduction">Введение</a></li>
+<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">Функция с параметрами для шестиугольника произвольного размера</a><ul>
+<li><a class="reference internal" href="#exercise">Упражнение</a></li>
+<li><a class="reference internal" href="#solution">Решение</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">Функция с несколькими параметрами</a><ul>
+<li><a class="reference internal" href="#id1">Упражнение</a></li>
+<li><a class="reference internal" href="#id2">Решение</a></li>
+<li><a class="reference internal" href="#bonus">Дополнительно</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="functions.html" title="Previous Chapter: Функции, определяемые пользователем">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="conditionals.html" title="Next Chapter: Условные операторы">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="functions-with-parameters">
+<h1>Функции с параметрами<a class="headerlink" href="#functions-with-parameters" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
+<p>As we shrink down our code and add functions to remove duplication, we
+are <em>factorizing</em> it. This is a good thing to do. But the functions we
+have defined so far are not very flexible. The variables are defined
+inside the function, so if we want to use a different angle or a
+distance then we need to write a new function. Our hexagon function can
+only draw one size of hexagon!</p>
+<p>That is why we need to be able to give parameters, also called
+<em>arguments</em>, to the function.  This way the <em>variables</em> in the
+function can have different values each time we call the function:</p>
+<p>Вспомни, как мы описали функцию <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> в предыдущей главе:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can improve it by giving it a parameter:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The parameter acts as a <em>variable</em> only known inside the function&#8217;s definition.
+We use the newly defined function by calling it with the value we want the
+parameter to have like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We have been using functions with parameters since the beginning of the
+tutorial with <tt class="docutils literal"><span class="pre">turtle.forward()</span></tt>, <tt class="docutils literal"><span class="pre">turtle.left()</span></tt>, etc...</p>
+<p>И мы можем вставить столько аргументов (или параметров), сколько захотим, дав им разные имена и разделив запятыми:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-parameterized-function-for-a-variable-size-hexagon">
+<h2>Функция с параметрами для шестиугольника произвольного размера<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Упражнение<a class="headerlink" href="#exercise" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напиши функцию для рисования шестиугольника, которая позволяет выбирать его размер при вызове.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Решение<a class="headerlink" href="#solution" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-of-several-parameters">
+<h2>Функция с несколькими параметрами<a class="headerlink" href="#a-function-of-several-parameters" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="id1">
+<h3>Упражнение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напиши функцию для рисования фигур с произвольным количеством (т. е. &gt;2) сторон любой длины и проверь её в деле.</p>
+<p>Пример рисования фигур с помощью этой функции:</p>
+<img alt="_images/shapes.png" src="_images/shapes.png" />
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Сумма внешних углов любой фигуры всегда равна 360 градусов!</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Решение<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">sides</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Дополнительно<a class="headerlink" href="#bonus" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Это может звучать немного безумно, но вполне возможно передать <em>функции</em> в качестве параметра другую функцию — Python обращается с ними так же, как и с переменными, числами и строками.</p>
+<p>For instance, you could create a shape drawing function which turned one way or another
+depending on which turtle function you passed to it - <tt class="docutils literal"><span class="pre">turtle.left</span></tt> or <tt class="docutils literal"><span class="pre">turtle.right</span></tt>.</p>
+<p>See if you can implement this!</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Passing a function (e.g <tt class="docutils literal"><span class="pre">turtle.left</span></tt>) is different than <em>calling</em> it, which
+would instead be written <tt class="docutils literal"><span class="pre">turtle.left(45)</span></tt>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/functions_parameters.rst" title="functions_parameters.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+functions_parameters">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

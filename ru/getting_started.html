@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Приступая к работе &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Авторские права" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Простое рисование с помощью черепашки" href="simple_drawing.html" />
+    <link rel="prev" title="Введение в программирование на Python" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Приступая к работе</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Простое рисование с помощью черепашки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Переменные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Функции, определяемые пользователем</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Функции с параметрами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Условные операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Условные циклы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Логические операторы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Что дальше?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Лицензия</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Приступая к работе</a><ul>
+<li><a class="reference internal" href="#what-you-ll-need">Что тебе потребуется</a><ul>
+<li><a class="reference internal" href="#a-python">Python!</a></li>
+<li><a class="reference internal" href="#and-a-code-editor">И редактор кода</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-is-python-exactly">Всё же, что такое Python?</a><ul>
+<li><a class="reference internal" href="#opening-a-console-on-mac-os-x">Открываем консоль в Mac OS X</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-linux">Открываем консоль в GNU/Linux</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-windows">Открываем консоль в Windows</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-python">Использование Python</a><ul>
+<li><a class="reference internal" href="#interacting-with-python">Взаимодействие с Python&#8217;ом</a></li>
+<li><a class="reference internal" href="#running-python-files">Запуск файлов с Python-кодом</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="index.html" title="Previous Chapter: Введение в программирование на Python">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="simple_drawing.html" title="Next Chapter: Простое рисование с помощью черепашки">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="getting-started">
+<h1>Приступая к работе<a class="headerlink" href="#getting-started" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="what-you-ll-need">
+<h2>Что тебе потребуется<a class="headerlink" href="#what-you-ll-need" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="a-python">
+<h3>Python!<a class="headerlink" href="#a-python" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Если у тебя ещё нет Python&#8217;а, ты можешь найти последние официальные установочные файлы здесь:</p>
+<p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
+<p>Будучи последним, Python 3 предпочтительнее!</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">На Windows можно добавить <strong class="program">Python</strong> в переменную &#8220;path&#8221;, чтобы её было легче найти. Для этого нужно перейти в каталог с установленным Python&#8217;ом (например, <tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>), открыть директорию  <tt class="file docutils literal"><span class="pre">Tools</span></tt>, потом — <tt class="file docutils literal"><span class="pre">Scripts</span></tt> и запустить двойным кликом файл <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>.</p>
+</div>
+</div>
+<div class="section" id="and-a-code-editor">
+<h3>И редактор кода<a class="headerlink" href="#and-a-code-editor" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Хороший редактор кода помогает читать и писать программы. Их много, а каждый программист выбирает подходящий для себя так же, как теннисист выбирает ракетку, а шеф-повар — нож. Начинающим больше подойдут несложные, незапутанные, но помогающие в работе, редакторы, например:</p>
+<ul class="simple">
+<li><p class="first"><a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>: простой, но проприетарный редактор, поддерживающий Windows, Mac и GNU/Linux. Сочетание клавиш Ctl+B запускает открытый файл.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.geany.org/">Geany</a>: простой в обращении и не перегруженный функциями редактор, работающий на Windows и GNU/Linux.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://macromates.com/">TextMate</a>: один из самых известных редакторов кода для Mac&#8217;ов, изначально бывший коммерческим продуктом, но позже ставший свободным и бесплатным.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://projects.gnome.org/gedit/">Gedit</a> и <a class="reference external" href="http://kate-editor.org/">Kate</a>: если ты используешь GNU/Linux с Gnome или KDE соответственно, то один из них должен быть предустановлен!</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.activestate.com/komodo-edit">Komodo Edit</a>: неплохой свободный редактор под Mac, Windows и GNU/Linux, основанный на более мощной Komodo IDE.</p>
+</li>
+</ul>
+<p>Если ты хочешь последовать нашим рекомендациям, для начала попробуй Sublime Text.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Wordpad, TextEdit, Notepad и Word &#8211; неподходящие текстовые редакторы.</p>
+</div>
+</div>
+</div>
+<div class="section" id="what-is-python-exactly">
+<h2>Всё же, что такое Python?<a class="headerlink" href="#what-is-python-exactly" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Python - это вещь, называемая <strong>языком программирования</strong>.  Она принимает текст (обычно называемый <strong>кодом</strong>), который ты написал, переводит его в инструкции для компьютера, которые затем исполняет. Мы будем учиться писать код, чтобы делать клёвые и полезные вещи. Отныне вы не обязаны использовать чужие программы, чтобы выполнять работу на компьютере!</p>
+<p>В действительности, Python &#8211; всего лишь ещё одна программа на твоём компьютере. Для начала нужно узнать, как использовать и взаимодействовать с ним. Существует много способов научиться этому, первый из которых &#8211; работать и интерпретатором Python, используя консоль <strong>операционной системы</strong> (ОС).</p>
+<p><strong>Консоль</strong> (&#8220;терминал&#8221;, &#8220;командная строка&#8221;) &#8211; это текстовый (в отличие от так называемых &#8220;окружений рабочего стола&#8221; (Desktop Environment, DE), работающих в связке с мышью) интерфейс для работы с ОС.</p>
+<div class="section" id="opening-a-console-on-mac-os-x">
+<h3>Открываем консоль в Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Стандартная консоль OS X зовётся <strong class="program">Терминалом</strong>, который можно найти с помощью поиска (правый верхний угол) по системе или в разделе Приложения -&gt; Утилиты .</p>
+<p>Командная строка Terminal — это инструмент для &#8220;общения&#8221; с компьютером. Открывшееся окно должно содержать сообщение-подсказку, что-то вроде этого:</p>
+<div class="highlight-python"><div class="highlight"><pre>mycomputer:~ myusername$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-linux">
+<h3>Открываем консоль в GNU/Linux<a class="headerlink" href="#opening-a-console-on-linux" title="Ссылка на этот заголовок">¶</a></h3>
+<p>В дистрибутивах GNU/Linux (Ubuntu, Fedora, Mint и т.д.) обычно уже установлены разные программы-консоли, обычно называемые терминалами. То, какой терминал установлен, зависит от используемого дистрибутива. Например, в Ubuntu это <strong class="program">Gnome Terminal</strong>. После запуска появляется приглашение вроде этого:</p>
+<div class="highlight-python"><div class="highlight"><pre>myusername@mycomputer:~$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-windows">
+<h3>Открываем консоль в Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
+way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
+(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
+<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
+click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
+look like:</p>
+<div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
+</pre></div>
+</div>
+<p>Командная строка Windows намного менее функциональна, чем её аналоги из GNU/Linux и OS X, потому лучше запускать интерпретатор Python&#8217;а (см. ниже) напрямую или с помощью программы IDLE, которая поставляется с Python&#8217;ом (найти её можно в меню &#8220;Пуск&#8221;).</p>
+</div>
+</div>
+<div class="section" id="using-python">
+<h2>Использование Python<a class="headerlink" href="#using-python" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Python-программа, установленная по умолчанию, называется <strong>интерпретатором</strong>. Интепретатор принимает команды и выполняет их после ввода. Очень удобно для тестирования чего-либо.</p>
+<p>Чтобы запустить интерпретатор, просто введи <strong class="program">python</strong> и нажми Enter.</p>
+<p>Чтобы узнать, какая версия Python запущена, используй <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt></p>
+<div class="section" id="interacting-with-python">
+<h3>Взаимодействие с Python&#8217;ом<a class="headerlink" href="#interacting-with-python" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Когда Python запустится, ты увидишь что-то вроде этого:</p>
+<div class="highlight-python"><div class="highlight"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
+[GCC 4.8.0 20130502 (prerelease)] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last"><strong>&gt;&gt;&gt;</strong> в последней строке означает, что сейчас мы находимся в интерактивном интерпретаторе Python, также называемом &#8220;Оболочкой Python (Python shell)&#8221;. <strong>Это не то же самое, и что обычная командная строка!</strong></p>
+</div>
+<p>Теперь ты можешь ввести немного Python-кода. Попробуй:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
+will bring you back to the interactive prompt, where you could enter
+another command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+<span class="go">Hello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+<p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
+to explore all the stuff python lets you do, right from the interpreter.
+Press <tt class="kbd docutils literal"><span class="pre">q</span></tt> to close the help window and return to the Python prompt.</p>
+<p>Чтобы выйти из интерактивной оболочки, нажми <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> и затем <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, если используешь Windows, и <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt>, если используешь GNU/Linux или OS X. Этого же можно добиться вводом Python-команды <tt class="docutils literal"><span class="pre">exit()</span></tt>.</p>
+</div>
+<div class="section" id="running-python-files">
+<h3>Запуск файлов с Python-кодом<a class="headerlink" href="#running-python-files" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Когда Python-кода становится слишком много, лучше записывать его в файлы. Это, например, позволит тебе редактировать отдельные части кода (исправлять ошибки) и тут же запускать их без необходимости перепечатывать текст. Просто сохрани код в файл, и передай его имя <strong class="program">python</strong>&#8216;у. Записанный в файл исходный код будет выполнен без запуска интерактивного интерпретатора.</p>
+<p><strong>Давай попробуем сделать это</strong>. С помощью своего любимого текстового редактора создай файл <tt class="file docutils literal"><span class="pre">hello.py</span></tt> в текущей директории и запиши в него программу команду, выводящую фразу &#8220;Hello world&#8221;, из примера выше. На GNU/Linux или OS X также можно выполнить команду <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt>, чтобы создать пустой файл для последующего редактирования. Выполнить сохранённую в файле программу проще простого:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Для начала убедись, что ты находишься в командной строке (на конце строк должны находиться символы <tt class="docutils literal"><span class="pre">$</span></tt> или <tt class="docutils literal"><span class="pre">&gt;</span></tt>, а  не <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt>, как в интерактивной оболочке Python).</p>
+</div>
+<p>В Windows нужно два раза кликнуть на пиктограмму файла, чтобы запустить его.</p>
+<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
+as before.  But this time, after Python finished executing all commands from
+that file it exits back to the system command prompt, instead of going back
+to the interactive shell.</p>
+<p>Теперь всё готово, и мы можем приступить к черепашке!</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
+file&#8221; or &#8220;No such file or directory?&#8221; Your command line might not be
+running in the directory you saved the file in. You can use
+the system command line to change your active directory with the
+<strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;. On Windows,
+you might want something like:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
+</pre></div>
+</div>
+<p>On Linux or OS X, you might want something like:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
+</pre></div>
+</div>
+<p class="last">This changes to the directory Python_Exercises under the Desktop folder
+(yours might be somewhere a bit different). If you don&#8217;t know the location
+of the directory where you saved the file, you can simply drag the
+directory to the command line window.  If you don&#8217;t know which
+directory your shell is currently running in use <strong class="command">pwd</strong>,
+which stands for &#8220;print working directory&#8221;.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Предупреждение</p>
+<p class="last">When playing around with turtle, avoid naming your file <tt class="file docutils literal"><span class="pre">turtle.py</span></tt>
+&#8212; rather use more appropriate names such as <tt class="file docutils literal"><span class="pre">square.py</span></tt> or
+<tt class="file docutils literal"><span class="pre">rectangle.py</span></tt>.  Otherwise, whenever you refer to <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python
+will pick up <em>your</em> file instead of the standard turtle.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/getting_started.rst" title="getting_started.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+getting_started">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
