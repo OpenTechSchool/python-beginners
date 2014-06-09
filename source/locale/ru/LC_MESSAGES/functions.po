@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# Артём Демаков <dearalcher@gmail.com>, 2013
+# sorrymak <dearalcher@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-23 10:58+0000\n"
-"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-06-04 13:28+0000\n"
+"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgid ""
 " sign of a good programmer is that they're lazy. They only like to deal with"
 " one thing at a time. So you need a way to break up problems into smaller, "
 "discrete pieces, which lets you focus on just the piece you want to."
-msgstr ""
+msgstr "В программировании часто приходится встречаться с достаточно сложными задачами, а, как известно, одна из характерных черт программистов — ленивость. Расправившись с трудностью один раз, они не хотят делать это вновь. Также тебе понадобится что-то, с помощью чего можно разбивать задачи на маленькие и независимые друг от друга кусочки, чтобы сфокусировать свои усилия над теми из них, которые тебе нужны."
 
 # 404bea48f9bc46d2813d46addf44959e
 #: ../../../source/functions.rst:12
@@ -71,7 +71,7 @@ msgstr "Но так как весь код заключён в функцию, �
 # 8fdfa9923176412cadacf83a1664f694
 #: ../../../source/functions.rst:23
 msgid "So - how to write your own?"
-msgstr ""
+msgstr "Итак — как же написать её?"
 
 # 69c11ba77acb4ea791f814c7002a2f12
 #: ../../../source/functions.rst:25
@@ -132,7 +132,7 @@ msgstr "Функция для рисования квадрата"
 
 # dfcd47ffdcd944f48f11ec1987a6cc09
 # c2ed3ecc64eb45c6918e57601759bb25
-#: ../../../source/functions.rst:79 ../../../source/functions.rst:118
+#: ../../../source/functions.rst:79 ../../../source/functions.rst:120
 msgid "Exercise"
 msgstr "Упражнение"
 
@@ -146,34 +146,34 @@ msgstr "Напиши функцию для рисования квадрата. 
 
 # 177b659f93b540eab20425cadefd5b40
 # 0cd1ab494fb540e5ae3dd94d3a7d469b
-#: ../../../source/functions.rst:86 ../../../source/functions.rst:137
+#: ../../../source/functions.rst:88 ../../../source/functions.rst:142
 msgid "Solution"
 msgstr "Решение"
 
 # d22ac731cdfb40a381277b47faefded0
-#: ../../../source/functions.rst:115
+#: ../../../source/functions.rst:117
 msgid "A function for a hexagon"
 msgstr "Функция для рисования шестиугольника"
 
 # ab71af3d201f4cf0a0f016b60653f397
-#: ../../../source/functions.rst:120
+#: ../../../source/functions.rst:122
 msgid "Write a function that draws a hexagon."
 msgstr "Напишите функцию для рисования шестиугольника"
 
 # 13452cd00bab458caafcf98f8ae88c9b
-#: ../../../source/functions.rst:124
+#: ../../../source/functions.rst:126
 msgid ""
 "Now combine that function into a honeycomb. Just make it with a single layer"
 " like this:"
 msgstr "Теперь комбинируй эту функцию, чтобы нарисовать соты. Просто сделай однослойную картинку, как эта:"
 
 # 58233cc905a449afa1d1365343d0643c
-#: ../../../source/functions.rst:128
+#: ../../../source/functions.rst:130
 msgid "Give it a good go!"
 msgstr ""
 
 # 0884a8c94ade405082054e7c977e239b
-#: ../../../source/functions.rst:132
+#: ../../../source/functions.rst:134
 msgid ""
 "Make sure your hexagon function returns your turtle to exactly the same "
 "position and angle it was before it was asked to draw the hexagon. This "
@@ -181,7 +181,7 @@ msgid ""
 msgstr ""
 
 # 8189b95016014d53a1fc92fee3f93dad
-#: ../../../source/functions.rst:151
+#: ../../../source/functions.rst:156
 msgid ""
 "You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
 "the function, but you better not call it ``hexagon`` in that case.  That's "

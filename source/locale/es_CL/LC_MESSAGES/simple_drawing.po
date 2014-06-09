@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-13 01:46+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-12 14:00+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,49 +43,68 @@ msgstr "Tiene funciones como ``turtle.forward(...)`` y ``turtle.left(...)`` que 
 # c3739f8052d94ed4b6822b65b4cb8dad
 #: ../../../source/simple_drawing.rst:12
 msgid ""
-"Before you can use turtle, you have to import it (we'd recommend playing "
-"around with it in the interactive interpreter first, there is an extra bit "
-"of work required to make it work from files)::"
-msgstr "Antes de poder usar turtle, debe ser importado (recomendamos jugar un poco con el intérprete interactivo primero, se requiere un poco de trabajo extra primero para hacerlo funcionar desde archivos)::"
+"Before you can use turtle, you have to import it. We recommend playing "
+"around with it in the interactive interpreter first, as there is an extra "
+"bit of work required to make it work from files. Just go to your terminal "
+"and type::"
+msgstr ""
 
 # 291d12b1145d42b897d279f02c0a1c4f
 #: ../../../source/simple_drawing.rst:22
 msgid ""
-"Not seeing anything on Mac OS?  Try looking if a new window opened behind "
-"your command line."
-msgstr "No ve nada en Mac OS? Verifique si se abrió una ventana nueva detrás de la línea de comandos."
+"Not seeing anything on Mac OS?  Try issuing a command like "
+"``turtle.forward(0)`` and looking if a new window opened behind your command"
+" line."
+msgstr ""
 
 # 0817dcde1807499e910a04062b41b53d
-#: ../../../source/simple_drawing.rst:27
+#: ../../../source/simple_drawing.rst:28
 msgid ""
 "Do you work with Ubuntu and get the error message \"No module named "
-"_tkinter\"? Install the missing package with ``sudo apt-get install python-"
-"tk``"
-msgstr "Trabaja con Ubuntu y obtiene el mensaje de error \"No existe el módulo llamado _tkinter\"? Instale el paquete faltante con ``sudo apt-get install python-tk``"
+"_tkinter\"? Install the missing package with ``sudo apt-get install "
+"python3-tk``"
+msgstr ""
+
+# 6029f253d9fa4a7a8c9cfa852a22e91e
+#: ../../../source/simple_drawing.rst:34
+msgid ""
+"While it might be tempting to just copy and paste what's written on this "
+"page into your terminal, we encourage you to type out each command. Typing "
+"gets the syntax under your fingers (building that muscle memory!) and can "
+"even help avoid strange syntax errors."
+msgstr ""
 
 # 89023039f3a7479bb0025b0947806f4b
-#: ../../../source/simple_drawing.rst:44
+#: ../../../source/simple_drawing.rst:52
 msgid ""
 "The ``turtle.forward(...)`` function tells the turtle to move forward by the"
 " given distance. ``turtle.left(...)`` takes a number of degrees which you "
-"want to rotate to the left. (There are ``turtle.backward(...)`` and "
-"``turtle.right(...)``, too.)"
-msgstr "La función ``turtle.forward(...)`` le dice a la tortuga que se mueva adelante dada una distancia. ``turtle.left(...)`` toma un número de grados en que desee rotar a la izquierda. (Existen también las funciones ``turtle.backward(...) para ir atrás y ``turtle.right(...) para girar a la derecha)."
+"want to rotate to the left. There is also ``turtle.backward(...)`` and "
+"``turtle.right(...)``, too."
+msgstr ""
+
+# 5e44e23c3c8a45ac9425e6d55f3486d6
+#: ../../../source/simple_drawing.rst:58
+msgid ""
+"Want to start fresh? You can type ``turtle.reset()`` to clear the drawing "
+"that your ``turtle`` has made so far. We'll go into more detail on "
+"``turtle.reset()`` in just a bit."
+msgstr ""
 
 # 320285cdad0b43e6ac14dfabee8a39ba
-#: ../../../source/simple_drawing.rst:49
+#: ../../../source/simple_drawing.rst:62
 msgid ""
 "The standard turtle is just a triangle. That's no fun! Let's make it a "
 "turtle instead with the ``turtle.shape()`` command::"
 msgstr "La tortuga estándar es sólo un triángulo. Eso no es divertido!. Transformemos el triángulo en tortuga con el comando ``turtle.shape()``:: "
 
 # ba7ab766da9f4bd6972ff1b7d43d8f04
-#: ../../../source/simple_drawing.rst:54
+#: ../../../source/simple_drawing.rst:67
 msgid "So much cuter!"
 msgstr "Mucho mejor!"
 
 # 7453a0b945fc4fa2967f65ddcde2d1ae
-#: ../../../source/simple_drawing.rst:56
+#: ../../../source/simple_drawing.rst:69
 msgid ""
 "If you put the commands into a file, you might have recognized that the "
 "turtle window vanishes after the turtle finished its movement.  (That is "
@@ -96,21 +115,21 @@ msgid ""
 msgstr "Si pone los comandos en un archivo, verá que la ventana de la tortuga desaparece una vez que la tortuga finaliza sus movimientos (Esto sucede porque Python finaliza una vez que la tortuga termina de moverse. Dado que la ventana de turtle pertenece a Python, también termina). Para prevenir que esto suceda, sólo debe agregar el comando ``turtle.exitonclick()`` al final de su archivo. Ahora la ventana permanecerá abierta hasta que haga click en ella::"
 
 # de9c12468cdf4a8f9917085982d278fb
-#: ../../../source/simple_drawing.rst:73
+#: ../../../source/simple_drawing.rst:86
 msgid ""
 "Python is a programming language where horizontal indenting of text is "
 "important. We'll learn all about this in the Functions chapter later on, but"
 " for now just keep in mind that stray spaces or tabs before any line of "
-"Python code will cause an unexpected error."
-msgstr "Python es un lenguaje de programación donde la indentación horizontal del texto es importante. Aprenderemos todo acerca de esto luego en el capítulo sobre Funciones, pero por ahora tenga en mente que espacios o tabulaciones en cualquier línea del código Python pueden causar errores inesperados."
+"Python code can cause an unexpected error."
+msgstr ""
 
 # b9f0ac7420224af2886d120bae1783a8
-#: ../../../source/simple_drawing.rst:79
+#: ../../../source/simple_drawing.rst:92
 msgid "Drawing a square"
 msgstr "Dibujando un cuadrado"
 
 # f9d7ddb4df8a499abe479e9bcc944956
-#: ../../../source/simple_drawing.rst:83
+#: ../../../source/simple_drawing.rst:96
 msgid ""
 "You're not always expected to know the anwer immediately. Learn by trial and"
 " error! Experiment, see what python does when you tell it different things, "
@@ -121,36 +140,36 @@ msgid ""
 msgstr "No se espera que conozca las respuestas de manera inmediata. Aprenda de intentos y errores! Experimente, vea lo que python hace cuando usted le dice diferentes cosas, que da hermosos (aunque a veces inesperados) resultados y que da errores. Si usted quiere seguir jugando con algo que haya aprendido que entrega resultados ineteresantes, está BIEN. No tema intentar y fallar y aprender de ello!"
 
 # 6f5ff545cbca402b90d7187043129b0a
-# 64ab29b1729f4c63bc0f84c08d4fc98f
-# 8d6b66da04384ab4a184374182c4ae4d
-#: ../../../source/simple_drawing.rst:92
-#: ../../../source/simple_drawing.rst:165
-#: ../../../source/simple_drawing.rst:196
+# 6f5ff545cbca402b90d7187043129b0a
+# 6f5ff545cbca402b90d7187043129b0a
+#: ../../../source/simple_drawing.rst:105
+#: ../../../source/simple_drawing.rst:182
+#: ../../../source/simple_drawing.rst:215
 msgid "Exercise"
 msgstr "Ejercicio"
 
 # 3809e2fa5a5b44aebd3d047cbe0899bf
-#: ../../../source/simple_drawing.rst:94
+#: ../../../source/simple_drawing.rst:107
 msgid "Draw a square as in the following picture:"
 msgstr "Dibuje un cuadrado como en la siguiente figura:"
 
 # 0e04b28694f749d189770899aec4890f
-#: ../../../source/simple_drawing.rst:98
+#: ../../../source/simple_drawing.rst:111
 msgid ""
 "For a square you will probably need a right angle, which is 90 degrees."
 msgstr "Para dibujar un cuadrado probablemente necesite ángulos rectos, que son 90 grados."
 
 # 8233a964515e44b08fffadba4ac340f5
-# fbadb818dfa943878b0e300aa218babe
-# e867a42366eb4279876be68085b3c693
-#: ../../../source/simple_drawing.rst:101
-#: ../../../source/simple_drawing.rst:172
-#: ../../../source/simple_drawing.rst:206
+# 8233a964515e44b08fffadba4ac340f5
+# 8233a964515e44b08fffadba4ac340f5
+#: ../../../source/simple_drawing.rst:116
+#: ../../../source/simple_drawing.rst:191
+#: ../../../source/simple_drawing.rst:227
 msgid "Solution"
 msgstr "Solución"
 
 # 575b479e71874431aa0c84e95f2440a6
-#: ../../../source/simple_drawing.rst:116
+#: ../../../source/simple_drawing.rst:131
 msgid ""
 "Notice how the turtle starts and finishes in the same place and facing the "
 "same direction, before and after drawing the square. This is a useful "
@@ -158,14 +177,14 @@ msgid ""
 msgstr "Note como la tortuga parte y termina en el mismo lugar y mirando en la misma dirección, antes y después de dibujar el cuadrado. Esta es una convención muy útil a seguir, ya que es más fácil dibujar múltiples figuras después."
 
 # 5eba8324c5fb47d5b6e524726ca5fb46
-# bffb1de170354c4992fcb9eeda2931bc
-#: ../../../source/simple_drawing.rst:122
-#: ../../../source/simple_drawing.rst:186
+# 5eba8324c5fb47d5b6e524726ca5fb46
+#: ../../../source/simple_drawing.rst:137
+#: ../../../source/simple_drawing.rst:205
 msgid "Bonus"
 msgstr "Bonus"
 
 # ac58d556cefc4978bdc549c3f9d38138
-#: ../../../source/simple_drawing.rst:124
+#: ../../../source/simple_drawing.rst:139
 msgid ""
 "If you want to get creative, you can modify your shape with the "
 "``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you use "
@@ -177,12 +196,12 @@ msgid ""
 msgstr "Si se quiere poner creativo, usted puede modificar la figura con las funciones ``turtle.width(...)`` y ``turtle.color(...)``. Cómo se usan estas funciones? Antes de usar una función debe conocer su *firma* (por ejemplo el número de parámetros y que significan). Para averiguar esto puede escribir  ``help(turtle.color)`` en la consola de Python. Si hay mucho texto, Python pondrá el texto de ayuda en un *paginador*, el cual permitirá ir arriba y abajo en las páginas. Presione la tecla :kbd:`q` para salir del paginador."
 
 # b8afd3f34c424a138e958cacb5a0fa6c
-#: ../../../source/simple_drawing.rst:135
+#: ../../../source/simple_drawing.rst:150
 msgid "Are you seeing an error like this::"
 msgstr "Está viendo un error como este::"
 
 # bee6bdd344c24696b90b7f117e64c2a7
-#: ../../../source/simple_drawing.rst:139
+#: ../../../source/simple_drawing.rst:154
 msgid ""
 "when trying to view help? In Python you have to import names before you can "
 "refer to them, so in a new Python interactive shell you'll need to ``import "
@@ -190,14 +209,14 @@ msgid ""
 msgstr "cuando intenta ver la ayuda? En Python usted debe importar los nombres antes de poder referirse a ellos, por lo tanto en una nueva consola interactiva de Python debe ingresar ``import turtle`` antes que funcione ``help(turtle.color)``."
 
 # 69acdc4c47f349c8a1bd921a3565bf1d
-#: ../../../source/simple_drawing.rst:141
+#: ../../../source/simple_drawing.rst:158
 msgid ""
 "Another way to find out about functions is to browse the `online "
 "documentation`_."
 msgstr "Otra forma de saber sobre funciones en buscar en la `documentación en línea`."
 
 # 7667c9ea4ef14fcc8329fd98be655ba1
-#: ../../../source/simple_drawing.rst:148
+#: ../../../source/simple_drawing.rst:165
 msgid ""
 "If you misdrew anything, you can tell turtle to erase its drawing board with"
 " the ``turtle.reset()`` directive or undo the most recent step with "
@@ -205,7 +224,7 @@ msgid ""
 msgstr "Si usted se equivoca, puede decirle a la tortuga que borre la pizarra con la directiva ``turtle.reset()`` o deshacer el último paso con ``turtle.undo()``."
 
 # b31ef2fc271e48c0920394ddbfd68fde
-#: ../../../source/simple_drawing.rst:154
+#: ../../../source/simple_drawing.rst:171
 msgid ""
 "As you might have read in the help, you can modify the color with "
 ":samp:`turtle.color({colorstring})`.  These include but are not limited to "
@@ -214,36 +233,36 @@ msgid ""
 msgstr "Como debe haber visto en la ayuda, puede modificar el color con :samp:`turtle.color({colorstring})`. Los colores pueden ser por ejemplo \"red\" (rojo), \"green\" (verde) y \"violet\" (violeta). Vea el `colours manual` (manual de colores) para una lista más extensiva."
 
 # 72aab17c9d09473f976f5430895b3644
-#: ../../../source/simple_drawing.rst:162
+#: ../../../source/simple_drawing.rst:179
 msgid "Drawing a rectangle"
 msgstr "Dibujando un rectángulo"
 
 # 436abbc6545e45219ba48cb0ece20683
-#: ../../../source/simple_drawing.rst:167
+#: ../../../source/simple_drawing.rst:184
 msgid "Can you draw a rectangle too?"
 msgstr "Puede dibujar un rectángulo ahora?"
 
 # 38fa0d3b153f430ab276217e423ddfbe
-#: ../../../source/simple_drawing.rst:188
+#: ../../../source/simple_drawing.rst:207
 msgid ""
 "How about a triangle? In an equilateral triangle (a triangle with all sides "
 "of equal length) each corner has an angle of 60 degrees."
 msgstr "Que tal un triángulo? En un triángulo equilátero (triángulo con todos sus lados del mismo largo) cada esquina tiene un ángulo de 60 grados. "
 
 # ed9f28c4baf3419ebac09b363a37f608
-#: ../../../source/simple_drawing.rst:193
+#: ../../../source/simple_drawing.rst:212
 msgid "More squares"
 msgstr "Más cuadrados"
 
 # 789ffe023eb9428eaeae684452ca6f52
-#: ../../../source/simple_drawing.rst:198
+#: ../../../source/simple_drawing.rst:217
 msgid ""
 "Now, draw a tilted square. And another one, and another one. You can "
 "experiment with the angles between the individual squares."
 msgstr "Ahora, dibuje un cuadrado inclinado. Y otro, y otro. Puede experimentar con los ángulos entre los diferentes cuadrados."
 
 # 7cf04200613d4ca08e39553d44499f96
-#: ../../../source/simple_drawing.rst:203
+#: ../../../source/simple_drawing.rst:222
 msgid ""
 "The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
 "example."

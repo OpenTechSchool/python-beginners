@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-14 01:01+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,14 +67,14 @@ msgid "You can also loop over elements of your choice::"
 msgstr "Puede también hacer un ciclo entre los elementos que escoja::"
 
 # 3da3b4e9c91347318018908166b6e30b
-#: ../../../source/loops.rst:38
+#: ../../../source/loops.rst:39
 msgid ""
 "Write this example out and run it with python, to check it works how you "
 "might expect."
 msgstr "Escriba el siguiente ejemplo y ejecútelo con Python, verifique que funciona como usted esperaba."
 
 # 419b4a124acb4eb59c15f22b56f01c7d
-#: ../../../source/loops.rst:43
+#: ../../../source/loops.rst:44
 msgid ""
 "Notice how above, the lines of code that are *looped*, are the ones that are"
 " *indented*. This is an important concept in Python - that's how it knows "
@@ -84,7 +84,7 @@ msgid ""
 msgstr "Note como arriba, las líneas de código que han sido *iteradas*, son las que estan *indentadas*. Esto es un concepto importante en Python - es así como sabe que líneas deben ser usadas en el loop ``for``, y que viene después, como parte del resto del programa. Use cuatro espacios (presionando Tab) para indentar el código."
 
 # 78984f3a1e8442cfa8a190d0e891d912
-#: ../../../source/loops.rst:49
+#: ../../../source/loops.rst:50
 msgid ""
 "Sometimes you want to repeat some code a number of times, but don't care "
 "about the value of the ``i`` variable; so it can be good practice to replace"
@@ -93,7 +93,7 @@ msgid ""
 msgstr "Algunas veces querrá repetir algún código un número de veces, pero no le importa el valor de la variable ``i``; entonces puede ser una buena práctica reemplazarla con ``_``. Esto significa que no nos interesa este valor, o no lo queremos usar. Acá hay un ejemplo simple::"
 
 # 871317829ed94000a175e3f14de9929d
-#: ../../../source/loops.rst:57
+#: ../../../source/loops.rst:58
 msgid ""
 "You may or may not be wondering about the variable ``i`` - why is it used "
 "all the time above? Well, it simply stands for \"index\" and is one of the "
@@ -103,25 +103,25 @@ msgid ""
 msgstr "Puede o no importarle la variable ``i`` - por qué es usada todo el tiempo arriba? bueno, simplemente representa \"índice\" y es uno de los nombres más comunes de variables encontrados en códigos. Pero si está haciendo un ciclo sobre otra cosa que no sean números, asegurese de darle un mejor nombre! Por ejemplo::"
 
 # 37f8ea014b43476ca95f290eb2bca3fb
-#: ../../../source/loops.rst:65
+#: ../../../source/loops.rst:66
 msgid ""
 "This is immediately clearer to understand than if we had used ``i`` instead "
 "of ``drink``."
 msgstr "Esto es claro de forma inmediata y se comprende mejor que si hubiésemos usado ``i`` en vez de  ``drink``. "
 
 # 6a8658daf4c747ce8dae0e01b03494dc
-#: ../../../source/loops.rst:69
+#: ../../../source/loops.rst:70
 msgid "Drawing a dashed line"
 msgstr "Dibujando una línea discontínua"
 
 # 227cdb5260a44d39a186ef36b46495d0
 # 811e324008784846b8ac8fa984cb2b27
-#: ../../../source/loops.rst:72 ../../../source/loops.rst:126
+#: ../../../source/loops.rst:73 ../../../source/loops.rst:129
 msgid "Exercise"
 msgstr "Ejercicio"
 
 # 0f7e6111e19948c2bf97205484a3cba2
-#: ../../../source/loops.rst:74
+#: ../../../source/loops.rst:75
 msgid ""
 "Draw a dashed line.  You can move the turtle without the turtle drawing its "
 "movement by using the ``turtle.penup()`` function; to tell it to draw again,"
@@ -130,40 +130,40 @@ msgstr "Dibuje una línea discontínua. Puede mover la tortuga sin que esta dibu
 
 # f3965d438fa44b27916970234463ea2f
 # 7e918f8e5bd7468c93f9fc02e3ad2fa9
-#: ../../../source/loops.rst:81 ../../../source/loops.rst:133
+#: ../../../source/loops.rst:84 ../../../source/loops.rst:138
 msgid "Solution"
 msgstr "Solución"
 
 # 5860c34b7d5a4bb5b5095d8a1472dd11
 # 112a159544464c73a08a63e7eb71691c
-#: ../../../source/loops.rst:92 ../../../source/loops.rst:142
+#: ../../../source/loops.rst:95 ../../../source/loops.rst:147
 msgid "Bonus"
 msgstr "Bonus"
 
 # f05832d1752c4fc3931b4cbc78badfab
-#: ../../../source/loops.rst:94
+#: ../../../source/loops.rst:97
 msgid "Can you make the dashes become larger as the line progresses?"
 msgstr "¿Puede hacer que los trazos se hagan cada vez más largos mientras la línea progresa?"
 
 # c89966a17ad8437aad6d66aedbd2396f
-#: ../../../source/loops.rst:100
+#: ../../../source/loops.rst:103
 msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
 msgstr "Se siente perdido? Revise ``i`` en cada iteración del ciclo::"
 
 # 6af92163948e42658b603d185d1d44b4
-#: ../../../source/loops.rst:106
+#: ../../../source/loops.rst:109
 msgid ""
 "Can you utilize ``i`` --- commonly called the **index** variable or loop "
 "variable --- to get increasing step sizes?"
 msgstr "Puede utilizar ``i`` --- comúnmente llamada la variable **índice** o variable del loop --- para incrementar los tamaños de los trazos?"
 
 # c844a09532cc4786b5bf06f2ec04e19b
-#: ../../../source/loops.rst:110
+#: ../../../source/loops.rst:113
 msgid "Comments"
 msgstr "Comentarios"
 
 # 933b062bdf944b3d9ed1f08ac92a867e
-#: ../../../source/loops.rst:112
+#: ../../../source/loops.rst:115
 msgid ""
 "In the example above, the line that starts with a ``#`` is called a comment."
 " In Python, anything that goes on a line after ``#`` is ignored by the "
@@ -173,17 +173,17 @@ msgid ""
 msgstr "En el ejemplo de arriba, la línea que parte con un ``#`` es llamada comentario. En Python, cualquier cosa que vaya en una linea después de un ``#`` es ignorado por el computador. Use comentarios para explicar que hace su programa, sin cambiar el comportamiento para el computador. Se pueden usar también para fácil y temporalmente deshabilitar o \"comentar\" algunas líneas de código."
 
 # 1168e1104a2f49a8b92d4947148d5cc4
-#: ../../../source/loops.rst:118
+#: ../../../source/loops.rst:121
 msgid "Comments can also go at the end of a line, like this::"
 msgstr "Los comentarios pueden ir también al final de una línea, por ejemplo::"
 
 # 11e97ad4978340f38f253f2dba5056c4
-#: ../../../source/loops.rst:123
+#: ../../../source/loops.rst:126
 msgid "More Efficient Squares"
 msgstr "Cuadrados más Eficientes"
 
 # cc655afb978f493c8053e667a368d764
-#: ../../../source/loops.rst:128
+#: ../../../source/loops.rst:131
 msgid ""
 "The squares we were drawing at the start of this tutorial had a lot of "
 "repeated lines of code. Can you write out a square drawing program in fewer "
@@ -191,14 +191,14 @@ msgid ""
 msgstr "Los cuadrados que hemos dibujado al comienzo de este tutorial tienen un montón de líneas de código repetidas. ¿Puede escribir un programa que dibuje cuadrados en menos líneas, utilizando loops?"
 
 # bed062fe01ed47d9b7e7795f6976e66a
-#: ../../../source/loops.rst:144
+#: ../../../source/loops.rst:149
 msgid ""
 "Try *nesting* loops, by putting one right under (*inside*) the other, with "
 "some drawing code that's inside both. Here's what it can look like::"
 msgstr "Intente *anidar* loops, poniendo uno justo bajo (*dentro*) el otro, con algo de código de dibujo que se encuentre dentro de ambos. Acá puede ver cómo puede lucir::"
 
 # 770ac4cbd02045699e112ac7f9e86d66
-#: ../../../source/loops.rst:155
+#: ../../../source/loops.rst:160
 msgid ""
 "Replace the ``...``'s with your own code, and see if you can come up with "
 "something funny or interesting! :sup:`Mistakes are encouraged!`"

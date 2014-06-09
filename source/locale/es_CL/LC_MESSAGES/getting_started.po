@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-01 00:38+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-06-09 01:05+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -198,15 +198,16 @@ msgstr "Abriendo una consola en Windows"
 # 73ea390ecaae4c38882f2390a941baca
 #: ../../../source/getting_started.rst:110
 msgid ""
-"Window's console is called the Command Prompt, named :program:`cmd`. An easy"
-" way to get to it is by using the key combination \"Windows+R\" ('Windows' "
-"meaning the windows logo button), which should open a 'Run' dialog. Then "
-"type :kbd:`cmd` and hit :kbd:`<Enter>` or click Ok. You can also search for "
-"it from the start menu. It should look like::"
-msgstr "La consola de Windows que ejecuta las lineas de comandos, se llama :program:`cmd`. Una forma fácil de ejecutarla es usando la combinación de teclas \"Windows+R\" ('Windows' se refiere al botón con el logo de Windows), lo que abrirá el diálogo de 'Ejecutar'. Entonces escriba :kbd:`cmd` y presione :kbd:`<Enter>` o haga click en Ok. Usted puede también buscarla desde el menú de inicio. Debería verse como::"
+"Window's console is called the Command Prompt, named :program:`cmd`.  An "
+"easy way to get to it is by using the key combination :kbd:`Windows+R` "
+"(:kbd:`Windows` meaning the windows logo button), which should open a "
+":guilabel:`Run` dialog.  Then type :program:`cmd` and hit :kbd:`Enter` or "
+"click :guilabel:`Ok`. You can also search for it from the start menu. It "
+"should look like::"
+msgstr ""
 
 # 00975157bbb6470ba6b42161c0112beb
-#: ../../../source/getting_started.rst:118
+#: ../../../source/getting_started.rst:119
 msgid ""
 "Window's Command Prompt is not quite as powerful as its counterparts on "
 "Linux and OS X, so you might like to start the Python Interpreter (see just "
@@ -215,12 +216,12 @@ msgid ""
 msgstr "La línea de comandos de Windows no es tan poderosa como sus contrapartes en Linux y OS X, es por esto que es preferible empezar con el Intérprete de Python (mire abajo) directamente, o usar la IDLE que viene con Python. Usted puede encontrarlos en el menú de inicio."
 
 # 88b64d41669d4c3cb45007b4cf9cbc66
-#: ../../../source/getting_started.rst:124
+#: ../../../source/getting_started.rst:125
 msgid "Using Python"
 msgstr "Usando Python"
 
 # eb182d26a08a47ad95358361b196b4cf
-#: ../../../source/getting_started.rst:126
+#: ../../../source/getting_started.rst:127
 msgid ""
 "The python program that you have installed will by default act as something "
 "called an **interpreter**. An interpreter takes commands and runs them as "
@@ -228,33 +229,33 @@ msgid ""
 msgstr "El programa python que usted a instalado actuará por defecto como algo llamado **intérprete**. Un intérprete toma los comandos y los ejecuta a medida que se ingresan - muy útil para realizar pruebas."
 
 # 12caf0c5291644169524d7e3a18eee2f
-#: ../../../source/getting_started.rst:130
+#: ../../../source/getting_started.rst:131
 msgid ""
-"Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you "
+"Just type :program:`python` at your console, hit :kbd:`Enter`, and you "
 "should enter Python's Interpreter."
-msgstr "Sólo escriba :program:`python` en su consola, presione :kbd:`<Enter>`, y debería entrar en el intérprete de Python."
+msgstr ""
 
 # 8bc6bc88b6ec4afba694b77e96414f50
-#: ../../../source/getting_started.rst:133
+#: ../../../source/getting_started.rst:134
 msgid ""
 "To find out which version of python you're running, use ``python -V`` to "
 "tell you."
 msgstr "Para saber que versión de python está usando, escriba ``python -V``, en la consola."
 
 # 5160c10493dc4a718e939162aa7cd93b
-#: ../../../source/getting_started.rst:137
+#: ../../../source/getting_started.rst:138
 msgid "Interacting With Python"
 msgstr "Interactuando con Python"
 
 # cd59dd78e3844309b01bf4e00b0daf45
-#: ../../../source/getting_started.rst:139
+#: ../../../source/getting_started.rst:140
 msgid ""
 "After Python opens, it will show you some contextual information similar to "
 "this::"
 msgstr "Después que abra Python, se mostrará alguna información contextual similar a lo siguiente::"
 
 # 1a91b243aa4e4263bc39e9bd8d5ee4ca
-#: ../../../source/getting_started.rst:148
+#: ../../../source/getting_started.rst:149
 msgid ""
 "The prompt **>>>** on the last line indicates that you are now in an "
 "interactive Python interpeter session, also called the \"Python shell\". "
@@ -262,27 +263,28 @@ msgid ""
 msgstr "El símbolo **>>>** en la última línea indica que usted se encuentra en la sesión del intérprete interactiva de Python, también llamada \"Python shell\". **Este es diferente del símbolo de sistema normal del terminal!**"
 
 # 0a9fc3bffc6b4978868f36475d6fda14
-#: ../../../source/getting_started.rst:152
+#: ../../../source/getting_started.rst:153
 msgid "You can now enter some python code. Try::"
 msgstr "Ahora usted puede ingresar algún código de python. Intente::"
 
 # 7deae132204445d78f010eb44a20fb64
-#: ../../../source/getting_started.rst:156
+#: ../../../source/getting_started.rst:157
 msgid ""
-"Press :kbd:`<Enter>` and see what happens. After showing the results, Python"
-" will bring you back to the interactive prompt, where you could enter "
-"another command::"
-msgstr "Presione :kbd:`<Enter>` y vea que sucede. Luego de entregar los resultados, Python devolverá la línea de comandos interactiva, donde usted puede ingresar otro comando::"
+"Press :kbd:`Enter` and see what happens. After showing the results, Python "
+"will bring you back to the interactive prompt, where you could enter another"
+" command:"
+msgstr ""
 
 # 6bff2421d33b4490befb472084dc2bb6
-#: ../../../source/getting_started.rst:165
+#: ../../../source/getting_started.rst:166
 msgid ""
 "An extremely useful command is ``help()``, which enters a help functionality"
-" to explore all the stuff python lets you do, right from the interpreter."
-msgstr "Un comando extremadamente útil es ``help()``, el cual ingresa a a la funcionalidad de ayuda para explorar todas las cosas que python le permite hacer, directamente desde el intérprete."
+" to explore all the stuff python lets you do, right from the interpreter. "
+"Press :kbd:`q` to close the help window and return to the Python prompt."
+msgstr ""
 
 # c277534357e444f7a701082f5acde3e1
-#: ../../../source/getting_started.rst:168
+#: ../../../source/getting_started.rst:170
 msgid ""
 "To leave the interactive shell, press :kbd:`Ctrl-Z` and then :kbd:`Enter` on"
 " Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, you could also "
@@ -290,12 +292,12 @@ msgid ""
 msgstr "Para abandonar la consola inetractiva, presione :kbd:`Ctrl-Z` y luego :kbd:`Enter` en Windows, o :kbd:`Ctrl-D` en OS X o Linux. Alternativamente, puede correr el comando de python ``exit()``!"
 
 # 6a91d5ee8cdc476186d9ace3c14c787c
-#: ../../../source/getting_started.rst:173
+#: ../../../source/getting_started.rst:175
 msgid "Running Python files"
 msgstr "Ejecutando archivos Python"
 
 # 4608a694116543009225a293177f0066
-#: ../../../source/getting_started.rst:175
+#: ../../../source/getting_started.rst:177
 msgid ""
 "When you have a lot of python code to run, you will want to save it into a "
 "file so, for instance, you can modify small parts of it (fix a bug) and re-"
@@ -306,45 +308,45 @@ msgid ""
 msgstr "Cuando usted tenga una gran cantidad de código python para ejecutar, querrá guardarlo en un archivo, entonces, por ejemplo, usted puede modificar pequeñas partes de él (corregir errores) y ejecutarlo nuevamente sin tener que re-escribir repetidamente el resto del código. Se puede entonces almacenar el código en un archivo y entregar el nombre del archivo al ejecutable :program:`python`. Este ejecutará el archivo en vez de lanzar el intérprete interactivo."
 
 # bcd98eb307b240ab870726f7b8d43923
-#: ../../../source/getting_started.rst:182
+#: ../../../source/getting_started.rst:184
 msgid ""
 "**Let's try that**.  Create a file :file:`hello.py` in your current "
 "directory with your favorite text editor and write the print command from "
-"above.  Now save that file. On Linux or OS X, you can also run :kbd:`touch "
-"hello.py` to create an empty file to edit. To run this file with python, "
+"above.  Now save that file. On Linux or OS X, you can also run ``touch "
+"hello.py`` to create an empty file to edit. To run this file with python, "
 "it's pretty easy:"
-msgstr "**Intentémos eso**. Cree un archivo llamado :file:`hello.py` en su directorio actual con su editor favorito y escriba el comando print de arriba. Ahora guarde el archivo. En Linux o OS X, usted puede ejecutar también :kbd:`touch hello.py` para crear un archivo vacío para editarlo. Ejecutar este archivo con python es muy fácil: "
+msgstr ""
 
 # 90bee73368b5411385af0f9a73fdb74e
-#: ../../../source/getting_started.rst:193
+#: ../../../source/getting_started.rst:195
 msgid ""
 "Make sure you are at your system command prompt, which will have ``$`` or "
 "``>`` at the end, not at python's (which has ``>>>`` instead)!"
 msgstr "Asegúrese de estar en la línea de comandos del sistema, el cual tendrá el símbolo ``$`` o ``>`` al final, no el símbolo del intérprete de python (que en cambio tiene ``>>>``)!"
 
 # 00b4de6700f04f1c881367c7e9972d9c
-#: ../../../source/getting_started.rst:196
+#: ../../../source/getting_started.rst:198
 msgid ""
 "On Windows you should also be able to double-click the Python file to run "
 "it."
 msgstr "En Windows usted podrá también hacer doble click sobre el archivo para ejecutarlo."
 
 # 6b39be00158940498926e0c9c02512f8
-#: ../../../source/getting_started.rst:198
+#: ../../../source/getting_started.rst:200
 msgid ""
-"When pressing :kbd:`<Enter>` now, the file is executed and you see the "
-"output as before.  But this time, after Python finished executing all "
-"commands from that file it exits back to the system command prompt, instead "
-"of going back to the interactive shell."
-msgstr "Cuando ahora presione :kbd:`<Enter>`, el archivo se ejecuta y usted ve la salida como antes. Pero esta vez, luego que Python termina de ejecutar todos los comandos del archivo vuelve a la línea de comandos del sistema, en vez de volver a la consola de comandos interactiva de python."
+"When pressing :kbd:`Enter` now, the file is executed and you see the output "
+"as before.  But this time, after Python finished executing all commands from"
+" that file it exits back to the system command prompt, instead of going back"
+" to the interactive shell."
+msgstr ""
 
 # 5af0071c2f304f7489599113a421d378
-#: ../../../source/getting_started.rst:203
+#: ../../../source/getting_started.rst:205
 msgid "And now we are all set and can get started with turtle!"
 msgstr "Y ahora tenemos todo preparado y podemos comenzar con tortuga!"
 
 # 65f249d2648841d282fa7fd6776bfeac
-#: ../../../source/getting_started.rst:207
+#: ../../../source/getting_started.rst:209
 msgid ""
 "Not getting \"Hello world\" but some crazy error about \"can't open file\" "
 "or \"No such file or directory?\" Your command line might not be running in "
@@ -354,12 +356,12 @@ msgid ""
 msgstr "El no obtener \"Hello world\", sino algún mensaje de error extraño acerca de \"no se puede abrir el archivo\" o \"No existe el archivo o directorio\", puede ser que su línea de comandos de sistema no está corriendo en el directorio en que guardó el archivo. Usted puede utilizar la línea de comandos del sistema para cambiar su directorio activo con el comando :command:`cd`, el cual significa \"cambiar directorio\". En Windows, usted puede querer hacer algo como:: "
 
 # 98c019765b69417884001378c597185b
-#: ../../../source/getting_started.rst:216
+#: ../../../source/getting_started.rst:218
 msgid "On Linux or OS X, you might want something like:"
 msgstr "En OS X o Linux, usted puede querer ejecutar algo como:"
 
 # da0b56ac855f4057ab5efeb381ba5c6e
-#: ../../../source/getting_started.rst:222
+#: ../../../source/getting_started.rst:224
 msgid ""
 "This changes to the directory Python_Exercises under the Desktop folder "
 "(yours might be somewhere a bit different). If you don't know the location "
@@ -370,7 +372,7 @@ msgid ""
 msgstr "Esto cambia al directorio Python_Exercises dentro del directorio Desktop (el suyo puede ser algo relativamente distinto). Si usted no conoce el directorio donde guardó el archivo, usted puede simplemente arrastrar el directorio a la ventana de la línea de comandos. Si usted no sabe en que directorio se encuentra actualmente ejecutando su consola, use el comando :command:`pwd` el cual significa \"imprima el directorio de trabajo\" por sus siglas en inglés."
 
 # ff10a396843948f9ba479889a13bf55b
-#: ../../../source/getting_started.rst:231
+#: ../../../source/getting_started.rst:233
 msgid ""
 "When playing around with turtle, avoid naming your file :file:`turtle.py` "
 "--- rather use more appropriate names such as :file:`square.py` or "

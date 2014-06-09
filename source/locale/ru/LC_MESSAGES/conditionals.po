@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# Артём Демаков <dearalcher@gmail.com>, 2013
+# sorrymak <dearalcher@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-20 13:18+0000\n"
-"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-04-27 15:14+0000\n"
+"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +46,7 @@ msgid ""
 " booleans. They allow logical operations. A logic statement or operation can"
 " be evaluated to be *True* or *False*. Our conditional statement can then be"
 " understood like this:"
-msgstr "Чтобы узнать, *Истинно* или *Ложно* значение, нужен новый тип информации: логический, описываемый логическими операторами. Любое логическое значение или логическая операция могут быть оценены как \"Истина\" или \"Ложь\". Условные выражения следует понимать так:"
+msgstr "Чтобы узнать, *истинно* или *ложно* условие, нужен новый тип информации: логический (булевый), описываемый логическими операторами. Любое логическое значение или логическая операция могут быть оценены как \"истина\" или \"ложь\". Условные выражения следует понимать так:"
 
 # df9289eacd1641e2a43ea2a25534e5c0
 #: ../../../source/conditionals.rst:20
@@ -74,7 +74,7 @@ msgid ""
 "The condition can be anything that evaluates as *True* or *False*. "
 "Comparisons always return *True* or *False*, for example ``==`` (equal to), "
 "``>`` (greater than), ``<`` (less than.)"
-msgstr ""
+msgstr "Условие может быть любым, имея значение *истина* или *ложь*. В результате сравнений (таких как ``==`` (равнозначно), ``>`` (больше чем), ``<`` (меньше чем)) всегда возвращается логическое значение."
 
 # 77c7b5b62fab41a580bbf8b711d4a2a0
 #: ../../../source/conditionals.rst:29
@@ -129,7 +129,7 @@ msgstr "Теперь, используя ``move()``, ты можешь выбр�
 # 93a25c13d04147449bec02723b02181b
 #: ../../../source/conditionals.rst:81
 msgid "\"data munging\""
-msgstr ""
+msgstr "Преобразование данных (\"data munging\")"
 
 # f783026a116745d48f6abd395d97c2ce
 #: ../../../source/conditionals.rst:83
@@ -155,7 +155,7 @@ msgid ""
 "Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
 "function, to see the effect. We often call this kind of code \"data "
 "munging\", and it is very common."
-msgstr ""
+msgstr "Попробуй добавить ``direction = direction.strip().lower()`` в функцию ``move()`` и посмотри, что получилось. Это называется преобразованием данных (\"data munging\") и очень часто используется в различных программах."
 
 # d26798a24e044d399280f7d78a8becea
 #: ../../../source/conditionals.rst:103

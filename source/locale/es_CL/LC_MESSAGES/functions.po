@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-14 15:46+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -132,7 +132,7 @@ msgstr "Una función para un cuadrado"
 
 # dfcd47ffdcd944f48f11ec1987a6cc09
 # c2ed3ecc64eb45c6918e57601759bb25
-#: ../../../source/functions.rst:79 ../../../source/functions.rst:118
+#: ../../../source/functions.rst:79 ../../../source/functions.rst:120
 msgid "Exercise"
 msgstr "Ejercicio"
 
@@ -146,34 +146,34 @@ msgstr "Escriba una función que dibuje un cuadrado. Puede usar esta fiunción p
 
 # 177b659f93b540eab20425cadefd5b40
 # 0cd1ab494fb540e5ae3dd94d3a7d469b
-#: ../../../source/functions.rst:86 ../../../source/functions.rst:137
+#: ../../../source/functions.rst:88 ../../../source/functions.rst:142
 msgid "Solution"
 msgstr "Solución"
 
 # d22ac731cdfb40a381277b47faefded0
-#: ../../../source/functions.rst:115
+#: ../../../source/functions.rst:117
 msgid "A function for a hexagon"
 msgstr "Una función para un Hexágono"
 
 # ab71af3d201f4cf0a0f016b60653f397
-#: ../../../source/functions.rst:120
+#: ../../../source/functions.rst:122
 msgid "Write a function that draws a hexagon."
 msgstr "Escriba una función que dibuje un hexágono."
 
 # 13452cd00bab458caafcf98f8ae88c9b
-#: ../../../source/functions.rst:124
+#: ../../../source/functions.rst:126
 msgid ""
 "Now combine that function into a honeycomb. Just make it with a single layer"
 " like this:"
 msgstr "Ahora utilizando esa función construya una colmena. Hágala solamente con una capa, como la que sigue:"
 
 # 58233cc905a449afa1d1365343d0643c
-#: ../../../source/functions.rst:128
+#: ../../../source/functions.rst:130
 msgid "Give it a good go!"
 msgstr "Usted puede hacerlo!"
 
 # 0884a8c94ade405082054e7c977e239b
-#: ../../../source/functions.rst:132
+#: ../../../source/functions.rst:134
 msgid ""
 "Make sure your hexagon function returns your turtle to exactly the same "
 "position and angle it was before it was asked to draw the hexagon. This "
@@ -181,7 +181,7 @@ msgid ""
 msgstr "Asegúrese que su función de hexágono devuelve a la tortuga exactamente a su posición y ángulo iniciales antes de que dibuje un nuevo hexágono. Esto hace más fácil el razonar como continuar."
 
 # 8189b95016014d53a1fc92fee3f93dad
-#: ../../../source/functions.rst:151
+#: ../../../source/functions.rst:156
 msgid ""
 "You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "
 "the function, but you better not call it ``hexagon`` in that case.  That's "

@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# Артём Демаков <dearalcher@gmail.com>, 2013
+# sorrymak <dearalcher@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-23 10:44+0000\n"
-"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2013-12-16 14:59+0000\n"
+"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +43,7 @@ msgid ""
 "now on, whenever you refer to a variable, you actually mean something else. "
 "That concept might be familiar from symbolic maths, where you would write: "
 "*Let x be 5.* Then *x \\* 2* will obviously be *10*."
-msgstr "Здесь **переменные** и вступают в игру. Можно сообщить Python'у, что отныне при обращении к переменной имеется в виду что-то другое. Ты наверняка узнал об этом из символической математики, где можно написать: *Пусть x равняется 5.* Тогда. очевидно, *x \\* 2* будет равняться 10."
+msgstr "Это **переменные**. Можно сообщить Python'у, что отныне при обращении к переменной имеется в виду что-то другое. Это похоже на символическую математику, где можно написать: *Пусть x равняется 5.* Тогда. очевидно, *x \\* 2* будет равняться 10."
 
 # fa0a962bd37d4e8eb7ba0ee69b28e8ee
 #: ../../../source/variables.rst:16
@@ -55,7 +55,7 @@ msgstr "С помощью Python'а сиё можно записать так::"
 msgid ""
 "After that statement, if you do ``print(x)``, it will actually output its "
 "value --- 5.  Well, can use that for your turtle too::"
-msgstr "После этого, если ты выполнишь ``print(x)``, будет выведено значение переменной --- 5. Но, возможно, нашей черепашке настолько широкие возможности не нужны:"
+msgstr "После этого, если ты выполнишь ``print(x)``, будет выведено значение переменной --- 5. x можно задействовать и в обращении к черепашке::"
 
 # 41ee9fc89f5b45a8b560e9c5ddf7b512
 #: ../../../source/variables.rst:25
@@ -65,7 +65,7 @@ msgid ""
 "Strings are indicated with a starting and a leading ``\"`` (double quote). "
 "You'll learn about this and other types, as those are called in Python, and "
 "what you can do with them later on."
-msgstr "Переменные могут быть чем угодно, не только числами. Типичной вещью, хранящейся в переменной, является **строка** - строка текста. Строки можно распознать по двойным кавычкам, с которых они начинаются и которыми они заканчиваются. Позже ты узнаешь больше об этом и других типах данных, их применении и о том, как они называются в Python."
+msgstr "Переменные могут быть чем угодно, не только числами. Типичной вещью, хранящейся в переменной, является **строка** - строка текста. Строки можно распознать по двойным кавычкам, с которых они начинаются и которыми они заканчиваются. Позже ты узнаешь больше об этом и других типах данных, их применении, и о том, как они называются в Python."
 
 # 6023dfa68c764ea991ca7a7912e7bceb
 #: ../../../source/variables.rst:31
@@ -86,7 +86,7 @@ msgstr "Переменная, зовущаяся углом"
 
 # 341a0b4eab9c4060983a009910f9912b
 # c7f79c6a0e3f438c8cbddaeac9e3b967
-#: ../../../source/variables.rst:46 ../../../source/variables.rst:83
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:85
 msgid "Exercise"
 msgstr "Упражнение"
 
@@ -95,40 +95,40 @@ msgstr "Упражнение"
 msgid ""
 "If we have a variable called ``angle``, how could we use that to experiment "
 "much faster with our tilted squares program?"
-msgstr "Как мы можем ускорить работу с нашей программой для рисования повёрнутых квадратов, имея переменную ``angle``?"
+msgstr "Как мы можем ускорить работу с нашей программой для рисования накренившихся квадратов, имея переменную ``angle``?"
 
 # 4f5e8724e9bf47bb9a308c96b099e1bd
-#: ../../../source/variables.rst:52
+#: ../../../source/variables.rst:54
 msgid "Solution"
 msgstr "Решение"
 
 # e5cc56f2272342e2a9817063d345d126
-#: ../../../source/variables.rst:72
+#: ../../../source/variables.rst:74
 msgid "... and so on"
 msgstr "... и так далее."
 
 # f88b19f8666e4f3699d3fa8a1d16eeeb
-#: ../../../source/variables.rst:75
+#: ../../../source/variables.rst:77
 msgid "Bonus"
 msgstr "Дополнительно"
 
 # 1af525ffffc44dba842bbaac6875a109
-#: ../../../source/variables.rst:77
+#: ../../../source/variables.rst:79
 msgid "Can you apply that principle to the size of the squares, too?"
 msgstr "Можешь ли ты проделать то же самое с размером квадрата?"
 
 # 860b1520bc564aae8f16cbeaf5723c13
-#: ../../../source/variables.rst:80
+#: ../../../source/variables.rst:82
 msgid "The house of santa claus"
 msgstr "Домик Деда Мороза"
 
 # 1d280501f67a473aad5e0d4531953a0d
-#: ../../../source/variables.rst:85
+#: ../../../source/variables.rst:87
 msgid "Draw a house."
-msgstr "Рисуем домик"
+msgstr "Нарисуй домик."
 
 # cf4fc858e79b449fbfe315cf438b5e39
-#: ../../../source/variables.rst:89
+#: ../../../source/variables.rst:91
 msgid ""
 "You can calculate the length of the diagonal line with the Pythagorean "
 "theorem. That value is a good candidate to store in a variable. To calculate"

@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-17 18:55+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +53,7 @@ msgstr "Si queremos que algo sea *False* podemos usar ``not``. Es un operador l�
 # 98497a179d5d4026bd2f78d00bef5db5
 # 13525c7015f848e89385f50b6344f0e5
 #: ../../../source/logical_operators.rst:26
-#: ../../../source/logical_operators.rst:64
+#: ../../../source/logical_operators.rst:66
 msgid "Exercise"
 msgstr "Ejercicio"
 
@@ -74,32 +74,32 @@ msgstr "Podemos escribir una función que permita ir adelante solamente si el l�
 
 # 8ec37a98bbce4ccd9ce82d3d6657f779
 # 79c8613a80fb446d937f63207d57126b
-#: ../../../source/logical_operators.rst:36
-#: ../../../source/logical_operators.rst:71
+#: ../../../source/logical_operators.rst:38
+#: ../../../source/logical_operators.rst:75
 msgid "Solution"
 msgstr "Solución"
 
 # 479b73f64ea14a6984e626cfb3c1b620
-#: ../../../source/logical_operators.rst:46
+#: ../../../source/logical_operators.rst:48
 msgid "This and that or something else"
 msgstr "Esto, aquello u otra cosa"
 
 # d77af2e96f3840fe90850c25a0981881
-#: ../../../source/logical_operators.rst:48
+#: ../../../source/logical_operators.rst:50
 msgid ""
 "Two easy to understand operators are ``and`` and ``or``. They do exactly "
 "what they sound like:::"
 msgstr "Dos operadores fáciles de entender son ``and`` y ``or``. Ellos hacen exactamente lo que dicen sus nombres:::"
 
 # a1e51836541b45ea81132528be3d7323
-#: ../../../source/logical_operators.rst:60
+#: ../../../source/logical_operators.rst:62
 msgid ""
 "You are not restricted to one logical operator. You can combine as may as "
 "you want."
 msgstr "No está restringido a un operador lógico. Puede combinar tantos como quiera."
 
 # 8b46de8719184531b8b89b8a50b410d8
-#: ../../../source/logical_operators.rst:66
+#: ../../../source/logical_operators.rst:68
 msgid ""
 "Earlier we put the turtle in a circular prison. This time let's make it a "
 "box. If the turtle goes more than 100 in the X *or* Y axis then we turn the "

@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# krother <krother@academis.eu>, 2013
-# lehmannro <transifex@robertlehmann.de>, 2013
-# lightyear <ben@opentechschool.org>, 2013
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-12 14:57+0100\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-19 16:39+0000\n"
-"Last-Translator: Ivo <matthew@opentechschool.org>\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# a9940ea98db44fee9f4be9f3408d69ad
+# 42b1163ea0884ce584a6cb6f89a58412
 #: ../../../source/copyright.rst:2
 msgid "License"
 msgstr "Lizenz"
 
-# d54b7c513fda412aa933e465320511bf
+# 4d4cbc9536c74194affcd70de8fa2cb9
 #: ../../../source/copyright.rst:4
 msgid ""
 "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
