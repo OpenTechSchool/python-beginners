@@ -15,7 +15,16 @@ Contributors
 
 The following people have contributed to this material, in alphabetical order:
 
+.. raw:: latex
+
+   {
+   \setlength{\parskip}{0mm}
+
 .. contributors::
+
+.. raw:: latex
+
+   }
 
 (This list is automatically generated from our `source repository`__.)
 
