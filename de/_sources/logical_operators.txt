@@ -32,6 +32,8 @@ toggle between drawing while moving, or just moving without a trace.
 
 Can we write a function that only goes forward if the pen is up?
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -66,6 +68,8 @@ Exercise
 Earlier we put the turtle in a circular prison. This time let's make
 it a box. If the turtle goes more than 100 in the X *or* Y axis then
 we turn the turtle back around to the center.
+
+.. rst-class:: solution
 
 Solution
 --------

@@ -78,6 +78,8 @@ use ``turtle.pendown()``.
 
 .. image:: /images/dashed.png
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -129,6 +131,8 @@ Exercise
 The squares we were drawing at the start of this tutorial had a lot of 
 repeated lines of code. Can you write out a square drawing program in fewer 
 lines by utilizing loops?
+
+.. rst-class:: solution
 
 Solution
 --------

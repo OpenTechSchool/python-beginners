@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,14 +7,17 @@
     
     <title>Erste Schritte &mdash; Introduction to Programming with Python</title>
     
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.1',
+        VERSION:     '2014.06.09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,30 +28,138 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
     <link rel="next" title="Einfaches Zeichnen mit turtle" href="simple_drawing.html" />
-    <link rel="prev" title="Programmiereinführung mit Python" href="index.html" /> 
+    <link rel="prev" title="Programmiereinführung mit Python" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="simple_drawing.html" title="Einfaches Zeichnen mit turtle"
-             accesskey="N">weiter</a></li>
-        <li class="right" >
-          <a href="index.html" title="Programmiereinführung mit Python"
-             accesskey="P">zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
             
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Einfaches Zeichnen mit turtle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Schleifen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Benutzerdefinierte Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funktionen mit Parametern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Verzweigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bedingte Schleifen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Logische Operatoren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Wie es weiter geht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Lizenz</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Erste Schritte</a><ul>
+<li><a class="reference internal" href="#what-you-ll-need">Was du brauchst</a><ul>
+<li><a class="reference internal" href="#a-python">Eine Python!</a></li>
+<li><a class="reference internal" href="#and-a-code-editor">Und einen Quelltext-Editor</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-is-python-exactly">Was ist Python eigentlich?</a><ul>
+<li><a class="reference internal" href="#opening-a-console-on-mac-os-x">Eine Konsole auf Mac OS X öffnen</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-linux">Eine Konsole unter Linux öffnen</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-windows">Eine Konsole unter Windows öffnen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-python">Python verwenden</a><ul>
+<li><a class="reference internal" href="#interacting-with-python">Mit Python interagieren</a></li>
+<li><a class="reference internal" href="#running-python-files">Pythonprogramme ausführen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="index.html" title="Previous Chapter: Programmiereinführung mit Python">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="simple_drawing.html" title="Next Chapter: Einfaches Zeichnen mit turtle">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
   <div class="section" id="getting-started">
 <h1>Erste Schritte<a class="headerlink" href="#getting-started" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="what-you-ll-need">
@@ -137,7 +247,9 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Drück <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> und schau was passiert. Nachdem das Ergebnis angezeigt wurde wird Python dich zurück zum interaktiven Prompt bringen, wo du einen anderen Befehl eingeben könntest:</p>
+<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
+will bring you back to the interactive prompt, where you could enter
+another command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
@@ -175,79 +287,43 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warnung</p>
-<p class="last">Wenn Du mit dem turtle-Modul experimentierst, vermeide es Deine Datei <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> zu nennen &#8212; verwende lieber Namen wie <tt class="file docutils literal"><span class="pre">quadrat.py</span></tt> oder :<a class="reference external" href="file:'rechteck.py">file:&#8217;rechteck.py</a>&#8216;. Andernfalls wird Python jedesmal wenn Du den Namen &#8216;&#8217;turtle&#8217;&#8217; verwendest, <em>Deine</em> Datei anstatt dem Modul turtle verwenden.</p>
+<p class="last">Wenn Du mit dem turtle-Modul experimentierst, vermeide es Deine Datei <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> zu nennen &#8212; verwende lieber Namen wie <tt class="file docutils literal"><span class="pre">quadrat.py</span></tt> oder <tt class="file docutils literal"><span class="pre">rechteck.py</span></tt>. Andernfalls wird Python jedesmal wenn Du den Namen <tt class="docutils literal"><span class="pre">turtle</span></tt> verwendest, <em>Deine</em> Datei anstatt dem Modul turtle verwenden.</p>
 </div>
 </div>
 </div>
 </div>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Inhalt</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Erste Schritte</a><ul>
-<li><a class="reference internal" href="#what-you-ll-need">Was du brauchst</a><ul>
-<li><a class="reference internal" href="#a-python">Eine Python!</a></li>
-<li><a class="reference internal" href="#and-a-code-editor">Und einen Quelltext-Editor</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#what-is-python-exactly">Was ist Python eigentlich?</a><ul>
-<li><a class="reference internal" href="#opening-a-console-on-mac-os-x">Eine Konsole auf Mac OS X öffnen</a></li>
-<li><a class="reference internal" href="#opening-a-console-on-linux">Eine Konsole unter Linux öffnen</a></li>
-<li><a class="reference internal" href="#opening-a-console-on-windows">Eine Konsole unter Windows öffnen</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#using-python">Python verwenden</a><ul>
-<li><a class="reference internal" href="#interacting-with-python">Mit Python interagieren</a></li>
-<li><a class="reference internal" href="#running-python-files">Pythonprogramme ausführen</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>Vorheriges Thema</h4>
-  <p class="topless"><a href="index.html"
-                        title="vorheriges Kapitel">Programmiereinführung mit Python</a></p>
-  <h4>Nächstes Thema</h4>
-  <p class="topless"><a href="simple_drawing.html"
-                        title="nächstes Kapitel">Einfaches Zeichnen mit turtle</a></p>
-<div id="searchbox" style="display: none">
-  <h3>Schnellsuche</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Los" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/getting_started.rst" title="getting_started.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+getting_started">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
     </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="simple_drawing.html" title="Einfaches Zeichnen mit turtle"
-             >weiter</a></li>
-        <li class="right" >
-          <a href="index.html" title="Programmiereinführung mit Python"
-             >zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
-    </div>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>

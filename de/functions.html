@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,14 +7,17 @@
     
     <title>Benutzerdefinierte Funktionen &mdash; Introduction to Programming with Python</title>
     
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.1',
+        VERSION:     '2014.06.09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,36 +28,139 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
     <link rel="next" title="Funktionen mit Parametern" href="functions_parameters.html" />
-    <link rel="prev" title="Schleifen" href="loops.html" /> 
+    <link rel="prev" title="Schleifen" href="loops.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="functions_parameters.html" title="Funktionen mit Parametern"
-             accesskey="N">weiter</a></li>
-        <li class="right" >
-          <a href="loops.html" title="Schleifen"
-             accesskey="P">zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
             
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Einfaches Zeichnen mit turtle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Schleifen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Benutzerdefinierte Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funktionen mit Parametern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Verzweigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bedingte Schleifen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Logische Operatoren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Wie es weiter geht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Lizenz</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Benutzerdefinierte Funktionen</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#a-function-for-a-square">Eine Funktion für ein Viereck</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-for-a-hexagon">Eine Funktion für ein Hexagon</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="loops.html" title="Previous Chapter: Schleifen">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions_parameters.html" title="Next Chapter: Funktionen mit Parametern">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
   <div class="section" id="user-defined-functions">
 <h1>Benutzerdefinierte Funktionen<a class="headerlink" href="#user-defined-functions" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
 <p>Programmierer können mit einigen ganz schön komplexen und abstrakten Probleme umgehen, aber ein Zug von guten Programmierern ist, dass sie faul sind. Sie wollen nur mit einer Sache gleichzeitig umgehen müssen. Also brauchst du einen Weg um Probleme in kleinere, abgesonderte Teile zu zerlegen, damit du dich auf nur einen Teil konzentrieren kannst.</p>
-<p>Funktionen sind ein Weg um diese Abstraktion in Python abzubilden. Lass uns <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> betrachten. <tt class="docutils literal"><span class="pre">reset``ist</span> <span class="pre">eine</span> <span class="pre">Funktion</span> <span class="pre">die</span> <span class="pre">wir</span> <span class="pre">auf</span> <span class="pre">unserer</span> <span class="pre">``turtle</span></tt> aufrufen und es ist eigentlich eine Abstraktion für eine Vielzahl von Schritten, und zwar:</p>
+<p>Funktionen sind ein Weg um diese Abstraktion in Python abzubilden. Lass uns <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> betrachten. <tt class="docutils literal"><span class="pre">reset</span></tt> ist eine Funktion die wir auf unserer <tt class="docutils literal"><span class="pre">turtle</span></tt> aufrufen und es ist eigentlich eine Abstraktion für eine Vielzahl von Schritten, und zwar:</p>
 <ul class="simple">
 <li><p class="first">Lösche die Zeichenfläche.</p>
 </li>
@@ -66,13 +171,13 @@
 </ul>
 <p>Aber weil all dieser Quelltext in der Funktion enthalten ist müssen wir uns keine Sorgen über die Details machen. Wir können die Funktion einfach <em>ausführen</em> und wissen, was sie für uns tun wird.</p>
 <p>Also - wie schreiben wir unsere eigene?</p>
-<p>Eine Funktion kann in Python mit dem Schlüsselwort &#8216;&#8217;def&#8217;&#8217; definiert werden:</p>
+<p>Eine Funktion kann in Python mit dem Schlüsselwort <tt class="docutils literal"><span class="pre">def</span></tt> definiert werden:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Diese von uns definierte Funktion heisst &#8216;&#8217;line_without_moving&#8217;&#8216;. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts.</p>
+<p>Diese von uns definierte Funktion heisst <tt class="docutils literal"><span class="pre">line_without_moving</span></tt>. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts.</p>
 <p>Um sie zu benutzen (oder wie es häufig genannt wird, &#8220;sie aufzurufen&#8221;), schreib ihren Namen gefolgt von runden Klammern:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">()</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -95,7 +200,7 @@
 <div class="admonition important">
 <p class="first admonition-title">Wichtig</p>
 <p>Python benutzt <em>Einrückung mit Leerzeichen</em> um zusammengehörende Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden Zeilen &#8212; üblicherweise vier Leerzeichen &#8212; gekennzeichnet.  Der Block endet sobald die Zeilen nicht mehr eingerückt sind.</p>
-<p>Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern &#8216;&#8217;{}&#8217;&#8216;) verwenden um Codeblöcke zu kennzeichnen.</p>
+<p>Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern <tt class="docutils literal"><span class="pre">{}</span></tt>) verwenden um Codeblöcke zu kennzeichnen.</p>
 <p class="last">Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du kannst &#8211; und solltest &#8211; Deinen Editor so konfigurieren, dass er vier Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls beide in der gleichen Python-Datei verwendet werden, wird Python sie fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf.</p>
 </div>
 </div>
@@ -105,7 +210,7 @@
 <h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
@@ -148,7 +253,7 @@
 <p class="last">Stell sicher das deine Hexagonfunktion die Schildkröte zu exakt derselben Position und Ausrichtung zurückkehren lässt bevor es das Hexagon gemalt hat. Das macht es einfacher darüber nachzudenken.</p>
 </div>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -167,67 +272,36 @@
 </div>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Inhalt</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Benutzerdefinierte Funktionen</a><ul>
-<li><a class="reference internal" href="#introduction">Einführung</a></li>
-<li><a class="reference internal" href="#a-function-for-a-square">Eine Funktion für ein Viereck</a><ul>
-<li><a class="reference internal" href="#exercise">Übung</a></li>
-<li><a class="reference internal" href="#solution">Lösung</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#a-function-for-a-hexagon">Eine Funktion für ein Hexagon</a><ul>
-<li><a class="reference internal" href="#id1">Übung</a></li>
-<li><a class="reference internal" href="#id2">Lösung</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>Vorheriges Thema</h4>
-  <p class="topless"><a href="loops.html"
-                        title="vorheriges Kapitel">Schleifen</a></p>
-  <h4>Nächstes Thema</h4>
-  <p class="topless"><a href="functions_parameters.html"
-                        title="nächstes Kapitel">Funktionen mit Parametern</a></p>
-<div id="searchbox" style="display: none">
-  <h3>Schnellsuche</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Los" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
-    </p>
+    </div>
+      
+  </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="functions_parameters.html" title="Funktionen mit Parametern"
-             >weiter</a></li>
-        <li class="right" >
-          <a href="loops.html" title="Schleifen"
-             >zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
-    </div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/functions.rst" title="functions.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+functions">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>

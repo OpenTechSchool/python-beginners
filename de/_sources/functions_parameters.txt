@@ -55,6 +55,8 @@ Exercise
 Write a function that allows you to draw hexagons of any size you want, each
 time you call the function.
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -81,6 +83,8 @@ Here's an example of drawing shapes with this function:
 .. tip::
 
    The sum of the external angles of any shape is always 360 degrees!
+
+.. rst-class:: solution
 
 Solution
 --------

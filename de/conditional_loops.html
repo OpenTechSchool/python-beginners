@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,14 +7,17 @@
     
     <title>Bedingte Schleifen &mdash; Introduction to Programming with Python</title>
     
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.1',
+        VERSION:     '2014.06.09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,30 +28,134 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
     <link rel="next" title="Logische Operatoren" href="logical_operators.html" />
-    <link rel="prev" title="Verzweigungen" href="conditionals.html" /> 
+    <link rel="prev" title="Verzweigungen" href="conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="logical_operators.html" title="Logische Operatoren"
-             accesskey="N">weiter</a></li>
-        <li class="right" >
-          <a href="conditionals.html" title="Verzweigungen"
-             accesskey="P">zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
             
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Einfaches Zeichnen mit turtle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Schleifen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Benutzerdefinierte Funktionen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funktionen mit Parametern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Verzweigungen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Bedingte Schleifen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Logische Operatoren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Wie es weiter geht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Lizenz</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Bedingte Schleifen</a><ul>
+<li><a class="reference internal" href="#introduction">Einführung</a></li>
+<li><a class="reference internal" href="#turtle-prison">Schildkrötengefängnis</a><ul>
+<li><a class="reference internal" href="#exercise">Übung</a></li>
+<li><a class="reference internal" href="#solution">Lösung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draw-a-spiral">Zeichne eine Spirale</a><ul>
+<li><a class="reference internal" href="#id1">Übung</a></li>
+<li><a class="reference internal" href="#id2">Lösung</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="conditionals.html" title="Previous Chapter: Verzweigungen">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="logical_operators.html" title="Next Chapter: Logische Operatoren">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
   <div class="section" id="conditional-loops">
 <h1>Bedingte Schleifen<a class="headerlink" href="#conditional-loops" title="Permalink zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
@@ -83,9 +189,9 @@
 <p>Die Schildkröte hat wieder ihre üblichen Spielchen abgezogen, Spirituosenläden ausrauben und riesige Spielschulden anhäufen. Es ist Zeit die Schildkröte in ein Gefängnis einzusperren aus dem sie nicht herauskommt.</p>
 <p>Lass uns eine neue Version von <tt class="docutils literal"><span class="pre">forward()</span></tt> bauen. Eine die die Schildkröte herumdreht falls sie versucht sich weiter als 100 von ihrem Ursprung zu entfernen. Wir brauchen eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife und einige neue turtle-Funktionen:</p>
 <ul class="simple">
-<li><p class="first">&#8216;&#8217;turtle.distance(0, 0)&#8217;&#8217; - Entfernung der Schildkröte vom Ursprung.</p>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.distance(0,</span> <span class="pre">0)</span></tt>- Entfernung der Schildkröte vom Ursprung.</p>
 </li>
-<li><p class="first">&#8216;&#8217;turtle.towards(0, 0)&#8217;&#8217; - Der Winkel der zurück zum Ursprungspunkt führt.</p>
+<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.towards(0,</span> <span class="pre">0)</span></tt> - Der Winkel der zurück zum Ursprungspunkt führt.</p>
 </li>
 <li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(Winkel)</span></tt> - Setz direkt die Ausrichtung der Schildkröte</p>
 </li>
@@ -93,7 +199,7 @@
 <p>Du kannst versuchen mit der turtle in einem Interpreter herumzuspielen und die Funktionen zu benutzen um genau zu sehen was sie tun, wenn du magst.</p>
 <p>Jetzt wirst du die Gefängnislogik implementieren müssen indem du die turtle-Funktionen verwendet, vielleicht eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife und ein bisschen bedingte Logik. Es ist ein bisschen haarig aber bleib dran! Scheu nicht zurück deine Idee mit einem Coach oder einem anderen Lernenden durchzusprechen.</p>
 </div>
-<div class="section" id="solution">
+<div class="solution section" id="solution">
 <h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -112,13 +218,13 @@
 <div class="section" id="id1">
 <h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
 <p>Schreib eine <tt class="docutils literal"><span class="pre">while</span></tt>-Schleife mit einer Bedingung die immer wahr (<strong>True</strong>) ist um eine Spirale zu malen. Unterbrich die Schleife wenn die turtle eine gewissen Distanz zum Mittelpunkt erreicht hat. Benutz die Funktion <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> um die Entfernung der Schildkröte zu dem durch die <tt class="docutils literal"><span class="pre">x</span></tt>- und <tt class="docutils literal"><span class="pre">y</span></tt>-Koordinaten bestimmten Punkt zu errechnen.</p>
-<p>Um das zu tun, brauchst Du die Funktionen &#8216;&#8217;turtle.xcor()&#8217;&#8217; und &#8216;&#8217;turtle.ycor()&#8217;&#8216;, welche die Position der Schildkröte auf der X und Y-Achse zurückgeben.</p>
+<p>Um das zu tun, brauchst Du die Funktionen <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> und <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt>, welche die Position der Schildkröte auf der X- und Y-Achse zurückgeben.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <p class="last">Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt werden.</p>
 </div>
 </div>
-<div class="section" id="id2">
+<div class="solution section" id="id2">
 <h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
     <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
@@ -141,68 +247,36 @@
 </div>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Inhalt</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Bedingte Schleifen</a><ul>
-<li><a class="reference internal" href="#introduction">Einführung</a></li>
-<li><a class="reference internal" href="#turtle-prison">Schildkrötengefängnis</a><ul>
-<li><a class="reference internal" href="#exercise">Übung</a></li>
-<li><a class="reference internal" href="#solution">Lösung</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#draw-a-spiral">Zeichne eine Spirale</a><ul>
-<li><a class="reference internal" href="#id1">Übung</a></li>
-<li><a class="reference internal" href="#id2">Lösung</a></li>
-<li><a class="reference internal" href="#bonus">Bonus</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>Vorheriges Thema</h4>
-  <p class="topless"><a href="conditionals.html"
-                        title="vorheriges Kapitel">Verzweigungen</a></p>
-  <h4>Nächstes Thema</h4>
-  <p class="topless"><a href="logical_operators.html"
-                        title="nächstes Kapitel">Logische Operatoren</a></p>
-<div id="searchbox" style="display: none">
-  <h3>Schnellsuche</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Los" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
-    </p>
+    </div>
+      
+  </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="logical_operators.html" title="Logische Operatoren"
-             >weiter</a></li>
-        <li class="right" >
-          <a href="conditionals.html" title="Verzweigungen"
-             >zurück</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; <a href="copyright.html">Copyright</a> 2012, OpenTechSchool and contributors.
-      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1+ erstellt.
-    </div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/conditional_loops.rst" title="conditional_loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+conditional_loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>
