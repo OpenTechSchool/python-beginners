@@ -1,8 +1,9 @@
 Introduction to Programming with Python
 ***************************************
 
+.. only:: not latex
 
-Table of contents:
+    Table of contents:
 
 .. toctree::
     :maxdepth: 2

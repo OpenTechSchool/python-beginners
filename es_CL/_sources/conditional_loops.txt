@@ -62,6 +62,8 @@ functions, perhaps a ``while`` loop and a bit of conditional logic.
 It's a bit of a stretch but keep at it! Don't be afraid to talk it out 
 with a coach or another student.
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -99,6 +101,8 @@ respectively.
 
    To draw a spiral, the turtle has to rotate by a constant value and move
    forward by an increasing value.
+
+.. rst-class:: solution
 
 Solution
 --------

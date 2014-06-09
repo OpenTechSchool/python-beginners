@@ -1,6 +1,4 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,14 +7,17 @@
     
     <title>Primeros Pasos &mdash; Introduction to Programming with Python</title>
     
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.1',
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,159 +27,74 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
     <link rel="next" title="Dibujos simples con turtle (Tortuga)" href="simple_drawing.html" />
-    <link rel="prev" title="Introducción a Programando con Python" href="index.html" /> 
+    <link rel="prev" title="Introducción a Programando con Python" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navegación</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="simple_drawing.html" title="Dibujos simples con turtle (Tortuga)"
-             accesskey="N">siguiente</a></li>
-        <li class="right" >
-          <a href="index.html" title="Introducción a Programando con Python"
-             accesskey="P">anterior</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
-    </div>  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="getting-started">
-<h1>Primeros Pasos<a class="headerlink" href="#getting-started" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="what-you-ll-need">
-<h2>Lo que necesitarás<a class="headerlink" href="#what-you-ll-need" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="a-python">
-<h3>Un Python!<a class="headerlink" href="#a-python" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Si aún no tienes python, los últimos paquetes oficiales para su instalación puedes encontrarlos aqui:</p>
-<p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
-<p>Es preferible el uso de Python 3, ya que es la versión más nueva que ha salido!</p>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">En Windows, usted querrá añadir <strong class="program">Python</strong> a su path, así podrá ser encontrado por otros programas. Para hacer esto, vaya al directorio de instalación de Python (:file: <cite>C:\Python33\</cite>), abra la carpeta :file: <cite>Tools</cite> y luego :file: <cite>Scripts</cite>, y ejecute el archivo :file: <cite>win_add2path.py</cite> haciendo doble click en él.</p>
-</div>
-</div>
-<div class="section" id="and-a-code-editor">
-<h3>Y un Editor de Código<a class="headerlink" href="#and-a-code-editor" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Un editor de código ayuda a leer y escribir códigos de programas. Existen muchos, y es una de las elecciones más personales que un programador puede hacer - Como un jugador de tenis escogiendo su raqueta, o un chef escogiendo su cuchillo favorito. Para empezar, necesitaras uno básico y fácil de usar, que no se interponga en tu camino, pero que, de la misma forma sea efectivo al escribir código Python. Acá hay algunas sugerencias para escoger:</p>
-<ul class="simple">
-<li><a class="reference internal" href="#sublime-text">Sublime Text</a>: Un gran editor que es fácil de usar. Su atajo de teclado Ctrl+B permite correr el archivo python en que estás trabajando directamente. Corre en Windows, Mac y Linux.</li>
-<li><a class="reference internal" href="#geany">Geany</a>: Un editor simple que no pretende ser demasiado complicado. Disponible en Windows y Linux (probablemente lo encontrarás en tu gestor de paquetes)</li>
-<li><a class="reference internal" href="#textmate">TextMate</a>: Uno de los más famosos editores de código para Mac, solía ser un producto pagado pero ahora es de código abierto.</li>
-<li><a class="reference internal" href="#gedit">Gedit</a> and <a class="reference internal" href="#kate">Kate</a>: Si usas Linux ya sea con Gnome o KDE respectivamente, es posible que ya tengas uno de estos dos instalado!</li>
-<li><a class="reference internal" href="#komodo-edit">Komodo Edit</a>: un pulcro, editor libre para Mac, Windows y Linux, basado en el más poderoso Komodo IDE.</li>
-</ul>
-<p>Si usted quiere nuestra recomendación, intente con Sublime Text primero.</p>
-<div class="admonition tip">
-<p class="first admonition-title">Truco</p>
-<p class="last">Wordpad, TextEdit, Notepad y Word <strong>no</strong> son editores de texto adecuados.</p>
-</div>
-</div>
-</div>
-<div class="section" id="what-is-python-exactly">
-<h2>¿Qué es Python, exactamente?<a class="headerlink" href="#what-is-python-exactly" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Ok, python es esta cosa llamada un <strong>lenguaje de programación</strong>. Toma texto que usted haya escrito (usualmente llamado <strong>código</strong>), lo transforma en instrucciones para su computadora, y ejecuta esas instrucciones. Aprenderemos cómo escribir código para hacer cosas útiles y geniales. Ya no estará obligado a usar programas de los demás para hacer cosas con su computadora!</p>
-<p>Prácticamente, Python es sólo otro progama en su computadora. Lo primero que hay que aprender es cómo usarlo e interactuar con él. Hay, de hecho, muchas formas de hacerlo; lo primero que se debe aprender es interactuar con el intérprete de python, usando la consola de su <strong>sistema operativo</strong> (SO)</p>
-<p>Una <strong>consola</strong> (o &#8216;terminal&#8217;, o &#8216;línea de comandos&#8217;) es una forma <em>textual</em> de interactuar con su SO, así como el &#8216;escritorio&#8217;, en conjunto con su mouse, es la forma <em>gráfica</em> de interactuar con el sistema.</p>
-<div class="section" id="opening-a-console-on-mac-os-x">
-<h3>Abriendo una consola en Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>La consola estándar de OS X es un programa llamado <strong class="program">Terminal</strong>. Abra Terminal navegando a Aplicaciones, luego Utilidades, luego doble click en el programa <strong class="program">Terminal</strong>. Usted puede también buscarlo fácilmente con la herramienta de búsqueda de sistema ubicada en la parte superior derecha.</p>
-<p>El Terminal es una herramienta de línea de comandos para interactuar con su ordenador. Una ventana se abrirá con un mensaje en la línea de comandos, algo como lo que sigue:</p>
-<div class="highlight-python"><pre>mycomputer:~ myusername$</pre>
-</div>
-</div>
-<div class="section" id="opening-a-console-on-linux">
-<h3>Abriendo una consola en Linux<a class="headerlink" href="#opening-a-console-on-linux" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Diferentes distribuciones de linus (como Ubuntu, Fedora, Mint) pueden tener diferentes programas de consola, usualmente llamados terminal. El terminal exacto que se inicia y como  puede depender de su distribución. En Ubuntu, es probable que quiera abrir <strong class="program">Gnome Terminal</strong>. Deberia aparecer una línea de comandos como la que sigue:</p>
-<div class="highlight-python"><pre>myusername@mycomputer:~$</pre>
-</div>
-</div>
-<div class="section" id="opening-a-console-on-windows">
-<h3>Abriendo una consola en Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>La consola de Windows que ejecuta las lineas de comandos, se llama <strong class="program">cmd</strong>. Una forma fácil de ejecutarla es usando la combinación de teclas &#8220;Windows+R&#8221; (&#8216;Windows&#8217; se refiere al botón con el logo de Windows), lo que abrirá el diálogo de &#8216;Ejecutar&#8217;. Entonces escriba <tt class="kbd docutils literal"><span class="pre">cmd</span></tt> y presione <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> o haga click en Ok. Usted puede también buscarla desde el menú de inicio. Debería verse como:</p>
-<div class="highlight-python"><pre>C:\Users\myusername&gt;</pre>
-</div>
-<p>La línea de comandos de Windows no es tan poderosa como sus contrapartes en Linux y OS X, es por esto que es preferible empezar con el Intérprete de Python (mire abajo) directamente, o usar la IDLE que viene con Python. Usted puede encontrarlos en el menú de inicio.</p>
-</div>
-</div>
-<div class="section" id="using-python">
-<h2>Usando Python<a class="headerlink" href="#using-python" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>El programa python que usted a instalado actuará por defecto como algo llamado <strong>intérprete</strong>. Un intérprete toma los comandos y los ejecuta a medida que se ingresan - muy útil para realizar pruebas.</p>
-<p>Sólo escriba <strong class="program">python</strong> en su consola, presione <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>, y debería entrar en el intérprete de Python.</p>
-<p>Para saber que versión de python está usando, escriba <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt>, en la consola.</p>
-<div class="section" id="interacting-with-python">
-<h3>Interactuando con Python<a class="headerlink" href="#interacting-with-python" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Después que abra Python, se mostrará alguna información contextual similar a lo siguiente:</p>
-<div class="highlight-python"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
-[GCC 4.8.0 20130502 (prerelease)] on linux
-Type "help", "copyright", "credits" or "license" for more information.
-&gt;&gt;&gt;</pre>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">El símbolo <strong>&gt;&gt;&gt;</strong> en la última línea indica que usted se encuentra en la sesión del intérprete interactiva de Python, también llamada &#8220;Python shell&#8221;. <strong>Este es diferente del símbolo de sistema normal del terminal!</strong></p>
-</div>
-<p>Ahora usted puede ingresar algún código de python. Intente:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Presione <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt> y vea que sucede. Luego de entregar los resultados, Python devolverá la línea de comandos interactiva, donde usted puede ingresar otro comando:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
-<span class="go">Hello world</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="go">10</span>
-</pre></div>
-</div>
-<p>Un comando extremadamente útil es <tt class="docutils literal"><span class="pre">help()</span></tt>, el cual ingresa a a la funcionalidad de ayuda para explorar todas las cosas que python le permite hacer, directamente desde el intérprete.</p>
-<p>Para abandonar la consola inetractiva, presione <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> y luego <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> en Windows, o <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> en OS X o Linux. Alternativamente, puede correr el comando de python <tt class="docutils literal"><span class="pre">exit()</span></tt>!</p>
-</div>
-<div class="section" id="running-python-files">
-<h3>Ejecutando archivos Python<a class="headerlink" href="#running-python-files" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Cuando usted tenga una gran cantidad de código python para ejecutar, querrá guardarlo en un archivo, entonces, por ejemplo, usted puede modificar pequeñas partes de él (corregir errores) y ejecutarlo nuevamente sin tener que re-escribir repetidamente el resto del código. Se puede entonces almacenar el código en un archivo y entregar el nombre del archivo al ejecutable <strong class="program">python</strong>. Este ejecutará el archivo en vez de lanzar el intérprete interactivo.</p>
-<p><strong>Intentémos eso</strong>. Cree un archivo llamado <tt class="file docutils literal"><span class="pre">hello.py</span></tt> en su directorio actual con su editor favorito y escriba el comando print de arriba. Ahora guarde el archivo. En Linux o OS X, usted puede ejecutar también <tt class="kbd docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> para crear un archivo vacío para editarlo. Ejecutar este archivo con python es muy fácil:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">Asegúrese de estar en la línea de comandos del sistema, el cual tendrá el símbolo <tt class="docutils literal"><span class="pre">$</span></tt> o <tt class="docutils literal"><span class="pre">&gt;</span></tt> al final, no el símbolo del intérprete de python (que en cambio tiene <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt>)!</p>
-</div>
-<p>En Windows usted podrá también hacer doble click sobre el archivo para ejecutarlo.</p>
-<p>Cuando ahora presione <tt class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></tt>, el archivo se ejecuta y usted ve la salida como antes. Pero esta vez, luego que Python termina de ejecutar todos los comandos del archivo vuelve a la línea de comandos del sistema, en vez de volver a la consola de comandos interactiva de python.</p>
-<p>Y ahora tenemos todo preparado y podemos comenzar con tortuga!</p>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p>El no obtener &#8220;Hello world&#8221;, sino algún mensaje de error extraño acerca de &#8220;no se puede abrir el archivo&#8221; o &#8220;No existe el archivo o directorio&#8221;, puede ser que su línea de comandos de sistema no está corriendo en el directorio en que guardó el archivo. Usted puede utilizar la línea de comandos del sistema para cambiar su directorio activo con el comando <strong class="command">cd</strong>, el cual significa &#8220;cambiar directorio&#8221;. En Windows, usted puede querer hacer algo como:</p>
-<div class="highlight-python"><pre>&gt; cd Desktop\Python_Exercises</pre>
-</div>
-<p>En OS X o Linux, usted puede querer ejecutar algo como:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
-</pre></div>
-</div>
-<p class="last">Esto cambia al directorio Python_Exercises dentro del directorio Desktop (el suyo puede ser algo relativamente distinto). Si usted no conoce el directorio donde guardó el archivo, usted puede simplemente arrastrar el directorio a la ventana de la línea de comandos. Si usted no sabe en que directorio se encuentra actualmente ejecutando su consola, use el comando <strong class="command">pwd</strong> el cual significa &#8220;imprima el directorio de trabajo&#8221; por sus siglas en inglés.</p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Advertencia</p>
-<p class="last">Cuando juegue con tortuga, evite nombrar el archivo <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> &#8212; en vez de esto use nombres más apropiados como <tt class="file docutils literal"><span class="pre">cuadrado.py</span></tt> o <tt class="file docutils literal"><span class="pre">rectangulo.py</span></tt>. De otra manera, cada vez que usted se refiera a <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python escogerá <em>su</em> archivo en vez del archivo estándar turtle.</p>
-</div>
-</div>
-</div>
-</div>
-
-
-          </div>
-        </div>
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
       </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Contenidos</a></h3>
-  <ul>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Primeros Pasos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Dibujos simples con turtle (Tortuga)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funciones definidas por el usurario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funciones con parámetros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Sentencias Condicionales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Loops Condicionales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Opreadores Lógicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Donde ir desde aqui</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licencia</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Primeros Pasos</a><ul>
 <li><a class="reference internal" href="#what-you-ll-need">Lo que necesitarás</a><ul>
 <li><a class="reference internal" href="#a-python">Un Python!</a></li>
@@ -199,45 +115,228 @@ Type "help", "copyright", "credits" or "license" for more information.
 </ul>
 </li>
 </ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="index.html" title="Previous Chapter: Introducción a Programando con Python">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="simple_drawing.html" title="Next Chapter: Dibujos simples con turtle (Tortuga)">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
 
-  <h4>Tema anterior</h4>
-  <p class="topless"><a href="index.html"
-                        title="Capítulo anterior">Introducción a Programando con Python</a></p>
-  <h4>Próximo tema</h4>
-  <p class="topless"><a href="simple_drawing.html"
-                        title="Próximo capítulo">Dibujos simples con turtle (Tortuga)</a></p>
-<div id="searchbox" style="display: none">
-  <h3>Búsqueda rápida</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Ir a" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
         </div>
-      </div>
-      <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Navegación</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="simple_drawing.html" title="Dibujos simples con turtle (Tortuga)"
-             >siguiente</a></li>
-        <li class="right" >
-          <a href="index.html" title="Introducción a Programando con Python"
-             >anterior</a> |</li>
-        <li><a href="index.html">Introduction to Programming with Python</a> &raquo;</li> 
-      </ul>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="getting-started">
+<h1>Primeros Pasos<a class="headerlink" href="#getting-started" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="what-you-ll-need">
+<h2>Lo que necesitarás<a class="headerlink" href="#what-you-ll-need" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="a-python">
+<h3>Un Python!<a class="headerlink" href="#a-python" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si aún no tienes python, los últimos paquetes oficiales para su instalación puedes encontrarlos aqui:</p>
+<p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
+<p>Es preferible el uso de Python 3, ya que es la versión más nueva que ha salido!</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">En Windows, usted querrá añadir <strong class="program">Python</strong> a su path, así podrá ser encontrado por otros programas. Para hacer esto, vaya al directorio de instalación de Python (:file: <cite>C:\Python33\</cite>), abra la carpeta :file: <cite>Tools</cite> y luego :file: <cite>Scripts</cite>, y ejecute el archivo :file: <cite>win_add2path.py</cite> haciendo doble click en él.</p>
+</div>
+</div>
+<div class="section" id="and-a-code-editor">
+<h3>Y un Editor de Código<a class="headerlink" href="#and-a-code-editor" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Un editor de código ayuda a leer y escribir códigos de programas. Existen muchos, y es una de las elecciones más personales que un programador puede hacer - Como un jugador de tenis escogiendo su raqueta, o un chef escogiendo su cuchillo favorito. Para empezar, necesitaras uno básico y fácil de usar, que no se interponga en tu camino, pero que, de la misma forma sea efectivo al escribir código Python. Acá hay algunas sugerencias para escoger:</p>
+<ul class="simple">
+<li><p class="first"><a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>: Un gran editor que es fácil de usar. Su atajo de teclado Ctrl+B permite correr el archivo python en que estás trabajando directamente. Corre en Windows, Mac y Linux.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.geany.org/">Geany</a>: Un editor simple que no pretende ser demasiado complicado. Disponible en Windows y Linux (probablemente lo encontrarás en tu gestor de paquetes)</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://macromates.com/">TextMate</a>: Uno de los más famosos editores de código para Mac, solía ser un producto pagado pero ahora es de código abierto.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://projects.gnome.org/gedit/">Gedit</a> and <a class="reference external" href="http://kate-editor.org/">Kate</a>: Si usas Linux ya sea con Gnome o KDE respectivamente, es posible que ya tengas uno de estos dos instalado!</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.activestate.com/komodo-edit">Komodo Edit</a>: un pulcro, editor libre para Mac, Windows y Linux, basado en el más poderoso Komodo IDE.</p>
+</li>
+</ul>
+<p>Si usted quiere nuestra recomendación, intente con Sublime Text primero.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Truco</p>
+<p class="last">Wordpad, TextEdit, Notepad y Word <strong>no</strong> son editores de texto adecuados.</p>
+</div>
+</div>
+</div>
+<div class="section" id="what-is-python-exactly">
+<h2>¿Qué es Python, exactamente?<a class="headerlink" href="#what-is-python-exactly" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Ok, python es esta cosa llamada un <strong>lenguaje de programación</strong>. Toma texto que usted haya escrito (usualmente llamado <strong>código</strong>), lo transforma en instrucciones para su computadora, y ejecuta esas instrucciones. Aprenderemos cómo escribir código para hacer cosas útiles y geniales. Ya no estará obligado a usar programas de los demás para hacer cosas con su computadora!</p>
+<p>Prácticamente, Python es sólo otro progama en su computadora. Lo primero que hay que aprender es cómo usarlo e interactuar con él. Hay, de hecho, muchas formas de hacerlo; lo primero que se debe aprender es interactuar con el intérprete de python, usando la consola de su <strong>sistema operativo</strong> (SO)</p>
+<p>Una <strong>consola</strong> (o &#8216;terminal&#8217;, o &#8216;línea de comandos&#8217;) es una forma <em>textual</em> de interactuar con su SO, así como el &#8216;escritorio&#8217;, en conjunto con su mouse, es la forma <em>gráfica</em> de interactuar con el sistema.</p>
+<div class="section" id="opening-a-console-on-mac-os-x">
+<h3>Abriendo una consola en Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La consola estándar de OS X es un programa llamado <strong class="program">Terminal</strong>. Abra Terminal navegando a Aplicaciones, luego Utilidades, luego doble click en el programa <strong class="program">Terminal</strong>. Usted puede también buscarlo fácilmente con la herramienta de búsqueda de sistema ubicada en la parte superior derecha.</p>
+<p>El Terminal es una herramienta de línea de comandos para interactuar con su ordenador. Una ventana se abrirá con un mensaje en la línea de comandos, algo como lo que sigue:</p>
+<div class="highlight-python"><div class="highlight"><pre>mycomputer:~ myusername$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-linux">
+<h3>Abriendo una consola en Linux<a class="headerlink" href="#opening-a-console-on-linux" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Diferentes distribuciones de linus (como Ubuntu, Fedora, Mint) pueden tener diferentes programas de consola, usualmente llamados terminal. El terminal exacto que se inicia y como  puede depender de su distribución. En Ubuntu, es probable que quiera abrir <strong class="program">Gnome Terminal</strong>. Deberia aparecer una línea de comandos como la que sigue:</p>
+<div class="highlight-python"><div class="highlight"><pre>myusername@mycomputer:~$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-windows">
+<h3>Abriendo una consola en Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
+way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
+(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
+<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
+click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
+look like:</p>
+<div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
+</pre></div>
+</div>
+<p>La línea de comandos de Windows no es tan poderosa como sus contrapartes en Linux y OS X, es por esto que es preferible empezar con el Intérprete de Python (mire abajo) directamente, o usar la IDLE que viene con Python. Usted puede encontrarlos en el menú de inicio.</p>
+</div>
+</div>
+<div class="section" id="using-python">
+<h2>Usando Python<a class="headerlink" href="#using-python" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El programa python que usted a instalado actuará por defecto como algo llamado <strong>intérprete</strong>. Un intérprete toma los comandos y los ejecuta a medida que se ingresan - muy útil para realizar pruebas.</p>
+<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, and you should
+enter Python&#8217;s Interpreter.</p>
+<p>Para saber que versión de python está usando, escriba <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt>, en la consola.</p>
+<div class="section" id="interacting-with-python">
+<h3>Interactuando con Python<a class="headerlink" href="#interacting-with-python" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Después que abra Python, se mostrará alguna información contextual similar a lo siguiente:</p>
+<div class="highlight-python"><div class="highlight"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
+[GCC 4.8.0 20130502 (prerelease)] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">El símbolo <strong>&gt;&gt;&gt;</strong> en la última línea indica que usted se encuentra en la sesión del intérprete interactiva de Python, también llamada &#8220;Python shell&#8221;. <strong>Este es diferente del símbolo de sistema normal del terminal!</strong></p>
+</div>
+<p>Ahora usted puede ingresar algún código de python. Intente:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
+will bring you back to the interactive prompt, where you could enter
+another command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+<span class="go">Hello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+<p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
+to explore all the stuff python lets you do, right from the interpreter.
+Press <tt class="kbd docutils literal"><span class="pre">q</span></tt> to close the help window and return to the Python prompt.</p>
+<p>Para abandonar la consola inetractiva, presione <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> y luego <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> en Windows, o <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> en OS X o Linux. Alternativamente, puede correr el comando de python <tt class="docutils literal"><span class="pre">exit()</span></tt>!</p>
+</div>
+<div class="section" id="running-python-files">
+<h3>Ejecutando archivos Python<a class="headerlink" href="#running-python-files" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Cuando usted tenga una gran cantidad de código python para ejecutar, querrá guardarlo en un archivo, entonces, por ejemplo, usted puede modificar pequeñas partes de él (corregir errores) y ejecutarlo nuevamente sin tener que re-escribir repetidamente el resto del código. Se puede entonces almacenar el código en un archivo y entregar el nombre del archivo al ejecutable <strong class="program">python</strong>. Este ejecutará el archivo en vez de lanzar el intérprete interactivo.</p>
+<p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
+with your favorite text editor and write the print command from above.  Now
+save that file. On Linux or OS X, you can also run <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
+an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Asegúrese de estar en la línea de comandos del sistema, el cual tendrá el símbolo <tt class="docutils literal"><span class="pre">$</span></tt> o <tt class="docutils literal"><span class="pre">&gt;</span></tt> al final, no el símbolo del intérprete de python (que en cambio tiene <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt>)!</p>
+</div>
+<p>En Windows usted podrá también hacer doble click sobre el archivo para ejecutarlo.</p>
+<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
+as before.  But this time, after Python finished executing all commands from
+that file it exits back to the system command prompt, instead of going back
+to the interactive shell.</p>
+<p>Y ahora tenemos todo preparado y podemos comenzar con tortuga!</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>El no obtener &#8220;Hello world&#8221;, sino algún mensaje de error extraño acerca de &#8220;no se puede abrir el archivo&#8221; o &#8220;No existe el archivo o directorio&#8221;, puede ser que su línea de comandos de sistema no está corriendo en el directorio en que guardó el archivo. Usted puede utilizar la línea de comandos del sistema para cambiar su directorio activo con el comando <strong class="command">cd</strong>, el cual significa &#8220;cambiar directorio&#8221;. En Windows, usted puede querer hacer algo como:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
+</pre></div>
+</div>
+<p>En OS X o Linux, usted puede querer ejecutar algo como:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
+</pre></div>
+</div>
+<p class="last">Esto cambia al directorio Python_Exercises dentro del directorio Desktop (el suyo puede ser algo relativamente distinto). Si usted no conoce el directorio donde guardó el archivo, usted puede simplemente arrastrar el directorio a la ventana de la línea de comandos. Si usted no sabe en que directorio se encuentra actualmente ejecutando su consola, use el comando <strong class="command">pwd</strong> el cual significa &#8220;imprima el directorio de trabajo&#8221; por sus siglas en inglés.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">Cuando juegue con tortuga, evite nombrar el archivo <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> &#8212; en vez de esto use nombres más apropiados como <tt class="file docutils literal"><span class="pre">cuadrado.py</span></tt> o <tt class="file docutils literal"><span class="pre">rectangulo.py</span></tt>. De otra manera, cada vez que usted se refiera a <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python escogerá <em>su</em> archivo en vez del archivo estándar turtle.</p>
+</div>
+</div>
+</div>
+</div>
+
+
     </div>
-    <div class="footer">
-        &copy; <a href=\"copyright.html\">Copyright</a> 2012, OpenTechSchool and contributors.
-      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
-    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/getting_started.rst" title="getting_started.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+getting_started">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href=\"copyright.html\">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>
