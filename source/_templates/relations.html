@@ -1,0 +1,16 @@
+{%- if prev %}
+  <li class="navbar-rel">
+    <a href="{{ prev.link|e }}" title="{{ _('Previous Chapter: ') + prev.title|striptags }}">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>{{ _('Previous') }}</span>
+    </a>
+  </li>
+{%- endif %}
+{%- if next %}
+  <li class="navbar-rel">
+    <a href="{{ next.link|e }}" title="{{ _('Next Chapter: ') + next.title|striptags }}">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>{{ _('Next') }}</span>
+    </a>
+  </li>
+{%- endif %}

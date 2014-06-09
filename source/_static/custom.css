@@ -52,3 +52,31 @@ pre {
 div.sphinxsidebar {
     font-size: 0.8em;
 }
+div.related {
+    background-color: #085987;
+}
+div.related a {
+    color: white;
+}
+.navbar-version b {
+    font-weight: lighter;
+    color: #76B3D6;
+}
+.navbar-version b:before {
+    content: "v";
+}
+.navbar-rel .glyphicon {
+    font-size: 0.9em;
+}
+#navbar {
+    background-image: linear-gradient(to bottom, #085987 0px, #2fb0d5 100%);
+}
+.navbar>.container .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: #1F8AB6 !important;
+}

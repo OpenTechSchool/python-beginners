@@ -15,11 +15,11 @@
 
         $(this).hide().data('hidden', true);
 
-        $(this).after('<button class="_show_hide" type="button">' + options.showText + '</button>');
+        $(this).last().after('<button class="btn btn-info btn-sm _show_hide" type="button">' + options.showText + '</button>');
 
         $('._show_hide').click(function () {
             var me = $(this);
-            var el = $(this).prev();
+            var el = $(this).prevUntil("h3");
             el.slideToggle(options.speed, function() {
                 if (options.changeText) {
                     if (el.data('hidden')) {
@@ -38,6 +38,6 @@
 (function ($) {
   $(document).ready(function() {
     'use strict';
-    $(".solution h3").next().showHide();
+    $(".solution h3").nextUntil("h3").showHide();
   });
 })(jQuery);

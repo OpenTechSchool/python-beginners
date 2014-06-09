@@ -54,6 +54,8 @@ def build(language=None, target=MAIN_TARGET):
         static_files = os.path.join(BASE_DIR, '_static', '*')
         target_dir = os.path.join(BUILD_DIR, target)
         local('cp %s %s' % (static_files, target_dir))
+    print("build finished; the %s files are in %s." %
+            (target, os.path.join(BUILD_DIR, target, language)))
 
 
 def clean(language=None, target=MAIN_TARGET):
