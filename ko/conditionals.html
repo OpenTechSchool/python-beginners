@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>조건문 &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="저작권" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="조건 순환 반복" href="conditional_loops.html" />
+    <link rel="prev" title="매개 변수가 있는 함수" href="functions_parameters.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">거북이로 간단하게 그리기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">순환</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">조건문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">조건문</a><ul>
+<li><a class="reference internal" href="#introduction">소개</a></li>
+<li><a class="reference internal" href="#examples">예제</a></li>
+<li><a class="reference internal" href="#giving-directions">방향 지시하기</a></li>
+<li><a class="reference internal" href="#data-munging">&#8220;데이터 은폐&#8221;</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="functions_parameters.html" title="Previous Chapter: 매개 변수가 있는 함수">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="conditional_loops.html" title="Next Chapter: 조건 순환 반복">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="conditional-statements">
+<h1>조건문<a class="headerlink" href="#conditional-statements" title="제목 주소">¶</a></h1>
+<div class="section" id="introduction">
+<h2>소개<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h2>
+<p>이미 한참 앞에서 정해진 과제를 해결했지만, 솔직히 말해서 하나의 명령 모음을 처음부터 끝까지 따라가는 오래된 뮤직 박스 그 이상까진 가지 않았습니다. 프로그래밍을 더욱 강력하게 해주는 요소는 조건문입니다. 값에 대하 변수를 <em>시험</em> 하는 능력이 있으며 변수에 대한 조건을 만날 경우 한 방식대로 동작하고 그렇지 않으면 다른 방식으로 동작합니다. 프로그래머들이 보통 부르기로는 <a href="#id1"><span class="problematic" id="id2">*</span></a>if 조건문*이라고 합니다.</p>
+<p>조건이 <em>True*인지 *False*인지 알려면, 새 데이터 형식 부울린이 필요합니다. 부울린 형식은 논리 연산자를 허용합니다. 논리 구문 또는 논리 연산자는 *True</em> 또는 <a href="#id1"><span class="problematic" id="id2">*</span></a>False*로 계산할 수 있습니다. 조건문은 다음과 같이 이해할 수 있습니다:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>if</strong> <em>(참인지 판단할 조건)</em>:</dt>
+<dd><p class="first last"><em>&#8216;True&#8217;일 경우에만 아래 구문을 실행</em></p>
+</dd>
+<dt><strong>else</strong>:</dt>
+<dd><p class="first last"><em>그렇지 않을 경우 &#8216;False&#8217;일 경우에만 아래 구문을 실행합니다</em>.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>조건문은 <em>True</em> 또는 <em>False*의 값을 판단하는 그 어떤 동작이든 취할 수 있습니다. 비교문은 항상 *True</em> 또는 <em>False</em> 를 반환하는데, 비교 연산자의 예로는 <tt class="docutils literal"><span class="pre">==</span></tt> (같음), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (보다 큼), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (보다 작음)이 있습니다.</p>
+<p><strong>else</strong> 부분은 선택적입니다. 비워두면 조건의 결과로 &#8216;False&#8217;가 나왔을 때 아무일도 일어나지 않습니다.</p>
+</div>
+<div class="section" id="examples">
+<h2>예제<a class="headerlink" href="#examples" title="제목 주소">¶</a></h2>
+<p>몇 가지 예제를 보여드리겠습니다. 한줄 한줄 읽어보시고 어떤 동작을 하는지 보시든지, 각 부분을 실행해보십시오:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
+
+<span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
+<span class="k">if</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="giving-directions">
+<h2>방향 지시하기<a class="headerlink" href="#giving-directions" title="제목 주소">¶</a></h2>
+<p>파이선 거북이는 다음 지시를 매우 잘 따르는 존재가 될 수 있습니다. 거북이가 움직이는 방향을 사용자가 요청할 수 있는 <tt class="docutils literal"><span class="pre">input()</span></tt> 함수를 사용해보도록 하겠습니다. 쉽게 하기 위해 &#8220;left&#8221;와 &#8220;right&#8221; 두가지 명령만 받아들이도록 하겠습니다.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">파이썬 2를 사용하시나요? <tt class="docutils literal"><span class="pre">input()</span></tt> 함수는 <a href="#id1"><span class="problematic" id="id2">``</span></a>raw_input()``함수를 호출합니다.</p>
+</div>
+<p>다음과 같이 함수를 정의하는 것처럼 매우 쉽습니다:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
+    <span class="n">direction</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;left&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;right&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>이제 <a href="#id1"><span class="problematic" id="id2">``</span></a>move()``를 언제든지 사용할 때마다 <a href="#id3"><span class="problematic" id="id4">``</span></a>left``나 <a href="#id5"><span class="problematic" id="id6">``</span></a>right``를 택하도록 질문을 받을 것입니다.</p>
+</div>
+<div class="section" id="data-munging">
+<h2>&#8220;데이터 은폐&#8221;<a class="headerlink" href="#data-munging" title="제목 주소">¶</a></h2>
+<p>이 프로그램에서, 거북이는 다른 예외없이 정확하게 <tt class="docutils literal"><span class="pre">left</span></tt> 또는 <tt class="docutils literal"><span class="pre">right``에만</span> <span class="pre">반응합니다.</span> <span class="pre">``Left</span></tt> 또는 <tt class="docutils literal"><span class="pre">LEFT``는</span> <span class="pre">사람에게</span> <span class="pre">있어</span> <span class="pre">같은</span> <span class="pre">``left``겠지만</span> <span class="pre">프로그래밍을</span> <span class="pre">할</span> <span class="pre">경우에는</span> <span class="pre">그렇지</span> <span class="pre">않습니다.</span> <span class="pre">파이썬에는</span> <span class="pre">이런</span> <span class="pre">상황에</span> <span class="pre">도움을</span> <span class="pre">줄</span> <span class="pre">몇가지</span> <span class="pre">쓸모있는</span> <span class="pre">메서드가</span> <span class="pre">있습니다.</span> <span class="pre">문자열은</span> <span class="pre">공백을</span> <span class="pre">제거할때</span> <span class="pre">사용하는</span> <span class="pre">``.strip()</span></tt> 메서드와 모든 글자를 소문자로 만드는 <tt class="docutils literal"><span class="pre">.lower()</span></tt> 메서드를 보유하고 있습니다.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>.strip()``과 <a href="#id3"><span class="problematic" id="id4">``</span></a>.lower()``의 결과를 출력하는 간단한 예제를 보여드리겠습니다:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+<span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_stripped</span><span class="p">)</span>
+<span class="n">my_lower</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>같은 결과를 보기 위해 <tt class="docutils literal"><span class="pre">move()</span></tt> 함수에 <a href="#id1"><span class="problematic" id="id2">``</span></a>direction = direction.strip().lower()``를 추가해보십시오. 이런 코드를 종종 &#8220;데이터 은폐&#8221;라고 하며, 매우 일반적으로 사용합니다.</p>
+<p>거북이가 다른걸 그릴 수 있게 추가 입력 선택을 넣을 수 있겠나요? <a href="#id1"><span class="problematic" id="id2">``</span></a>hexagon``은 어떤가요?</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/conditionals.rst" title="conditionals.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+conditionals">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>거북이로 간단하게 그리기 &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="저작권" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Variables" href="variables.html" />
+    <link rel="prev" title="시작하기" href="getting_started.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">거북이로 간단하게 그리기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">순환</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">조건문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">거북이로 간단하게 그리기</a><ul>
+<li><a class="reference internal" href="#introduction">소개</a></li>
+<li><a class="reference internal" href="#drawing-a-square">사각형 그리기</a><ul>
+<li><a class="reference internal" href="#exercise">연습</a></li>
+<li><a class="reference internal" href="#solution">해결책</a></li>
+<li><a class="reference internal" href="#bonus">덤</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#drawing-a-rectangle">사각형을 그려보아요</a><ul>
+<li><a class="reference internal" href="#id1">연습</a></li>
+<li><a class="reference internal" href="#id2">해결책</a></li>
+<li><a class="reference internal" href="#id3">덤</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-squares">더 많은 사각형</a><ul>
+<li><a class="reference internal" href="#id4">연습</a></li>
+<li><a class="reference internal" href="#id5">해결책</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="getting_started.html" title="Previous Chapter: 시작하기">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="variables.html" title="Next Chapter: Variables">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="simple-drawing-with-turtle">
+<h1>거북이로 간단하게 그리기<a class="headerlink" href="#simple-drawing-with-turtle" title="제목 주소">¶</a></h1>
+<div class="section" id="introduction">
+<h2>소개<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h2>
+<p>Turtle은 그림판이랑 비슷합니다.</p>
+<p>거북이를 움직일 수 있는 <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.forward(...)``와 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.left(...)``같은 함수가 있어요.</p>
+<p>Before you can use turtle, you have to import it. We recommend playing around
+with it in the interactive interpreter first, as there is an extra bit of work
+required to make it work from files. Just go to your terminal and type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+</pre></div>
+</div>
+<img alt="_images/default.png" src="_images/default.png" />
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">Mac OS에서 아무것도 안보인다구요? <tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> 같은 명령을 실행해서 명령행 뒤에 새 창이 열렸는지 확인해보세요.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">우분투에서 실행할 때 &#8220;No module named _tkinter&#8221; 오류 메시지가 나온다구요? <a href="#id1"><span class="problematic" id="id2">``</span></a>sudo apt-get install python3-tk``로 빠진 꾸러미를 설치하세요.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">이 페이지에 적힌 코드를 임시 방편으로 복사해서 붙여넣기보단 각각의 명령을 직접 쳐보세요. 직접 쳤을때 문법도 익히고(근육의 움직임 기억을 만들어요!) 이상한 문법 오류를 막는데도 도움이 돼요.</p>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/forward.png" src="_images/forward.png" />
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/left.png" src="_images/left.png" />
+<p><tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> 함수는 거북이에게 주어진 거리만큼 움직이라고 알려줘요. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> 함수는 왼쪽 방향으로 주어진 각도만큼 돌으라고 하구요. <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.backward(...)``랑 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.right(...)``도 있어요.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">깔끔하게 시작하겠다구요? <a href="#id1"><span class="problematic" id="id2">``</span></a>거북이``가 이제껏 그린 내용을 지우려 한다면 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.reset()``를 칠 수 있어요. 이제 <a href="#id5"><span class="problematic" id="id6">``</span></a>turtle.reset()``에 대해 좀 더 자세히 이야기해보려고 해요.</p>
+</div>
+<p>표준 거북이 모양은 그냥 삼각형입니다. 참 재미없게 생겼죠. <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt> 명령으로 대신 거북이를 만들어보도록 하겠어요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>더욱 귀여워졌죠?!</p>
+<p>파일에 명령을 넣으면 거북이가 이동한 후 거북이 창이 사라진 모습을 보게 돼요(왜냐면 거북이를 다 옮기고 나면 파이선에서 빠져나가기 때문이거든요. 거북이 창은 파이선이 붙들고 있기 때문에 같이 끝나요). 이걸 막으려면 파일 아래에 <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.exitonclick()``를 추가하세요. 그러면 창을 누르기 전에는 열린 상태로 그대로 두게 돼요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">파이썬은 수평 들여쓰기가 중요한 프로그래밍 언어예요. 다음 장에서 함수에 대해 배우겠지만, 지금은 그냥 파이썬 코드 앞부분에 공백 문자나 탭을 빼먹으면 갑작스런 오류가 있을 수 있다는 사실을 기억해두세요.</p>
+</div>
+</div>
+<div class="section" id="drawing-a-square">
+<h2>사각형 그리기<a class="headerlink" href="#drawing-a-square" title="제목 주소">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">언제든 답을 바로 알려고 하진 않을거예요. 그냥 해보고 오류를 일으키면서 배우세요! 여러가지를 호출하면서 파이선이 어떤 동작을 하는지, (가끔은 기대하지 못했더라도)어떤 결과가 보기 좋은지, 어떤 경우에 오류가 나타나는지 경험하세요. 재밌는 결과를 만드는걸 배워서 즐기려고 한다면, 괜찮아요. 배울때 해보고 실패하는걸 망설이지 마세요!</p>
+</div>
+<div class="section" id="exercise">
+<h3>연습<a class="headerlink" href="#exercise" title="제목 주소">¶</a></h3>
+<p>다음 그림에 사각형을 그리세요:</p>
+<img alt="_images/square.png" src="_images/square.png" />
+<p>사각형을 그리려면 90도 직각 회전이 필요할 수도 있어요.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>해결책<a class="headerlink" href="#solution" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">거북이가 사각형을 그리기 전후에 같은 장소에서 어떻게 움직임을 시작하고 끝내는지, 같은 방향을 어떻게 바라보는지 살펴보세요. 따라하는데 쓸모있는 표기방식이고 나중에 여러가지 도형을 그릴때 쉽게 그릴 수 있도록 도와줘요.</p>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>덤<a class="headerlink" href="#bonus" title="제목 주소">¶</a></h3>
+<p>If you want to get creative, you can modify your shape with the
+<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  How do you
+use these functions?  Before you can use a function you need to know
+its <em>signature</em> (for example the number of parameters and what they
+mean.) To find this out you can type <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> into the
+Python shell. If there is a lot of text, Python will put the help text
+into a <em>pager</em>, which lets you page up and down. Press the <tt class="kbd docutils literal"><span class="pre">q</span></tt>
+key to exit the pager.</p>
+<div class="admonition tip">
+<p class="first admonition-title">참고</p>
+<p>다음 같은 오류를 보고 있나요:</p>
+<div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
+</pre></div>
+</div>
+<p class="last">when trying to view help? In Python you have to import names before you
+can refer to them, so in a new Python interactive shell you&#8217;ll need to
+<tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> before <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> will work.</p>
+</div>
+<p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
+<div class="admonition caution">
+<p class="first admonition-title">조심</p>
+<p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
+with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> directive or undo the most recent step with
+<tt class="docutils literal"><span class="pre">turtle.undo()</span></tt>.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">참고</p>
+<p class="last">As you might have read in the help, you can modify the color with
+<tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>.  These include but are not limited to
+&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
+list.</p>
+</div>
+</div>
+</div>
+<div class="section" id="drawing-a-rectangle">
+<h2>사각형을 그려보아요<a class="headerlink" href="#drawing-a-rectangle" title="제목 주소">¶</a></h2>
+<div class="section" id="id1">
+<h3>연습<a class="headerlink" href="#id1" title="제목 주소">¶</a></h3>
+<p>사각형도 그릴 수 있어요 ???</p>
+<img alt="_images/rectangle.png" src="_images/rectangle.png" />
+</div>
+<div class="solution section" id="id2">
+<h3>해결책<a class="headerlink" href="#id2" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>덤<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
+<p>삼각형은 어떤가요? 정삼각형(각 변의 길이가 같은 삼각형)의 세 귀퉁이는 60도 각을 가져요.</p>
+</div>
+</div>
+<div class="section" id="more-squares">
+<h2>더 많은 사각형<a class="headerlink" href="#more-squares" title="제목 주소">¶</a></h2>
+<div class="section" id="id4">
+<h3>연습<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
+<p>이제 바둑판처럼 배치한 사각현을 그려보기로 하겠어요. 그리고 다른거, 또 다른거. 각각의 사각형 사이에 각을 주는 경험도 할 수 있어요.</p>
+<img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
+<p>The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.</p>
+</div>
+<div class="solution section" id="id5">
+<h3>해결책<a class="headerlink" href="#id5" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/simple_drawing.rst" title="simple_drawing.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+simple_drawing">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

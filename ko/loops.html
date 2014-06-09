@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>순환 &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="저작권" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="사용자가 정의한 함수" href="functions.html" />
+    <link rel="prev" title="Variables" href="variables.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">거북이로 간단하게 그리기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">순환</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">조건문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">순환</a><ul>
+<li><a class="reference internal" href="#introduction">소개</a></li>
+<li><a class="reference internal" href="#drawing-a-dashed-line">점선을 그려보아요</a><ul>
+<li><a class="reference internal" href="#exercise">연습</a></li>
+<li><a class="reference internal" href="#solution">해결책</a></li>
+<li><a class="reference internal" href="#bonus">덤</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#comments">주석</a></li>
+<li><a class="reference internal" href="#more-efficient-squares">더 효율적인 사각형</a><ul>
+<li><a class="reference internal" href="#id1">연습</a></li>
+<li><a class="reference internal" href="#id2">해결책</a></li>
+<li><a class="reference internal" href="#id3">덤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="variables.html" title="Previous Chapter: Variables">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions.html" title="Next Chapter: 사용자가 정의한 함수">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="loops">
+<h1>순환<a class="headerlink" href="#loops" title="제목 주소">¶</a></h1>
+<div class="section" id="introduction">
+<h2>소개<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h2>
+<p>아마 다음과 같은걸 본 적이 있을거예요: 우리 프로그램엔 자주 반복하는 기능이 있어요. 파이썬엔 순환 반복(용어: <em>반복</em>)이라고 하는 강력한 개념이 있는데, 반복 코드 일부를 똑 떼어내는데 사용할 수 있어요! 자, 그러면 <strong>이 간단한 예제를 해보도록 해요</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Sam&quot;</span><span class="p">,</span> <span class="s">&quot;Jill&quot;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>무언가를 여러번 돌리고 싶을때 매우매우 도움이 돼요 &#8212; 도형의 테두리선을 각각 그릴 경우 말이죠? &#8212;  근데 동작은 단 한번에 대해서만 적고 싶을 때가 있어요. 순환 반복의 다른 버전을 보도록 할께요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>이제 어떻게 <tt class="docutils literal"><span class="pre">i</span></tt> 변수를 사용해서 코드 한 줄을 작성하더라도 각기 다른 10가지 값을 가질 수 있는지 볼까요?</p>
+<p><tt class="samp docutils literal"><span class="pre">range(n)</span></tt> 함수는 <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1``을</span> <span class="pre">짧게</span> <span class="pre">줄인걸로</span> <span class="pre">볼</span> <span class="pre">수</span> <span class="pre">있어요.</span> <span class="pre">더</span> <span class="pre">알아보시려면</span> <span class="pre">파이썬</span> <span class="pre">쉘에서</span> <span class="pre">``help(range)``를</span> <span class="pre">쳐서</span> <span class="pre">도움말을</span> <span class="pre">보실</span> <span class="pre">수</span> <span class="pre">있어요.</span> <span class="pre">:kbd:``q</span></tt> 키를 사용하면 도움말에서 다시 나갈 수 있어요.</p>
+<p>여러분이 고른 요소에 대해서도 순환 반복 동작을 할 수 있어요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>이 예제 코드를 그대로 작성하고 파이선으로 실행해서, 여러분이 기대한 바와 동작이 같은지 확인해보세요.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">위에서 어떻게 돌아가는지 보시면, <em>순환 반복*하는 코드 줄을 *들여쓰기</em> 했어요. 파이선에 있어 중요한 개념이죠. 어떤 코드 줄이 <tt class="docutils literal"><span class="pre">for</span></tt> 순환 반복 구문에서 사용해야 하는지 알 수 있기도 하고, 그 다음  프로그램 나머지 부분에는 어떤 요소가 따라오는지 알 수 있기도 하죠. 코드를 들여쓰기 하려면 공백 문자 네 개(그냥 탭 키를 치세요)를 사용하세요.</p>
+</div>
+<p>어떤 경우는 일부 코드를 여러번 반복하려 하지만 <tt class="docutils literal"><span class="pre">i</span></tt> 변수 값은 신경 쓰고 싶지 않을때가 있어요. 이때는 <a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">_`</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a>를 대신 사용하는게 좋은 습관이 될 수 있어요. 이걸 쓰면 값이 어떤지 신경 쓰고 싶지도 않고 쓰고 싶지도 않음을 의미해요. 간단한 예를 보여드릴께요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">i</span></tt> 변수가 어떤 값을 지니고 있는지 궁금해 할 수도, 안 할 수도 있어요. 위에서는 왜 항상 사용했을까요? 흠, 간단하게 말하자면 &#8220;인덱스&#8221;를 의미하는데 대부분의 코드 어디에서든 찾을 수 있는 일반적인 변수 이름일 뿐이예요. 어떤 숫자가 아니라 다른 기준 이상으로 순환 반복을 한다면, 이름을 확인해보는게 좋아요! 가령 다음 같으면요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">drink</span> <span class="ow">in</span> <span class="n">list_of_beverages</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">drink</span></tt> 대신에 <a href="#id1"><span class="problematic" id="id2">``</span></a>i``를 썼을때보다는 바로 이해하기에 확실하죠.</p>
+</div>
+<div class="section" id="drawing-a-dashed-line">
+<h2>점선을 그려보아요<a class="headerlink" href="#drawing-a-dashed-line" title="제목 주소">¶</a></h2>
+<div class="section" id="exercise">
+<h3>연습<a class="headerlink" href="#exercise" title="제목 주소">¶</a></h3>
+<p>점선을 그려보세요. <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> 함수를 사용해서 거북이가 선을 그리지 않고 그냥 움직이게만 할 수 있어요. 다시 그리라고 하려면 <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.pendown()``을 활용하세요.</p>
+<img alt="_images/dashed.png" src="_images/dashed.png" />
+</div>
+<div class="solution section" id="solution">
+<h3>해결책<a class="headerlink" href="#solution" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>덤<a class="headerlink" href="#bonus" title="제목 주소">¶</a></h3>
+<p>한 줄 한 줄 처리할 때마다 대시 길이를 더 늘릴 수 있나요?</p>
+<img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
+<div class="admonition hint">
+<p class="first admonition-title">힌트</p>
+<p>뭔가 부족한가요? 모든 순환 반복 실행 부분에 <a href="#id1"><span class="problematic" id="id2">``</span></a>i``를 넣어보세요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c"># write more code here</span>
+</pre></div>
+</div>
+<p class="last">크기를 단계적으로 늘이는데 <a href="#id1"><span class="problematic" id="id2">``</span></a>i``를 활용할 수 있나요? 보통 순환 반복 변수라고 하거나 <strong>인덱스</strong> 변수라고 해요.</p>
+</div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>주석<a class="headerlink" href="#comments" title="제목 주소">¶</a></h2>
+<p>위의 예제에서 <a href="#id1"><span class="problematic" id="id2">``</span></a>#``으 시작하는 줄을 주석이라고 해요. 파이썬에서는 <a href="#id3"><span class="problematic" id="id4">``</span></a>#``으로 시작하는 줄은 컴퓨터에서 무시해요. 컴퓨터에서 동작을 바꾸지 않고 프로그램이 어떤 동작을 하는지 설명하려면 주석을 활용하세요. 잠깐 동안 쉽게 코드를 비활성화 하든지 코드 일부를 &#8220;주석 처리&#8221; 해버리는데 사용할 수도 있어요.</p>
+<p>다음 처럼 줄 끝으로 주석이 들어갈 수도 있어요:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># tilt our next square slightly</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-efficient-squares">
+<h2>더 효율적인 사각형<a class="headerlink" href="#more-efficient-squares" title="제목 주소">¶</a></h2>
+<div class="section" id="id1">
+<h3>연습<a class="headerlink" href="#id1" title="제목 주소">¶</a></h3>
+<p>이 따라하기 안내서 앞부분에 그렸던 사각형에는 선을 반복해서 그리는 코드가 많이 있었어요. 순환 반복 구문을 활용해서 사각형을 그리는 프로그램의 줄 수를 줄여 볼 수 있죠?</p>
+</div>
+<div class="solution section" id="id2">
+<h3>해결책<a class="headerlink" href="#id2" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>덤<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
+<p>다른 순환 반복 구문의 아래(<em>안</em>)에 순환 반복 구문을 놓는 <em>중첩</em> 순환 반복 구문을 활용하고, 그리는 코드를 두 순환 반복 구문 안에 놓아보세요. 어떻게 보일 수 있을지 보여드릴께요:</p>
+<div class="highlight-python"><div class="highlight"><pre>for ...:
+    for ...:
+        # drawing code inside the inner loop goes here
+        ...
+    # you can put some code here to move
+    # around after!
+    ...
+</pre></div>
+</div>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>...``를 여러분이 작성한 코드로 바꾸고, 어떤 재밌는 또는 흥미로운 모습을 만들어냈는지 보세요! <sup>실수해도 좋아요!</sup></p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/loops.rst" title="loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

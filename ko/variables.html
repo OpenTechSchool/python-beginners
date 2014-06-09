@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Variables &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="저작권" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="순환" href="loops.html" />
+    <link rel="prev" title="거북이로 간단하게 그리기" href="simple_drawing.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">거북이로 간단하게 그리기</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">순환</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">조건문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Variables</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#a-variable-called-angle">A variable called angle</a><ul>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
+<li><a class="reference internal" href="#bonus">Bonus</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-house-of-santa-claus">The house of santa claus</a><ul>
+<li><a class="reference internal" href="#id1">Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="simple_drawing.html" title="Previous Chapter: 거북이로 간단하게 그리기">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="loops.html" title="Next Chapter: 순환">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="제목 주소">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h2>
+<p>Whew. Experimenting with the angles requires you to change three different
+places in the code each time. Imagine you&#8217;d want to experiment with
+all of the square sizes, let alone with rectangles! We can do better than that.</p>
+<p>This is where <strong>variables</strong> come into play: You can tell Python that from now on,
+whenever you refer to a variable, you actually mean something else. That concept
+might be familiar from symbolic maths, where you would write: <em>Let x be 5.</em>
+Then <em>x * 2</em> will obviously be <em>10</em>.</p>
+<p>In Python syntax, that very statement translates to:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>After that statement, if you do <tt class="docutils literal"><span class="pre">print(x)</span></tt>, it will actually output its value
+&#8212; 5.  Well, can use that for your turtle too:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Variables can store all sorts of things, not just numbers. A typical
+other thing you want to have stored often is a <strong>string</strong> - a line of text.
+Strings are indicated with a starting and a leading <tt class="docutils literal"><span class="pre">&quot;</span></tt> (double quote).
+You&#8217;ll learn about this and other types, as those are called in Python, and
+what you can do with them later on.</p>
+<p>You can even use a variable to give the turtle a name:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span>
+</pre></div>
+</div>
+<p>Now every time you type <tt class="docutils literal"><span class="pre">timmy</span></tt> it knows you mean <tt class="docutils literal"><span class="pre">turtle</span></tt>. You can
+still continue to use <tt class="docutils literal"><span class="pre">turtle</span></tt> as well:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-variable-called-angle">
+<h2>A variable called angle<a class="headerlink" href="#a-variable-called-angle" title="제목 주소">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="제목 주소">¶</a></h3>
+<p>If we have a variable called <tt class="docutils literal"><span class="pre">angle</span></tt>, how could we use that to experiment
+much faster with our tilted squares program?</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="제목 주소">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">angle</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>... and so on</p>
+</div>
+<div class="section" id="bonus">
+<h3>Bonus<a class="headerlink" href="#bonus" title="제목 주소">¶</a></h3>
+<p>Can you apply that principle to the size of the squares, too?</p>
+</div>
+</div>
+<div class="section" id="the-house-of-santa-claus">
+<h2>The house of santa claus<a class="headerlink" href="#the-house-of-santa-claus" title="제목 주소">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="제목 주소">¶</a></h3>
+<p>Draw a house.</p>
+<img alt="_images/house.png" src="_images/house.png" />
+<p>You can calculate the length of the diagonal line with the Pythagorean
+theorem. That value is a good candidate to store in a variable. To calculate
+the square root of a number in Python, you&#8217;ll need to import the <em>math</em> module
+and use the <tt class="docutils literal"><span class="pre">math.sqrt()</span></tt> function. The square of a number is calculated
+with the <tt class="docutils literal"><span class="pre">**</span></tt> operator:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/variables.rst" title="variables.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+variables">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

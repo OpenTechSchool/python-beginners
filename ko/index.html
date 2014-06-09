@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>파이썬 프로그래밍 소개 &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06.09',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="저작권" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="#" />
+    <link rel="next" title="시작하기" href="getting_started.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          Python for beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">거북이로 간단하게 그리기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">순환</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">조건문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">파이썬 프로그래밍 소개</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="getting_started.html" title="Next Chapter: 시작하기">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="introduction-to-programming-with-python">
+<h1>파이썬 프로그래밍 소개<a class="headerlink" href="#introduction-to-programming-with-python" title="제목 주소">¶</a></h1>
+<p>목차:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">시작하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#what-you-ll-need">필요한 것은</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#what-is-python-exactly">그래서 파이썬이 정확하게 뭐라는건가요?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#using-python">파이선 사용하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">거북이로 간단하게 그리기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simple_drawing.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_drawing.html#drawing-a-square">사각형 그리기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_drawing.html#drawing-a-rectangle">사각형을 그려보아요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_drawing.html#more-squares">더 많은 사각형</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#a-variable-called-angle">A variable called angle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#the-house-of-santa-claus">The house of santa claus</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">순환</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="loops.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html#drawing-a-dashed-line">점선을 그려보아요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html#comments">주석</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html#more-efficient-squares">더 효율적인 사각형</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">사용자가 정의한 함수</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#a-function-for-a-square">사각형을 그리는 함수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#a-function-for-a-hexagon">육각형 그리기 함수</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">매개 변수가 있는 함수</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions_parameters.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_parameters.html#a-parameterized-function-for-a-variable-size-hexagon">다양한 크기의 육각형을 그리는 매개 변수를 부여한 함수</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_parameters.html#a-function-of-several-parameters">몇가지 매개 변수가 들어간 함수</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">조건문</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#examples">예제</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#giving-directions">방향 지시하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#data-munging">&#8220;데이터 은폐&#8221;</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">조건 순환 반복</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conditional_loops.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_loops.html#turtle-prison">거북이 감옥</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_loops.html#draw-a-spiral">원 그리기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">논리 연산자</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logical_operators.html#introduction">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical_operators.html#negation-of-a-statement">조건의 부정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical_operators.html#this-and-that-or-something-else">이거 저거 아니면 다른거요</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">어디로 가야 하나요?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="where_to_go.html#learning-python">파이선 배우기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="where_to_go.html#what-to-do-with-python">파이선으로 뭘 해야 하나요</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">라이선스</a></li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/index.rst" title="index.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+index">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
