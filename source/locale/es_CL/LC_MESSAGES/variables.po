@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-13 14:11+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -86,7 +86,7 @@ msgstr "Una variable llamada angle"
 
 # 341a0b4eab9c4060983a009910f9912b
 # c7f79c6a0e3f438c8cbddaeac9e3b967
-#: ../../../source/variables.rst:46 ../../../source/variables.rst:83
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:85
 msgid "Exercise"
 msgstr "Ejercicio"
 
@@ -98,37 +98,37 @@ msgid ""
 msgstr "Si tenemos una variable llamada ``angle`` (ángulo en inglés), ¿cómo podemos usarla para experimentar más rápido con nuestro programa de cuadrados inclinados?"
 
 # 4f5e8724e9bf47bb9a308c96b099e1bd
-#: ../../../source/variables.rst:52
+#: ../../../source/variables.rst:54
 msgid "Solution"
 msgstr "Solución"
 
 # e5cc56f2272342e2a9817063d345d126
-#: ../../../source/variables.rst:72
+#: ../../../source/variables.rst:74
 msgid "... and so on"
 msgstr "... y así sucesivamente."
 
 # f88b19f8666e4f3699d3fa8a1d16eeeb
-#: ../../../source/variables.rst:75
+#: ../../../source/variables.rst:77
 msgid "Bonus"
 msgstr "Bonus"
 
 # 1af525ffffc44dba842bbaac6875a109
-#: ../../../source/variables.rst:77
+#: ../../../source/variables.rst:79
 msgid "Can you apply that principle to the size of the squares, too?"
 msgstr "¿Puede aplicar este principio para el tamaño de los cuadrados también?"
 
 # 860b1520bc564aae8f16cbeaf5723c13
-#: ../../../source/variables.rst:80
+#: ../../../source/variables.rst:82
 msgid "The house of santa claus"
 msgstr "La casa del viejito pascuero"
 
 # 1d280501f67a473aad5e0d4531953a0d
-#: ../../../source/variables.rst:85
+#: ../../../source/variables.rst:87
 msgid "Draw a house."
 msgstr "Dibuje una casa."
 
 # cf4fc858e79b449fbfe315cf438b5e39
-#: ../../../source/variables.rst:89
+#: ../../../source/variables.rst:91
 msgid ""
 "You can calculate the length of the diagonal line with the Pythagorean "
 "theorem. That value is a good candidate to store in a variable. To calculate"

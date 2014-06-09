@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# PatricioUrrutia <purrutia@gmail.com>, 2013
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
 "PO-Revision-Date: 2013-11-20 12:58+0000\n"
-"Last-Translator: PatricioUrrutia <purrutia@gmail.com>\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +79,7 @@ msgstr "Prisión Tortuga"
 # 45292113e45d41e7b1b92ccf9d813a8b
 # 324bbaf285c5445f846e9ad7f3d79213
 #: ../../../source/conditional_loops.rst:43
-#: ../../../source/conditional_loops.rst:87
+#: ../../../source/conditional_loops.rst:89
 msgid "Exercise"
 msgstr "Ejercicio"
 
@@ -132,18 +132,18 @@ msgstr "Ahora necesitará implementar la lógica de la prisión usando estas fun
 
 # 1b49d73c3a5e4021ac2fe477151ecc2f
 # 14cab36de06d4023b20c5be256604d50
-#: ../../../source/conditional_loops.rst:66
-#: ../../../source/conditional_loops.rst:104
+#: ../../../source/conditional_loops.rst:68
+#: ../../../source/conditional_loops.rst:108
 msgid "Solution"
 msgstr "Solución"
 
 # 352a42136ca6400ab20cf89a1ab398b3
-#: ../../../source/conditional_loops.rst:80
+#: ../../../source/conditional_loops.rst:82
 msgid "Draw a spiral"
 msgstr "Dibuje una espiral"
 
 # 6aeef203d95c4a34bd5bd692b99ebe55
-#: ../../../source/conditional_loops.rst:82
+#: ../../../source/conditional_loops.rst:84
 msgid ""
 "Loops can be interrupted with the ``break`` statement. This is especially "
 "useful if you write an *infinite loop*, which is a loop where the "
@@ -151,7 +151,7 @@ msgid ""
 msgstr "Loops pueden ser interrumpidos con una sentencia ``break``. Esto es especialmente útil si escribe un *loop infinito*, el cual es un loop donde su condicional es siempre **True**."
 
 # 217e80c3d8024535a12d1b844ab5475a
-#: ../../../source/conditional_loops.rst:89
+#: ../../../source/conditional_loops.rst:91
 msgid ""
 "Write a ``while`` loop with a condition that is always **True** to draw a "
 "spiral. Interrupt the loop when the turtle reaches a certain distance from "
@@ -160,7 +160,7 @@ msgid ""
 msgstr "Escriba un loop ``while`` con una condición que sea siempre **verdadera** para dibujar un espiral. Interrumpa el loop cuando la tortuga alcance cierta distancia desde el centro. Use la función ``turtle.distance(x, y)`` para obtener la distancia al punto definido por las coordenadas ``x`` e ``y``."
 
 # bd8e43cfe2964a199f111a74393dff96
-#: ../../../source/conditional_loops.rst:94
+#: ../../../source/conditional_loops.rst:96
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
 "functions, which return the position of the turtle in X and Y axes "
@@ -168,19 +168,19 @@ msgid ""
 msgstr "Para hacer esto necesitará las funciones ``turtle.xcord()`` y ``turtle.ycord()``, las cuales retornan lka posición de la tortuga en los ejes X e Y respectivamente."
 
 # 88a12b054e8245ca96d6e8180a7d0212
-#: ../../../source/conditional_loops.rst:100
+#: ../../../source/conditional_loops.rst:102
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
 msgstr "Para dibujar una espiral, la tortuga debe rotar con un valor constante y moverse adelante con un valor que se incremente."
 
 # 8030819ae52e44e3a12fc6b6b071eb14
-#: ../../../source/conditional_loops.rst:120
+#: ../../../source/conditional_loops.rst:124
 msgid "Bonus"
 msgstr "Bonus"
 
 # 5d9767087dc74306a1046a3c8d5b7936
-#: ../../../source/conditional_loops.rst:122
+#: ../../../source/conditional_loops.rst:126
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "
 "loop ``while True`` or the ``break``? Which version do you find easier to "

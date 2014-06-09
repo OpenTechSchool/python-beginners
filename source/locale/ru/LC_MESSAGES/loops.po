@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# Артём Демаков <dearalcher@gmail.com>, 2013
+# sorrymak <dearalcher@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-10-28 12:09+0000\n"
-"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-01-21 15:48+0000\n"
+"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgid ""
 "Python has a powerful concept it makes use of called looping (jargon: "
 "*iteration*), which we can use to cut out our reptitive code! For now, **try"
 " this easy example**::"
-msgstr ""
+msgstr "Иногда можно заметить, что в некоторых наших программах много повторяющихся кусков кода. Один из способов исправить это и сократить количество этих кусков — циклирование (или итерация, в буквальном переводе с английского *looping* — повторение). Для начала, **попробуй запустить этот простой пример**::"
 
 # 4eda734b95e248539b9b5efe8dc5119c
 #: ../../../source/loops.rst:15
@@ -43,7 +43,7 @@ msgid ""
 "This is incredibly helpful if we want to do something multiple times --- "
 "say, drawing the individual border lines of a shape --- but only want to "
 "write that action once. Here's another version of a loop::"
-msgstr ""
+msgstr "Это невероятно полезно, если нам нужно повторить какие-либо действия несколько раз (не копируя при этом строчки кода) --- скажем, во время рисования границ какой-либо фигуры пунктиром. Циклы могут быть и другими::"
 
 # 0e367bb15a554f55aabf4f8a1d0eb292
 #: ../../../source/loops.rst:22
@@ -59,7 +59,7 @@ msgid ""
 "..., n-1``. If you want to know more about it, you can use the help in the "
 "Python shell by typing ``help(range)``. Use the :kbd:`q` key to exit the "
 "help again."
-msgstr ""
+msgstr "Функцию :samp:`range(n)` можно назвать заменой для ``0, 1, 2, ..., n-1``. Чтобы побольше узнать о ней, можно воспользоваться встроенной справкой Python: введи ``help(range)`` (для выхода из справочной системы нажми :kbd:`q`)."
 
 # b45f5ff4bf2c43f183e91d7d594ed56b
 #: ../../../source/loops.rst:30
@@ -67,14 +67,14 @@ msgid "You can also loop over elements of your choice::"
 msgstr ""
 
 # 3da3b4e9c91347318018908166b6e30b
-#: ../../../source/loops.rst:38
+#: ../../../source/loops.rst:39
 msgid ""
 "Write this example out and run it with python, to check it works how you "
 "might expect."
-msgstr ""
+msgstr "Скопируй и запусти этот пример, что проверить, правильно ли ты догадался насчёт того, что он делает."
 
 # 419b4a124acb4eb59c15f22b56f01c7d
-#: ../../../source/loops.rst:43
+#: ../../../source/loops.rst:44
 msgid ""
 "Notice how above, the lines of code that are *looped*, are the ones that are"
 " *indented*. This is an important concept in Python - that's how it knows "
@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 
 # 78984f3a1e8442cfa8a190d0e891d912
-#: ../../../source/loops.rst:49
+#: ../../../source/loops.rst:50
 msgid ""
 "Sometimes you want to repeat some code a number of times, but don't care "
 "about the value of the ``i`` variable; so it can be good practice to replace"
@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 
 # 871317829ed94000a175e3f14de9929d
-#: ../../../source/loops.rst:57
+#: ../../../source/loops.rst:58
 msgid ""
 "You may or may not be wondering about the variable ``i`` - why is it used "
 "all the time above? Well, it simply stands for \"index\" and is one of the "
@@ -103,25 +103,25 @@ msgid ""
 msgstr ""
 
 # 37f8ea014b43476ca95f290eb2bca3fb
-#: ../../../source/loops.rst:65
+#: ../../../source/loops.rst:66
 msgid ""
 "This is immediately clearer to understand than if we had used ``i`` instead "
 "of ``drink``."
 msgstr ""
 
 # 6a8658daf4c747ce8dae0e01b03494dc
-#: ../../../source/loops.rst:69
+#: ../../../source/loops.rst:70
 msgid "Drawing a dashed line"
 msgstr "Рисуем пунктирную линию"
 
 # 227cdb5260a44d39a186ef36b46495d0
 # 811e324008784846b8ac8fa984cb2b27
-#: ../../../source/loops.rst:72 ../../../source/loops.rst:126
+#: ../../../source/loops.rst:73 ../../../source/loops.rst:129
 msgid "Exercise"
 msgstr "Упражнение"
 
 # 0f7e6111e19948c2bf97205484a3cba2
-#: ../../../source/loops.rst:74
+#: ../../../source/loops.rst:75
 msgid ""
 "Draw a dashed line.  You can move the turtle without the turtle drawing its "
 "movement by using the ``turtle.penup()`` function; to tell it to draw again,"
@@ -130,40 +130,40 @@ msgstr ""
 
 # f3965d438fa44b27916970234463ea2f
 # 7e918f8e5bd7468c93f9fc02e3ad2fa9
-#: ../../../source/loops.rst:81 ../../../source/loops.rst:133
+#: ../../../source/loops.rst:84 ../../../source/loops.rst:138
 msgid "Solution"
 msgstr "Решение"
 
 # 5860c34b7d5a4bb5b5095d8a1472dd11
 # 112a159544464c73a08a63e7eb71691c
-#: ../../../source/loops.rst:92 ../../../source/loops.rst:142
+#: ../../../source/loops.rst:95 ../../../source/loops.rst:147
 msgid "Bonus"
 msgstr "Дополнительно"
 
 # f05832d1752c4fc3931b4cbc78badfab
-#: ../../../source/loops.rst:94
+#: ../../../source/loops.rst:97
 msgid "Can you make the dashes become larger as the line progresses?"
 msgstr ""
 
 # c89966a17ad8437aad6d66aedbd2396f
-#: ../../../source/loops.rst:100
+#: ../../../source/loops.rst:103
 msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
 msgstr ""
 
 # 6af92163948e42658b603d185d1d44b4
-#: ../../../source/loops.rst:106
+#: ../../../source/loops.rst:109
 msgid ""
 "Can you utilize ``i`` --- commonly called the **index** variable or loop "
 "variable --- to get increasing step sizes?"
 msgstr ""
 
 # c844a09532cc4786b5bf06f2ec04e19b
-#: ../../../source/loops.rst:110
+#: ../../../source/loops.rst:113
 msgid "Comments"
 msgstr "Комментарии"
 
 # 933b062bdf944b3d9ed1f08ac92a867e
-#: ../../../source/loops.rst:112
+#: ../../../source/loops.rst:115
 msgid ""
 "In the example above, the line that starts with a ``#`` is called a comment."
 " In Python, anything that goes on a line after ``#`` is ignored by the "
@@ -173,32 +173,32 @@ msgid ""
 msgstr "В примере выше, строка, начинающаяся с ``#``, называется комментарием. В Python всё, что идёт за ``#`` до конца строки, игнорируется компьютером. Пользуйтесь комментариями, чтобы объяснить принципы работы вашей вашей программы без изменения поведения компьютера. А ещё с их помощью можно просто временно отключить или \"закомментировать\" несколько строчек кода."
 
 # 1168e1104a2f49a8b92d4947148d5cc4
-#: ../../../source/loops.rst:118
+#: ../../../source/loops.rst:121
 msgid "Comments can also go at the end of a line, like this::"
 msgstr "Комментарии также могут находиться в конце строки, как этот::"
 
 # 11e97ad4978340f38f253f2dba5056c4
-#: ../../../source/loops.rst:123
+#: ../../../source/loops.rst:126
 msgid "More Efficient Squares"
-msgstr ""
+msgstr "Оптимизируем генератор квадратов"
 
 # cc655afb978f493c8053e667a368d764
-#: ../../../source/loops.rst:128
+#: ../../../source/loops.rst:131
 msgid ""
 "The squares we were drawing at the start of this tutorial had a lot of "
 "repeated lines of code. Can you write out a square drawing program in fewer "
 "lines by utilizing loops?"
-msgstr ""
+msgstr "Программа для рисования квадратов, которую мы написали в начале учебника, содержит слишком много повторяющихся строчек кода. Можешь ли ты сократить её с помощью циклов?"
 
 # bed062fe01ed47d9b7e7795f6976e66a
-#: ../../../source/loops.rst:144
+#: ../../../source/loops.rst:149
 msgid ""
 "Try *nesting* loops, by putting one right under (*inside*) the other, with "
 "some drawing code that's inside both. Here's what it can look like::"
 msgstr ""
 
 # 770ac4cbd02045699e112ac7f9e86d66
-#: ../../../source/loops.rst:155
+#: ../../../source/loops.rst:160
 msgid ""
 "Replace the ``...``'s with your own code, and see if you can come up with "
 "something funny or interesting! :sup:`Mistakes are encouraged!`"

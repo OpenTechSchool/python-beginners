@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2012, OpenTechSchool and contributors
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# Артём Демаков <dearalcher@gmail.com>, 2013
+# sorrymak <dearalcher@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:37\n"
-"PO-Revision-Date: 2013-11-23 11:31+0000\n"
-"Last-Translator: Артём Демаков <dearalcher@gmail.com>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-06-09 01:05+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +57,7 @@ msgid ""
 "found by other programs. To do this, navigate to your installation directory"
 " (:file:`C:\\\\Python33\\\\`), open the :file:`Tools`, then :file:`Scripts` "
 "folders, and run the :file:`win_add2path.py` file by double clicking on it."
-msgstr ""
+msgstr "На Windows можно добавить :program:`Python` в переменную \"path\", чтобы её было легче найти. Для этого нужно перейти в каталог с установленным Python'ом (например, :file:`C:\\\\Python33\\\\`), открыть директорию  :file:`Tools`, потом — :file:`Scripts` и запустить двойным кликом файл :file:`win_add2path.py`."
 
 # 5a3ad46e10c84ceb83d2c448517dd706
 #: ../../../source/getting_started.rst:26
@@ -73,7 +73,7 @@ msgid ""
 "favourite knife. To start off with, you'll just want a basic, easy-to-use "
 "one that doesn't get in your way, but is still effective at writing python "
 "code. Here are some suggestions for those:"
-msgstr ""
+msgstr "Хороший редактор кода помогает читать и писать программы. Их много, а каждый программист выбирает подходящий для себя так же, как теннисист выбирает ракетку, а шеф-повар — нож. Начинающим больше подойдут несложные, незапутанные, но помогающие в работе, редакторы, например:"
 
 # 659b88a7c96048679396df37e7d9591b
 #: ../../../source/getting_started.rst:35
@@ -81,14 +81,14 @@ msgid ""
 "`Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B "
 "shortcut lets you run the python file you're working on straight away. Runs "
 "on Windows, Mac and Linux."
-msgstr ""
+msgstr "`Sublime Text`_: простой, но проприетарный редактор, поддерживающий Windows, Mac и GNU/Linux. Сочетание клавиш Ctl+B запускает открытый файл."
 
 # 1ac7a998ae4f4db2a2258a8d5f5e55c2
 #: ../../../source/getting_started.rst:39
 msgid ""
 "`Geany`_: A simple editor that doesn't aim to be too complicated. Available "
 "on Windows and Linux (you can probably find it in your package manager)."
-msgstr "`Geany`_: простой и пытающийся не быть слишком запутанным редактор. Работает на Windows и GNU/Linux (скорее всего, найдётся в репозиториях)"
+msgstr "`Geany`_: простой в обращении и не перегруженный функциями редактор, работающий на Windows и GNU/Linux."
 
 # a1e86671e9a444588e04ea4911f26ac0
 #: ../../../source/getting_started.rst:42
@@ -166,14 +166,14 @@ msgid ""
 "Terminal by navigating to Applications, then Utilities, then double-click "
 "the :program:`Terminal` program. You can also easily search for it in the "
 "system search tool in the top right."
-msgstr ""
+msgstr "Стандартная консоль OS X зовётся :program:`Терминалом`, который можно найти с помощью поиска (правый верхний угол) по системе или в разделе Приложения -> Утилиты ."
 
 # eacd367049d04563ae4192269f8df290
 #: ../../../source/getting_started.rst:91
 msgid ""
 "The command line Terminal is a tool for interacting with your computer. A "
 "window will open with a command line prompt message, something like this::"
-msgstr ""
+msgstr "Командная строка Terminal — это инструмент для \"общения\" с компьютером. Открывшееся окно должно содержать сообщение-подсказку, что-то вроде этого::"
 
 # 7798d3c0ec3541c286c8cf98227e0986
 #: ../../../source/getting_started.rst:98
@@ -188,7 +188,7 @@ msgid ""
 "start up, and how, can depend on your distribution. On Ubuntu, you will "
 "likely want to open :program:`Gnome Terminal`. It should present a prompt "
 "like this::"
-msgstr ""
+msgstr "В дистрибутивах GNU/Linux (Ubuntu, Fedora, Mint и т.д.) обычно уже установлены разные программы-консоли, обычно называемые терминалами. То, какой терминал установлен, зависит от используемого дистрибутива. Например, в Ubuntu это :program:`Gnome Terminal`. После запуска появляется приглашение вроде этого::"
 
 # aa17ca5f743142c98d61de9b2c0dfc21
 #: ../../../source/getting_started.rst:108
@@ -198,29 +198,30 @@ msgstr "Открываем консоль в Windows"
 # 73ea390ecaae4c38882f2390a941baca
 #: ../../../source/getting_started.rst:110
 msgid ""
-"Window's console is called the Command Prompt, named :program:`cmd`. An easy"
-" way to get to it is by using the key combination \"Windows+R\" ('Windows' "
-"meaning the windows logo button), which should open a 'Run' dialog. Then "
-"type :kbd:`cmd` and hit :kbd:`<Enter>` or click Ok. You can also search for "
-"it from the start menu. It should look like::"
-msgstr "Консоль Windows называется Командной Строкой (:program:`cmd`). Чтобы добраться до неё, нужно нажать комбинацию \"Windows+R\" (под \"Windows\" подразумевается клавиша с логотипом Windows), что приведёт к открытию диалогового окна \"Запустить\", в которое нужно просто ввести :kbd:`cmd` и нажать :kbd:`<Enter>` или Ок. Также можно поискать её в меню \"Пуск\". Это должно выглядеть приблизительно так:"
+"Window's console is called the Command Prompt, named :program:`cmd`.  An "
+"easy way to get to it is by using the key combination :kbd:`Windows+R` "
+"(:kbd:`Windows` meaning the windows logo button), which should open a "
+":guilabel:`Run` dialog.  Then type :program:`cmd` and hit :kbd:`Enter` or "
+"click :guilabel:`Ok`. You can also search for it from the start menu. It "
+"should look like::"
+msgstr ""
 
 # 00975157bbb6470ba6b42161c0112beb
-#: ../../../source/getting_started.rst:118
+#: ../../../source/getting_started.rst:119
 msgid ""
 "Window's Command Prompt is not quite as powerful as its counterparts on "
 "Linux and OS X, so you might like to start the Python Interpreter (see just "
 "below) directly, or using the IDLE program that Python comes with. You can "
 "find these in the Start menu."
-msgstr ""
+msgstr "Командная строка Windows намного менее функциональна, чем её аналоги из GNU/Linux и OS X, потому лучше запускать интерпретатор Python'а (см. ниже) напрямую или с помощью программы IDLE, которая поставляется с Python'ом (найти её можно в меню \"Пуск\")."
 
 # 88b64d41669d4c3cb45007b4cf9cbc66
-#: ../../../source/getting_started.rst:124
+#: ../../../source/getting_started.rst:125
 msgid "Using Python"
 msgstr "Использование Python"
 
 # eb182d26a08a47ad95358361b196b4cf
-#: ../../../source/getting_started.rst:126
+#: ../../../source/getting_started.rst:127
 msgid ""
 "The python program that you have installed will by default act as something "
 "called an **interpreter**. An interpreter takes commands and runs them as "
@@ -228,33 +229,33 @@ msgid ""
 msgstr "Python-программа, установленная по умолчанию, называется **интерпретатором**. Интепретатор принимает команды и выполняет их после ввода. Очень удобно для тестирования чего-либо."
 
 # 12caf0c5291644169524d7e3a18eee2f
-#: ../../../source/getting_started.rst:130
+#: ../../../source/getting_started.rst:131
 msgid ""
-"Just type :program:`python` at your console, hit :kbd:`<Enter>`, and you "
+"Just type :program:`python` at your console, hit :kbd:`Enter`, and you "
 "should enter Python's Interpreter."
-msgstr "Просто введи в консоль :program:`python` и нажми :kbd:`<Enter>`, после чего ты должен увидеть интерпретатор Python."
+msgstr "Чтобы запустить интерпретатор, просто введи :program:`python` и нажми Enter."
 
 # 8bc6bc88b6ec4afba694b77e96414f50
-#: ../../../source/getting_started.rst:133
+#: ../../../source/getting_started.rst:134
 msgid ""
 "To find out which version of python you're running, use ``python -V`` to "
 "tell you."
 msgstr "Чтобы узнать, какая версия Python запущена, используй ``python -V``"
 
 # 5160c10493dc4a718e939162aa7cd93b
-#: ../../../source/getting_started.rst:137
+#: ../../../source/getting_started.rst:138
 msgid "Interacting With Python"
 msgstr "Взаимодействие с Python'ом"
 
 # cd59dd78e3844309b01bf4e00b0daf45
-#: ../../../source/getting_started.rst:139
+#: ../../../source/getting_started.rst:140
 msgid ""
 "After Python opens, it will show you some contextual information similar to "
 "this::"
 msgstr "Когда Python запустится, ты увидишь что-то вроде этого::"
 
 # 1a91b243aa4e4263bc39e9bd8d5ee4ca
-#: ../../../source/getting_started.rst:148
+#: ../../../source/getting_started.rst:149
 msgid ""
 "The prompt **>>>** on the last line indicates that you are now in an "
 "interactive Python interpeter session, also called the \"Python shell\". "
@@ -262,40 +263,41 @@ msgid ""
 msgstr "**>>>** в последней строке означает, что сейчас мы находимся в интерактивном интерпретаторе Python, также называемом \"Оболочкой Python (Python shell)\". **Это не то же самое, и что обычная командная строка!**"
 
 # 0a9fc3bffc6b4978868f36475d6fda14
-#: ../../../source/getting_started.rst:152
+#: ../../../source/getting_started.rst:153
 msgid "You can now enter some python code. Try::"
 msgstr "Теперь ты можешь ввести немного Python-кода. Попробуй::"
 
 # 7deae132204445d78f010eb44a20fb64
-#: ../../../source/getting_started.rst:156
+#: ../../../source/getting_started.rst:157
 msgid ""
-"Press :kbd:`<Enter>` and see what happens. After showing the results, Python"
-" will bring you back to the interactive prompt, where you could enter "
-"another command::"
+"Press :kbd:`Enter` and see what happens. After showing the results, Python "
+"will bring you back to the interactive prompt, where you could enter another"
+" command:"
 msgstr ""
 
 # 6bff2421d33b4490befb472084dc2bb6
-#: ../../../source/getting_started.rst:165
+#: ../../../source/getting_started.rst:166
 msgid ""
 "An extremely useful command is ``help()``, which enters a help functionality"
-" to explore all the stuff python lets you do, right from the interpreter."
+" to explore all the stuff python lets you do, right from the interpreter. "
+"Press :kbd:`q` to close the help window and return to the Python prompt."
 msgstr ""
 
 # c277534357e444f7a701082f5acde3e1
-#: ../../../source/getting_started.rst:168
+#: ../../../source/getting_started.rst:170
 msgid ""
 "To leave the interactive shell, press :kbd:`Ctrl-Z` and then :kbd:`Enter` on"
 " Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, you could also "
 "run the python command ``exit()``!"
-msgstr ""
+msgstr "Чтобы выйти из интерактивной оболочки, нажми :kbd:`Ctrl-Z` и затем :kbd:`Enter`, если используешь Windows, и :kbd:`Ctrl-D`, если используешь GNU/Linux или OS X. Этого же можно добиться вводом Python-команды ``exit()``."
 
 # 6a91d5ee8cdc476186d9ace3c14c787c
-#: ../../../source/getting_started.rst:173
+#: ../../../source/getting_started.rst:175
 msgid "Running Python files"
 msgstr "Запуск файлов с Python-кодом"
 
 # 4608a694116543009225a293177f0066
-#: ../../../source/getting_started.rst:175
+#: ../../../source/getting_started.rst:177
 msgid ""
 "When you have a lot of python code to run, you will want to save it into a "
 "file so, for instance, you can modify small parts of it (fix a bug) and re-"
@@ -303,48 +305,48 @@ msgid ""
 "your code to a file and pass a file name to the :program:`python` "
 "executable. It will execute that file instead of launching the interactive "
 "interpreter."
-msgstr ""
+msgstr "Когда Python-кода становится слишком много, лучше записывать его в файлы. Это, например, позволит тебе редактировать отдельные части кода (исправлять ошибки) и тут же запускать их без необходимости перепечатывать текст. Просто сохрани код в файл, и передай его имя :program:`python`'у. Записанный в файл исходный код будет выполнен без запуска интерактивного интерпретатора."
 
 # bcd98eb307b240ab870726f7b8d43923
-#: ../../../source/getting_started.rst:182
+#: ../../../source/getting_started.rst:184
 msgid ""
 "**Let's try that**.  Create a file :file:`hello.py` in your current "
 "directory with your favorite text editor and write the print command from "
-"above.  Now save that file. On Linux or OS X, you can also run :kbd:`touch "
-"hello.py` to create an empty file to edit. To run this file with python, "
+"above.  Now save that file. On Linux or OS X, you can also run ``touch "
+"hello.py`` to create an empty file to edit. To run this file with python, "
 "it's pretty easy:"
-msgstr ""
+msgstr "**Давай попробуем сделать это**. С помощью своего любимого текстового редактора создай файл :file:`hello.py` в текущей директории и запиши в него программу команду, выводящую фразу \"Hello world\", из примера выше. На GNU/Linux или OS X также можно выполнить команду ``touch hello.py``, чтобы создать пустой файл для последующего редактирования. Выполнить сохранённую в файле программу проще простого:"
 
 # 90bee73368b5411385af0f9a73fdb74e
-#: ../../../source/getting_started.rst:193
+#: ../../../source/getting_started.rst:195
 msgid ""
 "Make sure you are at your system command prompt, which will have ``$`` or "
 "``>`` at the end, not at python's (which has ``>>>`` instead)!"
-msgstr ""
+msgstr "Для начала убедись, что ты находишься в командной строке (на конце строк должны находиться символы ``$`` или ``>``, а  не ``>>>``, как в интерактивной оболочке Python)."
 
 # 00b4de6700f04f1c881367c7e9972d9c
-#: ../../../source/getting_started.rst:196
+#: ../../../source/getting_started.rst:198
 msgid ""
 "On Windows you should also be able to double-click the Python file to run "
 "it."
 msgstr "В Windows нужно два раза кликнуть на пиктограмму файла, чтобы запустить его."
 
 # 6b39be00158940498926e0c9c02512f8
-#: ../../../source/getting_started.rst:198
+#: ../../../source/getting_started.rst:200
 msgid ""
-"When pressing :kbd:`<Enter>` now, the file is executed and you see the "
-"output as before.  But this time, after Python finished executing all "
-"commands from that file it exits back to the system command prompt, instead "
-"of going back to the interactive shell."
+"When pressing :kbd:`Enter` now, the file is executed and you see the output "
+"as before.  But this time, after Python finished executing all commands from"
+" that file it exits back to the system command prompt, instead of going back"
+" to the interactive shell."
 msgstr ""
 
 # 5af0071c2f304f7489599113a421d378
-#: ../../../source/getting_started.rst:203
+#: ../../../source/getting_started.rst:205
 msgid "And now we are all set and can get started with turtle!"
 msgstr "Теперь всё готово, и мы можем приступить к черепашке!"
 
 # 65f249d2648841d282fa7fd6776bfeac
-#: ../../../source/getting_started.rst:207
+#: ../../../source/getting_started.rst:209
 msgid ""
 "Not getting \"Hello world\" but some crazy error about \"can't open file\" "
 "or \"No such file or directory?\" Your command line might not be running in "
@@ -354,12 +356,12 @@ msgid ""
 msgstr ""
 
 # 98c019765b69417884001378c597185b
-#: ../../../source/getting_started.rst:216
+#: ../../../source/getting_started.rst:218
 msgid "On Linux or OS X, you might want something like:"
 msgstr ""
 
 # da0b56ac855f4057ab5efeb381ba5c6e
-#: ../../../source/getting_started.rst:222
+#: ../../../source/getting_started.rst:224
 msgid ""
 "This changes to the directory Python_Exercises under the Desktop folder "
 "(yours might be somewhere a bit different). If you don't know the location "
@@ -370,7 +372,7 @@ msgid ""
 msgstr ""
 
 # ff10a396843948f9ba479889a13bf55b
-#: ../../../source/getting_started.rst:231
+#: ../../../source/getting_started.rst:233
 msgid ""
 "When playing around with turtle, avoid naming your file :file:`turtle.py` "
 "--- rather use more appropriate names such as :file:`square.py` or "

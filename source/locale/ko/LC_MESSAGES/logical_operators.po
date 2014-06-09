@@ -1,24 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
+# Translators:
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python 0.1\n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 09:14\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-22 21:21+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
+# 2f20df833f124f9c85714161761b61a0
 #: ../../../source/logical_operators.rst:2
 msgid "Logical operators"
-msgstr ""
+msgstr "논리 연산자"
 
+# f311ca6659b4437e989dee0b026e81c5
 #: ../../../source/logical_operators.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "소개"
 
+# a64bdf21929b492493f49955995ab7bc
 #: ../../../source/logical_operators.rst:7
 msgid ""
 "Conditionals are a nice way to make decisions by asking if something equals "
@@ -26,23 +36,28 @@ msgid ""
 "the opposite of our result. Or for instance if we want to make a decision "
 "upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine them. This "
 "can be done with logical operators."
-msgstr ""
+msgstr "조건문은 어떤 조건이 *True*인지 아닌지 요청하여 결정하는데 좋은 방법이긴 해요. 근데 하나의 조건 가지고는 충분하지 않을 때가 자주 있죠. 아마 결과의 반대를 취하려 할거예요. 아니면 ``turtle.xcor()`` 랑 ``turtle.ycor()`` 로 결정하려 한다면 이걸 결합해야 해요. 논리 연산자를 쓰면 해결할 수 있어요."
 
+# 91aa730b80734d2486904a10e87f6973
 #: ../../../source/logical_operators.rst:14
 msgid "Negation of a statement"
-msgstr ""
+msgstr "조건의 부정"
 
+# 16dd9203364c46d3a5f8c59cd8891fb2
 #: ../../../source/logical_operators.rst:16
 msgid ""
 "If we want something to be *False* we can use ``not``. It is a logical "
 "operator::"
-msgstr ""
+msgstr "무언가 *False*로 되돌리고 싶으면 ``not``을 쓸 수 있어요. 이건 논리 연산자거든요::"
 
+# 98497a179d5d4026bd2f78d00bef5db5
+# 13525c7015f848e89385f50b6344f0e5
 #: ../../../source/logical_operators.rst:26
-#: ../../../source/logical_operators.rst:64
+#: ../../../source/logical_operators.rst:66
 msgid "Exercise"
-msgstr ""
+msgstr "연습"
 
+# 35d690f787ac4b7a94541491e7069e38
 #: ../../../source/logical_operators.rst:28
 msgid ""
 "The turtle gives us a useful function to know if it is drawing or not: "
@@ -50,36 +65,43 @@ msgid ""
 " As we have seen earlier, the function ``turtle.penup()`` and "
 "``turtle.pendown()`` toggle between drawing while moving, or just moving "
 "without a trace."
-msgstr ""
+msgstr "거북이가 화면을 지나가면서 그렸는지 안그렸는지 확인하도록 쓸모있는 함수를 주는데요, 그걸 ``turtle.isdown()``이라고 하겠습니다. 이 합수는 거북이가 그림을 그리면 *True* 값을 반환해요. 앞에서 보신대로 ``turtle.penup()`` 과``turtle.pendown()`` 토글 함수는 움직이는 동안 그릴것이냐, 그리지 않고 그냥 움직이기만 할 것이냐의 상태를 바꾸어요."
 
+# 3d050f537f894d0092f7bc4ebb7aecc0
 #: ../../../source/logical_operators.rst:33
 msgid "Can we write a function that only goes forward if the pen is up?"
-msgstr ""
+msgstr "단순히 펜을 들었을때 전진만하는 함수를 작성할 수 있을까요?"
 
-#: ../../../source/logical_operators.rst:36
-#: ../../../source/logical_operators.rst:71
+# 8ec37a98bbce4ccd9ce82d3d6657f779
+# 79c8613a80fb446d937f63207d57126b
+#: ../../../source/logical_operators.rst:38
+#: ../../../source/logical_operators.rst:75
 msgid "Solution"
-msgstr ""
+msgstr "해결책"
 
-#: ../../../source/logical_operators.rst:46
-msgid "This and that or something else"
-msgstr ""
-
+# 479b73f64ea14a6984e626cfb3c1b620
 #: ../../../source/logical_operators.rst:48
+msgid "This and that or something else"
+msgstr "이거 저거 아니면 다른거요"
+
+# d77af2e96f3840fe90850c25a0981881
+#: ../../../source/logical_operators.rst:50
 msgid ""
 "Two easy to understand operators are ``and`` and ``or``. They do exactly "
 "what they sound like:::"
-msgstr ""
+msgstr "이해하기 쉬운 두 개의 연산자로는 ``and``랑 ``or``가 있어요. 말 그대로 동작해요:::"
 
-#: ../../../source/logical_operators.rst:60
+# a1e51836541b45ea81132528be3d7323
+#: ../../../source/logical_operators.rst:62
 msgid ""
 "You are not restricted to one logical operator. You can combine as may as "
 "you want."
-msgstr ""
+msgstr "하나의 논리 연산자를 쓰는데 제한을 받진 않아요. 원하는 대로 붙일 수 있어요."
 
-#: ../../../source/logical_operators.rst:66
+# 8b46de8719184531b8b89b8a50b410d8
+#: ../../../source/logical_operators.rst:68
 msgid ""
 "Earlier we put the turtle in a circular prison. This time let's make it a "
 "box. If the turtle goes more than 100 in the X *or* Y axis then we turn the "
 "turtle back around to the center."
-msgstr ""
+msgstr "이미 원형 감옥에 거북이를 놓았었어요. 이제 상자를 만들어보기로 하겠어요. 거북이가 X *or* Y 방향으로 100 이상을 가면, 거북이를 가운데 주변으로 다시 돌려놓겠어요."
