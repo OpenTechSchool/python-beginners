@@ -1,4 +1,4 @@
 Fabric
 Sphinx
 sphinx-intl
-sphinx-bootstrap-theme
+-r doc-requirements.txt
