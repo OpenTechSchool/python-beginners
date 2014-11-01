@@ -127,9 +127,6 @@ Creative Commons, 444 Castro Street, Suite 900, Mountain View,
 California, 94041, USA.
 
 .. _OpenTechSchool: http://opentechschool.org
-.. _PyCoaches: http://python.opentechschool.org
 .. _reStructuredText: http://docutils.sourceforge.net/docs/
 .. _Sphinx: http://sphinx.pocoo.org/index.html
-.. _Graphviz: http://www.graphviz.org/
 .. _GitHub Page: https://help.github.com/categories/20/articles
-
