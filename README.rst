@@ -108,6 +108,15 @@ update the branch. Like so::
     $ git commit --all
     $ git push
 
+Credits
+=======
+
+The material presented here is a collaborative work.  It has been created
+largely by OpenTechSchool_ Python coaches.  Every bit, from exercises to
+translations, has been contributed by the community.  After every workshop
+where this material is used we try to gather feedback on how to improve the
+material.
+
 License
 =======
 
