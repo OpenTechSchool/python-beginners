@@ -270,7 +270,7 @@ class Contributors(rst.Directive):
             return []
 
         bullet_list = nodes.bullet_list()
-        for author in sorted(authors):
+        for author in sorted(authors, key=str.lower):
             author = unicodedata.normalize('NFC', author.decode('utf-8'))
             bullet_list.append(nodes.list_item(author,
                     nodes.paragraph(author, author)))
