@@ -257,17 +257,36 @@ texinfo_documents = [
 
 from docutils.parsers import rst
 from docutils import nodes
+from email.utils import parseaddr
+import glob
 import subprocess
 import unicodedata
+
+PO_PATH = 'source/locale/%s/LC_MESSAGES/*.po'
 
 class Contributors(rst.Directive):
     _GIT_COMMAND = "git log --format=%aN"
     def run(self):
         try:
-            authors = set(subprocess.check_output(self._GIT_COMMAND.split()).splitlines())
+            authors = set(subprocess.check_output(self._GIT_COMMAND.split())
+                .splitlines())
         except (AttributeError, OSError, subprocess.CalledProcessError), e:
             import traceback; traceback.print_exc()
             return []
+
+        lang = self.state.document.settings.env.config.language
+
+        for fname in glob.iglob(PO_PATH % lang):
+            with open(fname) as po:
+                lines = iter(po)
+                for line in lines:
+                    if line == "# Translators:\n":
+                        break
+                for line in lines:
+                    if not line.startswith("# "):
+                        break
+                    translator = parseaddr(line[2:])[0]
+                    authors.add(translator)
 
         bullet_list = nodes.bullet_list()
         for author in sorted(authors, key=str.lower):
