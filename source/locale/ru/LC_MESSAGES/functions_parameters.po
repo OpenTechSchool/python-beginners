@@ -4,31 +4,29 @@
 # 
 # Translators:
 # sorrymak <dearalcher@gmail.com>, 2013-2014
+# hoodie <hoodieatpst@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-04-19 14:28+0000\n"
-"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2014-06-13 21:27+0000\n"
+"Last-Translator: hoodie <hoodieatpst@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/opentechschool/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 31856338060a4069a15c76364d66abd7
 #: ../../../source/functions_parameters.rst:2
 msgid "Functions with parameters"
 msgstr "Функции с параметрами"
 
-# df97f4979ba94e3ca18738975ae5d4ec
 #: ../../../source/functions_parameters.rst:5
 msgid "Introduction"
 msgstr "Введение"
 
-# 05764368119b4a3dbd5615f52fceded3
 #: ../../../source/functions_parameters.rst:7
 msgid ""
 "As we shrink down our code and add functions to remove duplication, we are "
@@ -37,82 +35,68 @@ msgid ""
 "function, so if we want to use a different angle or a distance then we need "
 "to write a new function. Our hexagon function can only draw one size of "
 "hexagon!"
-msgstr ""
+msgstr "Мы уменьшаем количество нашего кода и добавляем функции, что бы избежать повторений - это называется *рефакторинг*. Рефакторинг крайне полезен. Ведь функции, которые мы определили не очень \"гибкие\". Необходимые значения заданы внутри функций и если мы захотим изменить угол или дистанцию - нам прийдеться писать новую функцию. Наша функция для рисования шестиугольников может рисовать шестиугольники только одного размера!"
 
-# b79d85f5e8a449c892c87e2ba2da7dcc
 #: ../../../source/functions_parameters.rst:14
 msgid ""
 "That is why we need to be able to give parameters, also called *arguments*, "
 "to the function.  This way the *variables* in the function can have "
 "different values each time we call the function:"
-msgstr ""
+msgstr "Поэтому у нас должна быть возможность задавать параметры функции, которые также называют *аргументами*. В таком случае *переменные* в функции могут принимать разные значения кождый раз, когда мы вызываем нашу функцию::"
 
-# 0671007ca0a04689b42d236a2ebfd6f7
 #: ../../../source/functions_parameters.rst:18
 msgid ""
 "Remember how we defined the function ``line_without_moving()`` in the "
 "previous section::"
 msgstr "Вспомни, как мы описали функцию ``line_without_moving()`` в предыдущей главе::"
 
-# 1e7a466cbda54b848aa7b52bdcba93f8
 #: ../../../source/functions_parameters.rst:25
 msgid "We can improve it by giving it a parameter::"
-msgstr ""
+msgstr "Мы можем улучить её используя параметр::"
 
-# e95e98b502e248fcb92752393b176ea1
 #: ../../../source/functions_parameters.rst:31
 msgid ""
 "The parameter acts as a *variable* only known inside the function's "
 "definition. We use the newly defined function by calling it with the value "
 "we want the parameter to have like this::"
-msgstr ""
+msgstr "Параметр функции действует как *переменная*, но только внутри функции, в которой мы его объявили. Теперь можно вызвать новую функцию со значением, которое необходимо ей передать::"
 
-# f57bfa231e7748aa8950a42c59fac2f1
 #: ../../../source/functions_parameters.rst:38
 msgid ""
 "We have been using functions with parameters since the beginning of the "
 "tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
-msgstr ""
+msgstr "Мы пользовались функциями с параметрами еще в самом начале учебника используя ``turtle.forward()``, ``turtle.left()`` и т.д."
 
-# 572658a5ac4144cd9399c44d8e3c65c5
 #: ../../../source/functions_parameters.rst:41
 msgid ""
 "And we can put as many arguments (or parameters) as we want, separating them"
 " with commas and giving them different names::"
 msgstr "И мы можем вставить столько аргументов (или параметров), сколько захотим, дав им разные имена и разделив запятыми::"
 
-# 04e2dc810b364479bd14718bb15c9983
 #: ../../../source/functions_parameters.rst:50
 msgid "A parameterized function for a variable size hexagon"
 msgstr "Функция с параметрами для шестиугольника произвольного размера"
 
-# 0f0f95dfcc8c43cba60a6f18e52be0db
-# 0a13fd0237fa4fc7a07937ce33637458
 #: ../../../source/functions_parameters.rst:53
 #: ../../../source/functions_parameters.rst:74
 msgid "Exercise"
 msgstr "Упражнение"
 
-# fec2c7a4385a4b199af7d38017f3bbdf
 #: ../../../source/functions_parameters.rst:55
 msgid ""
 "Write a function that allows you to draw hexagons of any size you want, each"
 " time you call the function."
 msgstr "Напиши функцию для рисования шестиугольника, которая позволяет выбирать его размер при вызове."
 
-# b9f7cb0e3eb44448a9e7ea0ae9272dec
-# 1d779f3323a34ba1a39e66aec5a19fce
 #: ../../../source/functions_parameters.rst:61
 #: ../../../source/functions_parameters.rst:90
 msgid "Solution"
 msgstr "Решение"
 
-# 6ad406b7394949f6b91a18449da6bf3a
 #: ../../../source/functions_parameters.rst:71
 msgid "A function of several parameters"
 msgstr "Функция с несколькими параметрами"
 
-# c7d8b33958194034a54d2b9f8da33889
 #: ../../../source/functions_parameters.rst:76
 msgid ""
 "Write a function that will draw a shape of *any* number of sides (let's "
@@ -120,22 +104,18 @@ msgid ""
 "shapes."
 msgstr "Напиши функцию для рисования фигур с произвольным количеством (т. е. >2) сторон любой длины и проверь её в деле."
 
-# b2d4621c26104fda805bcf9168e89328
 #: ../../../source/functions_parameters.rst:79
 msgid "Here's an example of drawing shapes with this function:"
 msgstr "Пример рисования фигур с помощью этой функции:"
 
-# 9b4e351d67af46e8ae6f3d96427d56f9
 #: ../../../source/functions_parameters.rst:85
 msgid "The sum of the external angles of any shape is always 360 degrees!"
 msgstr "Сумма внешних углов любой фигуры всегда равна 360 градусов!"
 
-# 9f40085c5c1641ccb93840304925909b
 #: ../../../source/functions_parameters.rst:100
 msgid "Bonus"
 msgstr "Дополнительно"
 
-# 26f9be45064e4740881b62f195ce82c4
 #: ../../../source/functions_parameters.rst:102
 msgid ""
 "It might sound crazy, but it's perfectly possible to pass a *function* as a "
@@ -143,7 +123,6 @@ msgid ""
 "'things', the same as variables, numbers and strings."
 msgstr "Это может звучать немного безумно, но вполне возможно передать *функции* в качестве параметра другую функцию — Python обращается с ними так же, как и с переменными, числами и строками."
 
-# 88541c4b6dbf4d5393ea34aac5101448
 #: ../../../source/functions_parameters.rst:106
 msgid ""
 "For instance, you could create a shape drawing function which turned one way"
@@ -151,12 +130,10 @@ msgid ""
 "``turtle.left`` or ``turtle.right``."
 msgstr ""
 
-# 4f17f1d6fcb04922ae9ffbe72a020039
 #: ../../../source/functions_parameters.rst:109
 msgid "See if you can implement this!"
-msgstr ""
+msgstr "Попоробуй, сможешь ли ты это сделать!"
 
-# dc5ad5fd72674918a3246a4fa8e0a35f
 #: ../../../source/functions_parameters.rst:113
 msgid ""
 "Passing a function (e.g ``turtle.left``) is different than *calling* it, "

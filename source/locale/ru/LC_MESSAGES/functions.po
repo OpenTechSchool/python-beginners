@@ -3,32 +3,29 @@
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# sorrymak <dearalcher@gmail.com>, 2013-2014
+# sorrymak <dearalcher@gmail.com>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-06-04 13:28+0000\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-01-16 12:40+0000\n"
 "Last-Translator: sorrymak <dearalcher@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/opentechschool/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# b150007b79954d7fb717a2021047a018
 #: ../../../source/functions.rst:2
 msgid "User-defined functions"
 msgstr "Функции, определяемые пользователем"
 
-# 4b91eb2e343245bdafc83a201b4cb9bd
 #: ../../../source/functions.rst:5
 msgid "Introduction"
 msgstr "Введение"
 
-# 9b9ab659411949de99730371121cb25b
 #: ../../../source/functions.rst:7
 msgid ""
 "Programmers can deal with some pretty complex and abstract problems, but one"
@@ -37,7 +34,6 @@ msgid ""
 "discrete pieces, which lets you focus on just the piece you want to."
 msgstr "В программировании часто приходится встречаться с достаточно сложными задачами, а, как известно, одна из характерных черт программистов — ленивость. Расправившись с трудностью один раз, они не хотят делать это вновь. Также тебе понадобится что-то, с помощью чего можно разбивать задачи на маленькие и независимые друг от друга кусочки, чтобы сфокусировать свои усилия над теми из них, которые тебе нужны."
 
-# 404bea48f9bc46d2813d46addf44959e
 #: ../../../source/functions.rst:12
 msgid ""
 "Functions are one way to do this abstraction in Python. Let's take "
@@ -45,22 +41,18 @@ msgid ""
 "``turtle``, and it is actually an abstraction for a number of steps, namely:"
 msgstr "Функции -- один из способов в Python выразить эту абстракцию. В качестве примера рассмотрим ``turtle.reset()``. ``reset`` -- это функция, которая вызывает нашу черепашку (``turtle``) для выполнения некоторых действий, а именно:"
 
-# 95b43e89f9fb450788340fb8d3b687ac
 #: ../../../source/functions.rst:16
 msgid "Erase the drawing board."
 msgstr "Очищение доски для рисования."
 
-# 69026f435e2648b187a57a6fbc744888
 #: ../../../source/functions.rst:17
 msgid "Set the width and color back to default."
 msgstr "Возвращение ширины и цвета в исходное состояние."
 
-# 39e401c2f9be4718b22a5bbe8b5dc0c4
 #: ../../../source/functions.rst:18
 msgid "Move the turtle back to its initial position."
 msgstr "Возвращение черепашки в исходное положение"
 
-# 28843546bf054acfb46700b3cb1fdd9c
 #: ../../../source/functions.rst:20
 msgid ""
 "But because all the code is contained in the function, we don't have to "
@@ -68,36 +60,30 @@ msgid ""
 "will do what it says for us."
 msgstr "Но так как весь код заключён в функцию, нам не нужно беспокоиться о деталях. Мы просто *вызываем* её."
 
-# 8fdfa9923176412cadacf83a1664f694
 #: ../../../source/functions.rst:23
 msgid "So - how to write your own?"
 msgstr "Итак — как же написать её?"
 
-# 69c11ba77acb4ea791f814c7002a2f12
 #: ../../../source/functions.rst:25
 msgid "A function can be defined with the ``def`` keyword in Python::"
 msgstr "Функции в Python могут быть определены ключевым словом ``def``::"
 
-# 314812d30924445db5b2d4b0819a1c50
 #: ../../../source/functions.rst:31
 msgid ""
 "This function we defined is called ``line_without_moving`` and it is an "
 "abstraction for two turtle steps - a move forward and a move backward."
 msgstr "Определённая нами функция называется ``line_without_moving`` и она является абстракцией для двух шагов - движения вперёд и движения назад."
 
-# 0c74c1724be441dfa6c83b8278fecf95
 #: ../../../source/functions.rst:35
 msgid ""
 "To use it (or as it is usually called, \"to call it\"), write its name "
 "followed by parentheses::"
 msgstr "Чтобы использовать её (или, как обычно говорят \"вызвать её\"), напиши её имя и круглые скобки сразу за ним:"
 
-# 69311372184e4800abc763ffdc315963
 #: ../../../source/functions.rst:46
 msgid "We could write more functions to remove some of the repetition::"
 msgstr "Мы можем написать больше функций, чтобы избавиться от некоторых повторений::"
 
-# 4ada32fa325f453495f4067beee03d9e
 #: ../../../source/functions.rst:57
 msgid ""
 "Python uses *indenting with whitespace* to identify blocks of code that "
@@ -107,14 +93,12 @@ msgid ""
 "the first line that isn't indented."
 msgstr "В Python используются *отступы из пробелов/табуляций* для идентификации блоков кода, которые связаны друг с другом. Блок в Python'е (как показанное выше определение функции) должен иметь двоеточие в конце строки, а последующие команды -- отступы (обычно, размером в 4 пробела). Блок заканчивается первой линией без отступа в начале строки."
 
-# 9e6798a941ca4e21a1fcdafaf48c807b
 #: ../../../source/functions.rst:63
 msgid ""
 "This is different to many other programming languages, which use special "
 "characters (like curly braces ``{}``) to group blocks of code together."
 msgstr "Это отличается от многих других языков программирования, в которых для определения связанных блоков кода используются специальные символы (такие как фигурные скобки ``{}``)"
 
-# a08e7ef4dea9447092c9c3b3e41bc6c1
 #: ../../../source/functions.rst:67
 msgid ""
 "Never use tab characters to indent your blocks, only spaces. You can -- and "
@@ -125,18 +109,14 @@ msgid ""
 "debug bugs will happen)."
 msgstr "Никогда не используй табуляцию для выделения своих блоков, только пробелы. Ты можешь -- и должен -- настроить свой редактор, чтобы тот вставлял 4 пробела, когда ты нажимаешь клавишу Tab"
 
-# 5b6014e131e743e6a40523ad6786ea09
 #: ../../../source/functions.rst:76
 msgid "A function for a square"
 msgstr "Функция для рисования квадрата"
 
-# dfcd47ffdcd944f48f11ec1987a6cc09
-# c2ed3ecc64eb45c6918e57601759bb25
 #: ../../../source/functions.rst:79 ../../../source/functions.rst:120
 msgid "Exercise"
 msgstr "Упражнение"
 
-# b38e221085f54216babbe3532f9afd6d
 #: ../../../source/functions.rst:81
 msgid ""
 "Write a function that draws a square. Could you use this function to improve"
@@ -144,43 +124,35 @@ msgid ""
 " it easier to experiment with?"
 msgstr "Напиши функцию для рисования квадрата. Можешь ли ты использовать эту функцию для улучшения программы для рисования повёрнутых квадратов? Если ты внедришь в программу функции, с ней будет легче экспериментировать?"
 
-# 177b659f93b540eab20425cadefd5b40
-# 0cd1ab494fb540e5ae3dd94d3a7d469b
 #: ../../../source/functions.rst:88 ../../../source/functions.rst:142
 msgid "Solution"
 msgstr "Решение"
 
-# d22ac731cdfb40a381277b47faefded0
 #: ../../../source/functions.rst:117
 msgid "A function for a hexagon"
 msgstr "Функция для рисования шестиугольника"
 
-# ab71af3d201f4cf0a0f016b60653f397
 #: ../../../source/functions.rst:122
 msgid "Write a function that draws a hexagon."
 msgstr "Напишите функцию для рисования шестиугольника"
 
-# 13452cd00bab458caafcf98f8ae88c9b
 #: ../../../source/functions.rst:126
 msgid ""
 "Now combine that function into a honeycomb. Just make it with a single layer"
 " like this:"
 msgstr "Теперь комбинируй эту функцию, чтобы нарисовать соты. Просто сделай однослойную картинку, как эта:"
 
-# 58233cc905a449afa1d1365343d0643c
 #: ../../../source/functions.rst:130
 msgid "Give it a good go!"
 msgstr ""
 
-# 0884a8c94ade405082054e7c977e239b
 #: ../../../source/functions.rst:134
 msgid ""
 "Make sure your hexagon function returns your turtle to exactly the same "
 "position and angle it was before it was asked to draw the hexagon. This "
 "makes it easier to reason about."
-msgstr ""
+msgstr "Убедись в том, что функция рисования шестиугольника возвращает черепашку в исходную точку. "
 
-# 8189b95016014d53a1fc92fee3f93dad
 #: ../../../source/functions.rst:156
 msgid ""
 "You could also put the ``turtle.forward(100); turtle.right(60)`` portion in "

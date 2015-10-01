@@ -9,27 +9,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-02-23 13:51+0000\n"
-"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: Korean (http://www.transifex.com/opentechschool/python-for-beginners/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# 0ebffb4008364c84b28bbdbc83a58dd0
 #: ../../../source/conditional_loops.rst:2
 msgid "Conditional Loops"
 msgstr "조건 순환 반복"
 
-# c001aa827a0c4efeace6c64237e071b2
 #: ../../../source/conditional_loops.rst:4
 msgid "Introduction"
 msgstr "소개"
 
-# 286bdc49c4f54f99a59f5aa3e5f89fa1
 #: ../../../source/conditional_loops.rst:6
 msgid ""
 "Conditional loops are way to repeat something while a certain condition is "
@@ -39,60 +36,50 @@ msgid ""
 "defined with the ``while`` statement::"
 msgstr "조건 순환 반복은 각각의 경우에 조건이 만족하거나 **True**일 때 어떤 동작을 반복하는 방법이예요. 상태가 항상 만족한다면(**False**가 되지 않는다면), 순환 반복은 끝남이 없을 수 있어요. False 조건으로 시작하면 순환 반복 구문 안의 코드는 실행되지 않아요! 파이썬에서는 조건 순환 반복 구문을 ``while`` 구문으로 정의해요::"
 
-# dca5de2f82e543c4a48463876e388415
 #: ../../../source/conditional_loops.rst:23
 msgid "We call this part of the code the 'conditional': ``'.' not in word``"
 msgstr "이 코드 일부를 '조건문' 이라고 해요: ``'.' 은 단어에 없어요``"
 
-# 9d1aa6649ba94e21908cff558d8e8826
 #: ../../../source/conditional_loops.rst:25
 msgid ""
 "Whether the conditional return True or not determines whether the code "
 "inside the ``while`` loop runs."
 msgstr "조건문이 True를 반환하느냐 마느냐에 따라 ``while`` 순환 반복 구문 안에 있는 코드를 실행할지 말지를 결정해요."
 
-# 7fc839b4812d49c087116e5c082b0654
 #: ../../../source/conditional_loops.rst:28
 msgid ""
 "Read the code above, and see if you can summarise in your head what it what "
 "it do (what its final output will be)."
 msgstr "위의 코드를 보고, 어떤 동작을 할 지 머릿속에 정리해본 내용을 확인해보세요(마지막 결과가 어떻게 될지요)."
 
-# 18c22a5fe65440de8c2100ef541567b0
 #: ../../../source/conditional_loops.rst:31
 msgid ""
 "Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
 "what it does. Does that match up with what you thought?"
 msgstr "그 다음 파일에 복사해넣고 :file:`sentence.py`를 불러서 실행해보세요. 정확하게 어떤 동작을 하는지 보세요. 생각한대로 동작하나요?"
 
-# 400050782b514b07b884a224a79f4915
 #: ../../../source/conditional_loops.rst:36
 msgid ""
 "If you are using Python 2, you will need to replace ``input`` with "
 "``raw_input`` to run the program correctly."
 msgstr "파이썬 2를 사용하면, 프로그램을 올바르게 돌아가게 하려면 ``input``을 ``raw_input``으로 바꾸셔야 해요."
 
-# 893ffd73db564e45bf4edc62de0c4aec
 #: ../../../source/conditional_loops.rst:40
 msgid "Turtle prison"
 msgstr "거북이 감옥"
 
-# 45292113e45d41e7b1b92ccf9d813a8b
-# 324bbaf285c5445f846e9ad7f3d79213
 #: ../../../source/conditional_loops.rst:43
 #: ../../../source/conditional_loops.rst:89
 msgid "Exercise"
 msgstr "연습"
 
-# a2660c48dad44766bde0bf90b2ad0528
 #: ../../../source/conditional_loops.rst:45
 msgid ""
-"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"The turtle has been up to its usual tricks again, robbing liquor stores and "
 "building up huge gambling debts. It's time for turtle to be put into a cell "
 "that it can't get out of."
-msgstr "거북이가 술집에서 술을 훔쳐오고 엄청난 도박빚을 몰고 오는 사기를 치기 시작했어요. 이 거북이를 밖으로 나오지 못하게 공간에 집어넣을 시간입니다."
+msgstr ""
 
-# c903bbaa30ea41c99d255de554d25a44
 #: ../../../source/conditional_loops.rst:49
 msgid ""
 "Let's make a new version of ``forward()``. One that will turn the turtle "
@@ -100,29 +87,24 @@ msgid ""
 "``while`` loop, and some new turtle functions:"
 msgstr "``forward()``를 새로 짜기로 해요. 새로 작성한 함수는 거북이가 원점으로부터 100 이상 가면 돌아오게 합니다. ``while`` 순환 반복 구문과 몇가지 거북이 함수가 필요해요:"
 
-# 3ce77ae318ca4616805a1fe13f9c94f0
 #: ../../../source/conditional_loops.rst:53
 msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
 msgstr "``turtle.distance(0,0)`` - 원점으로부터 거북이까지의 거리예요"
 
-# 2743f0601d844fd5827dc8ca59a5161b
 #: ../../../source/conditional_loops.rst:54
 msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
 msgstr "``turtle.towards(0,0)`` - 거북이가 놓인 방향을 바로 설정해요"
 
-# 735068e95dbb4feb83bc42382501dba0
 #: ../../../source/conditional_loops.rst:55
 msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
 msgstr "``turtle.setheading(angle)`` - 원점으로부터의 각도예요"
 
-# 0122ec4586504984bd958b7f612c62f6
 #: ../../../source/conditional_loops.rst:57
 msgid ""
 "You could try playing with a turtle in the interpreter and using these "
 "functions to check exactly what they do, if you like."
 msgstr "인터프리터에서 거북이를 가지고 놀아볼 수 있고, 원할 경우 함수를 이용하여 거북이가 어떤 행동을 하는지 확인해볼 수 있어요."
 
-# 0e6c0ed6971b4e538b809f9a0cd1f136
 #: ../../../source/conditional_loops.rst:60
 msgid ""
 "Now you will need to implement the prison logic using these turtle "
@@ -131,19 +113,15 @@ msgid ""
 " or another student."
 msgstr "거북이 함수를 사용해서 감옥 로직을 구현해야 할텐데요. 아마 ``while`` 순환 반복 구문과 약간의 상태 로직을 사용하면 될거예요. 좀 늘어날텐데 그냥 그대로 두세요! 도우미나 다른 학생과 이야기하는걸 두려워하지 마세요."
 
-# 1b49d73c3a5e4021ac2fe477151ecc2f
-# 14cab36de06d4023b20c5be256604d50
 #: ../../../source/conditional_loops.rst:68
 #: ../../../source/conditional_loops.rst:108
 msgid "Solution"
 msgstr "해결책"
 
-# 352a42136ca6400ab20cf89a1ab398b3
 #: ../../../source/conditional_loops.rst:82
 msgid "Draw a spiral"
 msgstr "원 그리기"
 
-# 6aeef203d95c4a34bd5bd692b99ebe55
 #: ../../../source/conditional_loops.rst:84
 msgid ""
 "Loops can be interrupted with the ``break`` statement. This is especially "
@@ -151,7 +129,6 @@ msgid ""
 "conditional is always **True**."
 msgstr "순환 반복 구문은 ``break``문으로 멈출 수 있어요. 조건이 항상 **True**인 순환 반복이 존재하는 *무한 순환 반복* 구문을 작성했을때 특히 쓸모가 있어요."
 
-# 217e80c3d8024535a12d1b844ab5475a
 #: ../../../source/conditional_loops.rst:91
 msgid ""
 "Write a ``while`` loop with a condition that is always **True** to draw a "
@@ -160,7 +137,6 @@ msgid ""
 "distance to the point defined by the coordinates ``x`` and ``y``."
 msgstr "``while`` 순환 반복 구문에 원을 그릴때 조건문이 항상 **True**가 되도록 작성하세요. 가운데에서 일정 거리에 도달하면 순환 반복 구문을 멈추세요. 원점으로부터 ``x``와 ``y`` 좌표로 정의한 점까지의 거리를 가져오려면 ``turtle.distance(x, y)`` 함수를 사용하세요."
 
-# bd8e43cfe2964a199f111a74393dff96
 #: ../../../source/conditional_loops.rst:96
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
@@ -168,19 +144,16 @@ msgid ""
 "respectively."
 msgstr "이 동작을 취하려면 거북이의 X축 Y축 각각의 위치를 반환하는 ``turtle.xcor()`` 와 ``turtle.ycor()`` 함수가 필요해요."
 
-# 88a12b054e8245ca96d6e8180a7d0212
 #: ../../../source/conditional_loops.rst:102
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
 msgstr "원을 그리려면 거북이가 상수값에 따라 돌아야 하고 값 증가에 따라 앞으로 이동해야 해요."
 
-# 8030819ae52e44e3a12fc6b6b071eb14
 #: ../../../source/conditional_loops.rst:124
 msgid "Bonus"
 msgstr "덤"
 
-# 5d9767087dc74306a1046a3c8d5b7936
 #: ../../../source/conditional_loops.rst:126
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "

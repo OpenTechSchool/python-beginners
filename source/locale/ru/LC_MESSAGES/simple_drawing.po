@@ -3,44 +3,39 @@
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
-# sorrymak <dearalcher@gmail.com>, 2013-2014
+# sorrymak <dearalcher@gmail.com>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-02-16 08:34+0000\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-01-16 13:02+0000\n"
 "Last-Translator: sorrymak <dearalcher@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/opentechschool/python-for-beginners/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 9860794802ce4df1ade997b3bf18960a
 #: ../../../source/simple_drawing.rst:2
 msgid "Simple drawing with turtle"
 msgstr "Простое рисование с помощью черепашки"
 
-# 3632de09d6b94543add90c6276d7f41f
 #: ../../../source/simple_drawing.rst:5
 msgid "Introduction"
 msgstr "Введение"
 
-# f4b501ebb5084585935df79181fd1ac1
 #: ../../../source/simple_drawing.rst:7
 msgid "Turtle is like a drawing board."
 msgstr "Черепашка похожа на доску для рисования."
 
-# c875441eb6f7457abc7e2b14c8d0d256
 #: ../../../source/simple_drawing.rst:9
 msgid ""
 "It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
 " can move the turtle around."
 msgstr "У неё есть функции в стиле ``turtle.forward(...)`` и ``turtle.left(...)``, с помощью которых черепашка может двигаться."
 
-# c3739f8052d94ed4b6822b65b4cb8dad
 #: ../../../source/simple_drawing.rst:12
 msgid ""
 "Before you can use turtle, you have to import it. We recommend playing "
@@ -49,7 +44,6 @@ msgid ""
 "and type::"
 msgstr "Перед тем как начать работу с черепашкой, необходимо импортировать соответствующий модуль. Мы рекомендуем экспериментировать с ней в интерактивной оболочке (для начала), т.к. при использовании файлов придётся заниматься дополнительной утомительной работой. Перейди в терминал и введи::"
 
-# 291d12b1145d42b897d279f02c0a1c4f
 #: ../../../source/simple_drawing.rst:22
 msgid ""
 "Not seeing anything on Mac OS?  Try issuing a command like "
@@ -57,7 +51,6 @@ msgid ""
 " line."
 msgstr ""
 
-# 0817dcde1807499e910a04062b41b53d
 #: ../../../source/simple_drawing.rst:28
 msgid ""
 "Do you work with Ubuntu and get the error message \"No module named "
@@ -65,7 +58,6 @@ msgid ""
 "python3-tk``"
 msgstr "Используешь Ubuntu и получаешь сообщение об ошибке \"No module named _tkinter\"? Установи отсутствующий необходимый пакет: ``sudo apt-get install python3-tk``"
 
-# 6029f253d9fa4a7a8c9cfa852a22e91e
 #: ../../../source/simple_drawing.rst:34
 msgid ""
 "While it might be tempting to just copy and paste what's written on this "
@@ -74,7 +66,6 @@ msgid ""
 "even help avoid strange syntax errors."
 msgstr ""
 
-# 89023039f3a7479bb0025b0947806f4b
 #: ../../../source/simple_drawing.rst:52
 msgid ""
 "The ``turtle.forward(...)`` function tells the turtle to move forward by the"
@@ -83,27 +74,23 @@ msgid ""
 "``turtle.right(...)``, too."
 msgstr "Функция ``turtle.forward(...)`` заставляет черепашку двигаться вперёд на указанное расстояние. ``turtle.left(...)`` приказывает черепашке повернуться влево на указанную градусную меру угла. А ``turtle.backward(...)`` и ``turtle.right(...)`` действуют анлогично — первая заставляет черепашку двигаться назад, а вторая — поворачиваться вправо."
 
-# 5e44e23c3c8a45ac9425e6d55f3486d6
 #: ../../../source/simple_drawing.rst:58
 msgid ""
 "Want to start fresh? You can type ``turtle.reset()`` to clear the drawing "
 "that your ``turtle`` has made so far. We'll go into more detail on "
 "``turtle.reset()`` in just a bit."
-msgstr ""
+msgstr "Если ты хочешь начать заново, введи ``turtle.reset()``, чтобы стереть рисунок. Мы рассмотрим ``turtle.reset()`` подробнее немного позже."
 
-# 320285cdad0b43e6ac14dfabee8a39ba
 #: ../../../source/simple_drawing.rst:62
 msgid ""
 "The standard turtle is just a triangle. That's no fun! Let's make it a "
 "turtle instead with the ``turtle.shape()`` command::"
 msgstr "Стандартная \"черепашка\" -- всего лишь треугольник. Это не интересно! Придадим ей нормальный вид командой ``turtle.shape()``::"
 
-# ba7ab766da9f4bd6972ff1b7d43d8f04
 #: ../../../source/simple_drawing.rst:67
 msgid "So much cuter!"
 msgstr "Так намного лучше!"
 
-# 7453a0b945fc4fa2967f65ddcde2d1ae
 #: ../../../source/simple_drawing.rst:69
 msgid ""
 "If you put the commands into a file, you might have recognized that the "
@@ -114,7 +101,6 @@ msgid ""
 "stays open until you click on it::"
 msgstr ""
 
-# de9c12468cdf4a8f9917085982d278fb
 #: ../../../source/simple_drawing.rst:86
 msgid ""
 "Python is a programming language where horizontal indenting of text is "
@@ -123,12 +109,10 @@ msgid ""
 "Python code can cause an unexpected error."
 msgstr "Python — язык программирования, в котором крайне важны отступы в коде. Подробности мы узнаем позже, в главах про функции, но сейчас тебе просто необходимо запомнить, что лишний пробел или символ табуляции перед строкой может вызвать ошибку."
 
-# b9f0ac7420224af2886d120bae1783a8
 #: ../../../source/simple_drawing.rst:92
 msgid "Drawing a square"
 msgstr "Рисуем квадрат"
 
-# f9d7ddb4df8a499abe479e9bcc944956
 #: ../../../source/simple_drawing.rst:96
 msgid ""
 "You're not always expected to know the anwer immediately. Learn by trial and"
@@ -139,36 +123,27 @@ msgid ""
 " from it!"
 msgstr ""
 
-# 6f5ff545cbca402b90d7187043129b0a
-# 6f5ff545cbca402b90d7187043129b0a
-# 6f5ff545cbca402b90d7187043129b0a
 #: ../../../source/simple_drawing.rst:105
 #: ../../../source/simple_drawing.rst:182
 #: ../../../source/simple_drawing.rst:215
 msgid "Exercise"
 msgstr "Упражнение"
 
-# 3809e2fa5a5b44aebd3d047cbe0899bf
 #: ../../../source/simple_drawing.rst:107
 msgid "Draw a square as in the following picture:"
 msgstr "Нарисуй квадрат, как на рисунке ниже:"
 
-# 0e04b28694f749d189770899aec4890f
 #: ../../../source/simple_drawing.rst:111
 msgid ""
 "For a square you will probably need a right angle, which is 90 degrees."
 msgstr "Для  квадрата тебе понадобится прямоугольный, т.е. 90-градусный, угол."
 
-# 8233a964515e44b08fffadba4ac340f5
-# 8233a964515e44b08fffadba4ac340f5
-# 8233a964515e44b08fffadba4ac340f5
 #: ../../../source/simple_drawing.rst:116
 #: ../../../source/simple_drawing.rst:191
 #: ../../../source/simple_drawing.rst:227
 msgid "Solution"
 msgstr "Решение"
 
-# 575b479e71874431aa0c84e95f2440a6
 #: ../../../source/simple_drawing.rst:131
 msgid ""
 "Notice how the turtle starts and finishes in the same place and facing the "
@@ -176,14 +151,11 @@ msgid ""
 "convention to follow, it makes it easier to draw multiple shapes later on."
 msgstr ""
 
-# 5eba8324c5fb47d5b6e524726ca5fb46
-# 5eba8324c5fb47d5b6e524726ca5fb46
 #: ../../../source/simple_drawing.rst:137
 #: ../../../source/simple_drawing.rst:205
 msgid "Bonus"
 msgstr "Дополнительно"
 
-# ac58d556cefc4978bdc549c3f9d38138
 #: ../../../source/simple_drawing.rst:139
 msgid ""
 "If you want to get creative, you can modify your shape with the "
@@ -195,12 +167,10 @@ msgid ""
 "lets you page up and down. Press the :kbd:`q` key to exit the pager."
 msgstr ""
 
-# b8afd3f34c424a138e958cacb5a0fa6c
 #: ../../../source/simple_drawing.rst:150
 msgid "Are you seeing an error like this::"
 msgstr "Видишь такую ошибку::"
 
-# bee6bdd344c24696b90b7f117e64c2a7
 #: ../../../source/simple_drawing.rst:154
 msgid ""
 "when trying to view help? In Python you have to import names before you can "
@@ -208,22 +178,19 @@ msgid ""
 "turtle`` before ``help(turtle.color)`` will work."
 msgstr "когда пытаешься просмотреть справку?  В Python необходимо импортировать имена, перед тем, как обращаться к ним, т.е. в нашем случае необходимо выполнить ``import turtle`` перед ``help(turtle.color)``."
 
-# 69acdc4c47f349c8a1bd921a3565bf1d
 #: ../../../source/simple_drawing.rst:158
 msgid ""
 "Another way to find out about functions is to browse the `online "
 "documentation`_."
 msgstr "Также найти информацию о функциях можно в `онлайн-документации <http://docs.python.org/library/turtle>`_."
 
-# 7667c9ea4ef14fcc8329fd98be655ba1
 #: ../../../source/simple_drawing.rst:165
 msgid ""
 "If you misdrew anything, you can tell turtle to erase its drawing board with"
 " the ``turtle.reset()`` directive or undo the most recent step with "
 "``turtle.undo()``."
-msgstr ""
+msgstr "Если ты допустил ошибку, то ты можешь воспользоваться командой ``turtle.reset()``, чтобы стереть рисунок, либо командой ``turtle.undo()``., чтобы отменить последние действия."
 
-# b31ef2fc271e48c0920394ddbfd68fde
 #: ../../../source/simple_drawing.rst:171
 msgid ""
 "As you might have read in the help, you can modify the color with "
@@ -232,36 +199,30 @@ msgid ""
 "extensive list."
 msgstr ""
 
-# 72aab17c9d09473f976f5430895b3644
 #: ../../../source/simple_drawing.rst:179
 msgid "Drawing a rectangle"
 msgstr "Рисуем прямоугольник"
 
-# 436abbc6545e45219ba48cb0ece20683
 #: ../../../source/simple_drawing.rst:184
 msgid "Can you draw a rectangle too?"
 msgstr "Ты тоже можешь нарисовать прямоугольник?"
 
-# 38fa0d3b153f430ab276217e423ddfbe
 #: ../../../source/simple_drawing.rst:207
 msgid ""
 "How about a triangle? In an equilateral triangle (a triangle with all sides "
 "of equal length) each corner has an angle of 60 degrees."
 msgstr ""
 
-# ed9f28c4baf3419ebac09b363a37f608
 #: ../../../source/simple_drawing.rst:212
 msgid "More squares"
 msgstr "Больше квадратов"
 
-# 789ffe023eb9428eaeae684452ca6f52
 #: ../../../source/simple_drawing.rst:217
 msgid ""
 "Now, draw a tilted square. And another one, and another one. You can "
 "experiment with the angles between the individual squares."
 msgstr ""
 
-# 7cf04200613d4ca08e39553d44499f96
 #: ../../../source/simple_drawing.rst:222
 msgid ""
 "The picture shows three 20 degree turns. You could try 20, 30 and 40, for "

@@ -8,22 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-02-22 20:21+0000\n"
-"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: Korean (http://www.transifex.com/opentechschool/python-for-beginners/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# 42b1163ea0884ce584a6cb6f89a58412
 #: ../../../source/copyright.rst:2
 msgid "License"
 msgstr "라이선스"
 
-# 4d4cbc9536c74194affcd70de8fa2cb9
 #: ../../../source/copyright.rst:4
 msgid ""
 "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
@@ -32,3 +30,37 @@ msgid ""
 "Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, "
 "USA."
 msgstr "이 작업물은 크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 Unported 조항을 따릅니다. 이 라이선스 사본을 보려면 http://creativecommons.org/licenses/by-sa/3.0/ 주소를 방문하시거나 Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA에 서신을 보내주세요."
+
+#: ../../../source/copyright.rst:14
+msgid "Contributors"
+msgstr ""
+
+#: ../../../source/copyright.rst:16
+msgid ""
+"The following people have contributed to this material, in alphabetical "
+"order:"
+msgstr ""
+
+#: ../../../source/copyright.rst:29
+msgid "(This list is automatically generated from our `source repository`__.)"
+msgstr ""
+
+#: ../../../source/copyright.rst:33
+msgid "The material is legally maintained by"
+msgstr ""
+
+#: ../../../source/copyright.rst:0
+msgid "OpenTechSchool e.V."
+msgstr ""
+
+#: ../../../source/copyright.rst:0
+msgid "c/o co.up"
+msgstr ""
+
+#: ../../../source/copyright.rst:0
+msgid "Adalbertstr. 8"
+msgstr ""
+
+#: ../../../source/copyright.rst:0
+msgid "10999 Berlin, Germany"
+msgstr ""

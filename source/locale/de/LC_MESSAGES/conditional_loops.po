@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Introduction to Programming with Python package.
 # 
 # Translators:
+# Kristian Rother <krother@academis.eu>, 2014
 # Kristian Rother <krother@academis.eu>, 2013
 # Robert Lehmann <transifex@robertlehmann.de>, 2013
 # Benjamin Kampmann <ben@opentechschool.org>, 2013
@@ -11,27 +12,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-09 11:00+1000\n"
-"PO-Revision-Date: 2014-02-24 18:57+0000\n"
-"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: German (http://www.transifex.com/opentechschool/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 0ebffb4008364c84b28bbdbc83a58dd0
 #: ../../../source/conditional_loops.rst:2
 msgid "Conditional Loops"
 msgstr "Bedingte Schleifen"
 
-# c001aa827a0c4efeace6c64237e071b2
 #: ../../../source/conditional_loops.rst:4
 msgid "Introduction"
 msgstr "Einführung"
 
-# 286bdc49c4f54f99a59f5aa3e5f89fa1
 #: ../../../source/conditional_loops.rst:6
 msgid ""
 "Conditional loops are way to repeat something while a certain condition is "
@@ -39,130 +37,109 @@ msgid ""
 "**False**), the loop can become infinite. If the condition starts off false,"
 " the code in the loop will never run! In Python conditional loops are "
 "defined with the ``while`` statement::"
-msgstr "Bedingte Schleifen sind ein Weg etwas zu wiederholen solange eine bestimmte Bedingung erfüllt, oder **True**, ist.  Falls die Bedingung immer erfüllt ist (also nie **False** wird) wird die Schleife endlos. Falls die Bedingung schon anfänglich falsch ist, wird der Code in der Schleife niemals ausgeführt! In Python werden bedingte Schleifen mit der ``while``\\ -Anweisung definiert::"
+msgstr "Bedingte Schleifen sind ein Weg etwas zu wiederholen, solange eine bestimmte Bedingung erfüllt, oder **True**, ist.  Falls die Bedingung immer erfüllt ist (also nie **False** wird), läuft die Schleife endlos weiter. Falls die Bedingung schon anfänglich falsch ist, wird der Code in der Schleife niemals ausgeführt! In Python werden bedingte Schleifen mit der ``while``\\ -Anweisung definiert::"
 
-# dca5de2f82e543c4a48463876e388415
 #: ../../../source/conditional_loops.rst:23
 msgid "We call this part of the code the 'conditional': ``'.' not in word``"
 msgstr "Wir nennen diesen Teil des Quelltextes die 'Bedingung': ``'.' not in word``"
 
-# 9d1aa6649ba94e21908cff558d8e8826
 #: ../../../source/conditional_loops.rst:25
 msgid ""
 "Whether the conditional return True or not determines whether the code "
 "inside the ``while`` loop runs."
 msgstr "Ob die Bedingung wahr (True) zurückgibt oder nicht entscheidet, ob der Quelltext innerhalb der ``while``\\ -Schleife ausgeführt wird."
 
-# 7fc839b4812d49c087116e5c082b0654
 #: ../../../source/conditional_loops.rst:28
 msgid ""
 "Read the code above, and see if you can summarise in your head what it what "
 "it do (what its final output will be)."
-msgstr "Lies den obigen Quelltext und schau, ob du in deinem Kopf zusammenfassen kannst was er tut (und was seine endgültige Ausgabe sein wird)."
+msgstr "Lies den obigen Quellcode und schau, ob du im Kopf herleiten kannst, was er tut (und was die endgültige Ausgabe sein wird)."
 
-# 18c22a5fe65440de8c2100ef541567b0
 #: ../../../source/conditional_loops.rst:31
 msgid ""
 "Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
 "what it does. Does that match up with what you thought?"
-msgstr "Dann kopier ihn in eine Datei, sagen wir :file:`satz.py`, und führ ihn aus -- schau genau was er tut. Trifft das, was du dir gedacht hast?"
+msgstr "Dann kopier ihn in eine Datei, sagen wir :file:`satz.py`, und führe ihn aus -- schau genau, was er tut. Trifft das, was du dir gedacht hast, zu?"
 
-# 400050782b514b07b884a224a79f4915
 #: ../../../source/conditional_loops.rst:36
 msgid ""
 "If you are using Python 2, you will need to replace ``input`` with "
 "``raw_input`` to run the program correctly."
-msgstr "Falls du Python 2 benutzt wirst du ``input``mit ``raw_input`` ersetzen müssen um das Programm korrekt auszuführen."
+msgstr "Falls du Python 2 benutzt, wirst du ``input``mit ``raw_input`` ersetzen müssen, um das Programm korrekt auszuführen."
 
-# 893ffd73db564e45bf4edc62de0c4aec
 #: ../../../source/conditional_loops.rst:40
 msgid "Turtle prison"
 msgstr "Schildkrötengefängnis"
 
-# 45292113e45d41e7b1b92ccf9d813a8b
-# 324bbaf285c5445f846e9ad7f3d79213
 #: ../../../source/conditional_loops.rst:43
 #: ../../../source/conditional_loops.rst:89
 msgid "Exercise"
 msgstr "Übung"
 
-# a2660c48dad44766bde0bf90b2ad0528
 #: ../../../source/conditional_loops.rst:45
 msgid ""
-"The turtle has been up to its usual tricks again, robbing liqour stores and "
+"The turtle has been up to its usual tricks again, robbing liquor stores and "
 "building up huge gambling debts. It's time for turtle to be put into a cell "
 "that it can't get out of."
-msgstr "Die Schildkröte hat wieder ihre üblichen Spielchen abgezogen, Spirituosenläden ausrauben und riesige Spielschulden anhäufen. Es ist Zeit die Schildkröte in ein Gefängnis einzusperren aus dem sie nicht herauskommt."
+msgstr ""
 
-# c903bbaa30ea41c99d255de554d25a44
 #: ../../../source/conditional_loops.rst:49
 msgid ""
 "Let's make a new version of ``forward()``. One that will turn the turtle "
 "around if it tries to go further than 100 from the origin. We'll need a "
 "``while`` loop, and some new turtle functions:"
-msgstr "Lass uns eine neue Version von ``forward()`` bauen. Eine die die Schildkröte herumdreht falls sie versucht sich weiter als 100 von ihrem Ursprung zu entfernen. Wir brauchen eine ``while``\\ -Schleife und einige neue turtle-Funktionen:"
+msgstr "Lass uns eine neue Version von ``forward()`` bauen. Eine, die die Schildkröte herumdreht, falls sie versucht, sich weiter als 100 von ihrem Ursprung zu entfernen. Wir brauchen eine ``while``\\ -Schleife und einige neue turtle-Funktionen:"
 
-# 3ce77ae318ca4616805a1fe13f9c94f0
 #: ../../../source/conditional_loops.rst:53
 msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
-msgstr "``turtle.distance(0, 0)``- Entfernung der Schildkröte vom Ursprung."
+msgstr "``turtle.distance(0, 0)``- Entfernung der Schildkröte vom Ursprung"
 
-# 2743f0601d844fd5827dc8ca59a5161b
 #: ../../../source/conditional_loops.rst:54
 msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
-msgstr "``turtle.towards(0, 0)`` - Der Winkel der zurück zum Ursprungspunkt führt."
+msgstr "``turtle.towards(0, 0)`` - Der Winkel, der zurück zum Ursprungspunkt führt"
 
-# 735068e95dbb4feb83bc42382501dba0
 #: ../../../source/conditional_loops.rst:55
 msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
-msgstr "``turtle.setheading(Winkel)`` - Setz direkt die Ausrichtung der Schildkröte"
+msgstr "``turtle.setheading(Winkel)`` - Lege die Ausrichtung der Schildkröte direkt fest"
 
-# 0122ec4586504984bd958b7f612c62f6
 #: ../../../source/conditional_loops.rst:57
 msgid ""
 "You could try playing with a turtle in the interpreter and using these "
 "functions to check exactly what they do, if you like."
-msgstr "Du kannst versuchen mit der turtle in einem Interpreter herumzuspielen und die Funktionen zu benutzen um genau zu sehen was sie tun, wenn du magst."
+msgstr "Du kannst, wenn du magst, versuchen, mit der turtle in einem Interpreter herumzuspielen und die Funktionen zu benutzen, um genau zu sehen, was sie tut."
 
-# 0e6c0ed6971b4e538b809f9a0cd1f136
 #: ../../../source/conditional_loops.rst:60
 msgid ""
 "Now you will need to implement the prison logic using these turtle "
 "functions, perhaps a ``while`` loop and a bit of conditional logic. It's a "
 "bit of a stretch but keep at it! Don't be afraid to talk it out with a coach"
 " or another student."
-msgstr "Jetzt wirst du die Gefängnislogik implementieren müssen indem du die turtle-Funktionen verwendet, vielleicht eine ``while``\\ -Schleife und ein bisschen bedingte Logik. Es ist ein bisschen haarig aber bleib dran! Scheu nicht zurück deine Idee mit einem Coach oder einem anderen Lernenden durchzusprechen."
+msgstr "Jetzt wirst du die Gefängnislogik implementieren müssen, indem du die turtle-Funktionen, vielleicht eine ``while``\\ -Schleife und ein bisschen bedingte Logik, verwendest. Es ist ein bisschen haarig, aber bleib dran! Scheue nicht davor zurück, deine Idee mit einem Coach oder einem anderen Lernenden durchzusprechen."
 
-# 1b49d73c3a5e4021ac2fe477151ecc2f
-# 14cab36de06d4023b20c5be256604d50
 #: ../../../source/conditional_loops.rst:68
 #: ../../../source/conditional_loops.rst:108
 msgid "Solution"
 msgstr "Lösung"
 
-# 352a42136ca6400ab20cf89a1ab398b3
 #: ../../../source/conditional_loops.rst:82
 msgid "Draw a spiral"
 msgstr "Zeichne eine Spirale"
 
-# 6aeef203d95c4a34bd5bd692b99ebe55
 #: ../../../source/conditional_loops.rst:84
 msgid ""
 "Loops can be interrupted with the ``break`` statement. This is especially "
 "useful if you write an *infinite loop*, which is a loop where the "
 "conditional is always **True**."
-msgstr "Schleifen können mit der ``break``\\ -Anweisung unterbrochen werden. Das ist besonders nützlich wenn du eine *Endlosschleife* schreibst, was eine Schleife ist deren Bedingung immer wahr (**True**) ist."
+msgstr "Schleifen können mit der ``break``\\ -Anweisung unterbrochen werden. Das ist besonders nützlich, wenn du eine *Endlosschleife* schreibst, welches eine Schleife ist, deren Bedingung immer wahr (**True**) ist."
 
-# 217e80c3d8024535a12d1b844ab5475a
 #: ../../../source/conditional_loops.rst:91
 msgid ""
 "Write a ``while`` loop with a condition that is always **True** to draw a "
 "spiral. Interrupt the loop when the turtle reaches a certain distance from "
 "the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
 "distance to the point defined by the coordinates ``x`` and ``y``."
-msgstr "Schreib eine ``while``\\ -Schleife mit einer Bedingung die immer wahr (**True**) ist um eine Spirale zu malen. Unterbrich die Schleife wenn die turtle eine gewissen Distanz zum Mittelpunkt erreicht hat. Benutz die Funktion ``turtle.distance(x, y)`` um die Entfernung der Schildkröte zu dem durch die ``x``\\ - und ``y``\\ -Koordinaten bestimmten Punkt zu errechnen."
+msgstr "Schreibe eine ``while``\\ -Schleife mit einer Bedingung, die immer wahr (**True**) ist, um eine Spirale zu malen. Unterbrich die Schleife, wenn die turtle eine gewisse Distanz zum Mittelpunkt erreicht hat. Benutze die Funktion ``turtle.distance(x, y)``, um die Entfernung der Schildkröte zu dem durch die ``x``\\ - und ``y``\\ -Koordinaten bestimmten Punkt zu errechnen."
 
-# bd8e43cfe2964a199f111a74393dff96
 #: ../../../source/conditional_loops.rst:96
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
@@ -170,22 +147,19 @@ msgid ""
 "respectively."
 msgstr "Um das zu tun, brauchst Du die Funktionen ``turtle.xcor()`` und ``turtle.ycor()``, welche die Position der Schildkröte auf der X- und Y-Achse zurückgeben."
 
-# 88a12b054e8245ca96d6e8180a7d0212
 #: ../../../source/conditional_loops.rst:102
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
 msgstr "Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt werden."
 
-# 8030819ae52e44e3a12fc6b6b071eb14
 #: ../../../source/conditional_loops.rst:124
 msgid "Bonus"
 msgstr "Bonus"
 
-# 5d9767087dc74306a1046a3c8d5b7936
 #: ../../../source/conditional_loops.rst:126
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "
 "loop ``while True`` or the ``break``? Which version do you find easier to "
 "understand?"
-msgstr "Kannst du eine Bedingung für die Schleife formulieren so das du du keine Endlosschleife ``while True`` oder die ``break``\\ -Anweisung benötigst. Welche Version findest du einfacher zu verstehen?"
+msgstr "Kannst du eine Bedingung für die Schleife formulieren, so dass du du keine Endlosschleife ``while True`` oder die ``break``\\ -Anweisung benötigst? Welche Version findest du einfacher zu verstehen?"
