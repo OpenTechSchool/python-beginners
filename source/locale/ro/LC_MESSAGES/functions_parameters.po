@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 12:03+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr "Funcții cu parametri"
+
+#: ../../../source/functions_parameters.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function. Our hexagon function can only draw one size of "
+"hexagon!"
+msgstr "Pe măsură ce reducem codul și adăugăm funcții pentru a elimina duplicarea, îl *factorizăm*. Ăsta este un lucru bun. Dar funcțiile pe care le-am creeat până acum nu sunt foarte flexibile. Variabilele sunt definite în cadrul funcției, așa că dacă vrem să folosim un alt unghi sau altă distanță atunci trebuie să scriem o nouă funcție. Funcția noastră hexagon poate desena doar o singură dimensiune de hexagon!"
+
+#: ../../../source/functions_parameters.rst:14
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr "Din acest motiv avem nevoie să putem transmite funcției parametri, numiți și *argumente*. În acest mod *variabilele* din cadrul funcției pot avea diverse valori la fiecare apel al funcției."
+
+#: ../../../source/functions_parameters.rst:18
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr "Iată cum am definit funcția ``line_without_moving()`` în secțiunea precedentă:"
+
+#: ../../../source/functions_parameters.rst:25
+msgid "We can improve it by giving it a parameter::"
+msgstr "O putem îmbunătăți transmițându-i un parametru:"
+
+#: ../../../source/functions_parameters.rst:31
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr "Parametrul se comportă ca o *variabilă* vizibilă doar în cadrul definiției funcției. Utilizăm această funcție nou definită prin apelarea ei cu noua valoare pe care dorim să o aiba parametrul în acest mod:"
+
+#: ../../../source/functions_parameters.rst:38
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr "Am utilizat funcții cu parametri încă de la începutul cursului cu ``turtle.forward()``, ``turtle.left()`` etc."
+
+#: ../../../source/functions_parameters.rst:41
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
+msgstr "Și putem pune oricâte argumente (sau parametri) dorim, separându-le cu virgule și dându-le nume diferite::"
+
+#: ../../../source/functions_parameters.rst:50
+msgid "A parameterized function for a variable size hexagon"
+msgstr "O funcție parametrizată pentru un hexagon de dimensiune variabilă"
+
+#: ../../../source/functions_parameters.rst:53
+#: ../../../source/functions_parameters.rst:74
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/functions_parameters.rst:55
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
+msgstr "Scrie o funcție care îți permite să desenezi hexagoane de orice dimensiune dorești, la fiecare apelare."
+
+#: ../../../source/functions_parameters.rst:61
+#: ../../../source/functions_parameters.rst:90
+msgid "Solution"
+msgstr "Soluție"
+
+#: ../../../source/functions_parameters.rst:71
+msgid "A function of several parameters"
+msgstr "O funcție cu mai mulți parametri"
+
+#: ../../../source/functions_parameters.rst:76
+msgid ""
+"Write a function that will draw a shape of *any* number of sides (let's "
+"assume greater than two) of any side length. Get it to draw some different "
+"shapes."
+msgstr "Scrie o funcție care va desena o formă cu *oricâte* laturi (să presupunem că mai mult de două), de orice lungime a laturii. Fă-o să deseneze diverse forme."
+
+#: ../../../source/functions_parameters.rst:79
+msgid "Here's an example of drawing shapes with this function:"
+msgstr "Uite un exemplu de desenare a unor forme cu această funcție:"
+
+#: ../../../source/functions_parameters.rst:85
+msgid "The sum of the external angles of any shape is always 360 degrees!"
+msgstr "Suma unghiurilor externe a oricărei forme este întotdeauna 360 de grade!"
+
+#: ../../../source/functions_parameters.rst:100
+msgid "Bonus"
+msgstr "Supliment"
+
+#: ../../../source/functions_parameters.rst:102
+msgid ""
+"It might sound crazy, but it's perfectly possible to pass a *function* as a "
+"parameter to another function! Python regards functions as perfectly normal "
+"'things', the same as variables, numbers and strings."
+msgstr "Ar putea suna aiurea, dar este perfect posibil să transmiți o *funcție* ca parametru altei funcții! Python tratează funcțiile ca pe 'lucruri' perfect normale, la fel ca variabilele, numerele și șirurile de caractere."
+
+#: ../../../source/functions_parameters.rst:106
+msgid ""
+"For instance, you could create a shape drawing function which turned one way"
+" or another depending on which turtle function you passed to it - "
+"``turtle.left`` or ``turtle.right``."
+msgstr "De exemplu, ai putea creea o funcție de desenare a funei forme care se întoarce într-o direcție sau alta în funcție de ce funcție îi transmiți - ``turtle.left`` sau ``turtle.right``."
+
+#: ../../../source/functions_parameters.rst:109
+msgid "See if you can implement this!"
+msgstr "Vezi dacă poți implementa asta!"
+
+#: ../../../source/functions_parameters.rst:113
+msgid ""
+"Passing a function (e.g ``turtle.left``) is different than *calling* it, "
+"which would instead be written ``turtle.left(45)``."
+msgstr "Transmiterea unei funcții (de ex. ``turtle.left``) este diferită de *apelarea* acesteia, care s-ar scrie ``turtle.left(45)``."

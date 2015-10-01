@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 10:50+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/variables.rst:2
+msgid "Variables"
+msgstr "Variabile"
+
+#: ../../../source/variables.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/variables.rst:7
+msgid ""
+"Whew. Experimenting with the angles requires you to change three different "
+"places in the code each time. Imagine you'd want to experiment with all of "
+"the square sizes, let alone with rectangles! We can do better than that."
+msgstr "Ptiu! Experimentarea cu aceste unghiuri îți cere să schimbi trei locuri diferite din cod de fiecare dată. Imaginează-ți că ai dori să expermentezi cu toate dimensiunile pătratelor, nu mai zic de dreptunghiuri! Asta se poate îmbunătăți."
+
+#: ../../../source/variables.rst:11
+msgid ""
+"This is where **variables** come into play: You can tell Python that from "
+"now on, whenever you refer to a variable, you actually mean something else. "
+"That concept might be familiar from symbolic maths, where you would write: "
+"*Let x be 5.* Then *x \\* 2* will obviously be *10*."
+msgstr "Și aici intră în scenă **variabilele**: poți să îi spui lui Python că din acest moment, de fiecare dată cănd faci referire la o variabilă, vrei de fapt să spui altceva. Conceptul acesta ar putea fi familiar de la simbolurile matematice, unde scrii *Fie x = 5*. Atunci *x \\* 2* va fi evident *10*."
+
+#: ../../../source/variables.rst:16
+msgid "In Python syntax, that very statement translates to::"
+msgstr "În sintaxa Python, exact același lucru se scrie:"
+
+#: ../../../source/variables.rst:20
+msgid ""
+"After that statement, if you do ``print(x)``, it will actually output its "
+"value --- 5.  Well, can use that for your turtle too::"
+msgstr "După această declarație, dacă dai comanda ``print(x)``, va tipări de fapt valoarea --- 5. Ei bine, putem utiliza asta și pentru țestoasă:"
+
+#: ../../../source/variables.rst:25
+msgid ""
+"Variables can store all sorts of things, not just numbers. A typical other "
+"thing you want to have stored often is a **string** - a line of text. "
+"Strings are indicated with a starting and a leading ``\"`` (double quote). "
+"You'll learn about this and other types, as those are called in Python, and "
+"what you can do with them later on."
+msgstr "Variabilele pot păstra tot felul de lucruri, nu numai numere. Un alt lucru pe care dorești de regulă să îl păstrezi sunt **șiruri de caractere** - o linie de text. Șirurile sunt indicate cu ``\"`` (ghilimele) la început și la sfârșit. Vom învăța în continuare despre ele și despre alte tipuri, cum sunt ele denumite în Python, și ce poți face cu ele."
+
+#: ../../../source/variables.rst:31
+msgid "You can even use a variable to give the turtle a name::"
+msgstr "Poți utiliza o variabilă pentru a da un nume țestoasei:"
+
+#: ../../../source/variables.rst:35
+msgid ""
+"Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
+"still continue to use ``turtle`` as well::"
+msgstr "Acum de fiecare dată când scrii ``timmy`` va ști că vorbești despre ``turtle``. Poți să folosești în continuare și ``turtle``:"
+
+#: ../../../source/variables.rst:43
+msgid "A variable called angle"
+msgstr "O variabilă numită angle (unghi)"
+
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:85
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/variables.rst:48
+msgid ""
+"If we have a variable called ``angle``, how could we use that to experiment "
+"much faster with our tilted squares program?"
+msgstr "Dacă avem o variabilă numită ``angle`` (unghi), cum o putem utiliza pentru a experimenta mai rapid cu programul nostru de pătrate înclinate?"
+
+#: ../../../source/variables.rst:54
+msgid "Solution"
+msgstr "Soluția"
+
+#: ../../../source/variables.rst:74
+msgid "... and so on"
+msgstr "... și așa mai departe"
+
+#: ../../../source/variables.rst:77
+msgid "Bonus"
+msgstr "Supliment"
+
+#: ../../../source/variables.rst:79
+msgid "Can you apply that principle to the size of the squares, too?"
+msgstr "Poți aplica acest principiu și la dimensiunea pătratelor?"
+
+#: ../../../source/variables.rst:82
+msgid "The house of santa claus"
+msgstr "Casa lui Moș Crăciun"
+
+#: ../../../source/variables.rst:87
+msgid "Draw a house."
+msgstr "Desenează o casă."
+
+#: ../../../source/variables.rst:91
+msgid ""
+"You can calculate the length of the diagonal line with the Pythagorean "
+"theorem. That value is a good candidate to store in a variable. To calculate"
+" the square root of a number in Python, you'll need to import the *math* "
+"module and use the ``math.sqrt()`` function. The square of a number is "
+"calculated with the ``**`` operator::"
+msgstr "Poți calcula lungimea diagonalei folosind teorema lui Pitagora. Această valoare este un bun candidat pentru a fi stocată într-o variabilă. Pentru a calcula rădăcina pătrată a unui număr în Python, va fi nevoie să imporți modulul *math* și să folosești funcția ``math.sqrt()``. Pătratul unui număr este calculat cu operatorul ``**``:"

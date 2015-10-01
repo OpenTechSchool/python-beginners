@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/conditional_loops.rst:2
+msgid "Conditional Loops"
+msgstr "Bucle condiționale"
+
+#: ../../../source/conditional_loops.rst:4
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/conditional_loops.rst:6
+msgid ""
+"Conditional loops are way to repeat something while a certain condition is "
+"satisfied, or **True**. If the condition is always satisfied (never becomes "
+"**False**), the loop can become infinite. If the condition starts off false,"
+" the code in the loop will never run! In Python conditional loops are "
+"defined with the ``while`` statement::"
+msgstr "Buclele condiționale sunt un mod de a repeta ceva atâta vreme cât o condiție este satisfăcută, sau **Adevărată**. Dacă condiția este întotdeauna satisfăcută (nu devine niciodată **Falsă**), atunci bucla poate deveni infinită. Dacă condiția este falsă la început, codul din buclă nu va rula niciodată! În Python buclele condiționale sunt definite folosind declarația ``while``:"
+
+#: ../../../source/conditional_loops.rst:23
+msgid "We call this part of the code the 'conditional': ``'.' not in word``"
+msgstr "Numim această parte a codului 'condițional': ``'.' not in word``"
+
+#: ../../../source/conditional_loops.rst:25
+msgid ""
+"Whether the conditional return True or not determines whether the code "
+"inside the ``while`` loop runs."
+msgstr "De valoarea Adevărat sau nu întoarsă de condiție depinde executarea codului din bucla ``while``."
+
+#: ../../../source/conditional_loops.rst:28
+msgid ""
+"Read the code above, and see if you can summarise in your head what it what "
+"it do (what its final output will be)."
+msgstr "Citește codul de mai sus și încearcă să rezumi în minte ce face (care va fi rezultatul final)."
+
+#: ../../../source/conditional_loops.rst:31
+msgid ""
+"Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
+"what it does. Does that match up with what you thought?"
+msgstr "Apoi copiază într-un fișier, cum ar fi :file:`sentence.py` și rulează-l - vezi exact ce face. Seamănă cu ce credeai tu ?"
+
+#: ../../../source/conditional_loops.rst:36
+msgid ""
+"If you are using Python 2, you will need to replace ``input`` with "
+"``raw_input`` to run the program correctly."
+msgstr "Dacă folosești Python 2, atunci trebuie să înlocuiești ``input`` cu ``raw_input`` pentru ca programul să se execute corect."
+
+#: ../../../source/conditional_loops.rst:40
+msgid "Turtle prison"
+msgstr "Închisoarea țestoasei"
+
+#: ../../../source/conditional_loops.rst:43
+#: ../../../source/conditional_loops.rst:89
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/conditional_loops.rst:45
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liquor stores and "
+"building up huge gambling debts. It's time for turtle to be put into a cell "
+"that it can't get out of."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:49
+msgid ""
+"Let's make a new version of ``forward()``. One that will turn the turtle "
+"around if it tries to go further than 100 from the origin. We'll need a "
+"``while`` loop, and some new turtle functions:"
+msgstr "Hai să facem o nouă variantă de ``forward()``. Una care va întoarce țestoasa complet dacă încearcă să meargă mai departe de 100 de la origine. Vom avea nevoie de o buclă ``while`` și de cateva funcții noi:"
+
+#: ../../../source/conditional_loops.rst:53
+msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
+msgstr "``turtle.distance(0,0)`` - Distanța țestoasei de la origine"
+
+#: ../../../source/conditional_loops.rst:54
+msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
+msgstr "``turtle.towards(0,0)`` - Unghiul pentru a se întoarce la origine"
+
+#: ../../../source/conditional_loops.rst:55
+msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
+msgstr "``turtle.setheading(angle)`` - Setează direcția țestoasei"
+
+#: ../../../source/conditional_loops.rst:57
+msgid ""
+"You could try playing with a turtle in the interpreter and using these "
+"functions to check exactly what they do, if you like."
+msgstr "Poți să încerci să te joci cu țestoasa direct în interpretor pentru a verifica exact ce fac, daca dorești."
+
+#: ../../../source/conditional_loops.rst:60
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, perhaps a ``while`` loop and a bit of conditional logic. It's a "
+"bit of a stretch but keep at it! Don't be afraid to talk it out with a coach"
+" or another student."
+msgstr "Acum va trebui să implementăm logica celulei, poate într-o buclă ``while`` și folosind niște logică condițională. Este puțin cam complicat dar continuă! Să nu îți fie frică să vorbești cu cineva mai experimentat sau cu alt student."
+
+#: ../../../source/conditional_loops.rst:68
+#: ../../../source/conditional_loops.rst:108
+msgid "Solution"
+msgstr "Soluția"
+
+#: ../../../source/conditional_loops.rst:82
+msgid "Draw a spiral"
+msgstr "Desenează o spirală"
+
+#: ../../../source/conditional_loops.rst:84
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always **True**."
+msgstr "Buclele pot fi întrerupte cu comanda ``break``. Este util în mod special când ai scris o *buclă infinită*, care este o buclă unde condiția este întotdeauna **Adevărată**."
+
+#: ../../../source/conditional_loops.rst:91
+msgid ""
+"Write a ``while`` loop with a condition that is always **True** to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr "Scrie o buclă ``while`` cu o condiție care este întotdeauna **Adevărată** pentru a desena o spirală. Întrerupe bucla când țestoasa ajunge la o anumită distanță față de centru. Folosește funcția ``turtle.distance(x, y)`` pentru a afla distanța țestoasei față de punctul definit de coordonatele ``x`` și ``y``."
+
+#: ../../../source/conditional_loops.rst:96
+msgid ""
+"To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
+"functions, which return the position of the turtle in X and Y axes "
+"respectively."
+msgstr "Pentru a face asta ai nevoie de funcțiile ``turtle.xcor()`` și ``turtle.ycor()``, care returnează poziția țestoasei pe axele X si respectiv Y."
+
+#: ../../../source/conditional_loops.rst:102
+msgid ""
+"To draw a spiral, the turtle has to rotate by a constant value and move "
+"forward by an increasing value."
+msgstr "Pentru a desena o spirală, țestoasa trebuie să se rotească cu o valoare constantă și să înainteze cu o valoare din ce în ce mai mare."
+
+#: ../../../source/conditional_loops.rst:124
+msgid "Bonus"
+msgstr "Supliment"
+
+#: ../../../source/conditional_loops.rst:126
+msgid ""
+"Can you make a conditional for this loop, so you don't need the infinite "
+"loop ``while True`` or the ``break``? Which version do you find easier to "
+"understand?"
+msgstr "Poți să creezi o condiție pentru această buclă, în așa fel încât să nu ai nevoie de bucla infinită ``while True`` sau de ``break``? Ce versiune este mai ușor de înțeles?"
