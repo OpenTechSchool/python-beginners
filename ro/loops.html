@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bucle &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Funcții definite de utilizator" href="functions.html" />
+    <link rel="prev" title="Variabile" href="variables.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Bucle</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#drawing-a-dashed-line">Desenarea unei linii întrerupte</a><ul>
+<li><a class="reference internal" href="#exercise">Exercițiu</a></li>
+<li><a class="reference internal" href="#solution">Soluția</a></li>
+<li><a class="reference internal" href="#bonus">Supliment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#comments">Comentarii</a></li>
+<li><a class="reference internal" href="#more-efficient-squares">Pătrate mai eficiente</a><ul>
+<li><a class="reference internal" href="#id1">Exercițiu</a></li>
+<li><a class="reference internal" href="#id2">Soluția</a></li>
+<li><a class="reference internal" href="#id3">Supliment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="variables.html" title="Previous Chapter: Variabile">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions.html" title="Next Chapter: Funcții definite de utilizator">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="loops">
+<h1>Bucle<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Ceva ce este posibil să fi observat: programele adeseori au nevoie de repetiții. Python are un concept puternic pe care îl utilizează, numit bucle (în jargon: <em>iterații</em>), care poate fi folosit pentru a reduce codul repetitiv! Pentru moment, <strong>încearcă acest exemplu simplu</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Sam&quot;</span><span class="p">,</span> <span class="s">&quot;Jill&quot;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Este incredibil de util dacă dorim să facem ceva de mai multe ori &#8211; să spunem, să desenăm separat marginile unei forme &#8211; dar dorim să scriem acea acțiune o singură dată. Iată o altă versiune de buclă:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Observați cum scriem doar o linie de cod folosind <code class="docutils literal"><span class="pre">i</span></code>, dar ia zece valori diferite?</p>
+<p>Funcția <code class="samp docutils literal"><span class="pre">range(n)</span></code> poate fi considerată o prescurtare pentru <code class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></code>. Dacă dorești să afli mai mult, poți folosi documentația din interpretorul Python scriind <code class="docutils literal"><span class="pre">help(range)</span></code>. Folosește tasta <code class="kbd docutils literal"><span class="pre">q</span></code> pentru a ieși din documentație.</p>
+<p>Poți de asemenea sa treci prin elemente la alegere:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Scrie acest exemplu și încearcă-l cu Python, ca să vezi dacă merge așa cum te aștepți.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Este de remarcat cum mai sus, liniile de cod care sunt parte a <em>buclei</em> sunt cele care sunt <em>indentate</em>. Acesta este un concept important în Python - așa știe care linii fac parte din bucla <code class="docutils literal"><span class="pre">for</span></code>, și care vin după, ca parte a restului programului. Utilizează patru spații (apasând tasta <code class="kbd docutils literal"><span class="pre">TAB</span></code>) pentru a indenta codul tău.</p>
+</div>
+<p>Uneori vrei să repeți o bucată de cod de mai multe ori, dar nu te interesează valoarea variabilei <code class="docutils literal"><span class="pre">i</span></code>; în acest caz este o bună practică să o înlocuiești cu <code class="docutils literal"><span class="pre">_</span></code>. Asta înseamnă că nu te interesează valoarea, sau că nu dorești să o utilizezi. Iată un exemplu simplu:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Poți să te întrebi sau nu despre variabila <code class="docutils literal"><span class="pre">i</span></code> - de ce e folosită de fiecare dată? Ei bine, semnifică &#8220;index&#8221; și este unul dintre cele mai folosite nume de variabile întâlnite în cod. Dar dacă iterezi peste altceva decât numere, asigură-te că îi dai un nume mai bun! De exemplu:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">drink</span> <span class="ow">in</span> <span class="n">list_of_beverages</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Este cu mult mai ușor de înțeles decât dacă am fi folosit <code class="docutils literal"><span class="pre">i</span></code> în loc de <code class="docutils literal"><span class="pre">drink</span></code>.</p>
+</div>
+<div class="section" id="drawing-a-dashed-line">
+<h2>Desenarea unei linii întrerupte<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercițiu<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Desenează o linie întreruptă. Poți mișca țestoasa fără ca aceasta să deseneze utilizând funcția <code class="docutils literal"><span class="pre">turtle.penup()</span></code> (ridică penița); pentru ca aceasta să deseneze din nou, folosește <code class="docutils literal"><span class="pre">turtle.pendown()</span></code> (penița jos).</p>
+<img alt="_images/dashed.png" src="_images/dashed.png" />
+</div>
+<div class="solution section" id="solution">
+<h3>Soluția<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Supliment<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Poți face dungile să fie mai lungi pe măsură ce desenezi linia?</p>
+<img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p>Te-ai încurcat? Inspectează valoarea lui <code class="docutils literal"><span class="pre">i</span></code> la fiecare rulare a buclei:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c"># write more code here</span>
+</pre></div>
+</div>
+<p class="last">Poți utiliza <code class="docutils literal"><span class="pre">i</span></code> &#8212; numită uzual variabila <strong>index</strong> sau de iterație &#8212; pentru a obține pași din ce în ce mai mari?</p>
+</div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comentarii<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>În exemplul de mai sus, linia care începe cu <code class="docutils literal"><span class="pre">#</span></code> este numită un comentariu. În Python, orice urmează pe o linie după <code class="docutils literal"><span class="pre">#</span></code> este ignorat de calculator. Folosește comentarii pentru a explica ce face programul tău, fără a schimba modul de comportare al calculatorului. Pot fi folosite și pentru a dezactiva rapid și temporar, sau a &#8220;comenta&#8221;, linii de cod.</p>
+<p>Comentariile pot fi puse de asemenea la sfârșitul unei linii, așa:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># tilt our next square slightly</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-efficient-squares">
+<h2>Pătrate mai eficiente<a class="headerlink" href="#more-efficient-squares" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercițiu<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Pătratele pe care le desenam la începutul acestui curs aveau multe linii de cod repetate. Poți scrie un program de desenare pătrate în mai puține linii de cod utilizând bucle?</p>
+</div>
+<div class="solution section" id="id2">
+<h3>Soluția<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Supliment<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Încearcă să faci bucle <em>imbricate</em>, punând una chiar după (<em>înăuntrul</em>) alteia, cu câteva comenzi de desen care aparțin amândorura. Uite cum poate arăta:</p>
+<div class="highlight-python"><div class="highlight"><pre>for ...:
+    for ...:
+        # drawing code inside the inner loop goes here
+        ...
+    # you can put some code here to move
+    # around after!
+    ...
+</pre></div>
+</div>
+<p>Înlocuiește <code class="docutils literal"><span class="pre">...</span></code> cu codul tău, și vezi dacă poți obține ceva drăguț sau interesant! <sup>Este în regulă să greșești!</sup></p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/loops.rst" title="loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

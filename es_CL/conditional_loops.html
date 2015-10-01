@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -130,6 +129,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -159,7 +173,7 @@
 <h1>Loops Condicionales<a class="headerlink" href="#conditional-loops" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Loops condicionales son la forma de repetir algo mientras se satisfaga cierta condición, o <strong>True</strong>. Si la condición se satisface siempre (nunca se vuelve <strong>False</strong>), el loop se vuelve infinito. Si la condición al inicio es falsa, el código del loop nunca se ejecutará! En Python los loops condicionales se definen con la sentencia <tt class="docutils literal"><span class="pre">while</span></tt>:</p>
+<p>Loops condicionales son la forma de repetir algo mientras se satisfaga cierta condición, o <strong>True</strong>. Si la condición se satisface siempre (nunca se vuelve <strong>False</strong>), el loop se vuelve infinito. Si la condición al inicio es falsa, el código del loop nunca se ejecutará! En Python los loops condicionales se definen con la sentencia <code class="docutils literal"><span class="pre">while</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
@@ -172,31 +186,33 @@
 <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Esta parte del código la llamamos el &#8216;condicional&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
-<p>Si el condicional devuelve o no el valor True, determina si el código dentro del loop <tt class="docutils literal"><span class="pre">while</span></tt> se ejecuta.</p>
+<p>Esta parte del código la llamamos el &#8216;condicional&#8217;: <code class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></code></p>
+<p>Si el condicional devuelve o no el valor True, determina si el código dentro del loop <code class="docutils literal"><span class="pre">while</span></code> se ejecuta.</p>
 <p>Lea el código de arriba, y vea si puede resumir en su cabeza que es lo que hará (cual será la salida final).</p>
-<p>Luego cópielo a un archivo, digamos <tt class="file docutils literal"><span class="pre">sentence.py</span></tt> y ejecútelo - vea exactamente que hace. ¿Es el comportamiento tal como lo imaginó?</p>
+<p>Luego cópielo a un archivo, digamos <code class="file docutils literal"><span class="pre">sentence.py</span></code> y ejecútelo - vea exactamente que hace. ¿Es el comportamiento tal como lo imaginó?</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">Si está usando Python 2, necesitará reemplazar <tt class="docutils literal"><span class="pre">input```con</span> <span class="pre">``raw_input</span></tt> para ejecutar el programa correctamente.</p>
+<p class="last">Si está usando Python 2, necesitará reemplazar <code class="docutils literal"><span class="pre">input```con</span> <span class="pre">``raw_input</span></code> para ejecutar el programa correctamente.</p>
 </div>
 </div>
 <div class="section" id="turtle-prison">
 <h2>Prisión Tortuga<a class="headerlink" href="#turtle-prison" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>La tortuga ha estado haciendo de las suyas nuevamente, robando licorerías y adeudando mucho dinero al hacer apuestas. Es hora de poner a la tortuga en una celda de la cual no pueda salir.</p>
-<p>Hagamos una nueva versión de <tt class="docutils literal"><span class="pre">forward()</span></tt>. Una que gire la tortuga a la dirección opuesta si trata de ir a más de 100 desde el origen. Necesitaremos un loop <tt class="docutils literal"><span class="pre">while</span></tt>, y algunas funciones nuevas de turtle:</p>
+<p>The turtle has been up to its usual tricks again, robbing liquor
+stores and building up huge gambling debts. It&#8217;s time for turtle to be
+put into a cell that it can&#8217;t get out of.</p>
+<p>Hagamos una nueva versión de <code class="docutils literal"><span class="pre">forward()</span></code>. Una que gire la tortuga a la dirección opuesta si trata de ir a más de 100 desde el origen. Necesitaremos un loop <code class="docutils literal"><span class="pre">while</span></code>, y algunas funciones nuevas de turtle:</p>
 <ul class="simple">
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distancia de la tortuga al origen</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.distance(0,0)</span></code> - Distancia de la tortuga al origen</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - Ángulo para volver al origen</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.towards(0,0)</span></code> - Ángulo para volver al origen</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Establecer dirección de la tortuga</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.setheading(angle)</span></code> - Establecer dirección de la tortuga</p>
 </li>
 </ul>
 <p>Si lo desea, puede intentar jugar con turtle en el intérprete y usar estas funciones para verificar que hacen ellas exactamente.</p>
-<p>Ahora necesitará implementar la lógica de la prisión usando estas funciones, quizá con un loop <tt class="docutils literal"><span class="pre">while</span></tt> y un poco de lógica condicional. Es un poco complicado, pero ánimo! No tema consultar con algún profesor u otro estudiante.</p>
+<p>Ahora necesitará implementar la lógica de la prisión usando estas funciones, quizá con un loop <code class="docutils literal"><span class="pre">while</span></code> y un poco de lógica condicional. Es un poco complicado, pero ánimo! No tema consultar con algún profesor u otro estudiante.</p>
 </div>
 <div class="solution section" id="solution">
 <h3>Solución<a class="headerlink" href="#solution" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -213,11 +229,11 @@
 </div>
 <div class="section" id="draw-a-spiral">
 <h2>Dibuje una espiral<a class="headerlink" href="#draw-a-spiral" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Loops pueden ser interrumpidos con una sentencia <tt class="docutils literal"><span class="pre">break</span></tt>. Esto es especialmente útil si escribe un <em>loop infinito</em>, el cual es un loop donde su condicional es siempre <strong>True</strong>.</p>
+<p>Loops pueden ser interrumpidos con una sentencia <code class="docutils literal"><span class="pre">break</span></code>. Esto es especialmente útil si escribe un <em>loop infinito</em>, el cual es un loop donde su condicional es siempre <strong>True</strong>.</p>
 <div class="section" id="id1">
 <h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Escriba un loop <tt class="docutils literal"><span class="pre">while</span></tt> con una condición que sea siempre <strong>verdadera</strong> para dibujar un espiral. Interrumpa el loop cuando la tortuga alcance cierta distancia desde el centro. Use la función <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> para obtener la distancia al punto definido por las coordenadas <tt class="docutils literal"><span class="pre">x</span></tt> e <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
-<p>Para hacer esto necesitará las funciones <tt class="docutils literal"><span class="pre">turtle.xcord()</span></tt> y <tt class="docutils literal"><span class="pre">turtle.ycord()</span></tt>, las cuales retornan lka posición de la tortuga en los ejes X e Y respectivamente.</p>
+<p>Escriba un loop <code class="docutils literal"><span class="pre">while</span></code> con una condición que sea siempre <strong>verdadera</strong> para dibujar un espiral. Interrumpa el loop cuando la tortuga alcance cierta distancia desde el centro. Use la función <code class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></code> para obtener la distancia al punto definido por las coordenadas <code class="docutils literal"><span class="pre">x</span></code> e <code class="docutils literal"><span class="pre">y</span></code>.</p>
+<p>Para hacer esto necesitará las funciones <code class="docutils literal"><span class="pre">turtle.xcord()</span></code> y <code class="docutils literal"><span class="pre">turtle.ycord()</span></code>, las cuales retornan lka posición de la tortuga en los ejes X e Y respectivamente.</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p class="last">Para dibujar una espiral, la tortuga debe rotar con un valor constante y moverse adelante con un valor que se incremente.</p>
@@ -240,7 +256,7 @@
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Puede hacer un condicional para este loop, tal que no necesite un loop infinito <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True```o</span> <span class="pre">la</span> <span class="pre">sentencia</span> <span class="pre">``break</span></tt>? que versión le parece más fácil de entender?</p>
+<p>Puede hacer un condicional para este loop, tal que no necesite un loop infinito <code class="docutils literal"><span class="pre">while</span> <span class="pre">True```o</span> <span class="pre">la</span> <span class="pre">sentencia</span> <span class="pre">``break</span></code>? que versión le parece más fácil de entender?</p>
 </div>
 </div>
 </div>
@@ -273,7 +289,7 @@
     </p>
     <p>
         &copy; <a href=\"copyright.html\">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

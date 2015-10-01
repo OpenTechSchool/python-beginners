@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="저작권" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -137,6 +136,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -177,7 +191,7 @@ required to make it work from files. Just go to your terminal and type:</p>
 <img alt="_images/default.png" src="_images/default.png" />
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
-<p class="last">Mac OS에서 아무것도 안보인다구요? <tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> 같은 명령을 실행해서 명령행 뒤에 새 창이 열렸는지 확인해보세요.</p>
+<p class="last">Mac OS에서 아무것도 안보인다구요? <code class="docutils literal"><span class="pre">turtle.forward(0)</span></code> 같은 명령을 실행해서 명령행 뒤에 새 창이 열렸는지 확인해보세요.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
@@ -195,12 +209,12 @@ required to make it work from files. Just go to your terminal and type:</p>
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p><tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> 함수는 거북이에게 주어진 거리만큼 움직이라고 알려줘요. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> 함수는 왼쪽 방향으로 주어진 각도만큼 돌으라고 하구요. <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.backward(...)``랑 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.right(...)``도 있어요.</p>
+<p><code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> 함수는 거북이에게 주어진 거리만큼 움직이라고 알려줘요. <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> 함수는 왼쪽 방향으로 주어진 각도만큼 돌으라고 하구요. <a href="#id1"><span class="problematic" id="id2">``</span></a>turtle.backward(...)``랑 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.right(...)``도 있어요.</p>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
 <p class="last">깔끔하게 시작하겠다구요? <a href="#id1"><span class="problematic" id="id2">``</span></a>거북이``가 이제껏 그린 내용을 지우려 한다면 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle.reset()``를 칠 수 있어요. 이제 <a href="#id5"><span class="problematic" id="id6">``</span></a>turtle.reset()``에 대해 좀 더 자세히 이야기해보려고 해요.</p>
 </div>
-<p>표준 거북이 모양은 그냥 삼각형입니다. 참 재미없게 생겼죠. <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt> 명령으로 대신 거북이를 만들어보도록 하겠어요:</p>
+<p>표준 거북이 모양은 그냥 삼각형입니다. 참 재미없게 생겼죠. <code class="docutils literal"><span class="pre">turtle.shape()</span></code> 명령으로 대신 거북이를 만들어보도록 하겠어요:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -252,12 +266,12 @@ required to make it work from files. Just go to your terminal and type:</p>
 <div class="section" id="bonus">
 <h3>덤<a class="headerlink" href="#bonus" title="제목 주소">¶</a></h3>
 <p>If you want to get creative, you can modify your shape with the
-<tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> and <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> functions.  How do you
+<code class="docutils literal"><span class="pre">turtle.width(...)</span></code> and <code class="docutils literal"><span class="pre">turtle.color(...)</span></code> functions.  How do you
 use these functions?  Before you can use a function you need to know
 its <em>signature</em> (for example the number of parameters and what they
-mean.) To find this out you can type <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> into the
+mean.) To find this out you can type <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> into the
 Python shell. If there is a lot of text, Python will put the help text
-into a <em>pager</em>, which lets you page up and down. Press the <tt class="kbd docutils literal"><span class="pre">q</span></tt>
+into a <em>pager</em>, which lets you page up and down. Press the <code class="kbd docutils literal"><span class="pre">q</span></code>
 key to exit the pager.</p>
 <div class="admonition tip">
 <p class="first admonition-title">참고</p>
@@ -267,19 +281,19 @@ key to exit the pager.</p>
 </div>
 <p class="last">when trying to view help? In Python you have to import names before you
 can refer to them, so in a new Python interactive shell you&#8217;ll need to
-<tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> before <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> will work.</p>
+<code class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></code> before <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> will work.</p>
 </div>
 <p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">조심</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
-with the <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> directive or undo the most recent step with
-<tt class="docutils literal"><span class="pre">turtle.undo()</span></tt>.</p>
+with the <code class="docutils literal"><span class="pre">turtle.reset()</span></code> directive or undo the most recent step with
+<code class="docutils literal"><span class="pre">turtle.undo()</span></code>.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">참고</p>
 <p class="last">As you might have read in the help, you can modify the color with
-<tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>.  These include but are not limited to
+<code class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></code>.  These include but are not limited to
 &#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
 list.</p>
 </div>
@@ -386,7 +400,7 @@ list.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

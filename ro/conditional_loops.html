@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bucle condiționale &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Operatori logici" href="logical_operators.html" />
+    <link rel="prev" title="Instrucțiuni condiționale" href="conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Bucle condiționale</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#turtle-prison">Închisoarea țestoasei</a><ul>
+<li><a class="reference internal" href="#exercise">Exercițiu</a></li>
+<li><a class="reference internal" href="#solution">Soluția</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draw-a-spiral">Desenează o spirală</a><ul>
+<li><a class="reference internal" href="#id1">Exercițiu</a></li>
+<li><a class="reference internal" href="#id2">Soluția</a></li>
+<li><a class="reference internal" href="#bonus">Supliment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="conditionals.html" title="Previous Chapter: Instrucțiuni condiționale">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="logical_operators.html" title="Next Chapter: Operatori logici">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="conditional-loops">
+<h1>Bucle condiționale<a class="headerlink" href="#conditional-loops" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Buclele condiționale sunt un mod de a repeta ceva atâta vreme cât o condiție este satisfăcută, sau <strong>Adevărată</strong>. Dacă condiția este întotdeauna satisfăcută (nu devine niciodată <strong>Falsă</strong>), atunci bucla poate deveni infinită. Dacă condiția este falsă la început, codul din buclă nu va rula niciodată! În Python buclele condiționale sunt definite folosind declarația <code class="docutils literal"><span class="pre">while</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Include a period (.) when you are finished.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="s">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;next word: &#39;</span><span class="p">)</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s">&#39; &#39;</span> <span class="o">+</span> <span class="n">sentence</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&#39;Aha! You said:&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Numim această parte a codului &#8216;condițional&#8217;: <code class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></code></p>
+<p>De valoarea Adevărat sau nu întoarsă de condiție depinde executarea codului din bucla <code class="docutils literal"><span class="pre">while</span></code>.</p>
+<p>Citește codul de mai sus și încearcă să rezumi în minte ce face (care va fi rezultatul final).</p>
+<p>Apoi copiază într-un fișier, cum ar fi <code class="file docutils literal"><span class="pre">sentence.py</span></code> și rulează-l - vezi exact ce face. Seamănă cu ce credeai tu ?</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Dacă folosești Python 2, atunci trebuie să înlocuiești <code class="docutils literal"><span class="pre">input</span></code> cu <code class="docutils literal"><span class="pre">raw_input</span></code> pentru ca programul să se execute corect.</p>
+</div>
+</div>
+<div class="section" id="turtle-prison">
+<h2>Închisoarea țestoasei<a class="headerlink" href="#turtle-prison" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercițiu<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>The turtle has been up to its usual tricks again, robbing liquor
+stores and building up huge gambling debts. It&#8217;s time for turtle to be
+put into a cell that it can&#8217;t get out of.</p>
+<p>Hai să facem o nouă variantă de <code class="docutils literal"><span class="pre">forward()</span></code>. Una care va întoarce țestoasa complet dacă încearcă să meargă mai departe de 100 de la origine. Vom avea nevoie de o buclă <code class="docutils literal"><span class="pre">while</span></code> și de cateva funcții noi:</p>
+<ul class="simple">
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.distance(0,0)</span></code> - Distanța țestoasei de la origine</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.towards(0,0)</span></code> - Unghiul pentru a se întoarce la origine</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.setheading(angle)</span></code> - Setează direcția țestoasei</p>
+</li>
+</ul>
+<p>Poți să încerci să te joci cu țestoasa direct în interpretor pentru a verifica exact ce fac, daca dorești.</p>
+<p>Acum va trebui să implementăm logica celulei, poate într-o buclă <code class="docutils literal"><span class="pre">while</span></code> și folosind niște logică condițională. Este puțin cam complicat dar continuă! Să nu îți fie frică să vorbești cu cineva mai experimentat sau cu alt student.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Soluția<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">distance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">angle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="draw-a-spiral">
+<h2>Desenează o spirală<a class="headerlink" href="#draw-a-spiral" title="Permalink to this headline">¶</a></h2>
+<p>Buclele pot fi întrerupte cu comanda <code class="docutils literal"><span class="pre">break</span></code>. Este util în mod special când ai scris o <em>buclă infinită</em>, care este o buclă unde condiția este întotdeauna <strong>Adevărată</strong>.</p>
+<div class="section" id="id1">
+<h3>Exercițiu<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Scrie o buclă <code class="docutils literal"><span class="pre">while</span></code> cu o condiție care este întotdeauna <strong>Adevărată</strong> pentru a desena o spirală. Întrerupe bucla când țestoasa ajunge la o anumită distanță față de centru. Folosește funcția <code class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></code> pentru a afla distanța țestoasei față de punctul definit de coordonatele <code class="docutils literal"><span class="pre">x</span></code> și <code class="docutils literal"><span class="pre">y</span></code>.</p>
+<p>Pentru a face asta ai nevoie de funcțiile <code class="docutils literal"><span class="pre">turtle.xcor()</span></code> și <code class="docutils literal"><span class="pre">turtle.ycor()</span></code>, care returnează poziția țestoasei pe axele X si respectiv Y.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pentru a desena o spirală, țestoasa trebuie să se rotească cu o valoare constantă și să înainteze cu o valoare din ce în ce mai mare.</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Soluția<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_spiral</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">original_xcor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span>
+    <span class="n">original_ycor</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">ycor</span><span class="p">()</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">speed</span> <span class="o">+=</span> <span class="mf">0.1</span>
+        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">original_xcor</span><span class="p">,</span> <span class="n">original_ycor</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">radius</span><span class="p">:</span>
+            <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Supliment<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Poți să creezi o condiție pentru această buclă, în așa fel încât să nu ai nevoie de bucla infinită <code class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></code> sau de <code class="docutils literal"><span class="pre">break</span></code>? Ce versiune este mai ușor de înțeles?</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/conditional_loops.rst" title="conditional_loops.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+conditional_loops">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

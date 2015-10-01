@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -137,6 +136,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -163,11 +177,11 @@
     <div class="col-md-12">
       
   <div class="section" id="simple-drawing-with-turtle">
-<h1>Einfaches Zeichnen mit turtle<a class="headerlink" href="#simple-drawing-with-turtle" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Einfaches Zeichnen mit turtle<a class="headerlink" href="#simple-drawing-with-turtle" title="Link zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Einführung<a class="headerlink" href="#introduction" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Turtle ist wie ein Zeichenbrett.</p>
-<p>Das Modul besitzt Funktionen wie <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> und <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> welche die Schildkröte umher bewegen.</p>
+<p>Das Modul besitzt Funktionen wie <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> und <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> welche die Schildkröte umher bewegen.</p>
 <p>Bevor du turtle benutzen kannst musst du es importieren. Wir empfehlen erstmal mit ihr in einem interaktiven Interpreter herumzuexperimentieren, da ein bisschen zusätzliche Arbeit notwendig ist um aus Dateien zu arbeiten.  Gehe in deine Konsole und tippe:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
@@ -175,11 +189,11 @@
 <img alt="_images/default.png" src="_images/default.png" />
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Du siehst nichts unter Mac OS? Probier einen Befehl wie <tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> zu erteilen und zu schauen, ob sich ein neues Fenster hinter deiner Kommandozeile geöffnet hat.</p>
+<p class="last">Du siehst nichts unter Mac OS? Probier einen Befehl wie <code class="docutils literal"><span class="pre">turtle.forward(0)</span></code> zu erteilen und zu schauen, ob sich ein neues Fenster hinter deiner Kommandozeile geöffnet hat.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Arbeitest du mit Ubuntu und hast die Fehlermeldung &#8220;No module named _tkiner&#8221; bekommen? Installier das fehlende Paket mit <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-tk</span></tt></p>
+<p class="last">Arbeitest du mit Ubuntu und hast die Fehlermeldung &#8220;No module named _tkiner&#8221; bekommen? Installier das fehlende Paket mit <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-tk</span></code></p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
@@ -193,17 +207,17 @@
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>Die Funktion <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> weist die Schildkröte an, sich eine gewisse Distanz vorwärts zu bewegen.  <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> erwartet einen Winkel, den du nach links drehen willst. Es gibt außerdem noch <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> und <tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>.</p>
+<p>Die Funktion <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> weist die Schildkröte an, sich eine gewisse Distanz vorwärts zu bewegen.  <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> erwartet einen Winkel, den du nach links drehen willst. Es gibt außerdem noch <code class="docutils literal"><span class="pre">turtle.backward(...)</span></code> und <code class="docutils literal"><span class="pre">turtle.right(...)</span></code>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
-<p class="last">Du willst neu anfangen? Du kannst <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> eintippen um die Zeichnungen, die deine <tt class="docutils literal"><span class="pre">turtle</span></tt> bisher gemacht hat, zu löschen. Wir werden <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> gleich detaillierter beleuchten.</p>
+<p class="last">Du willst neu anfangen? Du kannst <code class="docutils literal"><span class="pre">turtle.reset()</span></code> eintippen um die Zeichnungen, die deine <code class="docutils literal"><span class="pre">turtle</span></code> bisher gemacht hat, zu löschen. Wir werden <code class="docutils literal"><span class="pre">turtle.reset()</span></code> gleich detaillierter beleuchten.</p>
 </div>
-<p>Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt> eine richtige Schildkröte daraus machen:</p>
+<p>Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion <code class="docutils literal"><span class="pre">turtle.shape()</span></code> eine richtige Schildkröte daraus machen:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Das ist doch viel niedlicher!</p>
-<p>Wenn Du die Befehle in eine Datei geschrieben hast, hast Du vielleicht bemerkt, dass das turtle-Fenster verschwindet, nachdem die Schildkröte ihre Bewegung vollendet hatte. (Das geschieht weil Python beendet wird, sobald der letzte Befehl ausgeführt wurde. Und da das turtle-Fenster mit zu Python gehört, wird es auch geschlossen.) Um das zu verhindern, füge am Ende Deines Programms <tt class="docutils literal"><span class="pre">turle.exitonclick()</span></tt> hinzu. Jetzt bleibt das Fenster offen bis Du noch einmal darauf klickst:</p>
+<p>Wenn Du die Befehle in eine Datei geschrieben hast, hast Du vielleicht bemerkt, dass das turtle-Fenster verschwindet, nachdem die Schildkröte ihre Bewegung vollendet hatte. (Das geschieht weil Python beendet wird, sobald der letzte Befehl ausgeführt wurde. Und da das turtle-Fenster mit zu Python gehört, wird es auch geschlossen.) Um das zu verhindern, füge am Ende Deines Programms <code class="docutils literal"><span class="pre">turle.exitonclick()</span></code> hinzu. Jetzt bleibt das Fenster offen bis Du noch einmal darauf klickst:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
@@ -219,19 +233,19 @@
 </div>
 </div>
 <div class="section" id="drawing-a-square">
-<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-square" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-square" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <p class="last">Niemand erwartet von Dir, dass Du sofort auf die Antwort kommst. Lerne durch Ausprobieren! Experimentiere damit was Python tut wenn Du verschiedene Befehle erteilst, was zu schönen (wenn auch manchmal unerwarteten) Ergebnissen führt, und was Fehler verursacht. Wenn Du etwas findest dass für Dich interessante Ergebnisse erzeugt und Du weiter damit herumprobieren möchtest, ist das auch in Ordnung. Zögere nicht etwas zu versuchen, und daraus zu lernen falls es schief geht!</p>
 </div>
 <div class="section" id="exercise">
-<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#exercise" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Zeichne ein Quadrat so wie im folgenden Bild:</p>
 <img alt="_images/square.png" src="_images/square.png" />
 <p>Für ein Viereck brauchst du vermutlich einen rechten Winkel, welcher 90˚ beträgt.</p>
 </div>
 <div class="solution section" id="solution">
-<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#solution" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -248,36 +262,36 @@
 </div>
 </div>
 <div class="section" id="bonus">
-<h3>Bonus<a class="headerlink" href="#bonus" title="Permalink zu dieser Überschrift">¶</a></h3>
-<p>Falls Du kreativ werden möchtest, kannst Du die geometrische Form mit den Funktionen <tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> und <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt> verändern. Wie kannst Du diese Funktionen verwenden? Bevor Du eine Funktion benutzen kannst, musst Du ihre <em>Signatur</em> (zum Beispiel die Anzahl und Bedeutung ihrer Parameter). Um das herauszufinden kannst Du in der interaktiven Python Shell <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> eingeben. Falls sich dort eine grosse Menge Text befindet, schreibt Python den Hilfetext in einen <em>Pager</em>, in welchem Du auf- und abscrollen kannst. Drücke die Taste <tt class="kbd docutils literal"><span class="pre">q</span></tt> um den Pager wieder zu verlassen.</p>
+<h3>Bonus<a class="headerlink" href="#bonus" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Falls Du kreativ werden möchtest, kannst Du die geometrische Form mit den Funktionen <code class="docutils literal"><span class="pre">turtle.width(...)</span></code> und <code class="docutils literal"><span class="pre">turtle.color(...)</span></code> verändern. Wie kannst Du diese Funktionen verwenden? Bevor Du eine Funktion benutzen kannst, musst Du ihre <em>Signatur</em> (zum Beispiel die Anzahl und Bedeutung ihrer Parameter). Um das herauszufinden kannst Du in der interaktiven Python Shell <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> eingeben. Falls sich dort eine grosse Menge Text befindet, schreibt Python den Hilfetext in einen <em>Pager</em>, in welchem Du auf- und abscrollen kannst. Drücke die Taste <code class="kbd docutils literal"><span class="pre">q</span></code> um den Pager wieder zu verlassen.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tipp</p>
 <p>Siehst du ungefähr folgenden Fehler:</p>
 <div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
 </pre></div>
 </div>
-<p class="last">In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst <tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> schreiben, bevor <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> funktioniert.</p>
+<p class="last">In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst <code class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></code> schreiben, bevor <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> funktioniert.</p>
 </div>
 <p>Ein anderer Weg die Funktionen herauszufinden ist die <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Vorsicht</p>
-<p class="last">Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> Befehl vollständig zu löschen oder den letzten Befehl mit <tt class="docutils literal"><span class="pre">turtle.undo()</span></tt> Rückgängig zu machen.</p>
+<p class="last">Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem <code class="docutils literal"><span class="pre">turtle.reset()</span></code> Befehl vollständig zu löschen oder den letzten Befehl mit <code class="docutils literal"><span class="pre">turtle.undo()</span></code> Rückgängig zu machen.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tipp</p>
-<p class="last">Wie du vielleicht in der Hilfe gelesen hast, kannst du die Farbe mit <tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt> ändern. Das könnte unter Anderem &#8220;red&#8221;, &#8220;green&#8221; oder &#8220;violet&#8221; sein. Schau in das <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> für eine ausführliche Liste.</p>
+<p class="last">Wie du vielleicht in der Hilfe gelesen hast, kannst du die Farbe mit <code class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></code> ändern. Das könnte unter Anderem &#8220;red&#8221;, &#8220;green&#8221; oder &#8220;violet&#8221; sein. Schau in das <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> für eine ausführliche Liste.</p>
 </div>
 </div>
 </div>
 <div class="section" id="drawing-a-rectangle">
-<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-rectangle" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Ein Rechteck zeichnen<a class="headerlink" href="#drawing-a-rectangle" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
-<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#id1" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Kannst du auch ein Rechteck zeichenn?</p>
 <img alt="_images/rectangle.png" src="_images/rectangle.png" />
 </div>
 <div class="solution section" id="id2">
-<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#id2" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -290,20 +304,20 @@
 </div>
 </div>
 <div class="section" id="id3">
-<h3>Bonus<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Bonus<a class="headerlink" href="#id3" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Wie wäre es mit einem Dreieck? In einem gleichseitigen Dreieck (alle Seiten haben die gleiche Länge) hat jede Ecke einen Winkel von 60 Grad.</p>
 </div>
 </div>
 <div class="section" id="more-squares">
-<h2>Mehr Quadrate<a class="headerlink" href="#more-squares" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Mehr Quadrate<a class="headerlink" href="#more-squares" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id4">
-<h3>Übung<a class="headerlink" href="#id4" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#id4" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Jetzt zeichne ein schräg zur Seite gekipptes Quadrat. Und noch eins, und noch eins. Experimentiere mit den Winkeln zwischen den einzelnen Quadraten.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
 <p>Das Bild zeigt drei Drehungen um jeweils 20 Grad. Du kannst zum Beispiel auch 20, 30 oder 40 Grad ausprobieren.</p>
 </div>
 <div class="solution section" id="id5">
-<h3>Lösung<a class="headerlink" href="#id5" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#id5" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -370,7 +384,7 @@
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1 erstellt.<br/>
     </p>
   </div>
 </footer>

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -129,6 +128,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -161,12 +175,12 @@
 <p>Conditionals are a nice way to make decisions by asking if something equals
 <em>True</em> or not. But often one condition is not enough.
 We may want to take the opposite of our result. Or for instance if we want to
-make a decision upon <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> we have to combine
+make a decision upon <code class="docutils literal"><span class="pre">turtle.xcor()</span></code> and <code class="docutils literal"><span class="pre">turtle.ycor()</span></code> we have to combine
 them. This can be done with logical operators.</p>
 </div>
 <div class="section" id="negation-of-a-statement">
 <h2>Negation of a statement<a class="headerlink" href="#negation-of-a-statement" title="Permalink to this headline">¶</a></h2>
-<p>If we want something to be <em>False</em> we can use <tt class="docutils literal"><span class="pre">not</span></tt>. It is a logical
+<p>If we want something to be <em>False</em> we can use <code class="docutils literal"><span class="pre">not</span></code>. It is a logical
 operator:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">x</span> <span class="p">:</span>
@@ -178,8 +192,8 @@ operator:</p>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <p>The turtle gives us a useful function to know if it is drawing or not:
-<tt class="docutils literal"><span class="pre">turtle.isdown()</span></tt>.  This function returns <em>True</em> if the turtle is drawing. As
-we have seen earlier, the function <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>
+<code class="docutils literal"><span class="pre">turtle.isdown()</span></code>.  This function returns <em>True</em> if the turtle is drawing. As
+we have seen earlier, the function <code class="docutils literal"><span class="pre">turtle.penup()</span></code> and <code class="docutils literal"><span class="pre">turtle.pendown()</span></code>
 toggle between drawing while moving, or just moving without a trace.</p>
 <p>Can we write a function that only goes forward if the pen is up?</p>
 </div>
@@ -194,7 +208,7 @@ toggle between drawing while moving, or just moving without a trace.</p>
 </div>
 <div class="section" id="this-and-that-or-something-else">
 <h2>This and that or something else<a class="headerlink" href="#this-and-that-or-something-else" title="Permalink to this headline">¶</a></h2>
-<p>Two easy to understand operators are <tt class="docutils literal"><span class="pre">and</span></tt> and <tt class="docutils literal"><span class="pre">or</span></tt>. They do exactly what
+<p>Two easy to understand operators are <code class="docutils literal"><span class="pre">and</span></code> and <code class="docutils literal"><span class="pre">or</span></code>. They do exactly what
 they sound like::</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
@@ -259,7 +273,7 @@ we turn the turtle back around to the center.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

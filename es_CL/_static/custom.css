@@ -80,3 +80,6 @@ div.related a {
 .navbar-default .navbar-nav>.open>a:focus {
     background-color: #1F8AB6 !important;
 }
+footer {
+  margin-top: 1em;
+}

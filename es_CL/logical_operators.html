@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -129,6 +128,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -158,11 +172,11 @@
 <h1>Opreadores Lógicos<a class="headerlink" href="#logical-operators" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Los condicionales son una muy buena forma de tomar decisiones preguntando si algo es igual a <em>True</em> o no. Pero a menudo una condición no es suficiente. Podríamos querer tomar lo opuesto a nuestro resultado. O por ejemplo si queremos tomar una decisión sobre <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> y <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> debemos combinarlos. Esto puede realizarse con operadores lógicos.</p>
+<p>Los condicionales son una muy buena forma de tomar decisiones preguntando si algo es igual a <em>True</em> o no. Pero a menudo una condición no es suficiente. Podríamos querer tomar lo opuesto a nuestro resultado. O por ejemplo si queremos tomar una decisión sobre <code class="docutils literal"><span class="pre">turtle.xcor()</span></code> y <code class="docutils literal"><span class="pre">turtle.ycor()</span></code> debemos combinarlos. Esto puede realizarse con operadores lógicos.</p>
 </div>
 <div class="section" id="negation-of-a-statement">
 <h2>Negación de una sentencia<a class="headerlink" href="#negation-of-a-statement" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Si queremos que algo sea <em>False</em> podemos usar <tt class="docutils literal"><span class="pre">not</span></tt>. Es un operador lógico:</p>
+<p>Si queremos que algo sea <em>False</em> podemos usar <code class="docutils literal"><span class="pre">not</span></code>. Es un operador lógico:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">x</span> <span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
@@ -172,7 +186,7 @@
 </div>
 <div class="section" id="exercise">
 <h3>Ejercicio<a class="headerlink" href="#exercise" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>El programa turtle nos da una función muy útil para saber si se está dibujando o no: <tt class="docutils literal"><span class="pre">turtle.isdown()</span></tt>. Esta función retorna <em>True</em> si la tortuga está dibujando. Como hemos visto anteriormente, la función <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> y <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt> conmuta entre dibujar mientras se está moviendo, o solo moverse sin dejar trazo.</p>
+<p>El programa turtle nos da una función muy útil para saber si se está dibujando o no: <code class="docutils literal"><span class="pre">turtle.isdown()</span></code>. Esta función retorna <em>True</em> si la tortuga está dibujando. Como hemos visto anteriormente, la función <code class="docutils literal"><span class="pre">turtle.penup()</span></code> y <code class="docutils literal"><span class="pre">turtle.pendown()</span></code> conmuta entre dibujar mientras se está moviendo, o solo moverse sin dejar trazo.</p>
 <p>Podemos escribir una función que permita ir adelante solamente si el lápiz está levantado?</p>
 </div>
 <div class="solution section" id="solution">
@@ -186,7 +200,7 @@
 </div>
 <div class="section" id="this-and-that-or-something-else">
 <h2>Esto, aquello u otra cosa<a class="headerlink" href="#this-and-that-or-something-else" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Dos operadores fáciles de entender son <tt class="docutils literal"><span class="pre">and</span></tt> y <tt class="docutils literal"><span class="pre">or</span></tt>. Ellos hacen exactamente lo que dicen sus nombres::</p>
+<p>Dos operadores fáciles de entender son <code class="docutils literal"><span class="pre">and</span></code> y <code class="docutils literal"><span class="pre">or</span></code>. Ellos hacen exactamente lo que dicen sus nombres::</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
 
@@ -247,7 +261,7 @@
     </p>
     <p>
         &copy; <a href=\"copyright.html\">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Авторские права" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -123,6 +122,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -170,7 +184,7 @@ programmers <em>if statements</em>.</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>Условие может быть любым, имея значение <em>истина</em> или <em>ложь</em>. В результате сравнений (таких как <tt class="docutils literal"><span class="pre">==</span></tt> (равнозначно), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (больше чем), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (меньше чем)) всегда возвращается логическое значение.</p>
+<p>Условие может быть любым, имея значение <em>истина</em> или <em>ложь</em>. В результате сравнений (таких как <code class="docutils literal"><span class="pre">==</span></code> (равнозначно), <code class="docutils literal"><span class="pre">&gt;</span></code> (больше чем), <code class="docutils literal"><span class="pre">&lt;</span></code> (меньше чем)) всегда возвращается логическое значение.</p>
 <p>Часть <strong>else</strong> необязательна. Если убрать её, при ложном значении ничего не произойдёт.</p>
 </div>
 <div class="section" id="examples">
@@ -194,10 +208,10 @@ programmers <em>if statements</em>.</p>
 </div>
 <div class="section" id="giving-directions">
 <h2>Giving Directions<a class="headerlink" href="#giving-directions" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Python-черепашка хорошо работает с последовательными указаниями. Давайте с помощью функции <tt class="docutils literal"><span class="pre">input()</span></tt> будем принимать команды от пользователя, которые указывают направление движения черепашки. Чтобы не усложнять программу, предусмотрим только 2 инструкции: &#8220;налево&#8221; и &#8220;направо&#8221;.</p>
+<p>Python-черепашка хорошо работает с последовательными указаниями. Давайте с помощью функции <code class="docutils literal"><span class="pre">input()</span></code> будем принимать команды от пользователя, которые указывают направление движения черепашки. Чтобы не усложнять программу, предусмотрим только 2 инструкции: &#8220;налево&#8221; и &#8220;направо&#8221;.</p>
 <div class="admonition note">
 <p class="first admonition-title">Примечание</p>
-<p class="last">Используешь Python 2? Функция <tt class="docutils literal"><span class="pre">input()</span></tt> называется <tt class="docutils literal"><span class="pre">raw_input()</span></tt>.</p>
+<p class="last">Используешь Python 2? Функция <code class="docutils literal"><span class="pre">input()</span></code> называется <code class="docutils literal"><span class="pre">raw_input()</span></code>.</p>
 </div>
 <p>Намного проще выделить это в функцию, вот так:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
@@ -210,17 +224,17 @@ programmers <em>if statements</em>.</p>
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Теперь, используя <tt class="docutils literal"><span class="pre">move()</span></tt>, ты можешь выбрать, в какую сторону двигаться: влево (<tt class="docutils literal"><span class="pre">left</span></tt>) или вправо (<tt class="docutils literal"><span class="pre">right</span></tt>).</p>
+<p>Теперь, используя <code class="docutils literal"><span class="pre">move()</span></code>, ты можешь выбрать, в какую сторону двигаться: влево (<code class="docutils literal"><span class="pre">left</span></code>) или вправо (<code class="docutils literal"><span class="pre">right</span></code>).</p>
 </div>
 <div class="section" id="data-munging">
 <h2>Преобразование данных (&#8220;data munging&#8221;)<a class="headerlink" href="#data-munging" title="Ссылка на этот заголовок">¶</a></h2>
-<p>In this program, the turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt>
-or <tt class="docutils literal"><span class="pre">right</span></tt> with no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">LEFT</span></tt> might
-seem the same as <tt class="docutils literal"><span class="pre">left</span></tt> to a human, that isn&#8217;t the case when programming. Python
+<p>In this program, the turtle will only respond to exactly <code class="docutils literal"><span class="pre">left</span></code>
+or <code class="docutils literal"><span class="pre">right</span></code> with no variation. Though <code class="docutils literal"><span class="pre">Left</span></code> or <code class="docutils literal"><span class="pre">LEFT</span></code> might
+seem the same as <code class="docutils literal"><span class="pre">left</span></code> to a human, that isn&#8217;t the case when programming. Python
 has a few utility methods to help with that. A string has the methods
-<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
+<code class="docutils literal"><span class="pre">.strip()</span></code>, which removes whitespace and <code class="docutils literal"><span class="pre">.lower()</span></code> which makes
 everything lower-case.</p>
-<p>Немного примеров, демонстрирующих работу <tt class="docutils literal"><span class="pre">.strip()</span></tt> и <tt class="docutils literal"><span class="pre">.lower()</span></tt>:</p>
+<p>Немного примеров, демонстрирующих работу <code class="docutils literal"><span class="pre">.strip()</span></code> и <code class="docutils literal"><span class="pre">.lower()</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
 <span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
 <span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -229,7 +243,7 @@ everything lower-case.</p>
 <span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Попробуй добавить <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></tt> в функцию <tt class="docutils literal"><span class="pre">move()</span></tt> и посмотри, что получилось. Это называется преобразованием данных (&#8220;data munging&#8221;) и очень часто используется в различных программах.</p>
+<p>Попробуй добавить <code class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></code> в функцию <code class="docutils literal"><span class="pre">move()</span></code> и посмотри, что получилось. Это называется преобразованием данных (&#8220;data munging&#8221;) и очень часто используется в различных программах.</p>
 <p>Можешь ли ты добавить дополнительные варианты движения, чтобы черепашка рисовала другие фигуры? Как насчёт шестиугольника?</p>
 </div>
 </div>
@@ -262,7 +276,7 @@ everything lower-case.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

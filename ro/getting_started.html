@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Să începem &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Desenarea simplă utilizând țestoasa" href="simple_drawing.html" />
+    <link rel="prev" title="Introducere în Programare utilizând Python" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Să începem</a><ul>
+<li><a class="reference internal" href="#what-you-ll-need">Ce ai nevoie</a><ul>
+<li><a class="reference internal" href="#a-python">Un Python!</a></li>
+<li><a class="reference internal" href="#and-a-code-editor">Și un editor</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-is-python-exactly">Ce este Python de fapt?</a><ul>
+<li><a class="reference internal" href="#opening-a-console-on-mac-os-x">Deschiderea unei console în Mac OS X</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-linux">Deschiderea unei console în Linux</a></li>
+<li><a class="reference internal" href="#opening-a-console-on-windows">Deschiderea unei console în Windows</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-python">Utilizarea Python</a><ul>
+<li><a class="reference internal" href="#interacting-with-python">Interacțiunea cu Python</a></li>
+<li><a class="reference internal" href="#running-python-files">Executarea fișierelor Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="index.html" title="Previous Chapter: Introducere în Programare utilizând Python">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="simple_drawing.html" title="Next Chapter: Desenarea simplă utilizând țestoasa">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="getting-started">
+<h1>Să începem<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-you-ll-need">
+<h2>Ce ai nevoie<a class="headerlink" href="#what-you-ll-need" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-python">
+<h3>Un Python!<a class="headerlink" href="#a-python" title="Permalink to this headline">¶</a></h3>
+<p>Daca încă nu ai Python, cele mai recente pachete de instalare sunt disponibile aici:</p>
+<p><a class="reference external" href="http://python.org/download/">http://python.org/download/</a></p>
+<p>Este de preferat Python 3, aceasta fiind cea mai nouă versiune!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pe platforme Windows, poți să adaugi <strong class="program">Python</strong> la calea ta, astfel încăt să poată fi găsit de alte programe. Pentru a face asta, mergi în directorul tău de instalare (<code class="file docutils literal"><span class="pre">C:\Python33\</span></code>), deschide directorul <code class="file docutils literal"><span class="pre">Tools</span></code>, pe urmă directorul <code class="file docutils literal"><span class="pre">Scripts</span></code> și execută fișierul <code class="file docutils literal"><span class="pre">win_add2path.py</span></code> cu dublu clic.</p>
+</div>
+</div>
+<div class="section" id="and-a-code-editor">
+<h3>Și un editor<a class="headerlink" href="#and-a-code-editor" title="Permalink to this headline">¶</a></h3>
+<p>Un editor te ajută să citești și să scrii cod. Există foarte multe, și acesta este una dintre cele mai personale alegeri pe care le poate face un programator - ca un jucător de tenis care își alege racheta, sau ca un bucătar șef care își alege cuțitul preferat. Pentru început, o să vrei doar un editor simplu, ușor de utilizat și care nu te încurcă, dar este totuși eficient la scrierea de cod Python. Iată câteva sugestii:</p>
+<ul class="simple">
+<li><p class="first"><a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>: Un excelent editor care este simplu de utilizat. Scurtătura acestuia Ctrl+B îți permite să execuți imediat fișierul Python la care lucrezi. Rulează pe Windows, Mac și Linux.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.geany.org/">Geany</a>: Un editor simplu care nu își propune să fie extrem de complicat. Disponibil pe Windows și Linux (probabil îl poți găsi în programul tău de gestiune a pachetelor).</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://macromates.com/">TextMate</a>: Unul dintre cele mai faimoase editoare pentru Mac, a fost un produs comercial dar între timp a devenit open-source.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://projects.gnome.org/gedit/">Gedit</a> and <a class="reference external" href="http://kate-editor.org/">Kate</a>: dacă dorești să folosești Linux cu Gnome și respectiv KDE, probabil ai deja unul dintre acestea instalat!</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.activestate.com/komodo-edit">Komodo Edit</a>: un editor strălucit, gratuit pentru Mac, Windows și Linux, bazat pe mai puternicul Komodo IDE.</p>
+</li>
+</ul>
+<p>Dacă dorești recomandarea noastră, încearcă prima dată Sublime Text.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Wordpad, TextEdit, Notepad, și Word <strong>nu</strong> sunt editoare de text potrivite.</p>
+</div>
+</div>
+</div>
+<div class="section" id="what-is-python-exactly">
+<h2>Ce este Python de fapt?<a class="headerlink" href="#what-is-python-exactly" title="Permalink to this headline">¶</a></h2>
+<p>Bine, Python este ceva numit un <strong>limbaj de programare</strong>. Preia ceea ce scrii (în mod normal denumit <strong>cod</strong>), îl transformă în instrucțiuni pentru calculatorul tău și le execută. O să învățăm cum să scriem cod pentru a face lucruri interesante și utile. Nu vei mai fi nevoit să folosești programele altora pentru a face lucruri cu calculatorul tău!</p>
+<p>Practic, Python este doar un alt program în calculatorul tău. Primul lucru pe care trebuie să îl înveți este cum să interacționezi cu el. Există multe metode ca să faci asta; prima este să interacționezi cu interpretorul Python, utilizând consola <strong>sistemului de operare</strong> (OS, prescurtare de la Operating System).</p>
+<p>O <strong>consolă</strong> (sau &#8216;terminal&#8217;, sau &#8216;linie de comandă&#8217;) este o formă de a interacționa cu sistemul tău de operare în mod <em>text</em>, așa cum &#8216;desktop&#8217;-ul, în combinație cu mouse-ul tău, este metoda <em>grafică</em> de interacțiune cu sistemul tău.</p>
+<div class="section" id="opening-a-console-on-mac-os-x">
+<h3>Deschiderea unei console în Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Permalink to this headline">¶</a></h3>
+<p>Consola standard a lui OS X este un program numit <strong class="program">Terminal</strong>. Deschide Terminal mergănd la Applications, apoi Utilities, apoi dublu clic pe programul <strong class="program">Terminal</strong>. Poți de asemenea să cauți ușor folosind unealta de căutare din dreapta-sus.</p>
+<p>Linia de comandă Terminal este un instrument pentru interacțiunea cu calculatorul tău. Se va deschide o fereastră cu un mesaj, cum ar fi:</p>
+<div class="highlight-python"><div class="highlight"><pre>mycomputer:~ myusername$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-linux">
+<h3>Deschiderea unei console în Linux<a class="headerlink" href="#opening-a-console-on-linux" title="Permalink to this headline">¶</a></h3>
+<p>Diverse distribuții Linux (ex. Ubuntu, Fedora, Mint) pot avea diverse programe de consolă, numite de obicei terminale. Cel pe care îl ai disponbil și modul în care îl lansezi depinde de distribuție. Pe Ubuntu probabil că vei vrea să deschizi <strong class="program">Gnome Terminal</strong>. Ar trebui să prezinte un prompt de genul:</p>
+<div class="highlight-python"><div class="highlight"><pre>myusername@mycomputer:~$
+</pre></div>
+</div>
+</div>
+<div class="section" id="opening-a-console-on-windows">
+<h3>Deschiderea unei console în Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink to this headline">¶</a></h3>
+<p>Consola Windows este Command Prompt, numită <strong class="program">cmd</strong>. O variantă simplă pentru a o obține este să utilizezi combinația <code class="kbd docutils literal"><span class="pre">Windows+R</span></code> (unde <code class="kbd docutils literal"><span class="pre">Windows</span></code> este tasta cu sigla Windows), care ar trebui să deschidă un dialog <span class="guilabel">Run</span>. Scrie apoi <strong class="program">cmd</strong> și apasă <code class="kbd docutils literal"><span class="pre">Enter</span></code> sau dă clic pe <span class="guilabel">Ok</span>. Poți de asemenea să o cauți în meniul de start. Ar trebui sa arate cam așa:</p>
+<div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
+</pre></div>
+</div>
+<p>Command Prompt-ul din Windows nu este la fel de puteric precum omologii lui din Linux și OS X, așa că ar fi posibil să dorești să apelezi Interpretorul Python (vezi mai jos) direct, sau utilizând programul IDLE cu care se livrează Python. Le poți găsi în meniul de Start.</p>
+</div>
+</div>
+<div class="section" id="using-python">
+<h2>Utilizarea Python<a class="headerlink" href="#using-python" title="Permalink to this headline">¶</a></h2>
+<p>Programul Python pe care l-ai instalat se va comporta în mod automat ca ceva numit <strong>interpretor</strong>. Un interpretor preia comenzi și le execută pe măsură ce le introduci - foarte comod pentru a putea încerca lucruri.</p>
+<p>Scrie pur și simplu <strong class="program">python</strong> în consolă, apasă <code class="kbd docutils literal"><span class="pre">Enter</span></code> și ar trebui să intri în Interpretorul Python.</p>
+<p>Pentru a afla ce versiune de Python rulezi, folosește <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code>.</p>
+<div class="section" id="interacting-with-python">
+<h3>Interacțiunea cu Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
+<p>După ce pornește, Python va tipări niște informații de conext, similar cu:</p>
+<div class="highlight-python"><div class="highlight"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
+[GCC 4.8.0 20130502 (prerelease)] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Prompt-ul <strong>&gt;&gt;&gt;</strong> de pe ultima linie indică faptul că ești într-o sesiune Python interactivă, numită și &#8220;Python shell&#8221;. <strong>Aceasta este diferit de prompt-ul terminalului normal!</strong></p>
+</div>
+<p>Poți acum să introduci cod Python. Încearcă:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Apasă <code class="kbd docutils literal"><span class="pre">Enter</span></code> și vezi ce se întâmplă. Dupa ce îți afișează rezultatele, Python va reveni la prompt-ul interactiv, unde poți introduce o altă comandă:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
+<span class="go">Hello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+<p>O comandă extrem de utilă este <code class="docutils literal"><span class="pre">help()</span></code>, care accesează o funcționalitate de documentare pentru explorarea tuturor lucrurilor pe care Python îți permite să le faci, direct din interpretor. Apasă <code class="kbd docutils literal"><span class="pre">q</span></code> pentru a închide fereastra de documentație și a reveni la prompt-ul Python.</p>
+<p>Pentru a ieși din shell-ul interactiv, apasă  <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> și apoi <code class="kbd docutils literal"><span class="pre">Enter</span></code> în Windows, sau <code class="kbd docutils literal"><span class="pre">Ctrl-D</span></code> în OS X sau Linux. Alternativ, poți de asemenea să execuți comanda <code class="docutils literal"><span class="pre">exit()</span></code>!</p>
+</div>
+<div class="section" id="running-python-files">
+<h3>Executarea fișierelor Python<a class="headerlink" href="#running-python-files" title="Permalink to this headline">¶</a></h3>
+<p>Când ai de executat mult cod Python vei dori să îl salvezi într-un fișier pentru ca, de exemplu, să poți modifica bucăți din el (să rezolvi o eroare) și să îl execuți din nou fără a fi nevoie să introduci din nou restul codului. Alternativ poți salva codul într-un fișier și să îi transmiți numele acestuia executabilului <strong class="program">python</strong>. Acesta va executa fișierul în loc să lanseze interpretorul interactiv.</p>
+<p><strong>Să încercăm asta</strong>. Creează un fișier <strong class="program">python</strong> în directorul curent utilizând editorul tău favorit și scrie comanda print de mai sus. Acum salvează acest fișier. În Linux sau OS X poți de asemenea să utilizezi <code class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></code> pentru a creea un fișier gol pentru editare. Este foarte ușor să execuți acest fișier cu Python:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Asigură-te că ești în promput-ul sistemului, care are <code class="docutils literal"><span class="pre">$</span></code> sau <code class="docutils literal"><span class="pre">&gt;</span></code> la sfârșit, nu în cel al lui Python (care se termină cu <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code>)!</p>
+</div>
+<p>În Windows ar trebui să poți da dublu clic pe fișierul Python pentru a îl executa.</p>
+<p>Acum, când apeși <code class="kbd docutils literal"><span class="pre">Enter</span></code>, fișierul este executat și vei vedea rezultatul ca și mai devreme. Dar de data aceasta, dupa ce Python va termina de executat toate comenzile din acest fișier va ieși din nou la prompt-ul sistemului, în loc să se întoarcă la shell-ul interactiv.</p>
+<p>Și acum suntem pregătiți și putem incepe cu țestoasa!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Nu obții &#8220;Hello world&#8221; ci o eroare ciudată despre &#8220;can&#8217;t open file&#8221; (nu pot deschide fișierul) sau &#8220;No such file or directory&#8221; (nu există un asemenea fișier sau director)? Linia ta de comandă este posibil să nu se execute în directorul unde ai salvat fișierul. Poți să folosești linia de comandă pentru a schimba directorul activ cu comanda <strong class="command">cd</strong>, care semnifică &#8220;change directory&#8221; (schimbă directorul). În Windows, probabil vei dori ceva gen:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
+</pre></div>
+</div>
+<p>În Linux sau OS X vei vrea ceva de genul:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
+</pre></div>
+</div>
+<p class="last">Asta schimba directorul în directorul Python_Exercises sub directorul Desktop (al tău este posibil să fie ușor diferit). Dacă nu știi locația directorului unde ai salvat fișierul poți pur și simplu să tragi directorul în fereastra cu linia de comandă. Dacă nu știi în ce director se află shell-ul utilizează comanda <strong class="command">pwd</strong>, care semnifică &#8220;print working directory&#8221; (afișează directorul utilizat).</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Când te joci cu țestoasa, evită să denumești fișierul tău <code class="file docutils literal"><span class="pre">turtle.py</span></code> &#8212; mai degrabă folosește nume mai potrivite ca <code class="file docutils literal"><span class="pre">square.py</span></code> sau <code class="file docutils literal"><span class="pre">rectangle.py</span></code>. În caz contrar, de fiecare dată cănd te referi la <code class="docutils literal"><span class="pre">turtle</span></code> (țestoasă), Python va alege fișierul <em>tău</em> în loc de țestoasa standard.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/getting_started.rst" title="getting_started.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+getting_started">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

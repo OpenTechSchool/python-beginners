@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -134,6 +133,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -173,8 +187,8 @@ can be found here:</p>
 <p class="first admonition-title">Note</p>
 <p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your path, so it
 can be found by other programs. To do this, navigate to your
-installation directory (<tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>), open the <tt class="file docutils literal"><span class="pre">Tools</span></tt>,
-then <tt class="file docutils literal"><span class="pre">Scripts</span></tt> folders, and run the <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>
+installation directory (<code class="file docutils literal"><span class="pre">C:\Python33\</span></code>), open the <code class="file docutils literal"><span class="pre">Tools</span></code>,
+then <code class="file docutils literal"><span class="pre">Scripts</span></code> folders, and run the <code class="file docutils literal"><span class="pre">win_add2path.py</span></code>
 file by double clicking on it.</p>
 </div>
 </div>
@@ -247,10 +261,10 @@ likely want to open <strong class="program">Gnome Terminal</strong>. It should p
 <div class="section" id="opening-a-console-on-windows">
 <h3>Opening a console on Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Permalink to this headline">¶</a></h3>
 <p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
-way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
-(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
-<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
-click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
+way to get to it is by using the key combination <code class="kbd docutils literal"><span class="pre">Windows+R</span></code>
+(<code class="kbd docutils literal"><span class="pre">Windows</span></code> meaning the windows logo button), which should open a
+<span class="guilabel">Run</span> dialog.  Then type <strong class="program">cmd</strong> and hit <code class="kbd docutils literal"><span class="pre">Enter</span></code> or
+click <span class="guilabel">Ok</span>. You can also search for it from the start menu. It should
 look like:</p>
 <div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
 </pre></div>
@@ -266,10 +280,10 @@ in the Start menu.</p>
 <p>The python program that you have installed will by default act as something
 called an <strong>interpreter</strong>. An interpreter takes commands and runs them as you
 enter them - very handy for trying things out.</p>
-<p>Just type <strong class="program">python</strong> at your console, hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, and you should
+<p>Just type <strong class="program">python</strong> at your console, hit <code class="kbd docutils literal"><span class="pre">Enter</span></code>, and you should
 enter Python&#8217;s Interpreter.</p>
 <p>To find out which version of python you&#8217;re running,
-use <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> to tell you.</p>
+use <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code> to tell you.</p>
 <div class="section" id="interacting-with-python">
 <h3>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
 <p>After Python opens, it will show you some contextual information similar to this:</p>
@@ -289,7 +303,7 @@ interactive Python interpeter session, also called the &#8220;Python shell&#8221
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
+<p>Press <code class="kbd docutils literal"><span class="pre">Enter</span></code> and see what happens. After showing the results, Python
 will bring you back to the interactive prompt, where you could enter
 another command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
@@ -298,12 +312,12 @@ another command:</p>
 <span class="go">10</span>
 </pre></div>
 </div>
-<p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
+<p>An extremely useful command is <code class="docutils literal"><span class="pre">help()</span></code>, which enters a help functionality
 to explore all the stuff python lets you do, right from the interpreter.
-Press <tt class="kbd docutils literal"><span class="pre">q</span></tt> to close the help window and return to the Python prompt.</p>
-<p>To leave the interactive shell, press <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> and then
-<tt class="kbd docutils literal"><span class="pre">Enter</span></tt> on Windows, or <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt> on OS X or Linux. Alternatively,
-you could also run the python command <tt class="docutils literal"><span class="pre">exit()</span></tt>!</p>
+Press <code class="kbd docutils literal"><span class="pre">q</span></code> to close the help window and return to the Python prompt.</p>
+<p>To leave the interactive shell, press <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> and then
+<code class="kbd docutils literal"><span class="pre">Enter</span></code> on Windows, or <code class="kbd docutils literal"><span class="pre">Ctrl-D</span></code> on OS X or Linux. Alternatively,
+you could also run the python command <code class="docutils literal"><span class="pre">exit()</span></code>!</p>
 </div>
 <div class="section" id="running-python-files">
 <h3>Running Python files<a class="headerlink" href="#running-python-files" title="Permalink to this headline">¶</a></h3>
@@ -313,20 +327,20 @@ re-run it without having to repeatedly re-type the rest.
 Instead you can save your code to a file and pass a file name to the
 <strong class="program">python</strong> executable. It will execute that file instead of launching
 the interactive interpreter.</p>
-<p><strong>Let&#8217;s try that</strong>.  Create a file <tt class="file docutils literal"><span class="pre">hello.py</span></tt> in your current directory
+<p><strong>Let&#8217;s try that</strong>.  Create a file <code class="file docutils literal"><span class="pre">hello.py</span></code> in your current directory
 with your favorite text editor and write the print command from above.  Now
-save that file. On Linux or OS X, you can also run <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt> to create
+save that file. On Linux or OS X, you can also run <code class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></code> to create
 an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Make sure you are at your system command prompt, which will have <tt class="docutils literal"><span class="pre">$</span></tt> or
-<tt class="docutils literal"><span class="pre">&gt;</span></tt> at the end, not at python&#8217;s (which has <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> instead)!</p>
+<p class="last">Make sure you are at your system command prompt, which will have <code class="docutils literal"><span class="pre">$</span></code> or
+<code class="docutils literal"><span class="pre">&gt;</span></code> at the end, not at python&#8217;s (which has <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> instead)!</p>
 </div>
 <p>On Windows you should also be able to double-click the Python file to run it.</p>
-<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
+<p>When pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> now, the file is executed and you see the output
 as before.  But this time, after Python finished executing all commands from
 that file it exits back to the system command prompt, instead of going back
 to the interactive shell.</p>
@@ -355,9 +369,9 @@ which stands for &#8220;print working directory&#8221;.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">When playing around with turtle, avoid naming your file <tt class="file docutils literal"><span class="pre">turtle.py</span></tt>
-&#8212; rather use more appropriate names such as <tt class="file docutils literal"><span class="pre">square.py</span></tt> or
-<tt class="file docutils literal"><span class="pre">rectangle.py</span></tt>.  Otherwise, whenever you refer to <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python
+<p class="last">When playing around with turtle, avoid naming your file <code class="file docutils literal"><span class="pre">turtle.py</span></code>
+&#8212; rather use more appropriate names such as <code class="file docutils literal"><span class="pre">square.py</span></code> or
+<code class="file docutils literal"><span class="pre">rectangle.py</span></code>.  Otherwise, whenever you refer to <code class="docutils literal"><span class="pre">turtle</span></code>, Python
 will pick up <em>your</em> file instead of the standard turtle.</p>
 </div>
 </div>
@@ -392,7 +406,7 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

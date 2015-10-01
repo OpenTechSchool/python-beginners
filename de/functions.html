@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -130,6 +129,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -156,11 +170,11 @@
     <div class="col-md-12">
       
   <div class="section" id="user-defined-functions">
-<h1>Benutzerdefinierte Funktionen<a class="headerlink" href="#user-defined-functions" title="Permalink zu dieser Überschrift">¶</a></h1>
+<h1>Benutzerdefinierte Funktionen<a class="headerlink" href="#user-defined-functions" title="Link zu dieser Überschrift">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Einführung<a class="headerlink" href="#introduction" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Einführung<a class="headerlink" href="#introduction" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Programmierer können mit einigen ganz schön komplexen und abstrakten Probleme umgehen, aber ein Zug von guten Programmierern ist, dass sie faul sind. Sie wollen nur mit einer Sache gleichzeitig umgehen müssen. Also brauchst du einen Weg um Probleme in kleinere, abgesonderte Teile zu zerlegen, damit du dich auf nur einen Teil konzentrieren kannst.</p>
-<p>Funktionen sind ein Weg um diese Abstraktion in Python abzubilden. Lass uns <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> betrachten. <tt class="docutils literal"><span class="pre">reset</span></tt> ist eine Funktion die wir auf unserer <tt class="docutils literal"><span class="pre">turtle</span></tt> aufrufen und es ist eigentlich eine Abstraktion für eine Vielzahl von Schritten, und zwar:</p>
+<p>Funktionen sind ein Weg um diese Abstraktion in Python abzubilden. Lass uns <code class="docutils literal"><span class="pre">turtle.reset()</span></code> betrachten. <code class="docutils literal"><span class="pre">reset</span></code> ist eine Funktion die wir auf unserer <code class="docutils literal"><span class="pre">turtle</span></code> aufrufen und es ist eigentlich eine Abstraktion für eine Vielzahl von Schritten, und zwar:</p>
 <ul class="simple">
 <li><p class="first">Lösche die Zeichenfläche.</p>
 </li>
@@ -171,13 +185,13 @@
 </ul>
 <p>Aber weil all dieser Quelltext in der Funktion enthalten ist müssen wir uns keine Sorgen über die Details machen. Wir können die Funktion einfach <em>ausführen</em> und wissen, was sie für uns tun wird.</p>
 <p>Also - wie schreiben wir unsere eigene?</p>
-<p>Eine Funktion kann in Python mit dem Schlüsselwort <tt class="docutils literal"><span class="pre">def</span></tt> definiert werden:</p>
+<p>Eine Funktion kann in Python mit dem Schlüsselwort <code class="docutils literal"><span class="pre">def</span></code> definiert werden:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Diese von uns definierte Funktion heisst <tt class="docutils literal"><span class="pre">line_without_moving</span></tt>. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts.</p>
+<p>Diese von uns definierte Funktion heisst <code class="docutils literal"><span class="pre">line_without_moving</span></code>. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts.</p>
 <p>Um sie zu benutzen (oder wie es häufig genannt wird, &#8220;sie aufzurufen&#8221;), schreib ihren Namen gefolgt von runden Klammern:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">()</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -200,18 +214,18 @@
 <div class="admonition important">
 <p class="first admonition-title">Wichtig</p>
 <p>Python benutzt <em>Einrückung mit Leerzeichen</em> um zusammengehörende Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden Zeilen &#8212; üblicherweise vier Leerzeichen &#8212; gekennzeichnet.  Der Block endet sobald die Zeilen nicht mehr eingerückt sind.</p>
-<p>Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern <tt class="docutils literal"><span class="pre">{}</span></tt>) verwenden um Codeblöcke zu kennzeichnen.</p>
+<p>Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern <code class="docutils literal"><span class="pre">{}</span></code>) verwenden um Codeblöcke zu kennzeichnen.</p>
 <p class="last">Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du kannst &#8211; und solltest &#8211; Deinen Editor so konfigurieren, dass er vier Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls beide in der gleichen Python-Datei verwendet werden, wird Python sie fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf.</p>
 </div>
 </div>
 <div class="section" id="a-function-for-a-square">
-<h2>Eine Funktion für ein Viereck<a class="headerlink" href="#a-function-for-a-square" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Eine Funktion für ein Viereck<a class="headerlink" href="#a-function-for-a-square" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="section" id="exercise">
-<h3>Übung<a class="headerlink" href="#exercise" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#exercise" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?</p>
 </div>
 <div class="solution section" id="solution">
-<h3>Lösung<a class="headerlink" href="#solution" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#solution" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
   <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
@@ -240,9 +254,9 @@
 </div>
 </div>
 <div class="section" id="a-function-for-a-hexagon">
-<h2>Eine Funktion für ein Hexagon<a class="headerlink" href="#a-function-for-a-hexagon" title="Permalink zu dieser Überschrift">¶</a></h2>
+<h2>Eine Funktion für ein Hexagon<a class="headerlink" href="#a-function-for-a-hexagon" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="section" id="id1">
-<h3>Übung<a class="headerlink" href="#id1" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Übung<a class="headerlink" href="#id1" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Schreibe eine Funktion die ein Hexagon zeichnet.</p>
 <img alt="_images/hexagon.png" src="_images/hexagon.png" />
 <p>Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur eine einzige Ebene, ungefähr so:</p>
@@ -254,7 +268,7 @@
 </div>
 </div>
 <div class="solution section" id="id2">
-<h3>Lösung<a class="headerlink" href="#id2" title="Permalink zu dieser Überschrift">¶</a></h3>
+<h3>Lösung<a class="headerlink" href="#id2" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
       <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -266,7 +280,7 @@
     <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Du könntest auch die Befehle <tt class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></tt> in die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser nicht <tt class="docutils literal"><span class="pre">hexagon</span></tt> nennen. Das wäre irreführend, da die Funktion dann nicht nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend.</p>
+<p>Du könntest auch die Befehle <code class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></code> in die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser nicht <code class="docutils literal"><span class="pre">hexagon</span></code> nennen. Das wäre irreführend, da die Funktion dann nicht nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend.</p>
 </div>
 </div>
 </div>
@@ -299,7 +313,7 @@
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Mit <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1 erstellt.<br/>
     </p>
   </div>
 </footer>

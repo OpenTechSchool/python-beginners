@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Desenarea simplă utilizând țestoasa &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Variabile" href="variables.html" />
+    <link rel="prev" title="Să începem" href="getting_started.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Desenarea simplă utilizând țestoasa</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#drawing-a-square">Desenarea unui pătrat</a><ul>
+<li><a class="reference internal" href="#exercise">Exercițiu</a></li>
+<li><a class="reference internal" href="#solution">Soluția</a></li>
+<li><a class="reference internal" href="#bonus">Supliment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#drawing-a-rectangle">Desenarea unui dreptunghi</a><ul>
+<li><a class="reference internal" href="#id1">Exercițiu</a></li>
+<li><a class="reference internal" href="#id2">Soluția</a></li>
+<li><a class="reference internal" href="#id3">Supliment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-squares">Mai multe pătrate</a><ul>
+<li><a class="reference internal" href="#id4">Exercițiu</a></li>
+<li><a class="reference internal" href="#id5">Soluția</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="getting_started.html" title="Previous Chapter: Să începem">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="variables.html" title="Next Chapter: Variabile">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="simple-drawing-with-turtle">
+<h1>Desenarea simplă utilizând țestoasa<a class="headerlink" href="#simple-drawing-with-turtle" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Țestoasa este ca o planșetă de desen.</p>
+<p>Are funcții ca <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> și <code class="docutils literal"><span class="pre">turtle.left(...)</span></code>, care pot mișca țestoasa.</p>
+<p>Înainte de a utiliza țestoasa, aceasta trebuie importată. Îți recomandăm sa te joci cu ea în mod interactiv pentru început, deoarece va fi nevoie de cateva lucruri suplimentare pentru a o face să funcționeze din fișiere. Deschide un terminal și scrie:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+</pre></div>
+</div>
+<img alt="_images/default.png" src="_images/default.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Nu vezi nimic în MacOS? Încearcă să dai o comandă ca <cite>turtle.forward(0)`</cite> și să verifici dacă s-a deschis o fereastră nouă în spatele liniei de comandă.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Utilizezi Ubuntu și primești mesajul &#8220;No module named _tkinter&#8221;? Instaleaza modulul lipsă cu <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-tk</span></code></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Deși ai putea fi tentat să copiezi pur și simplu ce este scris în această pagină în terminal, te încurajăm să scrii fiecare comandă. Scrierea îți aduce controlul sintaxei (construind memoria musculară!) și poate chiar să evite erori exotice de sintaxă.</p>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/forward.png" src="_images/forward.png" />
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/left.png" src="_images/left.png" />
+<p>Funcția <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> îi spune țestoasei să înainteze distanța specificată. <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> primește un număr de grade cu care vrei să se rotească la stânga. Există de asemenea <code class="docutils literal"><span class="pre">turtle.backward(...)</span></code> și <code class="docutils literal"><span class="pre">turtle.right(...)</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Vrei să începi din nou? Poți să scrii <code class="docutils literal"><span class="pre">turtle.reset()</span></code> pentru șterge ce a făcut până acum <code class="docutils literal"><span class="pre">turtle``(țestoasa).</span> <span class="pre">O</span> <span class="pre">să</span> <span class="pre">intrăm</span> <span class="pre">în</span> <span class="pre">detalii</span> <span class="pre">despre</span> <span class="pre">``turtle.reset()</span></code> în scurt timp.</p>
+</div>
+<p>Țestoasa standard este un triunghi. Nu e prea drăguț! Hai să o transformăm într-o țestoasă cu comanda <code class="docutils literal"><span class="pre">turtle.shape()</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Mult mai drăguț!</p>
+<p>Dacă pui comenzile într-un fișier, poate ai observat că fereastra cu țestoasa dispare după ce țestoasa și-a terminat mișcarea. (Asta deoarece Python se închide după ce țestoasa și-a terminat mișcarea. De vreme ce fereastra țestoasei aparține Pyhon, și aceasta se închide.) Pentru a evita asta, adaugă <code class="docutils literal"><span class="pre">turtle.exitonclick()</span></code> la sfârșitul fișierului tău. Acum fereastra rămâne deschisă pâna cand apeși un buton în ea:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Python este un limbaj de programare în care indentarea textului este importantă. O să învățăm despre asta în continuare în capitolul Funcții, dar pentru acum trebuie să reții că spațiile suplimentare sau caracterele tab în fața oricărei linii de cod Python pot genera erori.</p>
+</div>
+</div>
+<div class="section" id="drawing-a-square">
+<h2>Desenarea unui pătrat<a class="headerlink" href="#drawing-a-square" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Nu trebuie neapărat să știi de fiecare dată răspunsul din prima! Învață prin încercări repetate! Experimentează, vezi cum reaționează python la diverse comenzi, ce generează rezultate frumoase (deși uneori neașteptate) și ce generează erori. Dacă vrei să te joci în continuare cu ceva ce ai învățat și dă rezultate interesante, este în regulă. Să nu îți fie frică să încerci și să greșești și să înveți din asta!</p>
+</div>
+<div class="section" id="exercise">
+<h3>Exercițiu<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Desenează un pătrat ca în figura următoare:</p>
+<img alt="_images/square.png" src="_images/square.png" />
+<p>Pentru un pătrat probabil vei avea nevoie de un unghi drept, care este de 90 de grade.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Soluția<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Observă cum țestoasa începe și termină în același loc și cu aceeași orientare la desenarea fiecărui pătrat. Aceasta este o convenție utilă, care ușurează desenarea mai multor forme consecutive.</p>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Supliment<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Dacă vrei să fii creativ, poți modifica forma cu funcțiile <code class="docutils literal"><span class="pre">turtle.width(...)</span></code> și <code class="docutils literal"><span class="pre">turtle.color(...)</span></code>. Cum utilizezi aceste funcții? Înainte de a utiliza o funcție trebuie să îi cunoști <em>semnătura</em> (de exemplu numărul de parametri și semnificația lor). Pentru a putea afla asta poți să scrii <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> în consola interactivă Python. Dacă este prea mult text, Python o să pună documentația într-un <em>pager</em>, care îți permite să derulezi pagini sus si jos. Apasă tasta <code class="kbd docutils literal"><span class="pre">q</span></code> pentru a ieși din pager.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Primești o eroare ca:</p>
+<div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
+</pre></div>
+</div>
+<p class="last">atunci când vrei să vezi documentația? În Python trebuie să imporți numele înainte de a le utiliza, așa că într-o consolă interactivă nouă va trebui să dai comanda <code class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></code> înainte ca <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> să funcționeze.</p>
+</div>
+<p>O altă cale pentru a învăța despre funcții este consultarea <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">Dacă ai desenat ceva greșit, poți să îi spui țestoasei să șteargă desenul cu directiva <code class="docutils literal"><span class="pre">turtle.reset()</span></code> sau să anulezi ultimul pas cu <code class="docutils literal"><span class="pre">turtle.undo()</span></code>.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">După cum e posibil să fi citit în documentație, poți modifica culoarea cu <code class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></code>. Valorile includ dar nu sunt limitate la &#8220;red&#8221; (roșu), &#8220;green&#8221;(verde), și &#8220;violet&#8221;(violet).</p>
+</div>
+</div>
+</div>
+<div class="section" id="drawing-a-rectangle">
+<h2>Desenarea unui dreptunghi<a class="headerlink" href="#drawing-a-rectangle" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercițiu<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Poți să desenezi un dreptunghi?</p>
+<img alt="_images/rectangle.png" src="_images/rectangle.png" />
+</div>
+<div class="solution section" id="id2">
+<h3>Soluția<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Supliment<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Dar un triunghi? Într-un triunghi echilateral (un triunghi cu laturile egale) fiecare colț are un unghi de 60 de grade.</p>
+</div>
+</div>
+<div class="section" id="more-squares">
+<h2>Mai multe pătrate<a class="headerlink" href="#more-squares" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Exercițiu<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Acum, desenează un pătrat înclinat. Și încă unul, și încă unul. Poți experimenta cu unghiurile între pătrate.</p>
+<img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
+<p>În imagine sunt trei întoarceri de 20 de grade. Poți încerca, de exemplu, 20, 30 și 40.</p>
+</div>
+<div class="solution section" id="id5">
+<h3>Soluția<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/simple_drawing.rst" title="simple_drawing.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+simple_drawing">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

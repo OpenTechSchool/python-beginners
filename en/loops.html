@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -132,6 +131,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -176,12 +190,12 @@ action once. Here&#8217;s another version of a loop:</p>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Notice how we write only one line of code using <tt class="docutils literal"><span class="pre">i</span></tt>, but it takes on 10
+<p>Notice how we write only one line of code using <code class="docutils literal"><span class="pre">i</span></code>, but it takes on 10
 different values?</p>
-<p>The <tt class="samp docutils literal"><span class="pre">range(n)</span></tt> function can be considered a shorthand
-for <tt class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></tt>. If you want to know more about it, you can use
-the help in the Python shell by typing <tt class="docutils literal"><span class="pre">help(range)</span></tt>.
-Use the <tt class="kbd docutils literal"><span class="pre">q</span></tt> key to exit the help again.</p>
+<p>The <code class="samp docutils literal"><span class="pre">range(n)</span></code> function can be considered a shorthand
+for <code class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">n-1</span></code>. If you want to know more about it, you can use
+the help in the Python shell by typing <code class="docutils literal"><span class="pre">help(range)</span></code>.
+Use the <code class="kbd docutils literal"><span class="pre">q</span></code> key to exit the help again.</p>
 <p>You can also loop over elements of your choice:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span>
@@ -197,19 +211,19 @@ expect.</p>
 <p class="first admonition-title">Note</p>
 <p class="last">Notice how above, the lines of code that are <em>looped</em>, are the ones that
 are <em>indented</em>. This is an important concept in Python - that&#8217;s how it
-knows which lines should be used in the <tt class="docutils literal"><span class="pre">for</span></tt> loop, and which come
+knows which lines should be used in the <code class="docutils literal"><span class="pre">for</span></code> loop, and which come
 after, as part of the rest of your program. Use four spaces (hitting tab)
 to indent your code.</p>
 </div>
 <p>Sometimes you want to repeat some code a number of times, but don&#8217;t care about
-the value of the <tt class="docutils literal"><span class="pre">i</span></tt> variable; so it can be good practice to replace it
-with <tt class="docutils literal"><span class="pre">_</span></tt> instead. This signifies that we don&#8217;t care about its value, or
+the value of the <code class="docutils literal"><span class="pre">i</span></code> variable; so it can be good practice to replace it
+with <code class="docutils literal"><span class="pre">_</span></code> instead. This signifies that we don&#8217;t care about its value, or
 don&#8217;t wish to use it. Here&#8217;s a simple example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>You may or may not be wondering about the variable <tt class="docutils literal"><span class="pre">i</span></tt> - why is it used all
+<p>You may or may not be wondering about the variable <code class="docutils literal"><span class="pre">i</span></code> - why is it used all
 the time above? Well, it simply stands for &#8220;index&#8221; and is one of the most
 common variable names ever found in code. But if you are looping over something
 other than just numbers, be sure to name it something better! For instance:</p>
@@ -217,16 +231,16 @@ other than just numbers, be sure to name it something better! For instance:</p>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Would you like a &quot;</span> <span class="o">+</span> <span class="n">drink</span> <span class="o">+</span> <span class="s">&quot;?&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This is immediately clearer to understand than if we had used <tt class="docutils literal"><span class="pre">i</span></tt>
-instead of <tt class="docutils literal"><span class="pre">drink</span></tt>.</p>
+<p>This is immediately clearer to understand than if we had used <code class="docutils literal"><span class="pre">i</span></code>
+instead of <code class="docutils literal"><span class="pre">drink</span></code>.</p>
 </div>
 <div class="section" id="drawing-a-dashed-line">
 <h2>Drawing a dashed line<a class="headerlink" href="#drawing-a-dashed-line" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <p>Draw a dashed line.  You can move the turtle without the turtle drawing its
-movement by using the <tt class="docutils literal"><span class="pre">turtle.penup()</span></tt> function; to tell it to draw again,
-use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.</p>
+movement by using the <code class="docutils literal"><span class="pre">turtle.penup()</span></code> function; to tell it to draw again,
+use <code class="docutils literal"><span class="pre">turtle.pendown()</span></code>.</p>
 <img alt="_images/dashed.png" src="_images/dashed.png" />
 </div>
 <div class="solution section" id="solution">
@@ -245,21 +259,21 @@ use <tt class="docutils literal"><span class="pre">turtle.pendown()</span></tt>.
 <img alt="_images/dashedprogressing.png" src="_images/dashedprogressing.png" />
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
-<p>Feeling lost?  Inspect <tt class="docutils literal"><span class="pre">i</span></tt> at every run of the loop:</p>
+<p>Feeling lost?  Inspect <code class="docutils literal"><span class="pre">i</span></code> at every run of the loop:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="c"># write more code here</span>
 </pre></div>
 </div>
-<p class="last">Can you utilize <tt class="docutils literal"><span class="pre">i</span></tt> &#8212; commonly called the <strong>index</strong> variable or loop
+<p class="last">Can you utilize <code class="docutils literal"><span class="pre">i</span></code> &#8212; commonly called the <strong>index</strong> variable or loop
 variable &#8212; to get increasing step sizes?</p>
 </div>
 </div>
 </div>
 <div class="section" id="comments">
 <h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
-<p>In the example above, the line that starts with a <tt class="docutils literal"><span class="pre">#</span></tt> is called a
-comment. In Python, anything that goes on a line after <tt class="docutils literal"><span class="pre">#</span></tt> is ignored
+<p>In the example above, the line that starts with a <code class="docutils literal"><span class="pre">#</span></code> is called a
+comment. In Python, anything that goes on a line after <code class="docutils literal"><span class="pre">#</span></code> is ignored
 by the computer. Use comments to explain what your program does,
 without changing the behaviour for the computer. They can also be used
 to easily and temporarily disable, or &#8220;comment out&#8221; some lines of code.</p>
@@ -297,7 +311,7 @@ drawing code that&#8217;s inside both. Here&#8217;s what it can look like:</p>
     ...
 </pre></div>
 </div>
-<p>Replace the <tt class="docutils literal"><span class="pre">...</span></tt>&#8216;s with your own code, and see if you can come up with
+<p>Replace the <code class="docutils literal"><span class="pre">...</span></code>&#8216;s with your own code, and see if you can come up with
 something funny or interesting! <sup>Mistakes are encouraged!</sup></p>
 </div>
 </div>
@@ -331,7 +345,7 @@ something funny or interesting! <sup>Mistakes are encouraged!</sup></p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

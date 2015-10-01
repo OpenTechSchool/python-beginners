@@ -4,193 +4,14 @@
  *
  * Sphinx JavaScript utilties for the full-text search.
  *
- * :copyright: Copyright 2007-2014 by the Sphinx team, see AUTHORS.
+ * :copyright: Copyright 2007-2015 by the Sphinx team, see AUTHORS.
  * :license: BSD, see LICENSE for details.
  *
  */
 
 
-/**
- * Porter Stemmer
- */
-var Stemmer = function() {
-
-  var step2list = {
-    ational: 'ate',
-    tional: 'tion',
-    enci: 'ence',
-    anci: 'ance',
-    izer: 'ize',
-    bli: 'ble',
-    alli: 'al',
-    entli: 'ent',
-    eli: 'e',
-    ousli: 'ous',
-    ization: 'ize',
-    ation: 'ate',
-    ator: 'ate',
-    alism: 'al',
-    iveness: 'ive',
-    fulness: 'ful',
-    ousness: 'ous',
-    aliti: 'al',
-    iviti: 'ive',
-    biliti: 'ble',
-    logi: 'log'
-  };
-
-  var step3list = {
-    icate: 'ic',
-    ative: '',
-    alize: 'al',
-    iciti: 'ic',
-    ical: 'ic',
-    ful: '',
-    ness: ''
-  };
-
-  var c = "[^aeiou]";          // consonant
-  var v = "[aeiouy]";          // vowel
-  var C = c + "[^aeiouy]*";    // consonant sequence
-  var V = v + "[aeiou]*";      // vowel sequence
-
-  var mgr0 = "^(" + C + ")?" + V + C;                      // [C]VC... is m>0
-  var meq1 = "^(" + C + ")?" + V + C + "(" + V + ")?$";    // [C]VC[V] is m=1
-  var mgr1 = "^(" + C + ")?" + V + C + V + C;              // [C]VCVC... is m>1
-  var s_v   = "^(" + C + ")?" + v;                         // vowel in stem
-
-  this.stemWord = function (w) {
-    var stem;
-    var suffix;
-    var firstch;
-    var origword = w;
-
-    if (w.length < 3)
-      return w;
-
-    var re;
-    var re2;
-    var re3;
-    var re4;
-
-    firstch = w.substr(0,1);
-    if (firstch == "y")
-      w = firstch.toUpperCase() + w.substr(1);
-
-    // Step 1a
-    re = /^(.+?)(ss|i)es$/;
-    re2 = /^(.+?)([^s])s$/;
-
-    if (re.test(w))
-      w = w.replace(re,"$1$2");
-    else if (re2.test(w))
-      w = w.replace(re2,"$1$2");
-
-    // Step 1b
-    re = /^(.+?)eed$/;
-    re2 = /^(.+?)(ed|ing)$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      re = new RegExp(mgr0);
-      if (re.test(fp[1])) {
-        re = /.$/;
-        w = w.replace(re,"");
-      }
-    }
-    else if (re2.test(w)) {
-      var fp = re2.exec(w);
-      stem = fp[1];
-      re2 = new RegExp(s_v);
-      if (re2.test(stem)) {
-        w = stem;
-        re2 = /(at|bl|iz)$/;
-        re3 = new RegExp("([^aeiouylsz])\\1$");
-        re4 = new RegExp("^" + C + v + "[^aeiouwxy]$");
-        if (re2.test(w))
-          w = w + "e";
-        else if (re3.test(w)) {
-          re = /.$/;
-          w = w.replace(re,"");
-        }
-        else if (re4.test(w))
-          w = w + "e";
-      }
-    }
-
-    // Step 1c
-    re = /^(.+?)y$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      stem = fp[1];
-      re = new RegExp(s_v);
-      if (re.test(stem))
-        w = stem + "i";
-    }
-
-    // Step 2
-    re = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      stem = fp[1];
-      suffix = fp[2];
-      re = new RegExp(mgr0);
-      if (re.test(stem))
-        w = stem + step2list[suffix];
-    }
-
-    // Step 3
-    re = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      stem = fp[1];
-      suffix = fp[2];
-      re = new RegExp(mgr0);
-      if (re.test(stem))
-        w = stem + step3list[suffix];
-    }
-
-    // Step 4
-    re = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
-    re2 = /^(.+?)(s|t)(ion)$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      stem = fp[1];
-      re = new RegExp(mgr1);
-      if (re.test(stem))
-        w = stem;
-    }
-    else if (re2.test(w)) {
-      var fp = re2.exec(w);
-      stem = fp[1] + fp[2];
-      re2 = new RegExp(mgr1);
-      if (re2.test(stem))
-        w = stem;
-    }
-
-    // Step 5
-    re = /^(.+?)e$/;
-    if (re.test(w)) {
-      var fp = re.exec(w);
-      stem = fp[1];
-      re = new RegExp(mgr1);
-      re2 = new RegExp(meq1);
-      re3 = new RegExp("^" + C + v + "[^aeiouwxy]$");
-      if (re.test(stem) || (re2.test(stem) && !(re3.test(stem))))
-        w = stem;
-    }
-    re = /ll$/;
-    re2 = new RegExp(mgr1);
-    if (re.test(w) && re2.test(w)) {
-      re = /.$/;
-      w = w.replace(re,"");
-    }
-
-    // and turn initial Y back to y
-    if (firstch == "y")
-      w = firstch.toLowerCase() + w.substr(1);
-    return w;
-  }
-}
+var JSX={};(function(j){function l(b,e){var a=function(){};a.prototype=e.prototype;var c=new a;for(var d in b){b[d].prototype=c}}function H(c,b){for(var a in b.prototype)if(b.prototype.hasOwnProperty(a))c.prototype[a]=b.prototype[a]}function g(a,b,d){function c(a,b,c){delete a[b];a[b]=c;return c}Object.defineProperty(a,b,{get:function(){return c(a,b,d())},set:function(d){c(a,b,d)},enumerable:true,configurable:true})}function I(a,b,c){return a[b]=a[b]/c|0}var C=parseInt;var r=parseFloat;function J(a){return a!==a}var z=isFinite;var y=encodeURIComponent;var x=decodeURIComponent;var w=encodeURI;var u=decodeURI;var t=Object.prototype.toString;var B=Object.prototype.hasOwnProperty;function i(){}j.require=function(b){var a=q[b];return a!==undefined?a:null};j.profilerIsRunning=function(){return i.getResults!=null};j.getProfileResults=function(){return(i.getResults||function(){return{}})()};j.postProfileResults=function(a,b){if(i.postResults==null)throw new Error('profiler has not been turned on');return i.postResults(a,b)};j.resetProfileResults=function(){if(i.resetResults==null)throw new Error('profiler has not been turned on');return i.resetResults()};j.DEBUG=false;function s(){};l([s],Error);function c(a,b,c){this.F=a.length;this.K=a;this.L=b;this.I=c;this.H=null;this.P=null};l([c],Object);function o(){};l([o],Object);function e(){var a;var b;var c;this.G={};a=this.D='';b=this._=0;c=this.A=a.length;this.E=0;this.C=b;this.B=c};l([e],o);function v(a,b){a.D=b.D;a._=b._;a.A=b.A;a.E=b.E;a.C=b.C;a.B=b.B};function f(b,d,c,e){var a;if(b._>=b.A){return false}a=b.D.charCodeAt(b._);if(a>e||a<c){return false}a-=c;if((d[a>>>3]&1<<(a&7))===0){return false}b._++;return true};function m(b,d,c,e){var a;if(b._<=b.E){return false}a=b.D.charCodeAt(b._-1);if(a>e||a<c){return false}a-=c;if((d[a>>>3]&1<<(a&7))===0){return false}b._--;return true};function n(a,d,c,e){var b;if(a._>=a.A){return false}b=a.D.charCodeAt(a._);if(b>e||b<c){a._++;return true}b-=c;if((d[b>>>3]&1<<(b&7))===0){a._++;return true}return false};function k(a,b,d){var c;if(a.A-a._<b){return false}if(a.D.slice(c=a._,c+b)!==d){return false}a._+=b;return true};function d(a,b,d){var c;if(a._-a.E<b){return false}if(a.D.slice((c=a._)-b,c)!==d){return false}a._-=b;return true};function p(f,m,p){var b;var d;var e;var n;var g;var k;var l;var i;var h;var c;var a;var j;var o;b=0;d=p;e=f._;n=f.A;g=0;k=0;l=false;while(true){i=b+(d-b>>>1);h=0;c=g<k?g:k;a=m[i];for(j=c;j<a.F;j++){if(e+c===n){h=-1;break}h=f.D.charCodeAt(e+c)-a.K.charCodeAt(j);if(h!==0){break}c++}if(h<0){d=i;k=c}else{b=i;g=c}if(d-b<=1){if(b>0){break}if(d===b){break}if(l){break}l=true}}while(true){a=m[b];if(g>=a.F){f._=e+a.F|0;if(a.H==null){return a.I}o=a.H(a.P);f._=e+a.F|0;if(o){return a.I}}b=a.L;if(b<0){return 0}}return-1};function h(d,m,p){var b;var g;var e;var n;var f;var k;var l;var i;var h;var c;var a;var j;var o;b=0;g=p;e=d._;n=d.E;f=0;k=0;l=false;while(true){i=b+(g-b>>1);h=0;c=f<k?f:k;a=m[i];for(j=a.F-1-c;j>=0;j--){if(e-c===n){h=-1;break}h=d.D.charCodeAt(e-1-c)-a.K.charCodeAt(j);if(h!==0){break}c++}if(h<0){g=i;k=c}else{b=i;f=c}if(g-b<=1){if(b>0){break}if(g===b){break}if(l){break}l=true}}while(true){a=m[b];if(f>=a.F){d._=e-a.F|0;if(a.H==null){return a.I}o=a.H(d);d._=e-a.F|0;if(o){return a.I}}b=a.L;if(b<0){return 0}}return-1};function D(a,b,d,e){var c;c=e.length-(d-b);a.D=a.D.slice(0,b)+e+a.D.slice(d);a.A+=c|0;if(a._>=d){a._+=c|0}else if(a._>b){a._=b}return c|0};function b(a,f){var b;var c;var d;var e;b=false;if((c=a.C)<0||c>(d=a.B)||d>(e=a.A)||e>a.D.length?false:true){D(a,a.C,a.B,f);b=true}return b};e.prototype.J=function(){return false};e.prototype.W=function(b){var a;var c;var d;var e;a=this.G['.'+b];if(a==null){c=this.D=b;d=this._=0;e=this.A=c.length;this.E=0;this.C=d;this.B=e;this.J();a=this.D;this.G['.'+b]=a}return a};e.prototype.stemWord=e.prototype.W;e.prototype.X=function(e){var d;var b;var c;var a;var f;var g;var h;d=[];for(b=0;b<e.length;b++){c=e[b];a=this.G['.'+c];if(a==null){f=this.D=c;g=this._=0;h=this.A=f.length;this.E=0;this.C=g;this.B=h;this.J();a=this.D;this.G['.'+c]=a}d.push(a)}return d};e.prototype.stemWords=e.prototype.X;function a(){e.call(this);this.I_x=0;this.I_p2=0;this.I_p1=0};l([a],e);a.prototype.M=function(a){this.I_x=a.I_x;this.I_p2=a.I_p2;this.I_p1=a.I_p1;v(this,a)};a.prototype.copy_from=a.prototype.M;a.prototype.U=function(){var m;var r;var n;var o;var d;var q;var e;var c;var g;var h;var i;var j;var l;var s;var p;m=this._;a:while(true){r=this._;e=true;b:while(e===true){e=false;c=true;c:while(c===true){c=false;n=this._;g=true;d:while(g===true){g=false;this.C=this._;if(!k(this,1,'ß')){break d}this.B=this._;if(!b(this,'ss')){return false}break c}s=this._=n;if(s>=this.A){break b}this._++}continue a}this._=r;break a}this._=m;b:while(true){o=this._;h=true;d:while(h===true){h=false;e:while(true){d=this._;i=true;a:while(i===true){i=false;if(!f(this,a.g_v,97,252)){break a}this.C=this._;j=true;f:while(j===true){j=false;q=this._;l=true;c:while(l===true){l=false;if(!k(this,1,'u')){break c}this.B=this._;if(!f(this,a.g_v,97,252)){break c}if(!b(this,'U')){return false}break f}this._=q;if(!k(this,1,'y')){break a}this.B=this._;if(!f(this,a.g_v,97,252)){break a}if(!b(this,'Y')){return false}}this._=d;break e}p=this._=d;if(p>=this.A){break d}this._++}continue b}this._=o;break b}return true};a.prototype.r_prelude=a.prototype.U;function G(c){var s;var n;var o;var p;var e;var r;var d;var g;var h;var i;var j;var l;var m;var t;var q;s=c._;a:while(true){n=c._;d=true;b:while(d===true){d=false;g=true;c:while(g===true){g=false;o=c._;h=true;d:while(h===true){h=false;c.C=c._;if(!k(c,1,'ß')){break d}c.B=c._;if(!b(c,'ss')){return false}break c}t=c._=o;if(t>=c.A){break b}c._++}continue a}c._=n;break a}c._=s;b:while(true){p=c._;i=true;d:while(i===true){i=false;e:while(true){e=c._;j=true;a:while(j===true){j=false;if(!f(c,a.g_v,97,252)){break a}c.C=c._;l=true;f:while(l===true){l=false;r=c._;m=true;c:while(m===true){m=false;if(!k(c,1,'u')){break c}c.B=c._;if(!f(c,a.g_v,97,252)){break c}if(!b(c,'U')){return false}break f}c._=r;if(!k(c,1,'y')){break a}c.B=c._;if(!f(c,a.g_v,97,252)){break a}if(!b(c,'Y')){return false}}c._=e;break e}q=c._=e;if(q>=c.A){break d}c._++}continue b}c._=p;break b}return true};a.prototype.S=function(){var j;var b;var d;var e;var c;var g;var h;var i;var l;var k;this.I_p1=i=this.A;this.I_p2=i;j=l=this._;b=l+3|0;if(0>b||b>i){return false}k=this._=b;this.I_x=k;this._=j;a:while(true){d=true;b:while(d===true){d=false;if(!f(this,a.g_v,97,252)){break b}break a}if(this._>=this.A){return false}this._++}a:while(true){e=true;b:while(e===true){e=false;if(!n(this,a.g_v,97,252)){break b}break a}if(this._>=this.A){return false}this._++}this.I_p1=this._;c=true;a:while(c===true){c=false;if(!(this.I_p1<this.I_x)){break a}this.I_p1=this.I_x}a:while(true){g=true;b:while(g===true){g=false;if(!f(this,a.g_v,97,252)){break b}break a}if(this._>=this.A){return false}this._++}a:while(true){h=true;b:while(h===true){h=false;if(!n(this,a.g_v,97,252)){break b}break a}if(this._>=this.A){return false}this._++}this.I_p2=this._;return true};a.prototype.r_mark_regions=a.prototype.S;function F(b){var k;var c;var e;var g;var d;var h;var i;var j;var m;var l;b.I_p1=j=b.A;b.I_p2=j;k=m=b._;c=m+3|0;if(0>c||c>j){return false}l=b._=c;b.I_x=l;b._=k;a:while(true){e=true;b:while(e===true){e=false;if(!f(b,a.g_v,97,252)){break b}break a}if(b._>=b.A){return false}b._++}a:while(true){g=true;b:while(g===true){g=false;if(!n(b,a.g_v,97,252)){break b}break a}if(b._>=b.A){return false}b._++}b.I_p1=b._;d=true;a:while(d===true){d=false;if(!(b.I_p1<b.I_x)){break a}b.I_p1=b.I_x}a:while(true){h=true;b:while(h===true){h=false;if(!f(b,a.g_v,97,252)){break b}break a}if(b._>=b.A){return false}b._++}a:while(true){i=true;b:while(i===true){i=false;if(!n(b,a.g_v,97,252)){break b}break a}if(b._>=b.A){return false}b._++}b.I_p2=b._;return true};a.prototype.T=function(){var c;var e;var d;b:while(true){e=this._;d=true;a:while(d===true){d=false;this.C=this._;c=p(this,a.a_0,6);if(c===0){break a}this.B=this._;switch(c){case 0:break a;case 1:if(!b(this,'y')){return false}break;case 2:if(!b(this,'u')){return false}break;case 3:if(!b(this,'a')){return false}break;case 4:if(!b(this,'o')){return false}break;case 5:if(!b(this,'u')){return false}break;case 6:if(this._>=this.A){break a}this._++;break}continue b}this._=e;break b}return true};a.prototype.r_postlude=a.prototype.T;function E(c){var d;var f;var e;b:while(true){f=c._;e=true;a:while(e===true){e=false;c.C=c._;d=p(c,a.a_0,6);if(d===0){break a}c.B=c._;switch(d){case 0:break a;case 1:if(!b(c,'y')){return false}break;case 2:if(!b(c,'u')){return false}break;case 3:if(!b(c,'a')){return false}break;case 4:if(!b(c,'o')){return false}break;case 5:if(!b(c,'u')){return false}break;case 6:if(c._>=c.A){break a}c._++;break}continue b}c._=f;break b}return true};a.prototype.Q=function(){return!(this.I_p1<=this._)?false:true};a.prototype.r_R1=a.prototype.Q;a.prototype.R=function(){return!(this.I_p2<=this._)?false:true};a.prototype.r_R2=a.prototype.R;a.prototype.V=function(){var c;var z;var n;var x;var y;var f;var A;var B;var p;var w;var g;var j;var k;var l;var e;var o;var i;var q;var r;var s;var t;var u;var v;var D;var E;var F;var G;var H;var I;var J;var K;var L;var M;var C;z=this.A-this._;j=true;a:while(j===true){j=false;this.B=this._;c=h(this,a.a_1,7);if(c===0){break a}this.C=D=this._;if(!(!(this.I_p1<=D)?false:true)){break a}switch(c){case 0:break a;case 1:if(!b(this,'')){return false}break;case 2:if(!b(this,'')){return false}n=this.A-this._;k=true;b:while(k===true){k=false;this.B=this._;if(!d(this,1,'s')){this._=this.A-n;break b}this.C=this._;if(!d(this,3,'nis')){this._=this.A-n;break b}if(!b(this,'')){return false}}break;case 3:if(!m(this,a.g_s_ending,98,116)){break a}if(!b(this,'')){return false}break}}G=this._=(F=this.A)-z;x=F-G;l=true;a:while(l===true){l=false;this.B=this._;c=h(this,a.a_2,4);if(c===0){break a}this.C=E=this._;if(!(!(this.I_p1<=E)?false:true)){break a}switch(c){case 0:break a;case 1:if(!b(this,'')){return false}break;case 2:if(!m(this,a.g_st_ending,98,116)){break a}e=this._-3|0;if(this.E>e||e>this.A){break a}this._=e;if(!b(this,'')){return false}break}}C=this._=(M=this.A)-x;y=M-C;o=true;a:while(o===true){o=false;this.B=this._;c=h(this,a.a_4,8);if(c===0){break a}this.C=H=this._;if(!(!(this.I_p2<=H)?false:true)){break a}switch(c){case 0:break a;case 1:if(!b(this,'')){return false}f=this.A-this._;i=true;b:while(i===true){i=false;this.B=this._;if(!d(this,2,'ig')){this._=this.A-f;break b}this.C=I=this._;A=this.A-I;q=true;c:while(q===true){q=false;if(!d(this,1,'e')){break c}this._=this.A-f;break b}J=this._=this.A-A;if(!(!(this.I_p2<=J)?false:true)){this._=this.A-f;break b}if(!b(this,'')){return false}}break;case 2:B=this.A-this._;r=true;b:while(r===true){r=false;if(!d(this,1,'e')){break b}break a}this._=this.A-B;if(!b(this,'')){return false}break;case 3:if(!b(this,'')){return false}p=this.A-this._;s=true;b:while(s===true){s=false;this.B=this._;t=true;c:while(t===true){t=false;w=this.A-this._;u=true;d:while(u===true){u=false;if(!d(this,2,'er')){break d}break c}this._=this.A-w;if(!d(this,2,'en')){this._=this.A-p;break b}}this.C=K=this._;if(!(!(this.I_p1<=K)?false:true)){this._=this.A-p;break b}if(!b(this,'')){return false}}break;case 4:if(!b(this,'')){return false}g=this.A-this._;v=true;b:while(v===true){v=false;this.B=this._;c=h(this,a.a_3,2);if(c===0){this._=this.A-g;break b}this.C=L=this._;if(!(!(this.I_p2<=L)?false:true)){this._=this.A-g;break b}switch(c){case 0:this._=this.A-g;break b;case 1:if(!b(this,'')){return false}break}}break}}this._=this.A-y;return true};a.prototype.r_standard_suffix=a.prototype.V;function A(c){var e;var A;var j;var y;var z;var g;var B;var C;var q;var x;var i;var k;var l;var n;var f;var p;var o;var r;var s;var t;var u;var v;var w;var E;var F;var G;var H;var I;var J;var K;var L;var M;var N;var D;A=c.A-c._;k=true;a:while(k===true){k=false;c.B=c._;e=h(c,a.a_1,7);if(e===0){break a}c.C=E=c._;if(!(!(c.I_p1<=E)?false:true)){break a}switch(e){case 0:break a;case 1:if(!b(c,'')){return false}break;case 2:if(!b(c,'')){return false}j=c.A-c._;l=true;b:while(l===true){l=false;c.B=c._;if(!d(c,1,'s')){c._=c.A-j;break b}c.C=c._;if(!d(c,3,'nis')){c._=c.A-j;break b}if(!b(c,'')){return false}}break;case 3:if(!m(c,a.g_s_ending,98,116)){break a}if(!b(c,'')){return false}break}}H=c._=(G=c.A)-A;y=G-H;n=true;a:while(n===true){n=false;c.B=c._;e=h(c,a.a_2,4);if(e===0){break a}c.C=F=c._;if(!(!(c.I_p1<=F)?false:true)){break a}switch(e){case 0:break a;case 1:if(!b(c,'')){return false}break;case 2:if(!m(c,a.g_st_ending,98,116)){break a}f=c._-3|0;if(c.E>f||f>c.A){break a}c._=f;if(!b(c,'')){return false}break}}D=c._=(N=c.A)-y;z=N-D;p=true;a:while(p===true){p=false;c.B=c._;e=h(c,a.a_4,8);if(e===0){break a}c.C=I=c._;if(!(!(c.I_p2<=I)?false:true)){break a}switch(e){case 0:break a;case 1:if(!b(c,'')){return false}g=c.A-c._;o=true;b:while(o===true){o=false;c.B=c._;if(!d(c,2,'ig')){c._=c.A-g;break b}c.C=J=c._;B=c.A-J;r=true;c:while(r===true){r=false;if(!d(c,1,'e')){break c}c._=c.A-g;break b}K=c._=c.A-B;if(!(!(c.I_p2<=K)?false:true)){c._=c.A-g;break b}if(!b(c,'')){return false}}break;case 2:C=c.A-c._;s=true;b:while(s===true){s=false;if(!d(c,1,'e')){break b}break a}c._=c.A-C;if(!b(c,'')){return false}break;case 3:if(!b(c,'')){return false}q=c.A-c._;t=true;b:while(t===true){t=false;c.B=c._;u=true;c:while(u===true){u=false;x=c.A-c._;v=true;d:while(v===true){v=false;if(!d(c,2,'er')){break d}break c}c._=c.A-x;if(!d(c,2,'en')){c._=c.A-q;break b}}c.C=L=c._;if(!(!(c.I_p1<=L)?false:true)){c._=c.A-q;break b}if(!b(c,'')){return false}}break;case 4:if(!b(c,'')){return false}i=c.A-c._;w=true;b:while(w===true){w=false;c.B=c._;e=h(c,a.a_3,2);if(e===0){c._=c.A-i;break b}c.C=M=c._;if(!(!(c.I_p2<=M)?false:true)){c._=c.A-i;break b}switch(e){case 0:c._=c.A-i;break b;case 1:if(!b(c,'')){return false}break}}break}}c._=c.A-z;return true};a.prototype.J=function(){var f;var g;var h;var b;var a;var c;var d;var i;var j;var e;f=this._;b=true;a:while(b===true){b=false;if(!G(this)){break a}}i=this._=f;g=i;a=true;a:while(a===true){a=false;if(!F(this)){break a}}j=this._=g;this.E=j;this._=this.A;c=true;a:while(c===true){c=false;if(!A(this)){break a}}e=this._=this.E;h=e;d=true;a:while(d===true){d=false;if(!E(this)){break a}}this._=h;return true};a.prototype.stem=a.prototype.J;a.prototype.N=function(b){return b instanceof a};a.prototype.equals=a.prototype.N;a.prototype.O=function(){var c;var a;var b;var d;c='GermanStemmer';a=0;for(b=0;b<c.length;b++){d=c.charCodeAt(b);a=(a<<5)-a+d;a=a&a}return a|0};a.prototype.hashCode=a.prototype.O;a.serialVersionUID=1;g(a,'methodObject',function(){return new a});g(a,'a_0',function(){return[new c('',-1,6),new c('U',0,2),new c('Y',0,1),new c('ä',0,3),new c('ö',0,4),new c('ü',0,5)]});g(a,'a_1',function(){return[new c('e',-1,2),new c('em',-1,1),new c('en',-1,2),new c('ern',-1,1),new c('er',-1,1),new c('s',-1,3),new c('es',5,2)]});g(a,'a_2',function(){return[new c('en',-1,1),new c('er',-1,1),new c('st',-1,2),new c('est',2,1)]});g(a,'a_3',function(){return[new c('ig',-1,1),new c('lich',-1,1)]});g(a,'a_4',function(){return[new c('end',-1,1),new c('ig',-1,2),new c('ung',-1,1),new c('lich',-1,3),new c('isch',-1,2),new c('ik',-1,2),new c('heit',-1,3),new c('keit',-1,4)]});g(a,'g_v',function(){return[17,65,16,1,0,0,0,0,0,0,0,0,0,0,0,0,8,0,32,8]});g(a,'g_s_ending',function(){return[117,30,5]});g(a,'g_st_ending',function(){return[117,30,4]});var q={'src/stemmer.jsx':{Stemmer:o},'src/german-stemmer.jsx':{GermanStemmer:a}}}(JSX))
+var Stemmer = JSX.require("src/german-stemmer.jsx").GermanStemmer;
 
 
 
@@ -316,7 +137,7 @@ var Search = {
    */
   query : function(query) {
     var i;
-    var stopwords = ["a","and","are","as","at","be","but","by","for","if","in","into","is","it","near","no","not","of","on","or","such","that","the","their","then","there","these","they","this","to","was","will","with"];
+    var stopwords = ["aber","alle","allem","allen","aller","alles","als","also","am","an","ander","andere","anderem","anderen","anderer","anderes","anderm","andern","anderr","anders","auch","auf","aus","bei","bin","bis","bist","da","damit","dann","das","dasselbe","dazu","da\u00df","dein","deine","deinem","deinen","deiner","deines","dem","demselben","den","denn","denselben","der","derer","derselbe","derselben","des","desselben","dessen","dich","die","dies","diese","dieselbe","dieselben","diesem","diesen","dieser","dieses","dir","doch","dort","du","durch","ein","eine","einem","einen","einer","eines","einig","einige","einigem","einigen","einiger","einiges","einmal","er","es","etwas","euch","euer","eure","eurem","euren","eurer","eures","f\u00fcr","gegen","gewesen","hab","habe","haben","hat","hatte","hatten","hier","hin","hinter","ich","ihm","ihn","ihnen","ihr","ihre","ihrem","ihren","ihrer","ihres","im","in","indem","ins","ist","jede","jedem","jeden","jeder","jedes","jene","jenem","jenen","jener","jenes","jetzt","kann","kein","keine","keinem","keinen","keiner","keines","k\u00f6nnen","k\u00f6nnte","machen","man","manche","manchem","manchen","mancher","manches","mein","meine","meinem","meinen","meiner","meines","mich","mir","mit","muss","musste","nach","nicht","nichts","noch","nun","nur","ob","oder","ohne","sehr","sein","seine","seinem","seinen","seiner","seines","selbst","sich","sie","sind","so","solche","solchem","solchen","solcher","solches","soll","sollte","sondern","sonst","um","und","uns","unse","unsem","unsen","unser","unses","unter","viel","vom","von","vor","war","waren","warst","was","weg","weil","weiter","welche","welchem","welchen","welcher","welches","wenn","werde","werden","wie","wieder","will","wir","wird","wirst","wo","wollen","wollte","w\u00e4hrend","w\u00fcrde","w\u00fcrden","zu","zum","zur","zwar","zwischen","\u00fcber"];
 
     // stem the searchterms and add them to the correct list
     var stemmer = new Stemmer();
@@ -439,7 +260,7 @@ var Search = {
                   dataType: "text",
                   complete: function(jqxhr, textstatus) {
                     var data = jqxhr.responseText;
-                    if (data !== '') {
+                    if (data !== '' && data !== undefined) {
                       listItem.append(Search.makeSearchSummary(data, searchterms, hlterms));
                     }
                     Search.output.append(listItem);

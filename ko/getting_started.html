@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="저작권" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -135,6 +134,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -171,7 +185,7 @@
 <p>출시된 새 버전으로는 파이썬 3이 적당할 수 있어요!</p>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
-<p class="last">윈도우즈에서는, <strong class="program">파이썬`을 경로에 추가하여 다른 프로그램이 찾게 할 수 있어요. 이렇게 하려면 설치 디렉터리를 찾아서(:file:`C:\Python33\</strong>), <tt class="file docutils literal"><span class="pre">Tools</span></tt> 를 열고, :file: <cite>Scripts`를 연 다음, :file:`win_add2path.py</cite> 파일을 두 번 눌러 실행하세요.</p>
+<p class="last">윈도우즈에서는, <strong class="program">파이썬`을 경로에 추가하여 다른 프로그램이 찾게 할 수 있어요. 이렇게 하려면 설치 디렉터리를 찾아서(:file:`C:\Python33\</strong>), <code class="file docutils literal"><span class="pre">Tools</span></code> 를 열고, :file: <cite>Scripts`를 연 다음, :file:`win_add2path.py</cite> 파일을 두 번 눌러 실행하세요.</p>
 </div>
 </div>
 <div class="section" id="and-a-code-editor">
@@ -229,7 +243,7 @@
 <h2>파이선 사용하기<a class="headerlink" href="#using-python" title="제목 주소">¶</a></h2>
 <p>설치한 파이선 프로그램은 기본적으로 <a href="#id1"><span class="problematic" id="id2">**</span></a>인터프리터**라고 하는 것처럼 동작할거예요. 인터프리터는 입력한대로 명령을 받아서 실행해요. 무언가를 해볼때 참 간편하죠.</p>
 <p>콘솔에서 :program:<a href="#id1"><span class="problematic" id="id2">`</span></a>python`를 입력하고 :kbd:<a href="#id3"><span class="problematic" id="id4">`</span></a>Enter`키를 치면, 파이선 인터프리터로 들어가게 돼요.</p>
-<p>실행하는 파이선 버전을 확인해보려면 <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> 명령을 사용하세요.</p>
+<p>실행하는 파이선 버전을 확인해보려면 <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code> 명령을 사용하세요.</p>
 <div class="section" id="interacting-with-python">
 <h3>파이선을 다루어보아요<a class="headerlink" href="#interacting-with-python" title="제목 주소">¶</a></h3>
 <p>파이썬을 열면, 다음과 같이 상황 정보가 나타나요:</p>
@@ -247,31 +261,29 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
-will bring you back to the interactive prompt, where you could enter
-another command:</p>
+<p>:kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>Enter`키를 눌러 어떤 일이 일어나는지 보세요. 결과를 표시하고 나면 파이썬에서는 다른 명령을 입력할 수 있는 대화 프롬프트로 돌아갑니다.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="go">10</span>
 </pre></div>
 </div>
-<p>상당히 쓸모있는 명령은 <tt class="docutils literal"><span class="pre">help()</span></tt> 인데요, 도움말 기능으로 들어가서 동작해보려는 파이선의 모든 요소를 탐색하고 결과를 인터프리터에 바로 뿌려줘요. :kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>q`를 입력하면 도움말 창을 닫고 파이썬 프롬프트로 돌아가요.</p>
-<p>대화형 쉘을 나가려면 <tt class="kbd docutils literal"><span class="pre">Ctrl-Z`를</span> <span class="pre">누르고,</span> <span class="pre">윈도우에서는</span> <span class="pre">:kbd:`Enter</span></tt>, OS X나 리눅스에서는 :kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>Ctrl-D`를 누르세요. 대신 파이선 명령 <a href="#id3"><span class="problematic" id="id4">``</span></a>exit()``를 실행할 수도 있어요!</p>
+<p>상당히 쓸모있는 명령은 <code class="docutils literal"><span class="pre">help()</span></code> 인데요, 도움말 기능으로 들어가서 동작해보려는 파이선의 모든 요소를 탐색하고 결과를 인터프리터에 바로 뿌려줘요. :kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>q`를 입력하면 도움말 창을 닫고 파이썬 프롬프트로 돌아가요.</p>
+<p>대화형 쉘을 나가려면 <code class="kbd docutils literal"><span class="pre">Ctrl-Z`를</span> <span class="pre">누르고,</span> <span class="pre">윈도우에서는</span> <span class="pre">:kbd:`Enter</span></code>, OS X나 리눅스에서는 :kbd:<a href="#id1"><span class="problematic" id="id2">`</span></a>Ctrl-D`를 누르세요. 대신 파이선 명령 <a href="#id3"><span class="problematic" id="id4">``</span></a>exit()``를 실행할 수도 있어요!</p>
 </div>
 <div class="section" id="running-python-files">
 <h3>파이썬 파일 실행<a class="headerlink" href="#running-python-files" title="제목 주소">¶</a></h3>
 <p>실행할 많은 파이선 코드가 있으면 파일로 저장할 수 있는데요, 가령 코드 일부를 고칠 수 있고요(버그 고치기), 나머지 부분을 다시 반복해서 입력하지 않아도 실행할 수 있어요. 대신 파일에 코드를 저장할 수 있고요, :program:<a href="#id1"><span class="problematic" id="id2">`</span></a>python`에서 실행할 수 있게 파일 이름을 전달할 수 있어요. 대화형 인터프리터를 실행하는 대신에 파일을 바로 실행해줘요.</p>
-<p><strong>다음을 해보기로 하죠</strong>. <tt class="file docutils literal"><span class="pre">hello.py</span></tt> 파일을 즐겨 사용하는 텍스트 편집기로 현재 디렉터리에 만들고 위에 작성한 프린트 명령을 작성해보세요. 이제 파일을 저장하세요. 리눅스나 OS X에서는 <a href="#id1"><span class="problematic" id="id2">``</span></a>touch hello.py``를 실행해서 편집할 빈 파일을 만들 수 있어요. 파이썬으로 파일을 실행한다면, 굉장히 쉬워요:</p>
+<p><strong>다음을 해보기로 하죠</strong>. <code class="file docutils literal"><span class="pre">hello.py</span></code> 파일을 즐겨 사용하는 텍스트 편집기로 현재 디렉터리에 만들고 위에 작성한 프린트 명령을 작성해보세요. 이제 파일을 저장하세요. 리눅스나 OS X에서는 <a href="#id1"><span class="problematic" id="id2">``</span></a>touch hello.py``를 실행해서 편집할 빈 파일을 만들 수 있어요. 파이썬으로 파일을 실행한다면, 굉장히 쉬워요:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
-<p class="last">마지막에  파이선 프롬프트가 아니라(<tt class="docutils literal"><span class="pre">`&gt;&gt;&gt;`</span></tt> 표시가 있어요), <a href="#id1"><span class="problematic" id="id2">``</span></a>$``나 <a href="#id3"><span class="problematic" id="id4">``</span></a>&gt;``가 있는 시스템 명령 프롬프트에 있는지 확인해보세요!</p>
+<p class="last">마지막에  파이선 프롬프트가 아니라(<code class="docutils literal"><span class="pre">`&gt;&gt;&gt;`</span></code> 표시가 있어요), <a href="#id1"><span class="problematic" id="id2">``</span></a>$``나 <a href="#id3"><span class="problematic" id="id4">``</span></a>&gt;``가 있는 시스템 명령 프롬프트에 있는지 확인해보세요!</p>
 </div>
 <p>윈도우에서는 파이선 파일을 두 번 눌러서 실행할 수 있어요.</p>
-<p>이제 <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> 키를 누르면, 파일을 실행하고 이전에 본 출력 내용을 볼 수 있어요, 근데 지금은 파이썬이 파일에 있는 모든 명령을 다 실행한 다음에 대화 쉘로 돌아가는 대신, 시스템 명령 프롬프트로 빠져나와요.</p>
+<p>이제 <code class="kbd docutils literal"><span class="pre">Enter</span></code> 키를 누르면, 파일을 실행하고 이전에 본 출력 내용을 볼 수 있어요, 근데 지금은 파이썬이 파일에 있는 모든 명령을 다 실행한 다음에 대화 쉘로 돌아가는 대신, 시스템 명령 프롬프트로 빠져나와요.</p>
 <p>그리고 이제 더 설정했으니 거북이를 가지고 시작해보기로 하죠!</p>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
@@ -287,7 +299,7 @@ another command:</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">경고</p>
-<p class="last">거북이를 가지고 놀 때, <tt class="file docutils literal"><span class="pre">turtle.py</span></tt> 파일 이름으로 저장하는건 피해주세요. 대신 <tt class="file docutils literal"><span class="pre">square.py</span></tt> 또는 :file:<a href="#id1"><span class="problematic" id="id2">`</span></a>rectangle.py`같은 적당한 이름으로 지어주세요. 그렇지 않으면 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle``을 참조할 때, 파이썬에서는 기존의 거북이 대신 <a href="#id5"><span class="problematic" id="id6">*</span></a>여러분*의 파일을 가져와요.</p>
+<p class="last">거북이를 가지고 놀 때, <code class="file docutils literal"><span class="pre">turtle.py</span></code> 파일 이름으로 저장하는건 피해주세요. 대신 <code class="file docutils literal"><span class="pre">square.py</span></code> 또는 :file:<a href="#id1"><span class="problematic" id="id2">`</span></a>rectangle.py`같은 적당한 이름으로 지어주세요. 그렇지 않으면 <a href="#id3"><span class="problematic" id="id4">``</span></a>turtle``을 참조할 때, 파이썬에서는 기존의 거북이 대신 <a href="#id5"><span class="problematic" id="id6">*</span></a>여러분*의 파일을 가져와요.</p>
 </div>
 </div>
 </div>
@@ -321,7 +333,7 @@ another command:</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

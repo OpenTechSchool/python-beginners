@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -136,6 +135,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -166,7 +180,7 @@
 <div class="section" id="introduction">
 <h2>Introducción<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Turtle es como una pizarra para dibujar.</p>
-<p>Tiene funciones como <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> y <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> que mueven la tortuga alrededor.</p>
+<p>Tiene funciones como <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> y <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> que mueven la tortuga alrededor.</p>
 <p>Before you can use turtle, you have to import it. We recommend playing around
 with it in the interactive interpreter first, as there is an extra bit of work
 required to make it work from files. Just go to your terminal and type:</p>
@@ -177,14 +191,14 @@ required to make it work from files. Just go to your terminal and type:</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p class="last">Not seeing anything on Mac OS?  Try issuing a command like
-<tt class="docutils literal"><span class="pre">turtle.forward(0)</span></tt> and looking if a new window opened behind your
+<code class="docutils literal"><span class="pre">turtle.forward(0)</span></code> and looking if a new window opened behind your
 command line.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p class="last">Do you work with Ubuntu and get the error message &#8220;No module named
-_tkinter&#8221;? Install the missing package with <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
-<span class="pre">python3-tk</span></tt></p>
+_tkinter&#8221;? Install the missing package with <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span>
+<span class="pre">python3-tk</span></code></p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
@@ -201,22 +215,22 @@ and can even help avoid strange syntax errors.</p>
 </pre></div>
 </div>
 <img alt="_images/left.png" src="_images/left.png" />
-<p>The <tt class="docutils literal"><span class="pre">turtle.forward(...)</span></tt> function tells the turtle to move forward
-by the given distance. <tt class="docutils literal"><span class="pre">turtle.left(...)</span></tt> takes a number of degrees which you
-want to rotate to the left. There is also <tt class="docutils literal"><span class="pre">turtle.backward(...)</span></tt> and
-<tt class="docutils literal"><span class="pre">turtle.right(...)</span></tt>, too.</p>
+<p>The <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> function tells the turtle to move forward
+by the given distance. <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> takes a number of degrees which you
+want to rotate to the left. There is also <code class="docutils literal"><span class="pre">turtle.backward(...)</span></code> and
+<code class="docutils literal"><span class="pre">turtle.right(...)</span></code>, too.</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">Want to start fresh? You can type <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> to clear the drawing
-that your <tt class="docutils literal"><span class="pre">turtle</span></tt> has made so far. We&#8217;ll go into more detail on
-<tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> in just a bit.</p>
+<p class="last">Want to start fresh? You can type <code class="docutils literal"><span class="pre">turtle.reset()</span></code> to clear the drawing
+that your <code class="docutils literal"><span class="pre">turtle</span></code> has made so far. We&#8217;ll go into more detail on
+<code class="docutils literal"><span class="pre">turtle.reset()</span></code> in just a bit.</p>
 </div>
-<p>La tortuga estándar es sólo un triángulo. Eso no es divertido!. Transformemos el triángulo en tortuga con el comando <tt class="docutils literal"><span class="pre">turtle.shape()</span></tt>:</p>
+<p>La tortuga estándar es sólo un triángulo. Eso no es divertido!. Transformemos el triángulo en tortuga con el comando <code class="docutils literal"><span class="pre">turtle.shape()</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Mucho mejor!</p>
-<p>Si pone los comandos en un archivo, verá que la ventana de la tortuga desaparece una vez que la tortuga finaliza sus movimientos (Esto sucede porque Python finaliza una vez que la tortuga termina de moverse. Dado que la ventana de turtle pertenece a Python, también termina). Para prevenir que esto suceda, sólo debe agregar el comando <tt class="docutils literal"><span class="pre">turtle.exitonclick()</span></tt> al final de su archivo. Ahora la ventana permanecerá abierta hasta que haga click en ella:</p>
+<p>Si pone los comandos en un archivo, verá que la ventana de la tortuga desaparece una vez que la tortuga finaliza sus movimientos (Esto sucede porque Python finaliza una vez que la tortuga termina de moverse. Dado que la ventana de turtle pertenece a Python, también termina). Para prevenir que esto suceda, sólo debe agregar el comando <code class="docutils literal"><span class="pre">turtle.exitonclick()</span></code> al final de su archivo. Ahora la ventana permanecerá abierta hasta que haga click en ella:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s">&quot;turtle&quot;</span><span class="p">)</span>
@@ -265,23 +279,23 @@ of Python code can cause an unexpected error.</p>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Si se quiere poner creativo, usted puede modificar la figura con las funciones <tt class="docutils literal"><span class="pre">turtle.width(...)</span></tt> y <tt class="docutils literal"><span class="pre">turtle.color(...)</span></tt>. Cómo se usan estas funciones? Antes de usar una función debe conocer su <em>firma</em> (por ejemplo el número de parámetros y que significan). Para averiguar esto puede escribir  <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt> en la consola de Python. Si hay mucho texto, Python pondrá el texto de ayuda en un <em>paginador</em>, el cual permitirá ir arriba y abajo en las páginas. Presione la tecla <tt class="kbd docutils literal"><span class="pre">q</span></tt> para salir del paginador.</p>
+<p>Si se quiere poner creativo, usted puede modificar la figura con las funciones <code class="docutils literal"><span class="pre">turtle.width(...)</span></code> y <code class="docutils literal"><span class="pre">turtle.color(...)</span></code>. Cómo se usan estas funciones? Antes de usar una función debe conocer su <em>firma</em> (por ejemplo el número de parámetros y que significan). Para averiguar esto puede escribir  <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> en la consola de Python. Si hay mucho texto, Python pondrá el texto de ayuda en un <em>paginador</em>, el cual permitirá ir arriba y abajo en las páginas. Presione la tecla <code class="kbd docutils literal"><span class="pre">q</span></code> para salir del paginador.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Truco</p>
 <p>Está viendo un error como este:</p>
 <div class="highlight-python"><div class="highlight"><pre>NameError: name &#39;turtle&#39; is not defined
 </pre></div>
 </div>
-<p class="last">cuando intenta ver la ayuda? En Python usted debe importar los nombres antes de poder referirse a ellos, por lo tanto en una nueva consola interactiva de Python debe ingresar <tt class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></tt> antes que funcione <tt class="docutils literal"><span class="pre">help(turtle.color)</span></tt>.</p>
+<p class="last">cuando intenta ver la ayuda? En Python usted debe importar los nombres antes de poder referirse a ellos, por lo tanto en una nueva consola interactiva de Python debe ingresar <code class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></code> antes que funcione <code class="docutils literal"><span class="pre">help(turtle.color)</span></code>.</p>
 </div>
 <p>Otra forma de saber sobre funciones en buscar en la <cite>documentación en línea</cite>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Prudencia</p>
-<p class="last">Si usted se equivoca, puede decirle a la tortuga que borre la pizarra con la directiva <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt> o deshacer el último paso con <tt class="docutils literal"><span class="pre">turtle.undo()</span></tt>.</p>
+<p class="last">Si usted se equivoca, puede decirle a la tortuga que borre la pizarra con la directiva <code class="docutils literal"><span class="pre">turtle.reset()</span></code> o deshacer el último paso con <code class="docutils literal"><span class="pre">turtle.undo()</span></code>.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Truco</p>
-<p class="last">Como debe haber visto en la ayuda, puede modificar el color con <tt class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></tt>. Los colores pueden ser por ejemplo &#8220;red&#8221; (rojo), &#8220;green&#8221; (verde) y &#8220;violet&#8221; (violeta). Vea el <cite>colours manual</cite> (manual de colores) para una lista más extensiva.</p>
+<p class="last">Como debe haber visto en la ayuda, puede modificar el color con <code class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></code>. Los colores pueden ser por ejemplo &#8220;red&#8221; (rojo), &#8220;green&#8221; (verde) y &#8220;violet&#8221; (violeta). Vea el <cite>colours manual</cite> (manual de colores) para una lista más extensiva.</p>
 </div>
 </div>
 </div>
@@ -386,7 +400,7 @@ of Python code can cause an unexpected error.</p>
     </p>
     <p>
         &copy; <a href=\"copyright.html\">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

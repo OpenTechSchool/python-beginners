@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Funcții cu parametri &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Instrucțiuni condiționale" href="conditionals.html" />
+    <link rel="prev" title="Funcții definite de utilizator" href="functions.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Funcții cu parametri</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#a-parameterized-function-for-a-variable-size-hexagon">O funcție parametrizată pentru un hexagon de dimensiune variabilă</a><ul>
+<li><a class="reference internal" href="#exercise">Exercițiu</a></li>
+<li><a class="reference internal" href="#solution">Soluție</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-of-several-parameters">O funcție cu mai mulți parametri</a><ul>
+<li><a class="reference internal" href="#id1">Exercițiu</a></li>
+<li><a class="reference internal" href="#id2">Soluție</a></li>
+<li><a class="reference internal" href="#bonus">Supliment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="functions.html" title="Previous Chapter: Funcții definite de utilizator">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="conditionals.html" title="Next Chapter: Instrucțiuni condiționale">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="functions-with-parameters">
+<h1>Funcții cu parametri<a class="headerlink" href="#functions-with-parameters" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Pe măsură ce reducem codul și adăugăm funcții pentru a elimina duplicarea, îl <em>factorizăm</em>. Ăsta este un lucru bun. Dar funcțiile pe care le-am creeat până acum nu sunt foarte flexibile. Variabilele sunt definite în cadrul funcției, așa că dacă vrem să folosim un alt unghi sau altă distanță atunci trebuie să scriem o nouă funcție. Funcția noastră hexagon poate desena doar o singură dimensiune de hexagon!</p>
+<p>Din acest motiv avem nevoie să putem transmite funcției parametri, numiți și <em>argumente</em>. În acest mod <em>variabilele</em> din cadrul funcției pot avea diverse valori la fiecare apel al funcției.</p>
+<p>Iată cum am definit funcția <code class="docutils literal"><span class="pre">line_without_moving()</span></code> în secțiunea precedentă:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>O putem îmbunătăți transmițându-i un parametru:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Parametrul se comportă ca o <em>variabilă</em> vizibilă doar în cadrul definiției funcției. Utilizăm această funcție nou definită prin apelarea ei cu noua valoare pe care dorim să o aiba parametrul în acest mod:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Am utilizat funcții cu parametri încă de la începutul cursului cu <code class="docutils literal"><span class="pre">turtle.forward()</span></code>, <code class="docutils literal"><span class="pre">turtle.left()</span></code> etc.</p>
+<p>Și putem pune oricâte argumente (sau parametri) dorim, separându-le cu virgule și dându-le nume diferite:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-parameterized-function-for-a-variable-size-hexagon">
+<h2>O funcție parametrizată pentru un hexagon de dimensiune variabilă<a class="headerlink" href="#a-parameterized-function-for-a-variable-size-hexagon" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercițiu<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Scrie o funcție care îți permite să desenezi hexagoane de orice dimensiune dorești, la fiecare apelare.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Soluție<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-of-several-parameters">
+<h2>O funcție cu mai mulți parametri<a class="headerlink" href="#a-function-of-several-parameters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercițiu<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Scrie o funcție care va desena o formă cu <em>oricâte</em> laturi (să presupunem că mai mult de două), de orice lungime a laturii. Fă-o să deseneze diverse forme.</p>
+<p>Uite un exemplu de desenare a unor forme cu această funcție:</p>
+<img alt="_images/shapes.png" src="_images/shapes.png" />
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Suma unghiurilor externe a oricărei forme este întotdeauna 360 de grade!</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Soluție<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">draw_shape</span><span class="p">(</span><span class="n">sides</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sides</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">sides</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3>Supliment<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Ar putea suna aiurea, dar este perfect posibil să transmiți o <em>funcție</em> ca parametru altei funcții! Python tratează funcțiile ca pe &#8216;lucruri&#8217; perfect normale, la fel ca variabilele, numerele și șirurile de caractere.</p>
+<p>De exemplu, ai putea creea o funcție de desenare a funei forme care se întoarce într-o direcție sau alta în funcție de ce funcție îi transmiți - <code class="docutils literal"><span class="pre">turtle.left</span></code> sau <code class="docutils literal"><span class="pre">turtle.right</span></code>.</p>
+<p>Vezi dacă poți implementa asta!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Transmiterea unei funcții (de ex. <code class="docutils literal"><span class="pre">turtle.left</span></code>) este diferită de <em>apelarea</em> acesteia, care s-ar scrie <code class="docutils literal"><span class="pre">turtle.left(45)</span></code>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/functions_parameters.rst" title="functions_parameters.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+functions_parameters">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

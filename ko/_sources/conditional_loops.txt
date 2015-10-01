@@ -42,7 +42,7 @@ Turtle prison
 Exercise
 --------
 
-The turtle has been up to its usual tricks again, robbing liqour 
+The turtle has been up to its usual tricks again, robbing liquor 
 stores and building up huge gambling debts. It's time for turtle to be 
 put into a cell that it can't get out of.
 

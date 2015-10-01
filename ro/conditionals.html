@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Instrucțiuni condiționale &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Bucle condiționale" href="conditional_loops.html" />
+    <link rel="prev" title="Funcții cu parametri" href="functions_parameters.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Instrucțiuni condiționale</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#examples">Exemple</a></li>
+<li><a class="reference internal" href="#giving-directions">Cum să dai indicații</a></li>
+<li><a class="reference internal" href="#data-munging">&#8220;prelucrarea datelor&#8221;</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="functions_parameters.html" title="Previous Chapter: Funcții cu parametri">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="conditional_loops.html" title="Next Chapter: Bucle condiționale">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="conditional-statements">
+<h1>Instrucțiuni condiționale<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Până acum am îndeplinit sarcini predefinite, dar la modul serios nu am făcut decât ce face un casetofon care urmează redă același lucru de fiecare dată. Ceea ce face programarea atât de puternică sunt instrucțiunile condiționale. Este facilitatea de a <em>testa</em> o variabilă față de o valoare și de a reacționa într-un fel dacă condiția este îndeplinită de variabilă și în alt fel dacă nu. Acestea sunt în mod normal denumite de programatori <em>instrucțiuni if</em>.</p>
+<p>Pentru a ști dacă condiția este <em>Adevărată</em> sau <em>Falsă</em> avem nevoie de un nou tip de date: logice. Acestea permit operații logice. O instrucțiune sau operație logică poate fi evaluată la <em>Adevărat</em> sau <em>Fals</em>. Instrucțiunea noastră condițională poate fi înțeleasă ca:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>dacă</strong> <em>(o condiție este Adevărată)</em>:</dt>
+<dd><p class="first last"><em>atunci execută aceste lucruri doar pentru &#8216;Adevărat&#8217;</em></p>
+</dd>
+<dt><strong>altfel</strong>:</dt>
+<dd><p class="first last"><em>altfel fă aceste lucruri numai pentru &#8216;Fals&#8217;</em>.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Condiția poate fi orice se evaluează la <em>Adevărat</em> sau <em>Fals</em>. Comparațiile întotdeauna întorc <em>Adevărat</em> sau <em>Fals</em>, de exemplu <code class="docutils literal"><span class="pre">==</span></code> (este egal cu), <code class="docutils literal"><span class="pre">&gt;</span></code> (mai mare decât), <code class="docutils literal"><span class="pre">&lt;</span></code> (mai mic decât).</p>
+<p>Partea <strong>else</strong> este opțională. Dacă nu o folosești, atunci când condiția are valoarea &#8216;Fals&#8217; nu se va întâmpla nimic.</p>
+</div>
+<div class="section" id="examples">
+<h2>Exemple<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Iată câteva exemple. Poți să le citești linie cu linie și să te gândești ce fac, sau poți să le execuți pentru a fi sigur:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition met&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;condition not met&quot;</span><span class="p">)</span>
+
+<span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
+<span class="k">if</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">-</span><span class="n">direction</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="giving-directions">
+<h2>Cum să dai indicații<a class="headerlink" href="#giving-directions" title="Permalink to this headline">¶</a></h2>
+<p>Țestoasele din Python pot fi foarte bune la executat instrucțiuni. Hai să încercăm să folosim funcția <code class="docutils literal"><span class="pre">input()</span></code> pentru a cere utilizatorului o direcție în care să miște țestoasa. Pentru a păstra lucrurile simple vom accepta doar două instrucțiuni: &#8220;left&#8221; (stânga) și &#8220;right&#8221; (dreapta).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Folosești Python 2? Funcția <code class="docutils literal"><span class="pre">input()</span></code> se numește <code class="docutils literal"><span class="pre">raw_input()</span></code>.</p>
+</div>
+<p>Este mult mai ușor să definești asta ca o funcție, adică:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
+    <span class="n">direction</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Go left or right? &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;left&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">&quot;right&quot;</span><span class="p">:</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Acum oricând folosești <code class="docutils literal"><span class="pre">move()</span></code> ți se va cere să alegi <code class="docutils literal"><span class="pre">left</span></code> (stânga) sau <code class="docutils literal"><span class="pre">right</span></code> (dreapta).</p>
+</div>
+<div class="section" id="data-munging">
+<h2>&#8220;prelucrarea datelor&#8221;<a class="headerlink" href="#data-munging" title="Permalink to this headline">¶</a></h2>
+<p>În acest program, țestoasa va răspunde doar la exact <code class="docutils literal"><span class="pre">left</span></code> sau <code class="docutils literal"><span class="pre">right</span></code>, fără excepție. Deși <code class="docutils literal"><span class="pre">Left</span></code> sau <code class="docutils literal"><span class="pre">LEFT</span></code> ar putea părea același lucru ca și <code class="docutils literal"><span class="pre">left</span></code> pentru un om, asta nu e valabil și în cazul programării. Python are niște metode care să te ajute la asta. Un șir ce caractere are metodele <code class="docutils literal"><span class="pre">.strip()</span></code>, care elimină spațiile albe și <code class="docutils literal"><span class="pre">.lower()</span></code> care transformă toate literele în litere mici.</p>
+<p>Iată câteva exemple care afișează efectele lui <code class="docutils literal"><span class="pre">.strip()</span></code> și <code class="docutils literal"><span class="pre">.lower()</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+<span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_stripped</span><span class="p">)</span>
+<span class="n">my_lower</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Încearcă să adaugi <code class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></code> la funcția <code class="docutils literal"><span class="pre">move()</span></code>, pentru a vedea ce efect are. Adeseori numim genul acesta de cod &#8220;data munging&#8221; (prelucrarea datelor), și este foarte des întâlnit.</p>
+<p>Poți să adaugi opțiuni suplimentare pentru a face țestoasa să deseneze și alte lucruri? Ce zici de <code class="docutils literal"><span class="pre">hexagon</span></code>?</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/conditionals.rst" title="conditionals.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+conditionals">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

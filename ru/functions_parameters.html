@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Авторские права" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -131,6 +130,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -160,36 +174,26 @@
 <h1>Функции с параметрами<a class="headerlink" href="#functions-with-parameters" title="Ссылка на этот заголовок">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
-<p>As we shrink down our code and add functions to remove duplication, we
-are <em>factorizing</em> it. This is a good thing to do. But the functions we
-have defined so far are not very flexible. The variables are defined
-inside the function, so if we want to use a different angle or a
-distance then we need to write a new function. Our hexagon function can
-only draw one size of hexagon!</p>
-<p>That is why we need to be able to give parameters, also called
-<em>arguments</em>, to the function.  This way the <em>variables</em> in the
-function can have different values each time we call the function:</p>
-<p>Вспомни, как мы описали функцию <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> в предыдущей главе:</p>
+<p>Мы уменьшаем количество нашего кода и добавляем функции, что бы избежать повторений - это называется <em>рефакторинг</em>. Рефакторинг крайне полезен. Ведь функции, которые мы определили не очень &#8220;гибкие&#8221;. Необходимые значения заданы внутри функций и если мы захотим изменить угол или дистанцию - нам прийдеться писать новую функцию. Наша функция для рисования шестиугольников может рисовать шестиугольники только одного размера!</p>
+<p>Поэтому у нас должна быть возможность задавать параметры функции, которые также называют <em>аргументами</em>. В таком случае <em>переменные</em> в функции могут принимать разные значения кождый раз, когда мы вызываем нашу функцию:</p>
+<p>Вспомни, как мы описали функцию <code class="docutils literal"><span class="pre">line_without_moving()</span></code> в предыдущей главе:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We can improve it by giving it a parameter:</p>
+<p>Мы можем улучить её используя параметр:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The parameter acts as a <em>variable</em> only known inside the function&#8217;s definition.
-We use the newly defined function by calling it with the value we want the
-parameter to have like this:</p>
+<p>Параметр функции действует как <em>переменная</em>, но только внутри функции, в которой мы его объявили. Теперь можно вызвать новую функцию со значением, которое необходимо ей передать:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">line_without_moving</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We have been using functions with parameters since the beginning of the
-tutorial with <tt class="docutils literal"><span class="pre">turtle.forward()</span></tt>, <tt class="docutils literal"><span class="pre">turtle.left()</span></tt>, etc...</p>
+<p>Мы пользовались функциями с параметрами еще в самом начале учебника используя <code class="docutils literal"><span class="pre">turtle.forward()</span></code>, <code class="docutils literal"><span class="pre">turtle.left()</span></code> и т.д.</p>
 <p>И мы можем вставить столько аргументов (или параметров), сколько захотим, дав им разные имена и разделив запятыми:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
@@ -239,12 +243,12 @@ tutorial with <tt class="docutils literal"><span class="pre">turtle.forward()</s
 <h3>Дополнительно<a class="headerlink" href="#bonus" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Это может звучать немного безумно, но вполне возможно передать <em>функции</em> в качестве параметра другую функцию — Python обращается с ними так же, как и с переменными, числами и строками.</p>
 <p>For instance, you could create a shape drawing function which turned one way or another
-depending on which turtle function you passed to it - <tt class="docutils literal"><span class="pre">turtle.left</span></tt> or <tt class="docutils literal"><span class="pre">turtle.right</span></tt>.</p>
-<p>See if you can implement this!</p>
+depending on which turtle function you passed to it - <code class="docutils literal"><span class="pre">turtle.left</span></code> or <code class="docutils literal"><span class="pre">turtle.right</span></code>.</p>
+<p>Попоробуй, сможешь ли ты это сделать!</p>
 <div class="admonition note">
 <p class="first admonition-title">Примечание</p>
-<p class="last">Passing a function (e.g <tt class="docutils literal"><span class="pre">turtle.left</span></tt>) is different than <em>calling</em> it, which
-would instead be written <tt class="docutils literal"><span class="pre">turtle.left(45)</span></tt>.</p>
+<p class="last">Passing a function (e.g <code class="docutils literal"><span class="pre">turtle.left</span></code>) is different than <em>calling</em> it, which
+would instead be written <code class="docutils literal"><span class="pre">turtle.left(45)</span></code>.</p>
 </div>
 </div>
 </div>
@@ -278,7 +282,7 @@ would instead be written <tt class="docutils literal"><span class="pre">turtle.l
     </p>
     <p>
         &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

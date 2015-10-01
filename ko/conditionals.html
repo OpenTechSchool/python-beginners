@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="저작권" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -123,6 +122,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -164,7 +178,7 @@
 </dd>
 </dl>
 </div></blockquote>
-<p>조건문은 <em>True</em> 또는 <em>False*의 값을 판단하는 그 어떤 동작이든 취할 수 있습니다. 비교문은 항상 *True</em> 또는 <em>False</em> 를 반환하는데, 비교 연산자의 예로는 <tt class="docutils literal"><span class="pre">==</span></tt> (같음), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (보다 큼), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (보다 작음)이 있습니다.</p>
+<p>조건문은 <em>True</em> 또는 <em>False*의 값을 판단하는 그 어떤 동작이든 취할 수 있습니다. 비교문은 항상 *True</em> 또는 <em>False</em> 를 반환하는데, 비교 연산자의 예로는 <code class="docutils literal"><span class="pre">==</span></code> (같음), <code class="docutils literal"><span class="pre">&gt;</span></code> (보다 큼), <code class="docutils literal"><span class="pre">&lt;</span></code> (보다 작음)이 있습니다.</p>
 <p><strong>else</strong> 부분은 선택적입니다. 비워두면 조건의 결과로 &#8216;False&#8217;가 나왔을 때 아무일도 일어나지 않습니다.</p>
 </div>
 <div class="section" id="examples">
@@ -188,10 +202,10 @@
 </div>
 <div class="section" id="giving-directions">
 <h2>방향 지시하기<a class="headerlink" href="#giving-directions" title="제목 주소">¶</a></h2>
-<p>파이선 거북이는 다음 지시를 매우 잘 따르는 존재가 될 수 있습니다. 거북이가 움직이는 방향을 사용자가 요청할 수 있는 <tt class="docutils literal"><span class="pre">input()</span></tt> 함수를 사용해보도록 하겠습니다. 쉽게 하기 위해 &#8220;left&#8221;와 &#8220;right&#8221; 두가지 명령만 받아들이도록 하겠습니다.</p>
+<p>파이선 거북이는 다음 지시를 매우 잘 따르는 존재가 될 수 있습니다. 거북이가 움직이는 방향을 사용자가 요청할 수 있는 <code class="docutils literal"><span class="pre">input()</span></code> 함수를 사용해보도록 하겠습니다. 쉽게 하기 위해 &#8220;left&#8221;와 &#8220;right&#8221; 두가지 명령만 받아들이도록 하겠습니다.</p>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
-<p class="last">파이썬 2를 사용하시나요? <tt class="docutils literal"><span class="pre">input()</span></tt> 함수는 <a href="#id1"><span class="problematic" id="id2">``</span></a>raw_input()``함수를 호출합니다.</p>
+<p class="last">파이썬 2를 사용하시나요? <code class="docutils literal"><span class="pre">input()</span></code> 함수는 <a href="#id1"><span class="problematic" id="id2">``</span></a>raw_input()``함수를 호출합니다.</p>
 </div>
 <p>다음과 같이 함수를 정의하는 것처럼 매우 쉽습니다:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
@@ -208,7 +222,7 @@
 </div>
 <div class="section" id="data-munging">
 <h2>&#8220;데이터 은폐&#8221;<a class="headerlink" href="#data-munging" title="제목 주소">¶</a></h2>
-<p>이 프로그램에서, 거북이는 다른 예외없이 정확하게 <tt class="docutils literal"><span class="pre">left</span></tt> 또는 <tt class="docutils literal"><span class="pre">right``에만</span> <span class="pre">반응합니다.</span> <span class="pre">``Left</span></tt> 또는 <tt class="docutils literal"><span class="pre">LEFT``는</span> <span class="pre">사람에게</span> <span class="pre">있어</span> <span class="pre">같은</span> <span class="pre">``left``겠지만</span> <span class="pre">프로그래밍을</span> <span class="pre">할</span> <span class="pre">경우에는</span> <span class="pre">그렇지</span> <span class="pre">않습니다.</span> <span class="pre">파이썬에는</span> <span class="pre">이런</span> <span class="pre">상황에</span> <span class="pre">도움을</span> <span class="pre">줄</span> <span class="pre">몇가지</span> <span class="pre">쓸모있는</span> <span class="pre">메서드가</span> <span class="pre">있습니다.</span> <span class="pre">문자열은</span> <span class="pre">공백을</span> <span class="pre">제거할때</span> <span class="pre">사용하는</span> <span class="pre">``.strip()</span></tt> 메서드와 모든 글자를 소문자로 만드는 <tt class="docutils literal"><span class="pre">.lower()</span></tt> 메서드를 보유하고 있습니다.</p>
+<p>이 프로그램에서, 거북이는 다른 예외없이 정확하게 <code class="docutils literal"><span class="pre">left</span></code> 또는 <code class="docutils literal"><span class="pre">right``에만</span> <span class="pre">반응합니다.</span> <span class="pre">``Left</span></code> 또는 <code class="docutils literal"><span class="pre">LEFT``는</span> <span class="pre">사람에게</span> <span class="pre">있어</span> <span class="pre">같은</span> <span class="pre">``left``겠지만</span> <span class="pre">프로그래밍을</span> <span class="pre">할</span> <span class="pre">경우에는</span> <span class="pre">그렇지</span> <span class="pre">않습니다.</span> <span class="pre">파이썬에는</span> <span class="pre">이런</span> <span class="pre">상황에</span> <span class="pre">도움을</span> <span class="pre">줄</span> <span class="pre">몇가지</span> <span class="pre">쓸모있는</span> <span class="pre">메서드가</span> <span class="pre">있습니다.</span> <span class="pre">문자열은</span> <span class="pre">공백을</span> <span class="pre">제거할때</span> <span class="pre">사용하는</span> <span class="pre">``.strip()</span></code> 메서드와 모든 글자를 소문자로 만드는 <code class="docutils literal"><span class="pre">.lower()</span></code> 메서드를 보유하고 있습니다.</p>
 <p><a href="#id1"><span class="problematic" id="id2">``</span></a>.strip()``과 <a href="#id3"><span class="problematic" id="id4">``</span></a>.lower()``의 결과를 출력하는 간단한 예제를 보여드리겠습니다:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
 <span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
@@ -218,7 +232,7 @@
 <span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>같은 결과를 보기 위해 <tt class="docutils literal"><span class="pre">move()</span></tt> 함수에 <a href="#id1"><span class="problematic" id="id2">``</span></a>direction = direction.strip().lower()``를 추가해보십시오. 이런 코드를 종종 &#8220;데이터 은폐&#8221;라고 하며, 매우 일반적으로 사용합니다.</p>
+<p>같은 결과를 보기 위해 <code class="docutils literal"><span class="pre">move()</span></code> 함수에 <a href="#id1"><span class="problematic" id="id2">``</span></a>direction = direction.strip().lower()``를 추가해보십시오. 이런 코드를 종종 &#8220;데이터 은폐&#8221;라고 하며, 매우 일반적으로 사용합니다.</p>
 <p>거북이가 다른걸 그릴 수 있게 추가 입력 선택을 넣을 수 있겠나요? <a href="#id1"><span class="problematic" id="id2">``</span></a>hexagon``은 어떤가요?</p>
 </div>
 </div>
@@ -251,7 +265,7 @@
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Авторские права" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -135,6 +134,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -171,7 +185,7 @@
 <p>Будучи последним, Python 3 предпочтительнее!</p>
 <div class="admonition note">
 <p class="first admonition-title">Примечание</p>
-<p class="last">На Windows можно добавить <strong class="program">Python</strong> в переменную &#8220;path&#8221;, чтобы её было легче найти. Для этого нужно перейти в каталог с установленным Python&#8217;ом (например, <tt class="file docutils literal"><span class="pre">C:\Python33\</span></tt>), открыть директорию  <tt class="file docutils literal"><span class="pre">Tools</span></tt>, потом — <tt class="file docutils literal"><span class="pre">Scripts</span></tt> и запустить двойным кликом файл <tt class="file docutils literal"><span class="pre">win_add2path.py</span></tt>.</p>
+<p class="last">На Windows можно добавить <strong class="program">Python</strong> в переменную &#8220;path&#8221;, чтобы её было легче найти. Для этого нужно перейти в каталог с установленным Python&#8217;ом (например, <code class="file docutils literal"><span class="pre">C:\Python33\</span></code>), открыть директорию  <code class="file docutils literal"><span class="pre">Tools</span></code>, потом — <code class="file docutils literal"><span class="pre">Scripts</span></code> и запустить двойным кликом файл <code class="file docutils literal"><span class="pre">win_add2path.py</span></code>.</p>
 </div>
 </div>
 <div class="section" id="and-a-code-editor">
@@ -218,12 +232,7 @@
 </div>
 <div class="section" id="opening-a-console-on-windows">
 <h3>Открываем консоль в Windows<a class="headerlink" href="#opening-a-console-on-windows" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Window&#8217;s console is called the Command Prompt, named <strong class="program">cmd</strong>.  An easy
-way to get to it is by using the key combination <tt class="kbd docutils literal"><span class="pre">Windows+R</span></tt>
-(<tt class="kbd docutils literal"><span class="pre">Windows</span></tt> meaning the windows logo button), which should open a
-<em class="guilabel">Run</em> dialog.  Then type <strong class="program">cmd</strong> and hit <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> or
-click <em class="guilabel">Ok</em>. You can also search for it from the start menu. It should
-look like:</p>
+<p>В WIndows консоль называется командной строкой (<strong class="program">cmd</strong>). Самый простой способ запустить её &#8212; нажать <code class="kbd docutils literal"><span class="pre">Windows+R</span></code> (<code class="kbd docutils literal"><span class="pre">Windows</span></code> &#8212; это клавиша с соответствующим логотипом), в открывшемся окне ввести <strong class="program">cmd</strong> и нажать Enter (или кликнуть по кнопке <span class="guilabel">Ok</span>); также можно найти её в меню <span class="guilabel">Пуск</span>. Выглядеть командная строка должна примерно так:</p>
 <div class="highlight-python"><div class="highlight"><pre>C:\Users\myusername&gt;
 </pre></div>
 </div>
@@ -234,7 +243,7 @@ look like:</p>
 <h2>Использование Python<a class="headerlink" href="#using-python" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Python-программа, установленная по умолчанию, называется <strong>интерпретатором</strong>. Интепретатор принимает команды и выполняет их после ввода. Очень удобно для тестирования чего-либо.</p>
 <p>Чтобы запустить интерпретатор, просто введи <strong class="program">python</strong> и нажми Enter.</p>
-<p>Чтобы узнать, какая версия Python запущена, используй <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt></p>
+<p>Чтобы узнать, какая версия Python запущена, используй <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code></p>
 <div class="section" id="interacting-with-python">
 <h3>Взаимодействие с Python&#8217;ом<a class="headerlink" href="#interacting-with-python" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Когда Python запустится, ты увидишь что-то вроде этого:</p>
@@ -252,65 +261,45 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Press <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> and see what happens. After showing the results, Python
-will bring you back to the interactive prompt, where you could enter
-another command:</p>
+<p>Нажми <code class="kbd docutils literal"><span class="pre">&lt;Enter&gt;</span></code> и посмотри, что произошло. После вывода результата Python вернёт тебя обратно в интерактивную оболочку, в которой мы можем ввести какую-нибудь другую команду:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 <span class="go">Hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="go">10</span>
 </pre></div>
 </div>
-<p>An extremely useful command is <tt class="docutils literal"><span class="pre">help()</span></tt>, which enters a help functionality
-to explore all the stuff python lets you do, right from the interpreter.
-Press <tt class="kbd docutils literal"><span class="pre">q</span></tt> to close the help window and return to the Python prompt.</p>
-<p>Чтобы выйти из интерактивной оболочки, нажми <tt class="kbd docutils literal"><span class="pre">Ctrl-Z</span></tt> и затем <tt class="kbd docutils literal"><span class="pre">Enter</span></tt>, если используешь Windows, и <tt class="kbd docutils literal"><span class="pre">Ctrl-D</span></tt>, если используешь GNU/Linux или OS X. Этого же можно добиться вводом Python-команды <tt class="docutils literal"><span class="pre">exit()</span></tt>.</p>
+<p>Очень полезна команда <code class="docutils literal"><span class="pre">help()</span></code>, которая поможет тебе изучить досконально изучить Python, не выходя из интерпретатора. Нажми <code class="kbd docutils literal"><span class="pre">q</span></code>, чтобы закрыть окно со справкой и вернуться в командную строку Python.</p>
+<p>Чтобы выйти из интерактивной оболочки, нажми <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> и затем <code class="kbd docutils literal"><span class="pre">Enter</span></code>, если используешь Windows, и <code class="kbd docutils literal"><span class="pre">Ctrl-D</span></code>, если используешь GNU/Linux или OS X. Этого же можно добиться вводом Python-команды <code class="docutils literal"><span class="pre">exit()</span></code>.</p>
 </div>
 <div class="section" id="running-python-files">
 <h3>Запуск файлов с Python-кодом<a class="headerlink" href="#running-python-files" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Когда Python-кода становится слишком много, лучше записывать его в файлы. Это, например, позволит тебе редактировать отдельные части кода (исправлять ошибки) и тут же запускать их без необходимости перепечатывать текст. Просто сохрани код в файл, и передай его имя <strong class="program">python</strong>&#8216;у. Записанный в файл исходный код будет выполнен без запуска интерактивного интерпретатора.</p>
-<p><strong>Давай попробуем сделать это</strong>. С помощью своего любимого текстового редактора создай файл <tt class="file docutils literal"><span class="pre">hello.py</span></tt> в текущей директории и запиши в него программу команду, выводящую фразу &#8220;Hello world&#8221;, из примера выше. На GNU/Linux или OS X также можно выполнить команду <tt class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></tt>, чтобы создать пустой файл для последующего редактирования. Выполнить сохранённую в файле программу проще простого:</p>
+<p><strong>Давай попробуем сделать это</strong>. С помощью своего любимого текстового редактора создай файл <code class="file docutils literal"><span class="pre">hello.py</span></code> в текущей директории и запиши в него программу команду, выводящую фразу &#8220;Hello world&#8221;, из примера выше. На GNU/Linux или OS X также можно выполнить команду <code class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></code>, чтобы создать пустой файл для последующего редактирования. Выполнить сохранённую в файле программу проще простого:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Примечание</p>
-<p class="last">Для начала убедись, что ты находишься в командной строке (на конце строк должны находиться символы <tt class="docutils literal"><span class="pre">$</span></tt> или <tt class="docutils literal"><span class="pre">&gt;</span></tt>, а  не <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt>, как в интерактивной оболочке Python).</p>
+<p class="last">Для начала убедись, что ты находишься в командной строке (на конце строк должны находиться символы <code class="docutils literal"><span class="pre">$</span></code> или <code class="docutils literal"><span class="pre">&gt;</span></code>, а  не <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code>, как в интерактивной оболочке Python).</p>
 </div>
 <p>В Windows нужно два раза кликнуть на пиктограмму файла, чтобы запустить его.</p>
-<p>When pressing <tt class="kbd docutils literal"><span class="pre">Enter</span></tt> now, the file is executed and you see the output
-as before.  But this time, after Python finished executing all commands from
-that file it exits back to the system command prompt, instead of going back
-to the interactive shell.</p>
+<p>Когда ты нажмешь &lt;Enter&gt; в консоли, наш файл выполнится и результат его работы будет выведен на экран. В этот момент интерпретатор Python выполнит все инструкции, находящиеся в скрипте и вернет управление командной строке, а не интерактивной оболчке Python.</p>
 <p>Теперь всё готово, и мы можем приступить к черепашке!</p>
 <div class="admonition note">
 <p class="first admonition-title">Примечание</p>
-<p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
-file&#8221; or &#8220;No such file or directory?&#8221; Your command line might not be
-running in the directory you saved the file in. You can use
-the system command line to change your active directory with the
-<strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;. On Windows,
-you might want something like:</p>
+<p>Вместо ожидаемого &#8220;Hello world&#8221; ты получил какие-то странные ошибки &#8220;can&#8217;t open file&#8221; или &#8220;No such file or directory&#8221;? Скорее всего, что ты работаешь не в той директории где сохранен твой Pyhton-скрипт. С помощью командной строки легко сменить текущий активный каталог, используя команду <strong class="command">cd</strong>, что означает &#8220;change directory&#8221; (сменить каталог). В Windows эта команда может выглядеть так:</p>
 <div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
 </pre></div>
 </div>
-<p>On Linux or OS X, you might want something like:</p>
+<p>В Linux или OS X:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>Desktop/Python_Exercises
 </pre></div>
 </div>
-<p class="last">This changes to the directory Python_Exercises under the Desktop folder
-(yours might be somewhere a bit different). If you don&#8217;t know the location
-of the directory where you saved the file, you can simply drag the
-directory to the command line window.  If you don&#8217;t know which
-directory your shell is currently running in use <strong class="command">pwd</strong>,
-which stands for &#8220;print working directory&#8221;.</p>
+<p class="last">С помощью этой команды мы перейдем в папку Python_Exercises, которая находиться в папке Desktop (конечно же, на твоем компьютере названия папок будут отличаться). Если ты не знаешь путь к каталогу, где ты сохранил свой файл, попробуй просто перетащить папку в окно консоли. А если ты не знаешь в какой папке ты сейчас находишься в консоли - воспользуйся командой <strong class="command">pwd</strong>, которая означает &#8220;print working directory&#8221; (показать активную директорию).</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Предупреждение</p>
-<p class="last">When playing around with turtle, avoid naming your file <tt class="file docutils literal"><span class="pre">turtle.py</span></tt>
-&#8212; rather use more appropriate names such as <tt class="file docutils literal"><span class="pre">square.py</span></tt> or
-<tt class="file docutils literal"><span class="pre">rectangle.py</span></tt>.  Otherwise, whenever you refer to <tt class="docutils literal"><span class="pre">turtle</span></tt>, Python
-will pick up <em>your</em> file instead of the standard turtle.</p>
+<p class="last">Эксперементируя с черепашкой, не называй рабочий файл <code class="file docutils literal"><span class="pre">turtle.py</span></code>  &#8212; лучше выбрать более подходящие имена, такие как <code class="file docutils literal"><span class="pre">square.py</span></code> или <code class="file docutils literal"><span class="pre">rectangle.py</span></code>, иначе при обращении к <code class="docutils literal"><span class="pre">turtle</span></code> Python будет использовать твой файл вместо <code class="docutils literal"><span class="pre">turtle</span></code> из стандартной библиотеки.</p>
 </div>
 </div>
 </div>
@@ -344,7 +333,7 @@ will pick up <em>your</em> file instead of the standard turtle.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

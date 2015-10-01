@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Авторские права" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -130,6 +129,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -160,7 +174,7 @@
 <div class="section" id="introduction">
 <h2>Введение<a class="headerlink" href="#introduction" title="Ссылка на этот заголовок">¶</a></h2>
 <p>В программировании часто приходится встречаться с достаточно сложными задачами, а, как известно, одна из характерных черт программистов — ленивость. Расправившись с трудностью один раз, они не хотят делать это вновь. Также тебе понадобится что-то, с помощью чего можно разбивать задачи на маленькие и независимые друг от друга кусочки, чтобы сфокусировать свои усилия над теми из них, которые тебе нужны.</p>
-<p>Функции &#8211; один из способов в Python выразить эту абстракцию. В качестве примера рассмотрим <tt class="docutils literal"><span class="pre">turtle.reset()</span></tt>. <tt class="docutils literal"><span class="pre">reset</span></tt> &#8211; это функция, которая вызывает нашу черепашку (<tt class="docutils literal"><span class="pre">turtle</span></tt>) для выполнения некоторых действий, а именно:</p>
+<p>Функции &#8211; один из способов в Python выразить эту абстракцию. В качестве примера рассмотрим <code class="docutils literal"><span class="pre">turtle.reset()</span></code>. <code class="docutils literal"><span class="pre">reset</span></code> &#8211; это функция, которая вызывает нашу черепашку (<code class="docutils literal"><span class="pre">turtle</span></code>) для выполнения некоторых действий, а именно:</p>
 <ul class="simple">
 <li><p class="first">Очищение доски для рисования.</p>
 </li>
@@ -171,13 +185,13 @@
 </ul>
 <p>Но так как весь код заключён в функцию, нам не нужно беспокоиться о деталях. Мы просто <em>вызываем</em> её.</p>
 <p>Итак — как же написать её?</p>
-<p>Функции в Python могут быть определены ключевым словом <tt class="docutils literal"><span class="pre">def</span></tt>:</p>
+<p>Функции в Python могут быть определены ключевым словом <code class="docutils literal"><span class="pre">def</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Определённая нами функция называется <tt class="docutils literal"><span class="pre">line_without_moving</span></tt> и она является абстракцией для двух шагов - движения вперёд и движения назад.</p>
+<p>Определённая нами функция называется <code class="docutils literal"><span class="pre">line_without_moving</span></code> и она является абстракцией для двух шагов - движения вперёд и движения назад.</p>
 <p>Чтобы использовать её (или, как обычно говорят &#8220;вызвать её&#8221;), напиши её имя и круглые скобки сразу за ним:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">()</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -200,7 +214,7 @@
 <div class="admonition important">
 <p class="first admonition-title">Важно</p>
 <p>В Python используются <em>отступы из пробелов/табуляций</em> для идентификации блоков кода, которые связаны друг с другом. Блок в Python&#8217;е (как показанное выше определение функции) должен иметь двоеточие в конце строки, а последующие команды &#8211; отступы (обычно, размером в 4 пробела). Блок заканчивается первой линией без отступа в начале строки.</p>
-<p>Это отличается от многих других языков программирования, в которых для определения связанных блоков кода используются специальные символы (такие как фигурные скобки <tt class="docutils literal"><span class="pre">{}</span></tt>)</p>
+<p>Это отличается от многих других языков программирования, в которых для определения связанных блоков кода используются специальные символы (такие как фигурные скобки <code class="docutils literal"><span class="pre">{}</span></code>)</p>
 <p class="last">Никогда не используй табуляцию для выделения своих блоков, только пробелы. Ты можешь &#8211; и должен &#8211; настроить свой редактор, чтобы тот вставлял 4 пробела, когда ты нажимаешь клавишу Tab</p>
 </div>
 </div>
@@ -250,9 +264,7 @@
 <p>Give it a good go!</p>
 <div class="admonition hint">
 <p class="first admonition-title">Подсказка</p>
-<p class="last">Make sure your hexagon function returns your turtle to exactly the same
-position and angle it was before it was asked to draw the hexagon. This
-makes it easier to reason about.</p>
+<p class="last">Убедись в том, что функция рисования шестиугольника возвращает черепашку в исходную точку.</p>
 </div>
 </div>
 <div class="solution section" id="id2">
@@ -268,8 +280,8 @@ makes it easier to reason about.</p>
     <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>You could also put the <tt class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></tt> portion in the
-function, but you better not call it <tt class="docutils literal"><span class="pre">hexagon</span></tt> in that case.  That&#8217;s
+<p>You could also put the <code class="docutils literal"><span class="pre">turtle.forward(100);</span> <span class="pre">turtle.right(60)</span></code> portion in the
+function, but you better not call it <code class="docutils literal"><span class="pre">hexagon</span></code> in that case.  That&#8217;s
 misleading because it actually draws a hexagon and then advances to a position
 where another hexagon would make sense in order to draw a honeycomb.  If you
 ever wanted to reuse your hexagon function outside of honeycombs, that would be
@@ -306,7 +318,7 @@ confusing.</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Авторские права</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

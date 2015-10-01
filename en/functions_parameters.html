@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -130,6 +129,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -168,7 +182,7 @@ only draw one size of hexagon!</p>
 <p>That is why we need to be able to give parameters, also called
 <em>arguments</em>, to the function.  This way the <em>variables</em> in the
 function can have different values each time we call the function:</p>
-<p>Remember how we defined the function <tt class="docutils literal"><span class="pre">line_without_moving()</span></tt> in the previous
+<p>Remember how we defined the function <code class="docutils literal"><span class="pre">line_without_moving()</span></code> in the previous
 section:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
     <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -189,7 +203,7 @@ parameter to have like this:</p>
 </pre></div>
 </div>
 <p>We have been using functions with parameters since the beginning of the
-tutorial with <tt class="docutils literal"><span class="pre">turtle.forward()</span></tt>, <tt class="docutils literal"><span class="pre">turtle.left()</span></tt>, etc...</p>
+tutorial with <code class="docutils literal"><span class="pre">turtle.forward()</span></code>, <code class="docutils literal"><span class="pre">turtle.left()</span></code>, etc...</p>
 <p>And we can put as many arguments (or parameters) as we want, separating them
 with commas and giving them different names:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_line_without_moving</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
@@ -244,12 +258,12 @@ greater than two) of any side length. Get it to draw some different shapes.</p>
 to another function! Python regards functions as perfectly normal &#8216;things&#8217;, the same as
 variables, numbers and strings.</p>
 <p>For instance, you could create a shape drawing function which turned one way or another
-depending on which turtle function you passed to it - <tt class="docutils literal"><span class="pre">turtle.left</span></tt> or <tt class="docutils literal"><span class="pre">turtle.right</span></tt>.</p>
+depending on which turtle function you passed to it - <code class="docutils literal"><span class="pre">turtle.left</span></code> or <code class="docutils literal"><span class="pre">turtle.right</span></code>.</p>
 <p>See if you can implement this!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Passing a function (e.g <tt class="docutils literal"><span class="pre">turtle.left</span></tt>) is different than <em>calling</em> it, which
-would instead be written <tt class="docutils literal"><span class="pre">turtle.left(45)</span></tt>.</p>
+<p class="last">Passing a function (e.g <code class="docutils literal"><span class="pre">turtle.left</span></code>) is different than <em>calling</em> it, which
+would instead be written <code class="docutils literal"><span class="pre">turtle.left(45)</span></code>.</p>
 </div>
 </div>
 </div>
@@ -283,7 +297,7 @@ would instead be written <tt class="docutils literal"><span class="pre">turtle.l
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

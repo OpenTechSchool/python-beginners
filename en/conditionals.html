@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -122,6 +121,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -172,7 +186,7 @@ Our conditional statement can then be understood like this:</p>
 </div></blockquote>
 <p>The condition can be anything that evaluates as <em>True</em> or
 <em>False</em>. Comparisons always return <em>True</em> or <em>False</em>, for example
-<tt class="docutils literal"><span class="pre">==</span></tt> (equal to), <tt class="docutils literal"><span class="pre">&gt;</span></tt> (greater than), <tt class="docutils literal"><span class="pre">&lt;</span></tt> (less than.)</p>
+<code class="docutils literal"><span class="pre">==</span></code> (equal to), <code class="docutils literal"><span class="pre">&gt;</span></code> (greater than), <code class="docutils literal"><span class="pre">&lt;</span></code> (less than.)</p>
 <p>The <strong>else</strong> part is optional. If you leave it off, nothing will
 happen if the conditional evaluates to &#8216;False&#8217;.</p>
 </div>
@@ -199,12 +213,12 @@ and see what you think they do, or run them to be certain:</p>
 <div class="section" id="giving-directions">
 <h2>Giving Directions<a class="headerlink" href="#giving-directions" title="Permalink to this headline">¶</a></h2>
 <p>Python turtles can be very good at following instructions. Let&#8217;s use
-the <tt class="docutils literal"><span class="pre">input()</span></tt> function to ask the user for a direction to move
+the <code class="docutils literal"><span class="pre">input()</span></code> function to ask the user for a direction to move
 the turtle. To keep things easy we will only accept two instructions:
 &#8220;left&#8221; and &#8220;right&#8221;.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Using Python 2? The <tt class="docutils literal"><span class="pre">input()</span></tt> function is called <tt class="docutils literal"><span class="pre">raw_input()</span></tt>.</p>
+<p class="last">Using Python 2? The <code class="docutils literal"><span class="pre">input()</span></code> function is called <code class="docutils literal"><span class="pre">raw_input()</span></code>.</p>
 </div>
 <p>It&#8217;s much easier to define this as a function, like so:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">move</span><span class="p">():</span>
@@ -217,18 +231,18 @@ the turtle. To keep things easy we will only accept two instructions:
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now whenever you use <tt class="docutils literal"><span class="pre">move()</span></tt> you are prompted to choose <tt class="docutils literal"><span class="pre">left</span></tt> or
-<tt class="docutils literal"><span class="pre">right</span></tt>.</p>
+<p>Now whenever you use <code class="docutils literal"><span class="pre">move()</span></code> you are prompted to choose <code class="docutils literal"><span class="pre">left</span></code> or
+<code class="docutils literal"><span class="pre">right</span></code>.</p>
 </div>
 <div class="section" id="data-munging">
 <h2>&#8220;data munging&#8221;<a class="headerlink" href="#data-munging" title="Permalink to this headline">¶</a></h2>
-<p>In this program, the turtle will only respond to exactly <tt class="docutils literal"><span class="pre">left</span></tt>
-or <tt class="docutils literal"><span class="pre">right</span></tt> with no variation. Though <tt class="docutils literal"><span class="pre">Left</span></tt> or <tt class="docutils literal"><span class="pre">LEFT</span></tt> might
-seem the same as <tt class="docutils literal"><span class="pre">left</span></tt> to a human, that isn&#8217;t the case when programming. Python
+<p>In this program, the turtle will only respond to exactly <code class="docutils literal"><span class="pre">left</span></code>
+or <code class="docutils literal"><span class="pre">right</span></code> with no variation. Though <code class="docutils literal"><span class="pre">Left</span></code> or <code class="docutils literal"><span class="pre">LEFT</span></code> might
+seem the same as <code class="docutils literal"><span class="pre">left</span></code> to a human, that isn&#8217;t the case when programming. Python
 has a few utility methods to help with that. A string has the methods
-<tt class="docutils literal"><span class="pre">.strip()</span></tt>, which removes whitespace and <tt class="docutils literal"><span class="pre">.lower()</span></tt> which makes
+<code class="docutils literal"><span class="pre">.strip()</span></code>, which removes whitespace and <code class="docutils literal"><span class="pre">.lower()</span></code> which makes
 everything lower-case.</p>
-<p>Here are some examples to print out the effects of <tt class="docutils literal"><span class="pre">.strip()</span></tt> and <tt class="docutils literal"><span class="pre">.lower()</span></tt>:</p>
+<p>Here are some examples to print out the effects of <code class="docutils literal"><span class="pre">.strip()</span></code> and <code class="docutils literal"><span class="pre">.lower()</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">my_variable</span> <span class="o">=</span> <span class="s">&quot;       I Am Capitalised&quot;</span>
 <span class="k">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
 <span class="n">my_stripped</span> <span class="o">=</span> <span class="n">my_variable</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -237,11 +251,11 @@ everything lower-case.</p>
 <span class="k">print</span><span class="p">(</span><span class="n">my_lower</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Try adding <tt class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></tt> to the <tt class="docutils literal"><span class="pre">move()</span></tt>
+<p>Try adding <code class="docutils literal"><span class="pre">direction</span> <span class="pre">=</span> <span class="pre">direction.strip().lower()</span></code> to the <code class="docutils literal"><span class="pre">move()</span></code>
 function, to see the effect. We often call this kind of code &#8220;data
 munging&#8221;, and it is very common.</p>
 <p>Can you add some extra input choices to make the turtle draw other
-things? How about <tt class="docutils literal"><span class="pre">hexagon</span></tt>?</p>
+things? How about <code class="docutils literal"><span class="pre">hexagon</span></code>?</p>
 </div>
 </div>
 
@@ -273,7 +287,7 @@ things? How about <tt class="docutils literal"><span class="pre">hexagon</span><
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

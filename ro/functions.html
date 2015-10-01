@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Funcții definite de utilizator &mdash; Introduction to Programming with Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.10.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/spoilers.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="Introduction to Programming with Python" href="index.html" />
+    <link rel="next" title="Funcții cu parametri" href="functions_parameters.html" />
+    <link rel="prev" title="Bucle" href="loops.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Material <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Să începem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_drawing.html">Desenarea simplă utilizând țestoasa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loops.html">Bucle</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Funcții definite de utilizator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_parameters.html">Funcții cu parametri</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Instrucțiuni condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_loops.html">Bucle condiționale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logical_operators.html">Operatori logici</a></li>
+<li class="toctree-l1"><a class="reference internal" href="where_to_go.html">Unde să mergi în continuare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copyright.html">Licență</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Chapter <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Funcții definite de utilizator</a><ul>
+<li><a class="reference internal" href="#introduction">Introducere</a></li>
+<li><a class="reference internal" href="#a-function-for-a-square">O funcție pentru un pătrat</a><ul>
+<li><a class="reference internal" href="#exercise">Exercițiu</a></li>
+<li><a class="reference internal" href="#solution">Soluție</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-function-for-a-hexagon">O funcție pentru un hexagon</a><ul>
+<li><a class="reference internal" href="#id1">Exercițiu</a></li>
+<li><a class="reference internal" href="#id2">Soluție</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li class="navbar-rel">
+    <a href="loops.html" title="Previous Chapter: Bucle">
+      <span class="glyphicon glyphicon-step-backward"></span>
+      <span>Previous</span>
+    </a>
+  </li>
+  <li class="navbar-rel">
+    <a href="functions_parameters.html" title="Next Chapter: Funcții cu parametri">
+        <span class="glyphicon glyphicon-step-forward"></span>
+        <span>Next</span>
+    </a>
+  </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="user-defined-functions">
+<h1>Funcții definite de utilizator<a class="headerlink" href="#user-defined-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introducere<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Programatorii pot întâlni probleme destul de complexe și abstracte, dar o caracteristică a unui bun programator este lenea. Ei doresc să aibă de-a face cu un singur lucru odată . Așa că ai nevoie să spargi problemele în bucăți mai mici, separate, care să îți permită să te concentrezi doar pe cea pe care dorești.</p>
+<p>Funcțiile sunt un mod de a face această abstractizare în Python. Hai să luăm ca exemplu <code class="docutils literal"><span class="pre">turtle.reset()</span></code>. <code class="docutils literal"><span class="pre">reset</span></code> este o funcție pe care o apelăm pe <code class="docutils literal"><span class="pre">turtle</span></code> și este de fapt o abstractizare a unui număr de pași, adică:</p>
+<ul class="simple">
+<li><p class="first">Șterge tabla.</p>
+</li>
+<li><p class="first">Setează lățimea și culoarea la valorile implicite.</p>
+</li>
+<li><p class="first">Mută țestoasa înapoi la poziția inițială.</p>
+</li>
+</ul>
+<p>Dar pentru că tot codul este inclus în funcție, nu trebuie să ne facem griji pentru aceste detalii. Putem pur și simplu să <em>apelăm</em> această funcție și vom ști că va face ceea ce spune.</p>
+<p>Deci - cum să îți scrii propriile funcții?</p>
+<p>O funcție poate fi definită în Python folosind cuvântul cheie <code class="docutils literal"><span class="pre">def</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">line_without_moving</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Funcția pe care am definit-o se numește <code class="docutils literal"><span class="pre">line_without_moving</span></code> și este o abstractizare a doi pași ai țestoasei - o deplasare înainte și o deplasare înapoi.</p>
+<p>Pentru a o utiliza (sau așa cum se spune de obicei, pentru a o <em>apela</em>), scrie numele ei urmat de paranteze:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">line_without_moving</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Am putea să scriem mai multe funcții pentru a elimina repetițiile:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">star_arm</span><span class="p">():</span>
+    <span class="n">line_without_moving</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">star_arm</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>Python utilizează <em>indentarea cu spații albe</em> pentru a identifica blocuri de cod care au legătură. În Python un bloc (cum sunt definițiile funcțiilor de mai sus) este introdus cu un caracter două puncte la sfârșitul unei linii și liniile următoare sunt indentate &#8211; în mod uzual cu 4 spații.</p>
+<p>Asta este diferit față de multe alte limbaje de programare, care utilizează paranteze (cum ar fi acoladele <code class="docutils literal"><span class="pre">{}</span></code>) pentru a grupa blocuri de cod.</p>
+<p class="last">Nu utiliza niciodată caractere tab pentru indenta blocurile tale, ci doar spații. Poți &#8211; și ar trebui să o faci &#8211; să îți configurezi editorul tău să adauge 4 spații cănd apeși tasta tab. Problema cu utilizarea caracterelor tab este că alți programatori Python folosesc spații și dacă sunt folosite în combinație în același fișier atunci Python le va citi greșit (în cel mai bun caz, te va anunța, iar în cel mai rău caz vor apărea erori greu de identificat).</p>
+</div>
+</div>
+<div class="section" id="a-function-for-a-square">
+<h2>O funcție pentru un pătrat<a class="headerlink" href="#a-function-for-a-square" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exercise">
+<h3>Exercițiu<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Scrie o funție care desenează un pătrat. Poți utiliza această funcție pentru a îmbunătăți programul cu pătrate înclinate? Dacă schimbi programul pentru a folosi o funcție, este mai ușor să experimtentezi?</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Soluție<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
+  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>     <span class="c"># now we can change the angle only here</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">tilted_square</span><span class="p">()</span>
+<span class="n">tilted_square</span><span class="p">()</span>
+<span class="n">tilted_square</span><span class="p">()</span>
+
+<span class="c"># bonus: you could have a separate function for drawing a square,</span>
+<span class="c"># which might be useful later:</span>
+
+<span class="k">def</span> <span class="nf">square</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tilted_square</span><span class="p">():</span>
+  <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+  <span class="n">square</span><span class="p">()</span>
+
+<span class="c"># etc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-for-a-hexagon">
+<h2>O funcție pentru un hexagon<a class="headerlink" href="#a-function-for-a-hexagon" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Exercițiu<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Scrie o funcție care desenează un hexagon.</p>
+<img alt="_images/hexagon.png" src="_images/hexagon.png" />
+<p>Acum combină funcția aceasta într-un fagure. Creează un singur strat așa:</p>
+<img alt="_images/honeycomb.png" src="_images/honeycomb.png" />
+<p>Încearcă!</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">Asigură-te că funcția ta hexagon întoarce țestoasa exact în aceeași poziție și unghi cum era înainte de a desena hexagonul. Este mai ușor să te gândești în acest fel.</p>
+</div>
+</div>
+<div class="solution section" id="id2">
+<h3>Soluție<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">hexagon</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">hexagon</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Poți să pui partea cu``turtle.forward(100); turtle.right(60)`` direct în funcție, dar în acest caz ar fi mai bine să nu o denumești <code class="docutils literal"><span class="pre">hexagon</span></code>. Asta ar fi derutant pentru că de fapt desenează un hexagon și pe urmă avansează într-o poziție în care un alt hexagon ar avea sens doar în cazul unui fagure. Dacă ai avea nevoie să reutilizezi funcția la altceva decât faguri, asta ar fi neașteptat.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+  <ul id="sourcelink" class="list-inline">
+    <li>
+      <a href="https://github.com/opentechschool/python-beginners/edit/master/source/functions.rst" title="functions.rst">
+        Edit on Github
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/OpenTechSchool/python-beginners/issues/new?title=Problem+with+functions">
+        Report a problem
+      </a>
+    </li>
+  </ul>
+      
+    </p>
+    <p>
+        &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

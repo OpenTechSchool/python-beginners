@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="Copyright" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -41,7 +41,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,13 +53,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -130,6 +129,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -163,7 +177,7 @@
 is satisfied, or <strong>True</strong>. If the condition is always satisfied (never
 becomes <strong>False</strong>), the loop can become infinite.
 If the condition starts off false, the code in the loop will never run!
-In Python conditional loops are defined with the <tt class="docutils literal"><span class="pre">while</span></tt> statement:</p>
+In Python conditional loops are defined with the <code class="docutils literal"><span class="pre">while</span></code> statement:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
@@ -176,38 +190,38 @@ In Python conditional loops are defined with the <tt class="docutils literal"><s
 <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We call this part of the code the &#8216;conditional&#8217;: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></tt></p>
+<p>We call this part of the code the &#8216;conditional&#8217;: <code class="docutils literal"><span class="pre">'.'</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">word</span></code></p>
 <p>Whether the conditional return True or not determines whether the code inside
-the <tt class="docutils literal"><span class="pre">while</span></tt> loop runs.</p>
+the <code class="docutils literal"><span class="pre">while</span></code> loop runs.</p>
 <p>Read the code above, and see if you can summarise in your head what
 it what it do (what its final output will be).</p>
-<p>Then copy it into a file, say <tt class="file docutils literal"><span class="pre">sentence.py</span></tt> and run it - see
+<p>Then copy it into a file, say <code class="file docutils literal"><span class="pre">sentence.py</span></code> and run it - see
 exactly what it does. Does that match up with what you thought?</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If you are using Python 2, you will need to replace <tt class="docutils literal"><span class="pre">input</span></tt> with
-<tt class="docutils literal"><span class="pre">raw_input</span></tt> to run the program correctly.</p>
+<p class="last">If you are using Python 2, you will need to replace <code class="docutils literal"><span class="pre">input</span></code> with
+<code class="docutils literal"><span class="pre">raw_input</span></code> to run the program correctly.</p>
 </div>
 </div>
 <div class="section" id="turtle-prison">
 <h2>Turtle prison<a class="headerlink" href="#turtle-prison" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>The turtle has been up to its usual tricks again, robbing liqour
+<p>The turtle has been up to its usual tricks again, robbing liquor
 stores and building up huge gambling debts. It&#8217;s time for turtle to be
 put into a cell that it can&#8217;t get out of.</p>
-<p>Let&#8217;s make a new version of <tt class="docutils literal"><span class="pre">forward()</span></tt>. One that will turn the turtle
+<p>Let&#8217;s make a new version of <code class="docutils literal"><span class="pre">forward()</span></code>. One that will turn the turtle
 around if it tries to go further than 100 from the origin. We&#8217;ll need
-a <tt class="docutils literal"><span class="pre">while</span></tt> loop, and some new turtle functions:</p>
+a <code class="docutils literal"><span class="pre">while</span></code> loop, and some new turtle functions:</p>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - Distance of the turtle from the origin</li>
-<li><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - The angle to get back to origin</li>
-<li><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - Directly sets the turtle direction</li>
+<li><code class="docutils literal"><span class="pre">turtle.distance(0,0)</span></code> - Distance of the turtle from the origin</li>
+<li><code class="docutils literal"><span class="pre">turtle.towards(0,0)</span></code> - The angle to get back to origin</li>
+<li><code class="docutils literal"><span class="pre">turtle.setheading(angle)</span></code> - Directly sets the turtle direction</li>
 </ul>
 <p>You could try playing with a turtle in the interpreter and using these
 functions to check exactly what they do, if you like.</p>
 <p>Now you will need to implement the prison logic using these turtle
-functions, perhaps a <tt class="docutils literal"><span class="pre">while</span></tt> loop and a bit of conditional logic.
+functions, perhaps a <code class="docutils literal"><span class="pre">while</span></code> loop and a bit of conditional logic.
 It&#8217;s a bit of a stretch but keep at it! Don&#8217;t be afraid to talk it out
 with a coach or another student.</p>
 </div>
@@ -226,16 +240,16 @@ with a coach or another student.</p>
 </div>
 <div class="section" id="draw-a-spiral">
 <h2>Draw a spiral<a class="headerlink" href="#draw-a-spiral" title="Permalink to this headline">¶</a></h2>
-<p>Loops can be interrupted with the <tt class="docutils literal"><span class="pre">break</span></tt> statement. This is
+<p>Loops can be interrupted with the <code class="docutils literal"><span class="pre">break</span></code> statement. This is
 especially useful if you write an <em>infinite loop</em>, which is a loop
 where the conditional is always <strong>True</strong>.</p>
 <div class="section" id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Write a <tt class="docutils literal"><span class="pre">while</span></tt> loop with a condition that is always <strong>True</strong>
+<p>Write a <code class="docutils literal"><span class="pre">while</span></code> loop with a condition that is always <strong>True</strong>
 to draw a spiral. Interrupt the loop when the turtle reaches a certain distance
-from the center. Use the function <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> to get the
-turtle&#8217;s distance to the point defined by the coordinates <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
-<p>To do this you will need the <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> and <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt>
+from the center. Use the function <code class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></code> to get the
+turtle&#8217;s distance to the point defined by the coordinates <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code>.</p>
+<p>To do this you will need the <code class="docutils literal"><span class="pre">turtle.xcor()</span></code> and <code class="docutils literal"><span class="pre">turtle.ycor()</span></code>
 functions, which return the position of the turtle in X and Y axes
 respectively.</p>
 <div class="admonition note">
@@ -262,7 +276,7 @@ forward by an increasing value.</p>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
 <p>Can you make a conditional for this loop, so you don&#8217;t need the
-infinite loop <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></tt> or the <tt class="docutils literal"><span class="pre">break</span></tt>? Which version do you find
+infinite loop <code class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></code> or the <code class="docutils literal"><span class="pre">break</span></code>? Which version do you find
 easier to understand?</p>
 </div>
 </div>
@@ -296,7 +310,7 @@ easier to understand?</p>
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>

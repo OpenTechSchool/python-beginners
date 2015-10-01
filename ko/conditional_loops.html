@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2014.06.09',
+        VERSION:     '2015.10.02',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/spoilers.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="copyright" title="저작권" href="copyright.html" />
     <link rel="top" title="Introduction to Programming with Python" href="index.html" />
@@ -42,7 +42,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -54,13 +54,12 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Python for beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2014.06.09</b></span>
+          Python for Beginners</a>
+        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -131,6 +130,21 @@
         <span>Next</span>
     </a>
   </li>
+<li class="dropdown">
+  <a role="button"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Languages <b class="caret"></b></a>
+  <ul class="dropdown-menu"
+      role="menu">
+    <li><a href="../en/index.html">English</a></li>
+    <li><a href="../de/index.html">Deutsch (German)</a></li>
+    <li><a href="../es_CL/index.html">Español (Spanish)</a></li>
+    <li><a href="../ru/index.html">русский (Russian)</a></li>
+    <li><a href="../ko/index.html">한국인 (Korean)</a></li>
+    <li><a href="../ro/index.html">Română (Romanian)</a></li>
+  </ul>
+</li>
               
             
             
@@ -160,7 +174,7 @@
 <h1>조건 순환 반복<a class="headerlink" href="#conditional-loops" title="제목 주소">¶</a></h1>
 <div class="section" id="introduction">
 <h2>소개<a class="headerlink" href="#introduction" title="제목 주소">¶</a></h2>
-<p>조건 순환 반복은 각각의 경우에 조건이 만족하거나 <a href="#id1"><span class="problematic" id="id2">**</span></a>True**일 때 어떤 동작을 반복하는 방법이예요. 상태가 항상 만족한다면(<a href="#id3"><span class="problematic" id="id4">**</span></a>False**가 되지 않는다면), 순환 반복은 끝남이 없을 수 있어요. False 조건으로 시작하면 순환 반복 구문 안의 코드는 실행되지 않아요! 파이썬에서는 조건 순환 반복 구문을 <tt class="docutils literal"><span class="pre">while</span></tt> 구문으로 정의해요:</p>
+<p>조건 순환 반복은 각각의 경우에 조건이 만족하거나 <a href="#id1"><span class="problematic" id="id2">**</span></a>True**일 때 어떤 동작을 반복하는 방법이예요. 상태가 항상 만족한다면(<a href="#id3"><span class="problematic" id="id4">**</span></a>False**가 되지 않는다면), 순환 반복은 끝남이 없을 수 있어요. False 조건으로 시작하면 순환 반복 구문 안의 코드는 실행되지 않아요! 파이썬에서는 조건 순환 반복 구문을 <code class="docutils literal"><span class="pre">while</span></code> 구문으로 정의해요:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="n">sentence</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="k">print</span><span class="p">(</span><span class="s">&#39;Please enter some words.&#39;</span><span class="p">)</span>
@@ -173,8 +187,8 @@
 <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>이 코드 일부를 &#8216;조건문&#8217; 이라고 해요: <tt class="docutils literal"><span class="pre">'.'</span> <span class="pre">은</span> <span class="pre">단어에</span> <span class="pre">없어요</span></tt></p>
-<p>조건문이 True를 반환하느냐 마느냐에 따라 <tt class="docutils literal"><span class="pre">while</span></tt> 순환 반복 구문 안에 있는 코드를 실행할지 말지를 결정해요.</p>
+<p>이 코드 일부를 &#8216;조건문&#8217; 이라고 해요: <code class="docutils literal"><span class="pre">'.'</span> <span class="pre">은</span> <span class="pre">단어에</span> <span class="pre">없어요</span></code></p>
+<p>조건문이 True를 반환하느냐 마느냐에 따라 <code class="docutils literal"><span class="pre">while</span></code> 순환 반복 구문 안에 있는 코드를 실행할지 말지를 결정해요.</p>
 <p>위의 코드를 보고, 어떤 동작을 할 지 머릿속에 정리해본 내용을 확인해보세요(마지막 결과가 어떻게 될지요).</p>
 <p>그 다음 파일에 복사해넣고 :file:<a href="#id1"><span class="problematic" id="id2">`</span></a>sentence.py`를 불러서 실행해보세요. 정확하게 어떤 동작을 하는지 보세요. 생각한대로 동작하나요?</p>
 <div class="admonition note">
@@ -186,18 +200,20 @@
 <h2>거북이 감옥<a class="headerlink" href="#turtle-prison" title="제목 주소">¶</a></h2>
 <div class="section" id="exercise">
 <h3>연습<a class="headerlink" href="#exercise" title="제목 주소">¶</a></h3>
-<p>거북이가 술집에서 술을 훔쳐오고 엄청난 도박빚을 몰고 오는 사기를 치기 시작했어요. 이 거북이를 밖으로 나오지 못하게 공간에 집어넣을 시간입니다.</p>
-<p><tt class="docutils literal"><span class="pre">forward()``를</span> <span class="pre">새로</span> <span class="pre">짜기로</span> <span class="pre">해요.</span> <span class="pre">새로</span> <span class="pre">작성한</span> <span class="pre">함수는</span> <span class="pre">거북이가</span> <span class="pre">원점으로부터</span> <span class="pre">100</span> <span class="pre">이상</span> <span class="pre">가면</span> <span class="pre">돌아오게</span> <span class="pre">합니다.</span> <span class="pre">``while</span></tt> 순환 반복 구문과 몇가지 거북이 함수가 필요해요:</p>
+<p>The turtle has been up to its usual tricks again, robbing liquor
+stores and building up huge gambling debts. It&#8217;s time for turtle to be
+put into a cell that it can&#8217;t get out of.</p>
+<p><code class="docutils literal"><span class="pre">forward()``를</span> <span class="pre">새로</span> <span class="pre">짜기로</span> <span class="pre">해요.</span> <span class="pre">새로</span> <span class="pre">작성한</span> <span class="pre">함수는</span> <span class="pre">거북이가</span> <span class="pre">원점으로부터</span> <span class="pre">100</span> <span class="pre">이상</span> <span class="pre">가면</span> <span class="pre">돌아오게</span> <span class="pre">합니다.</span> <span class="pre">``while</span></code> 순환 반복 구문과 몇가지 거북이 함수가 필요해요:</p>
 <ul class="simple">
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.distance(0,0)</span></tt> - 원점으로부터 거북이까지의 거리예요</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.distance(0,0)</span></code> - 원점으로부터 거북이까지의 거리예요</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.towards(0,0)</span></tt> - 거북이가 놓인 방향을 바로 설정해요</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.towards(0,0)</span></code> - 거북이가 놓인 방향을 바로 설정해요</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">turtle.setheading(angle)</span></tt> - 원점으로부터의 각도예요</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">turtle.setheading(angle)</span></code> - 원점으로부터의 각도예요</p>
 </li>
 </ul>
 <p>인터프리터에서 거북이를 가지고 놀아볼 수 있고, 원할 경우 함수를 이용하여 거북이가 어떤 행동을 하는지 확인해볼 수 있어요.</p>
-<p>거북이 함수를 사용해서 감옥 로직을 구현해야 할텐데요. 아마 <tt class="docutils literal"><span class="pre">while</span></tt> 순환 반복 구문과 약간의 상태 로직을 사용하면 될거예요. 좀 늘어날텐데 그냥 그대로 두세요! 도우미나 다른 학생과 이야기하는걸 두려워하지 마세요.</p>
+<p>거북이 함수를 사용해서 감옥 로직을 구현해야 할텐데요. 아마 <code class="docutils literal"><span class="pre">while</span></code> 순환 반복 구문과 약간의 상태 로직을 사용하면 될거예요. 좀 늘어날텐데 그냥 그대로 두세요! 도우미나 다른 학생과 이야기하는걸 두려워하지 마세요.</p>
 </div>
 <div class="solution section" id="solution">
 <h3>해결책<a class="headerlink" href="#solution" title="제목 주소">¶</a></h3>
@@ -217,8 +233,8 @@
 <p>순환 반복 구문은 <a href="#id1"><span class="problematic" id="id2">``</span></a>break``문으로 멈출 수 있어요. 조건이 항상 <a href="#id3"><span class="problematic" id="id4">**</span></a>True**인 순환 반복이 존재하는 <em>무한 순환 반복</em> 구문을 작성했을때 특히 쓸모가 있어요.</p>
 <div class="section" id="id1">
 <h3>연습<a class="headerlink" href="#id1" title="제목 주소">¶</a></h3>
-<p><tt class="docutils literal"><span class="pre">while</span></tt> 순환 반복 구문에 원을 그릴때 조건문이 항상 <a href="#id1"><span class="problematic" id="id2">**</span></a>True**가 되도록 작성하세요. 가운데에서 일정 거리에 도달하면 순환 반복 구문을 멈추세요. 원점으로부터 <tt class="docutils literal"><span class="pre">x``와</span> <span class="pre">``y</span></tt> 좌표로 정의한 점까지의 거리를 가져오려면 <tt class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></tt> 함수를 사용하세요.</p>
-<p>이 동작을 취하려면 거북이의 X축 Y축 각각의 위치를 반환하는 <tt class="docutils literal"><span class="pre">turtle.xcor()</span></tt> 와 <tt class="docutils literal"><span class="pre">turtle.ycor()</span></tt> 함수가 필요해요.</p>
+<p><code class="docutils literal"><span class="pre">while</span></code> 순환 반복 구문에 원을 그릴때 조건문이 항상 <a href="#id1"><span class="problematic" id="id2">**</span></a>True**가 되도록 작성하세요. 가운데에서 일정 거리에 도달하면 순환 반복 구문을 멈추세요. 원점으로부터 <code class="docutils literal"><span class="pre">x``와</span> <span class="pre">``y</span></code> 좌표로 정의한 점까지의 거리를 가져오려면 <code class="docutils literal"><span class="pre">turtle.distance(x,</span> <span class="pre">y)</span></code> 함수를 사용하세요.</p>
+<p>이 동작을 취하려면 거북이의 X축 Y축 각각의 위치를 반환하는 <code class="docutils literal"><span class="pre">turtle.xcor()</span></code> 와 <code class="docutils literal"><span class="pre">turtle.ycor()</span></code> 함수가 필요해요.</p>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
 <p class="last">원을 그리려면 거북이가 상수값에 따라 돌아야 하고 값 증가에 따라 앞으로 이동해야 해요.</p>
@@ -241,7 +257,7 @@
 </div>
 <div class="section" id="bonus">
 <h3>덤<a class="headerlink" href="#bonus" title="제목 주소">¶</a></h3>
-<p>이 순환 반복 구문에 조건문을 넣어서 <tt class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></tt> 또는 <a href="#id1"><span class="problematic" id="id2">``</span></a>break``를 사용한 무한 순환 반복 구문이 필요없게 할 수 있나요? 어떤 버전이 쉽게 이해할 수 있는 버전일까요?</p>
+<p>이 순환 반복 구문에 조건문을 넣어서 <code class="docutils literal"><span class="pre">while</span> <span class="pre">True</span></code> 또는 <a href="#id1"><span class="problematic" id="id2">``</span></a>break``를 사용한 무한 순환 반복 구문이 필요없게 할 수 있나요? 어떤 버전이 쉽게 이해할 수 있는 버전일까요?</p>
 </div>
 </div>
 </div>
@@ -274,7 +290,7 @@
     </p>
     <p>
         &copy; <a href="copyright.html">Copyright</a> 2012–2014, OpenTechSchool and contributors.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
     </p>
   </div>
 </footer>
