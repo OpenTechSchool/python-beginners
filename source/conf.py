@@ -106,7 +106,7 @@ html_theme = 'bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = dict(
-        navbar_title = "Python for beginners",
+        navbar_title = "Python for Beginners",
         navbar_site_name = "Material",
         source_link_position = "footer",
 )
