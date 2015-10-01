@@ -157,7 +157,7 @@ key to exit the pager.
 
 Another way to find out about functions is to browse the `online documentation`_.
 
-.. _online documentation: http://docs.python.org/library/turtle
+.. _online documentation: http://docs.python.org/3/library/turtle
 
 
 .. caution::
@@ -172,6 +172,10 @@ Another way to find out about functions is to browse the `online documentation`_
    :samp:`turtle.color({colorstring})`.  These include but are not limited to
    "red," "green," and "violet."  See the `colours manual`_ for an extensive
    list.
+
+   If you want to set an RGB value, make sure to run ``turtle.colormode(255)``
+   first. Then for instance you could run ``turtle.color(250, 0, 0)`` to set
+   a red colour.
 
    .. _colours manual: http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
 
