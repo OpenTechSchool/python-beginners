@@ -14,7 +14,7 @@ BUILD_DIR = os.path.join(BASE_DIR, '_build')
 SOURCE_DIR = os.path.join(BASE_DIR, 'source')
 LOCALE_DIR = os.path.join(SOURCE_DIR, 'locale',
                           '%s', 'LC_MESSAGES')
-LANGUAGES = set(['en', 'de', 'ru', 'ko', 'es_CL'])
+LANGUAGES = set(['en', 'de', 'ru', 'ko', 'es_CL', 'ro'])
 MAIN_TARGET = 'html'
 REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
 SERVE_PORT = 8000
@@ -55,7 +55,7 @@ def build(language=None, target=MAIN_TARGET):
         target_dir = os.path.join(BUILD_DIR, target)
         local('cp %s %s' % (static_files, target_dir))
     print("build finished; the %s files are in %s." %
-            (target, os.path.join(BUILD_DIR, target, language)))
+          (target, os.path.join(BUILD_DIR, target, language)))
 
 
 def clean(language=None, target=MAIN_TARGET):
