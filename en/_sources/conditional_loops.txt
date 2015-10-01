@@ -50,9 +50,10 @@ Let's make a new version of ``forward()``. One that will turn the turtle
 around if it tries to go further than 100 from the origin. We'll need 
 a ``while`` loop, and some new turtle functions:
 
-* ``turtle.distance(0,0)`` - Distance of the turtle from the origin
-* ``turtle.towards(0,0)`` - The angle to get back to origin
-* ``turtle.setheading(angle)`` - Directly sets the turtle direction
+* ``turtle.distance(0, 0)`` - Returns the distance of the turtle from 
+  the origin (0, 0)
+* ``turtle.towards(0, 0)`` - Returns the angle to get back to origin (0, 0)
+* ``turtle.setheading(angle)`` - Directly sets the turtle's direction
 
 You could try playing with a turtle in the interpreter and using these 
 functions to check exactly what they do, if you like.
