@@ -4,10 +4,11 @@ Simple drawing with turtle
 Introduction
 ============
 
-Turtle is like a drawing board.
+"Turtle" is a python feature like a drawing board, which lets you command
+a turtle to draw all over it!
 
-It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which
-can move the turtle around.
+You can use functions like ``turtle.forward(...)`` and ``turtle.left(...)``
+which can move the turtle around.
 
 Before you can use turtle, you have to import it. We recommend playing around
 with it in the interactive interpreter first, as there is an extra bit of work
@@ -69,7 +70,7 @@ So much cuter!
 If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement.  (That is because
 Python exits when your turtle has finished moving.  Since the turtle window
-belongs to Python, it terminates as well.)  To prevent that, just put
+belongs to Python, it goes away as well.)  To prevent that, just put
 ``turtle.exitonclick()`` at the bottom of your file.  Now the window stays open
 until you click on it::
 
@@ -86,7 +87,8 @@ until you click on it::
    Python is a programming language where horizontal indenting of text is
    important. We'll learn all about this in the Functions chapter later on,
    but for now just keep in mind that stray spaces or tabs before any line
-   of Python code can cause an unexpected error.
+   of Python code can cause an unexpected error. You could even try adding one
+   to check how python will complain!
 
 Drawing a square
 ================
@@ -139,8 +141,8 @@ Bonus
 If you want to get creative, you can modify your shape with the
 ``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you
 use these functions?  Before you can use a function you need to know
-its *signature* (for example the number of parameters and what they
-mean.) To find this out you can type ``help(turtle.color)`` into the
+its *signature* (for example what to put between the parentheses and what those
+things mean.) To find this out you can type ``help(turtle.color)`` into the
 Python shell. If there is a lot of text, Python will put the help text
 into a *pager*, which lets you page up and down. Press the :kbd:`q`
 key to exit the pager.
@@ -163,19 +165,19 @@ Another way to find out about functions is to browse the `online documentation`_
 .. caution::
 
     If you misdrew anything, you can tell turtle to erase its drawing board
-    with the ``turtle.reset()`` directive or undo the most recent step with
+    with the ``turtle.reset()`` directive, or undo the most recent step with
     ``turtle.undo()``.
 
 .. tip::
 
    As you might have read in the help, you can modify the color with
    :samp:`turtle.color({colorstring})`.  These include but are not limited to
-   "red," "green," and "violet."  See the `colours manual`_ for an extensive
+   "red," "green," and "violet."  See this `colours manual`_ for an extensive
    list.
 
    If you want to set an RGB value, make sure to run ``turtle.colormode(255)``
-   first. Then for instance you could run ``turtle.color(250, 0, 0)`` to set
-   a red colour.
+   first. Then for instance you could run ``turtle.color(215, 100, 170)`` to
+   set a pink colour.
 
    .. _colours manual: http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
 
@@ -223,7 +225,8 @@ experiment with the angles between the individual squares.
 
 .. image:: /images/tiltedsquares.png
 
-The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.
+The picture shows three 20 degree turns. But you could try 20, 30 and 40 degree
+turns, for example.
 
 .. rst-class:: solution
 
