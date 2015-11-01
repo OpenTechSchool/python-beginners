@@ -10,3 +10,5 @@ _build
 source/locale/*/*/*.mo
 source/_locales/*/*/*.mo
 .transifexrc
+*.pot
+*.mo
