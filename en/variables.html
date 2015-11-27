@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2015.10.02',
+        VERSION:     '2015.11.01',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -54,7 +54,7 @@
         </button>
         <a class="navbar-brand" href="index.html">
           Python for Beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>2015.11.01</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -173,8 +173,9 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Whew. Experimenting with the angles requires you to change three different
-places in the code each time. Imagine you&#8217;d want to experiment with
-all of the square sizes, let alone with rectangles! We can do better than that.</p>
+places (numbers) in the code each time. Imagine you&#8217;d want to experiment with
+all of the squares&#8217; sizes, or with with rectangles! Fortunately there are
+easier ways to do so than changing lots of numbers every time.</p>
 <p>This is where <strong>variables</strong> come into play: You can tell Python that from now on,
 whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: <em>Let x be 5.</em>
@@ -189,15 +190,15 @@ Then <em>x * 2</em> will obviously be <em>10</em>.</p>
 </pre></div>
 </div>
 <p>Variables can store all sorts of things, not just numbers. A typical
-other thing you want to have stored often is a <strong>string</strong> - a line of text.
-Strings are indicated with a starting and a leading <code class="docutils literal"><span class="pre">&quot;</span></code> (double quote).
-You&#8217;ll learn about this and other types, as those are called in Python, and
+other thing you want to have stored often is a <strong>string</strong> - a piece of text.
+Strings are indicated with a starting and ending <code class="docutils literal"><span class="pre">&quot;</span></code> (double quote).
+You&#8217;ll learn about this and other types of data you can store, and
 what you can do with them later on.</p>
-<p>You can even use a variable to give the turtle a name:</p>
+<p>You can even use a variable to refer to the turtle by a name:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span>
 </pre></div>
 </div>
-<p>Now every time you type <code class="docutils literal"><span class="pre">timmy</span></code> it knows you mean <code class="docutils literal"><span class="pre">turtle</span></code>. You can
+<p>Now every time you type <code class="docutils literal"><span class="pre">timmy</span></code> python knows you mean <code class="docutils literal"><span class="pre">turtle</span></code>. You can
 still continue to use <code class="docutils literal"><span class="pre">turtle</span></code> as well:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">timmy</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -209,14 +210,14 @@ still continue to use <code class="docutils literal"><span class="pre">turtle</s
 <h2>A variable called angle<a class="headerlink" href="#a-variable-called-angle" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>If we have a variable called <code class="docutils literal"><span class="pre">angle</span></code>, how could we use that to experiment
-much faster with our tilted squares program?</p>
+<p>If we make a variable called <code class="docutils literal"><span class="pre">tilt</span></code> (we could assign it a number of degrees),
+how could we use that to experiment much faster with our tilted squares program?</p>
 </div>
 <div class="solution section" id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">angle</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">tilt</span> <span class="o">=</span> <span class="mi">20</span>
 
-<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">tilt</span><span class="p">)</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -227,14 +228,14 @@ much faster with our tilted squares program?</p>
 <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">tilt</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>... and so on</p>
+<p>... and so on!</p>
 </div>
 <div class="section" id="bonus">
 <h3>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
-<p>Can you apply that principle to the size of the squares, too?</p>
+<p>Can you apply that principle to the <em>size</em> of the squares, too?</p>
 </div>
 </div>
 <div class="section" id="the-house-of-santa-claus">
@@ -243,15 +244,19 @@ much faster with our tilted squares program?</p>
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Draw a house.</p>
 <img alt="_images/house.png" src="_images/house.png" />
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
 <p>You can calculate the length of the diagonal line with the Pythagorean
-theorem. That value is a good candidate to store in a variable. To calculate
-the square root of a number in Python, you&#8217;ll need to import the <em>math</em> module
-and use the <code class="docutils literal"><span class="pre">math.sqrt()</span></code> function. The square of a number is calculated
-with the <code class="docutils literal"><span class="pre">**</span></code> operator:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+theorem. That value is a good candidate to store in a variable.
+To calculate the square root of a number in Python, you&#8217;ll need to import
+the <em>math</em> module and use the <code class="docutils literal"><span class="pre">math.sqrt()</span></code> function.
+Exponentiating a number is done with the <code class="docutils literal"><span class="pre">**</span></code> operator
+(so squaring means <code class="docutils literal"><span class="pre">**</span> <span class="pre">2</span></code>):</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>

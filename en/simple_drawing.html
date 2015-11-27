@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2015.10.02',
+        VERSION:     '2015.11.01',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -54,7 +54,7 @@
         </button>
         <a class="navbar-brand" href="index.html">
           Python for Beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>2015.11.01</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -179,9 +179,10 @@
 <h1>Simple drawing with turtle<a class="headerlink" href="#simple-drawing-with-turtle" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Turtle is like a drawing board.</p>
-<p>It has functions like <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> and <code class="docutils literal"><span class="pre">turtle.left(...)</span></code> which
-can move the turtle around.</p>
+<p>&#8220;Turtle&#8221; is a python feature like a drawing board, which lets you command
+a turtle to draw all over it!</p>
+<p>You can use functions like <code class="docutils literal"><span class="pre">turtle.forward(...)</span></code> and <code class="docutils literal"><span class="pre">turtle.left(...)</span></code>
+which can move the turtle around.</p>
 <p>Before you can use turtle, you have to import it. We recommend playing around
 with it in the interactive interpreter first, as there is an extra bit of work
 required to make it work from files. Just go to your terminal and type:</p>
@@ -235,7 +236,7 @@ instead with the <code class="docutils literal"><span class="pre">turtle.shape()
 <p>If you put the commands into a file, you might have recognized that the turtle
 window vanishes after the turtle finished its movement.  (That is because
 Python exits when your turtle has finished moving.  Since the turtle window
-belongs to Python, it terminates as well.)  To prevent that, just put
+belongs to Python, it goes away as well.)  To prevent that, just put
 <code class="docutils literal"><span class="pre">turtle.exitonclick()</span></code> at the bottom of your file.  Now the window stays open
 until you click on it:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>
@@ -252,7 +253,8 @@ until you click on it:</p>
 <p class="last">Python is a programming language where horizontal indenting of text is
 important. We&#8217;ll learn all about this in the Functions chapter later on,
 but for now just keep in mind that stray spaces or tabs before any line
-of Python code can cause an unexpected error.</p>
+of Python code can cause an unexpected error. You could even try adding one
+to check how python will complain!</p>
 </div>
 </div>
 <div class="section" id="drawing-a-square">
@@ -298,8 +300,8 @@ to draw multiple shapes later on.</p>
 <p>If you want to get creative, you can modify your shape with the
 <code class="docutils literal"><span class="pre">turtle.width(...)</span></code> and <code class="docutils literal"><span class="pre">turtle.color(...)</span></code> functions.  How do you
 use these functions?  Before you can use a function you need to know
-its <em>signature</em> (for example the number of parameters and what they
-mean.) To find this out you can type <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> into the
+its <em>signature</em> (for example what to put between the parentheses and what those
+things mean.) To find this out you can type <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> into the
 Python shell. If there is a lot of text, Python will put the help text
 into a <em>pager</em>, which lets you page up and down. Press the <code class="kbd docutils literal"><span class="pre">q</span></code>
 key to exit the pager.</p>
@@ -313,19 +315,22 @@ key to exit the pager.</p>
 can refer to them, so in a new Python interactive shell you&#8217;ll need to
 <code class="docutils literal"><span class="pre">import</span> <span class="pre">turtle</span></code> before <code class="docutils literal"><span class="pre">help(turtle.color)</span></code> will work.</p>
 </div>
-<p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/library/turtle">online documentation</a>.</p>
+<p>Another way to find out about functions is to browse the <a class="reference external" href="http://docs.python.org/3/library/turtle">online documentation</a>.</p>
 <div class="admonition caution">
 <p class="first admonition-title">Caution</p>
 <p class="last">If you misdrew anything, you can tell turtle to erase its drawing board
-with the <code class="docutils literal"><span class="pre">turtle.reset()</span></code> directive or undo the most recent step with
+with the <code class="docutils literal"><span class="pre">turtle.reset()</span></code> directive, or undo the most recent step with
 <code class="docutils literal"><span class="pre">turtle.undo()</span></code>.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">As you might have read in the help, you can modify the color with
+<p>As you might have read in the help, you can modify the color with
 <code class="samp docutils literal"><span class="pre">turtle.color(</span><em><span class="pre">colorstring</span></em><span class="pre">)</span></code>.  These include but are not limited to
-&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See the <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
+&#8220;red,&#8221; &#8220;green,&#8221; and &#8220;violet.&#8221;  See this <a class="reference external" href="http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm">colours manual</a> for an extensive
 list.</p>
+<p class="last">If you want to set an RGB value, make sure to run <code class="docutils literal"><span class="pre">turtle.colormode(255)</span></code>
+first. Then for instance you could run <code class="docutils literal"><span class="pre">turtle.color(215,</span> <span class="pre">100,</span> <span class="pre">170)</span></code> to
+set a pink colour.</p>
 </div>
 </div>
 </div>
@@ -362,7 +367,8 @@ sides of equal length) each corner has an angle of 60 degrees.</p>
 <p>Now, draw a tilted square. And another one, and another one. You can
 experiment with the angles between the individual squares.</p>
 <img alt="_images/tiltedsquares.png" src="_images/tiltedsquares.png" />
-<p>The picture shows three 20 degree turns. You could try 20, 30 and 40, for example.</p>
+<p>The picture shows three 20 degree turns. But you could try 20, 30 and 40 degree
+turns, for example.</p>
 </div>
 <div class="solution section" id="id5">
 <h3>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>

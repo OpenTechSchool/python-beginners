@@ -16,10 +16,11 @@ Python 3 is preferable, being the newest version out!
 
 .. note::
 
-   On Windows, you'll want to add :program:`Python` to your path, so it 
-   can be found by other programs. To do this, navigate to your 
-   installation directory (:file:`C:\\Python33\\`), open the :file:`Tools`, 
-   then :file:`Scripts` folders, and run the :file:`win_add2path.py` 
+   On Windows, you'll want to add :program:`Python` to your PATH, so it 
+   can be found by other programs. With Python 3.5 or later, there should be 
+   and option to do this in the installer. Otherwise, you can navigate to your 
+   installation directory (:file:`C:\\Python34\\`), open the :file:`Tools`, 
+   then :file:`Scripts` folder, and run the :file:`win_add2path.py` 
    file by double clicking on it.
 
 And a Code Editor
@@ -31,6 +32,10 @@ make - Like a tennis-player choosing their racket, or a chef choosing their
 favourite knife. To start off with, you'll just want a basic, easy-to-use one 
 that doesn't get in your way, but is still effective at writing python code. 
 Here are some suggestions for those:
+
+- `Atom`_: A new code editor available for Windows, Mac and Linux. It's 
+  an open-source project developed by GitHub and is very easy to add 
+  functionality for, with its packages system.
 
 - `Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B 
   shortcut lets you run the python file you're working on straight away. Runs 
@@ -48,6 +53,7 @@ Here are some suggestions for those:
 - `Komodo Edit`_: a sleak, free editor for Mac, Windows and Linux, based on the 
   more powerful Komodo IDE.
 
+.. _Atom: https://atom.io
 .. _Sublime Text: http://www.sublimetext.com/
 .. _Geany: http://www.geany.org/
 .. _TextMate: http://macromates.com/
@@ -59,8 +65,7 @@ If you'd like our recommendation, try out Sublime Text first.
 
 .. tip::
 
-   Wordpad, TextEdit, Notepad, and Word are **not** suitable text 
-   editors.
+   Wordpad, TextEdit, Notepad, and Word are **not** suitable code editors.
 
 What is Python, exactly?
 ========================
@@ -68,8 +73,8 @@ What is Python, exactly?
 Ok, so python is this thing called a **programming language**. It takes text that 
 you've written (usually referred to as **code**), turns it into instructions for 
 your computer, and runs those instructions. We'll be learning how to write code 
-to do cool and useful stuff. No longer will you be bound to use others' 
-programs to do things with your computer!
+to do cool and useful stuff. No longer will you be bound to use *others'* 
+programs to do things with your computer - you can make your own!
 
 Practically, Python is just another program on your computer. The first thing to 
 learn is how to use and interact with it. There are in fact many ways to do this; 
@@ -77,7 +82,7 @@ the first one to learn is to interact with python's interpreter,
 using your **operating system's** (OS) console.
 
 A **console** (or 'terminal', or 'command prompt') is a *textual* way to 
-interact with your OS, just as the 'desktop', in conjuction with your mouse, 
+interact with your OS, just as the 'desktop', in conjunction with your mouse, 
 is the *graphical* way to interact your system.
 
 Opening a console on Mac OS X
@@ -118,31 +123,31 @@ look like::
 
 Window's Command Prompt is not quite as powerful as its counterparts on Linux 
 and OS X, so you might like to start the Python Interpreter (see just below) 
-directly, or using the IDLE program that Python comes with. You can find these 
-in the Start menu.
+directly, or using the :program:`IDLE` program that Python comes with. 
+You can find these in the Start menu.
 
 Using Python
 ============
 
 The python program that you have installed will by default act as something 
-called an **interpreter**. An interpreter takes commands and runs them as you 
-enter them - very handy for trying things out.
+called an **interpreter**. An interpreter takes text commands and runs 
+them as you enter them - very handy for trying things out.
 
 Just type :program:`python` at your console, hit :kbd:`Enter`, and you should 
 enter Python's Interpreter.
 
 To find out which version of python you're running, 
-use ``python -V`` to tell you.
+instead type  ``python -V`` in your console to tell you.
 
 Interacting With Python
 -----------------------
 
 After Python opens, it will show you some contextual information similar to this::
 
-    Python 3.3.2 (default, May 21 2013, 15:40:45)
-    [GCC 4.8.0 20130502 (prerelease)] on linux
+    Python 3.5.0 (default, Sep 20 2015, 11:28:25) 
+    [GCC 5.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+    >>> 
 
 .. note::
 
@@ -150,7 +155,7 @@ After Python opens, it will show you some contextual information similar to this
    interactive Python interpeter session, also called the "Python shell".
    **This is different from the normal terminal command prompt!**
 
-You can now enter some python code. Try::
+You can now enter some code for python to run. Try::
 
     print("Hello world")
 
@@ -167,22 +172,50 @@ An extremely useful command is ``help()``, which enters a help functionality
 to explore all the stuff python lets you do, right from the interpreter.
 Press :kbd:`q` to close the help window and return to the Python prompt.
 
-To leave the interactive shell, press :kbd:`Ctrl-Z` and then 
-:kbd:`Enter` on Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, 
-you could also run the python command ``exit()``!
+To leave the interactive shell and go back to the console (the *system* shell), 
+press :kbd:`Ctrl-Z` and then :kbd:`Enter` on Windows, or :kbd:`Ctrl-D` on 
+OS X or Linux. Alternatively, you could also run the python command ``exit()``!
+
+
+Exercise
+--------
+
+Just above we demonstrated entering a command to figure out some math. Try 
+some math commands of your own! What operations does python know? Get it 
+to tell you what 239 and 588 added together, and then squared is.
+
+.. rst-class:: solution
+
+Solution
+--------
+
+Here are  some ways you might have got the answer:
+
+
+    >>> 239 + 588
+    827
+    >>> 827 * 827
+    683929
+
+    >>> (239 + 588) * (239 + 588)
+    683929
+
+    >>> (239 + 588) ** 2
+    683929
 
 Running Python files
 --------------------
 
 When you have a lot of python code to run, you will want to save it into 
-a file so, for instance, you can modify small parts of it (fix a bug) and 
-re-run it without having to repeatedly re-type the rest. 
-Instead you can save your code to a file and pass a file name to the 
-:program:`python` executable. It will execute that file instead of launching 
-the interactive interpreter.
+a file, so for instance, you can modify small parts of it (fix a bug) and 
+re-run the code without having to repeatedly re-type the rest. 
+Instead of typing commands in one-by-one you can save your code to a 
+file and pass the file name to the :program:`python` program. 
+It will execute that file's code instead of 
+launching its interactive interpreter.
 
-**Let's try that**.  Create a file :file:`hello.py` in your current directory
-with your favorite text editor and write the print command from above.  Now
+**Let's try that!**  Create a file :file:`hello.py` in your current directory
+with your favorite code editor and write the print command from above.  Now
 save that file. On Linux or OS X, you can also run ``touch hello.py`` to create
 an empty file to edit. To run this file with python, it's pretty easy:
 
@@ -193,7 +226,7 @@ an empty file to edit. To run this file with python, it's pretty easy:
 .. note::
 
    Make sure you are at your system command prompt, which will have ``$`` or 
-   ``>`` at the end, not at python's (which has ``>>>`` instead)!
+   ``>`` at the end, **not** at python's (which has ``>>>`` instead)!
 
 On Windows you should also be able to double-click the Python file to run it.
 
@@ -208,8 +241,8 @@ And now we are all set and can get started with turtle!
 
    Not getting "Hello world" but some crazy error about "can't open 
    file" or "No such file or directory?" Your command line might not be 
-   running in the directory you saved the file in. You can use 
-   the system command line to change your active directory with the 
+   running in the directory that you saved the file in. You can change 
+   the working directory of your current command line with the 
    :command:`cd` command, which stands for "change directory". On Windows, 
    you might want something like::
 
@@ -222,7 +255,7 @@ And now we are all set and can get started with turtle!
      $ cd Desktop/Python_Exercises
 
    This changes to the directory Python_Exercises under the Desktop folder 
-   (yours might be somewhere a bit different). If you don't know the location 
+   (yours might be somewhere different). If you don't know the location 
    of the directory where you saved the file, you can simply drag the 
    directory to the command line window.  If you don't know which 
    directory your shell is currently running in use :command:`pwd`, 
@@ -233,4 +266,4 @@ And now we are all set and can get started with turtle!
    When playing around with turtle, avoid naming your file :file:`turtle.py` 
    --- rather use more appropriate names such as :file:`square.py` or 
    :file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python 
-   will pick up *your* file instead of the standard turtle.
+   will pick up *your* file instead of the standard Python turtle module.

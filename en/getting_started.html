@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2015.10.02',
+        VERSION:     '2015.11.01',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -54,7 +54,7 @@
         </button>
         <a class="navbar-brand" href="index.html">
           Python for Beginners</a>
-        <span class="navbar-text navbar-version pull-left"><b>2015.10.02</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>2015.11.01</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -108,6 +108,8 @@
 </li>
 <li><a class="reference internal" href="#using-python">Using Python</a><ul>
 <li><a class="reference internal" href="#interacting-with-python">Interacting With Python</a></li>
+<li><a class="reference internal" href="#exercise">Exercise</a></li>
+<li><a class="reference internal" href="#solution">Solution</a></li>
 <li><a class="reference internal" href="#running-python-files">Running Python files</a></li>
 </ul>
 </li>
@@ -185,10 +187,11 @@ can be found here:</p>
 <p>Python 3 is preferable, being the newest version out!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your path, so it
-can be found by other programs. To do this, navigate to your
-installation directory (<code class="file docutils literal"><span class="pre">C:\Python33\</span></code>), open the <code class="file docutils literal"><span class="pre">Tools</span></code>,
-then <code class="file docutils literal"><span class="pre">Scripts</span></code> folders, and run the <code class="file docutils literal"><span class="pre">win_add2path.py</span></code>
+<p class="last">On Windows, you&#8217;ll want to add <strong class="program">Python</strong> to your PATH, so it
+can be found by other programs. With Python 3.5 or later, there should be
+and option to do this in the installer. Otherwise, you can navigate to your
+installation directory (<code class="file docutils literal"><span class="pre">C:\Python34\</span></code>), open the <code class="file docutils literal"><span class="pre">Tools</span></code>,
+then <code class="file docutils literal"><span class="pre">Scripts</span></code> folder, and run the <code class="file docutils literal"><span class="pre">win_add2path.py</span></code>
 file by double clicking on it.</p>
 </div>
 </div>
@@ -201,6 +204,9 @@ favourite knife. To start off with, you&#8217;ll just want a basic, easy-to-use 
 that doesn&#8217;t get in your way, but is still effective at writing python code.
 Here are some suggestions for those:</p>
 <ul class="simple">
+<li><a class="reference external" href="https://atom.io">Atom</a>: A new code editor available for Windows, Mac and Linux. It&#8217;s
+an open-source project developed by GitHub and is very easy to add
+functionality for, with its packages system.</li>
 <li><a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>: A great all around editor that&#8217;s easy to use. It&#8217;s Ctl+B
 shortcut lets you run the python file you&#8217;re working on straight away. Runs
 on Windows, Mac and Linux.</li>
@@ -216,8 +222,7 @@ more powerful Komodo IDE.</li>
 <p>If you&#8217;d like our recommendation, try out Sublime Text first.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable text
-editors.</p>
+<p class="last">Wordpad, TextEdit, Notepad, and Word are <strong>not</strong> suitable code editors.</p>
 </div>
 </div>
 </div>
@@ -226,14 +231,14 @@ editors.</p>
 <p>Ok, so python is this thing called a <strong>programming language</strong>. It takes text that
 you&#8217;ve written (usually referred to as <strong>code</strong>), turns it into instructions for
 your computer, and runs those instructions. We&#8217;ll be learning how to write code
-to do cool and useful stuff. No longer will you be bound to use others&#8217;
-programs to do things with your computer!</p>
+to do cool and useful stuff. No longer will you be bound to use <em>others&#8217;</em>
+programs to do things with your computer - you can make your own!</p>
 <p>Practically, Python is just another program on your computer. The first thing to
 learn is how to use and interact with it. There are in fact many ways to do this;
 the first one to learn is to interact with python&#8217;s interpreter,
 using your <strong>operating system&#8217;s</strong> (OS) console.</p>
 <p>A <strong>console</strong> (or &#8216;terminal&#8217;, or &#8216;command prompt&#8217;) is a <em>textual</em> way to
-interact with your OS, just as the &#8216;desktop&#8217;, in conjuction with your mouse,
+interact with your OS, just as the &#8216;desktop&#8217;, in conjunction with your mouse,
 is the <em>graphical</em> way to interact your system.</p>
 <div class="section" id="opening-a-console-on-mac-os-x">
 <h3>Opening a console on Mac OS X<a class="headerlink" href="#opening-a-console-on-mac-os-x" title="Permalink to this headline">¶</a></h3>
@@ -271,24 +276,24 @@ look like:</p>
 </div>
 <p>Window&#8217;s Command Prompt is not quite as powerful as its counterparts on Linux
 and OS X, so you might like to start the Python Interpreter (see just below)
-directly, or using the IDLE program that Python comes with. You can find these
-in the Start menu.</p>
+directly, or using the <strong class="program">IDLE</strong> program that Python comes with.
+You can find these in the Start menu.</p>
 </div>
 </div>
 <div class="section" id="using-python">
 <h2>Using Python<a class="headerlink" href="#using-python" title="Permalink to this headline">¶</a></h2>
 <p>The python program that you have installed will by default act as something
-called an <strong>interpreter</strong>. An interpreter takes commands and runs them as you
-enter them - very handy for trying things out.</p>
+called an <strong>interpreter</strong>. An interpreter takes text commands and runs
+them as you enter them - very handy for trying things out.</p>
 <p>Just type <strong class="program">python</strong> at your console, hit <code class="kbd docutils literal"><span class="pre">Enter</span></code>, and you should
 enter Python&#8217;s Interpreter.</p>
 <p>To find out which version of python you&#8217;re running,
-use <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code> to tell you.</p>
+instead type  <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code> in your console to tell you.</p>
 <div class="section" id="interacting-with-python">
 <h3>Interacting With Python<a class="headerlink" href="#interacting-with-python" title="Permalink to this headline">¶</a></h3>
 <p>After Python opens, it will show you some contextual information similar to this:</p>
-<div class="highlight-python"><div class="highlight"><pre>Python 3.3.2 (default, May 21 2013, 15:40:45)
-[GCC 4.8.0 20130502 (prerelease)] on linux
+<div class="highlight-python"><div class="highlight"><pre>Python 3.5.0 (default, Sep 20 2015, 11:28:25)
+[GCC 5.2.0] on linux
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
 &gt;&gt;&gt;
 </pre></div>
@@ -299,7 +304,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 interactive Python interpeter session, also called the &#8220;Python shell&#8221;.
 <strong>This is different from the normal terminal command prompt!</strong></p>
 </div>
-<p>You can now enter some python code. Try:</p>
+<p>You can now enter some code for python to run. Try:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -315,20 +320,45 @@ another command:</p>
 <p>An extremely useful command is <code class="docutils literal"><span class="pre">help()</span></code>, which enters a help functionality
 to explore all the stuff python lets you do, right from the interpreter.
 Press <code class="kbd docutils literal"><span class="pre">q</span></code> to close the help window and return to the Python prompt.</p>
-<p>To leave the interactive shell, press <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> and then
-<code class="kbd docutils literal"><span class="pre">Enter</span></code> on Windows, or <code class="kbd docutils literal"><span class="pre">Ctrl-D</span></code> on OS X or Linux. Alternatively,
-you could also run the python command <code class="docutils literal"><span class="pre">exit()</span></code>!</p>
+<p>To leave the interactive shell and go back to the console (the <em>system</em> shell),
+press <code class="kbd docutils literal"><span class="pre">Ctrl-Z</span></code> and then <code class="kbd docutils literal"><span class="pre">Enter</span></code> on Windows, or <code class="kbd docutils literal"><span class="pre">Ctrl-D</span></code> on
+OS X or Linux. Alternatively, you could also run the python command <code class="docutils literal"><span class="pre">exit()</span></code>!</p>
+</div>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Just above we demonstrated entering a command to figure out some math. Try
+some math commands of your own! What operations does python know? Get it
+to tell you what 239 and 588 added together, and then squared is.</p>
+</div>
+<div class="solution section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<p>Here are  some ways you might have got the answer:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">239</span> <span class="o">+</span> <span class="mi">588</span>
+<span class="go">827</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">827</span> <span class="o">*</span> <span class="mi">827</span>
+<span class="go">683929</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">239</span> <span class="o">+</span> <span class="mi">588</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">239</span> <span class="o">+</span> <span class="mi">588</span><span class="p">)</span>
+<span class="go">683929</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">239</span> <span class="o">+</span> <span class="mi">588</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="go">683929</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="running-python-files">
 <h3>Running Python files<a class="headerlink" href="#running-python-files" title="Permalink to this headline">¶</a></h3>
 <p>When you have a lot of python code to run, you will want to save it into
-a file so, for instance, you can modify small parts of it (fix a bug) and
-re-run it without having to repeatedly re-type the rest.
-Instead you can save your code to a file and pass a file name to the
-<strong class="program">python</strong> executable. It will execute that file instead of launching
-the interactive interpreter.</p>
-<p><strong>Let&#8217;s try that</strong>.  Create a file <code class="file docutils literal"><span class="pre">hello.py</span></code> in your current directory
-with your favorite text editor and write the print command from above.  Now
+a file, so for instance, you can modify small parts of it (fix a bug) and
+re-run the code without having to repeatedly re-type the rest.
+Instead of typing commands in one-by-one you can save your code to a
+file and pass the file name to the <strong class="program">python</strong> program.
+It will execute that file&#8217;s code instead of
+launching its interactive interpreter.</p>
+<p><strong>Let&#8217;s try that!</strong>  Create a file <code class="file docutils literal"><span class="pre">hello.py</span></code> in your current directory
+with your favorite code editor and write the print command from above.  Now
 save that file. On Linux or OS X, you can also run <code class="docutils literal"><span class="pre">touch</span> <span class="pre">hello.py</span></code> to create
 an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python hello.py
@@ -337,7 +367,7 @@ an empty file to edit. To run this file with python, it&#8217;s pretty easy:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Make sure you are at your system command prompt, which will have <code class="docutils literal"><span class="pre">$</span></code> or
-<code class="docutils literal"><span class="pre">&gt;</span></code> at the end, not at python&#8217;s (which has <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> instead)!</p>
+<code class="docutils literal"><span class="pre">&gt;</span></code> at the end, <strong>not</strong> at python&#8217;s (which has <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> instead)!</p>
 </div>
 <p>On Windows you should also be able to double-click the Python file to run it.</p>
 <p>When pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> now, the file is executed and you see the output
@@ -349,8 +379,8 @@ to the interactive shell.</p>
 <p class="first admonition-title">Note</p>
 <p>Not getting &#8220;Hello world&#8221; but some crazy error about &#8220;can&#8217;t open
 file&#8221; or &#8220;No such file or directory?&#8221; Your command line might not be
-running in the directory you saved the file in. You can use
-the system command line to change your active directory with the
+running in the directory that you saved the file in. You can change
+the working directory of your current command line with the
 <strong class="command">cd</strong> command, which stands for &#8220;change directory&#8221;. On Windows,
 you might want something like:</p>
 <div class="highlight-python"><div class="highlight"><pre>&gt; cd Desktop\Python_Exercises
@@ -361,7 +391,7 @@ you might want something like:</p>
 </pre></div>
 </div>
 <p class="last">This changes to the directory Python_Exercises under the Desktop folder
-(yours might be somewhere a bit different). If you don&#8217;t know the location
+(yours might be somewhere different). If you don&#8217;t know the location
 of the directory where you saved the file, you can simply drag the
 directory to the command line window.  If you don&#8217;t know which
 directory your shell is currently running in use <strong class="command">pwd</strong>,
@@ -372,7 +402,7 @@ which stands for &#8220;print working directory&#8221;.</p>
 <p class="last">When playing around with turtle, avoid naming your file <code class="file docutils literal"><span class="pre">turtle.py</span></code>
 &#8212; rather use more appropriate names such as <code class="file docutils literal"><span class="pre">square.py</span></code> or
 <code class="file docutils literal"><span class="pre">rectangle.py</span></code>.  Otherwise, whenever you refer to <code class="docutils literal"><span class="pre">turtle</span></code>, Python
-will pick up <em>your</em> file instead of the standard turtle.</p>
+will pick up <em>your</em> file instead of the standard Python turtle module.</p>
 </div>
 </div>
 </div>
