@@ -4,15 +4,28 @@ Getting started
 What you'll need
 ================
 
+A Computer
+----------
+
+It does not matter if your computer runs MS Windows, GNU/Linux or Apple OS X.
+Python will work on these systems and more.
+
+You also don't need a very powerful machine so don't worry if you computer is a bit old.
+If you don't have a computer then a cheap Rasberry Pi computer will work well,
+but you'll need to provide a screen, keyboard and mouse.
+
+Refer to the details of the class you are attending for more information.
+
+
 A Python!
 ---------
 
-If you haven't yet got python, the latest official installation packages 
+If you haven't yet got Python, the latest official installation packages 
 can be found here:
 
 http://python.org/download/
 
-Python 3 is preferable, being the newest version out!
+You should install Python 3.
 
 .. note::
 
@@ -20,7 +33,8 @@ Python 3 is preferable, being the newest version out!
    can be found by other programs.
 
    When installing Python 3.5 or later, there should be tick box
-   option to do this on the first page of the installer. Make sure you tick this on.
+   option to do this on the first page of the installer.
+   Make sure you tick this on.
 
 And a Code Editor
 -----------------
@@ -30,11 +44,13 @@ many around, and it is one of the most personal choices a programmer can
 make - Like a tennis-player choosing their racket, or a chef choosing their 
 favourite knife. To start off with, you'll just want a basic, easy-to-use one 
 that doesn't get in your way, but is still effective at writing python code. 
-Here are some suggestions for those:
+Here are some suggestions:
 
-- `Atom`_: A new code editor available for Windows, Mac and Linux. It's 
+- `Atom`_: A code editor for Windows, Mac and Linux. It's 
   an open-source project developed by GitHub and is very easy to add 
-  functionality for, with its packages system.
+  functionality using its packages system. If you add the `Script`
+  package then you can run the Python file you are working on straight away
+  using the Ctl+i shortcut.
 
 - `Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B 
   shortcut lets you run the python file you're working on straight away. Runs 
@@ -60,7 +76,7 @@ Here are some suggestions for those:
 .. _Kate: http://kate-editor.org/
 .. _Komodo Edit: http://www.activestate.com/komodo-edit
 
-If you'd like our recommendation, try out Sublime Text first.
+If you'd like our recommendation, try out Atom first.
 
 .. tip::
 
