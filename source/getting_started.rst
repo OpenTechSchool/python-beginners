@@ -17,11 +17,10 @@ Python 3 is preferable, being the newest version out!
 .. note::
 
    On Windows, you'll want to add :program:`Python` to your PATH, so it 
-   can be found by other programs. With Python 3.5 or later, there should be 
-   and option to do this in the installer. Otherwise, you can navigate to your 
-   installation directory (:file:`C:\\Python34\\`), open the :file:`Tools`, 
-   then :file:`Scripts` folder, and run the :file:`win_add2path.py` 
-   file by double clicking on it.
+   can be found by other programs.
+
+   When installing Python 3.5 or later, there should be tick box
+   option to do this on the first page of the installer. Make sure you tick this on.
 
 And a Code Editor
 -----------------
