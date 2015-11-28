@@ -100,8 +100,8 @@ def compile_pos(language):
     args = [
         'sphinx-intl build',
         '-l %s' % language,
-        '-c',
-        os.path.join(SOURCE_DIR, 'conf.py'),
+        # '-c',
+        # os.path.join(SOURCE_DIR, 'conf.py'),
     ]
     local(' '.join(args))
 
