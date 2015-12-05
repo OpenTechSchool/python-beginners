@@ -18,15 +18,15 @@ In Python conditional loops are defined with the ``while`` statement::
         sentence = word + ' ' + sentence
     print()
     print('Aha! You said:')
-    print(sentence)
+    print(sentence + ".")
 
 We call this part of the code the 'conditional': ``'.' not in word``
 
 Whether the conditional return True or not determines whether the code inside 
 the ``while`` loop runs.
 
-Read the code above, and see if you can summarise in your head what 
-it what it do (what its final output will be).
+Read the code above, and see if you can summarise what it does
+(what its final output will be) in your head.
 
 Then copy it into a file, say :file:`sentence.py` and run it - see 
 exactly what it does. Does that match up with what you thought?
@@ -55,7 +55,7 @@ a ``while`` loop, and some new turtle functions:
 * ``turtle.towards(0, 0)`` - Returns the angle to get back to origin (0, 0)
 * ``turtle.setheading(angle)`` - Directly sets the turtle's direction
 
-You could try playing with a turtle in the interpreter and using these 
+You could try playing with a turtle in the interpreter using these 
 functions to check exactly what they do, if you like.
 
 Now you will need to implement the prison logic using these turtle 
