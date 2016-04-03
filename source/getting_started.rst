@@ -16,11 +16,14 @@ Python 3 is preferable, being the newest version out!
 
 .. note::
 
-   On Windows, you'll want to add :program:`Python` to your PATH, so it 
+   On Windows, you'll need to add :program:`Python` to your ``%PATH%``, so it 
    can be found by other programs.
 
-   When installing Python 3.5 or later, there should be tick box
+   When installing Python 3.5 or later, there should be tick box 
    option to do this on the first page of the installer. Make sure you tick this on.
+
+   Otherwise, you can run the script under :file:`\Tools\Scripts\win_add2path.py`
+   where you installed Python.
 
 And a Code Editor
 -----------------
@@ -32,35 +35,35 @@ favourite knife. To start off with, you'll just want a basic, easy-to-use one
 that doesn't get in your way, but is still effective at writing python code. 
 Here are some suggestions for those:
 
-- `Atom`_: A new code editor available for Windows, Mac and Linux. It's 
-  an open-source project developed by GitHub and is very easy to add 
-  functionality for, with its packages system.
+- `Atom`_: Windows, Mac & Linux. A new code editor made by Github. It's 
+  an open-source project and is very easy to add functionality for, 
+  with its packages system.
 
-- `Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B 
-  shortcut lets you run the python file you're working on straight away. Runs 
-  on Windows, Mac and Linux.
+- `Sublime Text`_: Windows, Mac & Linux. A great all around editor that's 
+  easy to use. It's Ctl+B shortcut lets you run the python file you're working 
+  on straight away.
 
-- `Geany`_: A simple editor that doesn't aim to be too complicated. Available 
-  on Windows and Linux (you can probably find it in your package manager).
+- `Geany`_: Windows, Mac & Linux. A simple editor that doesn't aim 
+  to be too complicated.
 
-- `TextMate`_: One of the most famous code editors for Mac, it used to be a paid 
-  product but has since been open-sourced.
+- `TextMate`_: Mac. One of the most famous code editors for Mac, it used to 
+  be a paid product but has since been open-sourced.
 
-- `Gedit`_ and `Kate`_: if you run Linux using Gnome or KDE respectively, you 
-  might already have one of these two installed!
+- `Gedit`_ and `Kate`_: Linux. If you run Linux using Gnome or KDE respectively, 
+  you might already have one of these two installed!
 
-- `Komodo Edit`_: a sleak, free editor for Mac, Windows and Linux, based on the 
+- `Komodo Edit`_: Windows, Mac & Linux. a sleak, free editor based on the 
   more powerful Komodo IDE.
 
 .. _Atom: https://atom.io
-.. _Sublime Text: http://www.sublimetext.com/
+.. _Sublime Text: https://www.sublimetext.com/3
 .. _Geany: http://www.geany.org/
 .. _TextMate: http://macromates.com/
 .. _Gedit: https://projects.gnome.org/gedit/
 .. _Kate: http://kate-editor.org/
 .. _Komodo Edit: http://www.activestate.com/komodo-edit
 
-If you'd like our recommendation, try out Sublime Text first.
+If you'd like our recommendation, try out Sublime Text 3 first.
 
 .. tip::
 
