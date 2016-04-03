@@ -22,11 +22,12 @@ In Python conditional loops are defined with the ``while`` statement::
 
 We call this part of the code the 'conditional': ``'.' not in word``
 
-Whether the conditional return True or not determines whether the code inside 
-the ``while`` loop runs.
+Whether the conditional returns True or not determines whether the code inside 
+the ``while`` loop runs. Of course, it repeats the check every time the loop
+is run again.
 
 Read the code above, and see if you can summarise in your head what 
-it what it do (what its final output will be).
+it should do (what its final output will be).
 
 Then copy it into a file, say :file:`sentence.py` and run it - see 
 exactly what it does. Does that match up with what you thought?
