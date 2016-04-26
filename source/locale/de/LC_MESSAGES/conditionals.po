@@ -158,7 +158,7 @@ msgid ""
 "Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
 "function, to see the effect. We often call this kind of code \"data "
 "munging\", and it is very common."
-msgstr "Versuche de Befehl ``direction = direction.strip().lower`` zu der Funktion ``move()`` hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns ''data munging'' (Datenbastelei) genannt. Sie ist sehr häufig."
+msgstr "Versuche de Befehl ``direction = direction.strip().lower()`` zu der Funktion ``move()`` hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns ''data munging'' (Datenbastelei) genannt. Sie ist sehr häufig."
 
 # d26798a24e044d399280f7d78a8becea
 #: ../../../source/conditionals.rst:103
