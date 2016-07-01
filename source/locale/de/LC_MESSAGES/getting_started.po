@@ -276,7 +276,8 @@ msgid ""
 "Press :kbd:`Enter` and see what happens. After showing the results, Python "
 "will bring you back to the interactive prompt, where you could enter another"
 " command:"
-msgstr ""
+msgstr "Drücke :kbd:`Enter` und schau, was passiert. Nachdem das Ergebnis angezeigt wurde, bringt der Interpreter "
+"dich zurück zum Eingabeprompt, wo du einen neuen Befehl eingeben kannst:"
 
 # 6bff2421d33b4490befb472084dc2bb6
 #: ../../../source/getting_started.rst:166
