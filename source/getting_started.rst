@@ -165,7 +165,7 @@ Press :kbd:`Enter` and see what happens. After showing the results, Python
 will bring you back to the interactive prompt, where you could enter 
 another command:
 
-    >>> print("Hello world")
+    >>> print("Hello world") 
     Hello world
     >>> (1 + 4) * 2
     10
