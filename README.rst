@@ -1,4 +1,4 @@
-Introduction to programming with Python
+Introduction to basic programming with Python
 ***************************************
 
 This workshop is an introduction to basic programming concepts and
