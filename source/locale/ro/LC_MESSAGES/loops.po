@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 11:07+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/loops.rst:2
+msgid "Loops"
+msgstr "Bucle"
+
+#: ../../../source/loops.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/loops.rst:7
+msgid ""
+"Something you might have noticed: our programs often feature repetition. "
+"Python has a powerful concept it makes use of called looping (jargon: "
+"*iteration*), which we can use to cut out our reptitive code! For now, **try"
+" this easy example**::"
+msgstr "Ceva ce este posibil să fi observat: programele adeseori au nevoie de repetiții. Python are un concept puternic pe care îl utilizează, numit bucle (în jargon: *iterații*), care poate fi folosit pentru a reduce codul repetitiv! Pentru moment, **încearcă acest exemplu simplu**:"
+
+#: ../../../source/loops.rst:15
+msgid ""
+"This is incredibly helpful if we want to do something multiple times --- "
+"say, drawing the individual border lines of a shape --- but only want to "
+"write that action once. Here's another version of a loop::"
+msgstr "Este incredibil de util dacă dorim să facem ceva de mai multe ori -- să spunem, să desenăm separat marginile unei forme -- dar dorim să scriem acea acțiune o singură dată. Iată o altă versiune de buclă:"
+
+#: ../../../source/loops.rst:22
+msgid ""
+"Notice how we write only one line of code using ``i``, but it takes on 10 "
+"different values?"
+msgstr "Observați cum scriem doar o linie de cod folosind ``i``, dar ia zece valori diferite?"
+
+#: ../../../source/loops.rst:25
+msgid ""
+"The :samp:`range(n)` function can be considered a shorthand for ``0, 1, 2, "
+"..., n-1``. If you want to know more about it, you can use the help in the "
+"Python shell by typing ``help(range)``. Use the :kbd:`q` key to exit the "
+"help again."
+msgstr "Funcția :samp:`range(n)` poate fi considerată o prescurtare pentru ``0, 1, 2, ..., n-1``. Dacă dorești să afli mai mult, poți folosi documentația din interpretorul Python scriind ``help(range)``. Folosește tasta :kbd:`q` pentru a ieși din documentație."
+
+#: ../../../source/loops.rst:30
+msgid "You can also loop over elements of your choice::"
+msgstr "Poți de asemenea sa treci prin elemente la alegere:"
+
+#: ../../../source/loops.rst:39
+msgid ""
+"Write this example out and run it with python, to check it works how you "
+"might expect."
+msgstr "Scrie acest exemplu și încearcă-l cu Python, ca să vezi dacă merge așa cum te aștepți."
+
+#: ../../../source/loops.rst:44
+msgid ""
+"Notice how above, the lines of code that are *looped*, are the ones that are"
+" *indented*. This is an important concept in Python - that's how it knows "
+"which lines should be used in the ``for`` loop, and which come after, as "
+"part of the rest of your program. Use four spaces (hitting tab) to indent "
+"your code."
+msgstr "Este de remarcat cum mai sus, liniile de cod care sunt parte a *buclei* sunt cele care sunt *indentate*. Acesta este un concept important în Python - așa știe care linii fac parte din bucla ``for``, și care vin după, ca parte a restului programului. Utilizează patru spații (apasând tasta :kbd:`TAB`) pentru a indenta codul tău."
+
+#: ../../../source/loops.rst:50
+msgid ""
+"Sometimes you want to repeat some code a number of times, but don't care "
+"about the value of the ``i`` variable; so it can be good practice to replace"
+" it with ``_`` instead. This signifies that we don't care about its value, "
+"or don't wish to use it. Here's a simple example::"
+msgstr "Uneori vrei să repeți o bucată de cod de mai multe ori, dar nu te interesează valoarea variabilei ``i``; în acest caz este o bună practică să o înlocuiești cu ``_``. Asta înseamnă că nu te interesează valoarea, sau că nu dorești să o utilizezi. Iată un exemplu simplu:"
+
+#: ../../../source/loops.rst:58
+msgid ""
+"You may or may not be wondering about the variable ``i`` - why is it used "
+"all the time above? Well, it simply stands for \"index\" and is one of the "
+"most common variable names ever found in code. But if you are looping over "
+"something other than just numbers, be sure to name it something better! For "
+"instance::"
+msgstr "Poți să te întrebi sau nu despre variabila ``i`` - de ce e folosită de fiecare dată? Ei bine, semnifică \"index\" și este unul dintre cele mai folosite nume de variabile întâlnite în cod. Dar dacă iterezi peste altceva decât numere, asigură-te că îi dai un nume mai bun! De exemplu:"
+
+#: ../../../source/loops.rst:66
+msgid ""
+"This is immediately clearer to understand than if we had used ``i`` instead "
+"of ``drink``."
+msgstr "Este cu mult mai ușor de înțeles decât dacă am fi folosit ``i`` în loc de ``drink``."
+
+#: ../../../source/loops.rst:70
+msgid "Drawing a dashed line"
+msgstr "Desenarea unei linii întrerupte"
+
+#: ../../../source/loops.rst:73 ../../../source/loops.rst:129
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/loops.rst:75
+msgid ""
+"Draw a dashed line.  You can move the turtle without the turtle drawing its "
+"movement by using the ``turtle.penup()`` function; to tell it to draw again,"
+" use ``turtle.pendown()``."
+msgstr "Desenează o linie întreruptă. Poți mișca țestoasa fără ca aceasta să deseneze utilizând funcția ``turtle.penup()`` (ridică penița); pentru ca aceasta să deseneze din nou, folosește ``turtle.pendown()`` (penița jos)."
+
+#: ../../../source/loops.rst:84 ../../../source/loops.rst:138
+msgid "Solution"
+msgstr "Soluția"
+
+#: ../../../source/loops.rst:95 ../../../source/loops.rst:147
+msgid "Bonus"
+msgstr "Supliment"
+
+#: ../../../source/loops.rst:97
+msgid "Can you make the dashes become larger as the line progresses?"
+msgstr "Poți face dungile să fie mai lungi pe măsură ce desenezi linia?"
+
+#: ../../../source/loops.rst:103
+msgid "Feeling lost?  Inspect ``i`` at every run of the loop::"
+msgstr "Te-ai încurcat? Inspectează valoarea lui ``i`` la fiecare rulare a buclei:"
+
+#: ../../../source/loops.rst:109
+msgid ""
+"Can you utilize ``i`` --- commonly called the **index** variable or loop "
+"variable --- to get increasing step sizes?"
+msgstr "Poți utiliza ``i`` --- numită uzual variabila **index** sau de iterație --- pentru a obține pași din ce în ce mai mari?"
+
+#: ../../../source/loops.rst:113
+msgid "Comments"
+msgstr "Comentarii"
+
+#: ../../../source/loops.rst:115
+msgid ""
+"In the example above, the line that starts with a ``#`` is called a comment."
+" In Python, anything that goes on a line after ``#`` is ignored by the "
+"computer. Use comments to explain what your program does, without changing "
+"the behaviour for the computer. They can also be used to easily and "
+"temporarily disable, or \"comment out\" some lines of code."
+msgstr "În exemplul de mai sus, linia care începe cu ``#`` este numită un comentariu. În Python, orice urmează pe o linie după ``#`` este ignorat de calculator. Folosește comentarii pentru a explica ce face programul tău, fără a schimba modul de comportare al calculatorului. Pot fi folosite și pentru a dezactiva rapid și temporar, sau a \"comenta\", linii de cod."
+
+#: ../../../source/loops.rst:121
+msgid "Comments can also go at the end of a line, like this::"
+msgstr "Comentariile pot fi puse de asemenea la sfârșitul unei linii, așa:"
+
+#: ../../../source/loops.rst:126
+msgid "More Efficient Squares"
+msgstr "Pătrate mai eficiente"
+
+#: ../../../source/loops.rst:131
+msgid ""
+"The squares we were drawing at the start of this tutorial had a lot of "
+"repeated lines of code. Can you write out a square drawing program in fewer "
+"lines by utilizing loops?"
+msgstr "Pătratele pe care le desenam la începutul acestui curs aveau multe linii de cod repetate. Poți scrie un program de desenare pătrate în mai puține linii de cod utilizând bucle?"
+
+#: ../../../source/loops.rst:149
+msgid ""
+"Try *nesting* loops, by putting one right under (*inside*) the other, with "
+"some drawing code that's inside both. Here's what it can look like::"
+msgstr "Încearcă să faci bucle *imbricate*, punând una chiar după (*înăuntrul*) alteia, cu câteva comenzi de desen care aparțin amândorura. Uite cum poate arăta:"
+
+#: ../../../source/loops.rst:160
+msgid ""
+"Replace the ``...``'s with your own code, and see if you can come up with "
+"something funny or interesting! :sup:`Mistakes are encouraged!`"
+msgstr "Înlocuiește ``...`` cu codul tău, și vezi dacă poți obține ceva drăguț sau interesant! :sup:`Este în regulă să greșești!`"

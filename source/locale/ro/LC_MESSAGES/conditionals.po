@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 11:16+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/conditionals.rst:2
+msgid "Conditional statements"
+msgstr "Instrucțiuni condiționale"
+
+#: ../../../source/conditionals.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr "Până acum am îndeplinit sarcini predefinite, dar la modul serios nu am făcut decât ce face un casetofon care urmează redă același lucru de fiecare dată. Ceea ce face programarea atât de puternică sunt instrucțiunile condiționale. Este facilitatea de a *testa* o variabilă față de o valoare și de a reacționa într-un fel dacă condiția este îndeplinită de variabilă și în alt fel dacă nu. Acestea sunt în mod normal denumite de programatori *instrucțiuni if*."
+
+#: ../../../source/conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr "Pentru a ști dacă condiția este *Adevărată* sau *Falsă* avem nevoie de un nou tip de date: logice. Acestea permit operații logice. O instrucțiune sau operație logică poate fi evaluată la *Adevărat* sau *Fals*. Instrucțiunea noastră condițională poate fi înțeleasă ca:"
+
+#: ../../../source/conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr "**dacă** *(o condiție este Adevărată)*:"
+
+#: ../../../source/conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr "*atunci execută aceste lucruri doar pentru 'Adevărat'*"
+
+#: ../../../source/conditionals.rst:23
+msgid "**else**:"
+msgstr "**altfel**:"
+
+#: ../../../source/conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr "*altfel fă aceste lucruri numai pentru 'Fals'*."
+
+#: ../../../source/conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr "Condiția poate fi orice se evaluează la *Adevărat* sau *Fals*. Comparațiile întotdeauna întorc *Adevărat* sau *Fals*, de exemplu ``==`` (este egal cu), ``>`` (mai mare decât), ``<`` (mai mic decât)."
+
+#: ../../../source/conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr "Partea **else** este opțională. Dacă nu o folosești, atunci când condiția are valoarea 'Fals' nu se va întâmpla nimic."
+
+#: ../../../source/conditionals.rst:34
+msgid "Examples"
+msgstr "Exemple"
+
+#: ../../../source/conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr "Iată câteva exemple. Poți să le citești linie cu linie și să te gândești ce fac, sau poți să le execuți pentru a fi sigur::"
+
+#: ../../../source/conditionals.rst:54
+msgid "Giving Directions"
+msgstr "Cum să dai indicații"
+
+#: ../../../source/conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr "Țestoasele din Python pot fi foarte bune la executat instrucțiuni. Hai să încercăm să folosim funcția ``input()`` pentru a cere utilizatorului o direcție în care să miște țestoasa. Pentru a păstra lucrurile simple vom accepta doar două instrucțiuni: \"left\" (stânga) și \"right\" (dreapta)."
+
+#: ../../../source/conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr "Folosești Python 2? Funcția ``input()`` se numește ``raw_input()``."
+
+#: ../../../source/conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr "Este mult mai ușor să definești asta ca o funcție, adică::"
+
+#: ../../../source/conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr "Acum oricând folosești ``move()`` ți se va cere să alegi ``left`` (stânga) sau ``right`` (dreapta)."
+
+#: ../../../source/conditionals.rst:81
+msgid "\"data munging\""
+msgstr "\"prelucrarea datelor\""
+
+#: ../../../source/conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr "În acest program, țestoasa va răspunde doar la exact ``left`` sau ``right``, fără excepție. Deși ``Left`` sau ``LEFT`` ar putea părea același lucru ca și ``left`` pentru un om, asta nu e valabil și în cazul programării. Python are niște metode care să te ajute la asta. Un șir ce caractere are metodele ``.strip()``, care elimină spațiile albe și ``.lower()`` care transformă toate literele în litere mici."
+
+#: ../../../source/conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr "Iată câteva exemple care afișează efectele lui ``.strip()`` și ``.lower()``::"
+
+#: ../../../source/conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr "Încearcă să adaugi ``direction = direction.strip().lower()`` la funcția ``move()``, pentru a vedea ce efect are. Adeseori numim genul acesta de cod \"data munging\" (prelucrarea datelor), și este foarte des întâlnit."
+
+#: ../../../source/conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr "Poți să adaugi opțiuni suplimentare pentru a face țestoasa să deseneze și alte lucruri? Ce zici de ``hexagon``?"

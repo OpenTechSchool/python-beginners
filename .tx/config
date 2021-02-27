@@ -1,0 +1,64 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[python-for-beginners.conditional_loops]
+file_filter = source/locale/<lang>/LC_MESSAGES/conditional_loops.po
+source_file = _build/locale/en/conditional_loops.pot
+source_lang = en
+
+[python-for-beginners.conditionals]
+file_filter = source/locale/<lang>/LC_MESSAGES/conditionals.po
+source_file = _build/locale/en/conditionals.pot
+source_lang = en
+
+[python-for-beginners.copyright]
+file_filter = source/locale/<lang>/LC_MESSAGES/copyright.po
+source_file = _build/locale/en/copyright.pot
+source_lang = en
+
+[python-for-beginners.functions_parameters]
+file_filter = source/locale/<lang>/LC_MESSAGES/functions_parameters.po
+source_file = _build/locale/en/functions_parameters.pot
+source_lang = en
+
+[python-for-beginners.functions]
+file_filter = source/locale/<lang>/LC_MESSAGES/functions.po
+source_file = _build/locale/en/functions.pot
+source_lang = en
+
+[python-for-beginners.getting_started]
+file_filter = source/locale/<lang>/LC_MESSAGES/getting_started.po
+source_file = _build/locale/en/getting_started.pot
+source_lang = en
+
+[python-for-beginners.index]
+file_filter = source/locale/<lang>/LC_MESSAGES/index.po
+source_file = _build/locale/en/index.pot
+source_lang = en
+
+[python-for-beginners.logical_operators]
+file_filter = source/locale/<lang>/LC_MESSAGES/logical_operators.po
+source_file = _build/locale/en/logical_operators.pot
+source_lang = en
+
+[python-for-beginners.loops]
+file_filter = source/locale/<lang>/LC_MESSAGES/loops.po
+source_file = _build/locale/en/loops.pot
+source_lang = en
+
+[python-for-beginners.simple_drawing]
+file_filter = source/locale/<lang>/LC_MESSAGES/simple_drawing.po
+source_file = _build/locale/en/simple_drawing.pot
+source_lang = en
+
+[python-for-beginners.variables]
+file_filter = source/locale/<lang>/LC_MESSAGES/variables.po
+source_file = _build/locale/en/variables.pot
+source_lang = en
+
+[python-for-beginners.where_to_go]
+file_filter = source/locale/<lang>/LC_MESSAGES/where_to_go.po
+source_file = _build/locale/en/where_to_go.pot
+source_lang = en
+

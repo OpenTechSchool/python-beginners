@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-23 11:13+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 31856338060a4069a15c76364d66abd7
+#: ../../../source/functions_parameters.rst:2
+msgid "Functions with parameters"
+msgstr "매개 변수가 있는 함수"
+
+# df97f4979ba94e3ca18738975ae5d4ec
+#: ../../../source/functions_parameters.rst:5
+msgid "Introduction"
+msgstr "소개"
+
+# 05764368119b4a3dbd5615f52fceded3
+#: ../../../source/functions_parameters.rst:7
+msgid ""
+"As we shrink down our code and add functions to remove duplication, we are "
+"*factorizing* it. This is a good thing to do. But the functions we have "
+"defined so far are not very flexible. The variables are defined inside the "
+"function, so if we want to use a different angle or a distance then we need "
+"to write a new function. Our hexagon function can only draw one size of "
+"hexagon!"
+msgstr "반복되는 코드를 제거하기 위해 코드를 함수에 넣은 상태로 함수를 추가하는 것처럼, 코드를 *정리* 하겠어요. 하면 좋은 일인데 정의한 함수는 그리 썩 유연하진 않아요. 변수는 함수 안에 정의했기 때문에 각각 다른 값의 각이나 거리를 사용하려고 하면 새 함수를 작성해야 하거든요. 육각형 함수는 한가지 크기의 육각형만 그려요!"
+
+# b79d85f5e8a449c892c87e2ba2da7dcc
+#: ../../../source/functions_parameters.rst:14
+msgid ""
+"That is why we need to be able to give parameters, also called *arguments*, "
+"to the function.  This way the *variables* in the function can have "
+"different values each time we call the function:"
+msgstr "이게 왜 매개 변수를 함수에 주어야 하느냐에 대한 이유인데, 매개 변수는 *인자*라고도 해요. 이 방법을 통해 함수 안의 *변수*에 함수를 호출할 때 매번 다른 값을 줄 수 있어요:"
+
+# 0671007ca0a04689b42d236a2ebfd6f7
+#: ../../../source/functions_parameters.rst:18
+msgid ""
+"Remember how we defined the function ``line_without_moving()`` in the "
+"previous section::"
+msgstr "앞의 장에서 ``line_without_moving()`` 함수를 어떻게 정의했는지 기억해보세요::"
+
+# 1e7a466cbda54b848aa7b52bdcba93f8
+#: ../../../source/functions_parameters.rst:25
+msgid "We can improve it by giving it a parameter::"
+msgstr "여기에 매개 변수를 주어 구현할 수도 있어요::"
+
+# e95e98b502e248fcb92752393b176ea1
+#: ../../../source/functions_parameters.rst:31
+msgid ""
+"The parameter acts as a *variable* only known inside the function's "
+"definition. We use the newly defined function by calling it with the value "
+"we want the parameter to have like this::"
+msgstr "매개 변수는 함수 내부에 정의한 걸로 알려진 *변수* 처럼 동작해요. 새로 정의한 함수는 매개 변수에 넣으려는 값으로 호출하는 방법을 통해 다음 처럼 사용해요::"
+
+# f57bfa231e7748aa8950a42c59fac2f1
+#: ../../../source/functions_parameters.rst:38
+msgid ""
+"We have been using functions with parameters since the beginning of the "
+"tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
+msgstr "따라하기 안내서 앞부분의 ``turtle.forward()``, ``turtle.left()``,  등을 사용할 때부터 우리는 이미 매개 변수와 함수를 같이 활용해보았어요."
+
+# 572658a5ac4144cd9399c44d8e3c65c5
+#: ../../../source/functions_parameters.rst:41
+msgid ""
+"And we can put as many arguments (or parameters) as we want, separating them"
+" with commas and giving them different names::"
+msgstr "그리고 우리가 원하는 대로 수많은 인자(또는 매개 변수)를 놓을 수 있는데요, 이 값을 쉼표로 구분할 수 있고 다른 이름을 줄 수 있어요::"
+
+# 04e2dc810b364479bd14718bb15c9983
+#: ../../../source/functions_parameters.rst:50
+msgid "A parameterized function for a variable size hexagon"
+msgstr "다양한 크기의 육각형을 그리는 매개 변수를 부여한 함수"
+
+# 0f0f95dfcc8c43cba60a6f18e52be0db
+# 0a13fd0237fa4fc7a07937ce33637458
+#: ../../../source/functions_parameters.rst:53
+#: ../../../source/functions_parameters.rst:74
+msgid "Exercise"
+msgstr "연습"
+
+# fec2c7a4385a4b199af7d38017f3bbdf
+#: ../../../source/functions_parameters.rst:55
+msgid ""
+"Write a function that allows you to draw hexagons of any size you want, each"
+" time you call the function."
+msgstr "함수를 호출할 때마다 원하는 크기로 육각형을 그릴 수 있는 함수를 작성해보세요."
+
+# b9f7cb0e3eb44448a9e7ea0ae9272dec
+# 1d779f3323a34ba1a39e66aec5a19fce
+#: ../../../source/functions_parameters.rst:61
+#: ../../../source/functions_parameters.rst:90
+msgid "Solution"
+msgstr "해결책"
+
+# 6ad406b7394949f6b91a18449da6bf3a
+#: ../../../source/functions_parameters.rst:71
+msgid "A function of several parameters"
+msgstr "몇가지 매개 변수가 들어간 함수"
+
+# c7d8b33958194034a54d2b9f8da33889
+#: ../../../source/functions_parameters.rst:76
+msgid ""
+"Write a function that will draw a shape of *any* number of sides (let's "
+"assume greater than two) of any side length. Get it to draw some different "
+"shapes."
+msgstr "어떤 변의 길이를 가진 *어떤* 변(2보단 커야겠죠?)의 갯수만큼 도형을 그리는 함수를 작성해보아요. 각기 다른 도형을 그려보세요."
+
+# b2d4621c26104fda805bcf9168e89328
+#: ../../../source/functions_parameters.rst:79
+msgid "Here's an example of drawing shapes with this function:"
+msgstr "이 함수를 통해 도형을 그리는 예제를 보여드릴께요:"
+
+# 9b4e351d67af46e8ae6f3d96427d56f9
+#: ../../../source/functions_parameters.rst:85
+msgid "The sum of the external angles of any shape is always 360 degrees!"
+msgstr "어떤 도형이든 외각의 합은 360도가 돼요!"
+
+# 9f40085c5c1641ccb93840304925909b
+#: ../../../source/functions_parameters.rst:100
+msgid "Bonus"
+msgstr "덤"
+
+# 26f9be45064e4740881b62f195ce82c4
+#: ../../../source/functions_parameters.rst:102
+msgid ""
+"It might sound crazy, but it's perfectly possible to pass a *function* as a "
+"parameter to another function! Python regards functions as perfectly normal "
+"'things', the same as variables, numbers and strings."
+msgstr "미친 소릴지도 모르겠는데 *함수*를 다른 함수에 매개 변수로 완벽하게 전달할 수 있어요! 파이썬에서는 함수를 변수, 숫자, 문자열 같은 완벽한 보통의 '실체'로 취급해요."
+
+# 88541c4b6dbf4d5393ea34aac5101448
+#: ../../../source/functions_parameters.rst:106
+msgid ""
+"For instance, you could create a shape drawing function which turned one way"
+" or another depending on which turtle function you passed to it - "
+"``turtle.left`` or ``turtle.right``."
+msgstr "예를 들자면, 한 방향으로 돌거나 여러분이 전달한 ``turtle.left`` 또는 ``turtle.right`` 거북이 함수에 따라 돈 방향에 따라 도형 그리기 함수를 만들 수 있죠."
+
+# 4f17f1d6fcb04922ae9ffbe72a020039
+#: ../../../source/functions_parameters.rst:109
+msgid "See if you can implement this!"
+msgstr "이걸 구현할 수 있는지 보세요!"
+
+# dc5ad5fd72674918a3246a4fa8e0a35f
+#: ../../../source/functions_parameters.rst:113
+msgid ""
+"Passing a function (e.g ``turtle.left``) is different than *calling* it, "
+"which would instead be written ``turtle.left(45)``."
+msgstr "함수(예: ``turtle.left``) 전달은 ``turtle.left(45)``와 같은 식으로 작성하여 *호출* 하는 거와는 달라요."

@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-23 15:49+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 9860794802ce4df1ade997b3bf18960a
+#: ../../../source/simple_drawing.rst:2
+msgid "Simple drawing with turtle"
+msgstr "거북이로 간단하게 그리기"
+
+# 3632de09d6b94543add90c6276d7f41f
+#: ../../../source/simple_drawing.rst:5
+msgid "Introduction"
+msgstr "소개"
+
+# f4b501ebb5084585935df79181fd1ac1
+#: ../../../source/simple_drawing.rst:7
+msgid "Turtle is like a drawing board."
+msgstr "Turtle은 그림판이랑 비슷합니다."
+
+# c875441eb6f7457abc7e2b14c8d0d256
+#: ../../../source/simple_drawing.rst:9
+msgid ""
+"It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
+" can move the turtle around."
+msgstr "거북이를 움직일 수 있는 ``turtle.forward(...)``와 ``turtle.left(...)``같은 함수가 있어요."
+
+# c3739f8052d94ed4b6822b65b4cb8dad
+#: ../../../source/simple_drawing.rst:12
+msgid ""
+"Before you can use turtle, you have to import it. We recommend playing "
+"around with it in the interactive interpreter first, as there is an extra "
+"bit of work required to make it work from files. Just go to your terminal "
+"and type::"
+msgstr ""
+
+# 291d12b1145d42b897d279f02c0a1c4f
+#: ../../../source/simple_drawing.rst:22
+msgid ""
+"Not seeing anything on Mac OS?  Try issuing a command like "
+"``turtle.forward(0)`` and looking if a new window opened behind your command"
+" line."
+msgstr "Mac OS에서 아무것도 안보인다구요? ``turtle.forward(0)`` 같은 명령을 실행해서 명령행 뒤에 새 창이 열렸는지 확인해보세요."
+
+# 0817dcde1807499e910a04062b41b53d
+#: ../../../source/simple_drawing.rst:28
+msgid ""
+"Do you work with Ubuntu and get the error message \"No module named "
+"_tkinter\"? Install the missing package with ``sudo apt-get install "
+"python3-tk``"
+msgstr "우분투에서 실행할 때 \"No module named _tkinter\" 오류 메시지가 나온다구요? ``sudo apt-get install python3-tk``로 빠진 꾸러미를 설치하세요."
+
+# 6029f253d9fa4a7a8c9cfa852a22e91e
+#: ../../../source/simple_drawing.rst:34
+msgid ""
+"While it might be tempting to just copy and paste what's written on this "
+"page into your terminal, we encourage you to type out each command. Typing "
+"gets the syntax under your fingers (building that muscle memory!) and can "
+"even help avoid strange syntax errors."
+msgstr "이 페이지에 적힌 코드를 임시 방편으로 복사해서 붙여넣기보단 각각의 명령을 직접 쳐보세요. 직접 쳤을때 문법도 익히고(근육의 움직임 기억을 만들어요!) 이상한 문법 오류를 막는데도 도움이 돼요."
+
+# 89023039f3a7479bb0025b0947806f4b
+#: ../../../source/simple_drawing.rst:52
+msgid ""
+"The ``turtle.forward(...)`` function tells the turtle to move forward by the"
+" given distance. ``turtle.left(...)`` takes a number of degrees which you "
+"want to rotate to the left. There is also ``turtle.backward(...)`` and "
+"``turtle.right(...)``, too."
+msgstr "``turtle.forward(...)`` 함수는 거북이에게 주어진 거리만큼 움직이라고 알려줘요. ``turtle.left(...)`` 함수는 왼쪽 방향으로 주어진 각도만큼 돌으라고 하구요. ``turtle.backward(...)``랑 ``turtle.right(...)``도 있어요."
+
+# 5e44e23c3c8a45ac9425e6d55f3486d6
+#: ../../../source/simple_drawing.rst:58
+msgid ""
+"Want to start fresh? You can type ``turtle.reset()`` to clear the drawing "
+"that your ``turtle`` has made so far. We'll go into more detail on "
+"``turtle.reset()`` in just a bit."
+msgstr "깔끔하게 시작하겠다구요? ``거북이``가 이제껏 그린 내용을 지우려 한다면 ``turtle.reset()``를 칠 수 있어요. 이제 ``turtle.reset()``에 대해 좀 더 자세히 이야기해보려고 해요."
+
+# 320285cdad0b43e6ac14dfabee8a39ba
+#: ../../../source/simple_drawing.rst:62
+msgid ""
+"The standard turtle is just a triangle. That's no fun! Let's make it a "
+"turtle instead with the ``turtle.shape()`` command::"
+msgstr "표준 거북이 모양은 그냥 삼각형입니다. 참 재미없게 생겼죠. ``turtle.shape()`` 명령으로 대신 거북이를 만들어보도록 하겠어요::"
+
+# ba7ab766da9f4bd6972ff1b7d43d8f04
+#: ../../../source/simple_drawing.rst:67
+msgid "So much cuter!"
+msgstr "더욱 귀여워졌죠?!"
+
+# 7453a0b945fc4fa2967f65ddcde2d1ae
+#: ../../../source/simple_drawing.rst:69
+msgid ""
+"If you put the commands into a file, you might have recognized that the "
+"turtle window vanishes after the turtle finished its movement.  (That is "
+"because Python exits when your turtle has finished moving.  Since the turtle"
+" window belongs to Python, it terminates as well.)  To prevent that, just "
+"put ``turtle.exitonclick()`` at the bottom of your file.  Now the window "
+"stays open until you click on it::"
+msgstr "파일에 명령을 넣으면 거북이가 이동한 후 거북이 창이 사라진 모습을 보게 돼요(왜냐면 거북이를 다 옮기고 나면 파이선에서 빠져나가기 때문이거든요. 거북이 창은 파이선이 붙들고 있기 때문에 같이 끝나요). 이걸 막으려면 파일 아래에 ``turtle.exitonclick()``를 추가하세요. 그러면 창을 누르기 전에는 열린 상태로 그대로 두게 돼요::"
+
+# de9c12468cdf4a8f9917085982d278fb
+#: ../../../source/simple_drawing.rst:86
+msgid ""
+"Python is a programming language where horizontal indenting of text is "
+"important. We'll learn all about this in the Functions chapter later on, but"
+" for now just keep in mind that stray spaces or tabs before any line of "
+"Python code can cause an unexpected error."
+msgstr "파이썬은 수평 들여쓰기가 중요한 프로그래밍 언어예요. 다음 장에서 함수에 대해 배우겠지만, 지금은 그냥 파이썬 코드 앞부분에 공백 문자나 탭을 빼먹으면 갑작스런 오류가 있을 수 있다는 사실을 기억해두세요."
+
+# b9f0ac7420224af2886d120bae1783a8
+#: ../../../source/simple_drawing.rst:92
+msgid "Drawing a square"
+msgstr "사각형 그리기"
+
+# f9d7ddb4df8a499abe479e9bcc944956
+#: ../../../source/simple_drawing.rst:96
+msgid ""
+"You're not always expected to know the anwer immediately. Learn by trial and"
+" error! Experiment, see what python does when you tell it different things, "
+"what gives beautiful (although sometimes unexpected) results and what gives "
+"errors. If you want to keep playing with something you learned that creates "
+"interesting results, that's OK too. Don't hesitate to try and fail and learn"
+" from it!"
+msgstr "언제든 답을 바로 알려고 하진 않을거예요. 그냥 해보고 오류를 일으키면서 배우세요! 여러가지를 호출하면서 파이선이 어떤 동작을 하는지, (가끔은 기대하지 못했더라도)어떤 결과가 보기 좋은지, 어떤 경우에 오류가 나타나는지 경험하세요. 재밌는 결과를 만드는걸 배워서 즐기려고 한다면, 괜찮아요. 배울때 해보고 실패하는걸 망설이지 마세요!"
+
+# 6f5ff545cbca402b90d7187043129b0a
+# 6f5ff545cbca402b90d7187043129b0a
+# 6f5ff545cbca402b90d7187043129b0a
+#: ../../../source/simple_drawing.rst:105
+#: ../../../source/simple_drawing.rst:182
+#: ../../../source/simple_drawing.rst:215
+msgid "Exercise"
+msgstr "연습"
+
+# 3809e2fa5a5b44aebd3d047cbe0899bf
+#: ../../../source/simple_drawing.rst:107
+msgid "Draw a square as in the following picture:"
+msgstr "다음 그림에 사각형을 그리세요:"
+
+# 0e04b28694f749d189770899aec4890f
+#: ../../../source/simple_drawing.rst:111
+msgid ""
+"For a square you will probably need a right angle, which is 90 degrees."
+msgstr "사각형을 그리려면 90도 직각 회전이 필요할 수도 있어요."
+
+# 8233a964515e44b08fffadba4ac340f5
+# 8233a964515e44b08fffadba4ac340f5
+# 8233a964515e44b08fffadba4ac340f5
+#: ../../../source/simple_drawing.rst:116
+#: ../../../source/simple_drawing.rst:191
+#: ../../../source/simple_drawing.rst:227
+msgid "Solution"
+msgstr "해결책"
+
+# 575b479e71874431aa0c84e95f2440a6
+#: ../../../source/simple_drawing.rst:131
+msgid ""
+"Notice how the turtle starts and finishes in the same place and facing the "
+"same direction, before and after drawing the square. This is a useful "
+"convention to follow, it makes it easier to draw multiple shapes later on."
+msgstr "거북이가 사각형을 그리기 전후에 같은 장소에서 어떻게 움직임을 시작하고 끝내는지, 같은 방향을 어떻게 바라보는지 살펴보세요. 따라하는데 쓸모있는 표기방식이고 나중에 여러가지 도형을 그릴때 쉽게 그릴 수 있도록 도와줘요."
+
+# 5eba8324c5fb47d5b6e524726ca5fb46
+# 5eba8324c5fb47d5b6e524726ca5fb46
+#: ../../../source/simple_drawing.rst:137
+#: ../../../source/simple_drawing.rst:205
+msgid "Bonus"
+msgstr "덤"
+
+# ac58d556cefc4978bdc549c3f9d38138
+#: ../../../source/simple_drawing.rst:139
+msgid ""
+"If you want to get creative, you can modify your shape with the "
+"``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you use "
+"these functions?  Before you can use a function you need to know its "
+"*signature* (for example the number of parameters and what they mean.) To "
+"find this out you can type ``help(turtle.color)`` into the Python shell. If "
+"there is a lot of text, Python will put the help text into a *pager*, which "
+"lets you page up and down. Press the :kbd:`q` key to exit the pager."
+msgstr ""
+
+# b8afd3f34c424a138e958cacb5a0fa6c
+#: ../../../source/simple_drawing.rst:150
+msgid "Are you seeing an error like this::"
+msgstr "다음 같은 오류를 보고 있나요::"
+
+# bee6bdd344c24696b90b7f117e64c2a7
+#: ../../../source/simple_drawing.rst:154
+msgid ""
+"when trying to view help? In Python you have to import names before you can "
+"refer to them, so in a new Python interactive shell you'll need to ``import "
+"turtle`` before ``help(turtle.color)`` will work."
+msgstr ""
+
+# 69acdc4c47f349c8a1bd921a3565bf1d
+#: ../../../source/simple_drawing.rst:158
+msgid ""
+"Another way to find out about functions is to browse the `online "
+"documentation`_."
+msgstr ""
+
+# 7667c9ea4ef14fcc8329fd98be655ba1
+#: ../../../source/simple_drawing.rst:165
+msgid ""
+"If you misdrew anything, you can tell turtle to erase its drawing board with"
+" the ``turtle.reset()`` directive or undo the most recent step with "
+"``turtle.undo()``."
+msgstr ""
+
+# b31ef2fc271e48c0920394ddbfd68fde
+#: ../../../source/simple_drawing.rst:171
+msgid ""
+"As you might have read in the help, you can modify the color with "
+":samp:`turtle.color({colorstring})`.  These include but are not limited to "
+"\"red,\" \"green,\" and \"violet.\"  See the `colours manual`_ for an "
+"extensive list."
+msgstr ""
+
+# 72aab17c9d09473f976f5430895b3644
+#: ../../../source/simple_drawing.rst:179
+msgid "Drawing a rectangle"
+msgstr "사각형을 그려보아요"
+
+# 436abbc6545e45219ba48cb0ece20683
+#: ../../../source/simple_drawing.rst:184
+msgid "Can you draw a rectangle too?"
+msgstr "사각형도 그릴 수 있어요 ???"
+
+# 38fa0d3b153f430ab276217e423ddfbe
+#: ../../../source/simple_drawing.rst:207
+msgid ""
+"How about a triangle? In an equilateral triangle (a triangle with all sides "
+"of equal length) each corner has an angle of 60 degrees."
+msgstr "삼각형은 어떤가요? 정삼각형(각 변의 길이가 같은 삼각형)의 세 귀퉁이는 60도 각을 가져요."
+
+# ed9f28c4baf3419ebac09b363a37f608
+#: ../../../source/simple_drawing.rst:212
+msgid "More squares"
+msgstr "더 많은 사각형"
+
+# 789ffe023eb9428eaeae684452ca6f52
+#: ../../../source/simple_drawing.rst:217
+msgid ""
+"Now, draw a tilted square. And another one, and another one. You can "
+"experiment with the angles between the individual squares."
+msgstr "이제 바둑판처럼 배치한 사각현을 그려보기로 하겠어요. 그리고 다른거, 또 다른거. 각각의 사각형 사이에 각을 주는 경험도 할 수 있어요."
+
+# 7cf04200613d4ca08e39553d44499f96
+#: ../../../source/simple_drawing.rst:222
+msgid ""
+"The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
+"example."
+msgstr ""

@@ -4,17 +4,23 @@ User-defined functions
 Introduction
 ============
 
-There is still a lot of duplicated code --- the actual drawing of the rectangle
---- around. If you need to copy and paste code, that is usually a sign of
-lacking abstractions. (Programmers call it a *code smell.*)
+Programmers can deal with some pretty complex and abstract problems, but one 
+sign of a good programmer is that they're lazy. They only like to deal with one 
+thing at a time. So you need a way to break up problems into smaller, discrete 
+pieces, which lets you focus on just the piece you want to.
 
-Functions are one way to express abstractions in Python. Let's take
-``turtle.reset()`` for example. It is actually an abstraction for a number of
-steps, namely:
+Functions are one way to do this abstraction in Python. Let's take
+``turtle.reset()`` for example. ``reset`` is a function we call on our ``turtle``, and 
+it is actually an abstraction for a number of steps, namely:
 
 * Erase the drawing board.
 * Set the width and color back to default.
 * Move the turtle back to its initial position.
+
+But because all the code is contained in the function, we don't have to worry about these 
+details. We can simply *call* this function, and know it will do what it says for us.
+
+So - how to write your own?
 
 A function can be defined with the ``def`` keyword in Python::
 
@@ -43,11 +49,7 @@ We could write more functions to remove some of the repetition::
         line_without_moving()
         turtle.right(360 / 5)
 
-    def star():
-        star_arm()
-        star_arm()
-        star_arm()
-        star_arm()
+    for _ in range(5):
         star_arm()
 
 .. important::
@@ -80,6 +82,8 @@ Write a function that draws a square. Could you use this function to improve the
 tilted squares program? If you change the program to use a function, is it easier
 to experiment with?
 
+.. rst-class:: solution
+
 Solution
 --------
 
@@ -87,14 +91,9 @@ Solution
 
     def tilted_square():
       turtle.left(20)     # now we can change the angle only here
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
+      for _ in range(4):
+          turtle.forward(50)
+          turtle.left(90)
 
     tilted_square()
     tilted_square()
@@ -104,35 +103,15 @@ Solution
     # which might be useful later:
 
     def square():
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
-      turtle.forward(50)
-      turtle.left(90)
+      for _ in range(4):
+          turtle.forward(50)
+          turtle.left(90)
 
     def tilted_square():
       turtle.left(20)
       square()
 
-    # etc'
-
-Comments
---------
-
-In the solution above, the line that starts with a ``#`` is called a
-comment. In Python, anything that goes on a line after ``#`` is ignored
-by the computer. Use comments to explain what your program does,
-without changing the behaviour for the computer.
-
-Comments can also go at the end of a line, like this:
-
-::
-
-     turtle.left(20)     # now we can change the angle only here
-
+    # etc
 
 A function for a hexagon
 ========================
@@ -148,48 +127,31 @@ Now combine that function into a honeycomb. Just make it with a single layer lik
 
 .. image:: /images/honeycomb.png
 
+Give it a good go!
+
+.. hint::
+
+   Make sure your hexagon function returns your turtle to exactly the same 
+   position and angle it was before it was asked to draw the hexagon. This 
+   makes it easier to reason about.
+
+
+.. rst-class:: solution
+
 Solution
 --------
 
 ::
 
     def hexagon():
-        turtle.forward(100)
-        turtle.left(60)
-        turtle.forward(100)
-        turtle.left(60)
-        turtle.forward(100)
-        turtle.left(60)
-        turtle.forward(100)
-        turtle.left(60)
-        turtle.forward(100)
-        turtle.left(60)
-        turtle.forward(100)
-        turtle.left(60)
+      for _ in range(6):
+          turtle.forward(100)
+          turtle.left(60)
 
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
-
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
-
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
-
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
-
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
-
-    hexagon()
-    turtle.forward(100)
-    turtle.right(60)
+    for _ in range (6):
+        hexagon()
+        turtle.forward(100)
+        turtle.right(60)
 
 You could also put the ``turtle.forward(100); turtle.right(60)`` portion in the
 function, but you better not call it ``hexagon`` in that case.  That's

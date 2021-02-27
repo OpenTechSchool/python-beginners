@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2013-11-13 14:11+0000\n"
+"Last-Translator: Patricio Alejandro Urrutia Arestizábal <purrutia@gmail.com>\n"
+"Language-Team: Spanish (Chile) (http://www.transifex.com/projects/p/python-for-beginners/language/es_CL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_CL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 016333f418f04abb99e1f153b93d1733
+#: ../../../source/variables.rst:2
+msgid "Variables"
+msgstr "Variables"
+
+# 2a00a8448498495ba72c8e5c1b7be5a3
+#: ../../../source/variables.rst:5
+msgid "Introduction"
+msgstr "Introducción"
+
+# 11e299324f7f446fb7fc1fe39af9ea9f
+#: ../../../source/variables.rst:7
+msgid ""
+"Whew. Experimenting with the angles requires you to change three different "
+"places in the code each time. Imagine you'd want to experiment with all of "
+"the square sizes, let alone with rectangles! We can do better than that."
+msgstr "Uf! Experimentando con ángulos requiere que cambie tres partes distintas en el código cada vez. Imagine que quiera experimentar con todos los tamaños de cuadrados, ni hablar con rectángulos! Podemos hacer algo mejor que eso."
+
+# a2712e5a1bf24c91bf73db77f5094695
+#: ../../../source/variables.rst:11
+msgid ""
+"This is where **variables** come into play: You can tell Python that from "
+"now on, whenever you refer to a variable, you actually mean something else. "
+"That concept might be familiar from symbolic maths, where you would write: "
+"*Let x be 5.* Then *x \\* 2* will obviously be *10*."
+msgstr "Es aquí donde las **variables** entran en juego. Puede decirle a Python que, de ahora en adelante, cada vez que se refiera a una variable, usted se refiere en realidad a otra cosa. Este concepto puede ser familiar de matemáticas simbólicas, donde usted puede escribir: *Sea x igual a 5*. Entonces *x \\* 2* será obviamente *10*."
+
+# fa0a962bd37d4e8eb7ba0ee69b28e8ee
+#: ../../../source/variables.rst:16
+msgid "In Python syntax, that very statement translates to::"
+msgstr "En sintaxis de Python, esa misma sentencia se traduce como::"
+
+# 986235ce1d8b44ebb5dd81ce1b1abd75
+#: ../../../source/variables.rst:20
+msgid ""
+"After that statement, if you do ``print(x)``, it will actually output its "
+"value --- 5.  Well, can use that for your turtle too::"
+msgstr "Despues de esa sentencia, si usted ejecuta ``print(x)``, realmente imprimirá su valor --- 5. Bien, puede usar eso para su tortuga también::"
+
+# 41ee9fc89f5b45a8b560e9c5ddf7b512
+#: ../../../source/variables.rst:25
+msgid ""
+"Variables can store all sorts of things, not just numbers. A typical other "
+"thing you want to have stored often is a **string** - a line of text. "
+"Strings are indicated with a starting and a leading ``\"`` (double quote). "
+"You'll learn about this and other types, as those are called in Python, and "
+"what you can do with them later on."
+msgstr "Variables pueden almacenar todo tipo de cosas, no sólo números. Otra cosa típica que a menudo es almacenada es un **string** - una línea de texto. Strings se indican con ``\"``(comillas dobles) al inicio y al final. Aprenderá sobre este y otros tipos de variables, así como se declaran en Python y que puede hacer con ellas más adelante. "
+
+# 6023dfa68c764ea991ca7a7912e7bceb
+#: ../../../source/variables.rst:31
+msgid "You can even use a variable to give the turtle a name::"
+msgstr "Puede incluso usar una variable para darle un nombre a la tortuga::"
+
+# 6c986c3906d34cd2a73d98485fa4d3e0
+#: ../../../source/variables.rst:35
+msgid ""
+"Now every time you type ``timmy`` it knows you mean ``turtle``. You can "
+"still continue to use ``turtle`` as well::"
+msgstr "Ahora, cada vez que escriba ``timmy`` Python sabe que usted quiere decir ``turtle``. Usted puede seguir usando ``turtle`` si lo desea::"
+
+# 855b759cf6614117812596f0572da969
+#: ../../../source/variables.rst:43
+msgid "A variable called angle"
+msgstr "Una variable llamada angle"
+
+# 341a0b4eab9c4060983a009910f9912b
+# c7f79c6a0e3f438c8cbddaeac9e3b967
+#: ../../../source/variables.rst:46 ../../../source/variables.rst:85
+msgid "Exercise"
+msgstr "Ejercicio"
+
+# 98036cab6adc4843be4121ad8a525a46
+#: ../../../source/variables.rst:48
+msgid ""
+"If we have a variable called ``angle``, how could we use that to experiment "
+"much faster with our tilted squares program?"
+msgstr "Si tenemos una variable llamada ``angle`` (ángulo en inglés), ¿cómo podemos usarla para experimentar más rápido con nuestro programa de cuadrados inclinados?"
+
+# 4f5e8724e9bf47bb9a308c96b099e1bd
+#: ../../../source/variables.rst:54
+msgid "Solution"
+msgstr "Solución"
+
+# e5cc56f2272342e2a9817063d345d126
+#: ../../../source/variables.rst:74
+msgid "... and so on"
+msgstr "... y así sucesivamente."
+
+# f88b19f8666e4f3699d3fa8a1d16eeeb
+#: ../../../source/variables.rst:77
+msgid "Bonus"
+msgstr "Bonus"
+
+# 1af525ffffc44dba842bbaac6875a109
+#: ../../../source/variables.rst:79
+msgid "Can you apply that principle to the size of the squares, too?"
+msgstr "¿Puede aplicar este principio para el tamaño de los cuadrados también?"
+
+# 860b1520bc564aae8f16cbeaf5723c13
+#: ../../../source/variables.rst:82
+msgid "The house of santa claus"
+msgstr "La casa del viejito pascuero"
+
+# 1d280501f67a473aad5e0d4531953a0d
+#: ../../../source/variables.rst:87
+msgid "Draw a house."
+msgstr "Dibuje una casa."
+
+# cf4fc858e79b449fbfe315cf438b5e39
+#: ../../../source/variables.rst:91
+msgid ""
+"You can calculate the length of the diagonal line with the Pythagorean "
+"theorem. That value is a good candidate to store in a variable. To calculate"
+" the square root of a number in Python, you'll need to import the *math* "
+"module and use the ``math.sqrt()`` function. The square of a number is "
+"calculated with the ``**`` operator::"
+msgstr "Puede calcular el largo de la diagonal con el teorema de Pitágoras. Ese valor es un buen candidato para ser guardado en una variable. Para calcular la raíz cuadrada de un número en Python, necesitará importar el módulo *math* y usar la función ``math.sqrt()``. El cuadrado de un número se calcula con el operador ``**``::"

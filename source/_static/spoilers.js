@@ -4,8 +4,8 @@
 
         //default vars for the plugin
         var defaults = {
-            speed: 500,
-            easing: '',
+            speed: 400,
+            easing: 'swing',
             changeText: true,
             showText: 'Show',
             hideText: 'Hide'
@@ -13,20 +13,21 @@
         };
         options = $.extend(defaults, options);
 
-        $(this).hide().data('hidden', true);
+        var button = $('<button class="btn btn-info btn-sm _show_hide" type="button"></button>');
+        button.text(options.showText);
+        button.data('el', $(this));
 
-        $(this).after('<button class="_show_hide" type="button">' + options.showText + '</button>');
+        $(this).last().after(button);
+        $(this).hide();
 
-        $('._show_hide').click(function () {
+        button.click(function () {
             var me = $(this);
-            var el = $(this).prev();
-            el.slideToggle(options.speed, function() {
+            var el = me.data('el');
+            el.slideToggle(options.speed, options.easing, function() {
                 if (options.changeText) {
-                    if (el.data('hidden')) {
-                        el.data('hidden', false);
+                    if (el.is(':visible')) {
                         me.text(options.hideText);
                     } else {
-                        el.data('hidden', true);
                         me.text(options.showText);
                     }
                 }
@@ -38,6 +39,8 @@
 (function ($) {
   $(document).ready(function() {
     'use strict';
-    $("h3:contains('Solution')").next().showHide();
+    $('.solution h3').each(function() {
+        $(this).nextAll().showHide();
+    });
   });
 })(jQuery);

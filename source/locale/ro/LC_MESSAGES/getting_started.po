@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 10:51+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/getting_started.rst:2
+msgid "Getting started"
+msgstr "Să începem"
+
+#: ../../../source/getting_started.rst:5
+msgid "What you'll need"
+msgstr "Ce ai nevoie"
+
+#: ../../../source/getting_started.rst:8
+msgid "A Python!"
+msgstr "Un Python!"
+
+#: ../../../source/getting_started.rst:10
+msgid ""
+"If you haven't yet got python, the latest official installation packages can"
+" be found here:"
+msgstr "Daca încă nu ai Python, cele mai recente pachete de instalare sunt disponibile aici:"
+
+#: ../../../source/getting_started.rst:13
+msgid "http://python.org/download/"
+msgstr "http://python.org/download/"
+
+#: ../../../source/getting_started.rst:15
+msgid "Python 3 is preferable, being the newest version out!"
+msgstr "Este de preferat Python 3, aceasta fiind cea mai nouă versiune!"
+
+#: ../../../source/getting_started.rst:19
+msgid ""
+"On Windows, you'll want to add :program:`Python` to your path, so it can be "
+"found by other programs. To do this, navigate to your installation directory"
+" (:file:`C:\\\\Python33\\\\`), open the :file:`Tools`, then :file:`Scripts` "
+"folders, and run the :file:`win_add2path.py` file by double clicking on it."
+msgstr "Pe platforme Windows, poți să adaugi :program:`Python` la calea ta, astfel încăt să poată fi găsit de alte programe. Pentru a face asta, mergi în directorul tău de instalare (:file:`C:\\\\Python33\\\\`), deschide directorul :file:`Tools`, pe urmă directorul :file:`Scripts` și execută fișierul :file:`win_add2path.py` cu dublu clic."
+
+#: ../../../source/getting_started.rst:26
+msgid "And a Code Editor"
+msgstr "Și un editor"
+
+#: ../../../source/getting_started.rst:28
+msgid ""
+"A code editor helps with reading and writing programming code. There are "
+"many around, and it is one of the most personal choices a programmer can "
+"make - Like a tennis-player choosing their racket, or a chef choosing their "
+"favourite knife. To start off with, you'll just want a basic, easy-to-use "
+"one that doesn't get in your way, but is still effective at writing python "
+"code. Here are some suggestions for those:"
+msgstr "Un editor te ajută să citești și să scrii cod. Există foarte multe, și acesta este una dintre cele mai personale alegeri pe care le poate face un programator - ca un jucător de tenis care își alege racheta, sau ca un bucătar șef care își alege cuțitul preferat. Pentru început, o să vrei doar un editor simplu, ușor de utilizat și care nu te încurcă, dar este totuși eficient la scrierea de cod Python. Iată câteva sugestii:"
+
+#: ../../../source/getting_started.rst:35
+msgid ""
+"`Sublime Text`_: A great all around editor that's easy to use. It's Ctl+B "
+"shortcut lets you run the python file you're working on straight away. Runs "
+"on Windows, Mac and Linux."
+msgstr "`Sublime Text`_: Un excelent editor care este simplu de utilizat. Scurtătura acestuia Ctrl+B îți permite să execuți imediat fișierul Python la care lucrezi. Rulează pe Windows, Mac și Linux."
+
+#: ../../../source/getting_started.rst:39
+msgid ""
+"`Geany`_: A simple editor that doesn't aim to be too complicated. Available "
+"on Windows and Linux (you can probably find it in your package manager)."
+msgstr "`Geany`_: Un editor simplu care nu își propune să fie extrem de complicat. Disponibil pe Windows și Linux (probabil îl poți găsi în programul tău de gestiune a pachetelor)."
+
+#: ../../../source/getting_started.rst:42
+msgid ""
+"`TextMate`_: One of the most famous code editors for Mac, it used to be a "
+"paid product but has since been open-sourced."
+msgstr "`TextMate`_: Unul dintre cele mai faimoase editoare pentru Mac, a fost un produs comercial dar între timp a devenit open-source."
+
+#: ../../../source/getting_started.rst:45
+msgid ""
+"`Gedit`_ and `Kate`_: if you run Linux using Gnome or KDE respectively, you "
+"might already have one of these two installed!"
+msgstr "`Gedit`_ and `Kate`_: dacă dorești să folosești Linux cu Gnome și respectiv KDE, probabil ai deja unul dintre acestea instalat!"
+
+#: ../../../source/getting_started.rst:48
+msgid ""
+"`Komodo Edit`_: a sleak, free editor for Mac, Windows and Linux, based on "
+"the more powerful Komodo IDE."
+msgstr "`Komodo Edit`_: un editor strălucit, gratuit pentru Mac, Windows și Linux, bazat pe mai puternicul Komodo IDE."
+
+#: ../../../source/getting_started.rst:58
+msgid "If you'd like our recommendation, try out Sublime Text first."
+msgstr "Dacă dorești recomandarea noastră, încearcă prima dată Sublime Text."
+
+#: ../../../source/getting_started.rst:62
+msgid ""
+"Wordpad, TextEdit, Notepad, and Word are **not** suitable text editors."
+msgstr "Wordpad, TextEdit, Notepad, și Word **nu** sunt editoare de text potrivite."
+
+#: ../../../source/getting_started.rst:66
+msgid "What is Python, exactly?"
+msgstr "Ce este Python de fapt?"
+
+#: ../../../source/getting_started.rst:68
+msgid ""
+"Ok, so python is this thing called a **programming language**. It takes text"
+" that you've written (usually referred to as **code**), turns it into "
+"instructions for your computer, and runs those instructions. We'll be "
+"learning how to write code to do cool and useful stuff. No longer will you "
+"be bound to use others' programs to do things with your computer!"
+msgstr "Bine, Python este ceva numit un **limbaj de programare**. Preia ceea ce scrii (în mod normal denumit **cod**), îl transformă în instrucțiuni pentru calculatorul tău și le execută. O să învățăm cum să scriem cod pentru a face lucruri interesante și utile. Nu vei mai fi nevoit să folosești programele altora pentru a face lucruri cu calculatorul tău!"
+
+#: ../../../source/getting_started.rst:74
+msgid ""
+"Practically, Python is just another program on your computer. The first "
+"thing to learn is how to use and interact with it. There are in fact many "
+"ways to do this; the first one to learn is to interact with python's "
+"interpreter, using your **operating system's** (OS) console."
+msgstr "Practic, Python este doar un alt program în calculatorul tău. Primul lucru pe care trebuie să îl înveți este cum să interacționezi cu el. Există multe metode ca să faci asta; prima este să interacționezi cu interpretorul Python, utilizând consola **sistemului de operare** (OS, prescurtare de la Operating System)."
+
+#: ../../../source/getting_started.rst:79
+msgid ""
+"A **console** (or 'terminal', or 'command prompt') is a *textual* way to "
+"interact with your OS, just as the 'desktop', in conjuction with your mouse,"
+" is the *graphical* way to interact your system."
+msgstr "O **consolă** (sau 'terminal', sau 'linie de comandă') este o formă de a interacționa cu sistemul tău de operare în mod *text*, așa cum 'desktop'-ul, în combinație cu mouse-ul tău, este metoda *grafică* de interacțiune cu sistemul tău."
+
+#: ../../../source/getting_started.rst:84
+msgid "Opening a console on Mac OS X"
+msgstr "Deschiderea unei console în Mac OS X"
+
+#: ../../../source/getting_started.rst:86
+msgid ""
+"OS X's standard console is a program called :program:`Terminal`. Open "
+"Terminal by navigating to Applications, then Utilities, then double-click "
+"the :program:`Terminal` program. You can also easily search for it in the "
+"system search tool in the top right."
+msgstr "Consola standard a lui OS X este un program numit :program:`Terminal`. Deschide Terminal mergănd la Applications, apoi Utilities, apoi dublu clic pe programul :program:`Terminal`. Poți de asemenea să cauți ușor folosind unealta de căutare din dreapta-sus."
+
+#: ../../../source/getting_started.rst:91
+msgid ""
+"The command line Terminal is a tool for interacting with your computer. A "
+"window will open with a command line prompt message, something like this::"
+msgstr "Linia de comandă Terminal este un instrument pentru interacțiunea cu calculatorul tău. Se va deschide o fereastră cu un mesaj, cum ar fi:"
+
+#: ../../../source/getting_started.rst:98
+msgid "Opening a console on Linux"
+msgstr "Deschiderea unei console în Linux"
+
+#: ../../../source/getting_started.rst:100
+msgid ""
+"Different linux distributions (e.g Ubuntu, Fedora, Mint) may have different "
+"console programs, usually referred to as a terminal. The exact terminal you "
+"start up, and how, can depend on your distribution. On Ubuntu, you will "
+"likely want to open :program:`Gnome Terminal`. It should present a prompt "
+"like this::"
+msgstr "Diverse distribuții Linux (ex. Ubuntu, Fedora, Mint) pot avea diverse programe de consolă, numite de obicei terminale. Cel pe care îl ai disponbil și modul în care îl lansezi depinde de distribuție. Pe Ubuntu probabil că vei vrea să deschizi :program:`Gnome Terminal`. Ar trebui să prezinte un prompt de genul:"
+
+#: ../../../source/getting_started.rst:108
+msgid "Opening a console on Windows"
+msgstr "Deschiderea unei console în Windows"
+
+#: ../../../source/getting_started.rst:110
+msgid ""
+"Window's console is called the Command Prompt, named :program:`cmd`.  An "
+"easy way to get to it is by using the key combination :kbd:`Windows+R` "
+"(:kbd:`Windows` meaning the windows logo button), which should open a "
+":guilabel:`Run` dialog.  Then type :program:`cmd` and hit :kbd:`Enter` or "
+"click :guilabel:`Ok`. You can also search for it from the start menu. It "
+"should look like::"
+msgstr "Consola Windows este Command Prompt, numită :program:`cmd`. O variantă simplă pentru a o obține este să utilizezi combinația :kbd:`Windows+R` (unde :kbd:`Windows` este tasta cu sigla Windows), care ar trebui să deschidă un dialog :guilabel:`Run`. Scrie apoi :program:`cmd` și apasă :kbd:`Enter` sau dă clic pe :guilabel:`Ok`. Poți de asemenea să o cauți în meniul de start. Ar trebui sa arate cam așa:"
+
+#: ../../../source/getting_started.rst:119
+msgid ""
+"Window's Command Prompt is not quite as powerful as its counterparts on "
+"Linux and OS X, so you might like to start the Python Interpreter (see just "
+"below) directly, or using the IDLE program that Python comes with. You can "
+"find these in the Start menu."
+msgstr "Command Prompt-ul din Windows nu este la fel de puteric precum omologii lui din Linux și OS X, așa că ar fi posibil să dorești să apelezi Interpretorul Python (vezi mai jos) direct, sau utilizând programul IDLE cu care se livrează Python. Le poți găsi în meniul de Start."
+
+#: ../../../source/getting_started.rst:125
+msgid "Using Python"
+msgstr "Utilizarea Python"
+
+#: ../../../source/getting_started.rst:127
+msgid ""
+"The python program that you have installed will by default act as something "
+"called an **interpreter**. An interpreter takes commands and runs them as "
+"you enter them - very handy for trying things out."
+msgstr "Programul Python pe care l-ai instalat se va comporta în mod automat ca ceva numit **interpretor**. Un interpretor preia comenzi și le execută pe măsură ce le introduci - foarte comod pentru a putea încerca lucruri."
+
+#: ../../../source/getting_started.rst:131
+msgid ""
+"Just type :program:`python` at your console, hit :kbd:`Enter`, and you "
+"should enter Python's Interpreter."
+msgstr "Scrie pur și simplu :program:`python` în consolă, apasă :kbd:`Enter` și ar trebui să intri în Interpretorul Python."
+
+#: ../../../source/getting_started.rst:134
+msgid ""
+"To find out which version of python you're running, use ``python -V`` to "
+"tell you."
+msgstr "Pentru a afla ce versiune de Python rulezi, folosește ``python -V``."
+
+#: ../../../source/getting_started.rst:138
+msgid "Interacting With Python"
+msgstr "Interacțiunea cu Python"
+
+#: ../../../source/getting_started.rst:140
+msgid ""
+"After Python opens, it will show you some contextual information similar to "
+"this::"
+msgstr "După ce pornește, Python va tipări niște informații de conext, similar cu:"
+
+#: ../../../source/getting_started.rst:149
+msgid ""
+"The prompt **>>>** on the last line indicates that you are now in an "
+"interactive Python interpeter session, also called the \"Python shell\". "
+"**This is different from the normal terminal command prompt!**"
+msgstr "Prompt-ul **>>>** de pe ultima linie indică faptul că ești într-o sesiune Python interactivă, numită și \"Python shell\". **Aceasta este diferit de prompt-ul terminalului normal!**"
+
+#: ../../../source/getting_started.rst:153
+msgid "You can now enter some python code. Try::"
+msgstr "Poți acum să introduci cod Python. Încearcă:"
+
+#: ../../../source/getting_started.rst:157
+msgid ""
+"Press :kbd:`Enter` and see what happens. After showing the results, Python "
+"will bring you back to the interactive prompt, where you could enter another"
+" command:"
+msgstr "Apasă :kbd:`Enter` și vezi ce se întâmplă. Dupa ce îți afișează rezultatele, Python va reveni la prompt-ul interactiv, unde poți introduce o altă comandă:"
+
+#: ../../../source/getting_started.rst:166
+msgid ""
+"An extremely useful command is ``help()``, which enters a help functionality"
+" to explore all the stuff python lets you do, right from the interpreter. "
+"Press :kbd:`q` to close the help window and return to the Python prompt."
+msgstr "O comandă extrem de utilă este ``help()``, care accesează o funcționalitate de documentare pentru explorarea tuturor lucrurilor pe care Python îți permite să le faci, direct din interpretor. Apasă :kbd:`q` pentru a închide fereastra de documentație și a reveni la prompt-ul Python."
+
+#: ../../../source/getting_started.rst:170
+msgid ""
+"To leave the interactive shell, press :kbd:`Ctrl-Z` and then :kbd:`Enter` on"
+" Windows, or :kbd:`Ctrl-D` on OS X or Linux. Alternatively, you could also "
+"run the python command ``exit()``!"
+msgstr "Pentru a ieși din shell-ul interactiv, apasă  :kbd:`Ctrl-Z` și apoi :kbd:`Enter` în Windows, sau :kbd:`Ctrl-D` în OS X sau Linux. Alternativ, poți de asemenea să execuți comanda ``exit()``!"
+
+#: ../../../source/getting_started.rst:175
+msgid "Running Python files"
+msgstr "Executarea fișierelor Python"
+
+#: ../../../source/getting_started.rst:177
+msgid ""
+"When you have a lot of python code to run, you will want to save it into a "
+"file so, for instance, you can modify small parts of it (fix a bug) and re-"
+"run it without having to repeatedly re-type the rest. Instead you can save "
+"your code to a file and pass a file name to the :program:`python` "
+"executable. It will execute that file instead of launching the interactive "
+"interpreter."
+msgstr "Când ai de executat mult cod Python vei dori să îl salvezi într-un fișier pentru ca, de exemplu, să poți modifica bucăți din el (să rezolvi o eroare) și să îl execuți din nou fără a fi nevoie să introduci din nou restul codului. Alternativ poți salva codul într-un fișier și să îi transmiți numele acestuia executabilului :program:`python`. Acesta va executa fișierul în loc să lanseze interpretorul interactiv."
+
+#: ../../../source/getting_started.rst:184
+msgid ""
+"**Let's try that**.  Create a file :file:`hello.py` in your current "
+"directory with your favorite text editor and write the print command from "
+"above.  Now save that file. On Linux or OS X, you can also run ``touch "
+"hello.py`` to create an empty file to edit. To run this file with python, "
+"it's pretty easy:"
+msgstr "**Să încercăm asta**. Creează un fișier :program:`python` în directorul curent utilizând editorul tău favorit și scrie comanda print de mai sus. Acum salvează acest fișier. În Linux sau OS X poți de asemenea să utilizezi ``touch hello.py`` pentru a creea un fișier gol pentru editare. Este foarte ușor să execuți acest fișier cu Python:"
+
+#: ../../../source/getting_started.rst:195
+msgid ""
+"Make sure you are at your system command prompt, which will have ``$`` or "
+"``>`` at the end, not at python's (which has ``>>>`` instead)!"
+msgstr "Asigură-te că ești în promput-ul sistemului, care are ``$`` sau ``>`` la sfârșit, nu în cel al lui Python (care se termină cu ``>>>``)!"
+
+#: ../../../source/getting_started.rst:198
+msgid ""
+"On Windows you should also be able to double-click the Python file to run "
+"it."
+msgstr "În Windows ar trebui să poți da dublu clic pe fișierul Python pentru a îl executa."
+
+#: ../../../source/getting_started.rst:200
+msgid ""
+"When pressing :kbd:`Enter` now, the file is executed and you see the output "
+"as before.  But this time, after Python finished executing all commands from"
+" that file it exits back to the system command prompt, instead of going back"
+" to the interactive shell."
+msgstr "Acum, când apeși :kbd:`Enter`, fișierul este executat și vei vedea rezultatul ca și mai devreme. Dar de data aceasta, dupa ce Python va termina de executat toate comenzile din acest fișier va ieși din nou la prompt-ul sistemului, în loc să se întoarcă la shell-ul interactiv."
+
+#: ../../../source/getting_started.rst:205
+msgid "And now we are all set and can get started with turtle!"
+msgstr "Și acum suntem pregătiți și putem incepe cu țestoasa!"
+
+#: ../../../source/getting_started.rst:209
+msgid ""
+"Not getting \"Hello world\" but some crazy error about \"can't open file\" "
+"or \"No such file or directory?\" Your command line might not be running in "
+"the directory you saved the file in. You can use the system command line to "
+"change your active directory with the :command:`cd` command, which stands "
+"for \"change directory\". On Windows, you might want something like::"
+msgstr "Nu obții \"Hello world\" ci o eroare ciudată despre \"can't open file\" (nu pot deschide fișierul) sau \"No such file or directory\" (nu există un asemenea fișier sau director)? Linia ta de comandă este posibil să nu se execute în directorul unde ai salvat fișierul. Poți să folosești linia de comandă pentru a schimba directorul activ cu comanda :command:`cd`, care semnifică \"change directory\" (schimbă directorul). În Windows, probabil vei dori ceva gen:"
+
+#: ../../../source/getting_started.rst:218
+msgid "On Linux or OS X, you might want something like:"
+msgstr "În Linux sau OS X vei vrea ceva de genul:"
+
+#: ../../../source/getting_started.rst:224
+msgid ""
+"This changes to the directory Python_Exercises under the Desktop folder "
+"(yours might be somewhere a bit different). If you don't know the location "
+"of the directory where you saved the file, you can simply drag the directory"
+" to the command line window.  If you don't know which directory your shell "
+"is currently running in use :command:`pwd`, which stands for \"print working"
+" directory\"."
+msgstr "Asta schimba directorul în directorul Python_Exercises sub directorul Desktop (al tău este posibil să fie ușor diferit). Dacă nu știi locația directorului unde ai salvat fișierul poți pur și simplu să tragi directorul în fereastra cu linia de comandă. Dacă nu știi în ce director se află shell-ul utilizează comanda :command:`pwd`, care semnifică \"print working directory\" (afișează directorul utilizat)."
+
+#: ../../../source/getting_started.rst:233
+msgid ""
+"When playing around with turtle, avoid naming your file :file:`turtle.py` "
+"--- rather use more appropriate names such as :file:`square.py` or "
+":file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python "
+"will pick up *your* file instead of the standard turtle."
+msgstr "Când te joci cu țestoasa, evită să denumești fișierul tău :file:`turtle.py` --- mai degrabă folosește nume mai potrivite ca :file:`square.py` sau :file:`rectangle.py`. În caz contrar, de fiecare dată cănd te referi la ``turtle`` (țestoasă), Python va alege fișierul *tău* în loc de țestoasa standard."

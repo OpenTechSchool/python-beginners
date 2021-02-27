@@ -2,6 +2,13 @@
 ._*
 *.pyc
 
+bin
+clear
+include
+lib
 _build
 source/locale/*/*/*.mo
 source/_locales/*/*/*.mo
+.transifexrc
+*.pot
+*.mo

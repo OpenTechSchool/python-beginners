@@ -1,5 +1,4 @@
 Fabric
-Pygments
 Sphinx
-docutils
 sphinx-intl
+-r doc-requirements.txt

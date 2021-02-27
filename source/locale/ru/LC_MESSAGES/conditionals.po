@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# sorrymak <dearalcher@gmail.com>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-04-27 15:14+0000\n"
+"Last-Translator: sorrymak <dearalcher@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/python-for-beginners/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+# f954df04fd5940df83eec4b8c124a368
+#: ../../../source/conditionals.rst:2
+msgid "Conditional statements"
+msgstr "Условные операторы"
+
+# 39482d0866b04905871aa775394f8581
+#: ../../../source/conditionals.rst:5
+msgid "Introduction"
+msgstr "Введение"
+
+# 111401499d2c40a9996b761ebe449d84
+#: ../../../source/conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr ""
+
+# 6ab33a31c9d445248ff5b58f0cf4f72d
+#: ../../../source/conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr "Чтобы узнать, *истинно* или *ложно* условие, нужен новый тип информации: логический (булевый), описываемый логическими операторами. Любое логическое значение или логическая операция могут быть оценены как \"истина\" или \"ложь\". Условные выражения следует понимать так:"
+
+# df9289eacd1641e2a43ea2a25534e5c0
+#: ../../../source/conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr "**if** *(условие истинно)*:"
+
+# 0ae1d5541cf74fbeabed31852dd3ab27
+#: ../../../source/conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr "*делать это*"
+
+# 3093566db649459bb19ecc1750cd6821
+#: ../../../source/conditionals.rst:23
+msgid "**else**:"
+msgstr "**else**:"
+
+# 2d0805b64cc546dea95078db5e86937e
+#: ../../../source/conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr "*в противном случае делать это*"
+
+# d73d211ecfcb43209a8729611cbd3add
+#: ../../../source/conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr "Условие может быть любым, имея значение *истина* или *ложь*. В результате сравнений (таких как ``==`` (равнозначно), ``>`` (больше чем), ``<`` (меньше чем)) всегда возвращается логическое значение."
+
+# 77c7b5b62fab41a580bbf8b711d4a2a0
+#: ../../../source/conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr "Часть **else** необязательна. Если убрать её, при ложном значении ничего не произойдёт."
+
+# 15270b28c4db44858ad24d8a5a1a94f5
+#: ../../../source/conditionals.rst:34
+msgid "Examples"
+msgstr "Примеры"
+
+# 64365e8b331842cb82b2865a646b6e14
+#: ../../../source/conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr "Немного примеров. Можешь просмотреть их построчно и попытаться понять, что они делают (или запустить, чтобы быть уверенным)::"
+
+# b5e742cfef1b46258ffe386e70d3d374
+#: ../../../source/conditionals.rst:54
+msgid "Giving Directions"
+msgstr ""
+
+# d2308a4e4a234d5da113610124a1f0d0
+#: ../../../source/conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr "Python-черепашка хорошо работает с последовательными указаниями. Давайте с помощью функции ``input()`` будем принимать команды от пользователя, которые указывают направление движения черепашки. Чтобы не усложнять программу, предусмотрим только 2 инструкции: \"налево\" и \"направо\"."
+
+# a8865376d13a4ac0876033a9e6899611
+#: ../../../source/conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr "Используешь Python 2? Функция ``input()`` называется ``raw_input()``."
+
+# 337298bbc33a4e18a869f8788a145bfe
+#: ../../../source/conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr "Намного проще выделить это в функцию, вот так::"
+
+# 03c556dba3c54816aab05ef1e9d597d7
+#: ../../../source/conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr "Теперь, используя ``move()``, ты можешь выбрать, в какую сторону двигаться: влево (``left``) или вправо (``right``)."
+
+# 93a25c13d04147449bec02723b02181b
+#: ../../../source/conditionals.rst:81
+msgid "\"data munging\""
+msgstr "Преобразование данных (\"data munging\")"
+
+# f783026a116745d48f6abd395d97c2ce
+#: ../../../source/conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr ""
+
+# 7809bb0040d246f9b697fca88fca775c
+#: ../../../source/conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr "Немного примеров, демонстрирующих работу ``.strip()`` и ``.lower()``::"
+
+# 2609be470843427a931b85efbe540dab
+#: ../../../source/conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr "Попробуй добавить ``direction = direction.strip().lower()`` в функцию ``move()`` и посмотри, что получилось. Это называется преобразованием данных (\"data munging\") и очень часто используется в различных программах."
+
+# d26798a24e044d399280f7d78a8becea
+#: ../../../source/conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr "Можешь ли ты добавить дополнительные варианты движения, чтобы черепашка рисовала другие фигуры? Как насчёт шестиугольника?"

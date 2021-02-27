@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# sorrymak <dearalcher@gmail.com>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: Russian (http://www.transifex.com/opentechschool/python-for-beginners/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../../source/conditional_loops.rst:2
+msgid "Conditional Loops"
+msgstr "Условные циклы"
+
+#: ../../../source/conditional_loops.rst:4
+msgid "Introduction"
+msgstr "Введение"
+
+#: ../../../source/conditional_loops.rst:6
+msgid ""
+"Conditional loops are way to repeat something while a certain condition is "
+"satisfied, or **True**. If the condition is always satisfied (never becomes "
+"**False**), the loop can become infinite. If the condition starts off false,"
+" the code in the loop will never run! In Python conditional loops are "
+"defined with the ``while`` statement::"
+msgstr "Условные циклы необходимы для повторения каких-либо действий в зависимости от логического значения условия. Если значение условия всегда остаётся положительным, то цикл может быть бесконечным, если оно с самого начала отрицательно, то цикл не будет выполнен. В Python условные циклы создаются с помощью оператора ``while``."
+
+#: ../../../source/conditional_loops.rst:23
+msgid "We call this part of the code the 'conditional': ``'.' not in word``"
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:25
+msgid ""
+"Whether the conditional return True or not determines whether the code "
+"inside the ``while`` loop runs."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:28
+msgid ""
+"Read the code above, and see if you can summarise in your head what it what "
+"it do (what its final output will be)."
+msgstr "Прочитай расположенный выше код и попробуй разобраться, что он делает (т. е. что будет сделано в результате его работы)."
+
+#: ../../../source/conditional_loops.rst:31
+msgid ""
+"Then copy it into a file, say :file:`sentence.py` and run it - see exactly "
+"what it does. Does that match up with what you thought?"
+msgstr "Затем скопируй этот код в файл (например, :file:`sentence.py`), запусти, и проверь свои догадки."
+
+#: ../../../source/conditional_loops.rst:36
+msgid ""
+"If you are using Python 2, you will need to replace ``input`` with "
+"``raw_input`` to run the program correctly."
+msgstr "Если ты используешь Python 2, замени ``input`` на ``raw_input`` для корректной работы программы."
+
+#: ../../../source/conditional_loops.rst:40
+msgid "Turtle prison"
+msgstr "Тюрьма для черепашки"
+
+#: ../../../source/conditional_loops.rst:43
+#: ../../../source/conditional_loops.rst:89
+msgid "Exercise"
+msgstr "Упражнение"
+
+#: ../../../source/conditional_loops.rst:45
+msgid ""
+"The turtle has been up to its usual tricks again, robbing liquor stores and "
+"building up huge gambling debts. It's time for turtle to be put into a cell "
+"that it can't get out of."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:49
+msgid ""
+"Let's make a new version of ``forward()``. One that will turn the turtle "
+"around if it tries to go further than 100 from the origin. We'll need a "
+"``while`` loop, and some new turtle functions:"
+msgstr "Давайте сделаем новую версию ``forward()``, которая будет поворачивать черепашку, если она слишком далеко (более, чем на 100) отойдёт от начала координатной сетки.  . Нам понадобится цикл ``while`` и несколько новых функций для черепашки:"
+
+#: ../../../source/conditional_loops.rst:53
+msgid "``turtle.distance(0,0)`` - Distance of the turtle from the origin"
+msgstr "``turtle.distance(0,0)`` - Расстояние до черепашки от начала координат"
+
+#: ../../../source/conditional_loops.rst:54
+msgid "``turtle.towards(0,0)`` - The angle to get back to origin"
+msgstr "``turtle.towards(0,0)`` - Градусная мера угла для возвращения к началу координат"
+
+#: ../../../source/conditional_loops.rst:55
+msgid "``turtle.setheading(angle)`` - Directly sets the turtle direction"
+msgstr "``turtle.setheading(angle)`` - Ручная установка направления черепашки"
+
+#: ../../../source/conditional_loops.rst:57
+msgid ""
+"You could try playing with a turtle in the interpreter and using these "
+"functions to check exactly what they do, if you like."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:60
+msgid ""
+"Now you will need to implement the prison logic using these turtle "
+"functions, perhaps a ``while`` loop and a bit of conditional logic. It's a "
+"bit of a stretch but keep at it! Don't be afraid to talk it out with a coach"
+" or another student."
+msgstr ""
+
+#: ../../../source/conditional_loops.rst:68
+#: ../../../source/conditional_loops.rst:108
+msgid "Solution"
+msgstr "Решение"
+
+#: ../../../source/conditional_loops.rst:82
+msgid "Draw a spiral"
+msgstr "Нарисуй спираль"
+
+#: ../../../source/conditional_loops.rst:84
+msgid ""
+"Loops can be interrupted with the ``break`` statement. This is especially "
+"useful if you write an *infinite loop*, which is a loop where the "
+"conditional is always **True**."
+msgstr "Циклы могут быть прерваны командой ``break``. Она особенно полезна, если ты пишешь *бесконечный цикл*, т.е. цикл, условие которого всегда истинно."
+
+#: ../../../source/conditional_loops.rst:91
+msgid ""
+"Write a ``while`` loop with a condition that is always **True** to draw a "
+"spiral. Interrupt the loop when the turtle reaches a certain distance from "
+"the center. Use the function ``turtle.distance(x, y)`` to get the turtle's "
+"distance to the point defined by the coordinates ``x`` and ``y``."
+msgstr "Напиши ``while``-цикл для рисования спирали, условие которого всегда будет выполняться (т.е. бесконечный цикл), с прекращением выполнения по достижении черепашкой определённого расстояния от центра. Используй функцию ``turtle.distance(x, y)``, чтобы получить расстояние от черепашки до заданной точки."
+
+#: ../../../source/conditional_loops.rst:96
+msgid ""
+"To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
+"functions, which return the position of the turtle in X and Y axes "
+"respectively."
+msgstr "Чтобы сделать это, понадобятся функции ``turtle.xcor()`` и ``turtle.ycor()``, которые возвращают координаты (черепашки) X и Y соответственно."
+
+#: ../../../source/conditional_loops.rst:102
+msgid ""
+"To draw a spiral, the turtle has to rotate by a constant value and move "
+"forward by an increasing value."
+msgstr "Чтобы нарисовать спираль, черепашка должна поворачиваться на неизменяемую величину и двигаться вперёд на постоянно увеличивающееся расстояние"
+
+#: ../../../source/conditional_loops.rst:124
+msgid "Bonus"
+msgstr "Дополнительно"
+
+#: ../../../source/conditional_loops.rst:126
+msgid ""
+"Can you make a conditional for this loop, so you don't need the infinite "
+"loop ``while True`` or the ``break``? Which version do you find easier to "
+"understand?"
+msgstr ""

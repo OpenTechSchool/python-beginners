@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 10:43+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/simple_drawing.rst:2
+msgid "Simple drawing with turtle"
+msgstr "Desenarea simplă utilizând țestoasa"
+
+#: ../../../source/simple_drawing.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/simple_drawing.rst:7
+msgid "Turtle is like a drawing board."
+msgstr "Țestoasa este ca o planșetă de desen."
+
+#: ../../../source/simple_drawing.rst:9
+msgid ""
+"It has functions like ``turtle.forward(...)`` and ``turtle.left(...)`` which"
+" can move the turtle around."
+msgstr "Are funcții ca ``turtle.forward(...)`` și ``turtle.left(...)``, care pot mișca țestoasa."
+
+#: ../../../source/simple_drawing.rst:12
+msgid ""
+"Before you can use turtle, you have to import it. We recommend playing "
+"around with it in the interactive interpreter first, as there is an extra "
+"bit of work required to make it work from files. Just go to your terminal "
+"and type::"
+msgstr "Înainte de a utiliza țestoasa, aceasta trebuie importată. Îți recomandăm sa te joci cu ea în mod interactiv pentru început, deoarece va fi nevoie de cateva lucruri suplimentare pentru a o face să funcționeze din fișiere. Deschide un terminal și scrie:"
+
+#: ../../../source/simple_drawing.rst:22
+msgid ""
+"Not seeing anything on Mac OS?  Try issuing a command like "
+"``turtle.forward(0)`` and looking if a new window opened behind your command"
+" line."
+msgstr "Nu vezi nimic în MacOS? Încearcă să dai o comandă ca `turtle.forward(0)`` și să verifici dacă s-a deschis o fereastră nouă în spatele liniei de comandă."
+
+#: ../../../source/simple_drawing.rst:28
+msgid ""
+"Do you work with Ubuntu and get the error message \"No module named "
+"_tkinter\"? Install the missing package with ``sudo apt-get install "
+"python3-tk``"
+msgstr "Utilizezi Ubuntu și primești mesajul \"No module named _tkinter\"? Instaleaza modulul lipsă cu ``sudo apt-get install python3-tk``"
+
+#: ../../../source/simple_drawing.rst:34
+msgid ""
+"While it might be tempting to just copy and paste what's written on this "
+"page into your terminal, we encourage you to type out each command. Typing "
+"gets the syntax under your fingers (building that muscle memory!) and can "
+"even help avoid strange syntax errors."
+msgstr "Deși ai putea fi tentat să copiezi pur și simplu ce este scris în această pagină în terminal, te încurajăm să scrii fiecare comandă. Scrierea îți aduce controlul sintaxei (construind memoria musculară!) și poate chiar să evite erori exotice de sintaxă."
+
+#: ../../../source/simple_drawing.rst:52
+msgid ""
+"The ``turtle.forward(...)`` function tells the turtle to move forward by the"
+" given distance. ``turtle.left(...)`` takes a number of degrees which you "
+"want to rotate to the left. There is also ``turtle.backward(...)`` and "
+"``turtle.right(...)``, too."
+msgstr "Funcția ``turtle.forward(...)`` îi spune țestoasei să înainteze distanța specificată. ``turtle.left(...)`` primește un număr de grade cu care vrei să se rotească la stânga. Există de asemenea ``turtle.backward(...)`` și ``turtle.right(...)``."
+
+#: ../../../source/simple_drawing.rst:58
+msgid ""
+"Want to start fresh? You can type ``turtle.reset()`` to clear the drawing "
+"that your ``turtle`` has made so far. We'll go into more detail on "
+"``turtle.reset()`` in just a bit."
+msgstr "Vrei să începi din nou? Poți să scrii ``turtle.reset()`` pentru șterge ce a făcut până acum ``turtle``(țestoasa). O să intrăm în detalii despre ``turtle.reset()`` în scurt timp."
+
+#: ../../../source/simple_drawing.rst:62
+msgid ""
+"The standard turtle is just a triangle. That's no fun! Let's make it a "
+"turtle instead with the ``turtle.shape()`` command::"
+msgstr "Țestoasa standard este un triunghi. Nu e prea drăguț! Hai să o transformăm într-o țestoasă cu comanda ``turtle.shape()``:"
+
+#: ../../../source/simple_drawing.rst:67
+msgid "So much cuter!"
+msgstr "Mult mai drăguț!"
+
+#: ../../../source/simple_drawing.rst:69
+msgid ""
+"If you put the commands into a file, you might have recognized that the "
+"turtle window vanishes after the turtle finished its movement.  (That is "
+"because Python exits when your turtle has finished moving.  Since the turtle"
+" window belongs to Python, it terminates as well.)  To prevent that, just "
+"put ``turtle.exitonclick()`` at the bottom of your file.  Now the window "
+"stays open until you click on it::"
+msgstr "Dacă pui comenzile într-un fișier, poate ai observat că fereastra cu țestoasa dispare după ce țestoasa și-a terminat mișcarea. (Asta deoarece Python se închide după ce țestoasa și-a terminat mișcarea. De vreme ce fereastra țestoasei aparține Pyhon, și aceasta se închide.) Pentru a evita asta, adaugă ``turtle.exitonclick()`` la sfârșitul fișierului tău. Acum fereastra rămâne deschisă pâna cand apeși un buton în ea:"
+
+#: ../../../source/simple_drawing.rst:86
+msgid ""
+"Python is a programming language where horizontal indenting of text is "
+"important. We'll learn all about this in the Functions chapter later on, but"
+" for now just keep in mind that stray spaces or tabs before any line of "
+"Python code can cause an unexpected error."
+msgstr "Python este un limbaj de programare în care indentarea textului este importantă. O să învățăm despre asta în continuare în capitolul Funcții, dar pentru acum trebuie să reții că spațiile suplimentare sau caracterele tab în fața oricărei linii de cod Python pot genera erori."
+
+#: ../../../source/simple_drawing.rst:92
+msgid "Drawing a square"
+msgstr "Desenarea unui pătrat"
+
+#: ../../../source/simple_drawing.rst:96
+msgid ""
+"You're not always expected to know the anwer immediately. Learn by trial and"
+" error! Experiment, see what python does when you tell it different things, "
+"what gives beautiful (although sometimes unexpected) results and what gives "
+"errors. If you want to keep playing with something you learned that creates "
+"interesting results, that's OK too. Don't hesitate to try and fail and learn"
+" from it!"
+msgstr "Nu trebuie neapărat să știi de fiecare dată răspunsul din prima! Învață prin încercări repetate! Experimentează, vezi cum reaționează python la diverse comenzi, ce generează rezultate frumoase (deși uneori neașteptate) și ce generează erori. Dacă vrei să te joci în continuare cu ceva ce ai învățat și dă rezultate interesante, este în regulă. Să nu îți fie frică să încerci și să greșești și să înveți din asta!"
+
+#: ../../../source/simple_drawing.rst:105
+#: ../../../source/simple_drawing.rst:182
+#: ../../../source/simple_drawing.rst:215
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/simple_drawing.rst:107
+msgid "Draw a square as in the following picture:"
+msgstr "Desenează un pătrat ca în figura următoare:"
+
+#: ../../../source/simple_drawing.rst:111
+msgid ""
+"For a square you will probably need a right angle, which is 90 degrees."
+msgstr "Pentru un pătrat probabil vei avea nevoie de un unghi drept, care este de 90 de grade."
+
+#: ../../../source/simple_drawing.rst:116
+#: ../../../source/simple_drawing.rst:191
+#: ../../../source/simple_drawing.rst:227
+msgid "Solution"
+msgstr "Soluția"
+
+#: ../../../source/simple_drawing.rst:131
+msgid ""
+"Notice how the turtle starts and finishes in the same place and facing the "
+"same direction, before and after drawing the square. This is a useful "
+"convention to follow, it makes it easier to draw multiple shapes later on."
+msgstr "Observă cum țestoasa începe și termină în același loc și cu aceeași orientare la desenarea fiecărui pătrat. Aceasta este o convenție utilă, care ușurează desenarea mai multor forme consecutive."
+
+#: ../../../source/simple_drawing.rst:137
+#: ../../../source/simple_drawing.rst:205
+msgid "Bonus"
+msgstr "Supliment"
+
+#: ../../../source/simple_drawing.rst:139
+msgid ""
+"If you want to get creative, you can modify your shape with the "
+"``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you use "
+"these functions?  Before you can use a function you need to know its "
+"*signature* (for example the number of parameters and what they mean.) To "
+"find this out you can type ``help(turtle.color)`` into the Python shell. If "
+"there is a lot of text, Python will put the help text into a *pager*, which "
+"lets you page up and down. Press the :kbd:`q` key to exit the pager."
+msgstr "Dacă vrei să fii creativ, poți modifica forma cu funcțiile ``turtle.width(...)`` și ``turtle.color(...)``. Cum utilizezi aceste funcții? Înainte de a utiliza o funcție trebuie să îi cunoști *semnătura* (de exemplu numărul de parametri și semnificația lor). Pentru a putea afla asta poți să scrii ``help(turtle.color)`` în consola interactivă Python. Dacă este prea mult text, Python o să pună documentația într-un *pager*, care îți permite să derulezi pagini sus si jos. Apasă tasta :kbd:`q` pentru a ieși din pager."
+
+#: ../../../source/simple_drawing.rst:150
+msgid "Are you seeing an error like this::"
+msgstr "Primești o eroare ca:"
+
+#: ../../../source/simple_drawing.rst:154
+msgid ""
+"when trying to view help? In Python you have to import names before you can "
+"refer to them, so in a new Python interactive shell you'll need to ``import "
+"turtle`` before ``help(turtle.color)`` will work."
+msgstr "atunci când vrei să vezi documentația? În Python trebuie să imporți numele înainte de a le utiliza, așa că într-o consolă interactivă nouă va trebui să dai comanda ``import turtle`` înainte ca ``help(turtle.color)`` să funcționeze."
+
+#: ../../../source/simple_drawing.rst:158
+msgid ""
+"Another way to find out about functions is to browse the `online "
+"documentation`_."
+msgstr "O altă cale pentru a învăța despre funcții este consultarea `online documentation`_."
+
+#: ../../../source/simple_drawing.rst:165
+msgid ""
+"If you misdrew anything, you can tell turtle to erase its drawing board with"
+" the ``turtle.reset()`` directive or undo the most recent step with "
+"``turtle.undo()``."
+msgstr "Dacă ai desenat ceva greșit, poți să îi spui țestoasei să șteargă desenul cu directiva ``turtle.reset()`` sau să anulezi ultimul pas cu ``turtle.undo()``."
+
+#: ../../../source/simple_drawing.rst:171
+msgid ""
+"As you might have read in the help, you can modify the color with "
+":samp:`turtle.color({colorstring})`.  These include but are not limited to "
+"\"red,\" \"green,\" and \"violet.\"  See the `colours manual`_ for an "
+"extensive list."
+msgstr "După cum e posibil să fi citit în documentație, poți modifica culoarea cu :samp:`turtle.color({colorstring})`. Valorile includ dar nu sunt limitate la \"red\" (roșu), \"green\"(verde), și \"violet\"(violet). "
+
+#: ../../../source/simple_drawing.rst:179
+msgid "Drawing a rectangle"
+msgstr "Desenarea unui dreptunghi"
+
+#: ../../../source/simple_drawing.rst:184
+msgid "Can you draw a rectangle too?"
+msgstr "Poți să desenezi un dreptunghi?"
+
+#: ../../../source/simple_drawing.rst:207
+msgid ""
+"How about a triangle? In an equilateral triangle (a triangle with all sides "
+"of equal length) each corner has an angle of 60 degrees."
+msgstr "Dar un triunghi? Într-un triunghi echilateral (un triunghi cu laturile egale) fiecare colț are un unghi de 60 de grade."
+
+#: ../../../source/simple_drawing.rst:212
+msgid "More squares"
+msgstr "Mai multe pătrate"
+
+#: ../../../source/simple_drawing.rst:217
+msgid ""
+"Now, draw a tilted square. And another one, and another one. You can "
+"experiment with the angles between the individual squares."
+msgstr "Acum, desenează un pătrat înclinat. Și încă unul, și încă unul. Poți experimenta cu unghiurile între pătrate."
+
+#: ../../../source/simple_drawing.rst:222
+msgid ""
+"The picture shows three 20 degree turns. You could try 20, 30 and 40, for "
+"example."
+msgstr "În imagine sunt trei întoarceri de 20 de grade. Poți încerca, de exemplu, 20, 30 și 40."

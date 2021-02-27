@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-22 20:19+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/python-for-beginners/language/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# f954df04fd5940df83eec4b8c124a368
+#: ../../../source/conditionals.rst:2
+msgid "Conditional statements"
+msgstr "조건문"
+
+# 39482d0866b04905871aa775394f8581
+#: ../../../source/conditionals.rst:5
+msgid "Introduction"
+msgstr "소개"
+
+# 111401499d2c40a9996b761ebe449d84
+#: ../../../source/conditionals.rst:7
+msgid ""
+"So far we have accomplished predefined tasks, but in all honesty we were "
+"accomplishing no better than old-time music boxes following one set of "
+"instructions to the end. What makes programming so much more powerful are "
+"conditional statements. This is the ability to *test* a variable against a "
+"value and act in one way if the condition is met by the variable or another "
+"way if not. They are also commonly called by programmers *if statements*."
+msgstr "이미 한참 앞에서 정해진 과제를 해결했지만, 솔직히 말해서 하나의 명령 모음을 처음부터 끝까지 따라가는 오래된 뮤직 박스 그 이상까진 가지 않았습니다. 프로그래밍을 더욱 강력하게 해주는 요소는 조건문입니다. 값에 대하 변수를 *시험* 하는 능력이 있으며 변수에 대한 조건을 만날 경우 한 방식대로 동작하고 그렇지 않으면 다른 방식으로 동작합니다. 프로그래머들이 보통 부르기로는 *if 조건문*이라고 합니다."
+
+# 6ab33a31c9d445248ff5b58f0cf4f72d
+#: ../../../source/conditionals.rst:15
+msgid ""
+"To know if a condition is *True* of *False*, we need a new type of data: the"
+" booleans. They allow logical operations. A logic statement or operation can"
+" be evaluated to be *True* or *False*. Our conditional statement can then be"
+" understood like this:"
+msgstr "조건이 *True*인지 *False*인지 알려면, 새 데이터 형식 부울린이 필요합니다. 부울린 형식은 논리 연산자를 허용합니다. 논리 구문 또는 논리 연산자는 *True* 또는 *False*로 계산할 수 있습니다. 조건문은 다음과 같이 이해할 수 있습니다:"
+
+# df9289eacd1641e2a43ea2a25534e5c0
+#: ../../../source/conditionals.rst:20
+msgid "**if** *(a condition evaluates to True)*:"
+msgstr "**if** *(참인지 판단할 조건)*:"
+
+# 0ae1d5541cf74fbeabed31852dd3ab27
+#: ../../../source/conditionals.rst:21
+msgid "*then do these things only for 'True'*"
+msgstr "*'True'일 경우에만 아래 구문을 실행*"
+
+# 3093566db649459bb19ecc1750cd6821
+#: ../../../source/conditionals.rst:23
+msgid "**else**:"
+msgstr "**else**:"
+
+# 2d0805b64cc546dea95078db5e86937e
+#: ../../../source/conditionals.rst:23
+msgid "*otherwise do these things only for 'False'*."
+msgstr "*그렇지 않을 경우 'False'일 경우에만 아래 구문을 실행합니다*."
+
+# d73d211ecfcb43209a8729611cbd3add
+#: ../../../source/conditionals.rst:25
+msgid ""
+"The condition can be anything that evaluates as *True* or *False*. "
+"Comparisons always return *True* or *False*, for example ``==`` (equal to), "
+"``>`` (greater than), ``<`` (less than.)"
+msgstr "조건문은 *True* 또는 *False*의 값을 판단하는 그 어떤 동작이든 취할 수 있습니다. 비교문은 항상 *True* 또는 *False* 를 반환하는데, 비교 연산자의 예로는 ``==`` (같음), ``>`` (보다 큼), ``<`` (보다 작음)이 있습니다."
+
+# 77c7b5b62fab41a580bbf8b711d4a2a0
+#: ../../../source/conditionals.rst:29
+msgid ""
+"The **else** part is optional. If you leave it off, nothing will happen if "
+"the conditional evaluates to 'False'."
+msgstr "**else** 부분은 선택적입니다. 비워두면 조건의 결과로 'False'가 나왔을 때 아무일도 일어나지 않습니다."
+
+# 15270b28c4db44858ad24d8a5a1a94f5
+#: ../../../source/conditionals.rst:34
+msgid "Examples"
+msgstr "예제"
+
+# 64365e8b331842cb82b2865a646b6e14
+#: ../../../source/conditionals.rst:36
+msgid ""
+"Here are some examples. You may want to read them over line-by-line and see "
+"what you think they do, or run them to be certain::"
+msgstr "몇 가지 예제를 보여드리겠습니다. 한줄 한줄 읽어보시고 어떤 동작을 하는지 보시든지, 각 부분을 실행해보십시오::"
+
+# b5e742cfef1b46258ffe386e70d3d374
+#: ../../../source/conditionals.rst:54
+msgid "Giving Directions"
+msgstr "방향 지시하기"
+
+# d2308a4e4a234d5da113610124a1f0d0
+#: ../../../source/conditionals.rst:56
+msgid ""
+"Python turtles can be very good at following instructions. Let's use the "
+"``input()`` function to ask the user for a direction to move the turtle. To "
+"keep things easy we will only accept two instructions: \"left\" and "
+"\"right\"."
+msgstr "파이선 거북이는 다음 지시를 매우 잘 따르는 존재가 될 수 있습니다. 거북이가 움직이는 방향을 사용자가 요청할 수 있는 ``input()`` 함수를 사용해보도록 하겠습니다. 쉽게 하기 위해 \"left\"와 \"right\" 두가지 명령만 받아들이도록 하겠습니다."
+
+# a8865376d13a4ac0876033a9e6899611
+#: ../../../source/conditionals.rst:63
+msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
+msgstr "파이썬 2를 사용하시나요? ``input()`` 함수는 ``raw_input()``함수를 호출합니다."
+
+# 337298bbc33a4e18a869f8788a145bfe
+#: ../../../source/conditionals.rst:65
+msgid "It's much easier to define this as a function, like so::"
+msgstr "다음과 같이 함수를 정의하는 것처럼 매우 쉽습니다::"
+
+# 03c556dba3c54816aab05ef1e9d597d7
+#: ../../../source/conditionals.rst:76
+msgid ""
+"Now whenever you use ``move()`` you are prompted to choose ``left`` or "
+"``right``."
+msgstr "이제 ``move()``를 언제든지 사용할 때마다 ``left``나 ``right``를 택하도록 질문을 받을 것입니다."
+
+# 93a25c13d04147449bec02723b02181b
+#: ../../../source/conditionals.rst:81
+msgid "\"data munging\""
+msgstr "\"데이터 은폐\""
+
+# f783026a116745d48f6abd395d97c2ce
+#: ../../../source/conditionals.rst:83
+msgid ""
+"In this program, the turtle will only respond to exactly ``left`` or "
+"``right`` with no variation. Though ``Left`` or ``LEFT`` might seem the same"
+" as ``left`` to a human, that isn't the case when programming. Python has a "
+"few utility methods to help with that. A string has the methods "
+"``.strip()``, which removes whitespace and ``.lower()`` which makes "
+"everything lower-case."
+msgstr "이 프로그램에서, 거북이는 다른 예외없이 정확하게 ``left`` 또는 ``right``에만 반응합니다. ``Left`` 또는 ``LEFT``는 사람에게 있어 같은 ``left``겠지만 프로그래밍을 할 경우에는 그렇지 않습니다. 파이썬에는 이런 상황에 도움을 줄 몇가지 쓸모있는 메서드가 있습니다. 문자열은 공백을 제거할때 사용하는 ``.strip()`` 메서드와 모든 글자를 소문자로 만드는 ``.lower()`` 메서드를 보유하고 있습니다."
+
+# 7809bb0040d246f9b697fca88fca775c
+#: ../../../source/conditionals.rst:90
+msgid ""
+"Here are some examples to print out the effects of ``.strip()`` and "
+"``.lower()``::"
+msgstr "``.strip()``과 ``.lower()``의 결과를 출력하는 간단한 예제를 보여드리겠습니다::"
+
+# 2609be470843427a931b85efbe540dab
+#: ../../../source/conditionals.rst:99
+msgid ""
+"Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
+"function, to see the effect. We often call this kind of code \"data "
+"munging\", and it is very common."
+msgstr "같은 결과를 보기 위해 ``move()`` 함수에 ``direction = direction.strip().lower()``를 추가해보십시오. 이런 코드를 종종 \"데이터 은폐\"라고 하며, 매우 일반적으로 사용합니다."
+
+# d26798a24e044d399280f7d78a8becea
+#: ../../../source/conditionals.rst:103
+msgid ""
+"Can you add some extra input choices to make the turtle draw other things? "
+"How about ``hexagon``?"
+msgstr "거북이가 다른걸 그릴 수 있게 추가 입력 선택을 넣을 수 있겠나요? ``hexagon``은 어떤가요?"

@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Robert Lehmann <transifex@robertlehmann.de>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-18 10:31+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 4ca9d9a1ac994da2b6d3f04a90aa29ed
+#: ../../../source/where_to_go.rst:2
+msgid "Where to go from here"
+msgstr "Wie es weiter geht"
+
+# 9fe9c5c26d3b4aff8c0025ce35c0c998
+#: ../../../source/where_to_go.rst:5
+msgid "Learning Python"
+msgstr "Python lernen"
+
+# f5b53819b24749528d73d4a44c249b2a
+#: ../../../source/where_to_go.rst:7
+msgid ""
+"Hopefully this tutorial has tought you just enough python to get you on your"
+" feet. However, there is much more that you can learn! Even professional "
+"programmers will always be trying to learn more about their language and how"
+" to code excellently with it."
+msgstr "Hoffentlich hat diese Tutorial dir genug Python beigebracht um auf eigenen Füßen stehen zu können. Trotzdem gibt es immer noch mehr zu lernen! Auch professionele Programmierer probieren ständig mehr über ihre Sprache und wie man mit ihr exzellent programmiert zu lernen."
+
+# 429ea1e64b97494ba2f233b78a084eab
+#: ../../../source/where_to_go.rst:14
+msgid "Books and Tutorials"
+msgstr "Bücher und Tutorials"
+
+# aee14e13261a4a7cab9d87566b02a183
+#: ../../../source/where_to_go.rst:16
+msgid ""
+"If you like learning from a book, there are heaps of good ones, and even "
+"many that can be read freely on the web!"
+msgstr "Falls du Lernen mit Büchern magst, gibt es tonnen guter Bücher.  Einige sind sogar kostenlos im Internet lesbar!"
+
+# e7ff8f8afc3f45ca963bb235a00623d9
+#: ../../../source/where_to_go.rst:19
+msgid ""
+"`OTS Python Portal`_ - Check the rest of our tutorials, and look out for "
+"future workshops!"
+msgstr "`OTS Python Portal`_ - Schau dir den Rest unserer Tutorials an, und halte Ausschau nach zukünftigen Workshops!"
+
+# e8e7cd87fb9c4d3bb788d0bad28268c4
+#: ../../../source/where_to_go.rst:21
+msgid ""
+"`O'Reilly`_ publishes hundreds of books and ebooks, on python and many other"
+" technologies (check out Learning Python, 5th edition)."
+msgstr "`O'Reilly`_ veröffentlicht hunderte von Büchern und Ebooks, über Python und viele andere Technologien (schau dir die Einführung in Python oder das englische Original, Learning Python (5. Auflage), an)."
+
+# 676d7d6e75e64d0b81cf0e800516ba6c
+#: ../../../source/where_to_go.rst:23
+msgid ""
+"`Invent with Python`_ takes a practical approach, with three different "
+"ebooks that can be read online for free."
+msgstr "`Invent with Python`_ ist sehr praxisorientiert, mit drei verschiedenen Ebooks die online umsonst gelesen werden können."
+
+# d1f0977e6f8b40f08959767ba080178a
+#: ../../../source/where_to_go.rst:25
+msgid ""
+"`Learn Python the Hard Way`_ is a step by step full tutorial on the "
+"language, done in a unique style."
+msgstr "`Learn Python the Hard Way`_ ist eine Schritt-für-Schritt-Einführung in die Sprache mit einem einzigartigen Stil."
+
+# c1a2eb187d5944d69f19b679be2f1c66
+#: ../../../source/where_to_go.rst:27
+msgid "`Dive into Python 3`_ is another great book available online for free!"
+msgstr "`Dive into Python 3`_ ist ein anderes großartiges Buch das online umsonst erhältlich ist!"
+
+# 31a6946cd7184e00a10c9018d7f3974b
+#: ../../../source/where_to_go.rst:28
+msgid "Last but not least, python.org has `Its own tutorial!`_"
+msgstr "Zuguterletzt hat python.org sein `eigenes Tutorial! <http://docs.python.org/3/tutorial>`_"
+
+# f115eb306df240a68642600624bfac16
+#: ../../../source/where_to_go.rst:40
+msgid "Online learning courses"
+msgstr "Onlinekurse"
+
+# d7f3fa342eb8423a9351bdbc5537442e
+#: ../../../source/where_to_go.rst:42
+msgid ""
+"You wouldn't believe what you can do on the web these days. There are many "
+"courses on programming around!"
+msgstr "Du wirst nicht glauben was es heutzutage alles im Web gibt. Man findet viele Kurse über Programmieren!"
+
+# d3621573971e441799e8283b77a0c730
+#: ../../../source/where_to_go.rst:45
+msgid ""
+"`Edx`_ - with top universities like Stanford, MIT, Harvard and Berkley "
+"giving out interactive courses for free, it's hard to turn this down. You'll"
+" have to look for ones coming up soon!"
+msgstr "`Edx`_ - zu interaktiven, kostenlosen Kursen von Spitzenuniversitäten wie Stanford, dem MIT, Harvard und Berkeley lässt sich nur schwer nein sagen. Halt Ausschau nach demnächst anstehenden Kursen!"
+
+# 19ac5da1918c421a804f482f57575cd0
+#: ../../../source/where_to_go.rst:48
+msgid ""
+"`Coursera`_ is very similar to Edx, with even more courses, and some that "
+"can be taken at any time."
+msgstr "`Coursera`_ ist sehr ähnlich zu Edx, mit noch mehr Kursen, und manche können sogar jederzeit genommen werden."
+
+# c92961467e72449892428cd6257cd00a
+#: ../../../source/where_to_go.rst:50
+msgid ""
+"`CodeAcademy`_ - luckily this one has a python-specific course that can be "
+"taken at any time, and many other practical language courses."
+msgstr "`CodeAcademy`_ - glücklicherweise hat diese einen Python-spezifischen Kurs den man jederzeit nehmen kann, und viele andere praktische Sprachkurse."
+
+# 13fc3df0f1d54332a62d4170c2329568
+#: ../../../source/where_to_go.rst:62
+msgid "What to do with Python"
+msgstr "Was man mit Python machen kann"
+
+# 3a304b4e117b4b63bf50d38dbe379a22
+#: ../../../source/where_to_go.rst:64
+msgid ""
+"Well, that's a tough one! See, practically anything you can think of "
+"involving some electronics - from your TV remote, to a smartphone, to the "
+"backend of a popular web service, to the scheduling of airport landings, to "
+"the software you use everyday - it all involves some programming somewhere!"
+msgstr "Nunja, das ist eine gute Frage! Schau, praktisch alles was du dir vorstellen kannst, was auch nur entfernt mit Elektronik zu tun hat -- von deiner Fernbedienung, über ein Smartphone, das Backend eines populären Webdienstes, das Planen von Flugzeuglandungen, bis zur Software die du jeden Tag nutzt -- es hat alles etwas mit Programmieren zu tun!"
+
+# e1c877ce99654871b4b2c0a00d9c1da1
+#: ../../../source/where_to_go.rst:69
+msgid ""
+"And not only is it a big field practically, but also technically and "
+"academically. As soon as you have a basic understanding of a general "
+"language like python, you can start working on all manner of subjects:  web "
+"frontends, web backend services, data analysis and statistics, Artificial "
+"Intelligence, GUI design, robotics, software development of all kinds, "
+"online transactions, automation of everything, and many more."
+msgstr "Und es ist nicht nur ein großes praktisches Feld, sondern auch ein technisches und akademisches. Sobald du ein generelles Verständnis von einer grundlegenden Sprache wie Python hast, kannst du an allen möglichen Themen arbeiten: Webfrontends, Webbackend-Dienste, Datenanalyse und Statistiken, künstliche Intelligenz, GUI-Design, Robotik, Softwareentwicklung aller Arten, Onlinetransaktionen, Automatisierung von allem, und viel mehr."
+
+# 4605be188ec54a6198c8ad739f2ae1cf
+#: ../../../source/where_to_go.rst:76
+msgid ""
+"We wouldn't blame if that all sounds daunting, so here's some practical "
+"advice, that takes advantage of how wide a field \"programming\" is:"
+msgstr "Wir können verstehen wenn das einschüchternd klingt, also ist hier ein praktischer Ratschlag der Nutzen aus der Größe des Felds \"Programmieren\" zieht:"
+
+# 2e5a395697c84fcb9361940d3885cff6
+#: ../../../source/where_to_go.rst:79
+msgid "**Apply your new skills to whatever you're passionate about.**"
+msgstr "**Benutz deine neuen Fähigkeiten wofür auch immer du Leidenschaft hast.**"
+
+# 3a9e1b0234e74693bf86e1416f3a70fc
+#: ../../../source/where_to_go.rst:81
+msgid ""
+"Whether that's starting a new business, helping you do some task involving "
+"data faster, putting up an online site, calculating advantages in a game you"
+" play, creating art and music, or anything else, finding out how to use "
+"programming to help with whatever floats your boat will make learning much "
+"more exciting and relevant. Feel free to ask someone more experienced if you"
+" have no idea where to start, but always mention what makes you tick!"
+msgstr "Ob das heißt ein neues Geschäft zu starten, dir zu helfen eine Aufgabe mit Daten schneller zu bewältigen, eine Seite online zu schalten, Vorteile in einem Spiel zu berechnen, Kunst und Musik zu erstellen, oder irgendetwas anderes, herauszufinden wie dir Programmieren in deinen Hobbies helfen kann macht das Lernen viel spannender und relevanter. Frag ruhig jemanden mit mehr Erfahrung falls du keine Idee zum Weitermachen hast, aber behalt immer deine Interessen im Auge."

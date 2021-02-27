@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012–2014, OpenTechSchool and contributors
+# This file is distributed under the same license as the Introduction to Programming with Python package.
+# 
+# Translators:
+# Razvan Stefanescu <razvan.stefanescu@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Python for beginners\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-04-01 11:55+0000\n"
+"Last-Translator: Razvan Stefanescu <razvan.stefanescu@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/opentechschool/python-for-beginners/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../../source/logical_operators.rst:2
+msgid "Logical operators"
+msgstr "Operatori logici"
+
+#: ../../../source/logical_operators.rst:5
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../../../source/logical_operators.rst:7
+msgid ""
+"Conditionals are a nice way to make decisions by asking if something equals "
+"*True* or not. But often one condition is not enough. We may want to take "
+"the opposite of our result. Or for instance if we want to make a decision "
+"upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine them. This "
+"can be done with logical operators."
+msgstr "Condițiile sunt o formă comodă de a lua decizii întrebându-ne dacă ceva are valoare *Adevărat* sau nu. Dar de multe ori o condiție nu e suficientă. Am putea dori să facem opusul. Sau de exemplu dacă dorim să luăm o decizie bazată pe ``turtle.xcor()`` și``turtle.ycor()`` atunci trebuie să le combinăm. Asta se poate rezolva cu operatori logici."
+
+#: ../../../source/logical_operators.rst:14
+msgid "Negation of a statement"
+msgstr "Negarea unei declarații"
+
+#: ../../../source/logical_operators.rst:16
+msgid ""
+"If we want something to be *False* we can use ``not``. It is a logical "
+"operator::"
+msgstr "Dacă dorim ca ceva să fie *Fals* putem utiliza ``not``. Este un operator logic:"
+
+#: ../../../source/logical_operators.rst:26
+#: ../../../source/logical_operators.rst:66
+msgid "Exercise"
+msgstr "Exercițiu"
+
+#: ../../../source/logical_operators.rst:28
+msgid ""
+"The turtle gives us a useful function to know if it is drawing or not: "
+"``turtle.isdown()``.  This function returns *True* if the turtle is drawing."
+" As we have seen earlier, the function ``turtle.penup()`` and "
+"``turtle.pendown()`` toggle between drawing while moving, or just moving "
+"without a trace."
+msgstr "Țestoasa ne pune la dispoziție o funcție utilă pentru a ști dacă desenează sau nu: ``turtle.isdown()``. Această funcție returnează *Adevărat* dacă țestoasa desenează. După cum am văzut mai devreme, funcțiile ``turtle.penup()`` și ``turtle.pendown()`` schimbă între desen și mișcare, sau doar mișcare fără a trasa nici o urmă."
+
+#: ../../../source/logical_operators.rst:33
+msgid "Can we write a function that only goes forward if the pen is up?"
+msgstr "Putem scrie o funcție care înaintează doar dacă penița este ridicată?"
+
+#: ../../../source/logical_operators.rst:38
+#: ../../../source/logical_operators.rst:75
+msgid "Solution"
+msgstr "Soluție"
+
+#: ../../../source/logical_operators.rst:48
+msgid "This and that or something else"
+msgstr "Asta și aia sau altceva"
+
+#: ../../../source/logical_operators.rst:50
+msgid ""
+"Two easy to understand operators are ``and`` and ``or``. They do exactly "
+"what they sound like:::"
+msgstr "Doi operatori ușor de înțeles sunt ``and`` (și) și ``or`` (sau). Ei fac exact ce spune numele lor:"
+
+#: ../../../source/logical_operators.rst:62
+msgid ""
+"You are not restricted to one logical operator. You can combine as may as "
+"you want."
+msgstr "Nu ești limitat la un singur operator logic. Poți combina oricâți de mulți dorești."
+
+#: ../../../source/logical_operators.rst:68
+msgid ""
+"Earlier we put the turtle in a circular prison. This time let's make it a "
+"box. If the turtle goes more than 100 in the X *or* Y axis then we turn the "
+"turtle back around to the center."
+msgstr "Mai devreme am pus țestoasa într-o închisoare circulară. De această dată să o punem într-o cutie. Dacă țestoasa merge mai mult de 100 pe axele X *sau* Y atunci întoarcem țestoasta înapoi spre centru."
