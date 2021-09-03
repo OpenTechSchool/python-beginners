@@ -85,7 +85,7 @@ msgid ""
 "which lines should be used in the ``for`` loop, and which come after, as "
 "part of the rest of your program. Use four spaces (hitting tab) to indent "
 "your code."
-msgstr "Beachte wie oben die Zeilen, die *wiederholt* werden, die sind die *eingerückt* sind. Das ist ein wichtiges Konzept in Python - das ist wie es weiß welche Zeilen zur ``for``\\ -Schleife gehören und welche danach kommen, als Rest des Programms. Benutz vier Leerzeichen (drück Tab) um deinen Quelltext einzurücken."
+msgstr "Beachte wie oben die Zeilen *wiederholt* werden, die *eingerückt* sind. Das ist ein wichtiges Konzept in Python - das ist wie es weiß welche Zeilen zur ``for``\\ -Schleife gehören und welche danach kommen, als Rest des Programms. Benutz vier Leerzeichen (drück Tab) um deinen Quelltext einzurücken."
 
 # 78984f3a1e8442cfa8a190d0e891d912
 #: ../../../source/loops.rst:50
