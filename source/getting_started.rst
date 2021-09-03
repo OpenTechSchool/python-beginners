@@ -269,3 +269,14 @@ And now we are all set and can get started with turtle!
    --- rather use more appropriate names such as :file:`square.py` or 
    :file:`rectangle.py`.  Otherwise, whenever you refer to ``turtle``, Python 
    will pick up *your* file instead of the standard Python turtle module.
+
+
+Too fast?  More information here
+--------------------------------
+
+Was that whirlwind intro to the command line, the python interpreter, and 
+saving files, a little quick?  Are you left feeling a little unsure about what's 
+what?  Check out the first few introductory sections of the djangogirls
+tutorial for an overview at a more gentle pace:
+
+http://tutorial.djangogirls.org/en/intro_to_command_line/
