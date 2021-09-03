@@ -13,6 +13,8 @@
 
 import sys, os
 
+default_encoding = sys.getdefaultencoding()
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -51,7 +53,8 @@ copyright = u'2012–2014, OpenTechSchool and contributors'
 import subprocess
 _git_version_cmd = "git log --max-count=1 --format=format:%ad --date=short"
 try:
-    version = subprocess.check_output(_git_version_cmd.split())
+    # supply encoding so this comes out as str not bytes
+    version = subprocess.check_output(_git_version_cmd.split(), encoding=default_encoding)
 except (AttributeError, OSError, subprocess.CalledProcessError):
     import datetime
     version = datetime.datetime.strftime("%Y.%m.%d")
@@ -268,9 +271,9 @@ class Contributors(rst.Directive):
     _GIT_COMMAND = "git log --format=%aN"
     def run(self):
         try:
-            authors = set(subprocess.check_output(self._GIT_COMMAND.split())
+            authors = set(subprocess.check_output(self._GIT_COMMAND.split(),encoding=default_encoding)
                 .splitlines())
-        except (AttributeError, OSError, subprocess.CalledProcessError), e:
+        except (AttributeError, OSError, subprocess.CalledProcessError) as e:
             import traceback; traceback.print_exc()
             return []
 
@@ -290,7 +293,7 @@ class Contributors(rst.Directive):
 
         bullet_list = nodes.bullet_list()
         for author in sorted(authors, key=str.lower):
-            author = unicodedata.normalize('NFC', author.decode('utf-8'))
+            author = unicodedata.normalize('NFC', author)
             bullet_list.append(nodes.list_item(author,
                     nodes.paragraph(author, author)))
 
