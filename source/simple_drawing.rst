@@ -1,3 +1,5 @@
+.. _simple_drawing:
+
 Simple drawing with turtle
 **************************
 
@@ -12,42 +14,55 @@ which can move the turtle around.
 
 Before you can use turtle, you have to import it. We recommend playing around
 with it in the interactive interpreter first, as there is an extra bit of work
-required to make it work from files. Just go to your terminal and type::
+required to make it work from files.
 
-    import turtle
+.. container:: thonny
 
-.. image:: /images/default.png
+    To start it up in **Thonny** type::
 
-.. note::
+        import turtle
 
-   Not seeing anything on Mac OS?  Try issuing a command like
-   ``turtle.forward(0)`` and looking if a new window opened behind your
-   command line.
+    You should see something like this (but if you don't see below):
 
-.. note::
+    .. image:: images/default.png
 
-   Do you work with Ubuntu and get the error message "No module named
-   _tkinter"? Install the missing package with ``sudo apt-get install
-   python3-tk``
+For Noteable instructions click "Show".
+
+.. rst-class:: solution
+
+    .. container:: noteable
+
+        To start it up in **Noteable**, type::
+
+            from mobilechelonian import Turtle; turtle=Turtle()
+
+        You'll see this:
+
+        .. image:: images/chelonian_start.png
+
+On some computers nothing appears until you get to the next step, so
+don't worry if you don't see a result yet!
 
 .. note::
    
    While it might be tempting to just copy and paste what's written on
    this page into your terminal, we encourage you to type out each command.
-   Typing gets the syntax under your fingers (building that muscle memory!)
-   and can even help avoid strange syntax errors.
+   Typing gets the syntax of Python "under your fingers"
+   and can help avoid errors.
+
+Now in your interpreter (at the ``>>>`` or ``In: [ ]`` prompt) try these:
 
 ::
 
     turtle.forward(25)
 
-.. image:: /images/forward.png
+.. image:: images/forward.png
 
 ::
 
-    turtle.left(30)
+    turtle.left(45)
 
-.. image:: /images/left.png
+.. image:: images/left.png
 
 
 The ``turtle.forward(...)`` function tells the turtle to move forward
@@ -55,32 +70,50 @@ by the given distance. ``turtle.left(...)`` takes a number of degrees which you
 want to rotate to the left. There is also ``turtle.backward(...)`` and
 ``turtle.right(...)``, too.
 
-.. note::
-   Want to start fresh? You can type ``turtle.reset()`` to clear the drawing
-   that your ``turtle`` has made so far. We'll go into more detail on
-   ``turtle.reset()`` in just a bit.
-
-The standard turtle is just a triangle. That's no fun! Let's make it a turtle
-instead with the ``turtle.shape()`` command::
+The standard turtle which you'll see if you're using Thonny is just a triangle.
+That's no fun! Make it a turtle instead with the ``turtle.shape()`` command::
 
   turtle.shape("turtle")
 
 So much cuter!
 
-If you put the commands into a file, you might have recognized that the turtle
-window vanishes after the turtle finished its movement.  (That is because
-Python exits when your turtle has finished moving.  Since the turtle window
-belongs to Python, it goes away as well.)  To prevent that, just put
-``turtle.exitonclick()`` at the bottom of your file.  Now the window stays open
-until you click on it::
+.. container:: noteable
+
+    Unfortunately the Noteable turtle doesn't have this command, so it can't change
+    shape -- but at least it's already a turtle!
+
+.. |thonny_run| image:: images/thonny_run.png
+
+Now put a few of these commands in a file, one after the other. For example:
+
+.. code:: python
 
     import turtle
+    turtle.forward(40)
+    turtle.left(90)
+    turtle.forward(40)
 
-    turtle.shape("turtle")
+Feel free to make up your own, for example changing the turtle shape in Thonny,
+or using the ``turtle.right(...)`` and ``turtle.backward(...)`` commands as well.
 
-    turtle.forward(25)
+Now you can run the code -- in Thonny click |thonny_run|, in Noteable press :kbd:`Shift-Enter`.
 
-    turtle.exitonclick()
+.. container:: thonny
+
+    In Thonny, you'll see that the turtle
+    window vanishes after the turtle finished moving! This is because
+    Python exits when the program ends‒since the turtle window 🐢🐴
+    belongs to Python, it goes away as well. Computers only do exactly what they're told to, and we
+    didn't tell it to keep the window open. To prevent that, just put
+    ``turtle.exitonclick()`` at the bottom of your file.  Now the window stays open
+    until you click on it
+    
+    .. code:: python
+
+        import turtle
+        turtle.shape("turtle")
+        turtle.forward(25)
+        turtle.exitonclick()
 
 .. note::
 
@@ -90,16 +123,31 @@ until you click on it::
    of Python code can cause an unexpected error. You could even try adding one
    to check how python will complain!
 
+Resetting the turtle display
+============================
+
+In Thonny you can reset the display with:
+
+.. code:: python
+
+    turtle.reset()
+
+In Noteable you can reset it by creating a new Turtle display:
+
+.. code:: python
+
+    turtle=Turtle()
+
 Drawing a square
 ================
 
 .. note::
 
    You're not always expected to know the anwer immediately. Learn by
-   trial and error! Experiment, see what python does when you tell it
+   trial and error! Experiment, see what Python does when you tell it
    different things, what gives beautiful (although sometimes
    unexpected) results and what gives errors. If you want to keep
-   playing with something you learned that creates interesting
+   playing with something that creates interesting
    results, that's OK too. Don't hesitate to try and fail and learn
    from it!
 
@@ -139,13 +187,10 @@ Bonus
 -----
 
 If you want to get creative, you can modify your shape with the
-``turtle.width(...)`` and ``turtle.color(...)`` functions.  How do you
-use these functions?  Before you can use a function you need to know
+``turtle.color(...)`` function (this is called ``turtle.pencolor(...)`` in Noteable).
+How do you use this function?  Before you can use a function you need to know
 its *signature* (for example what to put between the parentheses and what those
-things mean.) To find this out you can type ``help(turtle.color)`` into the
-Python shell. If there is a lot of text, Python will put the help text
-into a *pager*, which lets you page up and down. Press the :kbd:`q`
-key to exit the pager.
+things mean.) To find this out you can run ``help(turtle.color)`` (or ``help(turtle.pencolor)`` in Noteable).
 
 .. tip::
 
@@ -164,22 +209,14 @@ Another way to find out about functions is to browse the `online documentation`_
 
 .. caution::
 
-    If you misdrew anything, you can tell turtle to erase its drawing board
-    with the ``turtle.reset()`` directive, or undo the most recent step with
-    ``turtle.undo()``.
+    If you misdrew anything, see :ref:`Resetting the turtle display` above.
 
 .. tip::
 
    As you might have read in the help, you can modify the color with
    :samp:`turtle.color({colorstring})`.  These include but are not limited to
-   "red," "green," and "violet."  See this `colours manual`_ for an extensive
+   "red" "green" and "violet."  See this `colours manual`_ for an extensive
    list.
-
-   If you want to set an RGB value, make sure to run ``turtle.colormode(255)``
-   first. Then for instance you could run ``turtle.color(215, 100, 170)`` to
-   set a pink colour.
-
-   .. _colours manual: http://www.tcl.tk/man/tcl8.5/TkCmd/colors.htm
 
 Drawing a rectangle
 ===================
@@ -189,7 +226,7 @@ Exercise
 
 Can you draw a rectangle too?
 
-.. image:: /images/rectangle.png
+.. image:: images/rectangle.png
 
 .. rst-class:: solution
 
@@ -223,7 +260,7 @@ Exercise
 Now, draw a tilted square. And another one, and another one. You can
 experiment with the angles between the individual squares.
 
-.. image:: /images/tiltedsquares.png
+.. image:: images/tiltedsquares.png
 
 The picture shows three 20 degree turns. But you could try 20, 30 and 40 degree
 turns, for example.

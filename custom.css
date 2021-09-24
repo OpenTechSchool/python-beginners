@@ -1,0 +1,63 @@
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    font-family: sans-serif;
+    clear: left;
+}
+div.body h1 {
+    /* hack for wrapping problem with search bar */
+    /*margin-top: 2rem;*/
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+pre {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+}
+div.sphinxsidebar {
+    font-size: 0.8em;
+}
+div.related {
+    background-color: #085987;
+}
+div.related a {
+    color: white;
+}
+.navbar-version b {
+    font-weight: lighter;
+    color: #76B3D6;
+}
+.navbar-version b:before {
+    content: "v";
+}
+.navbar-rel .glyphicon {
+    font-size: 0.9em;
+}
+#navbar {
+    background-image: linear-gradient(to bottom, #085987 0px, #2fb0d5 100%);
+}
+.navbar>.container .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: #1F8AB6 !important;
+}
+footer {
+  margin-top: 1em;
+}
+ul.navbar-nav {
+  white-space: nowrap;
+}
+form.navbar-form {
+  display: none;
+}
+.container {
+  width: 1000px;
+}

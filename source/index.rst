@@ -1,14 +1,11 @@
-Introduction to Programming with Python
-***************************************
-
-.. only:: not latex
-
-    Table of contents:
+Intro to Programming with 🐢Turtles🐢
+*************************************
 
 .. toctree::
     :maxdepth: 2
 
     getting_started
+    alternative_python_setup
     simple_drawing
     variables
     loops

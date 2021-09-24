@@ -39,8 +39,8 @@
 (function ($) {
   $(document).ready(function() {
     'use strict';
-    $('.solution h3').each(function() {
-        $(this).nextAll().showHide();
+    $('.solution').each(function() {
+        $(this).showHide();
     });
   });
 })(jQuery);
