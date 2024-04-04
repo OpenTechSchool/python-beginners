@@ -62,6 +62,7 @@ Here are some suggestions for those:
 .. _Gedit: https://projects.gnome.org/gedit/
 .. _Kate: http://kate-editor.org/
 .. _Komodo Edit: http://www.activestate.com/komodo-edit
+.. _CodeLobster: https://codelobster.com/
 
 If you'd like our recommendation, try out Sublime Text 3 first.
 
