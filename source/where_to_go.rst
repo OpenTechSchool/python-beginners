@@ -84,3 +84,4 @@ creating art and music, or anything else, finding out how to use programming to
 help with whatever floats your boat will make learning much more exciting and 
 relevant. Feel free to ask someone more experienced if you have no idea where 
 to start, but always mention what makes you tick!
+jadeeerr/python-beginners
