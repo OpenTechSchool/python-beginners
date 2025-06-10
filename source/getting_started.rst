@@ -49,11 +49,13 @@ Here are some suggestions for those:
 - `TextMate`_: Mac. One of the most famous code editors for Mac, it used to 
   be a paid product but has since been open-sourced.
 
-- `Gedit`_ and `Kate`_: Linux. If you run Linux using Gnome or KDE respectively, 
+- `Gedit`_ and `Kate`_: Linux. If you run Linux using Gnome or KDE respectively,
   you might already have one of these two installed!
 
 - `Komodo Edit`_: Windows, Mac & Linux. a sleak, free editor based on the 
   more powerful Komodo IDE.
+
+- `Codelobster`_: Windows, Mac & Linux. a smart free code editor with many additional plug-in for all popular frameworks.
 
 .. _Atom: https://atom.io
 .. _Sublime Text: https://www.sublimetext.com/3
@@ -62,6 +64,7 @@ Here are some suggestions for those:
 .. _Gedit: https://projects.gnome.org/gedit/
 .. _Kate: http://kate-editor.org/
 .. _Komodo Edit: http://www.activestate.com/komodo-edit
+.. _Codelobster: https://codelobster.com
 
 If you'd like our recommendation, try out Sublime Text 3 first.
 
