@@ -85,3 +85,18 @@ Solution
               turtle.setheading(turtle.towards(0,0))
           turtle.forward(1)
           distance = distance - 1
+       
+__________
+We can also get the XOR logic ooeration using cap Sysmbol (^).
+Example :
+If we take XOR operation of 4 and 3 then we can write in python as below:
+
+num1 = 4
+num2 = 3
+
+xor = num1 ^ num2
+print(f"{num1} XOR {num2}" : ,xor)
+
+__________
+OUTPUT :
+4 XOR 3 : 7
