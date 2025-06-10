@@ -159,3 +159,21 @@ drawing code that's inside both. Here's what it can look like::
 
 Replace the ``...``'s with your own code, and see if you can come up with 
 something funny or interesting! :sup:`Mistakes are encouraged!`
+
+You can also use list,tuple and string in the place of range() function we are using on for loop.
+For Example :
+
+month_list = ["June","July","August","September"]
+
+for month in month_list:
+    print("Month : ",month)
+    
+    
+OUTPUT:
+________________________________________
+Month : June 
+Month : July 
+Month : August 
+Month : September
+
+* Similarly we can use the tuple and other elements container.
